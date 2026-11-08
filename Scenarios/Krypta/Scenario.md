@@ -43,6 +43,14 @@ W krypcie panuje całkowita ciemność: bez światła działania wymagające wzr
 - Krypta należała do panów Borzywojów, którzy rządzili doliną dwieście lat temu. Ostatni z nich, Borzywoj Zły, słynął z okrucieństwa. Od dawna nikt tam nie zagląda.
 - W dniu osunięcia zbocza do wsi przyszedł obcy, chudy wędrowiec z kuszą, który przedstawił się jako Ostap, handlarz. Po kilku dniach zniknął. Ludzie myślą, że próbował przejść przez zawalisko i zginął.
 
+## Początek przygody
+
+Gra zaczyna się rano, około siódmej, pierwszego dnia gry, czyli trzeciego dnia po zniknięciu Maćka. Postać nocuje w Zimnych Brodach, w chacie, która wynika z jej historii, a jeśli historia tego nie mówi, w izbie u sołtysa.
+
+Do drzwi puka Radomir, a za nim stoi zapłakana Dobrosława. Sołtys opowiada, co wie wieś (zob. *Co wie wieś*), i prosi postać, żeby poszła na Wzgórze Brzozowe poszukać chłopaka i sprawdzić, co zabija bydło. Obiecuje nagrodę (zob. *Wieś Zimne Brody*) i daje 3 pochodnie. Mówi, że nikt ze wsi nie pójdzie z postacią: ludzie boją się krypty, a on sam jest za stary.
+
+Postać może najpierw wypytać ludzi, odwiedzić Wiesławę i kupić sprzęt, a potem wyruszyć. Droga na wzgórze zajmuje pół godziny. Jest późna jesień: świta około siódmej, a zmierzcha około wpół do piątej.
+
 ## Tajemnice
 
 Tylko dla MG. Nie zdradzaj ich graczowi, dopóki postać ich nie odkryje.
@@ -54,6 +62,19 @@ Tylko dla MG. Nie zdradzaj ich graczowi, dopóki postać ich nie odkryje.
 - **Obrzęd.** Upiora można na zawsze uśpić: trzeba włożyć mu do ust srebrną monetę, posypać ciało solą, zamknąć sarkofag i złożyć na wieku dwie połówki rozbitej pieczęci, zalepione woskiem albo smołą. Obrzęd przedstawia fresk w kaplicy (pokój 2), a słowa o nim zna Wiesława: „Srebro w usta, sól na pierś, pieczęć na kamień”.
 - Upiora niszczy też ogień: spalenie ciała kończy sprawę na zawsze. Ścięcie głowy usypia go tylko do następnej nocy, chyba że głowę spali się osobno.
 - Jeśli Ostap umrze w krypcie, a jego ciało nie zostanie spalone, następnej nocy wstanie jako upiór (zob. *Przeciwnicy*).
+
+## Upływ czasu
+
+MG śledzi porę dnia i upływ czasu od początku gry. Przejście przez jedno pomieszczenie krypty i rozejrzenie się w nim zajmuje około 10 minut, dokładne przeszukanie albo otwarcie sarkofagu około kwadransa. Pochodnia pali się godzinę, więc 3 pochodnie od sołtysa starczają na około 3 godziny w krypcie.
+
+- **Dzień 1, zmierzch (około 16:30):** upiór budzi się i wychodzi szczeliną do wąwozu. Wraca przed świtem, około 6:30. Nocą nie ma go w grobowcu, ale może go spotkać ktoś, kto jest w dolinie albo w wąwozie.
+- **Noc 1:** upiór zagryza owcę na skraju wsi. Rano ludzie znajdują ją bez krwi.
+- **Dzień 2:** Maciek słabnie z głodu, pragnienia i zimna. Jeśli do zmierzchu nikt go nie wyciągnie z zapadni i nie napoi, traci przytomność, a jeśli nie dostanie pomocy do świtu dnia 3, umiera. Ostapa Wiesława może jeszcze wyleczyć, jeśli zobaczy go do końca tego dnia.
+- **Noc 2:** upiór jest śmielszy. Krąży między chatami, psy wyją, a człowiek, który wyjdzie nocą sam, może zostać zaatakowany.
+- **Dzień 5:** Ostap, jeśli nikt go nie wyleczył, umiera z gorączki. Jeśli umrze w krypcie, a jego ciało nie zostanie spalone, następnej nocy wstaje jako upiór (zob. *Przeciwnicy*).
+- **Do nocy 7:** jeśli upiór nie zostanie zniszczony ani uśpiony obrzędem, zabija pierwszego człowieka we wsi. Potem zabija co kilka nocy.
+
+Jeśli postać pokona upiora, ale go nie zniszczy, oś czasu zaczyna się od nowa: upiór wstaje następnej nocy (zob. *Przeciwnicy*) i znów jest coraz śmielszy.
 
 ## Krypta
 
@@ -164,7 +185,7 @@ Mała komnata, 3 na 4 m, dawniej skład na świece, olej i całuny. Drzwi zabary
 - Ostap jest przerażony i chce przeżyć. Na głos z zewnątrz najpierw grozi, że strzeli, potem się targuje. Za wyprowadzenie z krypty odda połowę łupu i powie, co wie: że w grobowcu śpi „coś, co było człowiekiem”, że za dnia leży w sarkofagu, a nocą wychodzi, i że na schodach w przedsionku jest pułapka (zob. pokój 7).
 - Kłamie, że to nie on rozbił pieczęć. O Maćku powie, że „ktoś wołał w korytarzu”, ale nie przyzna, że słyszał go od trzech dni.
 - Jeśli postać go wyprowadzi, przy pierwszej okazji spróbuje uciec z całym workiem. We wsi grozi mu sąd sołtysa za rabunek grobów.
-- Ostap umrze z gorączki za około pięć dni, jeśli nikt go nie wyleczy. Wiesława może mu pomóc, jeśli go zobaczy w ciągu dwóch dni (opatrzenie, wywar, przypalenie rany).
+- Ostap umrze z gorączki piątego dnia gry, jeśli nikt go nie wyleczy. Wiesława może mu pomóc, jeśli zobaczy go do końca drugiego dnia gry (opatrzenie, wywar, przypalenie rany). Zob. *Upływ czasu*.
 
 ### 7. Przedsionek grobowca
 
