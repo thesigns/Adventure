@@ -5,7 +5,7 @@ Uniwersalny system jednoosobowej gry fabularnej. Agent jest Mistrzem Gry, a uży
 ## Katalogi
 
 - `Rules/`: zasady podstawowe systemu, wspólne dla wszystkich światów
-- `Settings/`: settingi, czyli opisy światów, każdy w osobnym folderze
+- `Settings/`: settingi, czyli opisy światów, każdy w osobnym folderze z głównym plikiem `Setting.md`
 - `Scenarios/`: scenariusze, każdy w osobnym folderze
 - `Campaigns/`: kampanie, czyli stan rozgrywek, jeden folder na kampanię (zob. *Kampanie*)
 - `Scripts/`: wspólne skrypty Pythona systemu (zob. *Skrypty*)
@@ -25,7 +25,7 @@ Uniwersalny system jednoosobowej gry fabularnej. Agent jest Mistrzem Gry, a uży
 
 ## Settingi
 
-Settingi są opisane w katalogu `Settings/`, każdy w osobnym folderze: lore, geografia, bogowie oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*). Na razie gra nie ma żadnych settingów.
+Każdy setting leży w osobnym folderze `Settings/<Nazwa settingu>/`, a jego głównym plikiem jest zawsze `Setting.md`. Folder może zawierać też inne pliki settingu, np. lore, geografię, bogów oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*). Na razie gra nie ma żadnych settingów.
 
 ## Scenariusze
 

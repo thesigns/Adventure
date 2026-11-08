@@ -42,14 +42,14 @@ rozegrać różne postacie.
 
 ## Struktura repozytorium
 
-| Ścieżka      | Zawartość                                                     |
-|--------------|---------------------------------------------------------------|
-| `AGENTS.md`  | instrukcje dla agenta prowadzącego grę                        |
-| `Rules/`     | zasady podstawowe, wspólne dla wszystkich światów             |
-| `Settings/`  | settingi, czyli opisy światów, każdy w osobnym folderze       |
-| `Scenarios/` | scenariusze, każdy w folderze z głównym plikiem `Scenario.md` |
-| `Campaigns/` | kampanie: karta postaci, dziennik, postęp scenariuszy i rzuty |
-| `Scripts/`   | skrypty Pythona do rzutów                                     |
+| Ścieżka      | Zawartość                                                                      |
+|--------------|--------------------------------------------------------------------------------|
+| `AGENTS.md`  | instrukcje dla agenta prowadzącego grę                                         |
+| `Rules/`     | zasady podstawowe, wspólne dla wszystkich światów                              |
+| `Settings/`  | settingi, czyli opisy światów, każdy w folderze z głównym plikiem `Setting.md` |
+| `Scenarios/` | scenariusze, każdy w folderze z głównym plikiem `Scenario.md`                  |
+| `Campaigns/` | kampanie: karta postaci, dziennik, postęp scenariuszy i rzuty                  |
+| `Scripts/`   | skrypty Pythona do rzutów                                                      |
 
 Pliki zasad w `Rules/`:
 
