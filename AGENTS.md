@@ -48,6 +48,8 @@ Przed rozpoczęciem lub wznowieniem gry przeczytaj:
 3. wszystkie pliki settingu, który wskazuje scenariusz, jeśli wskazuje folder z `Settings/`,
 4. przy wznowieniu gry: z folderu kampanii kartę postaci `Character.md`, dziennik kampanii `Campaign.md` i postęp bieżącego scenariusza (zob. *Kampanie*).
 
+Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting.
+
 Jeśli nie wiadomo, którą kampanię albo który scenariusz gracz chce rozgrywać, zapytaj go.
 
 ## Pierwszeństwo zasad
@@ -65,7 +67,8 @@ Folder kampanii zawiera:
 - `Character.md`: kartę postaci (zob. *Karta postaci* w `Rules/Rules.md`),
 - `Campaign.md`: dziennik kampanii,
 - `<Nazwa scenariusza>.md`: postęp w każdym rozegranym scenariuszu, nazwany tak samo jak folder scenariusza, np. `Krypta.md`; jeśli postać gra ten sam scenariusz drugi raz, plik dostaje numer, np. `Krypta-2.md`,
-- `Rolls.log`: rejestr wszystkich rzutów kampanii, który prowadzą skrypty.
+- `Rolls.log`: rejestr wszystkich rzutów kampanii, który prowadzą skrypty,
+- `<Nazwa>-mapa.json`, `<Nazwa>-mapa.svg` i `<Nazwa>-mapa.html`: stan odkrycia i mapa gracza z mgłą wojny, jeśli scenariusz albo setting ma mapę (zob. *Mapy*).
 
 Dziennik kampanii (`Campaign.md`) zawiera:
 
@@ -90,6 +93,29 @@ MG aktualizuje dziennik kampanii i postęp scenariusza po każdej ważnej scenie
 Wspólne skrypty systemu leżą w `Scripts/`. Setting i scenariusz mogą mieć własne skrypty Pythona w swoim folderze, np. generator imion, tabelę spotkań albo symulację urządzenia. Ich przeznaczenie i sposób użycia opisują pliki settingu albo scenariusza, a MG używa ich tak, jak tam napisano.
 
 Skrypty settingu i scenariusza nie zastępują skryptów systemu: każdy rzut, który rozstrzyga niepewny rezultat, MG wykonuje skryptem `Scripts/roll.py` (zob. *Mechanika*), chyba że setting albo scenariusz wprost każe użyć do tego własnego skryptu.
+
+## Mapy
+
+Setting i scenariusz mogą mieć mapy w formacie SVG. Pełna mapa jest tylko dla MG i MG nigdy nie pokazuje jej graczowi. Gracz widzi mapę z mgłą wojny, na której odsłonięte są tylko miejsca, które jego postać już widziała.
+
+Żeby mapę dało się odsłaniać, obok pliku SVG leży plik obszarów o tej samej nazwie z rozszerzeniem `.areas.json`, np. `MapCrypt.svg` i `MapCrypt.areas.json`. Plik obszarów zawiera:
+
+- `areas`: obszary do odsłaniania, zwykle pomieszczenia, każdy z nazwą (`name`) i listą wielokątów (`polygons`) we współrzędnych SVG,
+- `secrets`: sekrety, np. pułapki albo ukryte drzwi, każdy z nazwą i listą `id` elementów SVG, które znikają z mapy gracza, dopóki postać sekretu nie odkryje,
+- `mg_only`: `id` elementów SVG, które nigdy nie trafiają na mapę gracza, np. numery pomieszczeń i ich nazwy w legendzie,
+- `always`: wielokąty zawsze widoczne, np. tytuł i legenda.
+
+MG odsłania obszary i sekrety skryptem `Scripts/fogmap.py`:
+
+```
+python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --odkryj 1 2 --sekret plyta
+```
+
+Skrypt zapisuje stan odkrycia w folderze kampanii i generuje mapę gracza `<Nazwa>-mapa.svg` oraz podgląd `<Nazwa>-mapa.html`, który co dwie sekundy sam się odświeża. Opcja `--lista` wypisuje obszary, sekrety i stan odkrycia, `--zakryj` zakrywa obszar odsłonięty przez pomyłkę, a `--otworz` otwiera podgląd w przeglądarce.
+
+- Gdy postać po raz pierwszy wchodzi na teren z mapą, MG odsłania pierwszy obszar z opcją `--otworz` i mówi graczowi, żeby zostawił kartę z mapą otwartą.
+- Gdy postać zobaczy nowe miejsce, MG od razu je odsłania. Odsłania to, co postać widziała, a nie tylko to, dokąd weszła, np. salę oświetloną pochodnią z progu.
+- Sekret MG odsłania dopiero wtedy, gdy postać go odkryje.
 
 ## Formatowanie odpowiedzi
 

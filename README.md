@@ -84,6 +84,13 @@ Rzut monetą w sporze między graczem a MG:
 python Scripts/coin.py --kampania Randuvil --opis "Czy postać zdążyła zamknąć bramę" --mg "brama była otwarta" --gracz "postać zamknęła bramę"
 ```
 
+Mapa gracza z mgłą wojny, na której MG odsłania miejsca odkryte przez postać.
+Podgląd w przeglądarce odświeża się sam:
+
+```
+python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --odkryj 1 2 --otworz
+```
+
 ## Scenariusze i settingi
 
 Scenariusz może napisać człowiek, agent albo obaj razem. Plik `Scenario.md`
@@ -91,7 +98,11 @@ zawsze podaje setting: nazwę folderu z `Settings/` albo krótki opis świata,
 np. „świat low fantasy, przygoda dzieje się we wsi odciętej od świata
 i w pobliskiej krypcie”.
 
-Repozytorium nie ma jeszcze żadnych settingów ani scenariuszy.
+Repozytorium zawiera na razie jeden testowy scenariusz, **Krypta**
+(`Scenarios/Krypta/`). To krótka mini-przygoda w świecie low fantasy, opisanym
+w samym scenariuszu: postać schodzi do krypty pod wzgórzem, żeby odnaleźć
+zaginionego pastucha. Scenariusz ma mapę krypty z mgłą wojny dla gracza
+i skrypt losujący skarby. Settingów na razie nie ma.
 
 ## Licencja
 
