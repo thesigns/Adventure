@@ -133,7 +133,28 @@ Najbardziej przyciąga sztywnych dźwięk (zob. *Zmysły i zachowanie* w `Stiffs
 - **głośna:** krzyk, płacz, szczekanie psa, tłuczone szkło, wyważanie drzwi, walka wręcz: słychać ją w całym budynku albo na podwórku,
 - **bardzo głośna:** strzał, silnik, klakson, alarm, syrena, wybuch: słychać ją na kilka przecznic i może ruszyć pochód.
 
-Po głośnej albo bardzo głośnej czynności MG rozstrzyga, co przychodzi. To zdarzenie losowe, więc MG rzuca od razu, bez PDT, i pokazuje tablicę z wynikiem. Przykładowa tablica dla bardzo głośnej czynności na osiedlu w nocy:
+Po głośnej albo bardzo głośnej czynności MG rozstrzyga, co przychodzi. To zdarzenie losowe, więc MG rzuca od razu, bez PDT, i pokazuje tablicę z wynikiem. Tablica zależy od tego, ile czasu minęło od pierwszej nocy, bo z każdym dniem sztywnych jest więcej, a żywych mniej. Poniżej tablice dla bardzo głośnej czynności na osiedlu w nocy.
+
+**Pierwsze 24 godziny.** Sztywnych jest jeszcze niewielu i chodzą pojedynczo, a pochodów nie ma. Na hałas częściej niż sztywny przychodzi ktoś żywy: sąsiad, milicja, ciekawscy, ludzie szukający pomocy.
+
+| Wynik | Rezultat                                                  |
+|-------|-----------------------------------------------------------|
+| 3     | przychodzi kilku sztywnych                                |
+| 4–6   | przychodzi jeden sztywny                                  |
+| 7–10  | przychodzi ktoś żywy, zaniepokojony albo szukający pomocy |
+| 11–18 | nikt nie przychodzi                                       |
+
+**Pierwszy tydzień.** Przybywa świeżaków i wzdętych, a ze sztywnych, którzy idą za hałasem, zbierają się pierwsze małe pochody.
+
+| Wynik | Rezultat                                         |
+|-------|--------------------------------------------------|
+| 3     | nadciąga mały pochód, kilkanaście sztywnych      |
+| 4–6   | przychodzi kilku sztywnych                       |
+| 7–10  | przychodzi jeden albo dwóch sztywnych            |
+| 11–12 | przychodzi ktoś żywy, przerażony, może uzbrojony |
+| 13–18 | nikt nie przychodzi                              |
+
+**Pierwszy miesiąc.** Większość sztywnych to gnilce, a pochody krążą po mieście.
 
 | Wynik | Rezultat                                      |
 |-------|-----------------------------------------------|
@@ -142,7 +163,28 @@ Po głośnej albo bardzo głośnej czynności MG rozstrzyga, co przychodzi. To z
 | 10–13 | przychodzi jeden albo dwóch sztywnych         |
 | 14–18 | nikt nie przychodzi                           |
 
-Dla głośnej czynności MG przesuwa progi o poziom na korzyść postaci. W gęsto zaludnionym miejscu, np. przy szpitalu albo na Cmentarzu Północnym, przesuwa je o poziom na niekorzyść, a w pustym, np. na działkach, na korzyść.
+**Później.** Żywych jest niewielu i trzymają się z dala od hałasu. Sztywni rozkładają się coraz bardziej, ale wciąż krążą pochody.
+
+| Wynik | Rezultat                                                 |
+|-------|----------------------------------------------------------|
+| 3–4   | nadciąga pochód sztywnych                                |
+| 5–8   | przychodzi kilku sztywnych                               |
+| 9–12  | przychodzi jeden albo dwóch sztywnych, często próchniaki |
+| 13–18 | nikt nie przychodzi                                      |
+
+Gdy sztywni, którzy wstali w marcu, padną, czyli mniej więcej od lata (zob. *Od świeżaka do padłego* w `Stiffs.md`), MG przesuwa progi tej tablicy o poziom na korzyść postaci.
+
+Dla głośnej czynności MG przesuwa progi o poziom na korzyść postaci. W gęsto zaludnionym miejscu, np. w centrum albo przy dworcu, przesuwa je o poziom na niekorzyść, a w pustym, np. na działkach, na korzyść.
+
+### Miejsca zapalne
+
+W niektórych miejscach sztywnych jest dużo od pierwszej nocy, nawet bez hałasu (zob. *Pierwsza noc w Warszawie* w `Stiffs.md`). W takim miejscu MG korzysta z tablicy hałasu dla późniejszego okresu, niż wynika z kalendarza, i od początku umieszcza tam sztywnych, także takich, którzy już na kogoś czekają.
+
+- **Szpitale** to najgorsze miejsca w mieście. W kostnicach leżą ciała, na oddziałach co godzinę ktoś umiera, a przez całą noc i pierwszy dzień karetki i ludzie przywożą rannych i pogryzionych, którzy umierają i wstają. Sztywni są tu od pierwszej nocy: świeżaki na korytarzach, w salach, w windach i na klatkach schodowych, wśród żywych, którzy nie wiedzą, co się dzieje. Od pierwszej nocy MG korzysta tu z tablicy dla pierwszego miesiąca: szpital może wypełnić się sztywnymi jak pochód.
+- **Domy opieki, hospicja i stacje pogotowia** działają jak małe szpitale: od pierwszej nocy MG korzysta z tablicy dla pierwszego tygodnia.
+- **Cmentarze ze świeżymi grobami**, zwłaszcza Cmentarz Północny, od pierwszej nocy oddają zmarłych z minionej zimy. Wychodzą z ziemi pojedynczo, przez wiele godzin, jako gnilce i próchniaki. Od pierwszej nocy MG korzysta tu z tablicy dla pierwszego tygodnia, ale przychodzą gnilce, a nie świeżaki. Stare cmentarze, takie jak Powązki, są prawie spokojne, poza pojedynczymi rozerwanymi grobami.
+
+Miejsce zapalne zostaje groźne także później: sztywni, którzy tam wstali albo przyszli, zwykle zostają w pobliżu, dopóki coś ich nie odciągnie.
 
 **Nieświadomi hałasujący.** Zwierzęta, małe dzieci, ranni w gorączce, pijani i ludzie w panice nie wiedzą, że trzeba być cicho, albo nie potrafią. Są źródłem hałasu, którego postać nie kontroluje. Uciszenie ich to działanie z tablicą rezultatów. MG regularnie wprowadza ich do gry, bo to oni najczęściej ściągają sztywnych.
 
