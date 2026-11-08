@@ -1,0 +1,16 @@
+# Kampanie: karty postaci, dzienniki i rzuty z twoich rozgrywek
+Campaigns/*
+!Campaigns/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Edytory
+.vscode/
+.idea/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
