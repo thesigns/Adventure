@@ -48,7 +48,7 @@ Przed rozpoczęciem lub wznowieniem gry przeczytaj:
 3. wszystkie pliki settingu, który wskazuje scenariusz, jeśli wskazuje folder z `Settings/`,
 4. przy wznowieniu gry: z folderu kampanii kartę postaci `Character.md`, dziennik kampanii `Campaign.md` i postęp bieżącego scenariusza (zob. *Kampanie*).
 
-Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting.
+Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting. Nie czytaj też podfolderu `tools/` (zob. *Skrypty*).
 
 Jeśli nie wiadomo, którą kampanię albo który scenariusz gracz chce rozgrywać, zapytaj go.
 
@@ -93,6 +93,8 @@ MG aktualizuje dziennik kampanii i postęp scenariusza po każdej ważnej scenie
 Wspólne skrypty systemu leżą w `Scripts/`. Setting i scenariusz mogą mieć własne skrypty Pythona w swoim folderze, np. generator imion, tabelę spotkań albo symulację urządzenia. Ich przeznaczenie i sposób użycia opisują pliki settingu albo scenariusza, a MG używa ich tak, jak tam napisano.
 
 Skrypty settingu i scenariusza nie zastępują skryptów systemu: każdy rzut, który rozstrzyga niepewny rezultat, MG wykonuje skryptem `Scripts/roll.py` (zob. *Mechanika*), chyba że setting albo scenariusz wprost każe użyć do tego własnego skryptu.
+
+Podfolder `tools/` settingu albo scenariusza zawiera narzędzia autora, np. generator mapy. Nie służą do gry i MG nie używa ich w trakcie gry.
 
 ## Mapy
 
