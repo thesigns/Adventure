@@ -36,6 +36,37 @@ Przykładowe profesje i ich typowy ekwipunek:
 
 Każda postać ma też przy sobie to, co nosi się w 1990 roku: dowód osobisty, klucze, papierosy i zapałki (jeśli pali), portfel z kilkudziesięcioma tysiącami złotych, czasem kilka dolarów. Własny samochód z bloku wschodniego jest typowy dla części rodzin i nie jest zaletą, jeśli zgadza się ze statusem postaci. Samochód z Zachodu albo zapas dolarów są zaletami.
 
+### Przykładowe zalety i wady
+
+Wagę każdej cechy ustala MG według tego, jak często będzie miała znaczenie dla tej postaci (zob. `Rules/CharacterCreation.md`), więc podane wagi są tylko orientacyjne. W tym settingu najczęściej liczą się ucieczka, cisza, wzrok i słuch, walka wręcz, szaber i zdrowie bez lekarza. Cechy typowe dla Polaka z 1990 roku w wieku i profesji postaci nie są zaletami ani wadami: picie wódki przy okazji albo palenie papierosów to jeszcze nie wada, a umiejętność strzelania z kałasznikowa u mężczyzny po wojsku to jeszcze nie zaleta.
+
+Zalety:
+
+- **dobra kondycja** (−3): ucieczka, bieg po schodach i długi marsz są łatwiejsze o poziom,
+- **zawodowy żołnierz albo weteran** (−3 do −4), np. były komandos albo saper w cywilu: walka wręcz i strzelanie są łatwiejsze o poziom,
+- **złota rączka albo włamywacz** (−2 do −3): otwieranie zamków, naprawy i przeróbki są łatwiejsze o poziom,
+- **pierwsza pomoc** u kogoś spoza służby zdrowia (−2): opatrywanie ran i rozpoznawanie chorób są łatwiejsze o poziom,
+- **zimna krew** (−2): działania w grozie, np. zachowanie ciszy obok sztywnego albo celny strzał w panice, są łatwiejsze o poziom,
+- **kontakty w półświatku** (−2): na bazarze i wśród cinkciarzy łatwiej o broń, leki i wiadomości,
+- **broń w domu** (−2 do −3), np. pistolet po dziadku albo dubeltówka bez pozwolenia: ekwipunek lepszy niż typowy,
+- **zapasy albo działka z altaną za miastem** (−1 do −2): ekwipunek lepszy niż typowy i miejsce, do którego można uciec,
+- **znajomość rosyjskiego** (0 do −1): w 1990 roku każdy uczył się go w szkole, więc dopiero biegła znajomość jest zaletą, i to rzadko przydatną.
+
+Wady:
+
+- **okulary** (+1 do +2): bez okularów działania wymagające wzroku są trudniejsze o poziom, a okulary spadają, pękają i parują; MG regularnie wystawia je na próbę,
+- **astma albo słabe płuca** (+2 do +3): ucieczka i wysiłek są trudniejsze o poziom, a kurz i dym grożą atakiem duszności,
+- **nałóg** (+1 do +3): bez wódki albo papierosów działania są trudniejsze o poziom, a alkoholik po dwóch, trzech dniach bez picia dostaje delirki; kaszel palacza w ciszy też ma swoją cenę,
+- **choroba przewlekła** (+2 do +4), np. cukrzyca albo choroba serca: bez leków stan się pogarsza (zob. *Leczenie, zakażenia i choroby*), a insulina potrzebuje lodówki,
+- **bliski pod opieką** (+3 do +4), np. małe dziecko, chory rodzic albo pies: spowalnia ucieczkę i skradanie, hałasuje (zob. *Nieświadomi hałasujący*), a postać nie zostawi go za sobą,
+- **kulawizna, otyłość albo podeszły wiek** ponad typowy dla postaci (+3): ucieczka i wspinaczka są trudniejsze o poziom,
+- **słaby słuch** (+2): postać później słyszy nadchodzących sztywnych i gorzej ocenia hałas,
+- **lęk** (+1 do +2), np. przed ciemnością, ciasnotą albo zmarłymi: działania w piwnicach, kanałach albo przy ciałach są trudniejsze o poziom,
+- **głośny sen** (+1): postać chrapie albo krzyczy przez sen, a noc to jedyna pora, kiedy trzeba być cicho,
+- **poszukiwany** (+1): milicja szuka postaci za coś z przeszłości; ma to znaczenie tylko w pierwszych dniach, zanim państwo upadnie, ale może też ściągnąć dawnych wrogów.
+
+### Początek gry
+
 Gra zwykle zaczyna się w nocy z 21 na 22 marca 1990 roku, w domu albo w pracy postaci, chyba że scenariusz mówi inaczej.
 
 ## Sztywni w walce
