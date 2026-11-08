@@ -32,6 +32,14 @@ MG układa tablicę następnej rundy zgodnie z decyzją gracza. Działanie inne 
 
 Postać w agonii nie walczy dalej. Co dzieje się z nią potem, zależy od przeciwnika (zob. *Koniec walki*).
 
+## Seria rund
+
+Gdy kolejne rundy mają tę samą tablicę, bo gracz walczy dalej tak samo, wydaje na każdą rundę tyle samo Punktów Determinacji, a zranienie żadnej ze stron nie zmienia trudności, gracz może zlecić serię rund. MG pokazuje tablicę raz i rzuca całą serię jednym poleceniem skryptu z opcjami `--rundy` i `--stop` (zob. *Rzut skryptem* w `Rules/StandardThrow.md`).
+
+W `--stop` MG podaje wyniki, po których sytuacja się zmienia: zwykle rany postaci gracza oraz rany, po których przeciwnik pada, ucieka albo zmienia zachowanie. Jeśli przeciwnik może paść dopiero po kilku ranach, MG ustawia `--rundy` tak, żeby seria skończyła się najpóźniej w rundzie, w której mógłby paść. Seria kończy się też, gdy zmieni się okoliczność spoza tablicy, np. zgaśnie pochodnia albo nadejdzie pomoc.
+
+Po serii MG opisuje przebieg walki runda po rundzie, a gracz znów decyduje, co dalej (zob. *Między rundami*).
+
 ## Walka na dystans
 
 Gdy postać gracza strzela do przeciwnika, MG ustala, co w tym czasie robi przeciwnik, zgodnie z jego naturą, uzbrojeniem i sytuacją: odpowiada ogniem (jeśli ma czym), skraca dystans, kryje się albo ucieka (jeśli ma dokąd). Na tej podstawie układa tablicę rundy. Przeciwnik, który odpowiada ogniem, może zranić postać już w tej rundzie. Przeciwnik, który biegnie ku postaci, zwykle jej jeszcze nie rani, ale na niskich wynikach dopada ją i walka przechodzi w zwarcie.

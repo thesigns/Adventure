@@ -185,6 +185,7 @@ Mała komnata, 3 na 4 m, dawniej skład na świece, olej i całuny. Drzwi zabary
 - Ostap jest przerażony i chce przeżyć. Na głos z zewnątrz najpierw grozi, że strzeli, potem się targuje. Za wyprowadzenie z krypty odda połowę łupu i powie, co wie: że w grobowcu śpi „coś, co było człowiekiem”, że za dnia leży w sarkofagu, a nocą wychodzi, i że na schodach w przedsionku jest pułapka (zob. pokój 7).
 - Kłamie, że to nie on rozbił pieczęć. O Maćku powie, że „ktoś wołał w korytarzu”, ale nie przyzna, że słyszał go od trzech dni.
 - Jeśli postać go wyprowadzi, przy pierwszej okazji spróbuje uciec z całym workiem. We wsi grozi mu sąd sołtysa za rabunek grobów.
+- Jeśli postać pozwoli mu wyjść samemu, Ostap zabiera worek i latarnię, przechodzi przez wieś i znika w stronę zawalonej przełęczy. Ludzie widzą go z workiem. Ukrywa się w dolinie, a do Wiesławy nie pójdzie sam, bo boi się sądu.
 - Ostap umrze z gorączki piątego dnia gry, jeśli nikt go nie wyleczy. Wiesława może mu pomóc, jeśli zobaczy go do końca drugiego dnia gry (opatrzenie, wywar, przypalenie rany). Zob. *Upływ czasu*.
 
 ### 7. Przedsionek grobowca
@@ -201,7 +202,7 @@ Schody z sali grobów kończą się w wąskim przedsionku, 3 na 5 m. Na przeciwl
 | 10–18 | postać w ostatniej chwili odskakuje |
 
 - W kącie leżą kości dużego psa w resztkach skórzanej obroży z mosiężną plakietką „Wierny”. To ulubiony ogar Borzywoja, pochowany u progu pana. Gdy ktoś spróbuje otworzyć drzwi grobowca szerzej albo przejść przez nie, **martwy pies** powstaje (zob. *Przeciwnicy*). Postać, która spali albo rozbije kości psa, zanim ten wstanie, unika walki.
-- Połówki pieczęci są potrzebne do obrzędu (zob. *Tajemnice*). Wosk albo smołę postać musi przynieść ze wsi.
+- Połówki pieczęci są potrzebne do obrzędu (zob. *Tajemnice*). Wosk albo smołę postać musi przynieść ze wsi. W potrzebie może zeskrobać smołę z pochodni, ale to improwizowane lepiszcze: obrzęd przy śpiącym upiorze jest wtedy trudniejszy o jeden poziom.
 
 ### 8. Grobowiec Borzywoja
 
@@ -216,7 +217,8 @@ Okrągła komora, 6 m średnicy, z niskim kopulastym sklepieniem. Pośrodku, na 
 | 6–8   | upiór otwiera oczy; postać ma chwilę, zanim się podniesie |
 | 9–18  | upiór śpi dalej                                           |
 
-- Śpiącego upiora można zaatakować z zaskoczenia, spalić (trzeba czasu i opału, a ogień go obudzi) albo uśpić na zawsze obrzędem. Obrzęd przy śpiącym upiorze wymaga rzutu (przeciętne, jeśli postać zna obrzęd, trudne, jeśli działa na ślepo), a porażka na najniższych wynikach go budzi.
+- Śpiącego upiora można zaatakować z zaskoczenia, spalić (trzeba czasu i opału, a ogień go obudzi) albo uśpić na zawsze obrzędem. Obrzęd przy śpiącym upiorze wymaga rzutu (przeciętne, jeśli postać zna obrzęd, trudne, jeśli działa na ślepo), a porażka na najniższych wynikach go budzi. Cały obrzęd (moneta, sól, wieko, pieczęć) rozstrzyga jeden rzut.
+- Upiór powalony w walce (zob. *Przeciwnicy*) leży bezwładny do następnej nocy. Obrzęd, spalenie albo ścięcie głowy udają się wtedy bez rzutu, jeśli postać ma potrzebne rzeczy i czas.
 - W sarkofagu, przy ciele, leżą **miecz Borzywoja** i jego **pierścień-pieczęć**, a w niszy u stóp sarkofagu stoi szkatuła z resztą skarbu (zob. *Skarby*). Zabranie miecza albo pierścienia ze śpiącego upiora to jak otwieranie wieka: bardzo trudne do zrobienia po cichu.
 
 ### 9. Szczelina
@@ -241,6 +243,8 @@ Wąska, kręta szczelina w skale, którą trzeba przechodzić bokiem. Po około 
 **Nieumarli** (martwy pies, Borzywoj, Ostap-upiór) nie odczuwają ran: zranienie nie utrudnia im działań i nie uciekają. Padają dopiero przy 90% zranienia, a przy 100% się rozpadają. Ta zasada scenariusza ma pierwszeństwo przed zasadami podstawowymi.
 
 **Ogień** przeciw nieumarłym ułatwia walkę o jeden poziom. Rana zadana ogniem, np. pochodnią, nie jest obniżana przez twardą wytrzymałość upiora: pochodnia zadaje mu lekką ranę, a na najwyższych wynikach ranę.
+
+**Srebro** działa na nieumarłych podobnie: srebrna broń ułatwia walkę z nimi o jeden poziom, ale jej rany są obniżane przez wytrzymałość jak zwykle. Ogień i srebro to ta sama okoliczność, więc razem ułatwiają walkę tylko o jeden poziom (zob. *Okoliczności* w `Rules/StandardThrow.md`).
 
 **Borzywoj** pada przy 90% zranienia jak inni nieumarli, ale nie ginie: następnej nocy wstaje z 60% zranienia, chyba że ktoś go spali, uśpi obrzędem albo spali jego odciętą głowę. Jeśli postać gracza padnie przed nim w agonii, Borzywoj pije jej krew, co kończy się śmiercią, chyba że ktoś mu przeszkodzi.
 

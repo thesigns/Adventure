@@ -35,11 +35,11 @@ Ekwipunek nie ma osobnej mechaniki: broń, pancerz, narzędzia i inne przedmioty
 
 ## Walka
 
-Walka toczy się w rundach, a każda runda to jeden rzut standardowy z tablicą, która opisuje skutki dla obu stron. Przed walką gracz określa taktykę postaci, a walka trwa, dopóki się nie rozstrzygnie: śmiercią, agonią, ucieczką albo poddaniem się jednej ze stron. Pełne zasady walki, w tym kategorie przeciwników i typowy układ tablicy rundy, są w `Rules/Combat.md`.
+Walka toczy się w rundach, a każda runda to jeden rzut standardowy z tablicą, która opisuje skutki dla obu stron. Przed walką gracz określa taktykę postaci, a walka trwa, dopóki się nie rozstrzygnie: śmiercią, agonią, ucieczką albo poddaniem się jednej ze stron. Rundy z tą samą tablicą gracz może zlecić jako serię, którą MG rzuca jednym poleceniem. Pełne zasady walki, w tym kategorie przeciwników i typowy układ tablicy rundy, są w `Rules/Combat.md`.
 
 ## Cechy (zalety i wady)
 
-Zaleta wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i profesji: ułatwia o jeden poziom działania ze swojej dziedziny albo umożliwia działania, które bez niej byłyby niemożliwe, a wada działa odwrotnie. Cechy wybiera się przy tworzeniu postaci, wpływają na bazową liczbę Punktów Determinacji i bardzo rzadko zmieniają się w trakcie gry. Pełne zasady są w `Rules/Traits.md`.
+Zaleta wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i profesji: ułatwia o jeden poziom działania ze swojej dziedziny albo umożliwia działania, które bez niej byłyby niemożliwe, a wada działa odwrotnie. Cechy wybiera się przy tworzeniu postaci, wpływają na bazową liczbę Punktów Determinacji i bardzo rzadko zmieniają się w trakcie gry. Zaleta może też dawać zdolność nadprzyrodzoną, której skutek, ograniczenia i limit użyć MG ustala przy wycenie. Pełne zasady są w `Rules/Traits.md`.
 
 ## Zmęczenie, głód i światło
 

@@ -5,7 +5,7 @@ Tworzenie postaci odbywa się przed rozegraniem scenariusza. Najpierw gracz okre
 - **setting** z `Settings/`, a scenariusz z tego settingu wybrać później,
 - albo od razu **scenariusz**, który przy okazji wyznacza setting (zob. *Scenariusze* w `AGENTS.md`). Jeśli scenariusz nie korzysta z żadnego settingu, świat opisuje sam scenariusz.
 
-Zanim zacznie tworzyć postać, MG czyta wszystkie pliki wybranego settingu, a jeśli gracz wybrał scenariusz, także wszystkie pliki scenariusza. Bez tego nie oceni, czy gatunek, profesja, historia i ekwipunek postaci zgadzają się z lore świata.
+Zanim zacznie tworzyć postać, MG czyta wszystkie pliki wybranego settingu, a jeśli gracz wybrał scenariusz, także wszystkie pliki scenariusza. Bez tego nie oceni, czy gatunek, profesja, historia i ekwipunek postaci zgadzają się z lore świata. Graczowi przedstawia jednak tylko to, co postać wie o świecie na początku przygody. Nie zdradza tajemnic scenariusza, np. przeciwników, których postać jeszcze nie zna.
 
 ## Podstawowe informacje
 

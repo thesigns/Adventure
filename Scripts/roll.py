@@ -7,6 +7,9 @@ Tablica musi pokrywać wyniki 3-18 bez luk i nakładania się.
 --pdt N to wydane Punkty Determinacji: rzuca się 3+N kośćmi, N najsłabszych
 się odrzuca, a trzy najlepsze sumuje.
 --kampania to nazwa folderu kampanii w Campaigns/ (obowiązkowa).
+--rundy N rzuca serię najwyżej N rzutów z tą samą tablicą (np. kolejne
+rundy walki), a --stop "3-5,17-18" przerywa serię po wyniku z podanych
+zakresów. Przy serii --pdt dotyczy każdego rzutu osobno.
 Każdy rzut jest dopisywany do Campaigns/<kampania>/Rolls.log.
 """
 
@@ -86,6 +89,33 @@ def parse_table(entries):
     return sorted(table)
 
 
+def parse_stop(text):
+    """Zbiór wyników, po których seria rzutów się kończy, np. '3-5,17-18'."""
+    stop = set()
+    if not text:
+        return stop
+    for part in text.split(","):
+        part = part.strip()
+        try:
+            if "-" in part:
+                low, high = (int(x) for x in part.split("-", 1))
+            else:
+                low = high = int(part)
+        except ValueError:
+            sys.exit(f"Błąd: zakres --stop '{part}' nie jest liczbą ani zakresem 'od-do'.")
+        if low > high or low < MIN or high > MAX:
+            sys.exit(f"Błąd: zakres --stop '{part}' wykracza poza {MIN}-{MAX} albo jest odwrócony.")
+        stop.update(range(low, high + 1))
+    return stop
+
+
+def roll(pdt):
+    dice = [rng.randint(1, 6) for _ in range(KEPT + pdt)]
+    ranked = sorted(dice)
+    dropped, kept = ranked[:pdt], ranked[pdt:]
+    return dice, dropped, sum(kept)
+
+
 def main():
     for stream in (sys.stdout, sys.stderr):
         stream.reconfigure(encoding="utf-8")
@@ -95,40 +125,66 @@ def main():
     parser.add_argument("--kampania", required=True, help="nazwa folderu kampanii w Campaigns/")
     parser.add_argument("--opis", default="", help="czego dotyczy rzut")
     parser.add_argument("--pdt", type=int, default=0, help="wydane Punkty Determinacji (dodatkowe kości)")
+    parser.add_argument("--rundy", type=int, default=1, help="najwyższa liczba rzutów w serii z tą samą tablicą")
+    parser.add_argument("--stop", default="", help="wyniki kończące serię, np. '3-5,17-18'")
     args = parser.parse_args()
 
     if not 0 <= args.pdt <= MAX_PDT:
         sys.exit(f"Błąd: --pdt musi być liczbą od 0 do {MAX_PDT}.")
+    if not 1 <= args.rundy <= 50:
+        sys.exit("Błąd: --rundy musi być liczbą od 1 do 50.")
+    if args.stop and args.rundy == 1:
+        sys.exit("Błąd: --stop ma sens tylko przy serii (--rundy większe niż 1).")
 
     log_path = campaign_log(args.kampania)
     table = parse_table(args.tablica)
+    stop = parse_stop(args.stop)
     base_odds = odds(0)
     pdt_odds = odds(args.pdt)
-
-    dice = [rng.randint(1, 6) for _ in range(KEPT + args.pdt)]
-    ranked = sorted(dice)
-    dropped, kept = ranked[: args.pdt], ranked[args.pdt :]
-    total = sum(kept)
-    outcome = next(o for low, high, o in table if low <= total <= high)
 
     lines = []
     if args.opis:
         lines.append(f"Rzut: {args.opis}")
     if args.pdt:
         lines.append(f"Punkty Determinacji: {args.pdt} ({KEPT + args.pdt}K6, liczą się 3 najlepsze)")
+    if args.rundy > 1:
+        stop_info = f", przerwanie po wynikach: {args.stop}" if args.stop else ""
+        lines.append(f"Seria: najwyżej {args.rundy} rzutów{stop_info}")
+    results = []
+    for _ in range(args.rundy):
+        dice, dropped, total = roll(args.pdt)
+        outcome = next(o for low, high, o in table if low <= total <= high)
+        results.append((dice, dropped, total, outcome))
+        if total in stop:
+            break
+
     lines.append("Tablica:")
     for low, high, o in table:
         span = f"{low}" if low == high else f"{low}-{high}"
         p0 = sum(base_odds.get(v, 0) for v in range(low, high + 1))
         p = sum(pdt_odds.get(v, 0) for v in range(low, high + 1))
         chance = f"{pct(p0)} -> {pct(p)}" if args.pdt else pct(p)
-        marker = "  <--" if low <= total <= high else ""
+        single = args.rundy == 1 and low <= results[0][2] <= high
+        marker = "  <--" if single else ""
         lines.append(f"  {span}: {o} [{chance}]{marker}")
-    lines.append(f"Kości: {dice}")
-    if args.pdt:
-        lines.append(f"Odrzucone: {dropped}")
-    lines.append(f"Wynik: {total}")
-    lines.append(f"Rezultat: {outcome}")
+
+    for n, (dice, dropped, total, outcome) in enumerate(results, 1):
+        if args.rundy > 1:
+            lines.append(f"Rzut {n}:")
+        lines.append(f"Kości: {dice}")
+        if args.pdt:
+            lines.append(f"Odrzucone: {dropped}")
+        lines.append(f"Wynik: {total}")
+        lines.append(f"Rezultat: {outcome}")
+    if args.rundy > 1:
+        last = results[-1][2]
+        if last in stop:
+            lines.append(f"Seria przerwana po rzucie {len(results)} (wynik {last}).")
+        else:
+            lines.append(f"Seria zakończona po {len(results)} rzutach.")
+        if args.pdt:
+            lines.append(f"Wydane PDT w serii: {args.pdt * len(results)}")
+
     report = "\n".join(lines)
     print(report)
 

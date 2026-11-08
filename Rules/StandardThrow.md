@@ -66,7 +66,7 @@ W obrębie porażki i sukcesu MG może wydzielić stopnie, np. porażkę z raną
 
 ### Okoliczności
 
-MG ocenia trudność od razu z uwzględnieniem wszystkich okoliczności, które mają znaczenie. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji tego, kto działa (zob. `Rules/CharacterCreation.md`), wypoczęty i przygotowany do działania. Odczytanie zwoju jest dla czarodzieja łatwiejsze niż dla chłopa, a tropienie łatwiejsze dla myśliwego niż dla mieszczanina. Każda istotna okoliczność zmienia trudność zwykle o jeden poziom, a wyjątkowo silna o dwa. Ta sama okoliczność liczy się tylko raz.
+MG ocenia trudność od razu z uwzględnieniem wszystkich okoliczności, które mają znaczenie. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji tego, kto działa (zob. `Rules/CharacterCreation.md`), wypoczęty i przygotowany do działania. Odczytanie zwoju jest dla czarodzieja łatwiejsze niż dla chłopa, a tropienie łatwiejsze dla myśliwego niż dla mieszczanina. Każda istotna okoliczność zmienia trudność zwykle o jeden poziom, a wyjątkowo silna o dwa. Ta sama okoliczność liczy się tylko raz. Kilka środków szczególnie skutecznych przeciw temu samemu przeciwnikowi, np. srebro i ogień przeciw upiorowi, to jedna okoliczność.
 
 Działanie łatwiejsze niż łatwe jest trywialne i nie wymaga rzutu. Działanie trudniejsze niż prawie niemożliwe jest niemożliwe.
 
@@ -117,6 +117,7 @@ python Scripts/roll.py --kampania Randuvil --opis "Wspinaczka na mur" "3-4:upade
 - `--opis` to krótki opis tego, czego dotyczy rzut.
 - `--pdt` to liczba wydanych Punktów Determinacji (domyślnie 0). Skrypt rzuca wtedy odpowiednio więcej kośćmi, odrzuca najsłabsze i sumuje trzy najlepsze.
 - Każdy wpis tablicy ma postać `od-do:rezultat` albo `wynik:rezultat`. Zakresy muszą obejmować wszystkie wyniki od 3 do 18, bez luk i bez nakładania się.
+- `--rundy` to najwyższa liczba rzutów w serii z tą samą tablicą (domyślnie 1), a `--stop` to wyniki, po których seria się kończy, np. `--stop 3-5,17-18`. Przy serii `--pdt` dotyczy każdego rzutu osobno. Serii używa się do kolejnych rund walki (zob. *Seria rund* w `Rules/Combat.md`).
 
 Skrypt wypisuje tablicę z szansą na każdy rezultat (przy wydanych PDT także szansę bez nich), wyrzucone kości, kości odrzucone, wynik oraz rezultat. Każdy rzut zapisuje w pliku `Rolls.log` w folderze kampanii.
 

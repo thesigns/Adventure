@@ -11,6 +11,18 @@ Umiejętności i słabości typowe dla wieku, płci, gatunku i profesji postaci 
 
 Zalety i wady wybiera się przy tworzeniu postaci. Wpływają one na bazową liczbę Punktów Determinacji (zob. `Rules/CharacterCreation.md`).
 
+## Zdolności nadprzyrodzone
+
+Zaleta może dawać zdolność nadprzyrodzoną, np. czar, znak, modlitwę albo wszczep, jeśli świat na to pozwala. Taka zdolność umożliwia działania, które bez niej byłyby niemożliwe. Wyceniając ją, MG ustala razem z graczem:
+
+- **skutek:** co zdolność robi, np. przewraca jednego przeciwnika albo zmniejsza ranę o stopień,
+- **ograniczenia:** czego nie robi i na kogo działa słabiej albo wcale,
+- **limit użyć:** raz na scenę, raz na walkę, raz na dobę albo inny, zgodny ze światem.
+
+Scena to ciągła sytuacja w jednym miejscu, np. walka, rozmowa albo przeszukanie pomieszczenia. Kończy się, gdy postać przejdzie w inne miejsce albo minie dłuższy czas, orientacyjnie kwadrans. Walka z kolejnym przeciwnikiem, która zaczyna się w tym samym miejscu zaraz po poprzedniej, należy do tej samej sceny.
+
+Jeśli skutek użycia jest niepewny, np. przeciwnik może się oprzeć, MG rozstrzyga go w tablicy rezultatów. Skutek, ograniczenia i limit użyć MG zapisuje na karcie postaci.
+
 MG regularnie wprowadza wady postaci do gry: układa sytuacje tak, żeby wady miały znaczenie mniej więcej tak często, jak zakładała ich wycena. Wada, która nigdy nie zadziała, byłaby darmowymi punktami.
 
 ## Zmiany cech w trakcie gry
