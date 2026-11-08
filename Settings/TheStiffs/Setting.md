@@ -421,6 +421,49 @@ Jazda samochodem w zwykłych warunkach nie wymaga rzutu (zob. *Wierzchowce i poj
 - **Jazda nocą** bez świateł jest trudna, a ze światłami widoczna z daleka.
 - **Tramwaje i trolejbusy** stają, gdy zabraknie prądu. Pierwszej nocy i pierwszego dnia jeszcze jeżdżą, a ich wagony mogą stać się pułapką albo schronieniem.
 
+## Upadek państwa
+
+Wiosną 1990 roku państwo jest słabe, bo jest w pół drogi (zob. *Kraj w pół drogi* w `Poland.md`): stara władza i nowa siedzą przy jednym stole, milicja jest zdemoralizowana, a nikt nie wie, kto komu podlega. Gdy zmarli wstają, instytucje rozpadają się szybko. Nie ma jednej decyzji ani jednego rozkazu, tylko chaos, sprzeczne polecenia i ludzie, którzy ratują własne rodziny.
+
+### Kolejne okresy
+
+**Pierwsza doba.** Wszystko jeszcze działa, ale się dławi. Telefony pogotowia i milicji są zajęte. Patrole milicji jeżdżą do „awantur” i „pijanych” i giną, bo nie wiedzą, z czym walczą. Szpitale się zapełniają i stają się miejscami zapalnymi. Straż pożarna gasi pierwsze pożary. Rano radio i telewizja nadają mgliste komunikaty o „zamieszkach”, tramwaje i autobusy jeszcze jeżdżą, a prąd, woda i gaz działają.
+
+**Pierwszy tydzień.** Władza traci kontakt z ludźmi i sama ze sobą. Radio ogłasza godzinę milicyjną i apeluje o spokój, ale nikt nie pilnuje przepisów, a komunikaty sobie przeczą. Milicjanci opuszczają posterunki, żeby ratować rodziny. Część komend zamienia się w twierdze, a część milicjantów zaczyna działać na własną rękę. Jednostki wojska zamykają się w koszarach, poborowi dezerterują do domów, a broń wycieka na ulice. Punkty pomocy i zbiórki ewakuacyjne, zorganizowane w pośpiechu, ściągają tłumy, a tłum, w którym ktoś umrze, staje się pułapką. Szpitale i straż pożarna przestają działać. Prąd i woda działają z przerwami. Stacje radiowe milkną jedna po drugiej (zob. *Co wiedzą ludzie* w `Stiffs.md`).
+
+**Pierwszy miesiąc.** Państwa już nie ma. Elektrownie i wodociągi stają, więc nie ma prądu, wody w kranach ani gazu. Trzymają się tylko pojedyncze enklawy: koszary, zakład pracy, plebania, zabarykadowany blok. Rządzą ci, którzy mają broń, zapasy i ludzi: osiedlowe straże, parafie, bandy, oddziały byłych milicjantów i żołnierzy.
+
+**Później.** Miasto należy do sztywnych i do tych, którzy umieją się przed nimi ukryć. Ocaleli trzymają się w małych grupach i nie ufają obcym.
+
+### Rosjanie
+
+Wojska radzieckie stacjonują głównie w garnizonach na zachodzie i północy kraju, np. w Legnicy i Bornem Sulinowie (zob. *Polska i świat* w `Poland.md`). W samej Warszawie Rosjan prawie nie ma, poza ambasadą przy Belwederskiej i przedstawicielstwami.
+
+Od pierwszej nocy Rosjanie siedzą w bazach i z nich nie wychodzą. Strzelają do każdego, kto się zbliży, żywego czy martwego, często bez ostrzeżenia. Nie pomagają, nie negocjują i nie odpowiadają na wołania. Bazy mają broń, amunicję, paliwo i zapasy, więc kuszą, ale podejście na odległość strzału oznacza ostrzał z karabinów maszynowych. Strzały ściągają sztywnych, więc wokół baz gromadzą się tłumy, a do bazy nie da się już dojść.
+
+Plotki o tym, że Rosjanie przyjdą z pomocą, przejmą władzę albo ruszą na Zachód, są fałszywe. Nikt nie wie, czy mają łączność z Moskwą.
+
+### Żywi
+
+Żywi bywają groźniejsi od sztywnych, bo myślą, mają broń i potrzebują tych samych zapasów co postać:
+
+- **szabrownicy** zabierają, co się da, i bronią łupu,
+- **bandy** z bronią z posterunków i koszar przejmują ulice, bloki i magazyny,
+- **zabarykadowani sąsiedzi** nie wpuszczają obcych, bo każdy może być ugryziony albo chory,
+- **milicjanci i żołnierze na własną rękę** wciąż mają mundury i broń, ale już nie rozkazy,
+- **ludzie w szoku i fanatycy**, którzy wierzą w Sąd Ostateczny albo przeganiają i zabijają ugryzionych (zob. *Co wiedzą ludzie* w `Stiffs.md`).
+
+Reakcję obcych, gdy nie wynika z sytuacji, MG rozstrzyga rzutem (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`). Jeśli to postać próbuje ich przekonać, jest to jej działanie i MG najpierw pokazuje tablicę. Przykładowa tablica dla obcej grupy spotkanej w pierwszym miesiącu:
+
+| Wynik | Rezultat                                                    |
+|-------|-------------------------------------------------------------|
+| 3–5   | atakują albo grożą bronią i żądają zapasów                  |
+| 6–9   | są nieufni i każą odejść                                    |
+| 10–14 | rozmawiają ostrożnie, można się wymienić albo coś usłyszeć  |
+| 15–18 | pomagają, dzielą się wiadomościami albo przyjmują do siebie |
+
+W pierwszej dobie ludzie wciąż sobie pomagają, więc progi przesuwają się o dwa poziomy na korzyść postaci, a w pierwszym tygodniu o jeden. Później przesuwają się o poziom na niekorzyść. Broń w ręku postaci, ugryzienie albo gorączka czynią obcych mniej przychylnymi.
+
 ## Czas
 
 MG śledzi datę i porę dnia od pierwszej nocy (zob. *Noc z 21 na 22 marca 1990* w `Poland.md`). 21 marca 1990 roku to środa. W Warszawie wschód słońca wypada około 5:40, a zachód około 17:55. W niedzielę 25 marca o 2:00 zmienia się czas na letni, więc od tej pory słońce wschodzi i zachodzi o godzinę później według zegara.
