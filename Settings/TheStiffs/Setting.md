@@ -74,9 +74,9 @@ Sztywny nie ma poziomu zranienia. Liczy się tylko mózg (zob. *Podstawowe zasad
 
 - **Trafienie w ciało** nie zabija sztywnego. MG wpisuje w tablicę jego skutki: sztywny się przewraca, zostaje odepchnięty albo okaleczony. Sztywny z okaleczonymi nogami pełza i łatwo przed nim uciec, a z okaleczonymi rękami słabiej chwyta.
 - **Trafienie w głowę** jest trudniejsze o jeden poziom niż trafienie w ciało. Gdy taktyka postaci to celowanie w głowę, obie wartości w tablicy przesuwają się o 2 (zob. *Trudność walki* w `Rules/Combat.md`), a trafienie oznacza ranę w głowę.
-- **Rana w głowę** o stopniu co najmniej rany, np. od siekiery, łomu albo kuli, niszczy mózg i sztywny pada na zawsze. Lżejsza rana w głowę, np. od pięści albo kija przy słabym trafieniu, tylko go odrzuca i daje chwilę oddechu.
+- **Rana w głowę** niszczy mózg, jeśli broń może przebić albo rozbić czaszkę (zob. *Broń*). Zwykle robi to rana o stopniu co najmniej rany, np. od siekiery albo kuli, a pchnięcie w oko, skroń albo pod żuchwę niezależnie od stopnia rany. Lżejsza rana w głowę, np. od pięści albo słabego uderzenia rurką, tylko odrzuca sztywnego i daje chwilę oddechu.
 
-Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6), a celowanie w głowę przesuwa obie wartości o 2. Siekiera zadaje typowo ranę, więc trafienie niszczy mózg.
+Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6), a celowanie w głowę przesuwa obie wartości o 2. Postać ma miejsce na zamach, a siekiera zadaje typowo ciężką ranę, więc trafienie niszczy mózg.
 
 | Wynik | Rezultat                                                |
 |-------|---------------------------------------------------------|
@@ -148,11 +148,54 @@ Dla głośnej czynności MG przesuwa progi o poziom na korzyść postaci. W gęs
 
 ## Broń
 
-Typowe rany od pełnego trafienia w człowieka bez pancerza (zob. *Rany w walce* w `Rules/Combat.md`):
+Rany podane przy każdej broni to rany od pełnego trafienia w człowieka bez pancerza (zob. *Rany w walce* w `Rules/Combat.md`). Przeciw sztywnym liczy się przede wszystkim to, czy broń pozwala trzymać sztywnego na dystansie i czy może zniszczyć mózg (zob. *Sztywni nie czują ran*).
 
-- **pięść, kopniak:** od draśnięcia do lekkiej rany, typowo draśnięcie,
-- **nóż, tasak, pałka, kij, cegła:** od draśnięcia do rany, typowo lekka rana,
-- **siekiera, łom, młotek, saperka:** od lekkiej rany do ciężkiej rany, typowo rana,
+### Dystans
+
+Walka wręcz ze sztywnym toczy się na jednym z dwóch dystansów:
+
+- **na dystansie broni**, około metra i więcej: sztywny idzie na postać, ale nie sięga jej jeszcze rękami ani zębami,
+- **w zwarciu**: sztywny jest tuż przy postaci i może ją chwycić albo ugryźć.
+
+Sztywny zawsze prze do zwarcia. Dystans jest okolicznością walki (zob. *Okoliczności* w `Rules/StandardThrow.md`), a to, jak go wykorzystać, zależy od broni:
+
+- **broń z zasięgiem** ułatwia walkę o poziom, dopóki postać trzyma sztywnego na dystansie broni, a w zwarciu ją utrudnia o poziom, bo drzewce przeszkadza,
+- **broń do pchnięcia z bliska** utrudnia walkę o poziom, bo postać musi wpuścić sztywnego w zasięg szczęk,
+- **walka bez broni** jest trudniejsza o dwa poziomy (zob. *Bez broni*).
+
+W tablicy walki bronią z zasięgiem MG wpisuje na niskich wynikach skutek „sztywny wchodzi w zwarcie”, zamiast rany albo razem z nią. Od tej chwili walka toczy się w zwarciu, dopóki postać nie odepchnie sztywnego albo się nie cofnie. To zajmuje rundę.
+
+**Ciasne miejsca.** W wąskim korytarzu, w piwnicy, na niskiej klatce schodowej albo w samochodzie broń z zasięgiem i ciężki zamach oburącz utrudniają walkę o poziom. Na otwartej przestrzeni łatwiej utrzymać dystans, ale łatwiej też dać się otoczyć.
+
+### Broń biała
+
+- **Długie ostrza** (katana, miecz, szabla). Działają na dystansie broni i w zwarciu bez kar. Rany od draśnięcia do ciężkiej rany, typowo rana. Cięcie w głowę o stopniu co najmniej rany niszczy mózg. Na najwyższych wynikach ostre długie ostrze może ściąć głowę albo przeciąć sztywnego wpół. Ścięta głowa gryzie dalej, dopóki ktoś nie zniszczy jej mózgu, a górna połowa przeciętego sztywnego pełznie dalej jak ochłap. W Polsce w 1990 roku to rzadkość: kolekcje, muzea, dekoracje na ścianie.
+- **Broń z zasięgiem** (dzida, włócznia, zaostrzony pręt, widły, kosa, łopata). Na dystansie broni ułatwia walkę o poziom, w zwarciu utrudnia (zob. *Dystans*). Pchnięcie dzidą, prętem albo widłami zadaje od lekkiej do ciężkiej rany, typowo ranę. Pchnięcie w oko, twarz albo pod żuchwę niszczy mózg niezależnie od stopnia rany. Na średnich wynikach widły albo pręt mogą też przewrócić sztywnego albo przygwoździć go do ściany. Łopata działa jak rąbanie: od draśnięcia do ciężkiej rany, typowo rana. Kosa tnie od lekkiej rany do zmasakrowania, typowo ciężka rana, i jak długie ostrze może ściąć głowę albo przeciąć wpół, ale w ciasnym miejscu jest prawie bezużyteczna: walka nią jest tam trudniejsza o dwa poziomy.
+- **Ciężki zamach oburącz** (siekiera, topór strażacki, młot dwuręczny, kilof, pałka, kij baseballowy). Potrzebuje miejsca na zamach. W zwarciu i w ciasnym miejscu utrudnia walkę o poziom. Siekiera, topór, kilof i młot zadają od rany do zmasakrowania, typowo ciężką ranę, więc trafienie w głowę prawie zawsze niszczy mózg. Pałka i kij zadają od lekkiej do ciężkiej rany, typowo ranę. Kij baseballowy to w Polsce w 1990 roku rzadkość, ale pałek i trzonków nie brakuje.
+- **Jednoręczne rąbanie** (maczeta, toporek, tasak, saperka, sierp). Działa na dystansie broni i w zwarciu bez kar, a druga ręka zostaje wolna na latarkę, odpychanie albo trzymanie drzwi. Rany od lekkiej do ciężkiej rany, typowo rana. Sierp zahacza zamiast rąbać: od draśnięcia do rany, typowo lekka rana, ale wbity w skroń albo oko niszczy mózg jak pchnięcie.
+- **Lekkie uderzenie jedną ręką** (młotek, rurka metalowa, łom, kastet). Młotek, rurka i łom zadają od draśnięcia do ciężkiej rany, typowo lekką ranę: zwykle trzeba kilku ciosów albo bardzo dobrego trafienia, żeby rozbić czaszkę. Łom przyda się też do drzwi i skrzyń. Kastet zadaje od draśnięcia do rany, typowo draśnięcie, i wymaga zwarcia jak walka bez broni, ale utrudnia ją tylko o jeden poziom.
+- **Krótkie pchnięcie z bliska** (duży nóż, krótki nóż, scyzoryk, szpikulec, śrubokręt, duży gwóźdź). Utrudnia walkę o poziom, bo wymaga zwarcia. Duży nóż zadaje od draśnięcia do rany, typowo lekką ranę, a reszta od draśnięcia do lekkiej rany, typowo draśnięcie. Pchnięcie w oko, skroń albo pod żuchwę niszczy mózg niezależnie od stopnia rany. Krótkie ostrze łatwo utyka w czaszce: na średnich wynikach MG może wpisać, że broń została w głowie padłego sztywnego, a wyciągnięcie jej zajmuje rundę.
+
+### Oczy
+
+Atak w oczy jest tak samo trudny jak trafienie w głowę. Oślepia sztywnego, który jeszcze widzi, czyli świeżaka, wzdętego i gnilca. Oślepiony kieruje się już tylko słuchem: walka z nim jest łatwiejsza o poziom, a postać, która stanie cicho, może go zgubić. Oślepić można też bez broni, palcami albo kluczami, ale tylko z bliska. Broń do pchnięcia wbita głęboko w oko niszczy mózg.
+
+### Bez broni
+
+Pięść i kopniak nic sztywnemu nie robią: najwyżej go odpychają albo przewracają. Jedyny sposób, żeby zabić go gołymi rękami, to chwycić go za głowę i rozbić ją o coś twardego, np. o krawężnik, stopień schodów, barierkę, kant muru albo kaloryfer. To najniebezpieczniejsza forma walki:
+
+- wymaga zwarcia i twardej krawędzi w zasięgu,
+- jest trudniejsza o dwa poziomy,
+- trafienie rozbija głowę (rana w głowę) i niszczy mózg.
+
+Bez twardej krawędzi w zasięgu postać bez broni może sztywnego tylko odpychać, przewracać, trzymać drzwi albo uciekać.
+
+Przeciw żywym ludziom pięść i kopniak zadają od draśnięcia do lekkiej rany, typowo draśnięcie.
+
+### Broń palna
+
+Strzał w ciało przewraca sztywnego albo go okalecza, ale go nie zabija. Strzał w głowę jest trudniejszy o poziom jak każde trafienie w głowę, a do tego dochodzi odległość (zob. *Walka na dystans* w `Rules/Combat.md`). Kula w głowę niszczy mózg.
+
 - **pistolet P-64 albo P-83:** od lekkiej rany do ciężkiej rany, typowo rana; magazynek P-64 mieści 6 naboi, P-83 mieści 8,
 - **kałasznikow:** od rany do ciosu śmiertelnego, typowo ciężka rana; magazynek mieści 30 naboi,
 - **dubeltówka ze śrutem:** z bliska od rany do zmasakrowania, typowo ciężka rana, z daleka o stopień słabiej; 2 naboje bez przeładowania,
