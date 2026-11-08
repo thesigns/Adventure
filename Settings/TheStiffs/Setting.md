@@ -188,6 +188,47 @@ Miejsce zapalne zostaje groźne także później: sztywni, którzy tam wstali al
 
 **Nieświadomi hałasujący.** Zwierzęta, małe dzieci, ranni w gorączce, pijani i ludzie w panice nie wiedzą, że trzeba być cicho, albo nie potrafią. Są źródłem hałasu, którego postać nie kontroluje. Uciszenie ich to działanie z tablicą rezultatów. MG regularnie wprowadza ich do gry, bo to oni najczęściej ściągają sztywnych.
 
+## Poruszanie się po mieście
+
+### Spotkania
+
+Gdy postać przechodzi przez nowe miejsce, np. ulicę, podwórko, klatkę schodową, piwnicę albo sklep, albo idzie dłużej ulicami (orientacyjnie co kwadrans marszu), MG rozstrzyga, co tam spotka. To zdarzenie losowe, więc MG rzuca od razu, bez PDT, i pokazuje tablicę z wynikiem. Nie rzuca w każdym pokoju mieszkania, tylko gdy postać wchodzi w nowe, nieznane otoczenie.
+
+Tablica zależy od tego, ile czasu minęło od pierwszej nocy:
+
+| Rezultat                                                    | Pierwsze 24 h | Pierwszy tydzień | Pierwszy miesiąc | Później |
+|-------------------------------------------------------------|---------------|------------------|------------------|---------|
+| kilku sztywnych w pobliżu, już zauważyli postać             | 3             | 3–4              | 3–5              | 3–4     |
+| sztywny albo kilku w pobliżu, jeszcze nie zauważyli postaci | 4–6           | 5–8              | 6–9              | 5–9     |
+| żywi: sąsiedzi, ocaleli, milicja, szabrownicy               | 7–10          | 9–10             | 10               | 10      |
+| ślady: ciało, krew, wyważone drzwi, odgłosy w oddali        | 11–13         | 11–13            | 11–13            | 11–14   |
+| spokój                                                      | 14–18         | 14–18            | 14–18            | 15–18   |
+
+- **Etap sztywnych** wynika z daty i miejsca (zob. *Od świeżaka do padłego* w `Stiffs.md`): w pierwszym tygodniu to głównie świeżaki i wzdęci, potem gnilce, a później coraz więcej próchniaków.
+- **Miejsca zapalne** korzystają z kolumny późniejszego okresu, tak jak przy hałasie (zob. *Miejsca zapalne*). W gęsto zaludnionym miejscu MG przesuwa progi o poziom na niekorzyść postaci, a w pustym na korzyść.
+- **Ostrożny marsz.** Postać, która idzie powoli, zatrzymuje się, nasłuchuje i wygląda zza rogów, traktuje wynik „już zauważyli” jak „jeszcze nie zauważyli”, ale przejście zajmuje jej dwa razy więcej czasu.
+
+### Skradanie
+
+Przemknięcie obok sztywnych, którzy jeszcze nie zauważyli postaci, to działanie postaci gracza, więc MG najpierw pokazuje tablicę (zob. *Decyzja gracza* w `Rules/StandardThrow.md`). Trudność zależy od tego, jak dobrze widzą i słyszą sztywni w pobliżu (zob. *Zmysły i zachowanie* w `Stiffs.md`). Liczy się najbardziej spostrzegawczy z nich:
+
+- **obok świeżaka** trudne,
+- **obok wzdętego** przeciętne,
+- **obok gnilca** łatwe,
+- **obok próchniaka** trywialne, chyba że postać hałasuje,
+- **obok ochłapa** trywialne, jeśli postać go widzi.
+
+Okoliczności zmieniają trudność jak zwykle (zob. *Okoliczności* w `Rules/StandardThrow.md`):
+
+- ciemność ułatwia skradanie o poziom przeciw sztywnym, którzy jeszcze widzą, ale latarka albo świeca w ręku je utrudnia,
+- każdy dodatkowy sztywny utrudnia o poziom,
+- ciężki ładunek, rany, dziecko na rękach albo zwierzę utrudniają o poziom,
+- grube ściany, deszcz, wiatr i hałas miasta ułatwiają o poziom.
+
+Typowa tablica: na niskich wynikach sztywni zauważają postać i ruszają na nią, na średnich coś słyszą i odwracają się albo idą sprawdzić, a na wysokich postać przechodzi niezauważona.
+
+**Żywy czy martwy.** W półmroku i po zmroku świeżaka łatwo wziąć za żywego człowieka, i odwrotnie (zob. *Od świeżaka do padłego* w `Stiffs.md`). Gdy postać widzi kogoś z daleka albo w złym świetle, MG może rozstrzygnąć rzutem, czy rozpozna, kim jest: przy zmierzchu przeciętne, w ciemności trudne.
+
 ## Broń
 
 Rany podane przy każdej broni to rany od pełnego trafienia w człowieka bez pancerza (zob. *Rany w walce* w `Rules/Combat.md`). Przeciw sztywnym liczy się przede wszystkim to, czy broń pozwala trzymać sztywnego na dystansie i czy może zniszczyć mózg (zob. *Sztywni nie czują ran*).
@@ -238,12 +279,35 @@ Przeciw żywym ludziom pięść i kopniak zadają od draśnięcia do lekkiej ran
 
 Strzał w ciało przewraca sztywnego albo go okalecza, ale go nie zabija. Strzał w głowę jest trudniejszy o poziom jak każde trafienie w głowę, a do tego dochodzi odległość (zob. *Walka na dystans* w `Rules/Combat.md`). Kula w głowę niszczy mózg.
 
-- **pistolet P-64 albo P-83:** od lekkiej rany do ciężkiej rany, typowo rana; magazynek P-64 mieści 6 naboi, P-83 mieści 8,
-- **kałasznikow:** od rany do ciosu śmiertelnego, typowo ciężka rana; magazynek mieści 30 naboi,
-- **dubeltówka ze śrutem:** z bliska od rany do zmasakrowania, typowo ciężka rana, z daleka o stopień słabiej; 2 naboje bez przeładowania,
-- **sztucer:** od rany do ciosu śmiertelnego, typowo ciężka rana.
+| Broń                 | Rany                                                                              | Zasięg    | Bez przeładowania |
+|----------------------|-----------------------------------------------------------------------------------|-----------|-------------------|
+| pistolet P-64        | od lekkiej do ciężkiej rany, typowo rana                                          | ok. 25 m  | 6 naboi           |
+| pistolet P-83        | od lekkiej do ciężkiej rany, typowo rana                                          | ok. 25 m  | 8 naboi           |
+| kałasznikow          | od rany do ciosu śmiertelnego, typowo ciężka rana                                 | ok. 300 m | 30 naboi          |
+| dubeltówka ze śrutem | z bliska od rany do zmasakrowania, typowo ciężka rana; z daleka o stopień słabiej | ok. 35 m  | 2 naboje          |
+| sztucer              | od rany do ciosu śmiertelnego, typowo ciężka rana                                 | ok. 300 m | 3–5 naboi         |
 
-Każda runda, w której postać strzela, zużywa jeden nabój albo, przy ogniu ciągłym z kałasznikowa, kilka (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`). Każdy strzał to bardzo głośna czynność (zob. *Hałas*).
+- **Odległość.** Strzał na odległość większą niż połowa zasięgu jest trudniejszy o poziom. Poza zasięgiem strzał się nie udaje.
+- **Przeładowanie.** Zmiana magazynka, ładowanie dubeltówki albo sztucera zajmuje rundę. Gdy sztywny jest blisko, ta runda może go dopuścić do zwarcia.
+- **W zwarciu** broń palna utrudnia walkę o poziom (zob. *Walka na dystans* w `Rules/Combat.md`), a strzał w głowę sztywnego, który trzyma postać, grozi trafieniem jej samej.
+- **Amunicja.** Każda runda, w której postać strzela, zużywa jeden nabój (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`).
+- **Ogień ciągły** z kałasznikowa zużywa 10 naboi na rundę. Przeciw grupie sztywnych ułatwia walkę o poziom, a na najwyższych wynikach powala dwóch albo trzech. Nie ułatwia trafienia w głowę pojedynczego sztywnego, bo broń podskakuje.
+- **Zacięcie.** Zaniedbana albo stara broń może się zaciąć: MG może wpisać zacięcie na wyniku 3. Usunięcie zacięcia zajmuje rundę.
+- **Hałas.** Każdy strzał to bardzo głośna czynność (zob. *Hałas*).
+
+**Sztywny w hełmie.** Milicjant w kasku albo żołnierz w hełmie, który wstał, ma osłoniętą czaszkę. Trafienie w jego głowę jest trudniejsze o dodatkowy poziom, bo trzeba trafić w twarz albo w oko. Kamizelka kuloodporna na sztywnym nic nie zmienia, bo rany ciała i tak go nie zabijają.
+
+## Ogień
+
+**Płonący sztywny** się nie zatrzymuje (zob. *Ogień* w `Stiffs.md`). Idzie dalej przez kilka minut, aż ogień dosięgnie mózgu, i podpala wszystko, czego dotknie: ubranie, firanki, meble, ludzi. Walka w zwarciu z płonącym sztywnym grozi poparzeniem: na niskich wynikach tablicy MG wpisuje oprócz ugryzienia oparzenie (lekką ranę) albo zapalone ubranie. Płonący sztywny, który jeszcze widzi, oślepia się w ciągu pierwszej minuty.
+
+**Butelka z benzyną.** Szklana butelka z benzyną i płonącą szmatą to broń miotana o zasięgu kilkunastu metrów. Trafienie podpala sztywnego, a w ciasnej grupie także jego sąsiadów. Chybienie podpala to, co jest obok. Na wyniku 3 butelka pęka albo zapala się w ręku: postać się oparza (od lekkiej rany do ciężkiej rany) i płonie. Tłuczone szkło to głośna czynność, a ogień w nocy widać z daleka.
+
+**Oparzenia.** Ogień rani żywych od draśnięcia do ciężkiej rany, zależnie od tego, jak długo i jak mocno postać się pali. Gaszenie płonącej postaci, np. kocem albo tarzaniem się po ziemi, zajmuje rundę.
+
+**Pożar.** W bloku z wielkiej płyty ogień rozchodzi się po mieszkaniach przez meble, wykładziny i firanki, a klatka schodowa działa jak komin. Dym jest groźniejszy od płomieni: w zadymionym miejscu wszystkie działania są trudniejsze o poziom, a po kilku minutach postać traci przytomność. Co kilka minut MG rozstrzyga rzutem, czy pożar się rozszerza. Po pierwszym dniu straż pożarna już nie przyjeżdża.
+
+**Palenie ciał.** Spalenie ciała do końca trwa godzinami i wymaga dużo opału albo benzyny. Ciało, któremu ogień nie zniszczył mózgu, wstaje mimo poparzeń. Dym i smród stosu widać i czuć z daleka, więc stos ściąga żywych, a w nocy blask ognia ściąga sztywnych, którzy jeszcze widzą.
 
 ## Pancerz
 
@@ -296,6 +360,19 @@ Po pierwszej nocy złoty szybko traci wartość, bo nie ma co za niego kupić. D
 - **Latarka** na płaską baterię 4,5 V świeci około 4 godzin, potem trzeba wymienić baterię. **Świeca** pali się kilka godzin, **lampa naftowa** całą noc na jednym napełnieniu.
 - Światło w nocy przyciąga sztywnych, którzy jeszcze widzą (zob. *Zmysły i zachowanie* w `Stiffs.md`).
 - **Prąd, woda i gaz** w pierwszych dniach działają z przerwami, a potem przestają. **Telefony** działają, ale linie pogotowia i milicji są zajęte. Kiedy i gdzie co przestaje działać, MG rozstrzyga rzutem jako okoliczność świata, chyba że ustala to scenariusz.
+
+## Pojazdy
+
+Jazda samochodem w zwykłych warunkach nie wymaga rzutu (zob. *Wierzchowce i pojazdy* w `Rules/Equipment.md`), ale w tym settingu prawie nigdy nie ma zwykłych warunków.
+
+- **Hałas.** Silnik, klakson i pisk opon to bardzo głośne czynności (zob. *Hałas*). Jadący samochód ciągnie za sobą sztywnych, którzy go słyszą i widzą.
+- **Ulice.** Pierwszej nocy ulice są puste i przejezdne. Od rana pierwszego dnia robią się korki, wypadki i porzucone samochody, zwłaszcza przy mostach, szpitalach i wylotówkach. Po pierwszym tygodniu wiele ulic jest zablokowanych wrakami, a przejazd wymaga objazdów, przepychania aut albo jazdy chodnikiem.
+- **Potrącenie.** Samochód przewraca i okalecza sztywnego, ale go nie zabija, chyba że przejedzie mu po głowie. Każde potrącenie może uszkodzić samochód: MG wpisuje to w tablicę. Maluch jest pod tym względem dużo delikatniejszy od wołgi albo ciężarówki.
+- **Grupa i pochód.** Przez pojedynczych sztywnych samochód się przebije. Przebicie się przez kilku jest trudne, a przez pochód niemożliwe: auto staje.
+- **Zatrzymany samochód.** Sztywni otaczają auto, walą w szyby i w końcu je wybijają, co jest głośne. Świeżak otwiera niezablokowane drzwi klamką. Samochód jest schronieniem tylko na chwilę.
+- **Benzyna.** MG liczy ją jak przedmiot zużywalny, np. w kanistrach i bakach. Pełny bak starcza na kilka dni jazdy po mieście. Stacje CPN pierwszego dnia oblegają kolejki, a potem są puste albo zamknięte. Benzynę da się spuścić wężem z baku porzuconego samochodu.
+- **Jazda nocą** bez świateł jest trudna, a ze światłami widoczna z daleka.
+- **Tramwaje i trolejbusy** stają, gdy zabraknie prądu. Pierwszej nocy i pierwszego dnia jeszcze jeżdżą, a ich wagony mogą stać się pułapką albo schronieniem.
 
 ## Czas
 
