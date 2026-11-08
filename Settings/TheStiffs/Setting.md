@@ -355,6 +355,53 @@ Walutą jest złoty, a ceny idą w tysiące (zob. *Pieniądze* w `Poland.md`). O
 
 Po pierwszej nocy złoty szybko traci wartość, bo nie ma co za niego kupić. Dolary trzymają wartość dłużej. Potem liczy się wymiana: wódka, papierosy, konserwy, leki, amunicja, benzyna i baterie. Czy dany towar da się zdobyć w danym miejscu, MG rozstrzyga rzutem (zob. *Zdobywanie i utrata ekwipunku* w `Rules/Equipment.md`).
 
+## Szabrowanie
+
+Po pierwszej nocy zapasy zdobywa się głównie przeszukując opuszczone miejsca. Ludzie mówią na to szaber, jak po wojnie.
+
+### Przeszukanie
+
+- **Czas.** Przeszukanie mieszkania albo piwnicy zajmuje około kwadransa, a sklepu, apteki albo posterunku około pół godziny. Dokładne przeszukanie trwa dwa razy dłużej.
+- **Ryzyko.** Wejście do nowego miejsca to rzut na spotkania (zob. *Spotkania*). Wyważanie drzwi i tłuczenie szyb to głośne czynności (zob. *Hałas*). Zamknięte mieszkanie mogło być zamknięte od środka: ktoś tam mógł umrzeć i wstać. Żywi bronią swoich zapasów, a w pierwszych dniach milicja może strzelać do szabrowników.
+- **Co postać znajduje,** MG rozstrzyga rzutem jako okoliczność świata: rzuca od razu, bez PDT, i pokazuje tablicę z wynikiem. Konkretne rzeczy wybiera z listy dla danego miejsca (zob. *Co gdzie leży*).
+
+| Wynik | Rezultat                                                                      |
+|-------|-------------------------------------------------------------------------------|
+| 3–5   | nic przydatnego, ktoś był tu pierwszy                                         |
+| 6–9   | drobiazg: jedna rzecz z listy w małej ilości, np. porcja jedzenia albo świeca |
+| 10–14 | coś przydatnego: kilka rzeczy z listy, np. jedzenie na dwa dni i bateria      |
+| 15–17 | dobry łup: zapasy na kilka dni albo jedna cenna rzecz                         |
+| 18    | coś rzadkiego w tym miejscu, np. broń, antybiotyk albo zwitek dolarów         |
+
+Progi przesuwają się zależnie od okresu i miejsca:
+
+- **pierwszy tydzień:** półki są jeszcze pełne, więc progi przesuwają się o poziom na korzyść postaci, ale w pierwszych dniach w sklepach i aptekach wciąż są ludzie,
+- **pierwszy miesiąc:** bez zmian,
+- **później:** o poziom na niekorzyść, a w miejscach oczywistych, takich jak sklepy przy głównych ulicach, apteki i stacje benzynowe, o dwa,
+- **miejsce ukryte albo trudno dostępne,** np. zamknięte mieszkanie na wysokim piętrze, komórka w piwnicy, magazyn na zapleczu albo działka za miastem: o poziom na korzyść,
+- **dokładne przeszukanie:** o poziom na korzyść.
+
+Raz przeszukanego miejsca nie przeszukuje się drugi raz tym samym sposobem (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`). MG zapisuje przeszukane miejsca w postępie scenariusza.
+
+### Co gdzie leży
+
+- **mieszkanie:** słoiki z przetworami, kasza, mąka, cukier, konserwy, herbata; woda w wannie i czajniku; świece, zapałki, latarka, baterie; domowa apteczka (polopiryna, krople żołądkowe, jodyna, bandaż, czasem leki na serce albo insulina); wódka, bimber, papierosy; ubrania, koce, buty; narzędzia; pieniądze i dolary schowane w bieliźniarce albo w książkach; u myśliwego strzelba w szafie
+- **piwnica i komórka lokatorska:** przetwory, ziemniaki, kapusta, węgiel, narzędzia, rower, kanister, stare meble, czasem nafta i lampa naftowa
+- **sklep spożywczy:** chleb (czerstwieje po kilku dniach i pleśnieje), konserwy, kasza, makaron, cukier, sól, wódka, papierosy, zapałki; mięso i nabiał psują się po kilku dniach bez prądu
+- **kiosk Ruchu:** papierosy, zapałki, gazety, bilety, czasem baterie i słodycze
+- **sklep żelazny i z artykułami gospodarstwa domowego:** narzędzia, łomy, siekiery, lampy naftowe, nafta, świece, baterie, liny, wiadra
+- **apteka:** leki przeciwbólowe, opatrunki, środki odkażające, witaminy, leki nasercowe; antybiotyki i leki silniejsze rzadko, na zapleczu
+- **przychodnia i szpital:** leki, opatrunki, sprzęt medyczny, nosze, czasem morfina w zamkniętej szafce; szpital to miejsce zapalne (zob. *Miejsca zapalne*)
+- **posterunek albo komenda milicji:** pistolety P-64 i amunicja w zamkniętej szafie albo zbrojowni, pałki, kajdanki, kamizelki, kaski, radiostacje, latarki, mundury; w pierwszych dniach są tam milicjanci
+- **stacja CPN:** benzyna w zbiornikach (pompy nie działają bez prądu, więc trzeba ją wypompować ręcznie), olej, kanistry, mapy
+- **działka i altanka:** narzędzia, przetwory, nasiona, beczka z deszczówką, kozy i opał, a także schronienie z dala od bloków
+- **Pewex:** zachodni alkohol, papierosy, czekolada, kawa, elektronika; prawie bezużyteczne do przetrwania, ale cenne na wymianę
+- **bazar i Jarmark Europa:** wszystkiego po trochu, także broń u tych, którzy wiedzą, gdzie szukać; zwykle ktoś już tego pilnuje
+
+### Jedzenie i woda
+
+Postać zjada jedną porcję jedzenia na dobę (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`). Potrzebuje też porcji czystej wody na dobę, czyli około dwóch litrów, a doba bez wody utrudnia wszystkie działania o poziom, tak jak doba bez jedzenia (zob. *Zmęczenie, głód i światło* w `Rules/Rules.md`). MG liczy porcje jedzenia i wody na karcie postaci. Trwałe jedzenie, czyli konserwy, kasza, mąka, cukier i przetwory, wystarcza na miesiące, a chleb, mięso i nabiał tylko na kilka dni.
+
 ## Światło, prąd i woda
 
 - **Latarka** na płaską baterię 4,5 V świeci około 4 godzin, potem trzeba wymienić baterię. **Świeca** pali się kilka godzin, **lampa naftowa** całą noc na jednym napełnieniu.
