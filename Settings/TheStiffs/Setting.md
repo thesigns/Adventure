@@ -464,6 +464,79 @@ Reakcję obcych, gdy nie wynika z sytuacji, MG rozstrzyga rzutem (zob. *Kiedy rz
 
 W pierwszej dobie ludzie wciąż sobie pomagają, więc progi przesuwają się o dwa poziomy na korzyść postaci, a w pierwszym tygodniu o jeden. Później przesuwają się o poziom na niekorzyść. Broń w ręku postaci, ugryzienie albo gorączka czynią obcych mniej przychylnymi.
 
+## Miejsca w Warszawie
+
+Miejsca, które dobrze nadają się na scenariusze. Miejsca zapalne (zob. *Miejsca zapalne*) są oznaczone. Szczegóły, których tu nie ma, np. układ pięter czy liczbę łóżek w 1990 roku, ustala scenariusz.
+
+### Szpital Czerniakowski
+
+Szpital przy ulicy Stępińskiej 19/25 na Dolnym Mokotowie, w Sielcach, pod skarpą, między Łazienkami a Wisłą. Założony w 1956 roku, przyjmuje chorych od 1958 roku. To szpital ogólny dla południowej Warszawy: dla Dolnego Mokotowa, Sielc, Czerniakowa, Siekierek, Wilanowa i wielkiego osiedla na Ursynowie. Ma izbę przyjęć, do której całą noc z 21 na 22 marca zjeżdżają karetki, chirurgię z urazówką, internę, neurologię, laryngologię i okulistykę, a także kostnicę w podziemiach.
+
+To miejsce zapalne. Pierwszej nocy w szpitalu leżą ludzie, którzy umierają na internie i neurologii, na dole czeka kostnica, a karetki i taksówki przywożą pogryzionych z całego Mokotowa. Personel nie wie, co się dzieje, i ratuje „chorych”, którzy rzucają się na lekarzy.
+
+W okolicy:
+
+- na południu Siekierki z kominami elektrociepłowni,
+- na zachodzie skarpa, Łazienki i Belweder, a przy Belwederskiej ambasada ZSRR,
+- na wschodzie ulica Czerniakowska i nadwiślańskie łąki.
+
+### Inne szpitale (miejsca zapalne)
+
+- **Centralny Szpital Kliniczny** przy Banacha na Ochocie: wielki szpital akademicki, przyjmuje chorych od 1975 roku.
+- **Szpital Bródnowski** przy Kondratowicza na Targówku: szpital wojewódzki otwarty w 1981 roku, obsługuje wielkie osiedle Bródno.
+- **Szpital Bielański** przy Cegłowskiej na Bielanach.
+- **Szpital Praski** na Pradze, przy alei, która dziś nazywa się Aleją Solidarności.
+- **Szpital Wolski** przy Kasprzaka na Woli.
+- **Szpital Dzieciątka Jezus** przy Lindleya, szpital kliniczny w centrum miasta.
+- **Szpital MSW** przy Wołoskiej na Mokotowie: szpital resortowy milicji i bezpieki, z własną ochroną.
+- **Szpital wojskowy** przy Szaserów na Pradze: lekarze w mundurach, a w pobliżu jednostki wojska.
+
+### Cmentarze
+
+- **Cmentarz Północny** na Wólce Węglowej, na skraju Bielan i Puszczy Kampinoskiej. Otwarty w 1973 roku, ma około 143 hektarów i to na nim w 1990 roku chowa się większość warszawiaków. Najgorszy cmentarz w mieście: miejsce zapalne.
+- **Cmentarz Bródnowski** na Targówku, otwarty w 1884 roku, około 113 hektarów, wciąż czynny. Między starymi grobami są świeże pochówki z minionej zimy.
+- **Powązki** i **Powązki Wojskowe** na Woli i Żoliborzu: stare cmentarze, prawie spokojne, poza pojedynczymi rozerwanymi grobami w rodzinnych kwaterach (zob. *Pierwsza noc w Warszawie* w `Stiffs.md`).
+
+### Władza i mundury
+
+- **Komenda Stołeczna MO** w Pałacu Mostowskich przy Nowolipkach w Śródmieściu. W pierwszym tygodniu może się zamienić w twierdzę albo w pułapkę.
+- **Ministerstwo Spraw Wewnętrznych** przy Rakowieckiej na Mokotowie, tuż obok aresztu (zob. *Więzienia i areszty*). W gmachu bezpieka od miesięcy pali akta (zob. *Milicja i bezpieka* w `Poland.md`).
+- **Komisariaty dzielnicowe** z zamkniętymi szafami na broń (zob. *Co gdzie leży*) i izbami zatrzymań, w których siedzą pijani i zatrzymani z nocy.
+
+### Więzienia i areszty
+
+Więzienia są w marcu 1990 roku napięte. Jesienią 1989 roku przez polskie zakłady karne przeszła fala protestów i buntów, a w Goleniowie i Czarnem płonęły pawilony. Amnestia z grudnia 1989 roku wypuściła kilkanaście tysięcy osób, ale nie objęła recydywistów. W celach zostali więc głównie recydywiści i aresztowani czekający na wyrok, a strażnicy są zmęczeni, źle opłacani i niepewni jutra.
+
+W Warszawie są m.in.:
+
+- **Areszt Śledczy Warszawa-Mokotów** przy Rakowieckiej, zbudowany w latach 1902–1904, w PRL miejsce kaźni więźniów politycznych, m.in. rotmistrza Pileckiego i generała Fieldorfa „Nila”,
+- **areszt na Białołęce**, w stanie wojennym ośrodek internowania,
+- **areszty na Grochowie i na Służewcu**,
+- **izby zatrzymań** w komendach i komisariatach milicji.
+
+Co się w nich dzieje:
+
+- **Pierwsza noc.** Cele są zamknięte. Ktoś umiera, bo był chory, pobity albo się powiesił, i wstaje w zamkniętej celi wśród współwięźniów. Krzyki i bijatyki strażnicy biorą za początek buntu. Więźniowie, w przeciwieństwie do większości ludzi, umieją się bić.
+- **Pierwszy tydzień.** Strażnicy uciekają do rodzin albo barykadują się w dyżurkach. Tam, gdzie nikt nie otworzył cel, więźniowie zostają w nich zamknięci: bez jedzenia i wody, a ci, którzy umrą, wstają między żywymi. Tam, gdzie wybuchł bunt, więźniowie wychodzą przez otwarte bramy, czasem z bronią strażników, i stają się jedną z najgroźniejszych band w mieście (zob. *Żywi*).
+- **Później.** Więzienie to albo twierdza z murami, kratami i bramą, którą bandy chętnie zajmują, albo zamknięty grobowiec, w którym za stalowymi drzwiami cel czekają sztywni. Klucze do cel to skarb i przekleństwo zarazem.
+
+Wejście do więzienia działa jak wejście do miejsca zapalnego (zob. *Miejsca zapalne*): MG korzysta z tablicy dla późniejszego okresu, niż wynika z kalendarza. Za każdymi zamkniętymi drzwiami celi może być żywy, który błaga o wypuszczenie, sztywny albo jedno i drugie.
+
+### Infrastruktura
+
+- **Elektrociepłownie Siekierki** (od 1961 roku) i **Żerań** grzeją i oświetlają miasto. Gdy staną, w blokach nie ma prądu ani ciepłej wody.
+- **Stacja Filtrów** przy Koszykowej i Filtrowej na Ochocie, od XIX wieku czyści wodę dla miasta. Gdy przestanie działać, z kranów przestaje lecieć czysta woda.
+- **Dworzec Centralny** (od 1975 roku) i **Dworzec Wschodni** na Pradze: pierwszej nocy pełne podróżnych, bezdomnych i pijanych, potem pułapki pełne sztywnych.
+- **Mosty** na Wiśle: jest ich tylko sześć drogowych (zob. *Warszawa* w `Poland.md`). Szybko się korkują, a kto je kontroluje, ten dzieli miasto na pół.
+
+### Miejsca wymiany i schronienia
+
+- **Stadion Dziesięciolecia** z Jarmarkiem Europa na Pradze: największy bazar w mieście, z bronią dla tych, którzy wiedzą, gdzie szukać.
+- **Pałac Kultury i Nauki**: najwyższy budynek w Polsce, widać go z całego miasta, a z jego tarasu widać całe miasto.
+- **Osiedla z wielkiej płyty**, np. Ursynów, Bródno, Gocław, Służew nad Dolinką: tu mieszka większość postaci. Długie klatki schodowe, windy, piwnice, zsypy i dachy.
+- **Ogródki działkowe** na skraju miasta i wzdłuż Wisły: altanki, przetwory, studnie i schronienie z dala od bloków.
+- **Puszcza Kampinoska** na północnym zachodzie: las, bagna i wydmy, a na jej skraju Cmentarz Północny.
+
 ## Czas
 
 MG śledzi datę i porę dnia od pierwszej nocy (zob. *Noc z 21 na 22 marca 1990* w `Poland.md`). 21 marca 1990 roku to środa. W Warszawie wschód słońca wypada około 5:40, a zachód około 17:55. W niedzielę 25 marca o 2:00 zmienia się czas na letni, więc od tej pory słońce wschodzi i zachodzi o godzinę później według zegara.
