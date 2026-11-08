@@ -25,7 +25,7 @@ Uniwersalny system jednoosobowej gry fabularnej. Agent jest Mistrzem Gry, a uży
 
 ## Settingi
 
-Każdy setting leży w osobnym folderze `Settings/<Nazwa settingu>/`, a jego głównym plikiem jest zawsze `Setting.md`. Folder może zawierać też inne pliki settingu, np. lore, geografię, bogów oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*). Na razie gra nie ma żadnych settingów.
+Każdy setting leży w osobnym folderze `Settings/<Nazwa settingu>/`, a jego głównym plikiem jest zawsze `Setting.md`. Folder może zawierać też inne pliki settingu, np. lore, geografię, bogów oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*).
 
 ## Scenariusze
 

@@ -1,0 +1,223 @@
+# Sztywni
+
+Polska, Warszawa, wiosna 1990 roku. W nocy z 21 na 22 marca, w pierwszy dzień wiosny, kiedy dzieci utopiły w rzekach Marzannę, zmarli na całym świecie wstali. Polacy nazywają ich sztywnymi. Setting to realistyczny horror przetrwania w kraju w pół drogi między PRL a wolną Polską, w którym nikt nie wie, co się dzieje, i nikt nie przyjdzie z pomocą.
+
+## Pliki settingu
+
+- `Setting.md`: przegląd, konwencja i zasady settingu przełożone na mechanikę systemu (ten plik)
+- `Poland.md`: realia Polski i Warszawy w marcu 1990 roku: polityka, milicja, pieniądze, codzienność, Kościół, miasto, pogoda
+- `Stiffs.md`: sztywni: stałe zasady, etapy rozkładu, zmysły i zachowanie, co wiedzą ludzie w kolejnych dniach, plotki i rady dla MG
+
+`Stiffs.md` opisuje sztywnych fabularnie, a ten plik podaje, jak ich rozgrywać mechaniką systemu. Gdy oba pliki mówią o tym samym, fabułę rozstrzyga `Stiffs.md`, a liczby ten plik.
+
+## Konwencja
+
+- **Horror przetrwania, realistyczny.** Postacie to zwykli ludzie z 1990 roku: robotnicy, studenci, milicjanci, pielęgniarki. Nie ma magii ani mocy nadprzyrodzonych. Jedyną rzeczą nadprzyrodzoną są sami sztywni, a przyczyny ich powstania nikt nie zna i nikt jej nie pozna. Modlitwa daje otuchę, ale nie działa jak w świecie z magią.
+- **Śmierć jest ostateczna.** System nie chroni postaci przed śmiercią, a w tym settingu postać, która umrze, wstaje jako sztywny (zob. *Powstawanie zmarłych*). To koniec postaci.
+- **Groza z niewiedzy.** Postacie i postacie MG wiedzą tyle, ile mogły zobaczyć i usłyszeć do danej chwili (zob. *Co wiedzą ludzie* w `Stiffs.md`). Pierwszej nocy nikt nie mówi „zombie”.
+- **Zasoby się liczą.** Amunicja, światło, jedzenie, czysta woda, leki i opał to przedmioty zużywalne, które MG liczy na karcie postaci.
+- **Każdy sztywny był człowiekiem.** Sąsiad, motorniczy, dziewczynka w fartuszku. Także bliscy postaci.
+
+## Postacie
+
+Każda postać jest człowiekiem. Punktem odniesienia jest przeciętny Polak z 1990 roku w wieku i profesji postaci (zob. `Rules/CharacterCreation.md`). Prawie każdy dorosły mężczyzna odsłużył dwa lata zasadniczej służby wojskowej i umie strzelać z kałasznikowa: to jest typowe, a nie zaleta. Broń palna u kogoś spoza milicji, wojska i koła łowieckiego jest zaletą.
+
+Przykładowe profesje i ich typowy ekwipunek:
+
+- **milicjant:** zatrzymywanie, przesłuchanie, strzelanie z pistoletu; mundur, pałka, kajdanki, latarka, na służbie pistolet P-64 z zapasowym magazynkiem
+- **żołnierz zasadniczej służby:** broń i musztra; mundur, saperka; kałasznikow tylko na służbie, w jednostce
+- **pielęgniarka, sanitariusz pogotowia, lekarz:** opatrywanie ran, leki, pierwsza pomoc; torba z opatrunkami i lekami, u lekarza więcej leków i wiedzy
+- **robotnik, mechanik:** naprawy, narzędzia, praca fizyczna; skrzynka z narzędziami, łom albo klucze
+- **taksówkarz, kierowca:** znajomość miasta, jazda; samochód (Polonez, Fiat 125p albo wołga), kanister benzyny
+- **student:** wiedza z kierunku studiów; książki, akademik albo pokój u rodziny
+- **handlarz, cinkciarz:** targowanie, kontakty na bazarze, waluty; dolary, towar na sprzedaż
+- **myśliwy:** tropienie, strzelanie, życie w lesie; dubeltówka albo sztucer z nabojami, nóż, gumowce
+- **ksiądz:** rozmowa, autorytet, łacina; sutanna, brewiarz, klucze do kościoła
+
+Każda postać ma też przy sobie to, co nosi się w 1990 roku: dowód osobisty, klucze, papierosy i zapałki (jeśli pali), portfel z kilkudziesięcioma tysiącami złotych, czasem kilka dolarów. Własny samochód z bloku wschodniego jest typowy dla części rodzin i nie jest zaletą, jeśli zgadza się ze statusem postaci. Samochód z Zachodu albo zapas dolarów są zaletami.
+
+Gra zwykle zaczyna się w nocy z 21 na 22 marca 1990 roku, w domu albo w pracy postaci, chyba że scenariusz mówi inaczej.
+
+## Sztywni w walce
+
+### Przeciwnicy
+
+| Kategoria  | Przykłady                                                            |
+|------------|----------------------------------------------------------------------|
+| słaby      | gnilec, próchniak, wyrostek z nożem, pijak z butelką, pies           |
+| przeciętny | świeżak, wzdęty, bandyta z siekierą, milicjant z pałką, wilczur      |
+| silny      | żołnierz z kałasznikowem, myśliwy ze sztucerem, zdesperowany weteran |
+| potężny    | uzbrojona banda w umocnionym miejscu, oddział wojska                 |
+| legendarny | pochód setek sztywnych, transporter opancerzony                      |
+
+Wszyscy ludzie, żywi i sztywni, mają wytrzymałość ludzką (zob. *Wytrzymałość* w `Rules/Health.md`).
+
+Etapy rozkładu i ich długość w różnych porach roku opisuje *Od świeżaka do padłego* w `Stiffs.md`.
+
+| Sztywny   | Kategoria  | Rany, które zadaje                                                      | Uwagi                                                                  |
+|-----------|------------|-------------------------------------------------------------------------|------------------------------------------------------------------------|
+| świeżak   | przeciętny | ugryzienie i drapanie: od draśnięcia do rany, typowo lekka rana         | biega prawie jak człowiek, dobrze widzi i słyszy, otwiera drzwi klamką |
+| wzdęty    | przeciętny | ugryzienie i drapanie: od draśnięcia do rany, typowo lekka rana         | truchta, dobrze widzi i słyszy, nie otwiera drzwi                      |
+| gnilec    | słaby      | ugryzienie i drapanie: od draśnięcia do lekkiej rany, typowo draśnięcie | idzie powoli, słabo widzi, kieruje się słuchem; groźny w grupie        |
+| próchniak | słaby      | ugryzienie i drapanie: od draśnięcia do lekkiej rany, typowo draśnięcie | potyka się i upada, ślepy, słabo słyszy                                |
+| ochłap    | nie walczy | ugryzienie: od draśnięcia do lekkiej rany                               | czołga się albo leży, gryzie to, co jest przy jego szczękach           |
+
+Powolność i potykanie się próchniaka ułatwiają walkę z nim o dodatkowy poziom.
+
+Ochłap nie jest przeciwnikiem w walce, tylko pułapką. Postać, która go zauważy, omija go albo niszczy mu mózg bez rzutu. Rzut jest potrzebny tylko wtedy, gdy postać sięga albo nadeptuje na niego, nie wiedząc o nim, np. po ciemku w piwnicy. MG rzuca wtedy od razu, czy ochłap ją ugryzie.
+
+### Sztywni nie czują ran
+
+Sztywni są nieumarli. Zranienie nie utrudnia im działań, nie uciekają, nie poddają się i nigdy się nie męczą. Ta zasada settingu ma pierwszeństwo przed zasadami podstawowymi.
+
+Sztywny nie ma poziomu zranienia. Liczy się tylko mózg (zob. *Podstawowe zasady* w `Stiffs.md`):
+
+- **Trafienie w ciało** nie zabija sztywnego. MG wpisuje w tablicę jego skutki: sztywny się przewraca, zostaje odepchnięty albo okaleczony. Sztywny z okaleczonymi nogami pełza i łatwo przed nim uciec, a z okaleczonymi rękami słabiej chwyta.
+- **Trafienie w głowę** jest trudniejsze o jeden poziom niż trafienie w ciało. Gdy taktyka postaci to celowanie w głowę, obie wartości w tablicy przesuwają się o 2 (zob. *Trudność walki* w `Rules/Combat.md`), a trafienie oznacza ranę w głowę.
+- **Rana w głowę** o stopniu co najmniej rany, np. od siekiery, łomu albo kuli, niszczy mózg i sztywny pada na zawsze. Lżejsza rana w głowę, np. od pięści albo kija przy słabym trafieniu, tylko go odrzuca i daje chwilę oddechu.
+
+Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6), a celowanie w głowę przesuwa obie wartości o 2. Siekiera zadaje typowo ranę, więc trafienie niszczy mózg.
+
+| Wynik | Rezultat                                                |
+|-------|---------------------------------------------------------|
+| 3     | świeżak gryzie głęboko (rana), walka trwa               |
+| 4–8   | świeżak gryzie albo drapie (lekka rana), walka trwa     |
+| 9–10  | siekiera trafia w bark, świeżak się zatacza, walka trwa |
+| 11–18 | siekiera rozłupuje czaszkę, świeżak pada na zawsze      |
+
+### Chwyt i grupa
+
+- Sztywny, który chwyci postać, trzyma ją. Dopóki się nie wyrwie, walka jest trudniejsza o jeden poziom, a wyrwanie się zajmuje rundę. MG wpisuje chwyt w tablicę jako skutek na niskich wynikach.
+- Każdy dodatkowy sztywny czyni walkę trudniejszą o jeden poziom, jak każdy dodatkowy przeciwnik (zob. *Okoliczności* w `Rules/StandardThrow.md`). Gdy postać walczy z trzema sztywnymi albo więcej, na najniższym wyniku rozszarpują ją: ciężka rana.
+- Pochód sztywnych to przeciwnik legendarny. Walka z nim kończy się śmiercią. Rozsądna postać ucieka, chowa się albo odciąga go hałasem w inną stronę.
+
+### Ucieczka i drzwi
+
+- **Przed świeżakiem** ucieczka na krótkim dystansie, np. do drzwi albo na schody, jest przeciętna. Na dłuższym dystansie świeżaka nie da się prześcignąć, bo nigdy się nie męczy. Trzeba go zgubić, schować się przed nim albo postawić między sobą a nim zamknięte drzwi.
+- **Przed wzdętym** ucieczka na krótkim dystansie jest łatwa, a na dłuższym przeciętna: wzdęty tylko truchta, ale też się nie męczy.
+- **Przed gnilcem** ucieczka jest łatwa, a przed próchniakiem trywialna, chyba że postać jest osaczona. Ochłap nikogo nie goni.
+- **Drzwi:** świeżak otwiera drzwi klamką, ale nie otworzy zamka ani zasuwy. Starsi sztywni nie otwierają drzwi, ale trzech albo więcej wzdętych albo gnilców może je wyważyć. Ile wytrzymają drzwi, MG rozstrzyga rzutem, zależnie od drzwi i liczby sztywnych.
+
+## Powstawanie zmarłych
+
+Każdy człowiek, który umrze, wstaje, jeśli jego mózg przetrwał śmierć (zob. *Podstawowe zasady* w `Stiffs.md`). Jeśli sama śmierć zniszczyła mózg, np. strzał w głowę ze strzelby albo zmiażdżona czaszka, ciało nie wstaje. W przypadkach wątpliwych, np. przy ranie głowy, upadku z dużej wysokości albo w pożarze, MG rozstrzyga rzutem:
+
+| Wynik | Rezultat                           |
+|-------|------------------------------------|
+| 3–10  | mózg przetrwał, ciało wstanie      |
+| 11–18 | mózg zniszczony, ciało nie wstanie |
+
+Kiedy ciało wstanie, MG rozstrzyga rzutem zaraz po śmierci, nigdy z wyboru:
+
+| Wynik | Rezultat              |
+|-------|-----------------------|
+| 3–5   | po około 10 minutach  |
+| 6–8   | po kwadransie         |
+| 9–12  | po pół godzinie       |
+| 13–15 | po trzech kwadransach |
+| 16–18 | po godzinie           |
+
+Wysoki wynik jest korzystny dla postaci gracza, bo daje jej więcej czasu.
+
+**Wyjątek od jawności tablic.** Dopóki postać nie wie, że zmarli wstają, MG wykonuje oba rzuty bez pokazywania tablic i zapisuje wyniki w postępie scenariusza. Tablica zdradziłaby to, czego postać jeszcze nie wie (zob. *Tablica rezultatów* w `Rules/StandardThrow.md`). Gdy postać już wie, MG pokazuje tablice razem z wynikiem.
+
+Ciało, które jeszcze nie wstało, można zabezpieczyć: zniszczyć mózg albo spalić ciało. Jeśli postać ma czas i narzędzie, nie wymaga to rzutu. Jeśli ciało należy do kogoś bliskiego, MG opisuje to tak, żeby gracz poczuł, ile to kosztuje.
+
+**Śmierć postaci gracza.** Postać, która umrze, wstaje jako sztywny według tych samych zasad, chyba że jej mózg został zniszczony. Postać nie kontroluje już swojego ciała, a gracz tworzy nową postać.
+
+## Hałas
+
+Najbardziej przyciąga sztywnych dźwięk (zob. *Zmysły i zachowanie* w `Stiffs.md`). MG ocenia każdą głośną czynność postaci:
+
+- **cicha:** szept, ostrożne kroki, otwieranie drzwi: nikogo nie ściąga,
+- **głośna:** krzyk, płacz, szczekanie psa, tłuczone szkło, wyważanie drzwi, walka wręcz: słychać ją w całym budynku albo na podwórku,
+- **bardzo głośna:** strzał, silnik, klakson, alarm, syrena, wybuch: słychać ją na kilka przecznic i może ruszyć pochód.
+
+Po głośnej albo bardzo głośnej czynności MG rozstrzyga, co przychodzi. To zdarzenie losowe, więc MG rzuca od razu, bez PDT, i pokazuje tablicę z wynikiem. Przykładowa tablica dla bardzo głośnej czynności na osiedlu w nocy:
+
+| Wynik | Rezultat                                      |
+|-------|-----------------------------------------------|
+| 3–5   | w ciągu kilku minut nadciąga pochód sztywnych |
+| 6–9   | przychodzi kilku sztywnych                    |
+| 10–13 | przychodzi jeden albo dwóch sztywnych         |
+| 14–18 | nikt nie przychodzi                           |
+
+Dla głośnej czynności MG przesuwa progi o poziom na korzyść postaci. W gęsto zaludnionym miejscu, np. przy szpitalu albo na Cmentarzu Północnym, przesuwa je o poziom na niekorzyść, a w pustym, np. na działkach, na korzyść.
+
+**Nieświadomi hałasujący.** Zwierzęta, małe dzieci, ranni w gorączce, pijani i ludzie w panice nie wiedzą, że trzeba być cicho, albo nie potrafią. Są źródłem hałasu, którego postać nie kontroluje. Uciszenie ich to działanie z tablicą rezultatów. MG regularnie wprowadza ich do gry, bo to oni najczęściej ściągają sztywnych.
+
+## Broń
+
+Typowe rany od pełnego trafienia w człowieka bez pancerza (zob. *Rany w walce* w `Rules/Combat.md`):
+
+- **pięść, kopniak:** od draśnięcia do lekkiej rany, typowo draśnięcie,
+- **nóż, tasak, pałka, kij, cegła:** od draśnięcia do rany, typowo lekka rana,
+- **siekiera, łom, młotek, saperka:** od lekkiej rany do ciężkiej rany, typowo rana,
+- **pistolet P-64 albo P-83:** od lekkiej rany do ciężkiej rany, typowo rana; magazynek P-64 mieści 6 naboi, P-83 mieści 8,
+- **kałasznikow:** od rany do ciosu śmiertelnego, typowo ciężka rana; magazynek mieści 30 naboi,
+- **dubeltówka ze śrutem:** z bliska od rany do zmasakrowania, typowo ciężka rana, z daleka o stopień słabiej; 2 naboje bez przeładowania,
+- **sztucer:** od rany do ciosu śmiertelnego, typowo ciężka rana.
+
+Każda runda, w której postać strzela, zużywa jeden nabój albo, przy ogniu ciągłym z kałasznikowa, kilka (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`). Każdy strzał to bardzo głośna czynność (zob. *Hałas*).
+
+## Pancerz
+
+| Pancerz | Przykłady                                                             |
+|---------|-----------------------------------------------------------------------|
+| lekki   | skórzana kurtka, kożuch, kurtka motocyklowa, drelich i kask budowlany |
+| średni  | kamizelka kuloodporna milicji albo wojska, wojskowy hełm              |
+| ciężki  | praktycznie niedostępny                                               |
+
+Gruby materiał dobrze chroni przed ugryzieniami i zadrapaniami sztywnych: lekki pancerz zmniejsza ich rany o stopień.
+
+## Leczenie, zakażenia i choroby
+
+Ludzie leczą się w tempie z zasad podstawowych (zob. *Leczenie* w `Rules/Health.md`). Nie ma magicznego leczenia. Szpitale już pierwszego dnia są przepełnione, a potem przestają działać.
+
+**Zakażenie.** Ugryzienie i zadrapanie sztywnego nie zmienia w sztywnego, ale to brudna rana. Na koniec doby, w której postać dostała ranę od sztywnego albo brudną ranę, MG rzuca, czy rana się zakaziła. Porażka oznacza zakażenie. Trudność zależy od opatrzenia: przeciętne, jeśli rana jest opatrzona czystym materiałem, łatwe, jeśli dodatkowo odkażona (spirytus, jodyna, woda utleniona), trudne, jeśli nieopatrzona.
+
+Trudność zależy też od tego, jak daleko zaszedł rozkład sztywnego, który zadał ranę. Rana od świeżaka jest jak każda inna brudna rana. Rana od wzdętego jest trudniejsza o jeden poziom, a od gnilca, próchniaka i ochłapa o dwa, bo w ich ustach i pod paznokciami gnije już wszystko. Ugryzienie gnilca, którego nikt nie opatrzył, zakaża się prawie na pewno.
+
+**Choroby.** Od kwietnia woda w Wiśle, w studniach i w zalanych piwnicach jest skażona przez gnijące ciała (zob. *Drugie niebezpieczeństwo zmarłych* w `Stiffs.md`). Kto pije ją niegotowaną, ryzykuje czerwonkę albo dur brzuszny: MG rzuca (przeciętne, z bardzo brudnego źródła trudne). Gotowanie wody chroni bez rzutu.
+
+**Przebieg.** Zakażona rana się nie goi, a chora albo zakażona postać ma gorączkę: wszystkie działania są dla niej trudniejsze o jeden poziom. Na koniec każdej doby MG rzuca o przebieg choroby. Bez leków jest to przeciętne, z antybiotykiem łatwe, a bez odpoczynku, ciepła i czystej wody trudne:
+
+| Wynik | Rezultat                                  |
+|-------|-------------------------------------------|
+| 3–5   | stan się pogarsza, zranienie rośnie o 10% |
+| 6–8   | bez zmian                                 |
+| 9–18  | choroba ustępuje, rana zaczyna się goić   |
+
+Tablica dotyczy poziomu przeciętnego. Przy innej trudności MG przesuwa progi (zob. *Trudność* w `Rules/StandardThrow.md`). Antybiotyki, np. penicylina albo tetracyklina, są rzadkie: w aptekach, szpitalach i u lekarzy.
+
+## Pieniądze i sprzęt
+
+Walutą jest złoty, a ceny idą w tysiące (zob. *Pieniądze* w `Poland.md`). Orientacyjne ceny z marca 1990 roku:
+
+| Towar                    | Cena                |
+|--------------------------|---------------------|
+| bochenek chleba          | ok. 1 500 zł        |
+| puszka konserwy          | ok. 5 000 zł        |
+| paczka papierosów        | ok. 2 500 zł        |
+| półlitrowa butelka wódki | ok. 20 000 zł       |
+| latarka                  | ok. 20 000 zł       |
+| płaska bateria 4,5 V     | ok. 5 000 zł        |
+| miesięczna pensja        | kilkaset tysięcy zł |
+
+Po pierwszej nocy złoty szybko traci wartość, bo nie ma co za niego kupić. Dolary trzymają wartość dłużej. Potem liczy się wymiana: wódka, papierosy, konserwy, leki, amunicja, benzyna i baterie. Czy dany towar da się zdobyć w danym miejscu, MG rozstrzyga rzutem (zob. *Zdobywanie i utrata ekwipunku* w `Rules/Equipment.md`).
+
+## Światło, prąd i woda
+
+- **Latarka** na płaską baterię 4,5 V świeci około 4 godzin, potem trzeba wymienić baterię. **Świeca** pali się kilka godzin, **lampa naftowa** całą noc na jednym napełnieniu.
+- Światło w nocy przyciąga sztywnych, którzy jeszcze widzą (zob. *Zmysły i zachowanie* w `Stiffs.md`).
+- **Prąd, woda i gaz** w pierwszych dniach działają z przerwami, a potem przestają. **Telefony** działają, ale linie pogotowia i milicji są zajęte. Kiedy i gdzie co przestaje działać, MG rozstrzyga rzutem jako okoliczność świata, chyba że ustala to scenariusz.
+
+## Czas
+
+MG śledzi datę i porę dnia od pierwszej nocy (zob. *Noc z 21 na 22 marca 1990* w `Poland.md`). 21 marca 1990 roku to środa. W Warszawie wschód słońca wypada około 5:40, a zachód około 17:55. W niedzielę 25 marca o 2:00 zmienia się czas na letni, więc od tej pory słońce wschodzi i zachodzi o godzinę później według zegara.
+
+## Prowadzenie
+
+- MG trzyma się tego, co ludzie mogą wiedzieć w danej chwili (zob. *Co wiedzą ludzie* w `Stiffs.md`). Postacie MG mówią językiem 1990 roku, nie językiem filmów o zombie.
+- Plotki z `Stiffs.md` postać słyszy od postaci MG. MG nie rozstrzyga, które są prawdziwe: postać przekonuje się o tym sama.
+- Rady dla MG są w rozdziale *Prowadzenie sztywnych* w `Stiffs.md`.
