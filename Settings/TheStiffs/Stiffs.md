@@ -74,11 +74,11 @@ Zima 1989/90 była wyjątkowo łagodna. Śnieg zniknął z Warszawy na początku
 
 ## Ogień
 
-Płonący sztywny się nie zatrzymuje. Idzie dalej, dopóki ogień nie dosięgnie mózgu, co trwa kilka minut, i podpala wszystko, czego dotknie. Spalenie ciała, które jeszcze nie wstało, działa, podobnie jak spalenie padłego.
+Płonący sztywny się nie zatrzymuje. Idzie dalej, dopóki ogień nie dosięgnie mózgu, co trwa kilka minut, i podpala wszystko, czego dotknie. Spalenie ciała, które jeszcze nie wstało, działa.
 
 ## Drugie niebezpieczeństwo zmarłych
 
-Ugryzienie nie zaraża, ale zwłoki tak. W kwietniu tysiące ciał, padłych sztywnych i ich ofiar, będą gnić na ulicach, klatkach schodowych, w piwnicach i w Wiśle. Skażona woda roznosi czerwonkę i dur brzuszny w zwykły, medyczny sposób. Ocaleli, którzy gotują wodę, trzymają się z dala od rzeki i palą swoich zmarłych, żyją dłużej.
+Ugryzienie nie zaraża, ale zwłoki tak. W kwietniu tysiące ciał będą gnić na ulicach, klatkach schodowych, w piwnicach i w Wiśle: sztywnych, którym ktoś zniszczył mózg, i ofiar, które nie wstały, bo zginęły od ciosu w głowę. Od lata dołączą do nich padli. Skażona woda roznosi czerwonkę i dur brzuszny w zwykły, medyczny sposób. Ocaleli, którzy gotują wodę, trzymają się z dala od rzeki i palą swoich zmarłych, żyją dłużej.
 
 ## Pierwsza noc w Warszawie
 
@@ -86,7 +86,7 @@ Większość sztywnych pierwszej nocy nie przyszła z grobów, tylko z samego mi
 
 ## Co wiedzą ludzie
 
-Ile wiedzą postać gracza i NPC, zależy od tego, ile czasu minęło od pierwszej nocy. Mniej więcej:
+Ile wiedzą postać gracza i postacie MG, zależy od tego, ile czasu minęło od pierwszej nocy. Mniej więcej:
 
 **Pierwsza noc, mniej więcej do 5:00.** Nikt nie wie, że zmarli wstają, ani że coś dzieje się w całym mieście. Są tylko pojedyncze zdarzenia, których nikt ze sobą nie łączy. Świeżak wygląda jak żywy człowiek: chory, pijany, w szoku. Ludzie tłumaczą sobie wszystko po codziennemu, tak jak w Polsce 1990 roku:
 - awantura domowa, pijany, „dostał szału”, delirka,
@@ -100,13 +100,13 @@ Ludzie próbują pomóc „choremu”: trzymają go, uspokajają, dzwonią na po
 
 **Dzień i wieczór pierwszego dnia.** Zmarli nie wychodzą z grobów od razu ani wszyscy naraz. Trzeba wygrzebać się z trumny i przekopać przez ciężką ziemię, więc wychodzą pojedynczo i w ciągu wielu godzin, a niektórzy dopiero rano albo później. Najłatwiej mają ci z najświeższych grobów, które często nie mają jeszcze płyty ani nagrobka. Świadkowie z cmentarzy i kostnic mówią, że „trupy chodzą”. Większość bierze ich za pijanych albo szalonych. Księża mówią o znakach i Sądzie Ostatecznym. Do wieczora część ludzi wierzy, że wstali zmarli z grobów, ale prawie nikt nie łączy tego z sąsiadem, który „oszalał” w nocy. Nikt nie wie, że każdy, kto umrze, wstaje. Wielu ginie, siedząc przy ciałach bliskich albo próbując pomóc ugryzionym krewnym.
 
-**Pierwszego dnia NPC nie mówią językiem filmów o zombie.** Ich słowa i decyzje wynikają z tego, co mogli zobaczyć i usłyszeć do danej godziny.
+**Pierwszego dnia postacie MG nie mówią językiem filmów o zombie.** Ich słowa i decyzje wynikają z tego, co mogli zobaczyć i usłyszeć do danej godziny.
 
 **Pierwszy tydzień.** Większość ocalałych przekonała się na własnej skórze, że zmarli wstają i że trzeba zniszczyć głowę. Większość wciąż wierzy, że ugryzienie zaraża, bo ugryzieni często umierają od ran i wstają. Krążą plotki o ewakuacji, wojsku, Rosjanach, Amerykanach. Stacje radiowe milkną jedna po drugiej.
 
 **Pierwszy miesiąc.** Doświadczeni ocalali zrozumieli, że ugryzienie nie zaraża i że świeżaki są najsprytniejsze. Wielu wciąż nie chce w to wierzyć, a przestraszone grupy czasem przeganiają albo zabijają ugryzionych.
 
-**Później.** Zasady zna każdy, kto jeszcze żyje. Wszędzie leżą pierwsze padłe sztywne. Ludzie nauczyli się najbardziej bać własnych zmarłych.
+**Później.** Zasady zna każdy, kto jeszcze żyje. Wszędzie leżą sztywni z rozbitymi głowami, a od lata także pierwsi padli. Ludzie nauczyli się najbardziej bać własnych zmarłych.
 
 ## Plotki
 
@@ -129,7 +129,7 @@ Rzeczy, które mówią postacie MG. Postać gracza powinna usłyszeć kilka z ni
 - **Zapowiadaj ich.** Dźwięki, zapachy, sylwetka w oknie, drzwi, które powinny być zamknięte, a nie są. Gracz prawie zawsze powinien mieć szansę uniknąć walki.
 - **Każdy sztywny był człowiekiem.** Motorniczy w mundurze, dziewczynka w szkolnym fartuszku, starzec w garniturze do trumny z przypiętymi medalami. Nigdy ktoś bez twarzy.
 - **Gnilców groźnymi czyni liczba, świeżaków spryt.** Jeden gnilec to kłopot, pięciu to kryzys, pochód to katastrofa. Jeden świeżak we właściwym miejscu to katastrofa sama w sobie.
-- **Sztywny nigdy nie jest mądrzejszy niż jego etap.** Gnilce nigdy nie otwierają drzwi ani się nie chowają. Świeżaki nigdy nie mówią, nie używają narzędzi ani nie planują razem.
+- **Sztywny nigdy nie jest mądrzejszy niż jego etap.** Wzdęci, gnilce, próchniaki i ochłapy nigdy nie otwierają drzwi ani się nie chowają. Wzdęci nie czekają w ukryciu i nie idą za nikim z daleka. Świeżaki nigdy nie mówią, nie używają narzędzi ani nie planują razem.
 - **Hałas zawsze kosztuje.** Strzał na ulicy zawsze coś ściąga.
 - **Gdy ktoś umrze w pobliżu postaci, od razu rzuć na powstanie** (zob. *Powstawanie zmarłych* w `Settings/TheStiffs/Setting.md`), a potem zapytaj gracza, co postać robi z ciałem. Nie podpowiadaj, że ciało może wstać, dopóki postać tego nie wie.
 - **Korzystaj z wątpliwości.** Postać o zmierzchu, która może być żywa. Ciało na schodach, które może wstać.
