@@ -374,15 +374,17 @@ Tablica dotyczy poziomu przeciętnego. Przy innej trudności MG przesuwa progi (
 
 Walutą jest złoty, a ceny idą w tysiące (zob. *Pieniądze* w `Poland.md`). Orientacyjne ceny z marca 1990 roku:
 
-| Towar                    | Cena                |
-|--------------------------|---------------------|
-| bochenek chleba          | ok. 1 500 zł        |
-| puszka konserwy          | ok. 5 000 zł        |
-| paczka papierosów        | ok. 2 500 zł        |
-| półlitrowa butelka wódki | ok. 20 000 zł       |
-| latarka                  | ok. 20 000 zł       |
-| płaska bateria 4,5 V     | ok. 5 000 zł        |
-| miesięczna pensja        | kilkaset tysięcy zł |
+| Towar                    | Cena                                                   |
+|--------------------------|--------------------------------------------------------|
+| bochenek chleba          | ok. 2 000 zł                                           |
+| puszka konserwy          | ok. 5 000 zł                                           |
+| paczka papierosów        | ok. 2 500 zł                                           |
+| półlitrowa butelka wódki | ok. 20 000 zł                                          |
+| latarka                  | ok. 20 000 zł                                          |
+| płaska bateria 4,5 V     | ok. 5 000 zł                                           |
+| miesięczna pensja        | kilkaset tysięcy zł, średnio w 1990 roku około miliona |
+
+Ceny chleba i wódki oraz pensja opierają się na danych z 1990 roku: przeciętna pensja wyniosła wtedy około 1,03 miliona złotych i starczała na mniej więcej 48 butelek wódki. Pozostałe ceny są szacunkowe. W styczniu 1990 roku ceny skoczyły o prawie 80 procent, a w marcu wciąż rosną, choć wolniej, więc MG może je zaokrąglać.
 
 Po pierwszej nocy złoty szybko traci wartość, bo nie ma co za niego kupić. Dolary trzymają wartość dłużej. Potem liczy się wymiana: wódka, papierosy, konserwy, leki, amunicja, benzyna i baterie. Czy dany towar da się zdobyć w danym miejscu, MG rozstrzyga rzutem (zob. *Zdobywanie i utrata ekwipunku* w `Rules/Equipment.md`).
 
@@ -570,7 +572,7 @@ Wejście do więzienia działa jak wejście do miejsca zapalnego (zob. *Miejsca 
 
 ## Czas
 
-MG śledzi datę i porę dnia od pierwszej nocy (zob. *Noc z 21 na 22 marca 1990* w `Poland.md`). 21 marca 1990 roku to środa. W Warszawie wschód słońca wypada około 5:40, a zachód około 17:55. W niedzielę 25 marca o 2:00 zmienia się czas na letni, więc od tej pory słońce wschodzi i zachodzi o godzinę później według zegara.
+MG śledzi datę i porę dnia od pierwszej nocy (zob. *Noc z 21 na 22 marca 1990* w `Poland.md`). 21 marca 1990 roku to środa. W Warszawie 21 marca słońce wschodzi około 5:35, a zachodzi około 17:50. W niedzielę 25 marca o 2:00 zmienia się czas na letni, więc od tej pory według zegara wschodzi około 6:30, a zachodzi około 19:00. Do Wielkanocy, 15 kwietnia, dzień wydłuża się: słońce wschodzi około 5:40, a zachodzi około 19:30. Zmierzch zapada mniej więcej pół godziny po zachodzie.
 
 ## Prowadzenie
 
