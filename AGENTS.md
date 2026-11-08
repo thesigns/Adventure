@@ -48,7 +48,7 @@ Przed rozpoczęciem lub wznowieniem gry przeczytaj:
 3. wszystkie pliki settingu, który wskazuje scenariusz, jeśli wskazuje folder z `Settings/`,
 4. przy wznowieniu gry: z folderu kampanii kartę postaci `Character.md`, dziennik kampanii `Campaign.md` i postęp bieżącego scenariusza (zob. *Kampanie*).
 
-Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting. Nie czytaj też podfolderu `tools/` (zob. *Skrypty*).
+Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting. W razie wątpliwości co do układu miejsc, np. kierunków, położenia wyjść albo tego, co gracz widzi na swojej mapie, MG może zajrzeć do pełnej mapy SVG na własny użytek. Nigdy nie pokazuje jej graczowi i nie zdradza z niej niczego, czego postać jeszcze nie widziała. Nie czytaj też podfolderu `tools/` (zob. *Skrypty*).
 
 Jeśli nie wiadomo, którą kampanię albo który scenariusz gracz chce rozgrywać, zapytaj go.
 
