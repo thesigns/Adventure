@@ -447,16 +447,28 @@ Przykłady dla autorów scenariuszy:
 
 ## Pieniądze i ceny
 
-Na wyspie nie bije się monety. Płaci się srebrem na wagę, czyli siekańcami, sztabkami i pierścieniami, które waży się na kupieckiej wadze, a na co dzień **samodziałem**, czyli tkaniną z owczej wełny mierzoną łokciami. Krasnoludzkie złoto liczy się na wagę jak srebro, ale jest osiem razy cenniejsze.
+Na wyspie nie bije się monety. Ceny, grzywny i główszczyznę liczy się w **łokciach samodziału**, czyli tkaniny z owczej wełny o ustalonej prawem szerokości i jakości, oraz w uncjach i grzywnach srebra. To miara wartości, a nie to, co nosi się w sakiewce: ludzie mówią „to warte trzy łokcie”, ale nikt nie idzie do gospody z naręczem sukna.
 
-- **1 grzywna srebra** = 8 uncji
 - **1 uncja srebra** = 6 łokci samodziału
-- **1 uncja złota** = 8 uncji srebra
+- **1 grzywna srebra** = 8 uncji srebra = 48 łokci samodziału
+- **1 uncja złota** = 8 uncji srebra, czyli tyle co grzywna srebra
+
+Czym się płaci:
+
+- **Srebro na wagę.** Każdy nosi sakiewkę z **siekańcami**, czyli kawałkami srebra pociętymi z monet, bransolet i sztabek, a kupcy, gospodarze i karczmarze mają wagę. Drobna płatność, np. za piwo albo nocleg, to mały okruch srebra albo kawałek odcięty od bransolety. Srebrne bransolety i naszyjniki nosi się nie tylko dla ozdoby: to majątek, z którego w potrzebie odcina się kawałek.
+- **Płatność w naturze.** Na wsi płaci się suszoną rybą, masłem, wełną, owcą albo pracą. Samodziałem płaci się naprawdę tylko przy większych sprawach, np. kupcom za towar albo przy rozliczeniu długu.
+- **Gościna.** W zagrodzie wędrowiec nie płaci za nocleg, bo gościnność jest obowiązkiem (zob. *Klimat i życie na wyspie* w `Setting.md`), ale wypada mu zostawić dar: okruch srebra, nóż, pomoc przy pracy. Płatne gospody są tylko w miastach.
+- **Monety z kontynentu** krążą w Austhavn, ale i tak przyjmuje się je na wagę, jako srebro.
+- **Krasnoludzkie złoto** liczy się na wagę jak srebro, ale jest osiem razy cenniejsze.
+
+Na karcie postaci pieniądze zapisuje się w wartości, np. „srebro: 3 uncje i 4 łokcie w siekańcach”, a majątek w przedmiotach osobno, np. „srebrna bransoleta, ok. 2 uncje”.
+
+Orientacyjne ceny. Uncja i grzywna bez dopisku to zawsze uncja i grzywna srebra, także w tabeli i na karcie postaci, a złoto zawsze się nazywa wprost.
 
 | Towar albo usługa                                    | Cena                  |
 |------------------------------------------------------|-----------------------|
 | porcja prowiantu na dzień (suszona ryba, ser, masło) | 1 łokieć              |
-| nocleg z wieczerzą w gospodzie albo u gospodarza     | 1 łokieć              |
+| nocleg z wieczerzą w gospodzie w mieście             | 1 łokieć              |
 | dzban piwa albo miodu                                | pół łokcia            |
 | pięć pochodni smolnych albo dziesięć łuczyw          | 1 łokieć              |
 | porcja tranu do kaganka                              | pół łokcia            |
