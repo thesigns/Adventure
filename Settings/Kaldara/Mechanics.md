@@ -197,16 +197,20 @@ Mapa wyspy ma skalę 1 piksel = 500 m (2 piksele na kilometr), więc MG może mi
 | w górach Dvergfjell i na lodowcu        | 5–10 km   | wspinaczka, szczeliny, mgła                            |
 | łodzią albo statkiem wzdłuż wybrzeża    | 80–150 km | tylko od maja do września i tylko przy dobrej pogodzie |
 
-W dziczy MG rozstrzyga raz na dzień i raz na noc, czy coś się wydarzyło, jako okoliczność świata (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`), chyba że scenariusz ustala spotkania inaczej. Przykładowa tablica dla dnia drogi przez dzicz:
+Poza miastami i osadami wyspa jest pusta. Można iść cały dzień i nie spotkać nikogo, a groźniejsze od ludzi i bestii są zwykle pogoda i teren. Dlatego MG rozstrzyga tylko raz na cały dzień drogi przez dzicz, razem z noclegiem, czy coś się wydarzyło, jako okoliczność świata (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`), chyba że scenariusz ustala spotkania inaczej. Na trakcie w zamieszkanej okolicy MG nie rzuca wcale, ale pusty odcinek głównego traktu między osadami to już dzicz. Przykładowa tablica:
 
 | Wynik | Rezultat                                                                  |
 |-------|---------------------------------------------------------------------------|
 | 3–4   | niebezpieczne spotkanie: rozbójnicy, banici, wataha albo bestia           |
-| 5–7   | spotkanie niepewne: obcy wędrowiec, śmiałek, pasterz, ślady czegoś dużego |
-| 8–10  | trudność w drodze: zgubiony szlak, załamanie pogody, okulały koń          |
-| 11–18 | spokojny dzień                                                            |
+| 5–6   | spotkanie niepewne: obcy wędrowiec, śmiałek, pasterz, ślady czegoś dużego |
+| 7–8   | trudność w drodze: zgubiony szlak, załamanie pogody, okulały koń          |
+| 9–18  | spokojny dzień                                                            |
 
-Noc w ciemności niedaleko ruin, zima i Pustkowia Hraun przesuwają progi o poziom na niekorzyść postaci, a głodne noce pod koniec lata o kolejny poziom, a trakt w zamieszkanej okolicy za dnia o poziom na korzyść.
+Kogo postać spotyka, zależy od miejsca. Rozbójnicy i banici siedzą przy głównych traktach i w lesie Bjarkalund, bo w głębi wyspy nie mają z czego żyć ani kogo rabować. W głębi wyspy niebezpiecznym spotkaniem jest wataha, bestia albo inny śmiałek, a niepewnym ślady.
+
+Zima, Pustkowia Hraun i góry przesuwają progi o poziom na niekorzyść postaci.
+
+Nocleg w zagłębieniu terenu, w jaskini albo pod skałą, z dala od ruin, jest zwykle spokojny i nie wymaga osobnego rzutu. Osobny rzut na noc MG wykonuje tylko wtedy, gdy postać nocuje w ciemności w zasięgu trolli, czyli kilka, najwyżej kilkanaście kilometrów od ruin, albo gdy jej ognisko widać z daleka. Używa wtedy tej samej tablicy, a niebezpiecznym spotkaniem jest zwykle troll na łowach. Ogień przy postaci i dobrze ukryte miejsce przesuwają progi o poziom na korzyść postaci, a głodne noce pod koniec lata o poziom na niekorzyść.
 
 ## Przeciwnicy
 
