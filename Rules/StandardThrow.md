@@ -64,9 +64,13 @@ W pozostałych przypadkach MG rzuca od razu, bez Punktów Determinacji, i pokazu
 
 W obrębie porażki i sukcesu MG może wydzielić stopnie, np. porażkę z raną na najniższych wynikach albo wyjątkowy sukces na najwyższych. Może też ustawić próg pomiędzy poziomami trudności.
 
+**Poziom w punktach.** Zmiana trudności o jeden poziom przesuwa próg sukcesu o 2 punkty, a o pół poziomu o 1 punkt. Utrudnienie podnosi próg, a ułatwienie go obniża. Tablica podaje progi wyjściowe. Skrajne poziomy są w niej szersze niż 2 punkty (łatwe 6, prawie niemożliwe 16), bo rozkład 3K6 ma tam mało wyników, więc przesunięcie od nich może dać próg pomiędzy poziomami.
+
+Działanie przeciętne (próg 9), utrudnione przez ciemność (poziom) i lekką ranę (pół poziomu), ma próg 9 + 2 + 1 = 12.
+
 ### Okoliczności
 
-MG ocenia trudność od razu z uwzględnieniem wszystkich okoliczności, które mają znaczenie. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji tego, kto działa (zob. `Rules/CharacterCreation.md`), wypoczęty i przygotowany do działania. Odczytanie zwoju jest dla czarodzieja łatwiejsze niż dla chłopa, a tropienie łatwiejsze dla myśliwego niż dla mieszczanina. Każda istotna okoliczność zmienia trudność zwykle o jeden poziom, a wyjątkowo silna o dwa. Ta sama okoliczność liczy się tylko raz. Kilka środków szczególnie skutecznych przeciw temu samemu przeciwnikowi, np. srebro i ogień przeciw upiorowi, to jedna okoliczność.
+MG ocenia trudność od razu z uwzględnieniem wszystkich okoliczności, które mają znaczenie. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji tego, kto działa (zob. `Rules/CharacterCreation.md`), wypoczęty i przygotowany do działania. Odczytanie zwoju jest dla czarodzieja łatwiejsze niż dla chłopa, a tropienie łatwiejsze dla myśliwego niż dla mieszczanina. Każda istotna okoliczność zmienia trudność zwykle o jeden poziom (2 punkty progu), a wyjątkowo silna o dwa (4 punkty). Ta sama okoliczność liczy się tylko raz. Kilka środków szczególnie skutecznych przeciw temu samemu przeciwnikowi, np. srebro i ogień przeciw upiorowi, to jedna okoliczność.
 
 Działanie łatwiejsze niż łatwe jest trywialne i nie wymaga rzutu. Działanie trudniejsze niż prawie niemożliwe jest niemożliwe.
 

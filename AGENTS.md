@@ -28,7 +28,7 @@ Nazwy plików i folderów są po angielsku, np. `Character.md`, `gm.py`, `gm_tab
 - `Rules/StandardThrow.md`: rzut standardowy (kiedy rzucać, tablice rezultatów, trudność, rzut skryptem)
 - `Rules/Determination.md`: Punkty Determinacji
 - `Rules/Health.md`: zdrowie, rany i śmierć (poziom zranienia, skala ran, wytrzymałość, urazy, leczenie)
-- `Rules/Combat.md`: walka (taktyka, rundy, walka na dystans, trudność walki, przeciwnicy)
+- `Rules/Combat.md`: walka (taktyka, rundy, zmęczenie w walce, walka na dystans, trudność walki, przeciwnicy)
 - `Rules/Traits.md`: cechy postaci (zalety i wady, zmiany cech w trakcie gry)
 - `Rules/Equipment.md`: ekwipunek (narzędzia, broń, pancerz, przedmioty zużywalne, pojazdy, przedmioty niezwykłe)
 - `Rules/CoinThrow.md`: rzut monetą (rozstrzyganie sporów między graczem a MG)

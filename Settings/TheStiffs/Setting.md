@@ -105,16 +105,16 @@ Sztywni są nieumarli. Zranienie nie utrudnia im działań, nie uciekają, nie p
 Sztywny nie ma poziomu zranienia. Liczy się tylko mózg (zob. *Podstawowe zasady* w `Stiffs.md`):
 
 - **Trafienie w ciało** nie zabija sztywnego. MG wpisuje w tablicę jego skutki: sztywny się przewraca, zostaje odepchnięty albo okaleczony. Sztywny z okaleczonymi nogami pełza i łatwo przed nim uciec, a z okaleczonymi rękami słabiej chwyta.
-- **Trafienie w głowę** jest trudniejsze o jeden poziom niż trafienie w ciało. Gdy taktyka postaci to celowanie w głowę, obie wartości w tablicy przesuwają się o 2 (zob. *Trudność walki* w `Rules/Combat.md`), a trafienie oznacza ranę w głowę.
+- **Trafienie w głowę** jest trudniejsze o jeden poziom niż trafienie w ciało. To okoliczność ataku: gdy taktyka postaci to celowanie w głowę, próg trafienia rośnie o 2, a zakres rany się nie zmienia (zob. *Trudność walki* w `Rules/Combat.md`). Trafienie oznacza ranę w głowę.
 - **Rana w głowę** niszczy mózg, jeśli broń może przebić albo rozbić czaszkę (zob. *Broń*). Zwykle robi to rana o stopniu co najmniej rany, np. od siekiery albo kuli, a pchnięcie w oko, skroń albo pod żuchwę niezależnie od stopnia rany. Lżejsza rana w głowę, np. od pięści albo słabego uderzenia rurką, tylko odrzuca sztywnego i daje chwilę oddechu.
 
-Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6), a celowanie w głowę przesuwa obie wartości o 2. Postać ma miejsce na zamach, a siekiera zadaje typowo ciężką ranę, więc trafienie niszczy mózg.
+Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6), a celowanie w głowę podnosi próg trafienia o 2. Postać ma miejsce na zamach, a siekiera zadaje typowo ciężką ranę, więc trafienie niszczy mózg.
 
 | Wynik | Rezultat                                                |
 |-------|---------------------------------------------------------|
 | 3     | świeżak gryzie głęboko (rana), walka trwa               |
-| 4–8   | świeżak gryzie albo drapie (lekka rana), walka trwa     |
-| 9–10  | siekiera trafia w bark, świeżak się zatacza, walka trwa |
+| 4–6   | świeżak gryzie albo drapie (lekka rana), walka trwa     |
+| 7–10  | siekiera trafia w bark, świeżak się zatacza, walka trwa |
 | 11–18 | siekiera rozłupuje czaszkę, świeżak pada na zawsze      |
 
 ### Chwyt i grupa
@@ -282,7 +282,7 @@ Walka wręcz ze sztywnym toczy się na jednym z dwóch dystansów:
 Sztywny zawsze prze do zwarcia. Dystans jest okolicznością walki (zob. *Okoliczności* w `Rules/StandardThrow.md`), a to, jak go wykorzystać, zależy od broni:
 
 - **broń z zasięgiem** ułatwia walkę o poziom, dopóki postać trzyma sztywnego na dystansie broni, a w zwarciu ją utrudnia o poziom, bo drzewce przeszkadza,
-- **broń do pchnięcia z bliska** utrudnia walkę o poziom, bo postać musi wpuścić sztywnego w zasięg szczęk,
+- **broń do pchnięcia z bliska** utrudnia obronę o poziom (poszerza zakres rany o 2), bo postać musi wpuścić sztywnego w zasięg szczęk,
 - **walka bez broni** jest trudniejsza o dwa poziomy (zob. *Bez broni*).
 
 W tablicy walki bronią z zasięgiem MG wpisuje na niskich wynikach skutek „sztywny wchodzi w zwarcie”, zamiast rany albo razem z nią. Od tej chwili walka toczy się w zwarciu, dopóki postać nie odepchnie sztywnego albo się nie cofnie. To zajmuje rundę.
@@ -296,7 +296,7 @@ W tablicy walki bronią z zasięgiem MG wpisuje na niskich wynikach skutek „sz
 - **Ciężki zamach oburącz** (siekiera, topór strażacki, młot dwuręczny, kilof, pałka, kij baseballowy). Potrzebuje miejsca na zamach. W zwarciu i w ciasnym miejscu utrudnia walkę o poziom. Siekiera, topór, kilof i młot zadają od rany do zmasakrowania, typowo ciężką ranę, więc trafienie w głowę prawie zawsze niszczy mózg. Pałka i kij zadają od lekkiej do ciężkiej rany, typowo ranę. Kij baseballowy to w Polsce w 1990 roku rzadkość, ale pałek i trzonków nie brakuje.
 - **Jednoręczne rąbanie** (maczeta, toporek, tasak, saperka, sierp). Działa na dystansie broni i w zwarciu bez kar, a druga ręka zostaje wolna na latarkę, odpychanie albo trzymanie drzwi. Rany od lekkiej do ciężkiej rany, typowo rana. Sierp zahacza zamiast rąbać: od draśnięcia do rany, typowo lekka rana, ale wbity w skroń albo oko niszczy mózg jak pchnięcie.
 - **Lekkie uderzenie jedną ręką** (młotek, rurka metalowa, łom, kastet). Młotek, rurka i łom zadają od draśnięcia do ciężkiej rany, typowo lekką ranę: zwykle trzeba kilku ciosów albo bardzo dobrego trafienia, żeby rozbić czaszkę. Łom przyda się też do drzwi i skrzyń. Kastet zadaje od draśnięcia do rany, typowo draśnięcie, i wymaga zwarcia jak walka bez broni, ale utrudnia ją tylko o jeden poziom.
-- **Krótkie pchnięcie z bliska** (duży nóż, krótki nóż, scyzoryk, szpikulec, śrubokręt, duży gwóźdź). Utrudnia walkę o poziom, bo wymaga zwarcia. Duży nóż zadaje od draśnięcia do rany, typowo lekką ranę, a reszta od draśnięcia do lekkiej rany, typowo draśnięcie. Pchnięcie w oko, skroń albo pod żuchwę niszczy mózg niezależnie od stopnia rany. Krótkie ostrze łatwo utyka w czaszce: na średnich wynikach MG może wpisać, że broń utkwiła w czaszce zabitego sztywnego, a wyciągnięcie jej zajmuje rundę.
+- **Krótkie pchnięcie z bliska** (duży nóż, krótki nóż, scyzoryk, szpikulec, śrubokręt, duży gwóźdź). Utrudnia obronę o poziom (zob. *Dystans*), bo wymaga zwarcia. Duży nóż zadaje od draśnięcia do rany, typowo lekką ranę, a reszta od draśnięcia do lekkiej rany, typowo draśnięcie. Pchnięcie w oko, skroń albo pod żuchwę niszczy mózg niezależnie od stopnia rany. Krótkie ostrze łatwo utyka w czaszce: na średnich wynikach MG może wpisać, że broń utkwiła w czaszce zabitego sztywnego, a wyciągnięcie jej zajmuje rundę.
 
 ### Oczy
 

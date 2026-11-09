@@ -10,7 +10,7 @@ Po każdej rundzie MG opisuje przebieg walki, a gracz może na tej podstawie zmi
 
 ## Rundy
 
-Walka toczy się w **rundach**. Runda to krótka wymiana ciosów rozstrzygana jednym rzutem z własną tablicą rezultatów. Walka trwa, dopóki się nie rozstrzygnie: jedna ze stron ginie, pada w agonii, ucieka albo się poddaje, albo dzieje się coś innego, co kończy walkę (nadchodzi pomoc, przeciwnik zostaje odpędzony).
+Walka toczy się w **rundach**. Runda to krótka wymiana ciosów rozstrzygana jednym rzutem z własną tablicą rezultatów. Trwa około 10 sekund, więc sześć rund to mniej więcej minuta. MG uwzględnia to, śledząc upływ czasu, np. ile pali się pochodnia albo kiedy nadejdzie pomoc. Walka trwa, dopóki się nie rozstrzygnie: jedna ze stron ginie, pada w agonii, ucieka albo się poddaje, albo dzieje się coś innego, co kończy walkę (nadchodzi pomoc, przeciwnik zostaje odpędzony).
 
 Przed każdą rundą MG pokazuje graczowi tablicę, a gracz decyduje, ile Punktów Determinacji wydaje na tę rundę (zob. *Decyzja gracza* w `Rules/StandardThrow.md`). Przed pierwszą rundą, jeśli postać może się jeszcze wycofać, gracz może też zmienić taktykę albo zrezygnować z walki.
 
@@ -40,6 +40,16 @@ W `--stop` MG podaje wyniki, po których sytuacja się zmienia: zwykle rany post
 
 Po serii MG opisuje przebieg walki runda po rundzie, a gracz znów decyduje, co dalej (zob. *Między rundami*).
 
+## Zmęczenie w walce
+
+Gdy obie strony męczą się tak samo, zmęczenie nie ma znaczenia. Liczy się tylko wtedy, gdy jedna strona męczy się wyraźnie wolniej albo wcale, np. człowiek walczy z golemem, nieumarłym lub robotem.
+
+Strona, która się męczy, po każdych 6 rundach ciągłej walki, czyli mniej więcej po minucie, dostaje okoliczność „zmęczenie”: walka staje się dla niej trudniejsza o pół poziomu (obie wartości przesuwają się o 1, zob. *Trudność walki*). Zmęczenie się kumuluje: po 12 rundach to już poziom, a po 18 półtora. Mija po kilku minutach odpoczynku.
+
+Zaleta w rodzaju dobrej kondycji wydłuża ten czas do 12 rund, a wada w rodzaju astmy skraca go do 3. Reguła działa w obie strony: jeśli to postać gracza się nie męczy, zmęczenie przeciwnika ułatwia jej walkę.
+
+Seria rund kończy się najpóźniej w rundzie, w której przybywa zmęczenia, bo zmienia się trudność walki (zob. *Seria rund*).
+
 ## Walka na dystans
 
 Gdy postać gracza strzela do przeciwnika, MG ustala, co w tym czasie robi przeciwnik, zgodnie z jego naturą, uzbrojeniem i sytuacją: odpowiada ogniem (jeśli ma czym), skraca dystans, kryje się albo ucieka (jeśli ma dokąd). Na tej podstawie układa tablicę rundy. Przeciwnik, który odpowiada ogniem, może zranić postać już w tej rundzie. Przeciwnik, który biegnie ku postaci, zwykle jej jeszcze nie rani, ale na niskich wynikach dopada ją i walka przechodzi w zwarcie.
@@ -57,7 +67,17 @@ Z kategorii przeciwnika (zob. *Przeciwnicy*) wynikają dwie wartości:
 - **próg trafienia:** wynik równy progowi lub wyższy oznacza, że postać rani przeciwnika,
 - **zakres rany:** wyniki z tego zakresu oznaczają, że przeciwnik rani postać.
 
-Okoliczności zmieniają trudność walki jak przy każdym innym działaniu (zob. *Okoliczności* w `Rules/StandardThrow.md`) i przesuwają obie wartości o tyle samo. Należą do nich także pancerz, broń, zranienie obu stron i każdy dodatkowy przeciwnik, który czyni walkę trudniejszą o jeden poziom. Jeśli zakres rany po przesunięciu znika, przeciwnik nie może zranić postaci. Jeśli próg trafienia przekracza 18, postać nie może zranić przeciwnika tym sposobem walki.
+Okoliczności zmieniają trudność walki jak przy każdym innym działaniu (zob. *Okoliczności* w `Rules/StandardThrow.md`): o 2 punkty za każdy poziom i o 1 punkt za pół poziomu (zob. *Poziom w punktach* w `Rules/StandardThrow.md`). To, którą wartość przesuwa okoliczność, zależy od tego, czego dotyczy:
+
+- **atak postaci** przesuwa tylko próg trafienia, np. celowanie w głowę albo inny słaby punkt, broń lepsza albo gorsza niż typowa, odległość strzału, osłona i pancerz przeciwnika,
+- **obrona postaci** przesuwa tylko zakres rany, np. pancerz, tarcza i osłona postaci, broń przeciwnika lepsza albo gorsza niż typowa, broń, która zmusza postać do wpuszczenia przeciwnika blisko,
+- **cała walka** przesuwa obie wartości, np. zranienie i zmęczenie obu stron, zaskoczenie, teren, ciemność, zalety i wady dotyczące walki oraz każdy dodatkowy przeciwnik, który czyni walkę trudniejszą o jeden poziom.
+
+Jeśli opis okoliczności mówi po prostu, że utrudnia albo ułatwia walkę, dotyczy ona całej walki. Utrudnienie podnosi próg trafienia albo poszerza zakres rany, a ułatwienie działa odwrotnie.
+
+Jeśli zakres rany po przesunięciu znika, przeciwnik nie może zranić postaci. Jeśli próg trafienia przekracza 18, postać nie może zranić przeciwnika tym sposobem walki. Jeśli zakres rany sięga progu trafienia albo dalej, wyniki wspólne oznaczają, że obie strony ranią się nawzajem.
+
+Postać celuje w głowę przeciętnego przeciwnika (próg trafienia 9, zakres rany 3–6) i jest lekko ranna. Celowanie to okoliczność ataku (+2 do progu), a rana dotyczy całej walki (+1 do obu wartości): próg trafienia 12, zakres rany 3–7.
 
 Okoliczność, która dotyczy tylko części walki, liczy się tylko w tych rundach, np. zaskoczenie zwykle tylko w pierwszej.
 

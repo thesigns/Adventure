@@ -35,7 +35,7 @@ Ekwipunek nie ma osobnej mechaniki: broń, pancerz, narzędzia i inne przedmioty
 
 ## Walka
 
-Walka toczy się w rundach, a każda runda to jeden rzut standardowy z tablicą, która opisuje skutki dla obu stron. Przed walką gracz określa taktykę postaci, a walka trwa, dopóki się nie rozstrzygnie: śmiercią, agonią, ucieczką albo poddaniem się jednej ze stron. Rundy z tą samą tablicą gracz może zlecić jako serię, którą MG rzuca jednym poleceniem. Pełne zasady walki, w tym kategorie przeciwników i typowy układ tablicy rundy, są w `Rules/Combat.md`.
+Walka toczy się w rundach trwających około 10 sekund, a każda runda to jeden rzut standardowy z tablicą, która opisuje skutki dla obu stron. Przed walką gracz określa taktykę postaci, a walka trwa, dopóki się nie rozstrzygnie: śmiercią, agonią, ucieczką albo poddaniem się jednej ze stron. Rundy z tą samą tablicą gracz może zlecić jako serię, którą MG rzuca jednym poleceniem. Zmęczenie liczy się tylko w walce z kimś, kto męczy się wolniej albo wcale, i utrudnia ją co 6 rund. Pełne zasady walki, w tym kategorie przeciwników i typowy układ tablicy rundy, są w `Rules/Combat.md`.
 
 ## Cechy (zalety i wady)
 
