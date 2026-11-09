@@ -70,6 +70,20 @@ Wady:
 
 Postać zaczyna zwykle na zerowym poziomie doświadczenia, wiosną, w Grimsfjord, gdzie śmiałkowie zbierają się przed porą zejść, chyba że scenariusz mówi inaczej.
 
+## Miary
+
+Zasady, mapa i notatki MG podają odległości w kilometrach i metrach, bo tak liczą zasady podstawowe i skala mapy. Ludzie na wyspie nie znają kilometrów, więc w narracji i w ustach postaci MG używa miar świata:
+
+| Miara         | Ile to                                                 | Przykład                                                |
+|---------------|--------------------------------------------------------|---------------------------------------------------------|
+| łokieć        | ok. pół metra, od łokcia do końca palców               | samodział mierzy się łokciami (zob. *Pieniądze i ceny*) |
+| sążeń         | ok. 2 m, rozpiętość ramion                             | głębokość szybu, długość liny: „lina na dziesięć sążni” |
+| strzał z łuku | ok. 150 m                                              | „wejście jest strzał z łuku od strumienia”              |
+| rast          | ok. 10 km, odcinek, po którym daje się odpocząć koniom | „do Tingvold jest sześć, siedem rastów”                 |
+| dzień drogi   | tyle, ile przejeżdża się konno latem, ok. 40–50 km     | „Grimsfjord leży sześć dni drogi stąd”                  |
+
+Grzywna to także miara wagi, około 200 g, a uncja to jej ósma część (zob. *Pieniądze i ceny*). Czas ludzie mierzą porami dnia i położeniem słońca, a nie godzinami: o świcie, w południe, o zmierzchu, po zgaśnięciu poświaty. Godziny z tabeli *Dzień i noc* są dla MG.
+
 ## Czas, światło i trolle
 
 ### Kalendarz
@@ -211,6 +225,21 @@ Kogo postać spotyka, zależy od miejsca. Rozbójnicy i banici siedzą przy gł�
 Zima, Pustkowia Hraun i góry przesuwają progi o poziom na niekorzyść postaci.
 
 Nocleg w zagłębieniu terenu, w jaskini albo pod skałą, z dala od ruin, jest zwykle spokojny i nie wymaga osobnego rzutu. Osobny rzut na noc MG wykonuje tylko wtedy, gdy postać nocuje w ciemności w zasięgu trolli, czyli kilka, najwyżej kilkanaście kilometrów od ruin, albo gdy jej ognisko widać z daleka. Używa wtedy tej samej tablicy, a niebezpiecznym spotkaniem jest zwykle troll na łowach. Ogień przy postaci i dobrze ukryte miejsce przesuwają progi o poziom na korzyść postaci, a głodne noce pod koniec lata o poziom na niekorzyść.
+
+### Podróż w ferdzie
+
+Między miastami ludzie podróżują zwykle w ferdzie, czyli wspólnej podróży kilkunastu albo kilkudziesięciu ludzi (zob. *Wymiary i podróże* w `Geography.md`). Ferd to epizodyczne towarzystwo postaci MG, a nie drużyna: nie podejmuje decyzji za postać ani nie rozwiązuje jej problemów (zob. *Zasady dla MG* w `Setting.md`).
+
+- **Zbiórka.** Na ferd czeka się zwykle od jednego do kilku dni. Ile, MG rozstrzyga rzutem jako okoliczność świata, chyba że ustala to scenariusz. Dołączenie kosztuje kilka łokci samodziału na przewodnika i zbrojnych.
+- **Tempo.** Ferd jedzie traktem 30–40 km dziennie konno, wolniej niż samotny jeździec.
+- **Spotkania.** W rzucie na spotkania progi przesuwają się o poziom na korzyść postaci. Rozbójnicy rzadko napadają na cały ferd: niebezpieczne spotkanie to zwykle napad na maruderów, kradzież koni w nocy albo skutek zdrady szpiega. Nocleg ferdu z wartą przy ogniu nie wymaga rzutu na noc.
+- **Szpieg rozbójników.** Czy w ferdzie jest szpieg, MG rozstrzyga ukrytym rzutem z tablicą `k1` (zob. *Sekrety MG* w `AGENTS.md`), gdy postać do niego dołącza:
+
+  ```
+  python Scripts/roll.py --kampania <kampania> --ukryty --etykieta f1 --tablica k1
+  ```
+
+  Szpieg zachowuje się jak zwykły podróżny, ale wypytuje o łup, liczy sakwy, oddala się od ferdu bez powodu i w drodze daje znaki. MG opisuje te szczegóły tak jak inne, bez wskazywania, co znaczą. Śmiałek, który chwali się łupem w gospodzie przed wyjazdem, sam ściąga na ferd uwagę rozbójników: wtedy MG przyjmuje, że szpieg jest, bez rzutu.
 
 ## Przeciwnicy
 

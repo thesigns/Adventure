@@ -14,6 +14,7 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
 - `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie, ceny i prawo
 - `MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
+- `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md`)
 - `tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 
 Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, krainy, góry, lodowiec, główne rzeki i trakty. Gracz może więc oglądać `MapKaldara.svg` w całości, a MG nie odsłania jej skryptem `Scripts/fogmap.py`. Na mapie nie ma ruin ani niczego, czego ludzie na wyspie nie wiedzą. Mapy konkretnych miejsc, np. ruin, mają scenariusze i te MG odsłania zwykłym trybem.
@@ -125,7 +126,7 @@ Opis trolli jest w `Trolls.md`.
 
 ## Geografia
 
-Kaldara ma około 500 km ze wschodu na zachód i 300 km z północy na południe. Cywilizacja trzyma się wybrzeża: cztery miasta, Austhavn na wschodzie, Hofvik na zachodzie, Grimsfjord na północy i Myrvaka na południu, oraz dziesiątki wiosek i dworów. Wnętrze wyspy to dzicz: wulkany i ruiny gór Dvergfjell w centrum, lodowiec Svartjokul na południu i pola lawy Pustkowi Hraun wokół gór.
+Kaldara ma około 500 km ze wschodu na zachód i 320 km z północy na południe. Cywilizacja trzyma się wybrzeża: cztery miasta, Austhavn na wschodzie, Hofvik na zachodzie, Grimsfjord na północy i Myrvaka na południu, oraz dziesiątki wiosek i dworów. Wnętrze wyspy to dzicz: wulkany i ruiny gór Dvergfjell w centrum, lodowiec Svartjokul na południu i pola lawy Pustkowi Hraun wokół gór.
 
 Opis geografii, miast i krain jest w `Geography.md`.
 
