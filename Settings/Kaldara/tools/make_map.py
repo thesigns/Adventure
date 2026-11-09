@@ -44,8 +44,9 @@ def dist(a, b):
 
 
 # ------------------------------------------------------------ geometria
-def displace(points, closed=True, min_len=3.0):
+def displace(points, closed=True, min_len=3.0, rng=None):
     """Fraktalne przemieszczenie środków odcinków. Punkt: (x, y, r)."""
+    rng = rng or R
     out = []
     n = len(points)
     last = n if closed else n - 1
@@ -56,7 +57,7 @@ def displace(points, closed=True, min_len=3.0):
         if L < min_len:
             return
         nx, ny = -dy / L, dx / L
-        k = R.uniform(-1, 1) * L * r
+        k = rng.uniform(-1, 1) * L * r
         m = ((a[0] + b[0]) / 2 + nx * k, (a[1] + b[1]) / 2 + ny * k)
         rec(a, m, r, acc)
         acc.append(m)
@@ -289,6 +290,17 @@ MARSH = noisy([(540, 632), (600, 618), (680, 622), (760, 630), (792, 660), (760,
 FOREST = noisy([(320, 476), (362, 462), (410, 470), (440, 500), (436, 540), (402, 566),
                 (352, 561), (318, 536), (304, 500)])
 SANDUR = [(440, 600), (900, 560), (960, 650), (440, 700)]
+# mniejsze lasy, resztki dawnych brzozowych lasów (osobne ziarno, żeby nie zmieniać reszty mapy)
+_RF = random.Random(77)
+ULFLUND = displace([(x, y, 0.14) for x, y in [(960, 372), (984, 360), (1008, 364), (1020, 384),
+                                               (1008, 404), (982, 407), (962, 395)]], min_len=4.0, rng=_RF)
+HVITLUND = displace([(x, y, 0.14) for x, y in [(788, 206), (812, 198), (838, 204), (853, 222),
+                                                (846, 241), (822, 247), (798, 239), (785, 222)]], min_len=4.0, rng=_RF)
+FORESTS = [FOREST, ULFLUND, HVITLUND]
+
+
+def in_forest(p):
+    return any(inside(p, f) for f in FORESTS)
 
 LAKES = [blob(392, 410, 15, 8, n=12, r=0.1, rot=-0.5), blob(772, 254, 12, 9, n=12, r=0.12)]
 # małe, bezimienne czapy lodowe: na zachodnim półwyspie i na wschodnich wyżynach
@@ -360,6 +372,8 @@ LABELS = [
     ("Svartjokul", 655, 538, 24, 5, "region"),
     ("Bagna Svartmyr", 668, 663, 15, 2.5, "region"),
     ("Bjarkalund", 372, 520, 16, 2.5, "region"),
+    ("Ulflund", 990, 422, 13, 1.5, "region"),
+    ("Hvitlund", 820, 262, 13, 1.5, "region"),
     ("Nordstrand", 440, 190, 15, 2, "region"),
     ("Północny Ocean", 620, 66, 24, 9, "sea"),
     ("Kontynent", 1180, 600, 14, 1, "sea"),
@@ -674,7 +688,7 @@ add(f'<circle cx="{sx}" cy="{sy}" r="9" fill="none" stroke="{INK}" stroke-width=
 # --- pola lawy, czarny piasek, bagna
 lava = []
 for p in scatter((380, 210, 970, 530), 6.2):
-    if not inside(p, HRAUN) or inside(p, DVERGFJELL) or in_ice(p) or inside(p, VALLEY):
+    if not inside(p, HRAUN) or inside(p, DVERGFJELL) or in_ice(p) or inside(p, VALLEY) or in_forest(p):
         continue
     if not free(p, coast=6, line=3.5, feat=14, label_pad=1):
         continue
@@ -717,7 +731,7 @@ grass = []
 for p in scatter((110, 140, 1130, 730), 11):
     if inside(p, HRAUN) or in_ice(p) or inside(p, DVERGFJELL) or inside(p, MARSH):
         continue
-    if inside(p, FOREST) or inside(p, SANDUR) or not free(p, coast=8, line=4, feat=16, label_pad=3):
+    if in_forest(p) or inside(p, SANDUR) or not free(p, coast=8, line=4, feat=16, label_pad=3):
         continue
     lowland = p[0] < 470 or (p[1] > 470 and p[0] > 800)
     if R.random() > (0.42 if lowland else 0.12):
@@ -791,7 +805,7 @@ for p in scatter((150, 130, 1125, 640), 11):
     east = p[0] > 940
     if not (north or east):
         continue
-    if not on_land(p, 7) or inside(p, HRAUN) or in_ice(p) or inside(p, VALLEY):
+    if not on_land(p, 7) or inside(p, HRAUN) or in_ice(p) or inside(p, VALLEY) or in_forest(p):
         continue
     if line_grid.near(p, 5) or feature_grid.near(p, 22) or in_label(p, 4) or near_volcano(p, 3):
         continue
@@ -808,7 +822,7 @@ for p in scatter((120, 180, 1000, 700), 13):
         continue
     if inside(p, HRAUN) or in_ice(p) or inside(p, DVERGFJELL) or inside(p, MARSH):
         continue
-    if inside(p, FOREST) or inside(p, SANDUR) or not free(p, coast=10, line=5, feat=22, label_pad=4):
+    if in_forest(p) or inside(p, SANDUR) or not free(p, coast=10, line=5, feat=22, label_pad=4):
         continue
     if near_volcano(p, 3) or dist(p, TINGVOLD) < 40:
         continue
@@ -817,10 +831,11 @@ for p in scatter((120, 180, 1000, 700), 13):
     if R.random() < (0.75 if near_hills else 0.18):
         glyphs.append((p[1], hill(p[0], p[1], R.uniform(4.5, 7))))
 
-# Bjarkalund
-for p in scatter(bbox(FOREST), 5.6, jitter=0.7):
-    if inside(p, FOREST) and free(p, coast=6, line=3.5, feat=14, label_pad=2):
-        glyphs.append((p[1], tree(p[0], p[1])))
+# Bjarkalund, Ulflund i Hvitlund
+for forest in FORESTS:
+    for p in scatter(bbox(forest), 5.6, jitter=0.7):
+        if inside(p, forest) and free(p, coast=6, line=3.5, feat=14, label_pad=2):
+            glyphs.append((p[1], tree(p[0], p[1])))
 # kępy drzew w ciepłych dolinach zachodu
 for cx, cy, rr in ((300, 300, 14), (226, 548, 12), (470, 600, 11), (340, 600, 10)):
     for p in scatter((cx - rr, cy - rr, cx + rr, cy + rr), 5.6, jitter=0.7):
@@ -834,7 +849,7 @@ for p in sorted(scatter((120, 120, 1125, 725), 9), key=lambda _: R.random()):
         break
     if not on_land(p, 6) or not coast_grid.near(p, 24):
         continue
-    if inside(p, HRAUN) or in_ice(p) or inside(p, MARSH) or inside(p, FOREST):
+    if inside(p, HRAUN) or in_ice(p) or inside(p, MARSH) or in_forest(p):
         continue
     if line_grid.near(p, 4) or feature_grid.near(p, 34) or in_label(p, 6):
         continue

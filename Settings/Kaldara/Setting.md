@@ -44,7 +44,7 @@ Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, kra
 
 Wszystkie nazwy i imiona na wyspie są ludzkie i brzmią nordycko, jak w sagach: Sigrun, Ragnar, Hallvik, Grimsfjord. MG tworzy nowe nazwy sam, według poniższych zasad.
 
-- **Pisownia** jest uproszczona, bez skandynawskich znaków: å, æ, ø, ö, ð i þ. Piszemy Svartjokul, nie Svartjökull.
+- **Pisownia.** Nazwy i imiona zapisuje się tylko literami alfabetu angielskiego, bez znaków skandynawskich (å, æ, ø, ö, ð, þ) i polskich (ą, ć, ę, ł, ń, ó, ś, ź, ż). Piszemy Svartjokul, nie Svartjökull, i Hvitlund, nie Hvítlund. Dzięki temu nazwy brzmią tak samo w każdym języku gry.
 - **Bez prawdziwych bogów.** Nie używaj imion prawdziwych nordyckich bogów (Odyn, Thor, Freja, Loki i inni), także jako członów imion i nazw (Thorkel, Freydis). Bogowie wyspy są w `Gods.md`.
 - **Imiona** są krótkie, zwykle dwusylabowe albo złożone z dwóch członów. Męskie kończą się często na -ar, -ulf, -mund, -bjorn, -geir, -vard, -stein, -kel (Ragnar, Asmund, Hallvard, Ulfgeir, Grimkel). Żeńskie na -run, -dis, -hild, -veig, -frid, -a (Sigrun, Asdis, Ragnhild, Bergljot, Halla).
 - **Ojciec i przydomek.** Ludzie przedstawiają się imieniem i imieniem ojca, rzadziej matki: „Ragnar, syn Ulfa”, „Sigrun, córka Halli”. Ludzie znani mają przydomki, które w odróżnieniu od imion tłumaczy się na język gry: Ragnar Siwobrody, Asdis Jednooka, Hallvard Bez Ziemi.
