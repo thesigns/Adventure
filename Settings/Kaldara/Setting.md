@@ -34,7 +34,7 @@ Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, kra
 - Gra składa się ze scenariuszy dwóch rodzajów. **Zejście** to samotna wyprawa do ruin: droga, eksploracja, walka, łup, powrót. **Historia na powierzchni** dzieje się w osadach, miastach i dziczy: waśnie rodów, sprawy przed tingiem, banici, polowanie na potwora, intrygi wodzów, sprzedaż łupu.
 - Świat nie ma jednej wielkiej fabuły, ale scenariusze mogą układać się w kampanię: zejścia przeplatają się z historiami na powierzchni, a skutki jednych (łup, sława, wrogowie, długi) prowadzą do kolejnych.
 - Nazwy miejsc są takie jak w `Geography.md`, a imiona bogów takie jak w `Gods.md`. Nowe nazwy i imiona MG tworzy według zasad z rozdziału *Nazwy*.
-- Na wyspie są dziesiątki wiosek, osad i dworów wodzów. Setting ich nie nazywa. MG umieszcza je według potrzeb scenariusza tam, gdzie wygodnie, zwykle na wybrzeżu, w zatokach i dolinach rzek.
+- Na wyspie są dziesiątki wiosek, osad i dworów wodzów, rozsianych wzdłuż wybrzeża i traktów. Setting ich nie nazywa, a mapa ich nie pokazuje. MG tworzy je według potrzeb scenariusza tam, gdzie wygodnie, zwykle na wybrzeżu, w zatokach, w dolinach rzek i przy traktach.
 - Ruin krasnoludzkich i wejść do nich są na wyspie dziesiątki, dużych i małych. Setting żadnej nie nazywa ani nie zaznacza na mapie. MG tworzy je według potrzeb scenariusza, najczęściej w górach i w głębi wyspy.
 - Przygody dzieją się na wyspie. Kontynent istnieje, ale pozostaje w tle.
 - Pora roku ma znaczenie. Zimą wnętrze wyspy jest praktycznie nie do przebycia.

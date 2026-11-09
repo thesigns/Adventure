@@ -543,14 +543,6 @@ def tree(x, y):
             f'l{f(r * 0.4)},{f(r * 0.45)}" stroke="{INK}" stroke-width="0.5"/>')
 
 
-def house(x, y, s=1.0):
-    w, h = 3.4 * s, 3.0 * s
-    d = (f"M{f(x - w)},{f(y)} V{f(y - h)} L{f(x)},{f(y - h - 3 * s)} L{f(x + w)},{f(y - h)} V{f(y)} Z")
-    return (f'<path d="{d}" fill="{PAPER}" stroke="{INK}" stroke-width="0.8" stroke-linejoin="round"/>'
-            f'<path d="M{f(x - 0.8 * s)},{f(y)} v{f(-1.8 * s)} h{f(1.6 * s)} v{f(1.8 * s)}" '
-            f'fill="{INK}"/>')
-
-
 def castle(x, y, k=1.0, cliff=False):
     """Ikona miasta: dwie wieże z blankami i mur z bramą. (x, y) to środek podstawy."""
     def T(px, py):
@@ -842,31 +834,7 @@ for cx, cy, rr in ((300, 300, 14), (226, 548, 12), (470, 600, 11), (340, 600, 10
         if dist(p, (cx, cy)) < rr * R.uniform(0.7, 1.0) and free(p, coast=6, line=3.5, feat=14):
             glyphs.append((p[1], tree(p[0], p[1])))
 
-# osady
-villages = []
-for p in sorted(scatter((120, 120, 1125, 725), 9), key=lambda _: R.random()):
-    if len(villages) >= 34:
-        break
-    if not on_land(p, 6) or not coast_grid.near(p, 24):
-        continue
-    if inside(p, HRAUN) or in_ice(p) or inside(p, MARSH) or in_forest(p):
-        continue
-    if line_grid.near(p, 4) or feature_grid.near(p, 34) or in_label(p, 6):
-        continue
-    if any(dist(p, v) < 42 for v in villages):
-        continue
-    if R.random() > (1.0 if p[0] < 460 else 0.55):
-        continue
-    villages.append(p)
-inland = [(350, 330), (330, 420), (440, 560), (520, 590), (330, 255), (900, 600), (930, 470)]
-for p in inland:
-    if free(p, coast=6, line=4, feat=30, label_pad=4):
-        villages.append(p)
-for p in villages:
-    if R.random() < 0.4:
-        glyphs.append((p[1], house(p[0] - 3, p[1]) + house(p[0] + 4, p[1] + 1.5, 0.85)))
-    else:
-        glyphs.append((p[1], house(p[0], p[1])))
+# Osad na mapie nie ma: jest ich dużo wzdłuż wybrzeża i traktów, a MG umieszcza je według potrzeb scenariusza.
 
 glyphs.sort(key=lambda g: g[0])
 for _, g in glyphs:
@@ -916,7 +884,7 @@ lx, ly, lw, lh = 1000, 700, 228, 188
 add(f'<rect x="{lx}" y="{ly}" width="{lw}" height="{lh}" fill="{PAPER}" stroke="{INK}" stroke-width="2.4"/>')
 add(f'<rect x="{lx + 4}" y="{ly + 4}" width="{lw - 8}" height="{lh - 8}" fill="none" stroke="{INK}" stroke-width="0.8"/>')
 rows = ["Góry", "Wulkany", "Wzgórza", "Lodowce", "Pola lawy", "Czarny piasek",
-        "Bagna", "Lasy", "Wody", "Miasta", "Osady", "Trakty"]
+        "Bagna", "Lasy", "Wody", "Miasta", "Trakty"]
 for i, name in enumerate(rows):
     col, row = divmod(i, 6)
     sx = lx + 22 + col * 110
@@ -952,8 +920,6 @@ for i, name in enumerate(rows):
             f'<path d="M{sx - 9},{sy - 2.4} h18 M{sx - 9},{sy} h18 M{sx - 9},{sy + 2.4} h18" stroke="{INK}" stroke-width="0.45"/>')
     elif name == "Miasta":
         add(castle(sx, sy + 6, 0.62))
-    elif name == "Osady":
-        add(house(sx - 3, sy + 4) + house(sx + 4, sy + 5, 0.85))
     elif name == "Trakty":
         add(f'<path d="M{sx - 11},{sy + 1} q11,-6 22,0" fill="none" stroke="{INK}" stroke-width="0.8" '
             f'stroke-dasharray="3.2 2.4"/>')
