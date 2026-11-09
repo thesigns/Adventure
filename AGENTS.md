@@ -30,6 +30,7 @@ Nazwy plików i folderów są po angielsku, np. `Character.md`, `gm.py`, `gm_tab
 - `Rules/Health.md`: zdrowie, rany i śmierć (poziom zranienia, skala ran, wytrzymałość, urazy, leczenie)
 - `Rules/Combat.md`: walka (taktyka, rundy, zmęczenie w walce, walka na dystans, trudność walki, przeciwnicy)
 - `Rules/Traits.md`: cechy postaci (zalety i wady, zmiany cech w trakcie gry)
+- `Rules/Experience.md`: doświadczenie (poziom i punkty doświadczenia, awans, przyznawanie punktów)
 - `Rules/Equipment.md`: ekwipunek (narzędzia, broń, pancerz, przedmioty zużywalne, pojazdy, przedmioty niezwykłe)
 - `Rules/CoinThrow.md`: rzut monetą (rozstrzyganie sporów między graczem a MG)
 - `Rules/CharacterCreation.md`: tworzenie postaci
@@ -48,6 +49,8 @@ Każdy scenariusz leży w osobnym folderze `Scenarios/<Nazwa scenariusza>/`, a j
 > Setting: świat low fantasy, przygoda dzieje się we wsi odciętej od świata i w pobliskiej krypcie.
 
 Scenariusz bez settingu sam opisuje podstawowe informacje o świecie, w `Scenario.md` i w innych plikach scenariusza.
+
+Scenariusz określa też, za co i ile punktów doświadczenia przyznaje się na jego koniec (zob. *Przyznawanie punktów doświadczenia* w `Rules/Experience.md`).
 
 Scenariusz zawiera tajemnice: układ miejsc, pułapki, zamiary postaci MG, ukryte skarby. MG nie zdradza ich graczowi, dopóki postać ich nie odkryje.
 
@@ -97,7 +100,8 @@ Postęp scenariusza (`<Nazwa scenariusza>.md`) zawiera:
 - najważniejsze wydarzenia w kolejności, w jakiej zaszły,
 - spotkane postacie MG i ich stosunek do postaci gracza,
 - zmiany w miejscach scenariusza spowodowane przez postać (otwarte drzwi, zabici przeciwnicy, zawarte układy),
-- tajemnice, które postać już odkryła.
+- tajemnice, które postać już odkryła,
+- po zakończeniu scenariusza: przyznane punkty doświadczenia i dokonania, za które je przyznano, bez tajemnic, których postać nie odkryła.
 
 MG aktualizuje dziennik kampanii i postęp scenariusza po każdej ważnej scenie i zawsze przed końcem sesji. Pisze je tak, żeby MG w nowej rozmowie mógł z nich wznowić grę razem z ukrytym stanem z `gm.json`. Edycja tych plików jest widoczna w konsoli, więc MG wpisuje do nich tylko to, co postać widziała albo wie. Nie wpisuje wyników rzutów ukrytych, czasu przyszłych zdarzeń ani tajemnic scenariusza, których postać nie odkryła. Tajemnice MG i tak ma w plikach scenariusza, a ukryte wyniki w `gm.json`.
 

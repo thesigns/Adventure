@@ -27,6 +27,11 @@
 **Bazowe PDT**:
 **Bieżące PDT**:
 
+## Doświadczenie
+
+**Poziom doświadczenia**: 0
+**Punkty doświadczenia**: 0
+
 ## Zdrowie
 
 **Poziom zranienia**: 0% (bez ran)

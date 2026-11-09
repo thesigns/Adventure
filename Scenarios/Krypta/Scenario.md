@@ -279,4 +279,6 @@ Przygoda kończy się, gdy postać wróci do wsi i rozstrzygnie sprawy Maćka, O
 - **Ostap przyprowadzony do wsi:** sołtys go sądzi. Jeśli postać się za nim wstawi, Ostap odpracuje winę do wiosny i może zostać jej dłużnikiem albo wrogiem. Jeśli ucieknie ze skarbami, nie wydostanie się z doliny przed wiosną i może się jeszcze pojawić.
 - **Skarby z krypty:** wieś uważa je za własność zmarłych. Postać, która chwali się łupem, traci szacunek ludzi, a Radomir może zażądać zwrotu pierścienia-pieczęci, żeby złożyć go z powrotem w grobowcu.
 
+Punkty doświadczenia za przygodę są w pliku `ExperienceRewards.md` w folderze scenariusza.
+
 Wiosną przełęcz zostanie odkopana. Skutki przygody, takie jak dług Ostapa, wdzięczność wsi albo krążący upiór, mogą przejść do następnych scenariuszy kampanii.

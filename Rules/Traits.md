@@ -31,7 +31,7 @@ Postać może zyskać albo stracić zaletę lub wadę, ale zdarza się to bardzo
 
 Bazowe PDT zmienia się wtedy tak, jak przy tworzeniu postaci: nowa zaleta je zmniejsza, a nowa wada zwiększa o swoją wagę. Utrata cechy działa odwrotnie. Wagę nowej cechy MG ustala według tych samych zasad co przy tworzeniu postaci (zob. `Rules/CharacterCreation.md`).
 
-Po zmianie bazowe PDT nadal musi mieścić się w zakresie od 5 do 15. Jeśli spadłoby poniżej 5, zmiana jest niemożliwa, chyba że MG i gracz uzgodnią trwały koszt w postaci nowej wady, która przywróci równowagę. Jeśli wada, której postać nie mogła uniknąć (np. trwały uraz), podniosłaby bazowe PDT powyżej 15, bazowe PDT wynosi 15, a nadwyżka przepada.
+Po zmianie bazowe PDT nadal musi mieścić się w zakresie od 5 do górnego limitu, który wynosi 15 + poziom doświadczenia (zob. `Rules/Experience.md`). Jeśli spadłoby poniżej 5, zmiana jest niemożliwa, chyba że MG i gracz uzgodnią trwały koszt w postaci nowej wady, która przywróci równowagę. Jeśli wada, której postać nie mogła uniknąć (np. trwały uraz), podniosłaby bazowe PDT powyżej górnego limitu, bazowe PDT równa się górnemu limitowi, a nadwyżka przepada.
 
 > Randuvil zdobywa ogromną sumę pieniędzy i opłaca potężny czar, który leczy jego kulawiznę.
 

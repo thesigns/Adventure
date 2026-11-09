@@ -19,7 +19,7 @@ Umiejętności i słabości wynikające z wieku, płci, gatunku i profesji nie s
 
 ## Punkty Determinacji, zalety i wady
 
-MG przydziela postaci wyjściowo 10 bazowych Punktów Determinacji (PDT). Gracz może teraz określić dowolne zalety i wady postaci (zob. `Rules/Traits.md`), pod warunkiem, że nie są ze sobą sprzeczne (np. jednocześnie chudzielec i otyły) ani niezgodne z lore świata i zasadami. Zaleta musi wyróżniać postać na tle przeciętnego przedstawiciela jej gatunku i profesji, a wada musi ją od niego odróżniać na niekorzyść.
+MG przydziela postaci wyjściowo 10 bazowych Punktów Determinacji (PDT). Postać zaczyna zwykle na zerowym poziomie doświadczenia. Jeśli wyjątkowo zaczyna na wyższym, np. jako stary, doświadczony mag, dostaje dodatkowo 1 bazowy PDT za każdy poziom (zob. *Poziom doświadczenia* w `Rules/Experience.md`). Gracz może teraz określić dowolne zalety i wady postaci (zob. `Rules/Traits.md`), pod warunkiem, że nie są ze sobą sprzeczne (np. jednocześnie chudzielec i otyły) ani niezgodne z lore świata i zasadami. Zaleta musi wyróżniać postać na tle przeciętnego przedstawiciela jej gatunku i profesji, a wada musi ją od niego odróżniać na niekorzyść.
 
 Zalety zmniejszają liczbę PDT, a wady ją zwiększają. Wagę wad i zalet wymienionych przez gracza określa MG. Przy wycenie bierze pod uwagę wiek, płeć, gatunek i profesję postaci. Jedna wada lub zaleta może zmienić bazową liczbę PDT o 0 do 5 punktów, zależnie od tego, jak jest poważna (nieistotna = 0, malutka = 1, mała = 2, średnia = 3, duża = 4, ogromna = 5).
 
@@ -29,7 +29,7 @@ Postać może mieć najwyżej 3 istotne zalety i 3 istotne wady (o wadze co najm
 
 Wycenę ustala MG. Gracz może ją przyjąć, wycofać cechę albo ją przeformułować, a wtedy MG wycenia ją od nowa. Wyceny nie rozstrzyga się rzutem monetą.
 
-Bazowa liczba PDT gotowej postaci MUSI mieścić się w zakresie od 5 do 15. Jeśli gracz wybrał za dużo wad i bazowe PDT przekroczyło 15, musi dobrać postaci jakieś zalety. Jeśli wybrał za dużo zalet i bazowe PDT spadło poniżej 5, musi wymyślić postaci jakieś wady.
+Bazowa liczba PDT gotowej postaci MUSI mieścić się w zakresie od 5 do 15 + poziom doświadczenia, czyli od 5 do 15 u postaci na zerowym poziomie. Jeśli gracz wybrał za dużo wad i bazowe PDT przekroczyło górny limit, musi dobrać postaci jakieś zalety. Jeśli wybrał za dużo zalet i bazowe PDT spadło poniżej 5, musi wymyślić postaci jakieś wady.
 
 > Z wad Randuvil ma brodawkę na nosie, kuleje na jedną nogę i sepleni. Zalet nie ma.
 
@@ -79,4 +79,4 @@ MG proponuje Randuvilowi: kostur, księgę czarów, przybory do pisania, sztylet
 
 ## Karta postaci
 
-Postać jest gotowa. MG zakłada folder jej kampanii, nazwany zwykle imieniem postaci, np. `Campaigns/Randuvil/` (zob. *Kampanie* w `AGENTS.md`). Wypełnia szablon `Rules/CharacterTemplate.md` i zapisuje kartę postaci w tym folderze jako `Character.md`, a obok zakłada dziennik kampanii `Campaign.md`. Postać zaczyna przygodę z pełną pulą PDT i bez ran.
+Postać jest gotowa. MG zakłada folder jej kampanii, nazwany zwykle imieniem postaci, np. `Campaigns/Randuvil/` (zob. *Kampanie* w `AGENTS.md`). Wypełnia szablon `Rules/CharacterTemplate.md` i zapisuje kartę postaci w tym folderze jako `Character.md`, a obok zakłada dziennik kampanii `Campaign.md`. Postać zaczyna przygodę z pełną pulą PDT, bez ran i bez punktów doświadczenia.

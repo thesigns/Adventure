@@ -4,7 +4,7 @@ Punkty Determinacji (PDT) to wysiłek, upór i szczęście, które postać gracz
 
 ## Pula
 
-Pulę wyznacza bazowa liczba Punktów Determinacji, która wynosi od 5 do 15. Ustala się ją przy tworzeniu postaci na podstawie jej zalet i wad (zob. `Rules/CharacterCreation.md`).
+Pulę wyznacza bazowa liczba Punktów Determinacji, która wynosi od 5 do 15 + poziom doświadczenia postaci. Ustala się ją przy tworzeniu postaci na podstawie jej zalet, wad i poziomu doświadczenia (zob. `Rules/CharacterCreation.md`), a każdy awans podnosi ją o 1 (zob. *Awans* w `Rules/Experience.md`).
 
 ## Wydawanie
 

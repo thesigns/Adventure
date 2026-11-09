@@ -300,4 +300,6 @@ Scenariusz kończy się, gdy postać opuści szpital, zabarykaduje się do rana 
 - **Kogo postać wyprowadzi:** Kasię, dr. Kozłowskiego, siostrę Halinę, Ewę Lis, panią Zofię, Zdzicha. Każdy żywy towarzysz to pomoc i ciężar. Ci, których postać zostawi, zginą albo wstaną.
 - **Śmierć.** Postać, która umrze w szpitalu, wstaje jak każdy (zob. *Powstawanie zmarłych* w `Settings/TheStiffs/Setting.md`).
 
+Punkty doświadczenia za scenariusz są w pliku `ExperienceRewards.md` w folderze scenariusza.
+
 Skutki, które mogą przejść do dalszej kampanii: towarzysze, którzy przeżyli, dolary Zdzicha, nyska, pistolet kaprala Nowickiego, wiedza, że zmarli wstają, i to, że Szpital Czerniakowski jest odtąd miejscem zapalnym na Dolnym Mokotowie.

@@ -2,7 +2,7 @@
 
 ## Tworzenie postaci
 
-Przed rozegraniem scenariusza gracz tworzy postać: określa jej imię, wiek, płeć, gatunek, profesję i historię oraz zalety i wady, od których zależy bazowa liczba Punktów Determinacji, a MG ustala jej ekwipunek startowy. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji postaci, więc cechy typowe dla nich nie są zaletami ani wadami. Pełne zasady tworzenia postaci są w `Rules/CharacterCreation.md`.
+Przed rozegraniem scenariusza gracz tworzy postać: określa jej imię, wiek, płeć, gatunek, profesję i historię oraz zalety, wady i poziom doświadczenia (zwykle zerowy), od których zależy bazowa liczba Punktów Determinacji, a MG ustala jej ekwipunek startowy. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji postaci, więc cechy typowe dla nich nie są zaletami ani wadami. Pełne zasady tworzenia postaci są w `Rules/CharacterCreation.md`.
 
 ## Karta postaci
 
@@ -13,6 +13,7 @@ Karta postaci gracza jest zapisana w pliku `Character.md` w folderze jej kampani
 - ekwipunek: zdobyte, utracone, zużyte i uszkodzone przedmioty oraz liczbę amunicji, źródeł światła, prowiantu i innych zapasów,
 - pieniądze,
 - cechy i bazowe PDT, gdy postać zyska albo straci zaletę lub wadę,
+- punkty doświadczenia po ich przyznaniu, a poziom doświadczenia i bazowe PDT po awansie,
 - wątki fabularne.
 
 Karta jest źródłem prawdy o stanie postaci. Przy wznowieniu gry MG odczytuje stan postaci z karty.
@@ -40,6 +41,10 @@ Walka toczy się w rundach trwających około 10 sekund, a każda runda to jeden
 ## Cechy (zalety i wady)
 
 Zaleta wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i profesji: ułatwia o jeden poziom działania ze swojej dziedziny albo umożliwia działania, które bez niej byłyby niemożliwe, a wada działa odwrotnie. Cechy wybiera się przy tworzeniu postaci, wpływają na bazową liczbę Punktów Determinacji i bardzo rzadko zmieniają się w trakcie gry. Zaleta może też dawać zdolność nadprzyrodzoną, której skutek, ograniczenia i limit użyć MG ustala przy wycenie. Pełne zasady są w `Rules/Traits.md`.
+
+## Doświadczenie
+
+Postać zaczyna zwykle na zerowym poziomie doświadczenia, a na koniec każdego scenariusza dostaje punkty doświadczenia za dokonania, które określa scenariusz albo ocenia MG. Punkty wydaje się jak walutę na awans: przejście na poziom *n* kosztuje F(*n*) × 1000 punktów, gdzie F(*n*) to *n*-ty wyraz ciągu Fibonacciego. Każdy poziom daje postaci 1 bazowy Punkt Determinacji i podnosi o 1 górny limit bazowych PDT. Pełne zasady są w `Rules/Experience.md`.
 
 ## Zmęczenie, głód i światło
 
