@@ -44,7 +44,7 @@ Zaleta wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i pro
 
 ## Doświadczenie
 
-Postać zaczyna zwykle na zerowym poziomie doświadczenia, a na koniec każdego scenariusza dostaje punkty doświadczenia za dokonania, które określa scenariusz albo ocenia MG. Punkty wydaje się jak walutę na awans: przejście na poziom *n* kosztuje *n* × 1000 punktów. Każdy poziom daje postaci 1 bazowy Punkt Determinacji i podnosi o 1 górny limit bazowych PDT. Pełne zasady są w `Rules/Experience.md`.
+Postać zaczyna zwykle na zerowym poziomie doświadczenia, a na koniec każdego scenariusza dostaje punkty doświadczenia za dokonania, które określa scenariusz albo ocenia MG. Punkty wydaje się jak walutę na awans: przejście na poziom *n* kosztuje *n* × 500 punktów. Nagrody zależą od rozmiaru scenariusza: pełny sukces daje od około 250 punktów w mikro scenariuszu do około 2000 w dużym. Każdy poziom daje postaci 1 bazowy Punkt Determinacji i podnosi o 1 górny limit bazowych PDT. Pełne zasady są w `Rules/Experience.md`.
 
 ## Zmęczenie, głód i światło
 

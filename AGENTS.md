@@ -50,7 +50,7 @@ Każdy scenariusz leży w osobnym folderze `Scenarios/<Nazwa scenariusza>/`, a j
 
 Scenariusz bez settingu sam opisuje podstawowe informacje o świecie, w `Scenario.md` i w innych plikach scenariusza.
 
-Scenariusz określa też, za co i ile punktów doświadczenia przyznaje się na jego koniec (zob. *Przyznawanie punktów doświadczenia* w `Rules/Experience.md`).
+Scenariusz określa też swój rozmiar, poziom doświadczenia postaci, dla których jest przeznaczony, oraz za co i ile punktów doświadczenia przyznaje się na jego koniec (zob. *Przyznawanie punktów doświadczenia* w `Rules/Experience.md`).
 
 Scenariusz zawiera tajemnice: układ miejsc, pułapki, zamiary postaci MG, ukryte skarby. MG nie zdradza ich graczowi, dopóki postać ich nie odkryje.
 
