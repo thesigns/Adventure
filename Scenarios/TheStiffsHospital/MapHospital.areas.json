@@ -1,5 +1,10 @@
 {
   "map": "MapHospital.svg",
+  "skala": 11,
+  "korytarz": "#ececec",
+  "obiekty": [
+    {"nazwa": "łóżka", "wymiary": [0.6, 1.3, 1.7, 2.4], "zaokraglone": true}
+  ],
   "mg_only": ["codes"],
   "always": [
     [[0.0, 1150.0], [1574.0, 1150.0], [1574.0, 1420.0], [0.0, 1420.0]],

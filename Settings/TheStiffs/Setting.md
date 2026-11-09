@@ -7,6 +7,7 @@ Polska, Warszawa, wiosna 1990 roku. W nocy z 21 na 22 marca, w pierwszy dzień w
 - `Setting.md`: przegląd, konwencja i zasady settingu przełożone na mechanikę systemu (ten plik)
 - `Poland.md`: realia Polski i Warszawy w marcu 1990 roku: polityka, milicja, pieniądze, codzienność, Kościół, miasto, pogoda
 - `Stiffs.md`: sztywni: stałe zasady, etapy rozkładu, zmysły i zachowanie, co wiedzą ludzie w kolejnych dniach, plotki i rady dla MG
+- `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Powstawanie zmarłych*)
 
 `Stiffs.md` opisuje sztywnych fabularnie, a ten plik podaje, jak ich rozgrywać mechaniką systemu. Gdy oba pliki mówią o tym samym, fabułę rozstrzyga `Stiffs.md`, a liczby ten plik.
 
@@ -150,7 +151,14 @@ Kiedy ciało wstanie, MG rozstrzyga rzutem zaraz po śmierci, nigdy z wyboru:
 
 Wysoki wynik jest korzystny dla postaci gracza, bo daje jej więcej czasu.
 
-**Wyjątek od jawności tablic.** Dopóki postać nie wie, że zmarli wstają, MG wykonuje oba rzuty bez pokazywania tablic i zapisuje wyniki w postępie scenariusza. Tablica zdradziłaby to, czego postać jeszcze nie wie (zob. *Tablica rezultatów* w `Rules/StandardThrow.md`). Gdy postać już wie, MG pokazuje tablice razem z wynikiem.
+**Wyjątek od jawności tablic.** Dopóki postać nie wie, że zmarli wstają, MG wykonuje oba rzuty ukryte, bo tablica zdradziłaby to, czego postać jeszcze nie wie (zob. *Tablica rezultatów* w `Rules/StandardThrow.md`). Rzuca skryptami z neutralną etykietą i nazwaną tablicą z `gm_tables.json`, a wyników nie wpisuje do postępu scenariusza (zob. *Sekrety MG* w `AGENTS.md`):
+
+```
+python Scripts/roll.py --kampania Kloc --ukryty --etykieta r1 --tablica watpliwy
+python Scripts/gm.py --kampania Kloc timer --etykieta n1 --tablica opoznienie --od 1:27 --opis Maria
+```
+
+Pierwsze polecenie rozstrzyga przypadek wątpliwy, drugie zapisuje, kiedy ciało wstanie. Moment powstania podaje potem `gm.py czas`, gdy zegar go minie. Ciało zniszczone, zanim wstało, MG usuwa poleceniem `gm.py usun`. Gdy postać już wie, że zmarli wstają, MG rzuca jawnie, `Scripts/roll.py` z tablicami z tego rozdziału, i pokazuje tablice razem z wynikiem.
 
 Ciało, które jeszcze nie wstało, można zabezpieczyć: zniszczyć mózg albo spalić ciało. Jeśli postać ma czas i narzędzie, nie wymaga to rzutu. Jeśli ciało należy do kogoś bliskiego, MG opisuje to tak, żeby gracz poczuł, ile to kosztuje.
 

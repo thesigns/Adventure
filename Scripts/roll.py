@@ -11,6 +11,14 @@ się odrzuca, a trzy najlepsze sumuje.
 rundy walki), a --stop "3-5,17-18" przerywa serię po wyniku z podanych
 zakresów. Przy serii --pdt dotyczy każdego rzutu osobno.
 Każdy rzut jest dopisywany do Campaigns/<kampania>/Rolls.log.
+
+--tablica NAZWA bierze tablicę z gm_tables.json settingu albo scenariusza
+zamiast wpisów w poleceniu.
+--ukryty --etykieta E to rzut ukryty przed graczem: wynik trafia tylko do
+Campaigns/<kampania>/gm.json (zob. Scripts/gm.py), a skrypt wypisuje samo
+potwierdzenie. Tablicę podaje się wtedy przez --tablica, żeby polecenie
+niczego nie zdradzało:
+    python Scripts/roll.py --kampania Kloc --ukryty --etykieta r1 --tablica watpliwy
 """
 
 import argparse
@@ -21,6 +29,8 @@ import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+
+import gm
 
 MIN, MAX = 3, 18
 KEPT = 3
@@ -116,17 +126,39 @@ def roll(pdt):
     return dice, dropped, sum(kept)
 
 
+def hidden_roll(args, folder, table):
+    """Rzut ukryty: wynik zapisuje gm.py, a na ekran trafia tylko potwierdzenie."""
+    state = gm.load_state(folder)
+    if gm.label_taken(state, args.etykieta):
+        sys.exit(f"Błąd: etykieta '{args.etykieta}' jest już zajęta.")
+    dice, _, total = roll(0)
+    state["rzuty"][args.etykieta] = {
+        "opis": args.opis,
+        "tablica": args.tablica_nazwa or "",
+        "kosci": dice,
+        "wynik": total,
+        "rezultat": next(o for low, high, o in table if low <= total <= high),
+        "czas": datetime.now().isoformat(timespec="seconds"),
+    }
+    gm.save_state(folder, state)
+    gm.log_hidden(folder, args.etykieta, f"roll.py, tablica {args.tablica_nazwa or 'z polecenia'}")
+    print(f"Rzut ukryty zapisany: {args.etykieta}.")
+
+
 def main():
     for stream in (sys.stdout, sys.stderr):
         stream.reconfigure(encoding="utf-8")
 
     parser = argparse.ArgumentParser(description="Rzut 3K6 z tablicą rezultatów.")
-    parser.add_argument("tablica", nargs="+", help="wpisy 'od-do:rezultat', np. '9-18:sukces'")
+    parser.add_argument("tablica", nargs="*", help="wpisy 'od-do:rezultat', np. '9-18:sukces'")
     parser.add_argument("--kampania", required=True, help="nazwa folderu kampanii w Campaigns/")
     parser.add_argument("--opis", default="", help="czego dotyczy rzut")
     parser.add_argument("--pdt", type=int, default=0, help="wydane Punkty Determinacji (dodatkowe kości)")
     parser.add_argument("--rundy", type=int, default=1, help="najwyższa liczba rzutów w serii z tą samą tablicą")
     parser.add_argument("--stop", default="", help="wyniki kończące serię, np. '3-5,17-18'")
+    parser.add_argument("--tablica", dest="tablica_nazwa", help="nazwa tablicy z gm_tables.json zamiast wpisów")
+    parser.add_argument("--ukryty", action="store_true", help="rzut ukryty: wynik tylko w gm.json kampanii")
+    parser.add_argument("--etykieta", help="neutralna etykieta rzutu ukrytego, np. r1")
     args = parser.parse_args()
 
     if not 0 <= args.pdt <= MAX_PDT:
@@ -135,9 +167,28 @@ def main():
         sys.exit("Błąd: --rundy musi być liczbą od 1 do 50.")
     if args.stop and args.rundy == 1:
         sys.exit("Błąd: --stop ma sens tylko przy serii (--rundy większe niż 1).")
+    if bool(args.tablica) == bool(args.tablica_nazwa):
+        sys.exit("Błąd: podaj albo wpisy tablicy w poleceniu, albo --tablica NAZWA.")
+    if args.ukryty:
+        if not args.etykieta:
+            sys.exit("Błąd: rzut ukryty wymaga --etykieta.")
+        if args.pdt or args.rundy > 1:
+            sys.exit("Błąd: rzut ukryty nie może mieć --pdt ani --rundy, bo gracz nie widzi tablicy.")
+    elif args.etykieta:
+        sys.exit("Błąd: --etykieta ma sens tylko z --ukryty.")
 
     log_path = campaign_log(args.kampania)
-    table = parse_table(args.tablica)
+    if args.tablica_nazwa:
+        entries = gm.table_entries(args.tablica_nazwa, gm.load_tables())
+        spans = [f"{low}-{high}:{v} min" if isinstance(v, int) else f"{low}-{high}:{v}" for low, high, v in entries]
+        table = parse_table(spans)
+    else:
+        table = parse_table(args.tablica)
+
+    if args.ukryty:
+        hidden_roll(args, log_path.parent, table)
+        return
+
     stop = parse_stop(args.stop)
     base_odds = odds(0)
     pdt_odds = odds(args.pdt)
