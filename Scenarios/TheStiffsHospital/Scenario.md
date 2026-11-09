@@ -44,6 +44,8 @@ Postać leży w szpitalu. Ma piżamę, szlafrok, kapcie i to, co zmieściło si�
 
 Urazy i choroby z tej tablicy nie są wadami i nie zmieniają PDT (zob. *Urazy* w `Rules/Health.md`). Są ceną za to, że postać zaczyna w samym środku szpitala. Pacjent nie zna szpitala tak jak personel: wie tylko, jak dojść do swojej sali, toalety, palarni i windy.
 
+Bez rzeczy z depozytu pacjent wychodzi w marcową noc w piżamie i kapciach albo boso. Bez butów ucieczka i skradanie po ulicy, gruzie i szkle są trudniejsze o poziom. Bez ciepłego ubrania po mniej więcej godzinie na dworze wszystkie działania są trudniejsze o poziom, dopóki postać się nie ogrzeje. Bez dokumentów w pierwszych dniach trudniej o pomoc milicji, wojska i urzędów.
+
 ## Szpital
 
 Szpital to czteropiętrowy gmach z lat pięćdziesiątych, z piwnicą, strychem i płaskim dachem, oraz niski pawilon gospodarczy na tyłach, połączony z gmachem podziemnym korytarzem. Przed gmachem jest podjazd dla karetek i mały parking, za nim podwórze gospodarcze z wjazdem od bocznej ulicy. Całość otacza siatka z dwiema bramami.
@@ -105,6 +107,14 @@ Na każdym piętrze jest długi korytarz z salami po obu stronach, dyżurka piel
 - **schody gospodarcze** na końcu gmachu, wąskie i ciemne, od piwnicy po strych,
 - **winda osobowa**, od tygodnia zepsuta, i **winda towarowa** na łóżka i wózki, od piwnicy do czwartego piętra, wolna i głośna. Kto jej używa, słyszy ją każdy na każdym piętrze, także sztywni.
 
+### Drzwi, okna i telefony
+
+- **Drzwi sal** są drewniane, z zamkiem. W mniej więcej trzech czwartych z nich klucz tkwi od środka. Czy jest w drzwiach danej sali, MG rozstrzyga rzutem jako okoliczność świata (3–8: nie ma klucza, 9–18: jest). Dyżurki, gabinety i pomieszczenia gospodarcze zamyka się na klucze, które ma personel. Drzwi kostnicy, apteki i wejścia do tunelu są stalowe.
+- **Okna** są stare, skrzynkowe i dają się otworzyć. Od południa wychodzą na podjazd, wejście główne i parking, a od północy na podwórze gospodarcze i pawilon. Okna parteru od strony podjazdu i apteki są okratowane.
+- **Rynny:** po elewacjach, na narożnikach i co kilkanaście metrów, biegną blaszane rury spustowe na zardzewiałych obejmach, także tuż przy oknach skrajnych sal. Zejście po rurze z pierwszego albo drugiego piętra jest przeciętne, a z trzeciego albo czwartego trudne. Ciężki człowiek obciąża obejmy, więc na najniższych wynikach któraś się wyrywa.
+- **Pasy:** na internie, neurologii i izbie przyjęć są skórzane pasy do przypinania pobudzonych chorych do łóżek (zob. *Trzymanie i wiązanie* w `Settings/TheStiffs/Setting.md`).
+- **Telefony:** w każdej dyżurce jest telefon wewnętrzny. Telefon miejski jest tylko w portierni i w gabinecie dyrektora.
+
 ### Piwnica
 
 - **Kostnica i prosektorium.** Chłodnia z szufladami, stół sekcyjny, pomieszczenie dla rodzin, kantorek prosektoryjnego. Z korytarza prowadzą tu drzwi z zamkiem i winda towarowa. W chłodni leży pięć ciał (zob. *Kostnica*).
@@ -156,6 +166,7 @@ Niski budynek za gmachem, na podwórzu gospodarczym: kuchnia z zapasami na kilka
 
 - **Dr Andrzej Kozłowski**, chirurg, lekarz dyżurny szpitala, pięćdziesiąt lat. Zmęczony, cyniczny, kompetentny. W szufladzie dyżurki trzyma spirytus. Do końca próbuje leczyć, bo nie umie inaczej. Gdy zrozumie, co się dzieje, będzie chciał ratować pacjentów, a nie siebie.
 - **Siostra Halina Wójcik**, pielęgniarka oddziałowa interny, pięćdziesiąt pięć lat, pobożna i stanowcza. Ma klucze do szafek z lekami na internie. Nie zostawi chorych. Zmarłych, którzy wstają, uzna za znak końca świata i będzie się modlić, ale nie ucieknie.
+- **Maria Sobczak**, nocna pielęgniarka neurologii, czterdzieści lat. Ciepła, zmęczona, z dziewięcioletnim stażem u boku siostry Haliny. Jej mąż Zbyszek jest kierowcą autobusu. Pilnuje też laryngologii i okulistyki na tym samym piętrze. Na pozostałych oddziałach dyżuruje po jednej pielęgniarce, której imię MG nadaje sam.
 - **Ewa Lis**, stażystka na internie, dwadzieścia sześć lat. Pierwszy samodzielny dyżur. Przerażona, ale bystra: pierwsza zrozumie, że ugryzieni umierają od ran, a nie od „wścieklizny”.
 - **Pani Zofia Gajewska**, salowa, sześćdziesiąt lat. Zna każdy kąt szpitala, klucze do schowków i podziemny korytarz. Nikt jej nie słucha, a ona wie najwięcej.
 - **Pan Kazimierz Sowa**, portier, emerytowany podoficer, sześćdziesiąt pięć lat. Ma klucze do wszystkiego, radio tranzystorowe i stary pistolet sygnałowy w szufladzie. Słucha rozkazów, więc w chaosie szuka kogoś, kto je wyda.
@@ -190,6 +201,7 @@ MG śledzi czas od początku gry. Przejście przez jedno piętro korytarzem zajm
 - **23:30, początek gry.** Zwykły nocny dyżur. Pracownik zaczyna w swoim miejscu pracy, pacjent budzi się w swojej sali, bo nie może spać. Za oknem wieje, w poczekalni izby przyjęć siedzi kilka osób. Psy w okolicy wyją dłużej niż zwykle.
 - **0:00.** Kapral Nowicki przywozi na izbę przyjęć pobitego Zdzicha. Dr Kozłowski zszywa mu łuk brwiowy.
 - **0:20.** Na internę przychodzi ksiądz Tadeusz do pana Edwarda.
+- **0:30.** Kasia budzi się na laryngologii i płacze, bo w sali jest ciemno, a mamy nie ma. Płacz słychać na całym czwartym piętrze. Pielęgniarka z neurologii idzie ją uspokoić, a Kasia budzi się i płacze odtąd co godzinę.
 - **0:40.** Pan Edward umiera. Siostra Halina zakrywa go prześcieradłem. MG rzuca, kiedy wstanie.
 - **1:00, godzina zero.** W kostnicy pięć ciał wstaje w szufladach i wali w drzwiczki. Pan Stefan, pijany, otwiera jedną z nich. W mieście wstają zmarli w mieszkaniach, domach opieki i innych szpitalach.
 - **1:15.** Pan Stefan wstaje jako świeżak. Kostnica jest pełna sztywnych, a winda towarowa stoi otwarta w piwnicy.
@@ -203,6 +215,40 @@ MG śledzi czas od początku gry. Przejście przez jedno piętro korytarzem zajm
 - **6:00.** Radio w portierni nadaje mgliste komunikaty o „zamieszkach i przypadkach agresji” (zob. *Co wiedzą ludzie* w `Settings/TheStiffs/Stiffs.md`).
 
 MG nie musi trzymać się tych godzin co do minuty, ale nie przyspiesza godziny zero i nie zmienia jej. Wydarzenia, przy których postać nie była, toczą się dalej bez niej.
+
+### Sztywni i hałas w kolejnych godzinach
+
+Szpital rozkręca się stopniowo (zob. *Pierwsza noc w miejscu zapalnym* w `Settings/TheStiffs/Setting.md`). MG korzysta z tablic hałasu i spotkań tak:
+
+| Godzina   | Gdzie                     | Tablica                            |
+|-----------|---------------------------|------------------------------------|
+| do 1:00   | cały szpital              | pierwsze 24 godziny, bez sztywnych |
+| 1:00–2:30 | cały szpital              | pierwsze 24 godziny                |
+| od 2:30   | parter, podjazd i piwnica | pierwszy miesiąc                   |
+| od 3:00   | cały szpital              | pierwszy miesiąc                   |
+
+Do 2:30 przychodzą tylko sztywni, którzy już wstali i mogą dojść:
+
+- z kostnicy tylko windą towarową, gdy ktoś ją wezwie, bo drzwi na korytarz są zamknięte,
+- pan Edward z interny od chwili powstania,
+- motocyklista z sali intensywnej opieki od chwili powstania,
+- zmarli z izby przyjęć od 2:00,
+- każdy, kto zginął przy postaci albo w miejscu, przez które przeszła, od chwili powstania.
+
+Jeśli rzut daje więcej sztywnych, niż może dojść, przychodzą ci, którzy mogą, a resztę zastępują przerażeni żywi: pacjenci, personel, ludzie z poczekalni.
+
+## Haczyki
+
+Każde piętro daje postaci powód, żeby nie uciekać od razu, i coś, czego potrzebuje. MG wprowadza je do gry, zanim postać opuści szpital, ale nie zmusza jej do niczego:
+
+- **czwarte piętro:** płacz Kasi od 0:30 (zob. *Przebieg nocy*); pacjent z tego piętra słyszy ją, gdy tylko wyjdzie na korytarz,
+- **trzecie piętro:** siostra Halina, która nie zostawi chorych, i pan Edward,
+- **drugie piętro:** pacjenci na wyciągach, którzy nie mogą uciec i wołają o pomoc, oraz siekiera strażacka,
+- **pierwsze piętro:** dr Kozłowski, sala intensywnej opieki i torba z lekami,
+- **parter:** depozyt z ubraniem, butami i dokumentami pacjentów, telefon miejski w portierni, z którego można zadzwonić do bliskich, i kluczyki do nyski,
+- **piwnica:** szatnie z ubraniami personelu, warsztat z narzędziami i tunel do pawilonu.
+
+Pacjent zaczyna bez butów i ciepłego ubrania (zob. *Pacjent*), więc depozyt albo szatnie to jego naturalny cel.
 
 ## Przeciwnicy
 
@@ -249,6 +295,7 @@ Broń improwizowana utrudnia walkę o poziom (zob. *Broń* w `Rules/Equipment.md
 Scenariusz kończy się, gdy postać opuści szpital, zabarykaduje się do rana w bezpiecznym miejscu albo zginie.
 
 - **Ucieczka przed świtem.** Najbezpieczniej podziemnym korytarzem do pawilonu gospodarczego, a stamtąd nyską albo pieszo przez boczną bramę. Główne wejście i podjazd po 2:30 są pełne sztywnych. Postać wychodzi w miasto, w którym nikt jeszcze nie wie, co się dzieje.
+- **Wczesna ucieczka.** Postać może wyjść główną bramą jeszcze przed 2:30, zanim podjazd się zapełni. To też jest zakończenie, ale ma swoją cenę: pacjent wychodzi bez ubrania, butów i dokumentów, nikogo nie ratuje i nie wie, co stało się z tymi, których zostawił. MG nie zatrzymuje postaci w szpitalu na siłę, ale przed jej wyjściem wprowadza do gry haczyki (zob. *Haczyki*).
 - **Do rana na dachu albo w zamkniętej sali.** Postać przeżyła noc, ale szpital jest pełen sztywnych, a każde wyjście trzeba będzie wywalczyć albo wykraść.
 - **Kogo postać wyprowadzi:** Kasię, dr. Kozłowskiego, siostrę Halinę, Ewę Lis, panią Zofię, Zdzicha. Każdy żywy towarzysz to pomoc i ciężar. Ci, których postać zostawi, zginą albo wstaną.
 - **Śmierć.** Postać, która umrze w szpitalu, wstaje jak każdy (zob. *Powstawanie zmarłych* w `Settings/TheStiffs/Setting.md`).

@@ -123,12 +123,32 @@ Przykład: postać z siekierą celuje w głowę świeżaka. Świeżak to przeci�
 - Każdy dodatkowy sztywny czyni walkę trudniejszą o jeden poziom, jak każdy dodatkowy przeciwnik (zob. *Okoliczności* w `Rules/StandardThrow.md`). Gdy postać walczy z trzema sztywnymi albo więcej, na najniższym wyniku rozszarpują ją: ciężka rana.
 - Pochód sztywnych to przeciwnik legendarny. Walka z nim kończy się śmiercią. Rozsądna postać ucieka, chowa się albo odciąga go hałasem w inną stronę.
 
+### Trzymanie i wiązanie
+
+Postać może chwycić sztywnego i trzymać go, np. przyciśniętego do ziemi albo do ściany. To taktyka walki, a udany chwyt to trafienie w tablicy rundy, choć nie rani sztywnego. Trzymany sztywny nie sięga postaci zębami, ale się nie męczy, więc trzymanie trwa jak walka: każda runda ma swoją tablicę, a zmęczenie postaci działa normalnie (zob. *Zmęczenie w walce* w `Rules/Combat.md`). Trzymanie niczego samo nie kończy, tylko daje czas:
+
+- **komuś innemu**, który może w tym czasie zniszczyć sztywnemu mózg bez rzutu, jeśli ma czym,
+- **na związanie** sztywnego pasami, prześcieradłem albo sznurem, co zajmuje rundę i wymaga rzutu jak każda runda walki,
+- **na zabicie go** samej postaci: rozbicie trzymanej głowy o twardą krawędź albo pchnięcie w oko jest łatwiejsze o poziom, bo sztywny jest unieruchomiony.
+
+Puszczony sztywny od razu wraca do walki. Związany albo przypięty do łóżka pasami sztywny nie uwolni się sam, chyba że więzy są słabe. Gryzie jednak każdego, kto zbliży się do jego głowy, i hałasuje, szarpiąc więzy.
+
 ### Ucieczka i drzwi
 
 - **Przed świeżakiem** ucieczka na krótkim dystansie, np. do drzwi albo na schody, jest przeciętna. Na dłuższym dystansie świeżaka nie da się prześcignąć, bo nigdy się nie męczy. Trzeba go zgubić, schować się przed nim albo postawić między sobą a nim zamknięte drzwi.
 - **Przed wzdętym** ucieczka na krótkim dystansie jest łatwa, a na dłuższym przeciętna: wzdęty tylko truchta, ale też się nie męczy.
 - **Przed gnilcem** ucieczka jest łatwa, a przed próchniakiem trywialna, chyba że postać jest osaczona. Ochłap nikogo nie goni.
-- **Drzwi:** świeżak otwiera drzwi klamką, ale nie otworzy zamka ani zasuwy. Starsi sztywni nie otwierają drzwi, ale trzech albo więcej wzdętych albo gnilców może je wyważyć. Ile wytrzymają drzwi, MG rozstrzyga rzutem, zależnie od drzwi i liczby sztywnych.
+- **Drzwi:** świeżak otwiera drzwi klamką, ale nie otworzy zamka ani zasuwy. Starsi sztywni nie otwierają drzwi. Żaden sztywny nie wyważa drzwi celowo, ale wszyscy walą w nie i napierają całym ciężarem, dopóki słyszą albo widzą kogoś po drugiej stronie. Jeden albo dwóch sztywnych nie wyłamie zamkniętych drzwi, najwyżej wybije szybę w drzwiach albo przebije cienką płytę. Trzech albo więcej sztywnych może je wyłamać.
+
+Ile wytrzymają zamknięte drzwi napierane przez trzech sztywnych, MG rozstrzyga rzutem, gdy zaczynają w nie walić. To okoliczność świata, więc MG rzuca od razu i pokazuje tablicę z wynikiem:
+
+| Wynik | Rezultat                                                     |
+|-------|--------------------------------------------------------------|
+| 3–5   | drzwi puszczają w ciągu około minuty                         |
+| 6–9   | drzwi wytrzymują kilka minut, zamek i zawiasy się luzują     |
+| 10–18 | drzwi wytrzymują, dopóki sztywni nie stracą zainteresowania  |
+
+Tablica dotyczy zwykłych drzwi wewnętrznych z zamkiem, np. drzwi mieszkania albo sali szpitalnej. Solidne drzwi, np. stalowe drzwi piwnicy albo drzwi z zasuwą, ułatwiają o poziom, a barykada albo człowiek, który je podpiera, o kolejny. Słabe drzwi, np. przeszklone albo z płyty, utrudniają o poziom, a każdy sztywny ponad trzech o kolejny. Wzdęci i gnilce, którzy przestają słyszeć i widzieć ofiarę, po kilku minutach odchodzą za innym dźwiękiem. Świeżak, który wie, że ktoś jest za drzwiami, potrafi czekać godzinami.
 
 ## Powstawanie zmarłych
 
@@ -219,11 +239,13 @@ Dla głośnej czynności MG przesuwa progi o poziom na korzyść postaci. W gęs
 
 W niektórych miejscach sztywnych jest dużo od pierwszej nocy, nawet bez hałasu (zob. *Pierwsza noc w Warszawie* w `Stiffs.md`). W takim miejscu MG korzysta z tablicy hałasu dla późniejszego okresu, niż wynika z kalendarza, i od początku umieszcza tam sztywnych, także takich, którzy już na kogoś czekają.
 
-- **Szpitale** to najgorsze miejsca w mieście. W kostnicach leżą ciała, na oddziałach co godzinę ktoś umiera, a przez całą noc i pierwszy dzień karetki i ludzie przywożą rannych i pogryzionych, którzy umierają i wstają. Sztywni są tu od pierwszej nocy: świeżaki na korytarzach, w salach, w windach i na klatkach schodowych, wśród żywych, którzy nie wiedzą, co się dzieje. Od pierwszej nocy MG korzysta tu z tablicy dla pierwszego miesiąca: szpital może wypełnić się sztywnymi jak pochód.
+- **Szpitale** to najgorsze miejsca w mieście. W kostnicach leżą ciała, na oddziałach co godzinę ktoś umiera, a przez całą noc i pierwszy dzień karetki i ludzie przywożą rannych i pogryzionych, którzy umierają i wstają. Sztywni są tu od pierwszej nocy: świeżaki na korytarzach, w salach, w windach i na klatkach schodowych, wśród żywych, którzy nie wiedzą, co się dzieje. Gdy szpital się rozkręci, MG korzysta tu z tablicy dla pierwszego miesiąca: szpital może wypełnić się sztywnymi jak pochód (zob. *Pierwsza noc w miejscu zapalnym*).
 - **Domy opieki, hospicja i stacje pogotowia** działają jak małe szpitale: od pierwszej nocy MG korzysta z tablicy dla pierwszego tygodnia.
 - **Cmentarze ze świeżymi grobami**, zwłaszcza Cmentarz Północny, od pierwszej nocy oddają zmarłych z minionej zimy. Wychodzą z ziemi pojedynczo, przez wiele godzin, jako gnilce i próchniaki. Od pierwszej nocy MG korzysta tu z tablicy dla pierwszego tygodnia, ale przychodzą gnilce, a nie świeżaki. Stare cmentarze, takie jak Powązki, są prawie spokojne, poza pojedynczymi rozerwanymi grobami.
 
 Miejsce zapalne zostaje groźne także później: sztywni, którzy tam wstali albo przyszli, zwykle zostają w pobliżu, dopóki coś ich nie odciągnie.
+
+**Pierwsza noc w miejscu zapalnym.** Przed godziną zero, czyli przed 1:00 w nocy z 21 na 22 marca, sztywnych nie ma nigdzie. Wyniki tablic hałasu i spotkań, które dają sztywnych, oznaczają wtedy zaniepokojonych żywych. Po godzinie zero miejsce zapalne rozkręca się stopniowo. Dopóki są w nim tylko pojedynczy sztywni, MG korzysta z tablic dla pierwszych 24 godzin, a z tablic późniejszego okresu dopiero wtedy, gdy sztywnych jest wielu. Przychodzą tylko ci sztywni, którzy już wstali i mogą dojść. Jeśli rzut daje ich więcej, przychodzą ci, którzy mogą, a resztę zastępują przerażeni żywi. Scenariusz, który opisuje przebieg nocy, podaje godziny przełomu i to, kto już wstał.
 
 **Nieświadomi hałasujący.** Zwierzęta, małe dzieci, ranni w gorączce, pijani i ludzie w panice nie wiedzą, że trzeba być cicho, albo nie potrafią. Są źródłem hałasu, którego postać nie kontroluje. Uciszenie ich to działanie z tablicą rezultatów. MG regularnie wprowadza ich do gry, bo to oni najczęściej ściągają sztywnych.
 
