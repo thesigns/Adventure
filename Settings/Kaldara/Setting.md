@@ -12,6 +12,7 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Trolls.md`: trolle, główne zagrożenie wyspy
 - `Gods.md`: bogowie i ich kulty
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
+- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie, ceny i prawo
 - `MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 
@@ -45,11 +46,11 @@ Wszystkie nazwy i imiona na wyspie są ludzkie i brzmią nordycko, jak w sagach:
 - **Pisownia** jest uproszczona, bez skandynawskich znaków: å, æ, ø, ö, ð i þ. Piszemy Svartjokul, nie Svartjökull.
 - **Bez prawdziwych bogów.** Nie używaj imion prawdziwych nordyckich bogów (Odyn, Thor, Freja, Loki i inni), także jako członów imion i nazw (Thorkel, Freydis). Bogowie wyspy są w `Gods.md`.
 - **Imiona** są krótkie, zwykle dwusylabowe albo złożone z dwóch członów. Męskie kończą się często na -ar, -ulf, -mund, -bjorn, -geir, -vard, -stein, -kel (Ragnar, Asmund, Hallvard, Ulfgeir, Grimkel). Żeńskie na -run, -dis, -hild, -veig, -frid, -a (Sigrun, Asdis, Ragnhild, Bergljot, Halla).
-- **Ojciec i przydomek.** Ludzie przedstawiają się imieniem i imieniem ojca, rzadziej matki: „Ragnar, syn Ulfa”, „Sigrun, córka Halli”. Ludzie znani mają przydomki, które podaje się po polsku: Ragnar Siwobrody, Asdis Jednooka, Hallvard Bez Ziemi.
+- **Ojciec i przydomek.** Ludzie przedstawiają się imieniem i imieniem ojca, rzadziej matki: „Ragnar, syn Ulfa”, „Sigrun, córka Halli”. Ludzie znani mają przydomki, które w odróżnieniu od imion tłumaczy się na język gry: Ragnar Siwobrody, Asdis Jednooka, Hallvard Bez Ziemi.
 - **Rody** nazywa się od założyciela albo od dworu: ród Asmunda, ludzie z Hallvik.
 - **Nazwy miejsc** składają się z członu opisowego i członu, który mówi, jakie to miejsce, np. Austhavn (wschodni port), Svartjokul (czarny lodowiec). Typowe człony rodzajowe: -vik (zatoka), -fjord (fiord), -havn (port), -nes (cypel), -strand (wybrzeże), -fjell (góra), -dal (dolina), -foss (wodospad), -myr (bagno), -jokul (lodowiec), -hraun (pole lawy), -lund (gaj), -vold (pole, równina), -stad (dwór, gospodarstwo), -borg (warownia), -heim (dom, siedziba), -skard (przełęcz), -gap (rozpadlina), -hall (sala), -gard (zagroda, osada). Typowe człony opisowe: svart (czarny), hvit (biały), raud (czerwony), kald (zimny), brenn (palący), grim (ponury), stein (kamień), ulf (wilk), ravn (kruk), bjarka (brzoza), dverg (krasnolud), troll (troll), aust, vest, nord i sud (strony świata).
-- **Ruiny krasnoludzkie** też noszą ludzkie nazwy, nadane przez osadników od wyglądu, położenia albo legendy, np. Dverghall (krasnoludzka sala) albo Ravnskard (krucza przełęcz). W narracji MG może podać też znaczenie nazwy po polsku.
-- **Klany trolli** mówią własnym językiem, a ludzie nazywają je od siedliska albo polskim przezwiskiem: trolle spod Ravnskard, Czerwone Pyski.
+- **Ruiny krasnoludzkie** też noszą ludzkie nazwy, nadane przez osadników od wyglądu, położenia albo legendy, np. Dverghall (krasnoludzka sala) albo Ravnskard (krucza przełęcz). W narracji MG może podać też znaczenie nazwy w języku gry.
+- **Trolle** mówią własnym językiem, a znane trolle ludzie nazywają od legowiska albo przezwiskiem w języku gry: troll spod Ravnskard, Czerwony Pysk.
 - **Spójność.** Każdą nową nazwę, którą postać poznała i która może wrócić w grze, MG zapisuje w postępie scenariusza albo w dzienniku kampanii z krótką notatką, kto albo co to jest. Przed ponownym użyciem nazwy sprawdza ją tam. Nie nadaje tej samej nazwy dwóm miejscom ani tego samego imienia dwóm ważnym postaciom. Epizodyczne postacie mogą pozostać bezimienne, dopóki gracz nie zapyta o imię albo postać nie stanie się ważna.
 
 ## Świat w skrócie
@@ -94,7 +95,7 @@ Ludzie na Kaldarze nie mają króla. Rządzą się sami, według wspólnego praw
 ## Klimat i życie na wyspie
 
 - Klimat jest zimny i wietrzny. Lato jest krótkie i chłodne, z białymi nocami. Zima jest długa, ciemna i śnieżna, z zorzami na niebie.
-- Wyspa leży tuż pod kręgiem polarnym. Mniej więcej od połowy maja do początku sierpnia noc nie ciemnieje do końca. W środku zimy dzień trwa kilka godzin, a na północnym wybrzeżu słońce ledwo wychyla się zza horyzontu.
+- Wyspa leży tuż pod kręgiem polarnym. Mniej więcej od początku maja do początku sierpnia noc nie ciemnieje do końca (zob. *Dzień i noc* w `Mechanics.md`). W środku zimy dzień trwa kilka godzin, a na północnym wybrzeżu słońce ledwo wychyla się zza horyzontu.
 - Wyspa żyje z morza i owiec: rybołówstwo, wieloryby, wełna, suszone ryby. Zboże rośnie tylko na nizinach zachodniej ćwierci i jest drogie.
 - Na wyspie hoduje się małe, krępe i wytrzymałe konie. To podstawowy środek podróży po lądzie. Kto nie ma konia, chodzi pieszo i jest biedakiem.
 - Domy są z kamienia i darni, w miastach także z drewna sprowadzanego zza morza. Drewno jest cenne. Wiele budowli stoi na fundamentach krasnoludzkich albo jest z nich zbudowanych.
@@ -118,7 +119,7 @@ Opis krasnoludów i prawda o ich upadku są w `Dwarves.md`.
 
 ## Trolle
 
-Trolle to główne zagrożenie wyspy. Są rozumne, ale dzikie i okrutne, żyją w klanach w dawnych krasnoludzkich ruinach i gromadzą wszystko, co błyszczy. Światło słońca zamienia je w kamień, więc na powierzchnię wychodzą tylko w ciemności i nigdy daleko od swoich siedlisk.
+Trolle to główne zagrożenie wyspy. Są rozumne, ale dzikie i okrutne. Żyją samotnie w dawnych krasnoludzkich ruinach, każdy w swoim rewirze, i gromadzą wszystko, co błyszczy. Nocą wychodzą na powierzchnię polować na owce i inne zwierzęta. Światło słońca zamienia je w kamień, więc na powierzchnię wychodzą tylko w ciemności i nigdy daleko od swoich siedlisk. Boją się też ognia, więc pod ziemią śmiałek pilnuje pochodni bardziej niż złota.
 
 Opis trolli jest w `Trolls.md`.
 
@@ -139,7 +140,7 @@ Postać gracza jest zawsze człowiekiem z wyspy. Ma profesję, a nie klasę, np.
 - Magia istnieje naprawdę, ale jest rzadka, cicha i niepewna. Nikt nie ciska ogniem ani piorunami. Moc przychodzi jako błogosławieństwo, przepowiednia, klątwa, zaklęta pieśń albo znak, często nie od razu i nigdy na pewno. Nie ma czarodziejów, ksiąg zaklęć ani magii, której można się wyuczyć bez boga albo natury.
 - **Kapłani i kapłanki** służą bogom w świątyniach i przy kapliczkach. Składają ofiary, odprawiają obrzędy, błogosławią, leczą i zamykają kurhany. Nieliczni dostają od swoich bogów prawdziwą moc.
 - **Wieszczki** czerpią moc z natury, najczęściej w służbie Ylvy. Wędrują od dworu do dworu i siadają na wysokim siedzisku, żeby przepowiadać los, pogodę i połów. Zaklinają zwierzęta, rany i wiatr. Ludzie przyjmują je z szacunkiem i lękiem. Wieszczami bywają też mężczyźni, ale rzadko, a ludzie patrzą na nich podejrzliwie i uważają taką moc za niemęską.
-- Moc kapłana albo wieszczki jest zaletą postaci, która daje zdolność nadprzyrodzoną (zob. *Zdolności nadprzyrodzone* w `Rules/Traits.md`). Sama profesja kapłana albo wieszczki bez tej zalety oznacza wiarę, wiedzę i obrzędy, ale nie moc.
+- Moc kapłana albo wieszczki jest zaletą postaci, która daje zdolność nadprzyrodzoną (zob. *Zdolności nadprzyrodzone* w `Rules/Traits.md` i *Magia* w `Mechanics.md`). Sama profesja kapłana albo wieszczki bez tej zalety oznacza wiarę, wiedzę i obrzędy, ale nie moc.
 - Kapłani, wieszczki i zielarki przygotowują napary, maści i amulety. Te, które naprawdę działają, działają raz albo przez krótki czas, więc są przedmiotami zużywalnymi (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`). Nie kupuje się ich jak towaru na targu: o pomoc świątyni albo wieszczki prosi się za ofiarę, dar albo przysługę. Na wsi jest najwyżej kapliczka i zielarka.
 - Krasnoludzkie przedmioty z mocą są rzadkie i cenne. Wszystkie pochodzą z ruin Dvergheimu i są pokryte runami. Ludzie nie umieją ich wytwarzać ani naprawiać. Nie ma magicznych zwojów. W grze działają jak przedmioty niezwykłe (zob. *Przedmioty niezwykłe* w `Rules/Equipment.md`).
 - Ponieważ runy są nieczytelne, nikt nie wie z góry, co robi krasnoludzki przedmiot. Jego moc odkrywa się, używając go, czasem z bolesnym skutkiem. Część przedmiotów nie działa wcale albo działa tylko w określonych warunkach, których nikt nie rozumie.

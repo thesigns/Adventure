@@ -14,7 +14,7 @@ Wielkie, beznogie smocze węże z Głębin, długie na kilkanaście metrów, pok
 
 ### Robale
 
-Wielkie, ślepe robale grube jak pień drzewa, drążące tunele w miękkiej skale, popiele i ziemi. Wyczuwają drgania i atakują spod ziemi albo ze ściany. Trolle polują na nie dla mięsa. Ich tunele łączą czasem ruiny z jaskiniami, o których nikt nie wiedział.
+Wielkie, ślepe robale grube jak pień drzewa, drążące tunele w miękkiej skale, popiele i ziemi. Wyczuwają drgania i atakują spod ziemi albo ze ściany. Trolle polują na nie dla mięsa, a młode zamykają w zagrodach w ślepych chodnikach (zob. *Pożywienie* w `Trolls.md`). Ich tunele łączą czasem ruiny z jaskiniami, o których nikt nie wiedział.
 
 ### Ślepe jaszczury
 
@@ -22,7 +22,7 @@ Blade, bezokie jaszczury, od wielkości psa po wielkość konia. Polują węchem
 
 ### Trolle
 
-Rozumne, dzikie i okrutne istoty z Głębin, różnej wielkości: od pomiotów, wielkości dziecka, po górskie, wysokie na kilka metrów, i wielogłowe, o których ludzie mówią, że to bajka. Żyją w klanach w krasnoludzkich ruinach i gromadzą skarby. Światło słońca zamienia je w kamień. Pełny opis jest w `Trolls.md`.
+Rozumne, dzikie i okrutne istoty z Głębin, różnej wielkości: od pomiotów, wielkości dziecka, po górskie, wysokie na kilka metrów, i wielogłowe, o których ludzie mówią, że to bajka. Żyją samotnie w krasnoludzkich ruinach, każdy w swoim rewirze, i gromadzą skarby. Światło słońca zamienia je w kamień, a ognia się boją. Pełny opis jest w `Trolls.md`.
 
 ## Strażnicy ruin
 
