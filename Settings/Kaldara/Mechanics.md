@@ -104,7 +104,7 @@ Doroczny rytm wyspy:
 
 ### Dzień i noc
 
-Godziny podaje się według słońca: południe wypada o 12:00. Tabela dotyczy środka wyspy. **Ciemność** to czas, kiedy trolle mogą wyjść na powierzchnię: od zgaśnięcia ostatniej poświaty po zachodzie do pierwszego brzasku. Między podanymi dniami MG szacuje godziny na oko.
+Godziny podaje się według słońca: południe wypada o 12:00. Tabela dotyczy środka wyspy. **Ciemność** to czas, kiedy trolle mogą wyjść na powierzchnię: od zgaśnięcia ostatniej poświaty po zachodzie do pierwszego brzasku. Między podanymi dniami godziny interpoluje `Scripts/gm.py` (zob. niżej).
 
 | Dzień           | Wschód | Zachód | Ciemność    | Długość dnia |
 |-----------------|--------|--------|-------------|--------------|
@@ -117,12 +117,14 @@ Godziny podaje się według słońca: południe wypada o 12:00. Tabela dotyczy �
 | 1 kwietnia      | 05:15  | 18:45  | 20:10–03:50 | 13 h         |
 | 15 kwietnia     | 04:25  | 19:35  | 21:10–02:50 | 15 h         |
 | 1 maja          | 03:30  | 20:30  | 22:50–01:10 | 17 h         |
+| 5 maja          | 03:15  | 20:45  | brak        | 17,5 h       |
 | 15 maja         | 02:40  | 21:20  | brak        | 19 h         |
 | 1 czerwca       | 01:45  | 22:15  | brak        | 21 h         |
 | 15 czerwca      | 01:05  | 22:55  | brak        | 22 h         |
 | 1 lipca         | 01:10  | 22:50  | brak        | 22 h         |
 | 15 lipca        | 01:50  | 22:10  | brak        | 20 h         |
 | 1 sierpnia      | 02:50  | 21:10  | brak        | 18 h         |
+| 10 sierpnia     | 03:20  | 20:40  | brak        | 17 h         |
 | 15 sierpnia     | 03:40  | 20:20  | 22:35–01:25 | 17 h         |
 | 1 września      | 04:35  | 19:25  | 20:55–03:05 | 15 h         |
 | 15 września     | 05:25  | 18:35  | 20:00–04:00 | 13 h         |
@@ -132,6 +134,8 @@ Godziny podaje się według słońca: południe wypada o 12:00. Tabela dotyczy �
 | 15 listopada    | 08:50  | 15:10  | 16:45–07:15 | 6 h          |
 | 1 grudnia       | 09:40  | 14:20  | 16:10–07:50 | 5 h          |
 | 15 grudnia      | 10:10  | 13:50  | 15:55–08:05 | 4 h          |
+
+Tę samą tabelę zawiera `daylight.json`. Jeśli kampania ma ustawiony setting (`Scripts/gm.py czas --setting Kaldara`), skrypt przy każdym przesunięciu zegara wypisuje porę dnia i godziny wschodu, zachodu i ciemności, interpolowane między dniami tabeli. Przy zmianie tabeli trzeba zmienić oba miejsca.
 
 Na północnym wybrzeżu zimowy dzień jest krótszy, a białe noce dłuższe niż w tabeli, mniej więcej o tydzień z każdej strony. Na południu jest odwrotnie. Przed świtem i po zachodzie jest jasno, choć słońca nie widać: poświata wystarcza, żeby zabić trolla.
 

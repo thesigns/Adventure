@@ -14,6 +14,11 @@ Każdy rzut jest dopisywany do Campaigns/<kampania>/Rolls.log.
 
 --tablica NAZWA bierze tablicę z gm_tables.json settingu albo scenariusza
 zamiast wpisów w poleceniu.
+--podglad wypisuje tablicę z szansami przy 0-3 PDT (albo do --pdt, jeśli
+więcej) bez rzutu i bez zapisu w Rolls.log. MG pokazuje ją graczowi przed
+decyzją, zamiast liczyć szanse w pamięci:
+    python Scripts/roll.py --kampania Randuvil --podglad "3-8:porażka" "9-18:sukces"
+
 --ukryty --etykieta E to rzut ukryty przed graczem: wynik trafia tylko do
 Campaigns/<kampania>/gm.json (zob. Scripts/gm.py), a skrypt wypisuje samo
 potwierdzenie. Tablicę podaje się wtedy przez --tablica, żeby polecenie
@@ -119,6 +124,22 @@ def parse_stop(text):
     return stop
 
 
+def preview(args, table):
+    """Tablica z szansami przy kolejnych liczbach PDT, bez rzutu i bez zapisu."""
+    levels = list(range(max(3, args.pdt) + 1))
+    by_level = [odds(n) for n in levels]
+    lines = [f"Podgląd (bez rzutu): {args.opis}" if args.opis else "Podgląd (bez rzutu)"]
+    lines.append("Szanse przy " + " / ".join(str(n) for n in levels) + " PDT:")
+    rows = []
+    for low, high, o in table:
+        span = f"{low}" if low == high else f"{low}-{high}"
+        chances = " / ".join(pct(sum(d.get(v, 0) for v in range(low, high + 1))) for d in by_level)
+        rows.append((f"{span}: {o}", chances))
+    width = max(len(label) for label, _ in rows)
+    lines.extend(f"  {label.ljust(width)}  {chances}" for label, chances in rows)
+    print("\n".join(lines))
+
+
 def roll(pdt):
     dice = [rng.randint(1, 6) for _ in range(KEPT + pdt)]
     ranked = sorted(dice)
@@ -159,6 +180,8 @@ def main():
     parser.add_argument("--tablica", dest="tablica_nazwa", help="nazwa tablicy z gm_tables.json zamiast wpisów")
     parser.add_argument("--ukryty", action="store_true", help="rzut ukryty: wynik tylko w gm.json kampanii")
     parser.add_argument("--etykieta", help="neutralna etykieta rzutu ukrytego, np. r1")
+    parser.add_argument("--podglad", action="store_true",
+                        help="tylko wypisz tablicę z szansami przy 0-3 PDT, bez rzutu i bez zapisu")
     args = parser.parse_args()
 
     if not 0 <= args.pdt <= MAX_PDT:
@@ -169,6 +192,8 @@ def main():
         sys.exit("Błąd: --stop ma sens tylko przy serii (--rundy większe niż 1).")
     if bool(args.tablica) == bool(args.tablica_nazwa):
         sys.exit("Błąd: podaj albo wpisy tablicy w poleceniu, albo --tablica NAZWA.")
+    if args.podglad and args.ukryty:
+        sys.exit("Błąd: rzutu ukrytego nie podgląda się, bo gracz nie widzi jego tablicy.")
     if args.ukryty:
         if not args.etykieta:
             sys.exit("Błąd: rzut ukryty wymaga --etykieta.")
@@ -185,6 +210,9 @@ def main():
     else:
         table = parse_table(args.tablica)
 
+    if args.podglad:
+        preview(args, table)
+        return
     if args.ukryty:
         hidden_roll(args, log_path.parent, table)
         return

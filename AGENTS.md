@@ -116,7 +116,7 @@ python Scripts/gm.py --kampania Randuvil czas --teraz 22:30
 python Scripts/roll.py --kampania Randuvil --ukryty --etykieta r1 --tablica zdrada
 ```
 
-- `czas` ustawia zegar świata: pierwszy raz z `--data`, potem samą godziną, która zawsze przesuwa zegar do przodu. Wypisuje tylko zdarzenia, których godzina właśnie minęła, a przyszłych nigdy. MG wywołuje je przy każdym przesunięciu czasu w grze, zanim opisze, co się dzieje.
+- `czas` ustawia zegar świata: pierwszy raz z `--data`, potem samą godziną, która zawsze przesuwa zegar do przodu. Wypisuje tylko zdarzenia, których godzina właśnie minęła, a przyszłych nigdy. MG wywołuje je przy każdym przesunięciu czasu w grze, zanim opisze, co się dzieje. Jeśli setting ma plik `daylight.json` ze wschodami, zachodami i ciemnością, MG podaje nazwę jego folderu raz opcją `--setting`, np. `czas --teraz 22:00 --setting Kaldara` (skrypt ją zapamiętuje), a `czas` wypisuje odtąd porę dnia: dzień, zmierzch, ciemność, brzask albo białą noc. MG opisuje światło i porę dnia według tej linii, a nie z pamięci.
 - `timer` rzuca ukryty czas zdarzenia według nazwanej tablicy, której wartości to minuty, np. kiedy wróci patrol albo kiedy zadziała trucizna. `--od` to godzina początku odliczania (domyślnie teraz), a `--nie-wczesniej` najwcześniejsza możliwa godzina zdarzenia.
 - `Scripts/roll.py --ukryty --etykieta E --tablica NAZWA` to ukryty rzut z tablicą tekstową. Wynik trafia do `gm.json`, a do `Rolls.log` tylko informacja, że rzut był.
 - `usun` usuwa zdarzenie albo rzut, np. gdy postać zapobiegła zdarzeniu, zanim nastąpiło.
@@ -190,7 +190,7 @@ o wygodę czytania w terminalu. Tabel nie łam nigdy.
 
 System ma własną mechanikę, opisaną w plikach zasad podstawowych, i nie korzysta z D&D. Nie stosuj zasad D&D: klas, poziomów, rzutów obronnych, klasy pancerza itp. Jeśli setting albo scenariusz każe uzupełniać brakujące elementy klasycznym D&D, dotyczy to wyłącznie świata i klimatu, nie mechaniki.
 
-Rzuty wykonuj wyłącznie skryptem `Scripts/roll.py`, a rzut monetą skryptem `Scripts/coin.py`, zawsze z nazwą kampanii (`--kampania`), nigdy w pamięci. Tablicę rezultatów ustal przed rzutem i podaj ją w poleceniu. Wyjątkiem są rzuty ukryte, które wykonuje się z nazwaną tablicą przez `--ukryty` albo `Scripts/gm.py timer` (zob. *Sekrety MG*).
+Rzuty wykonuj wyłącznie skryptem `Scripts/roll.py`, a rzut monetą skryptem `Scripts/coin.py`, zawsze z nazwą kampanii (`--kampania`), nigdy w pamięci. Tablicę rezultatów ustal przed rzutem i podaj ją w poleceniu. Gdy pokazujesz graczowi tablicę przed jego decyzją, szanse bierz z `Scripts/roll.py --podglad`, nigdy nie licz ich w pamięci. Wyjątkiem są rzuty ukryte, które wykonuje się z nazwaną tablicą przez `--ukryty` albo `Scripts/gm.py timer` (zob. *Sekrety MG*).
 
 ## Edycja podręcznika
 

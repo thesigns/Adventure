@@ -7,6 +7,7 @@ przeczytać przypadkiem) i wypisuje tylko to, co już się wydarzyło.
 
 Przykłady:
     python Scripts/gm.py --kampania Kloc czas --data 1990-03-21 --teraz 23:30
+    python Scripts/gm.py --kampania Eirik czas --data 0403-04-05 --teraz 16:00 --setting Kaldara
     python Scripts/gm.py --kampania Kloc timer --etykieta n1 --tablica opoznienie --od 0:40 --nie-wczesniej 1:00
     python Scripts/gm.py --kampania Kloc czas --teraz 1:50
     python Scripts/gm.py --kampania Kloc usun --etykieta n1
@@ -14,7 +15,9 @@ Przykłady:
 
 Polecenia:
     czas    ustawia zegar świata (pierwszy raz z --data) i wypisuje zdarzenia,
-            których godzina właśnie minęła; przyszłych nigdy nie wypisuje
+            których godzina właśnie minęła; przyszłych nigdy nie wypisuje;
+            z --setting (zapamiętanym w stanie kampanii) wypisuje też porę
+            dnia z pliku Settings/<setting>/daylight.json
     timer   rzuca 3K6 według nazwanej tablicy z gm_tables.json, której
             wartości to minuty, i zapisuje ukryte zdarzenie; wypisuje tylko
             potwierdzenie
@@ -40,6 +43,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CAMPAIGNS = ROOT / "Campaigns"
 STATE_FILE = "gm.json"
 TABLES_FILE = "gm_tables.json"
+DAYLIGHT_FILE = "daylight.json"
 FORMAT = "gm-base64-1"
 MIN, MAX = 3, 18
 CLOCK_FMT = "%Y-%m-%d %H:%M"
@@ -156,6 +160,77 @@ def get_clock(state):
     return datetime.strptime(state["zegar"], CLOCK_FMT)
 
 
+def hm_minutes(text, where):
+    try:
+        hour, minute = (int(x) for x in text.split(":", 1))
+    except (ValueError, AttributeError):
+        sys.exit(f"Błąd: '{text}' w {where} nie jest godziną w formacie GG:MM.")
+    return hour * 60 + minute
+
+
+def load_daylight(setting):
+    """Wiersze (dzień roku, wschód, zachód, początek ciemności, koniec ciemności) w minutach.
+
+    Ciemność trwa od wieczora (start) przez północ do rana (end). Brak
+    ciemności (białe noce) to start = 1440 i end = 0.
+    """
+    path = ROOT / "Settings" / setting / DAYLIGHT_FILE
+    if not path.exists():
+        sys.exit(f"Błąd: setting '{setting}' nie ma pliku {DAYLIGHT_FILE}.")
+    with path.open(encoding="utf-8") as fh:
+        days = json.load(fh)["dni"]
+    rows = []
+    for key, d in days.items():
+        try:
+            doy = datetime.strptime(f"2001-{key}", "%Y-%m-%d").timetuple().tm_yday
+        except ValueError:
+            sys.exit(f"Błąd: '{key}' w {path.name} nie jest dniem w formacie MM-DD.")
+        if d.get("ciemnosc"):
+            start, end = d["ciemnosc"].split("-", 1)
+            start, end = hm_minutes(start, path.name), hm_minutes(end, path.name)
+        else:
+            start, end = 1440, 0
+        rows.append((doy, hm_minutes(d["wschod"], path.name), hm_minutes(d["zachod"], path.name), start, end))
+    if not rows:
+        sys.exit(f"Błąd: {path.name} nie podaje żadnego dnia.")
+    return sorted(rows)
+
+
+def daylight_on(rows, clock):
+    """Wschód, zachód i ciemność w danym dniu, interpolowane liniowo między wierszami."""
+    month, day = clock.month, min(clock.day, 28) if clock.month == 2 else clock.day
+    doy = datetime(2001, month, day).timetuple().tm_yday
+    before = [r for r in rows if r[0] <= doy]
+    after = [r for r in rows if r[0] > doy]
+    prev = before[-1] if before else (rows[-1][0] - 365,) + rows[-1][1:]
+    nxt = after[0] if after else (rows[0][0] + 365,) + rows[0][1:]
+    if nxt[0] == prev[0]:
+        return prev[1:]
+    f = (doy - prev[0]) / (nxt[0] - prev[0])
+    return tuple(round(a + (b - a) * f) for a, b in zip(prev[1:], nxt[1:]))
+
+
+def fmt_min(m):
+    m = int(round(m / 5) * 5) % 1440
+    return f"{m // 60}:{m % 60:02d}"
+
+
+def day_phase(rows, clock):
+    sunrise, sunset, start, end = daylight_on(rows, clock)
+    t = clock.hour * 60 + clock.minute
+    dark = end > 0 or start < 1440
+    if dark and (t >= start or t < end):
+        phase = "ciemność"
+    elif t < sunrise:
+        phase = "brzask" if dark else "biała noc"
+    elif t < sunset:
+        phase = "dzień"
+    else:
+        phase = "zmierzch" if dark else "biała noc"
+    darkness = f"ciemność {fmt_min(start)}–{fmt_min(end)}" if dark else "ciemności brak (białe noce)"
+    return f"Pora: {phase} (wschód {fmt_min(sunrise)}, zachód {fmt_min(sunset)}, {darkness})"
+
+
 def cmd_czas(args, folder, state):
     hm = parse_hm(args.teraz)
     if args.data:
@@ -167,10 +242,15 @@ def cmd_czas(args, folder, state):
     else:
         clock = at_or_after(get_clock(state), hm)
     state["zegar"] = clock.strftime(CLOCK_FMT)
+    if args.setting:
+        load_daylight(args.setting)
+        state["setting"] = args.setting
 
     due = sorted((e["godzina"], label, e) for label, e in state["zdarzenia"].items()
                  if not e["zgloszone"] and e["godzina"] <= state["zegar"])
     print(f"Zegar: {state['zegar']}")
+    if state.get("setting"):
+        print(day_phase(load_daylight(state["setting"]), clock))
     if not due:
         print("Brak nowych zdarzeń.")
     for moment, label, event in due:
@@ -248,6 +328,7 @@ def main():
     p = sub.add_parser("czas", help="ustaw zegar świata i wypisz zdarzenia, które właśnie nastąpiły")
     p.add_argument("--teraz", required=True, help="godzina w świecie, GG:MM")
     p.add_argument("--data", help="data w świecie, RRRR-MM-DD (przy pierwszym ustawieniu albo korekcie)")
+    p.add_argument("--setting", help="folder settingu z plikiem daylight.json; zapamiętywany w stanie kampanii")
 
     p = sub.add_parser("timer", help="rzuć ukryty czas zdarzenia według nazwanej tablicy")
     p.add_argument("--etykieta", required=True, help="neutralna etykieta, np. n1")

@@ -14,6 +14,7 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
 - `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie, ceny i prawo
 - `MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
+- `daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
 - `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md`)
 - `tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 

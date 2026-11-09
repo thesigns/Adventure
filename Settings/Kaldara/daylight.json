@@ -1,0 +1,31 @@
+{
+  "opis": "Wschód, zachód i ciemność w środku wyspy (zob. Dzień i noc w Mechanics.md). Scripts/gm.py czas liczy z tej tabeli porę dnia, interpolując między dniami. Ciemność null to białe noce.",
+  "dni": {
+    "01-01": {"wschod": "10:05", "zachod": "13:55", "ciemnosc": "15:55-08:05"},
+    "01-15": {"wschod": "09:30", "zachod": "14:30", "ciemnosc": "16:15-07:45"},
+    "02-01": {"wschod": "08:35", "zachod": "15:25", "ciemnosc": "16:55-07:05"},
+    "02-15": {"wschod": "07:50", "zachod": "16:10", "ciemnosc": "17:35-06:25"},
+    "03-01": {"wschod": "07:00", "zachod": "17:00", "ciemnosc": "18:20-05:40"},
+    "03-15": {"wschod": "06:15", "zachod": "17:45", "ciemnosc": "19:05-04:55"},
+    "04-01": {"wschod": "05:15", "zachod": "18:45", "ciemnosc": "20:10-03:50"},
+    "04-15": {"wschod": "04:25", "zachod": "19:35", "ciemnosc": "21:10-02:50"},
+    "05-01": {"wschod": "03:30", "zachod": "20:30", "ciemnosc": "22:50-01:10"},
+    "05-05": {"wschod": "03:15", "zachod": "20:45", "ciemnosc": null},
+    "05-15": {"wschod": "02:40", "zachod": "21:20", "ciemnosc": null},
+    "06-01": {"wschod": "01:45", "zachod": "22:15", "ciemnosc": null},
+    "06-15": {"wschod": "01:05", "zachod": "22:55", "ciemnosc": null},
+    "07-01": {"wschod": "01:10", "zachod": "22:50", "ciemnosc": null},
+    "07-15": {"wschod": "01:50", "zachod": "22:10", "ciemnosc": null},
+    "08-01": {"wschod": "02:50", "zachod": "21:10", "ciemnosc": null},
+    "08-10": {"wschod": "03:20", "zachod": "20:40", "ciemnosc": null},
+    "08-15": {"wschod": "03:40", "zachod": "20:20", "ciemnosc": "22:35-01:25"},
+    "09-01": {"wschod": "04:35", "zachod": "19:25", "ciemnosc": "20:55-03:05"},
+    "09-15": {"wschod": "05:25", "zachod": "18:35", "ciemnosc": "20:00-04:00"},
+    "10-01": {"wschod": "06:15", "zachod": "17:45", "ciemnosc": "19:00-05:00"},
+    "10-15": {"wschod": "07:05", "zachod": "16:55", "ciemnosc": "18:15-05:45"},
+    "11-01": {"wschod": "08:00", "zachod": "16:00", "ciemnosc": "17:25-06:35"},
+    "11-15": {"wschod": "08:50", "zachod": "15:10", "ciemnosc": "16:45-07:15"},
+    "12-01": {"wschod": "09:40", "zachod": "14:20", "ciemnosc": "16:10-07:50"},
+    "12-15": {"wschod": "10:10", "zachod": "13:50", "ciemnosc": "15:55-08:05"}
+  }
+}
