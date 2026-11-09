@@ -1,0 +1,11 @@
+{
+  "tc1": {
+    "opis": "Po ilu minutach od ucieczki pomiota ludzie Ragny docierają do składu Asmunda (zob. Upływ czasu w Scenario.md). Dla Scripts/gm.py timer --od 20:45.",
+    "wpisy": {
+      "3-6": 350,
+      "7-10": 365,
+      "11-14": 380,
+      "15-18": 395
+    }
+  }
+}
