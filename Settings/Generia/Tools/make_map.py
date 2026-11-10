@@ -279,7 +279,7 @@ AREA_NAMES = {
     "hills-1": ("GREENHOLLOW", True), "ashlands": ("ASHLANDS", True),
 }
 # Label positions where the middle of the outline is a poor spot; None hides the label of a tiny area
-AREA_LABEL_AT = {"ashlands": (2790, 760), "taiga-1": (600, 1345), "taiga-2": (1640, 850), "forest-13": None}
+AREA_LABEL_AT = {"ashlands": (2790, 760), "hills-1": (2150, 2150), "forest-5": (2060, 1795), "forest-6": (2205, 1890), "taiga-1": (600, 1345), "taiga-2": (1640, 850), "forest-13": None}
 
 # (fill, glyph, spacing in km)
 COVER = {"ash": ("#ebe4da", "ash", 62), "taiga": ("#dce6d6", "pine", 30), "forest": ("#dbe7c9", "tree", 34), "marsh": ("#dde7de", "reed", 34), "hills": ("#e3edcc", "hill", 40)}
@@ -299,6 +299,10 @@ PLACES = [
     ("kingsbridge", "Kingsbridge", "capital", 1930, 1530, "middle", 0, -32),
     ("mereton", "Mereton", "city", 1468, 1598, "start", 20, -16),
     ("hollowbury", "Hollowbury", "town", 2020, 2000, "end", -16, 8),
+    # ports on the southern coast
+    ("silverhaven", "Silverhaven", "city", 1378, 2298, "start", 20, -12),
+    ("port-seravel", "Port Seravel", "city", 2554, 2033, "end", -20, 34),
+    ("brenwick", "Brenwick", "town", 739, 2248, "end", -16, -10),
     ("aelindor", "Aelindor", "city", 488, 1810, "start", 20, 8),
     # dwarven holds in the Ironpeaks
     ("khaz-dorun", "Khaz Dorun", "hold", 1690, 1045, "middle", 0, 46),
@@ -320,8 +324,12 @@ PLACES = [
 ROADS = [
     ("road-kingsbridge-mereton", "Kingsbridge", "Mereton",
      [(1930, 1530), (1840, 1590), (1730, 1640), (1620, 1655), (1530, 1630), (1468, 1598)]),
-    ("road-kingsbridge-greenhollow", "Kingsbridge", "Greenhollow",
+    ("road-kingsbridge-hollowbury", "Kingsbridge", "Hollowbury",
      [(1930, 1530), (1912, 1640), (1928, 1760), (1965, 1880), (2020, 2000)]),
+    ("road-kingsbridge-seravel", "Kingsbridge", "Port Seravel",
+     [(1930, 1530), (2015, 1630), (2120, 1715), (2250, 1820), (2380, 1925), (2480, 1995), (2554, 2033)]),
+    ("road-hollowbury-silverhaven", "Hollowbury", "Silverhaven",
+     [(2020, 2000), (1850, 2075), (1680, 2150), (1520, 2225), (1378, 2298)]),
 ]
 
 # Rivers that end in another river: their last point is moved onto that river's course
@@ -531,6 +539,17 @@ def place_svg(pid, name, kind, x, y, anchor, dx, dy):
     return f'<g id="place-{pid}" data-name="{name}" data-kind="{kind}" data-x="{x}" data-y="{y}">{mark}{label}</g>'
 
 
+def summary(river_lines, road_lines):
+    """Plain-text digest of the map for the GM: places with coordinates, roads and rivers with lengths."""
+    out = ["Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):"]
+    out += [f"  {name} ({kind}): {x}, {y}" for _, name, kind, x, y, *_ in PLACES]
+    out.append("Roads (km):")
+    out += [f"  {a} - {b}: {km(line)}" for (_, a, b, _), line in zip(ROADS, road_lines)]
+    out.append("Rivers, source to mouth (km):")
+    out += [f"  {RIVER_NAMES[rid][0]}: {km(line)}" for (rid, _, _), line in zip(RIVERS, river_lines)]
+    return "\n".join(out)
+
+
 def km(points):
     return round(sum(math.dist(a, b) for a, b in zip(points, points[1:])))
 
@@ -641,7 +660,7 @@ def build():
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-M} {-M} {W + 2 * M} {total_h}" '
            f'width="{W + 2 * M}" height="{total_h}" font-family="Georgia, \'Times New Roman\', serif" fill="{INK}">',
            "<title>Generia</title>",
-           "<desc>Generia, 1 px = 1 km, north up, x east, y south.</desc>",
+           "<desc>\n" + summary(river_lines, road_lines) + "\n</desc>",
            f"""<defs>
   <polygon id="coast-shape" points="{pts(coast)}"/>
   <clipPath id="land"><use href="#coast-shape"/></clipPath>{GLYPHS}
