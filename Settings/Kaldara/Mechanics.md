@@ -155,7 +155,7 @@ Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za 
 - **Światło z bliska**, czyli pochodnia, latarnia, kaganek albo ognisko w odległości kilku kroków, oślepia trolla: mruży oczy, zasłania się i źle ocenia odległość. Walka z trollem w kręgu światła jest łatwiejsza o poziom.
 - **Nagły błysk** w ciemności, np. odsłonięta latarnia, rozdmuchany żar albo pochodnia ciśnięta trollowi pod nogi, oślepia go na jedną rundę: walka w tej rundzie jest łatwiejsza o dwa poziomy, a troll może się cofnąć albo chybić do własnego towarzysza.
 - **Z daleka** światło nie razi, tylko zdradza postać (zob. *Ciemność i źródła światła*). Dlatego trolle trzymają się poza kręgiem światła, rzucają z ciemności kamieniami, zachodzą od tyłu i próbują je zgasić.
-- **Ślepe trolle**, np. wielu szeptaczy, oraz ślepe jaszczury i robale światło nie obchodzi.
+- **Ślepym trollom**, np. wielu szeptaczom, oraz ślepym jaszczurom i robalom światło nie przeszkadza.
 - **Jedna okoliczność.** Pochodnia, która razi i płoszy naraz, ułatwia walkę o poziom, a nie o dwa (zob. *Okoliczności* w `Rules/StandardThrow.md`). Latarnia i kaganek tylko rażą, więc też ułatwiają walkę o poziom, ale nie trzymają trolla na dystans (zob. *Trolle i ogień*).
 
 ### Trolle i ogień

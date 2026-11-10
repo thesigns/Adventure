@@ -37,9 +37,9 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 ## Lindworm
 
-- Beznogi smoczy wąż, długi na kilkanaście metrów. Pełza tunelami lawowymi i kopalniami.
+- Beznogi smoczy wąż, długi na kilka metrów i gruby jak pień drzewa. Pełza tunelami lawowymi i kopalniami.
 - Rzadki.
-- Żyje tylko pod ziemią, na powierzchnię nie wychodzi. Światło go nie obchodzi.
+- Żyje tylko pod ziemią, na powierzchnię nie wychodzi. Światło mu nie przeszkadza.
 - Trolle uciekają przed nim i porzucają siedliska. Gdzie mieszka lindworm, tam nie ma trolli.
 - Przeciwnik potężny, wielokrotnie silniejszy od człowieka.
 - Łuska twarda jak kamień: wytrzymałość bardzo twarda.
@@ -60,7 +60,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Ogromny biały niedźwiedź, większy od każdego zwierzęcia na wyspie.
 - Rzadki, późną zimą i wiosną w Nordstrand nieczęsty.
-- Poluje o każdej porze. Światło go nie obchodzi.
+- Poluje o każdej porze. Światło mu nie przeszkadza.
 - Przypływa na krze z północy późną zimą i wiosną i wychodzi na brzeg w Nordstrand. Jest głodny i nie boi się ludzi. Gdy ktoś go zobaczy, cała okolica chwyta za broń.
 - Przeciwnik potężny, wielokrotnie silniejszy od człowieka.
 - Gruba skóra, futro i tłuszcz: wytrzymałość twarda.
@@ -70,7 +70,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Duch jezior, rzek i gorących źródeł. Zwykle ma postać pięknego siwego konia, który pasie się samotnie nad wodą, rzadziej pięknego człowieka.
 - Rzadki.
-- Pojawia się o każdej porze, zawsze przy wodzie. Światło go nie obchodzi.
+- Pojawia się o każdej porze, zawsze przy wodzie. Światło mu nie przeszkadza.
 - Przeciwnik przeciętny o wytrzymałości twardej. Groźny przez wodę, nie przez ciosy.
 - Kopyta i zęby: od draśnięcia do rany.
 - Kto go dosiądzie, nie może zsiąść, i nie ma na to rzutu. Nykr wbiega z jeźdźcem w głębinę (zob. *Lodowata woda* w `Mechanics.md`).
@@ -80,7 +80,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Wąż morski, olbrzymia ośmiornica, wieloryb wielki jak wyspa albo stwór, którego nikt nie widział w całości.
 - Mityczny.
-- Pojawia się o każdej porze, na otwartym morzu i w głębokich fiordach. Światło go nie obchodzi.
+- Pojawia się o każdej porze, na otwartym morzu i w głębokich fiordach. Światło mu nie przeszkadza.
 - Przed wypłynięciem rybacy składają ofiary Hafdis.
 - Przeciwnik legendarny o wytrzymałości ogromnej. Nie do walki: zatapia łodzie.
 
@@ -88,7 +88,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Ogromna, tłusta, biała glista: ślepa i bezzębna, gruba jak udo, długa na kilka metrów. Żywi się grzybami i porostami, drąży tunele w miękkiej skale, popiele i ziemi. Tunele łączą czasem ruiny z nieznanymi jaskiniami.
 - Częsty w głębokich ruinach i w Głębinach.
-- Żyje tylko pod ziemią. Światło go nie obchodzi.
+- Żyje tylko pod ziemią. Światło mu nie przeszkadza.
 - To główne mięso trolli, które trzymają młode robale w zagrodach (zob. *Pożywienie* w `Trolls.md`).
 - Nie jest drapieżnikiem: nie poluje, nie atakuje i nie walczy. Wyczuwa drgania i na każdy ruch reaguje ucieczką w tunel albo w popiół.
 - Miękki, bez pancerza, ginie od jednego ciosu. Złapanie albo dogonienie go przed ucieczką to rzut.
@@ -97,7 +97,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Posąg krasnoluda naturalnej wysokości z kamienia albo metalu, pokryty runami. Pozostawiony przez krasnoludy i ożywiony runami, nikt nie wie jak.
 - Rzadki. Stoi przy skarbcach, świątyniach i innych ważnych albo reprezentacyjnych miejscach.
-- Nie opuszcza ruin. Światło go nie obchodzi.
+- Nie opuszcza ruin. Światło mu nie przeszkadza.
 - Każdy działa według własnych zasad: jeden budzi się, gdy ktoś przekroczy próg, inny po dotknięciu skarbu, a jeszcze inny od tysiąca lat chodzi tą samą drogą. Często trzyma się jednego miejsca. Co go budzi, zatrzymuje albo usypia, ustala scenariusz. Postać może się tego dowiedzieć, obserwując go.
 - W ruchu hałasuje i słychać go z daleka.
 - Trolle omijają go szerokim łukiem.
@@ -109,14 +109,15 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 ## Smok z Brennfell
 
-- Ogromny, łuskowaty wąż ognia. Ludzie znają go z sag i z płaskorzeźb w krasnoludzkich twierdzach.
+- Łuskowaty, popielaty gad o wężowym ciele, czterech łapach i błoniastych skrzydłach, długi na około 20 metrów od głowy do czubka ogona. Lata. Ludzie znają go z sag i z płaskorzeźb w krasnoludzkich ruinach.
 - Mityczny. Jedni uważają go za legendę, inni wierzą, że istnieje.
 - Istnieje naprawdę, ale nikt z żyjących go nie widział. Śpi w gorących pieczarach pod uśpionym wulkanem Brennfell, pełnych trujących oparów, w których nie przeżyje żaden człowiek.
 - Budzi się raz na kilkaset lat, wychodzi na powierzchnię, poluje na zwierzęta i znów zasypia. Ostatnio był na powierzchni przed Przybyciem. Kiedy obudzi się znowu, setting nie rozstrzyga.
-- Światło go nie obchodzi.
+- Światło mu nie przeszkadza.
 - Ludzie mówią, że gdy przewraca się przez sen, ziemia drży, a z krateru Brennfell bije para. To zwykłe zjawiska ziemi, ale na wyspie nikt ich od smoka nie odróżnia.
-- Przeciwnik legendarny o wytrzymałości ogromnej. Nie do walki: kończy się niemal pewną śmiercią (zob. *Koniec walki* w `Rules/Combat.md`).
-- Ogień i paszcza: od ciężkiej rany do zmasakrowania.
+- Przeciwnik legendarny o wytrzymałości ogromnej. Walka w pojedynkę kończy się niemal pewną śmiercią (zob. *Koniec walki* w `Rules/Combat.md`).
+- Odporny na ogień i trujące wyziewy, ale nie zionie nimi.
+- Walczy pazurami, ogonem i paszczą: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
 
 ## Szczur
 
@@ -132,7 +133,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Blady, bezoki, od wielkości psa po wielkość konia. Poluje węchem i słuchem.
 - Nieczęsty, zwykle przy trollach.
-- Na powierzchnię wychodzi tylko nocą, razem z trollami. Światło go nie obchodzi.
+- Na powierzchnię wychodzi tylko nocą, razem z trollami. Światło mu nie przeszkadza.
 - Trolle trzymają jaszczury jak psy, do pilnowania legowisk i tropienia intruzów. Gdzie są jaszczury, tam zwykle niedaleko są trolle.
 - Mały, wielkości psa, to przeciwnik przeciętny o wytrzymałości wątłej. Duży, wielkości konia, to przeciwnik silny, silniejszy od człowieka, o wytrzymałości twardej.
 - W ciemności szybszy niż człowiek z pochodnią.
