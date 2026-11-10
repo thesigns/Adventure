@@ -395,7 +395,7 @@ Oba sposoby się sumują: ciężko ranny człowiek przy gorącym źródle i z ma
 
 **Opary i trucizny.** W jaskiniach przy wulkanach i na Pustkowiach Hraun zbierają się trujące opary, niewidoczne albo pachnące zgniłymi jajami. Każde kilka minut w oparach to rzut: porażka oznacza zawroty głowy (wszystkie działania trudniejsze o poziom), a powtórna utratę przytomności. Postać, która wie o oparach, widzi tablicę przed rzutem. Opary w ruinach i trucizny wiedźm opisuje scenariusz.
 
-**Czarny kaszel.** Chorobę śmiałków, którą łapie się głęboko pod ziemią, a mija na powierzchni, opisuje `Diseases.md`.
+**Choroby**, w tym czarny kaszel śmiałków i gorączkę z rany, opisuje `Diseases.md`.
 
 **Zmarły bez obrzędów.** Kto umrze w ruinach albo na pustkowiu i nie zostanie pochowany z obrzędami Dauvara, może wstać jako draugr. Dotyczy to także postaci gracza: jej ciało może spotkać kolejna postać.
 

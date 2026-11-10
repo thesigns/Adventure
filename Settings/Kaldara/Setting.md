@@ -12,11 +12,11 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Trolls.md`: trolle, główne zagrożenie wyspy
 - `Gods.md`: bogowie i ich kulty
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
-- `Diseases.md`: choroby wyspy i ich mechanika, w tym czarny kaszel śmiałków
+- `Diseases.md`: choroby i ich mechanika: czarny kaszel, gorączka z rany, gnilec, ślepota śnieżna, czerwonka, zapalenie płuc
 - `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie, ceny i prawo
 - `MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
-- `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md` i *Zakażenie* w `Diseases.md`)
+- `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md` i `Diseases.md`)
 - `tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 
 Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, krainy, góry, lodowiec, główne rzeki i trakty. Gracz może więc oglądać `MapKaldara.svg` w całości, a MG nie odsłania jej skryptem `Scripts/fogmap.py`. Na mapie wyspy nie ma ruin ani niczego, czego ludzie na wyspie nie wiedzą. Mapy konkretnych miejsc, np. ruin, mają scenariusze i te MG odsłania zwykłym trybem.
