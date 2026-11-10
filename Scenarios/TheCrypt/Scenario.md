@@ -6,7 +6,7 @@ A short, self-contained adventure for one character over one or two sessions. Th
 
 ## The world
 
-Coldford is a dozen or so cottages in a mountain valley, far from towns and roads. It is late autumn. Three weeks ago, after heavy rain, a slope slid down and buried the only road through the pass, so until spring nobody will come into the valley and nobody will leave it. People live off sheep, goats and flax, pay in silver and copper, and pray to Solarius for the sun and the harvest, to Sylvana for the flocks and to Mortis for the dead.
+Coldford is a dozen or so cottages in a mountain valley, far from towns and roads. It is late autumn. Three weeks ago, after heavy rain, a slope slid down and buried the only road through the pass, so until spring nobody will come into the valley and nobody will leave it. People live off sheep, goats and flax, pay in silver and copper, and pray to Solarius for light and health, to Sylvana for the harvest and the flocks, and to Mortis for the dead.
 
 The valley has no priest, no mage and no healer other than the herbalist. Old tales speak of revenants that rise from their graves. Few believe them. A character's own magic works as described in the setting (see `Settings/Generia/Magic.md`). A prayer for help by a character without a divine ability is very hard, and help, if it comes, is modest.
 
@@ -45,7 +45,7 @@ The crypt is in total darkness: without light, actions that need sight are two l
 
 ## Start of the adventure
 
-The game starts in the morning, at about seven, on day one of play, i.e. on the third day after Tobin's disappearance. The character spends the night in Coldford, in a cottage that follows from their background or, if the background does not say, in a room at the headman's.
+The game starts in the morning, at about seven, on day one of play, the 5th day of the 11th month of 1240 AF (for the world clock: `--date 1240-11-05 --now 7:00`), i.e. on the third day after Tobin's disappearance. The character spends the night in Coldford, in a cottage that follows from their background or, if the background does not say, in a room at the headman's.
 
 Gerold knocks at the door, and behind him stands a tearful Martha. The headman tells what the village knows (see *What the village knows*) and asks the character to go up Birch Hill to look for the boy and to find out what is killing the livestock. He promises a reward (see *The village of Coldford*) and gives 3 torches. He says nobody from the village will go with the character: people fear the crypt, and he himself is too old.
 
@@ -240,7 +240,7 @@ A narrow, winding crack in the rock that must be passed sideways. After about 30
 
 **Corwin's crossbow** has 2 bolts. After a shot Corwin needs a whole round to span it, so in melee he fights with a knife.
 
-**The undead** (dead dog, Malric, Corwin revenant) feel no wounds: wounds do not hinder their actions and they do not flee. They fall only at 90% and fall apart at 100%. This scenario rule takes precedence over the core rules.
+**The undead** (dead dog, Malric, Corwin revenant) feel no wounds: wounds do not hinder their actions and they do not flee, except Malric (see below). They fall only at 90% and fall apart at 100%. This scenario rule takes precedence over the core rules.
 
 **Fire** against the undead makes the fight one level easier. A wound dealt by fire, e.g. with a torch, is not reduced by the revenant's tough toughness: a torch deals him a light wound, and on the highest results a medium wound.
 
