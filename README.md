@@ -7,8 +7,7 @@ maps and the GM's secrets.
 
 The system is generic and suits any genre: fantasy, science fiction,
 cyberpunk, horror and others. It does not assume any particular convention,
-and the player character can die. It has its own simple mechanics and does
-not use D&D rules.
+and the player character can die. It has its own simple mechanics.
 
 All files in the repository are in English, but you choose the language of
 play, e.g. English or Polish: the GM narrates in that language and translates
