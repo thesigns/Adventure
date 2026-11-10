@@ -234,7 +234,7 @@ A narrow, winding crack in the rock that must be passed sideways. After about 30
 
 | Enemy | Category | Toughness | Wounds dealt | Behaviour |
 |---|---|---|---|---|
-| swarm of rats | weak | frail | scratch, on a 3 a light wound | flees after the first wound or at the sight of fire |
+| swarm of rats | weak | swarm of frail creatures | scratch, on a 3 a light wound | a swarm (see *Swarms* in `Rules/Combat.md`): weapons barely harm it, fire scatters it |
 | Corwin | average | human | knife: scratch to medium wound; crossbow: light to serious wound | wounded (45%), afraid, surrenders when losing |
 | dead dog | average | human | bite: scratch to serious wound, typically medium wound | undead, fights to the end |
 | Malric | strong | tough | claws and sword: light wound to mortal blow, typically medium wound | undead, fights to the end, drinks the blood of the fallen |
