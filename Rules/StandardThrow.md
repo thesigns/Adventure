@@ -124,7 +124,7 @@ python Scripts/roll.py --campaign Randuvil --desc "Climbing the wall" "3-4:falls
 - `--rounds` is the maximum number of rolls in a series with the same table (default 1), and `--stop` lists the results that end the series, e.g. `--stop 3-5,17-18`. In a series `--dp` applies to each roll separately. Series are used for consecutive rounds of combat (see *Series of rounds* in `Rules/Combat.md`).
 - `--table NAME` takes a named table from the `Tables/GmTables.json` file of the setting or scenario instead of entries in the command.
 - `--preview` prints only the table with the chance of each outcome for 0, 1, 2 and 3 DP spent (or up to the number in `--dp`, if higher), without rolling and without an entry in `Rolls.log`. The GM uses it when showing the player a table before their decision (see *Player's decision*) and quotes the chances from the preview, never computed in their head.
-- `--hidden --label E` is a roll hidden from the player, when the world or scenario says to hide it. The script does not print the result, only saves it in the campaign's hidden state (see *Sekrety MG* in `AGENTS.md`). The table is then given with `--table`, so that the command reveals nothing.
+- `--hidden --label E` is a roll hidden from the player, when the world or scenario says to hide it. The script does not print the result, only saves it in the campaign's hidden state (see *GM secrets* in `AGENTS.md`). The table is then given with `--table`, so that the command reveals nothing.
 
 The script prints the table with the chance of each outcome (with DP spent, also the chance without them), the dice rolled, the dice dropped, the result and the outcome. It records every roll in the file `Rolls.log` in the campaign folder.
 

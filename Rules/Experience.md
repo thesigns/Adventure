@@ -44,7 +44,7 @@ For an achievement the scenario does not foresee, the GM judges whether to award
 
 A scenario usually describes its rewards in a separate file `ExperienceRewards.md` in its folder, because they are needed only at the end of the scenario.
 
-When awarding points, the GM tells the player their total and lists the achievements they were awarded for. The GM does not, however, reveal secrets the character has not discovered, e.g. a trap they avoided without knowing about it. Points for such achievements are given as a lump sum, without explanation. The GM records the points awarded and the achievements the player has learned of in the scenario progress in the campaign folder, and the new point total on the character sheet (see *Kampanie* in `AGENTS.md`).
+When awarding points, the GM tells the player their total and lists the achievements they were awarded for. The GM does not, however, reveal secrets the character has not discovered, e.g. a trap they avoided without knowing about it. Points for such achievements are given as a lump sum, without explanation. The GM records the points awarded and the achievements the player has learned of in the scenario progress in the campaign folder, and the new point total on the character sheet (see *Campaigns* in `AGENTS.md`).
 
 ### Scenario size
 

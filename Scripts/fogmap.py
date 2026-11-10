@@ -8,7 +8,7 @@ Examples:
 
 Next to the SVG map there must be an areas file with the same name and the
 extension .areas.json (e.g. MapCrypt.areas.json). It describes the areas to
-reveal, the secrets and the GM-only elements (format: see AGENTS.md, Mapy).
+reveal, the secrets and the GM-only elements (format: see AGENTS.md, Maps).
 
 The discovery state is saved in the campaign folder in <name>Map.json, and
 the player map in <name>Map.svg together with a self-refreshing preview

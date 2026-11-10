@@ -3,7 +3,7 @@
 Character creation takes place before a scenario is played. First the player decides which world the character will play in. They can choose:
 
 - a **setting** from `Settings/`, and pick a scenario from that setting later,
-- or a **scenario** straight away, which also determines the setting (see *Scenariusze* in `AGENTS.md`). If the scenario uses no setting, the scenario itself describes the world.
+- or a **scenario** straight away, which also determines the setting (see *Scenarios* in `AGENTS.md`). If the scenario uses no setting, the scenario itself describes the world.
 
 Before starting character creation, the GM reads all files of the chosen setting and, if the player chose a scenario, all files of the scenario as well. Without this the GM cannot judge whether the character's species, profession, background and equipment fit the world's lore. To the player, however, the GM presents only what the character knows about the world at the start of the adventure. The GM does not reveal scenario secrets, e.g. enemies the character does not know yet.
 
@@ -79,4 +79,4 @@ The GM offers Randuvil: a staff, a spellbook, writing tools, a dagger, a bag wit
 
 ## Character sheet
 
-The character is ready. The GM creates their campaign folder, usually named after the character, e.g. `Campaigns/Randuvil/` (see *Kampanie* in `AGENTS.md`). The GM fills in the template `Rules/CharacterTemplate.md`, saves the character sheet in that folder as `Character.md`, and next to it creates the campaign log `Campaign.md`. The character starts the adventure with a full DP pool, unwounded and without experience points.
+The character is ready. The GM creates their campaign folder, usually named after the character, e.g. `Campaigns/Randuvil/` (see *Campaigns* in `AGENTS.md`). The GM fills in the template `Rules/CharacterTemplate.md`, saves the character sheet in that folder as `Character.md`, and next to it creates the campaign log `Campaign.md`. The character starts the adventure with a full DP pool, unwounded and without experience points.

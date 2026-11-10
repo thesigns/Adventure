@@ -82,7 +82,7 @@ Krypta jest wykuta w skale pod Wzgórzem Brzozowym, pół godziny drogi od wsi. 
 
 ### Plan
 
-Mapa krypty jest w pliku `Maps/MapCrypt.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). To mapa dla MG: graczowi MG pokazuje mapę z mgłą wojny (zob. *Mapy* w `AGENTS.md`). Obszary do odsłaniania mają numery pomieszczeń od 1 do 9, a jedynym sekretem jest `plyta`, czyli płyta naciskowa w przedsionku. Obszar 3 obejmuje też rozwidlenie korytarza, więc postać, która do niego dojdzie, widzi wejścia do pokojów 4 i 5. Obszar 9 MG odsłania, gdy postać znajdzie szczelinę, od strony grobowca albo wąwozu.
+Mapa krypty jest w pliku `Maps/MapCrypt.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). To mapa dla MG: graczowi MG pokazuje mapę z mgłą wojny (zob. *Maps* w `AGENTS.md`). Obszary do odsłaniania mają numery pomieszczeń od 1 do 9, a jedynym sekretem jest `plyta`, czyli płyta naciskowa w przedsionku. Obszar 3 obejmuje też rozwidlenie korytarza, więc postać, która do niego dojdzie, widzi wejścia do pokojów 4 i 5. Obszar 9 MG odsłania, gdy postać znajdzie szczelinę, od strony grobowca albo wąwozu.
 
 Mapę gracza MG prowadzi skryptem `Scripts/fogmap.py`, z nazwą kampanii postaci:
 
