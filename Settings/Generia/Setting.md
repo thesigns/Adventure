@@ -5,7 +5,8 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 ## Setting files
 
 - `Setting.md`: GM rules, world, peoples, languages, adventurers, names (this file)
-- `Geography.md`: the continent, climate, lands and places, travel
+- `Geography.md`: the continent, climate, mountains, waters, ruins and lands
+- `Travel.md`: pace, costs, seasons and dangers of travel
 - `Magic.md`: arcane spells, learning them, scrolls and magic items
 - `Faith.md`: gods, divine gifts, displeasure and conversion
 - `Equipment.md`: money, prices, weapons, armour, light, starting purse
@@ -32,7 +33,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 ## Peoples
 
-A character's species sets the reference point: traits typical of it are not advantages (see `Rules/CharacterCreation.md`).
+A character's species sets the reference point: traits typical of it are not advantages (see `Rules/CharacterCreation.md`). All peoples heal at the same rate as humans (see *Healing* in `Rules/Health.md`).
 
 - **Humans:** the most numerous, live everywhere, do everything. Physically unremarkable, but restless and expansive: they have many children, eagerly explore and settle new lands, which often leads to wars. Natural conquerors.
 - **Elves:** live several centuries, slender, graceful. Keen senses, see well in starlight and dim light, move quietly in forests. Skilled trackers and archers, and often mages. Proud and distant towards shorter-lived peoples. Traditionally they keep to the wild forests that once covered most of Generia, and human logging of those forests leads to conflicts. Some elves are restless spirits, though: adventurers, merchants and even bandits.

@@ -4,6 +4,7 @@
 - Humanoids with weapons wound as their weapons do (see `Equipment.md`).
 - “Feels no wounds”: wounds do not hinder it, it never flees, surrenders or tires (see *Fatigue in combat* in `Rules/Combat.md`).
 - Everything else about a monster is what fantasy folklore says about it.
+- Monsters heal like other creatures (see *Healing* in `Rules/Health.md`), unless their row says otherwise.
 
 | Creature | Category | Toughness | Typical wound | Notes |
 |---|---|---|---|---|
@@ -26,7 +27,7 @@
 | wraith, ghost | strong | human | medium wound | only magic or holy wounds; drains strength |
 | bog hag | strong | human | light wound | claws; curses, illusions and spells like `Magic.md`; bargains, lies, steals children |
 | ogre, minotaur | powerful | tough | serious wound | dull-witted |
-| troll | powerful | tough | serious wound | regenerates unless wounded by fire or acid |
+| troll | powerful | tough | serious wound | regenerates: wound level drops by 10% each round, except wounds from fire or acid |
 | vampire | powerful | tough | medium wound | charm, feeds on blood; sun, stake, holy symbols |
 | basilisk, wyvern | powerful | very tough | serious wound | petrifying gaze / poison sting |
 | giant | powerful | very tough | mortal blow | throws boulders |
