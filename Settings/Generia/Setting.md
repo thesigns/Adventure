@@ -6,6 +6,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 - `Setting.md`: GM rules, world, peoples, adventurers, names (this file)
 - `Culture.md`: languages, law and customs
+- `History.md`: the Empire of Aurelion, the history of Generia and its present rulers
 - `Geography.md`: the continent, climate, mountains, waters, ruins and lands
 - `Travel.md`: pace, costs, seasons and dangers of travel
 - `Magic.md`: arcane spells, learning them, scrolls and magic items
@@ -31,7 +32,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
 - **Culture:** languages, law and customs of the lands: `Culture.md`.
 - **Gods:** seven jealous gods, each followed on their own; their clerics and paladins receive divine gifts. Gods, gifts, displeasure and conversion: `Faith.md`.
-- **Ruins:** the old Empire of Aurelion fell a thousand years ago and left roads, towers, tombs and dungeons full of treasure and danger.
+- **Ruins:** the old Empire of Aurelion fell a thousand years ago and left roads, towers, tombs and dungeons full of treasure and danger. History and present rulers: `History.md`.
 
 ## Peoples
 
