@@ -202,7 +202,7 @@ When changing the core rules, keep to these conventions:
 - The core rules are written to suit every genre. A specific genre may appear only in examples, and genre details (examples of armour, prices, enemies) belong to settings.
 - The system does not protect the player character from death. A milder convention can be introduced by a setting or scenario.
 - In examples the `>` sign is put only before a description of a situation in play. Mechanics, i.e. the GM's judgement, tables, roll results and calculations, are plain text.
-- Tables are aligned with spaces, so that columns are even in plain text.
+- Tables are aligned with spaces, so that columns are even in plain text. A table that would be wider than 120 characters is not aligned: its cells have no padding (`| a | b |`, separator `|---|---|`).
 - A reference to another file has the form "see *Section* in `Rules/File.md`", and within a file "see *Section*".
 - Each rules file, except the character creation files, is summarised in a few sentences in `Rules/Rules.md`, with a reference to the full rules.
 - A new rules file is added to the list in the *Core rules* section of this file.

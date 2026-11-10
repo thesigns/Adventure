@@ -76,14 +76,14 @@ An action easier than easy is trivial and needs no roll. An action harder than n
 
 Typical circumstances:
 
-| Makes easier                                 | Makes harder                                                                    |
-|----------------------------------------------|---------------------------------------------------------------------------------|
-| an advantage that fits the action            | a disadvantage that fits the action                                             |
-| a good tool or preparation                   | an improvised weapon or tool                                                    |
-| surprising the enemy                         | darkness, fog, downpour                                                         |
-| favourable terrain                           | unfavourable terrain                                                            |
+| Makes easier | Makes harder |
+|---|---|
+| an advantage that fits the action | a disadvantage that fits the action |
+| a good tool or preparation | an improvised weapon or tool |
+| surprising the enemy | darkness, fog, downpour |
+| favourable terrain | unfavourable terrain |
 | means especially effective against the enemy | wounds (see *Wound levels* in `Rules/Health.md`), fatigue, hunger, intoxication |
-| a weakened enemy (wounded, exhausted)        | every additional enemy                                                          |
+| a weakened enemy (wounded, exhausted) | every additional enemy |
 
 ## Examples
 

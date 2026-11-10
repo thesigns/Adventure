@@ -94,13 +94,13 @@ The GM sets the wound spread after taking both sides into account and spreads it
 
 From the lowest results:
 
-| Result                                               | Outcome                                                                  |
-|------------------------------------------------------|--------------------------------------------------------------------------|
-| 3                                                    | the enemy deals a wound one step heavier than typical, the fight goes on |
-| rest of the wound range                              | the enemy deals the typical wound, the fight goes on                     |
-| from the end of the wound range to the hit threshold | an exchange with no result, the fight goes on                            |
-| from the hit threshold to 16                         | the character deals the enemy the typical wound                          |
-| 17–18                                                | the character deals a wound one step heavier than typical                |
+| Result | Outcome |
+|---|---|
+| 3 | the enemy deals a wound one step heavier than typical, the fight goes on |
+| rest of the wound range | the enemy deals the typical wound, the fight goes on |
+| from the end of the wound range to the hit threshold | an exchange with no result, the fight goes on |
+| from the hit threshold to 16 | the character deals the enemy the typical wound |
+| 17–18 | the character deals a wound one step heavier than typical |
 
 With a weapon of a wide wound spread, the GM writes more steps into the table. When an enemy hurls a fireball at the character, a 3 may mean mangling, and the highest results of the wound range only a scratch.
 
@@ -108,13 +108,13 @@ Within this layout the GM can set apart other outcomes, e.g. losing a weapon, da
 
 ## Enemies
 
-| Enemy     | Examples                                                | Combat difficulty | Hit threshold | Wound range |
-|-----------|---------------------------------------------------------|-------------------|---------------|-------------|
-| weak      | a youth with a knife, a peasant with a pitchfork, a dog | easy              | 6             | 3–4         |
-| average   | bandit, guard, wolf                                     | average           | 9             | 3–6         |
-| strong    | veteran, bear                                           | hard              | 11            | 3–9         |
-| powerful  | great beast, master swordsman                           | very hard         | 13            | 3–11        |
-| legendary | creature of legend                                      | nearly impossible | 16            | 3–14        |
+| Enemy | Examples | Combat difficulty | Hit threshold | Wound range |
+|---|---|---|---|---|
+| weak | a youth with a knife, a peasant with a pitchfork, a dog | easy | 6 | 3–4 |
+| average | bandit, guard, wolf | average | 9 | 3–6 |
+| strong | veteran, bear | hard | 11 | 3–9 |
+| powerful | great beast, master swordsman | very hard | 13 | 3–11 |
+| legendary | creature of legend | nearly impossible | 16 | 3–14 |
 
 The category tells how dangerous the enemy is in a fight, and toughness how hard they are to wound. These are two different things: a master swordsman is a powerful enemy of human toughness.
 

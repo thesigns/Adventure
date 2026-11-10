@@ -50,12 +50,12 @@ When awarding points, the GM tells the player their total and lists the achievem
 
 The size of rewards depends on the size of the scenario. The table gives rough values for full success, i.e. for a character who did everything the scenario's plot foresees and gets the most points the scenario gives. Rewards for repeatable achievements count up to a limit set by the scenario, e.g. for at most 10 zombies killed.
 
-| Size    | Play time     | Example                                                                              | Full success |
-|---------|---------------|--------------------------------------------------------------------------------------|--------------|
-| micro   | up to 1 hour  | a short story, one place with 3–4 rooms, 2–3 GM characters                           | about 250    |
-| mini    | about 2 hours | a short story, one place with 6–8 rooms, 4–8 GM characters                           | about 500    |
-| medium  | about 4 hours | an elaborate story, several places, including one multi-level with at least 10 rooms | about 1000   |
-| large   | up to 6 hours | no limits                                                                            | about 2000   |
+| Size | Play time | Example | Full success |
+|---|---|---|---|
+| micro | up to 1 hour | a short story, one place with 3–4 rooms, 2–3 GM characters | about 250 |
+| mini | about 2 hours | a short story, one place with 6–8 rooms, 4–8 GM characters | about 500 |
+| medium | about 4 hours | an elaborate story, several places, including one multi-level with at least 10 rooms | about 1000 |
+| large | up to 6 hours | no limits | about 2000 |
 
 Size is set mainly by play time, and the numbers of rooms and GM characters are only examples. A place can be e.g. a dungeon, a building or a spaceship. Longer campaigns are split into scenarios of these sizes.
 

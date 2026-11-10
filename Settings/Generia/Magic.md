@@ -14,20 +14,20 @@
 
 ### Example abilities
 
-| Ability           | Tradition | Effect                                                                 | Uses           |
-|-------------------|-----------|------------------------------------------------------------------------|----------------|
-| firebolt          | arcane    | ranged attack dealing a medium wound, sets flammables alight           | once per scene |
-| light             | arcane    | an object glows like a torch for an hour                               | at will        |
-| magic shield      | arcane    | combat against the caster is one level harder for the enemy, one fight | once per day   |
-| sleep             | arcane    | one or two weak or average enemies fall asleep for a few minutes       | once per day   |
-| detect magic      | arcane    | the caster senses magic nearby and its rough nature                    | once per scene |
-| invisibility      | arcane    | the caster is invisible until they attack or a few minutes pass        | once per day   |
-| heal wounds       | divine    | wound level drops by 10%, or a dying creature is stabilised            | once per day   |
-| bless             | divine    | one action of an ally is one level easier                              | once per scene |
-| turn undead       | divine    | weak and average undead flee, stronger ones fight one level harder     | once per fight |
-| divine sense      | divine    | the caster knows if evil, undead or fiends are near                    | once per scene |
-| entangle          | nature    | plants hold an enemy in place for a few rounds                         | once per day   |
-| speak with beasts | nature    | an animal understands and answers simply; wild beasts do not attack    | once per scene |
+| Ability | Tradition | Effect | Uses |
+|---|---|---|---|
+| firebolt | arcane | ranged attack dealing a medium wound, sets flammables alight | once per scene |
+| light | arcane | an object glows like a torch for an hour | at will |
+| magic shield | arcane | combat against the caster is one level harder for the enemy, one fight | once per day |
+| sleep | arcane | one or two weak or average enemies fall asleep for a few minutes | once per day |
+| detect magic | arcane | the caster senses magic nearby and its rough nature | once per scene |
+| invisibility | arcane | the caster is invisible until they attack or a few minutes pass | once per day |
+| heal wounds | divine | wound level drops by 10%, or a dying creature is stabilised | once per day |
+| bless | divine | one action of an ally is one level easier | once per scene |
+| turn undead | divine | weak and average undead flee, stronger ones fight one level harder | once per fight |
+| divine sense | divine | the caster knows if evil, undead or fiends are near | once per scene |
+| entangle | nature | plants hold an enemy in place for a few rounds | once per day |
+| speak with beasts | nature | an animal understands and answers simply; wild beasts do not attack | once per scene |
 
 ## Potions, scrolls and items
 

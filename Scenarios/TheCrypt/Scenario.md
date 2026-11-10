@@ -230,13 +230,13 @@ A narrow, winding crack in the rock that must be passed sideways. After about 30
 
 ## Enemies
 
-| Enemy           | Category | Toughness | Wounds dealt                                                        | Behaviour                                                 |
-|-----------------|----------|-----------|---------------------------------------------------------------------|-----------------------------------------------------------|
-| swarm of rats   | weak     | frail     | scratch, on a 3 a light wound                                       | flees after the first wound or at the sight of fire       |
-| Corwin          | average  | human     | knife: scratch to medium wound; crossbow: light to serious wound    | wounded (45%), afraid, surrenders when losing             |
-| dead dog        | average  | human     | bite: scratch to serious wound, typically medium wound              | undead, fights to the end                                 |
-| Malric          | strong   | tough     | claws and sword: light wound to mortal blow, typically medium wound | undead, fights to the end, drinks the blood of the fallen |
-| Corwin revenant | average  | human     | claws: scratch to serious wound, typically medium wound             | undead, only if Corwin dies in the crypt                  |
+| Enemy | Category | Toughness | Wounds dealt | Behaviour |
+|---|---|---|---|---|
+| swarm of rats | weak | frail | scratch, on a 3 a light wound | flees after the first wound or at the sight of fire |
+| Corwin | average | human | knife: scratch to medium wound; crossbow: light to serious wound | wounded (45%), afraid, surrenders when losing |
+| dead dog | average | human | bite: scratch to serious wound, typically medium wound | undead, fights to the end |
+| Malric | strong | tough | claws and sword: light wound to mortal blow, typically medium wound | undead, fights to the end, drinks the blood of the fallen |
+| Corwin revenant | average | human | claws: scratch to serious wound, typically medium wound | undead, only if Corwin dies in the crypt |
 
 **Corwin's crossbow** has 2 bolts. After a shot Corwin needs a whole round to span it, so in melee he fights with a knife.
 
