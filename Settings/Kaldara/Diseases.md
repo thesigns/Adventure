@@ -10,7 +10,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 - Objawy: suchy kaszel, czarna plwocina o poranku, potem duszność, na końcu gorączka i dławienie.
 - Chorują ci, którzy długo siedzą pod ziemią: śmiałkowie, rzadziej górnicy. Im dłużej i głębiej, tym gorzej.
-- Przyczyna wg ludzi: pył, zimno ruin, klątwa krasnoludów. Starzy śmiałkowie noszą w zapylonych salach mokrą chustę na twarzy.
+- Przyczyna wg ludzi: pył, zimno ruin, klątwa krasnoludów.
 - Chory zdrowieje po dłuższym pobycie na powierzchni, nikt nie wie dlaczego. Kto zostaje pod ziemią, umiera.
 - Nie przechodzi z człowieka na człowieka.
 - Zielarki i kapłani nie mają na nią lekarstwa.
@@ -18,6 +18,8 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 ### Prawda (nie wie nikt na wyspie)
 
 - Niosą ją zarodniki bladych grzybów z Głębin (zob. *Pożywienie* w `Trolls.md`).
+- Grzyby przypominają purchawki: blade kule od pięści do głowy. Nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu.
+- Pękają też pod trollami i robalami, które o nie ocierają, więc chmura może wisieć w powietrzu, zanim przyjdzie postać.
 - Trolle i stwory z Głębin są odporne.
 - Zarodniki żyją tylko w mikroklimacie podziemi, na powierzchni giną.
 - Najgęściej: sale porośnięte grzybami i sale za murami zarazy (zob. `Dwarves.md`).
@@ -27,10 +29,10 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 - Zakażone miejsca ustala scenariusz.
 - Ukryty rzut MG, bez PDT, tablice z `gm_tables.json`:
-  - sala gęsto porośnięta grzybami: przeciętne (`k3`),
-  - sala za rozbitym murem zarazy: trudne (`k4`),
+  - postać nadepnie albo potrąci grzyb albo wejdzie w wiszącą chmurę: przeciętne (`k3`),
+  - sala za rozbitym murem zarazy, gdzie grzyby pokrywają całą posadzkę: trudne (`k4`),
   - każde kolejne trzy doby w Głębinach albo na najgłębszych poziomach ruin: łatwe (`k2`).
-- Mokra chusta: o poziom łatwiej, przy łatwym bez rzutu. Pancerz nie chroni.
+- Kto widzi grzyby i idzie ostrożnie, nie nadepnie. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy chmura już wisi.
 - Przykład: `python Scripts/roll.py --kampania <kampania> --ukryty --etykieta c1 --tablica k3`
 - Kaszel zaczyna się po dobie. MG opisuje go bez wskazywania przyczyny.
 - Chory nie rzuca ponownie: nowe zakażenie od razu pogłębia chorobę o stopień.
