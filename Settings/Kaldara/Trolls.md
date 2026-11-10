@@ -1,248 +1,236 @@
 # Trolle
 
-Trolle to główne zagrożenie wyspy. Pochodzą z głębin pod wyspą i zajmują dawne krasnoludzkie kopalnie, twierdze i świątynie.
+Główne zagrożenie wyspy. Pochodzą z Głębin i zajmują krasnoludzkie kopalnie, twierdze i świątynie.
 
-- Trolle są prymitywne, ale to nie zwierzęta. Są jak jaskiniowcy: rozumne, sprytne na swój sposób, okrutne i nieprzewidywalne.
-- Dorosłe trolle to samotniki (zob. *Samotniki*). Każdy ma swoje legowisko i rewir w ruinach i broni ich przed innymi trollami. Razem trzymają się tylko pomioty, które chodzą stadami, pary w okresie godowym i trollice z młodymi.
-- Jest kilka gatunków trolli, od pomiotów wielkości dziecka po górskie trolle wysokie na kilka metrów (zob. *Gatunki trolli*).
-- Są szybkie. Chodzą na wielkich, płaskich stopach, które nie zapadają się w śnieg, piach ani błoto, a przeciętny troll biega szybciej niż człowiek. Na otwartym terenie ucieczka przed trollem rzadko się udaje. Ratuje wąskie przejście, ogień albo świt.
-- Nie wytwarzają narzędzi ani broni, bo w ruinach i jaskiniach nie ma z czego. Walczą gołymi rękami: mają ostre pazury i zęby, a czasem pomagają sobie kamieniem, który trzymają w łapie albo którym ciskają. Ognia nie rozpalają, ale boją się go jak dzikie zwierzęta (zob. *Trolle i ogień*).
-- Krasnoludzką broń i zbroje, które znajdą w ruinach, zbierają w legowiskach jak każdą błyskotkę, ale nie walczą nimi i ich nie noszą. Mocy runicznych przedmiotów nie rozumieją.
-- Mówią prostym, własnym językiem, którego ludzie nie znają. Da się z nimi porozumieć na migi, jedzeniem, błyskotką albo groźbą. Można je przekupić, zastraszyć albo przechytrzyć, ale nie można im ufać.
-- Kochają to, co błyszczy. Każdy troll gromadzi w swoim legowisku złoto, klejnoty i krasnoludzkie przedmioty.
-- Światło dnia zamienia trolle w kamień, a każde inne światło je razi (zob. *Słońce i trolle* i *Światło razi trolle*). Kamienne postacie przy wejściach do ruin to trolle, które nie zdążyły się schować przed świtem.
-- Trolle wychodzą na powierzchnię tylko wtedy, gdy jest naprawdę ciemno, od zgaśnięcia ostatniej poświaty po zachodzie do pierwszego brzasku. Wychodzą polować na zwierzęta, a nie na ludzi (zob. *Łowy na powierzchni*). Nawet w długie zimowe noce nie oddalają się od swoich legowisk dalej niż na kilka, najwyżej kilkanaście kilometrów i przed brzaskiem zawsze wracają.
-- Jeden gatunek trolli, szeptacze, zna dziką magię (zob. *Szeptacze*).
-- Z Głębin pochodzą też robale, które trolle hodują jak bydło, i ślepe jaszczury, na które polują (zob. `Bestiary.md`).
+- Prymitywne, ale to nie zwierzęta: rozumne jak jaskiniowcy, sprytne na swój sposób, okrutne i nieprzewidywalne.
+- Jest kilka gatunków, od pomiota wielkości dziecka po trolla górskiego wysokiego na kilka metrów (zob. *Gatunki trolli*). Żyją ich tysiące, większość to pomioty. Ile dokładnie, nie wie nikt.
+- Szybkie. Wielkie, płaskie stopy nie zapadają się w śnieg, piach ani błoto, a przeciętny troll biega szybciej niż człowiek.
+- Nie wytwarzają narzędzi ani broni. Walczą pazurami, zębami i kamieniem. Krasnoludzką broń i zbroje zbierają w legowiskach jak błyskotki, ale ich nie używają, a mocy runicznych przedmiotów nie rozumieją.
+- Kochają to, co błyszczy: każdy gromadzi w legowisku złoto, klejnoty i krasnoludzkie przedmioty.
+- Mówią prostym językiem, którego ludzie nie znają. Da się z nimi porozumieć na migi, jedzeniem, błyskotką albo groźbą. Można je przekupić, zastraszyć albo przechytrzyć, ale nie można im ufać.
+- Światło dnia zamienia je w kamień, każde inne światło je razi, a ognia się boją (zob. *Słońce i trolle*, *Światło razi trolle* i *Trolle i ogień*). Kamienne postacie przy wejściach do ruin to trolle, które nie zdążyły przed świtem.
+- Na powierzchnię wychodzą tylko w ciemności, żeby polować na zwierzęta (zob. *Łowy na powierzchni*). Nie oddalają się od legowiska dalej niż na kilka, najwyżej kilkanaście kilometrów i przed brzaskiem zawsze wracają.
+- Magię zna tylko szeptacz.
+- Robale hodują jak bydło, a na ślepe jaszczury polują (zob. `Bestiary.md`).
 
 ## Samotniki
 
-Dorosły troll żyje sam. Jego rewir to kilka korytarzy i sal ruin albo jaskiń, z legowiskiem, spiżarnią, często z zagrodą robali, i kawał powierzchni wokół wejścia, na którym poluje nocą. Rewir znaczy kośćmi, zadrapaniami na ścianach i smrodem, a każdy inny troll, który go przekroczy, jest dla niego rywalem albo mięsem.
-
-W dużej ruinie żyje zwykle kilka dorosłych trolli w osobnych rewirach i jedno albo dwa stada pomiotów. Trolle schodzą sobie z drogi, a najlepsze miejsca, czyli największe sale, ciepłe źródła i zagrody robali, zajmują najsilniejsze. Słabsze żyją w ciasnych i zimnych zakamarkach. Trolle nigdy nie walczą razem przeciw intruzowi. Hałas walki może jednak ściągnąć sąsiada, który przyjdzie po resztki.
+- Dorosły troll żyje sam. Razem trzymają się tylko stada pomiotów, pary w okresie godowym i trollice z młodymi.
+- Rewir to kilka korytarzy i sal z legowiskiem, spiżarnią, często z zagrodą robali, oraz powierzchnia wokół wejścia. Troll znaczy go kośćmi, zadrapaniami i smrodem. Inny troll w rewirze to rywal albo mięso.
+- W dużej ruinie żyje kilka dorosłych trolli w osobnych rewirach i jedno albo dwa stada pomiotów. Najlepsze miejsca, czyli wielkie sale, ciepłe źródła i zagrody robali, zajmują najsilniejsze.
+- Nigdy nie walczą razem przeciw intruzowi. Hałas walki może ściągnąć sąsiada po resztki.
 
 ### Okres godowy
 
-Trolle łączą się w pary tylko raz w roku, na przedwiośniu, mniej więcej od połowy lutego do połowy kwietnia. To najgroźniejszy czas w ruinach:
-
-- Samce opuszczają rewiry i wędrują po ruinach i Głębinach w poszukiwaniu samicy. Ryczą, rozbijają ściany i atakują wszystko, co spotkają, bez względu na ogień i rany.
-- Dwa samce, które spotkają się przy samicy, walczą na śmierć i życie. Walka trwa czasem całą noc i słychać ją z daleka.
-- Zwycięzca i samica ucztują razem na pokonanym. To ich jedyne zaślubiny. Potem para rozchodzi się na zawsze.
-
-Śmiałkowie, którzy wiosną zjeżdżają się do Grimsfjord, opowiadają sobie o ryku z szybów i o kościach na rozstajach korytarzy. Najostrożniejsi zaczynają zejścia dopiero wtedy, gdy ryk ucichnie.
+- Raz w roku, od ok. połowy lutego do połowy kwietnia. Najgroźniejszy czas w ruinach.
+- Samce opuszczają rewiry, wędrują po ruinach i Głębinach, ryczą, rozbijają ściany i atakują wszystko bez względu na ogień i rany.
+- Dwa samce przy samicy walczą na śmierć, czasem całą noc. Słychać to z daleka. Zwycięzca i samica zjadają pokonanego, potem para rozchodzi się na zawsze.
+- Śmiałkowie w Grimsfjord opowiadają o ryku z szybów. Najostrożniejsi czekają z zejściem, aż ryk ucichnie.
 
 ### Trollice z młodymi
 
-Młode rodzą się latem, w białe noce, po jedno albo dwa. Trollica karmi je i broni ich do pierwszych mrozów, a potem przegania. Przez ten czas jest groźniejsza od każdego samca: atakuje wszystko, co zbliży się do legowiska, nie cofa się przed ogniem i nie ucieka ranna. Samce trzymają się od niej z daleka, bo młode innego samca to dla nich mięso. Piski młodych w ciemności to znak, że trzeba zawrócić.
+- Młode rodzą się w białe noce, po jedno albo dwa. Trollica broni ich do pierwszych mrozów, a potem je przegania.
+- W tym czasie jest groźniejsza od każdego samca: atakuje wszystko przy legowisku, nie cofa się przed ogniem i nie ucieka ranna.
+- Samiec zjada młode innego samca, więc trollica rzuca się na każdego samca, który podejdzie. Samce jej unikają.
 
 ## Pożywienie
 
-Trolle jedzą wyłącznie mięso, surowe i często nieświeże, bo padlina im nie szkodzi. Pod ziemią nie ma słońca ani trawy, więc życie w Głębinach zaczyna się od ciepła wnętrza wyspy. Przy gorących źródłach, szczelinach z parą i ciepłych podziemnych jeziorach rosną blade grzyby, śluzowate porosty i mchy. Jedzą je robale, ślepe ryby i białe raki, a nimi żywią się trolle i ślepe jaszczury.
+- Jedzą tylko mięso, surowe i często nieświeże. Padlina im nie szkodzi.
+- Pod ziemią życie zaczyna się od ciepła: przy gorących źródłach i ciepłych jeziorach rosną blade grzyby, porosty i mchy. Jedzą je robale, ślepe ryby i białe raki, a nimi żywią się trolle i ślepe jaszczury.
+- Ludzie wiedzą tylko, że trolle kradną owce.
 
-Ludzie wiedzą tylko, że trolle kradną owce. Resztę widzi ten, kto zejdzie głęboko.
+Od najważniejszego:
 
-Od czego żyją trolle, od najważniejszego:
-
-- **Robale.** Główne mięso pod ziemią. Dorosły robal karmi trolla przez kilka dni. Trolle zaganiają młode robale do ślepych chodników i zawalają wyjścia kamieniami, tak jak ludzie zamykają owce w zagrodzie. Zagroda robali to najcenniejsze miejsce w rewirze i troll broni jej zacieklej niż skarbca.
-- **Ślepe ryby i białe raki** z ciepłych podziemnych jezior i strumieni. Łowią je głównie pomioty, gołymi rękami.
+- **Robale:** główne mięso pod ziemią. Dorosły robal karmi trolla kilka dni. Trolle zamykają młode robale w ślepych chodnikach i zawalają wyjścia kamieniami. Zagrody robali bronią zacieklej niż skarbca.
+- **Ślepe ryby i białe raki** z podziemnych jezior i strumieni. Łowią je głównie pomioty, gołymi rękami.
 - **Zdobycz z powierzchni** w ciemne noce (zob. *Łowy na powierzchni*).
 - **Inne trolle** (zob. *Kanibalizm*).
-- **Padlina z ruin:** martwe zwierzęta i ciała śmiałków. Trolle zjadają mięso, błyszczące rzeczy zabierają do legowiska, a kości i resztę ekwipunku zostawiają.
+- **Padlina z ruin:** zwierzęta i ciała śmiałków. Mięso zjadają, błyskotki zabierają, kości i resztę ekwipunku zostawiają.
 
-Ognia trolle nie znają, więc mięsa nie suszą ani nie wędzą. Zapasy trzymają w najzimniejszych komorach rewiru: w lodzie, w przewiewnych szybach albo w wodzie podziemnego strumienia. Spiżarnię trolla czuć z daleka i pełno w niej kości.
+Mięsa nie suszą ani nie wędzą. Zapasy trzymają w najzimniejszych komorach: w lodzie, w przewiewnych szybach, w podziemnym strumieniu. Spiżarnię czuć z daleka.
 
 ### Łowy na powierzchni
 
-Trolle wychodzą nocą na powierzchnię polować na zwierzęta, a nie grasować wśród ludzi. Ludzie mają ogień, psy i broń, a owca nie ma niczego. Troll poluje na owce, konie i bydło na odległych pastwiskach, na szczury przy osadach i składach ryb, na ptaki i jaja na nadmorskich klifach, na foki na brzegu i na wieloryby wyrzucone przez morze. Zdobycz zabija na miejscu i zaciąga do spiżarni pod ziemią jeszcze przed brzaskiem.
-
-Człowieka troll atakuje, gdy jest wygłodzony, gdy człowiek jest sam i bez ognia, gdy stanie mu na drodze ze zdobyczą albo gdy wejdzie do jego rewiru. Gospodarstwa traci się więc zwykle przez owce, a nie przez ludzi. Ludzie, którzy giną od trolli, to najczęściej pasterze szukający zbłąkanych owiec po zmroku, wędrowcy, którym zgasł ogień, i śmiałkowie w ruinach.
+- Polują na zwierzęta, nie na ludzi: owce, konie i bydło na odległych pastwiskach, szczury przy osadach i składach ryb, ptaki i jaja na klifach, foki, wieloryby wyrzucone na brzeg. Zdobycz zaciągają do spiżarni przed brzaskiem.
+- Człowieka atakują, gdy są wygłodzone albo gdy człowiek jest sam i bez ognia, stanie im na drodze ze zdobyczą albo wejdzie do rewiru.
+- Od trolli giną najczęściej pasterze szukający owiec po zmroku, wędrowcy, którym zgasł ogień, i śmiałkowie w ruinach.
 
 ### Głód
 
-Trolle jedzą dużo, ale rzadko. Nażarty troll przesypia dzień albo dwa, a głodować potrafi tygodniami. Wygłodzony zapada w odrętwienie, szarzeje i twardnieje jak kamień, aż zwęszy zdobycz.
-
-Dlatego trolle żyją rzadko rozsiane, każdy na swoim. Rewir wykarmi tylko jednego dorosłego trolla, i to tylko wtedy, gdy ma robale, ryby albo dobre łowiska na powierzchni. Ruin, kopalń i jaskiń jest jednak pod wyspą tak wiele, że trolli żyją tysiące, a większość z nich to pomioty. Ile dokładnie, nie wie nikt, bo nikt nie wie, jak daleko sięgają ruiny, kopalnie i Głębiny, a część trolli żyje tak głęboko, że nie schodzi tam żaden człowiek. Gdy trollowi zaczyna brakować jedzenia, wchodzi do rewiru sąsiada albo wychodzi na powierzchnię dalej niż zwykle.
-
-Głodny troll ceni mięso bardziej niż błyskotki. Świeże mięso to najlepszy sposób, żeby kupić od trolla przejście, czas albo życie.
+- Jedzą dużo, ale rzadko. Nażarty troll przesypia dzień albo dwa, głodować potrafi tygodniami. Wygłodzony zapada w odrętwienie i szarzeje, aż zwęszy zdobycz.
+- Rewir wykarmi tylko jednego dorosłego trolla, więc trolle żyją z dala od siebie. Gdy brakuje jedzenia, troll wchodzi do rewiru sąsiada albo wychodzi dalej niż zwykle.
+- Głodny troll ceni mięso bardziej niż błyskotki. Świeżym mięsem można kupić od niego przejście, czas albo życie.
 
 ### Kanibalizm
 
-Troll nie widzi różnicy między mięsem owcy, człowieka i innego trolla.
+Troll nie odróżnia mięsa owcy, człowieka i trolla. Dla ludzi to najlepszy dowód, że trolle nie są ludźmi.
 
-- **Martwy troll** trafia do spiżarni tego, kto go znajdzie. Trolle nie grzebią zmarłych.
-- **Słabszy sąsiad** jest mięsem, gdy silniejszy troll jest głodny. Ranny albo kaleki troll chowa się więc tam, gdzie nikt go nie znajdzie.
-- **Pomioty** są najsłabsze i najliczniejsze, więc dorosłe trolle na nie polują, a w głodzie stado zjada też własnych słabszych. Może dlatego pomioty zawsze trzymają się razem i nigdy nie śpią wszystkie naraz.
-- **Pokonany samiec** w okresie godowym zostaje zjedzony przez zwycięzcę i samicę (zob. *Okres godowy*).
-- **Zabity troll** ściąga inne. Ciało trolla zostawione w korytarzu przyciąga pomioty i głodnych sąsiadów, a te rzucają się na mięso i biją się o nie między sobą.
-
-Ludzie, którzy to widzieli, opowiadają o tym niechętnie. Dla mieszkańców wyspy, dla których gościnność i pogrzeb są święte, to najlepszy dowód, że trolle nie są ludźmi.
+- Martwy troll trafia do spiżarni tego, kto go znajdzie.
+- Głodny troll zjada słabszego sąsiada, więc ranny albo kaleki troll się chowa.
+- Na pomioty polują dorosłe trolle, a w głodzie stado zjada własnych słabszych. Pomioty nigdy nie śpią wszystkie naraz.
+- Ciało zabitego trolla przyciąga pomioty i głodnych sąsiadów, które biją się o mięso.
 
 ### Rok trolli
 
-- **Zima:** długie noce, trolle polują na powierzchni prawie co noc. Są najedzone, a stada i odcięte gospodarstwa tracą najwięcej owiec.
-- **Przedwiośnie:** okres godowy, najgroźniejszy czas w ruinach (zob. *Okres godowy*).
-- **Wiosna:** noce się skracają, łowy na powierzchni słabną, trolle zaczynają jeść zapasy.
-- **Lato:** białe noce zamykają trolle pod ziemią. Żyją tylko z robali, ryb i spiżarni, a pod koniec lata zaczyna im brakować jedzenia. W legowiskach trollice karmią młode (zob. *Trollice z młodymi*).
-- **Koniec lata:** pierwsze ciemne noce w sierpniu i we wrześniu to głodne noce. Wygłodzone trolle wychodzą wtedy zuchwale i dalej od legowisk niż zwykle, a w ruinach polują na wszystko, co się rusza.
+- **Zima:** polują na powierzchni prawie co noc i są najedzone. Stada i odcięte gospodarstwa tracą najwięcej owiec.
+- **Przedwiośnie:** okres godowy (zob. *Okres godowy*).
+- **Wiosna:** noce się skracają, trolle zaczynają jeść zapasy.
+- **Lato:** białe noce zamykają je pod ziemią. Żyją z robali, ryb i spiżarni, a pod koniec lata brakuje im jedzenia. Trollice karmią młode.
+- **Koniec lata:** głodne noce w sierpniu i wrześniu. Wygłodzone trolle wychodzą zuchwale i dalej niż zwykle, a w ruinach polują na wszystko.
 
 ## Ślady trolli
 
-Troll nie umie się ukryć tak dobrze, jak mu się wydaje. Doświadczony śmiałek czyta jego ślady jak łowca ślady zwierzyny i wie, że trzeba zawrócić, zanim troll go zobaczy.
-
-- **Smród.** Troll cuchnie padliną, mokrym kamieniem i piżmem, a jego spiżarnię czuć z daleka. Smród, który gęstnieje z każdym krokiem, prowadzi do legowiska, a smród świeży i ciepły znaczy, że troll jest blisko.
-- **Kości.** Stare kości są suche, białe i porośnięte pleśnią. Świeże są wilgotne, z resztkami mięsa i ścięgien, rozłupane dla szpiku. Świeże kości znaczą, że troll żyje i poluje. Owcze i końskie kości przy wejściu do ruin znaczą, że troll wychodzi tędy na powierzchnię.
-- **Odciski stóp.** Wielkie, płaskie stopy z odciskami pazurów zostawiają ślady w błocie, popiele, śniegu i w kurzu korytarzy. Po wielkości stopy łatwo poznać gatunek.
-- **Wleczona zdobycz.** Bruzda w piasku albo w śniegu, kępki wełny na kamieniach i krew prowadzą od pastwiska do szczeliny, którą troll zaciąga zdobycz do spiżarni.
-- **Wydeptana ścieżka.** Korytarz, którym troll chodzi co noc, ma zmieciony kurz pośrodku, a narożniki i ściany na wysokości jego barku są wytarte do połysku. Górskiemu trollowi wytarte są nawet sklepienia.
-- **Zadrapania** na ścianach, głębokie bruzdy od pazurów. Tak troll znaczy granice rewiru.
+- **Smród** padliny, mokrego kamienia i piżma. Gęstnieje ku legowisku, świeży i ciepły znaczy, że troll jest blisko.
+- **Kości:** stare suche i spleśniałe, świeże wilgotne i rozłupane dla szpiku. Owcze i końskie kości przy wejściu do ruin znaczą, że troll wychodzi tędy na powierzchnię.
+- **Odciski** wielkich, płaskich stóp z pazurami w błocie, popiele, śniegu i kurzu. Po wielkości łatwo poznać gatunek.
+- **Wleczona zdobycz:** bruzda, kępki wełny i krew od pastwiska do szczeliny.
+- **Wydeptana ścieżka:** zmieciony kurz pośrodku korytarza, ściany wytarte na wysokości barku.
+- **Zadrapania** na ścianach znaczą granicę rewiru.
 - **Odchody** pełne sierści, wełny i odłamków kości.
-- **Cisza.** W rewirze trolla szczurów jest niewiele i chowają się po szczelinach, bo troll poluje na nie przy każdej okazji. Psy i konie nie chcą iść dalej, a owce przy zagrodzie są niespokojne, zanim ktokolwiek usłyszy trolla.
-- **Brak sadzy.** Trolle nie palą ognia. Sadza na sklepieniu i resztki ogniska znaczą, że był tu człowiek, nie troll.
-- **Kamienne posągi** przy wejściu do ruin. To trolle, które nie zdążyły przed świtem, a gdzie zginął jeden, mógł mieszkać i drugi.
-- **Ludzkie kości bez błyskotek.** Ciało śmiałka z porzuconym ekwipunkiem, ale bez pierścieni, srebrnych zapinek i krasnoludzkich rzeczy, to ślad, że znalazł je troll.
-- **Odgłosy.** Nażarty troll chrapie, a jego oddech niesie się po korytarzach. Słychać też mlaskanie i chrzęst kości przy jedzeniu.
+- **Cisza:** szczurów niewiele i chowają się po szczelinach. Psy i konie nie chcą iść dalej.
+- **Brak sadzy:** trolle nie palą ognia, więc sadza i ognisko to ślad człowieka.
+- **Kamienne posągi** przy wejściu: gdzie zginął jeden troll, mógł mieszkać i drugi.
+- **Ludzkie kości bez błyskotek:** ekwipunek porzucony, ale pierścienie, zapinki i krasnoludzkie rzeczy zniknęły.
+- **Odgłosy:** chrapanie nażartego trolla, mlaskanie, chrzęst kości.
 
-Niektóre ślady zdradzają gatunek albo to, w jakim troll jest stanie:
+Ślady stanu i gatunku:
 
-- **ryk i świeże ślady walki** na przedwiośniu to samiec w okresie godowym,
-- **piski** w ciemności to trollica z młodymi,
-- **drobne odciski i stosy kamieni** ułożone na rozstajach i półkach skalnych to stado pomiotów, które gromadzi kamienie do rzucania,
-- **kępy sierści z mchem** na krawędziach skał to kosmacz,
-- **wodorosty, muszle i mokre ślady** od strony morza to troll fiordowy,
-- **kości ułożone we wzory, grzyby rozłożone na kamieniach i ciągły szept**, którego źródła nie da się znaleźć, to szeptacz,
-- **odciski długie jak człowiek i wytarte sklepienia** to górski troll,
-- **pełna spiżarnia i chrapanie** to troll nażarty, który prześpi dzień albo dwa,
-- **ogryzione do czysta kości, pusta spiżarnia i świeże zadrapania** to troll wygłodzony.
+| Ślad                                                | Znaczy                                |
+|-----------------------------------------------------|---------------------------------------|
+| ryk i świeże ślady walki na przedwiośniu            | samiec w okresie godowym              |
+| piski w ciemności                                   | trollica z młodymi                    |
+| drobne odciski, stosy kamieni na rozstajach         | stado pomiotów                        |
+| kępy sierści z mchem na skałach                     | kosmacz                               |
+| wodorosty, muszle, mokre ślady od morza             | troll fiordowy                        |
+| kości we wzory, grzyby na kamieniach, szept         | szeptacz                              |
+| odciski długie jak człowiek, wytarte sklepienia     | troll górski                          |
+| pełna spiżarnia, chrapanie                          | troll nażarty, prześpi dzień albo dwa |
+| ogryzione kości, pusta spiżarnia, świeże zadrapania | troll wygłodzony                      |
 
 W grze:
 
-- Zanim postać wejdzie do rewiru trolla, MG zawsze daje jej co najmniej jeden ślad: smród, kości, odciski albo odgłos. Opisuje go jak każdy szczegół miejsca, bez podpowiadania, co z niego wynika (zob. *Prowadzenie gry* w `AGENTS.md`). Samotna postać przeżywa tylko wtedy, gdy ma szansę zawrócić.
-- Ślady oczywiste, np. smród albo kości pod nogami, postać zauważa bez rzutu. Nieoczywiste, np. wytarte ściany, wymagają wypatrywania. Odczytanie śladu (gatunek, świeżość, stan trolla) to rzut, typowo przeciętny, a dla łowcy i postaci z zaletą *zna ruiny* łatwy.
+- Zanim postać wejdzie do rewiru trolla, MG zawsze daje jej co najmniej jeden ślad: smród, kości, odciski albo odgłos. Opisuje go bez podpowiadania, co z niego wynika (zob. *Prowadzenie gry* w `AGENTS.md`). Samotna postać przeżywa tylko wtedy, gdy ma szansę zawrócić.
+- Ślady oczywiste postać zauważa bez rzutu, nieoczywiste wymagają wypatrywania. Odczytanie śladu (gatunek, świeżość, stan) to rzut, typowo przeciętny, a dla łowcy i postaci z zaletą *zna ruiny* łatwy.
 
 ## Słońce i trolle
 
-- **Troll w świetle dnia** kamienieje w ciągu jednej rundy, bez rzutu i bez względu na wielkość. Światłem dnia jest wszystko poza ciemnością z tabeli *Dzień i noc* w `Mechanics.md`, także dzień pod chmurami, mgła, zamieć i poświata zmierzchu. Kamień jest martwy na zawsze.
-- **Cień nie chroni pod gołym niebem.** Bezpieczne są tylko miejsca, do których światło nieba w ogóle nie dociera: jaskinie, ruiny, głębokie szczeliny, dno fiordu. Za granicę bezpieczeństwa MG uznaje miejsce, z którego nie widać nieba.
-- **Trolle czują świt.** Nie trzeba im mówić, że nadchodzi brzask, i zwykle są w legowiskach na długo przed nim. Zaskoczyć je świtem można tylko podstępem: zatrzymać trolla rozmową, zagadką, zakładem albo walką, której nie chce przerwać. MG śledzi wtedy godzinę i wie, w której rundzie wypada brzask.
-- **Ucieczka na światło.** Za dnia troll nie pójdzie za postacią dalej niż do miejsca, z którego widać niebo. Postać, która dobiegnie do światła dnia, jest przed nim bezpieczna, choć troll może rzucać kamieniami z ciemności.
-- **Światło ognia, lawy, księżyca i zorzy** nie zamienia trolli w kamień. Ogień za to je płoszy (zob. *Trolle i ogień*).
-- **Światło Solvara** wyproszone przez kapłana działa jak słońce, ale słabo i krótko (zob. *Magia* w `Mechanics.md`).
+- **Światło dnia** zamienia trolla w kamień w ciągu jednej rundy, bez rzutu i bez względu na wielkość. Światłem dnia jest wszystko poza ciemnością z tabeli *Dzień i noc* w `Mechanics.md`, także dzień pod chmurami, mgła, zamieć i poświata zmierzchu. Kamień jest martwy na zawsze.
+- **Cień nie chroni pod gołym niebem.** Bezpieczne są tylko miejsca, z których nie widać nieba: jaskinie, ruiny, głębokie szczeliny, dno fiordu.
+- **Trolle czują świt** i są w legowiskach na długo przed nim. Zaskoczyć je świtem można tylko podstępem: rozmową, zakładem albo walką, której troll nie chce przerwać. MG śledzi wtedy, w której rundzie wypada brzask.
+- **Ucieczka na światło.** Za dnia troll nie pójdzie dalej niż do miejsca, z którego widać niebo, choć może rzucać kamieniami z ciemności.
+- **Światło ognia, lawy, księżyca i zorzy** nie zamienia trolli w kamień.
+- **Światło Solvara** działa jak słońce, ale słabo i krótko (zob. *Magia* w `Mechanics.md`).
 
 ## Światło razi trolle
 
-Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za dnia, a każde światło je razi, także takie, które nie parzy i nie zamienia ich w kamień.
+Trolle widzą w ciemności jak człowiek za dnia, a każde światło je razi.
 
-- **Światło z bliska**, czyli pochodnia, latarnia, kaganek albo ognisko w odległości kilku kroków, oślepia trolla: mruży oczy, zasłania się i źle ocenia odległość. Walka z trollem w kręgu światła jest łatwiejsza o poziom.
-- **Nagły błysk** w ciemności, np. odsłonięta latarnia, rozdmuchany żar albo pochodnia ciśnięta trollowi pod nogi, oślepia go na jedną rundę: walka w tej rundzie jest łatwiejsza o dwa poziomy, a troll może się cofnąć albo chybić do własnego towarzysza.
-- **Z daleka** światło nie razi, tylko zdradza postać (zob. *Ciemność i źródła światła* w `Mechanics.md`). Dlatego trolle trzymają się poza kręgiem światła, rzucają z ciemności kamieniami, zachodzą od tyłu i próbują je zgasić.
-- **Ślepym trollom**, np. wielu szeptaczom, oraz ślepym jaszczurom i robalom światło nie przeszkadza.
-- **Jedna okoliczność.** Pochodnia, która razi i płoszy naraz, ułatwia walkę o poziom, a nie o dwa (zob. *Okoliczności* w `Rules/StandardThrow.md`). Latarnia i kaganek tylko rażą, więc też ułatwiają walkę o poziom, ale nie trzymają trolla na dystans (zob. *Trolle i ogień*).
+- **Światło z bliska** (pochodnia, latarnia, kaganek, ognisko kilka kroków od trolla): troll mruży oczy i źle ocenia odległość. Walka w kręgu światła jest łatwiejsza o poziom.
+- **Nagły błysk** w ciemności (odsłonięta latarnia, rozdmuchany żar, pochodnia ciśnięta pod nogi) oślepia na jedną rundę: walka łatwiejsza o dwa poziomy, a troll może się cofnąć.
+- **Z daleka** światło nie razi, tylko zdradza postać (zob. *Ciemność i źródła światła* w `Mechanics.md`). Dlatego trolle trzymają się poza kręgiem światła, rzucają kamieniami, zachodzą od tyłu i próbują je zgasić.
+- **Ślepym trollom**, np. wielu szeptaczom, światło nie przeszkadza.
+- **Jedna okoliczność.** Pochodnia razi i płoszy naraz, ale ułatwia walkę o poziom, a nie o dwa (zob. *Okoliczności* w `Rules/StandardThrow.md`). Latarnia i kaganek tylko rażą: ułatwiają walkę o poziom, ale nie trzymają trolla na dystans.
 
 ## Trolle i ogień
 
-Trolle boją się ognia: płomienia pochodni, łuczywa, ogniska, płonącej smoły albo tranu. Nie boją się samego światła, więc kaganek i latarnia ich nie płoszą, choć je rażą (zob. *Światło razi trolle*): trzeba płomienia, który parzy. Same ognia nie rozpalają, bo nie jest im do niczego potrzebny: jedzą surowe mięso i widzą w ciemności. W legowisku trolli nie ma więc paleniska ani śladów ognia, a ogień, który ktoś tam zobaczy, rozpalił człowiek.
+Trolle boją się płomienia: pochodni, łuczywa, ogniska, płonącej smoły albo tranu. Samego światła się nie boją, więc kaganek i latarnia ich nie płoszą. Ognia nie rozpalają, więc w legowisku nie ma paleniska.
 
-- **Pomioty** uciekają przed płonącą pochodnią i nie podchodzą do ogniska. Za to próbują zgasić ogień z daleka: rzucają kamieniami, chlustają wodą, zasypują go piachem albo czekają, aż się wypali.
-- **Szaraki, kosmacze, trolle fiordowe i szeptacze** trzymają się z dala od płomienia. Nie atakują wręcz kogoś, kto grozi im ogniem, chyba że są osaczone, ranne albo bronią legowiska i młodych. Zamiast tego krążą poza zasięgiem płomienia, rzucają kamieniami, zachodzą od tyłu i czekają, aż pochodnia zgaśnie.
-- **Górski troll** boi się ognia mniej. Pochodnia go nie zatrzymuje, ale walka z nim jest łatwiejsza o poziom, dopóki postać grozi mu ogniem.
-- **Wielogłowy troll** ognia się nie boi.
-- **Głód, gody i młode przełamują strach.** Wygłodzony troll, np. w głodne noce albo gdy w jego rewirze zabrakło jedzenia, samiec w okresie godowym i trollica broniąca młodych nie cofają się przed pochodnią i atakują wręcz. Światło nadal go razi, więc walka z nim w kręgu światła jest łatwiejsza o poziom (zob. *Światło razi trolle*), ale odpędzanie ogniem przestaje działać. Wygłodzony troll jest wychudły i szary, a MG opisuje to tak, żeby gracz mógł go rozpoznać.
-- **Odpędzanie ogniem** to taktyka walki (zob. *Taktyka* w `Rules/Combat.md`). Postać nie rani wtedy trolla, tylko trzyma go na dystans albo zmusza do ucieczki: na wysokich wynikach troll się cofa albo ucieka, a na niskich przeskakuje płomień, chwyta pochodnię albo wytrąca ją z ręki. Przeciw trollom, które boją się ognia, taka walka jest łatwiejsza o poziom niż zwykła.
-- **Podpalony troll**, np. oblany płonącą smołą albo tranem, wpada w panikę i ucieka, chyba że nie ma dokąd.
-- **Pochodnia jest zawsze na wagę życia.** Zajmuje rękę, więc postać nie trzyma wtedy tarczy ani broni oburącz. Gaśnie w wodzie, w silnym wietrze i w przeciągu podziemnych korytarzy, a w tablicy rundy MG może wpisać na najniższych wynikach „pochodnia gaśnie”. Zapas pochodni liczy się jak przedmiot zużywalny (zob. *Ciemność i źródła światła* w `Mechanics.md`).
-- **Ognisko** z kimś, kto przy nim czuwa i dokłada do ognia, trolle omijają. Ognisko bez czuwającego dogasa po kilku godzinach, a samotny śmiałek musi kiedyś spać. Na wyspie bez lasów opał jest cenny, a ogień w ciemności widać z daleka.
+- **Pomiot** ucieka przed pochodnią i nie podchodzi do ogniska, ale gasi ogień z daleka: rzuca w niego kamieniami, chlusta wodą, sypie piachem albo czeka, aż się wypali.
+- **Szarak, kosmacz, troll fiordowy i szeptacz** nie atakują wręcz kogoś, kto grozi im ogniem, chyba że są osaczone, ranne albo bronią legowiska i młodych. Krążą poza płomieniem, rzucają kamieniami i czekają, aż pochodnia zgaśnie.
+- **Troll górski** boi się mniej: pochodnia go nie zatrzymuje, ale walka z nim jest łatwiejsza o poziom, dopóki postać grozi mu ogniem.
+- **Troll wielogłowy** ognia się nie boi.
+- **Głód, gody i młode przełamują strach.** Wygłodzony troll, samiec w okresie godowym i trollica broniąca młodych atakują mimo pochodni. Światło dalej je razi, ale odpędzanie ogniem nie działa. Wygłodzony troll jest wychudły i szary, a MG opisuje to tak, żeby gracz mógł go rozpoznać.
+- **Odpędzanie ogniem** to taktyka walki (zob. *Taktyka* w `Rules/Combat.md`): postać nie rani, tylko trzyma trolla na dystans. Na wysokich wynikach troll się cofa albo ucieka, na niskich przeskakuje płomień albo wytrąca pochodnię. Przeciw trollom, które boją się ognia, jest łatwiejsze o poziom niż zwykła walka.
+- **Podpalony troll** wpada w panikę i ucieka, chyba że nie ma dokąd.
+- **Pochodnia** zajmuje rękę, więc postać nie trzyma wtedy tarczy ani broni oburącz. Gaśnie w wodzie, w silnym wietrze i w przeciągu. Na najniższych wynikach tablicy rundy MG może wpisać „pochodnia gaśnie”.
+- **Ognisko** z czuwającym przy nim człowiekiem trolle omijają. Bez czuwającego dogasa po kilku godzinach, a samotny śmiałek musi kiedyś spać.
 
 ## Trolle w walce
 
-Słońce, światło i ogień: *Słońce i trolle*, *Światło razi trolle* i *Trolle i ogień*. Walka poszczególnych gatunków: *Gatunki trolli*.
-
-- Walczą pazurami i zębami, a kamieniem uderzają albo ciskają. Krasnoludzką broń trzymają w legowiskach, ale nią nie walczą.
-- **Kamienie.** Troll, który nie chce podejść do ognia albo światła, ciska kamieniami z ciemności. To walka na dystans (zob. *Walka na dystans* w `Rules/Combat.md`). Kamień szaraka zadaje od draśnięcia do rany, typowo lekką ranę, a głaz górskiego trolla od rany do ciosu śmiertelnego, typowo ciężką ranę. Tarcza i osłona chronią jak przed każdym pociskiem.
-- **Samotniki.** Dorosłe trolle nigdy nie walczą razem: postać spotyka zwykle jednego trolla albo stado pomiotów. Długa i głośna walka może ściągnąć sąsiada po resztki, co MG rozstrzyga rzutem jako okoliczność świata.
-- **Ucieczka.** Troll biega szybciej niż człowiek, więc ucieczka przed nim na otwartym terenie jest trudniejsza o poziom. Ratuje przejście, w które troll się nie zmieści, krąg ognia, światło dnia albo rzucone mięso.
-- **Gody i młode.** Samiec w okresie godowym i trollica broniąca młodych walczą do śmierci: nie uciekają ranne, a walka z nimi jest trudniejsza o poziom. MG zapowiada je wcześniej rykiem, śladami walk, kośćmi na rozstajach albo piskiem młodych.
-- **Martwy troll.** Ciało zabitego trolla zatrzymuje pomioty i głodne trolle, które biją się o mięso, więc zgubienie pościgu jest wtedy łatwiejsze o poziom. Ciężko ranny troll ucieka też przed innymi trollami.
-- **Śpiący troll.** Nażarty troll śpi twardo. Przekradnięcie się obok niego jest łatwiejsze o poziom, a obudzony jest przez pierwszą rundę walki zaskoczony.
+- **Kamienie.** Troll, który nie chce podejść do ognia albo światła, ciska kamieniami z ciemności (zob. *Walka na dystans* w `Rules/Combat.md`). Kamień szaraka: od draśnięcia do rany, typowo lekka rana. Głaz trolla górskiego: od rany do ciosu śmiertelnego, typowo ciężka rana. Tarcza i osłona chronią jak przed każdym pociskiem.
+- **Samotniki.** Postać spotyka zwykle jednego trolla albo stado pomiotów. Długa i głośna walka może ściągnąć sąsiada, co MG rozstrzyga rzutem jako okoliczność świata.
+- **Ucieczka** przed trollem na otwartym terenie jest trudniejsza o poziom. Ratuje przejście, w które troll się nie zmieści, krąg ognia, światło dnia albo rzucone mięso.
+- **Gody i młode.** Samiec w okresie godowym i trollica z młodymi walczą do śmierci, a walka z nimi jest trudniejsza o poziom. MG zapowiada je rykiem, śladami walk, kośćmi na rozstajach albo piskiem młodych.
+- **Martwy troll** zatrzymuje pomioty i głodne trolle, które biją się o mięso: zgubienie pościgu jest łatwiejsze o poziom. Ciężko ranny troll ucieka też przed innymi trollami.
+- **Śpiący troll.** Nażarty śpi twardo: przekradnięcie się obok niego jest łatwiejsze o poziom, a obudzony jest przez pierwszą rundę zaskoczony.
 
 ## Gatunki trolli
 
-Ludzie rozróżniają kilka gatunków trolli i nadają im własne nazwy, bo nazw, którymi trolle określają same siebie, nikt nie zna. Wszystkie gatunki boją się słońca tak samo i wszystkie zamienia ono w kamień.
+Nazwy nadali ludzie. Wszystkie gatunki kamienieją w słońcu tak samo. Od najmniejszego do największego:
 
-Gatunki ułożone są od najmniejszego do największego.
+### Pomiot
 
-### Pomioty
-
-Wzrost dziecka, chude, sinoszare, z długimi palcami i wielkimi uszami. Ludzie spierają się, czy to podrośnięte młode, które matka przegnała, czy osobny gatunek. Pojedynczy pomiot jest słabszy od dorosłego człowieka i ucieka przed pierwszym ciosem. Jako jedyne trolle chodzą stadami, po kilka, najwyżej kilkanaście, trochę jak wilki w watasze, bo samotny pomiot szybko staje się czyimś obiadem. Groźne są tylko stadem i dobrze o tym wiedzą: nie atakują, dopóki nie są pewne przewagi.
-
-Są najsprytniejsze z trolli. Śledzą intruzów z bocznych szczelin, kradną to, co błyszczy i co da się unieść, przegryzają liny, zrzucają kamienie z góry, zastawiają proste pułapki i gaszą światło, bo wiedzą, że człowiek bez niego jest ślepy. Drapią, gryzą i ciskają kamieniami, a celują zaskakująco dobrze. W ciasnych tunelach, w które większy troll się nie zmieści, są najgroźniejsze. Na powierzchnię wychodzą stadem i kradną drób, jagnięta i ryby z suszarni.
-
-- Pojedynczy pomiot to przeciwnik słaby, słabszy od człowieka. Stado 2–3 pomiotów to przeciwnik przeciętny, a od czterech wzwyż silny. Stado to jeden przeciwnik.
+- Wzrostu dziecka, chudy, sinoszary, z długimi palcami i wielkimi uszami. Ludzie spierają się, czy to przegnane młode, czy osobny gatunek.
+- Częsty. Chodzi stadem, po kilka, najwyżej kilkanaście, bo samotny pomiot szybko staje się czyimś obiadem.
+- Najsprytniejszy z trolli: śledzi intruzów ze szczelin, kradnie błyskotki, przegryza liny, zrzuca kamienie, zastawia proste pułapki i gasi światło. Celuje zaskakująco dobrze. Najgroźniejszy w ciasnych tunelach, w które większy troll się nie zmieści.
+- Na powierzchni kradnie drób, jagnięta i ryby z suszarni.
+- Stado nie atakuje, dopóki nie jest pewne przewagi. Pojedynczy pomiot ucieka przed pierwszym ciosem.
+- Pojedynczy to przeciwnik słaby, słabszy od człowieka. Stado 2–3 pomiotów to przeciwnik przeciętny, od czterech wzwyż silny. Stado to jeden przeciwnik.
 - Chude ciało: wytrzymałość wątła.
 - Pazury, zęby, rzucony kamień: od draśnięcia do lekkiej rany, typowo draśnięcie. Stado atakuje z wielu stron, więc na wyniku 3 zadaje ranę.
 - Na niskich wynikach MG może wpisać zamiast rany kradzież albo zgaszenie światła.
-- Nie są szybsze od człowieka. Stado ucieka, gdy padnie kilka pomiotów albo gdy postać je przestraszy.
+- Nie jest szybszy od człowieka. Stado ucieka, gdy padnie kilka pomiotów albo gdy postać je przestraszy.
 
-### Szaraki
+### Szarak
 
-Najliczniejsze dorosłe trolle. Wzrostu rosłego człowieka albo trochę wyżsi, przygarbieni, o skórze szarej i chropawej jak skała, z długimi nosami i ramionami do kolan. Są dwa razy silniejsze od człowieka, a ich skóra zatrzymuje cios, który człowieka by ranił. Pojedynczy szarak jest wyrównanym przeciwnikiem dla doświadczonego wojownika.
-
-Walczą pazurami i zębami, a z dystansu ciskają kamieniami wielkości głowy. Każdy ma swój rewir w ruinach i nocą poluje na powierzchni wokół jego wejścia.
-
-- Przeciwnik silny, dwa razy silniejszy od człowieka.
-- Skóra jak skała zatrzymuje cios, który człowieka by ranił: wytrzymałość twarda.
-- Pazury, zęby, kamień w łapie: od lekkiej rany do ciężkiej rany, typowo rana.
+- Wzrostu rosłego człowieka albo trochę wyższy, przygarbiony, o szarej, chropawej skórze, z długim nosem i ramionami do kolan.
+- Częsty. Najliczniejszy dorosły troll. Każdy ma rewir w ruinach i nocą poluje wokół wejścia.
+- Przeciwnik silny, dwa razy silniejszy od człowieka. Wyrównany przeciwnik dla doświadczonego wojownika.
+- Skóra jak skała: wytrzymałość twarda.
+- Pazury, zęby, kamień w łapie: od lekkiej rany do ciężkiej rany, typowo rana. Z dystansu ciska kamieniami wielkości głowy.
 - Ranny zwykle ucieka, chyba że broni legowiska.
 
-### Kosmacze
+### Kosmacz
 
-Trolle, które dawno temu wyszły z Głębin i zostały bliżej powierzchni: w jaskiniach lawowych, w rozpadlinach Pustkowi Hraun i na skraju Bjarkalund. Wyższe od człowieka o głowę albo dwie, porośnięte długim, skołtunionym włosem, w którym rośnie mech i trawa.
-
-Są głupsze od szaraków, ale silniejsze i bardziej uparte. Uderzeniem pięści łamią człowiekowi rękę albo żebra. To one najczęściej polują na owce i konie, a zimą podchodzą pod odcięte gospodarstwa po bydło z obór. Są cierpliwe: potrafią całą noc czekać przy zagrodzie, aż zgaśnie ogień.
-
-- Przeciwnik silny, silniejszy od szaraka i bardziej uparty.
-- Gruba skóra pod skołtunionym włosem: wytrzymałość twarda.
+- O głowę albo dwie wyższy od człowieka, porośnięty skołtunionym włosem, w którym rośnie mech i trawa.
+- Nieczęsty. Żyje bliżej powierzchni: w jaskiniach lawowych, w rozpadlinach Pustkowi Hraun i na skraju Bjarkalund.
+- Najczęściej poluje na owce i konie, a zimą podchodzi pod gospodarstwa po bydło. Cierpliwy: potrafi całą noc czekać przy zagrodzie, aż zgaśnie ogień.
+- Przeciwnik silny, silniejszy od szaraka, głupszy i bardziej uparty.
+- Gruba skóra pod włosem: wytrzymałość twarda.
 - Pięść: od rany do ciężkiej rany, typowo rana. Na wyniku 3 łamie postaci rękę albo żebra (uraz przejściowy, zob. *Urazy* w `Rules/Health.md`).
 - Ranny zwykle ucieka, chyba że broni legowiska.
 
-### Trolle fiordowe
+### Troll fiordowy
 
-Trolle z morskich jaskiń Nordstrand i fiordów wschodu. Wyższe od człowieka, śliskie, oblepione wodorostami i muszlami, z płetwiastymi dłońmi. Pływają jak foki i oddychają pod wodą dłużej niż jakiekolwiek zwierzę lądowe. Nocą polują na foki i ryby, rozbijają sieci, okradają suszarnie ryb i obżerają się wielorybami wyrzuconymi na brzeg, a rybaka, który wypłynął po zmroku, potrafią wyciągnąć z łodzi. Przed świtem nie muszą wracać do jaskiń: zanurzają się w głębinie fiordu, dokąd nie sięga światło, i przeczekują tam dzień. Dlatego wielorybnicy nie ufają ciemnej wodzie nawet w południe.
-
+- Wyższy od człowieka, śliski, oblepiony wodorostami i muszlami, z płetwiastymi dłońmi.
+- Nieczęsty. Żyje w morskich jaskiniach Nordstrand i fiordów wschodu.
+- Pływa jak foka i długo wytrzymuje pod wodą. Nocą poluje na foki i ryby, rozbija sieci, okrada suszarnie, obżera się wielorybami, a rybaka po zmroku potrafi wyciągnąć z łodzi.
+- Dzień przeczekuje w głębinie fiordu, dokąd nie sięga światło. Dlatego wielorybnicy nie ufają ciemnej wodzie nawet w południe.
 - Przeciwnik silny, a w wodzie potężny.
 - Śliska skóra oblepiona muszlami: wytrzymałość twarda.
 - Pazury: od lekkiej rany do ciężkiej rany, typowo rana.
 - W wodzie na niskich wynikach wciąga postać pod wodę (zob. *Lodowata woda* w `Mechanics.md`).
 
-### Szeptacze
+### Szeptacz
 
-Wysokie, wychudłe i siwe od młodości, z włosami do ziemi, często ślepe albo jednookie, bo oczy nie są im potrzebne. Nazwę wzięły od tego, że ciągle szepczą: do siebie, do kamieni, do ciemności. Żyją bardzo długo i jest ich niewiele. W walce są słabsze od szaraków, ale rzadko walczą same: często trzyma się ich stado pomiotów, które je karmi w zamian za ochronę przed innymi trollami.
-
-Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwodzą wędrowców głosami bliskich, przybierają cudzą postać i słyszą i węszą zmysłami szczurów i innych zwierząt z ciemności. Jako jedyne trolle potrafią przemówić ludzkim językiem, kilkoma słowami, łamanymi i dziwnymi. Bywa, że chcą się targować. Ich legowiska są pełne kości, grzybów i dziwnych przedmiotów, a czasem krasnoludzkich rzeczy, o których mocy wiedzą więcej, niż powinny.
-
-- Przeciwnik przeciętny, słabszy od szaraka, nie szybszy od człowieka. Walczy rękami pomiotów, które się go trzymają.
+- Wysoki, wychudły, siwy od młodości, z włosami do ziemi, często ślepy albo jednooki. Ciągle szepcze: do siebie, do kamieni, do ciemności.
+- Rzadki. Żyje bardzo długo. Często trzyma się go stado pomiotów, które go karmi w zamian za ochronę.
+- Zna dziką magię: rzuca klątwy, wywołuje mgłę i burzę, zwodzi głosami bliskich, przybiera cudzą postać, słyszy i węszy zmysłami szczurów i innych zwierząt z ciemności.
+- Jako jedyny troll mówi kilka łamanych słów ludzkim językiem. Bywa, że chce się targować.
+- Legowisko pełne kości, grzybów i dziwnych przedmiotów, czasem krasnoludzkich, o których mocy wie więcej, niż powinien.
+- Przeciwnik przeciętny, słabszy od szaraka, nie szybszy od człowieka. Walczy rękami pomiotów.
 - Wytrzymałość twarda.
 - Pazury: od draśnięcia do rany, typowo lekka rana.
 - Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów* w `Mechanics.md`).
 
-### Trolle górskie
+### Troll górski
 
-Wysokie na trzy do pięciu metrów, szerokie jak drzwi stodoły, o skórze jak kamień porośnięty porostami. Gdy stoją bez ruchu w półmroku, łatwo wziąć je za głaz albo filar, i często tak czekają na ofiarę. Jednym ciosem łapy rozłupują człowiekowi czaszkę albo miażdżą go o ścianę razem z tarczą, a ciśniętym głazem zabijają z kilkunastu kroków, a zwykła broń ledwie je rani. Samotny śmiałek nie wygra z górskim trollem siłą. Może uciec, przechytrzyć go albo doczekać z nim do świtu.
-
-Nie mieszczą się w ciasnych korytarzach, dlatego zajmują największe sale ruin, a mniejsze trolle schodzą im z drogi, bo górski troll zjada każdego, kogo złapie w swoim rewirze. Na długich prostych biegają szybciej od mniejszych trolli, ale w zakrętach i na schodach są niezgrabne. Są zachłanne i dumne, a ich legowiska kryją największe skarby ruin.
-
-- Przeciwnik potężny, wielokrotnie silniejszy od człowieka.
+- Wysoki na trzy do pięciu metrów, szeroki jak drzwi stodoły, o skórze jak kamień porośnięty porostami. Stojący bez ruchu w półmroku wygląda jak głaz albo filar i często tak czeka na ofiarę.
+- Rzadki. Zajmuje największe sale ruin. Mniejsze trolle schodzą mu z drogi, bo zjada każdego, kogo złapie w rewirze.
+- Zachłanny i dumny. Jego legowisko kryje największe skarby ruin.
+- Na długich prostych szybszy od mniejszych trolli, ale niezgrabny w zakrętach i na schodach.
+- Przeciwnik potężny, wielokrotnie silniejszy od człowieka. Samotny śmiałek nie wygra z nim siłą: może uciec, przechytrzyć go albo doczekać z nim do świtu.
 - Skóra jak kamień, zwykła broń ledwie go rani: wytrzymałość bardzo twarda.
-- Łapa, zęby, głaz: od rany do zmasakrowania, typowo ciężka rana.
+- Łapa, zęby, głaz: od rany do zmasakrowania, typowo ciężka rana. Ciśniętym głazem zabija z kilkunastu kroków.
 - Nie mieści się w ciasnych korytarzach. W szerokiej sali walka z nim jest bardzo trudna, a tarcza pęka na najniższych wynikach.
 - Ranny ucieka dopiero wtedy, gdy jest bliski śmierci.
 
-### Wielogłowe
+### Troll wielogłowy
 
-Najstarsze i największe trolle, wysokie na sześć metrów i więcej, o dwóch albo trzech głowach. Jest ich na wyspie niewiele, może kilka, a większość ludzi uważa je za bajkę. Żyją w najgłębszych ruinach i w Głębinach, a wszystkie inne trolle schodzą im z drogi. Mówi się, że są starsze od upadku krasnoludów.
-
-Ich ciosy kruszą skałę. Zwykła broń prawie ich nie rani. Do walki z wielogłowym trollem trzeba czegoś więcej niż stali: krasnoludzkiej broni, słońca albo podstępu. Głowy kłócą się ze sobą, każda chce czego innego i żadna nie ufa pozostałym. Sagi opowiadają o śmiałkach, którzy wyszli z ich legowisk żywi tylko dlatego, że skłócili głowy.
-
+- Wysoki na sześć metrów i więcej, o dwóch albo trzech głowach. Najstarszy i największy z trolli, podobno starszy od upadku krasnoludów.
+- Mityczny. Na wyspie jest ich może kilka, a większość ludzi uważa je za bajkę. Żyje w najgłębszych ruinach i w Głębinach. Wszystkie inne trolle schodzą mu z drogi.
+- Głowy kłócą się ze sobą i żadna nie ufa pozostałym. Sagi opowiadają o śmiałkach, którzy uszli z życiem, bo skłócili głowy.
 - Przeciwnik legendarny. Ciosy kruszą skałę.
-- Zwykła broń prawie go nie rani: wytrzymałość ogromna.
+- Zwykła broń prawie go nie rani: wytrzymałość ogromna. Trzeba krasnoludzkiej broni, słońca albo podstępu.
 - Ciosy: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
 - Nie da się go pokonać w zwykłej walce. Rozsądna postać ucieka, przechytrza go, skłóca głowy albo czeka ze słońcem (zob. *Słońce i trolle*).

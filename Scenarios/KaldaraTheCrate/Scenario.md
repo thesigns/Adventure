@@ -10,7 +10,7 @@ Scenariusz jest pierwszą częścią kampanii. Drugą będzie podróż ferdem z 
 
 ## Świat
 
-Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomioty*, *Ślady trolli*, *Głód*, *Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*) i `Settings/Kaldara/Economy.md`.
+Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomiot*, *Ślady trolli*, *Głód*, *Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*) i `Settings/Kaldara/Economy.md`.
 
 ### Czas i światło
 
@@ -89,7 +89,7 @@ Plac nad portem, z kamienną studnią pośrodku i świątynią Solvara po jednej
   - **Co mówią.** Orm chętnie opowiada, jak złapali pomiota w wilczy dół i że od trzech tygodni go nie karmią, bo boją się otworzyć skrzynię. O ofercie Domu Visara wygada się tylko komuś, kogo polubi, np. temu, kto z nim pije albo podziwia jego zdobycz. Ketil podaje tylko cenę, pięć uncji, i nie mówi nic o kupcach.
   - **Po nocy.** Jeśli postać wyda pomiota komuś innemu albo go zabije, bracia mają do niej żal i to zapamiętają, ale nie sięgają po broń: przeciw ludziom Ragny i całemu miastu nie mają szans.
 - **Ragna**, kapłanka Solvara ze świątyni przy rynku, kobieta w średnim wieku, surowa i nieustraszona. Dla niej troll to wróg Solvara, a nie towar. Gdy dowie się o ucieczce, zbiera ludzi z pochodniami i szuka pomiota, żeby o świcie oddać go słońcu. Nie da się jej przekupić, ale da się ją przekonać, zwłaszcza przysięgą przed Solvarem.
-- **Pomiot**, który nie ma imienia, które ludzie umieliby wymówić. Troll wielkości dziecka, chudy, sinoszary, z wielkimi uszami (zob. *Pomioty* w `Settings/Kaldara/Trolls.md`). Od trzech tygodni siedzi w skrzyni, wygłodzony, przerażony i zły. Lewa dłoń skamieniała mu od promienia słońca, który wpadł przez szparę między deskami. Porozumiewa się na migi, a mięso jest dla niego cenniejsze niż cokolwiek innego.
+- **Pomiot**, który nie ma imienia, które ludzie umieliby wymówić. Troll wielkości dziecka, chudy, sinoszary, z wielkimi uszami (zob. *Pomiot* w `Settings/Kaldara/Trolls.md`). Od trzech tygodni siedzi w skrzyni, wygłodzony, przerażony i zły. Lewa dłoń skamieniała mu od promienia słońca, który wpadł przez szparę między deskami. Porozumiewa się na migi, a mięso jest dla niego cenniejsze niż cokolwiek innego.
   - **Czego chce.** Przeczekać dzień w ciemności i następnej nocy wrócić do swojego stada w Ulflund (zob. *Tajemnice*). Kto go nakarmi, temu przestaje być wrogiem i próbuje mu to pokazać: wskazuje w górę, na niebo, i zasłania oczy (słońce), pokazuje kamienną dłoń (co mu zrobiło słońce), a potem wskazuje na zachód, w stronę lasu, i robi gest biegu. Nie rozumie słów, ale rozumie gest, groźbę i jedzenie.
 
 Karczmarz, goście gospody, ludzie Ragny, rybacy i stróże składów są tłem. MG nadaje imiona tylko tym, o które gracz zapyta.
@@ -156,7 +156,7 @@ Postać może iść do składu przez drzwi, jeśli zdejmie rygiel, co jest gło�
 
 ## Pomiot w piwnicy
 
-Pomiot to słaby przeciwnik o wątłej wytrzymałości (zob. *Pomioty* w `Settings/Kaldara/Trolls.md`). Tej nocy ma trzy okoliczności:
+Pomiot to słaby przeciwnik o wątłej wytrzymałości (zob. *Pomiot* w `Settings/Kaldara/Trolls.md`). Tej nocy ma trzy okoliczności:
 
 - **Ciasnota:** piwnica jest niska, więc dorosły człowiek walczy w niej pochylony, a pomiot jest w swoim żywiole. Walka jest trudniejsza o poziom.
 - **Światło:** pochodnia albo kaganek razi pomiota z bliska, więc walka jest łatwiejsza o poziom (zob. *Światło razi trolle* w `Settings/Kaldara/Trolls.md`).
