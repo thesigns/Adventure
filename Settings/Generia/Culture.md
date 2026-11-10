@@ -7,7 +7,7 @@
 - **Orcish:** the harsh tongue of orcs and goblins; many half-orcs know it. It has no script: orcs and goblins as a rule cannot write, and their lore lives in an oral tradition. Even their shamans learn their spells by word of mouth, from shaman to apprentice.
 - **Aurelian:** the dead language of the fallen empire, found on ruins, old scrolls and in wizards' spellbooks. Scholars and wizards read it; nobody speaks it.
 - A character speaks Common and the tongue of their people. More languages come from the profession (a merchant, a scholar, an envoy) or an advantage.
-- **Reading:** clergy, wizards, nobles, merchants and scholars read and write; most peasants and soldiers do not. Elves, dwarves and gnomes usually read their own script.
+- **Reading:** clergy, wizards, nobles, merchants and scholars read and write well. Townsfolk of the middling sort, craftsmen, guards, soldiers, thieves and most adventurers, can read at least simply. In the villages most people cannot read, apart from the headman, the innkeeper and craftsmen such as the smith; farmhands and peasants with pitchforks cannot. Elves, dwarves and gnomes usually read their own script.
 
 ## Law
 
