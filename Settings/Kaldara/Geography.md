@@ -2,25 +2,9 @@
 
 Mapa wyspy jest w `Maps/MapKaldara.svg` i jest jawna dla gracza (zob. *Pliki settingu* w `Setting.md`). W sprawach geografii źródłem prawdy jest mapa: kształt wybrzeża, położenie miast, krain, rzek, jezior i traktów oraz odległości. Opisy w tym pliku są do niej dopasowane, a gdyby się z nią rozjechały, rozstrzyga mapa. Odległości podaje się w kilometrach, a w narracji w miarach świata (zob. *Miary* w `Mechanics.md`).
 
-## Wymiary i podróże
+## Wymiary
 
-Wyspa ma około 500 km ze wschodu na zachód i 320 km z północy na południe. Wzdłuż wybrzeża konno jedzie się z miasta do miasta od kilku dni do dwóch tygodni, piechotą mniej więcej dwa razy dłużej. Fiordy północy i wschodu wydłużają każdą drogę. Statkiem latem szybciej, zimą wcale.
-
-Trakt łączy cztery miasta w pętlę wzdłuż wybrzeża. Długość odcinków i czas podróży latem (tempo podróży zob. *Podróże* w `Mechanics.md`):
-
-| Odcinek traktu        | Długość    | W rastach | Konno        | W ferdzie | Pieszo    |
-|-----------------------|------------|-----------|--------------|-----------|-----------|
-| Hofvik – Grimsfjord   | ok. 265 km | ok. 27    | 6 dni        | 7–9 dni   | 11–13 dni |
-| Grimsfjord – Austhavn | ok. 270 km | ok. 27    | 6 dni        | 7–9 dni   | 11–14 dni |
-| Austhavn – Myrvaka    | ok. 300 km | ok. 30    | 6–7 dni      | 8–10 dni  | 12–15 dni |
-| Myrvaka – Hofvik      | ok. 245 km | ok. 25    | 5–6 dni      | 6–8 dni   | 10–12 dni |
-| Hofvik – Tingvold     | ok. 65 km  | 6–7       | półtora dnia | 2 dni     | 3 dni     |
-
-Cała pętla ma około 1080 km. Do miasta po drugiej stronie wyspy jedzie się w obie strony podobnie długo, np. z Hofvik do Austhavn przez Grimsfjord około 535 km, a przez Myrvakę około 545 km. Trakty omijają fiordy, więc są o jedną trzecią dłuższe niż odległość w linii prostej.
-
-Między czterema miastami mało kto podróżuje sam, bo trakty są puste, a na pustych odcinkach czekają rozbójnicy, wilki i pogoda. Podróżni zbierają się w **ferd**, czyli wspólną podróż. Ferd zbiera się kilka dni w gospodzie albo na placu targowym: kupcy z jucznymi końmi, śmiałkowie z łupem, ludzie wodzów z wiadomościami, pielgrzymi do świątyń, rodziny jadące na wesele albo na Ting. Wyrusza, gdy jest dość ludzi, zwykle od kilkunastu do kilkudziesięciu, i gdy pozwala pogoda. Prowadzi go ktoś, kto zna drogę, zwykle doświadczony przewodnik albo kupiec, i w drodze słucha się jego słowa. Kto dołącza, dokłada się do przewodnika i do zbrojnych, których ferd czasem wynajmuje.
-
-Ferd jedzie wolniej niż samotny jeździec, ale rozbójnicy rzadko odważą się na niego napaść. Wolą samotnych podróżnych i maruderów. Dlatego mają swoich ludzi w miastach, którzy dołączają do ferdu jak zwykli podróżni, liczą konie i sakwy, wypatrują, kto wiezie łup z zejścia, a w drodze dają znać swoim albo w nocy przecinają popręgi i odpędzają konie.
+Wyspa ma około 500 km ze wschodu na zachód i 320 km z północy na południe. Trakt, czas podróży i ferd: `Travel.md`.
 
 ## Miasta
 

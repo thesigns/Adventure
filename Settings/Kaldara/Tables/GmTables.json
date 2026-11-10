@@ -1,6 +1,6 @@
 {
   "k1": {
-    "opis": "Czy w ferdzie jest szpieg rozbójników (zob. Podróż w ferdzie w Mechanics.md). Dla Scripts/roll.py --ukryty.",
+    "opis": "Czy w ferdzie jest szpieg rozbójników (zob. Ferd w Travel.md). Dla Scripts/roll.py --ukryty.",
     "wpisy": {
       "3-6": "w ferdzie jest szpieg rozbójników",
       "7-18": "w ferdzie nie ma szpiega"

@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -74,13 +74,13 @@ Postać zaczyna zwykle na zerowym poziomie doświadczenia, wiosną, w Grimsfjord
 
 Zasady, mapa i notatki MG podają odległości w kilometrach i metrach, bo tak liczą zasady podstawowe i skala mapy. Ludzie na wyspie nie znają kilometrów, więc w narracji i w ustach postaci MG używa miar świata:
 
-| Miara         | Ile to                                                 | Przykład                                                |
-|---------------|--------------------------------------------------------|---------------------------------------------------------|
-| łokieć        | ok. pół metra, od łokcia do końca palców               | samodział mierzy się łokciami (zob. `Economy.md`)      |
-| sążeń         | ok. 2 m, rozpiętość ramion                             | głębokość szybu, długość liny: „lina na dziesięć sążni” |
-| strzał z łuku | ok. 150 m                                              | „wejście jest strzał z łuku od strumienia”              |
-| rast          | ok. 10 km, odcinek, po którym daje się odpocząć koniom | „do Tingvold jest sześć, siedem rastów”                 |
-| dzień drogi   | tyle, ile przejeżdża się konno latem, ok. 40–50 km     | „Grimsfjord leży sześć dni drogi stąd”                  |
+| Miara         | Ile to                                   | Przykład                                                |
+|---------------|------------------------------------------|---------------------------------------------------------|
+| łokieć        | ok. pół metra, od łokcia do końca palców | samodział mierzy się łokciami (zob. `Economy.md`)       |
+| sążeń         | ok. 2 m, rozpiętość ramion               | głębokość szybu, długość liny: „lina na dziesięć sążni” |
+| strzał z łuku | ok. 150 m                                | „wejście jest strzał z łuku od strumienia”              |
+
+Miary drogi (rast, dzień drogi): *Miary drogi* w `Travel.md`.
 
 Grzywna to także miara wagi, około 200 g, a uncja to jej ósma część (zob. *Waluta* w `Economy.md`). Czas ludzie mierzą porami dnia i położeniem słońca, a nie godzinami: o świcie, w południe, o zmierzchu, po zgaśnięciu poświaty. Godziny z tabeli *Dzień i noc* są dla MG.
 
@@ -185,7 +185,7 @@ Pod ziemią panuje całkowita ciemność: bez światła działania wymagające w
 
 Światło w ciemnych korytarzach widać z daleka. Skradanie się ze światłem w ruinach jest trudniejsze o poziom, a trolle i inni śmiałkowie widzą je wcześniej, niż postać zobaczy ich.
 
-## Zimno, woda i podróże
+## Zimno i woda
 
 ### Zimno
 
@@ -202,48 +202,6 @@ Tablica dotyczy poziomu przeciętnego. Przy innej trudności MG przesuwa progi (
 ### Lodowata woda
 
 Morze, fiordy i rzeki spływające z lodowca są lodowate przez cały rok. Postać, która w nie wpadnie, ma kilka minut, zanim zimno odbierze jej siły. Kto nie umie pływać, tonie, jeśli nikt mu nie pomoże albo nie chwyci się czegoś, co pływa. Pancerz średni i ciężki ciągnie na dno: zrzucenie kolczugi w wodzie zajmuje rundę i wymaga rzutu. Każde kilka minut w lodowatej wodzie to co najmniej lekka rana z wychłodzenia, a dłuższy pobyt grozi utratą przytomności.
-
-### Podróże
-
-Mapa wyspy ma skalę 1 piksel = 500 m (2 piksele na kilometr), więc MG może mierzyć na niej odległości (zob. `Maps/MapKaldara.svg`). Trakty omijają fiordy, więc droga lądem jest zwykle dłuższa niż odległość w linii prostej.
-
-| Sposób podróży                          | Dziennie  | Uwagi                                                  |
-|-----------------------------------------|-----------|--------------------------------------------------------|
-| konno traktem wzdłuż wybrzeża           | 40–50 km  | zimą o połowę mniej                                    |
-| pieszo traktem                          | 20–25 km  | z ciężkim łupem mniej                                  |
-| konno albo pieszo przez Pustkowia Hraun | 10–15 km  | konie łamią nogi, nie ma wody ani paszy                |
-| w górach Dvergfjell i na lodowcu        | 5–10 km   | wspinaczka, szczeliny, mgła                            |
-| łodzią albo statkiem wzdłuż wybrzeża    | 80–150 km | tylko od maja do września i tylko przy dobrej pogodzie |
-
-Poza miastami i osadami wyspa jest pusta. Można iść cały dzień i nie spotkać nikogo, a groźniejsze od ludzi i bestii są zwykle pogoda i teren. Dlatego MG rozstrzyga tylko raz na cały dzień drogi przez dzicz, razem z noclegiem, czy coś się wydarzyło, jako okoliczność świata (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`), chyba że scenariusz ustala spotkania inaczej. Na trakcie w zamieszkanej okolicy MG nie rzuca wcale, ale pusty odcinek głównego traktu między osadami to już dzicz. Przykładowa tablica:
-
-| Wynik | Rezultat                                                                  |
-|-------|---------------------------------------------------------------------------|
-| 3–4   | niebezpieczne spotkanie: rozbójnicy, banici, wataha albo bestia           |
-| 5–6   | spotkanie niepewne: obcy wędrowiec, śmiałek, pasterz, ślady czegoś dużego |
-| 7–8   | trudność w drodze: zgubiony szlak, załamanie pogody, okulały koń          |
-| 9–18  | spokojny dzień                                                            |
-
-Kogo postać spotyka, zależy od miejsca. Rozbójnicy i banici siedzą przy głównych traktach i w lesie Bjarkalund, bo w głębi wyspy nie mają z czego żyć ani kogo rabować. W głębi wyspy niebezpiecznym spotkaniem jest wataha, bestia albo inny śmiałek, a niepewnym ślady.
-
-Zima, Pustkowia Hraun i góry przesuwają progi o poziom na niekorzyść postaci.
-
-Nocleg w zagłębieniu terenu, w jaskini albo pod skałą, z dala od ruin, jest zwykle spokojny i nie wymaga osobnego rzutu. Osobny rzut na noc MG wykonuje tylko wtedy, gdy postać nocuje w ciemności w zasięgu trolli, czyli kilka, najwyżej kilkanaście kilometrów od ruin, albo gdy jej ognisko widać z daleka. Używa wtedy tej samej tablicy, a niebezpiecznym spotkaniem jest zwykle troll na łowach. Ogień przy postaci i dobrze ukryte miejsce przesuwają progi o poziom na korzyść postaci, a głodne noce pod koniec lata o poziom na niekorzyść.
-
-### Podróż w ferdzie
-
-Między miastami ludzie podróżują zwykle w ferdzie, czyli wspólnej podróży kilkunastu albo kilkudziesięciu ludzi (zob. *Wymiary i podróże* w `Geography.md`). Ferd to epizodyczne towarzystwo postaci MG, a nie drużyna: nie podejmuje decyzji za postać ani nie rozwiązuje jej problemów (zob. *Zasady dla MG* w `Setting.md`).
-
-- **Zbiórka.** Na ferd czeka się zwykle od jednego do kilku dni. Ile, MG rozstrzyga rzutem jako okoliczność świata, chyba że ustala to scenariusz. Dołączenie kosztuje kilka łokci samodziału na przewodnika i zbrojnych.
-- **Tempo.** Ferd jedzie traktem 30–40 km dziennie konno, wolniej niż samotny jeździec.
-- **Spotkania.** W rzucie na spotkania progi przesuwają się o poziom na korzyść postaci. Rozbójnicy rzadko napadają na cały ferd: niebezpieczne spotkanie to zwykle napad na maruderów, kradzież koni w nocy albo skutek zdrady szpiega. Nocleg ferdu z wartą przy ogniu nie wymaga rzutu na noc.
-- **Szpieg rozbójników.** Czy w ferdzie jest szpieg, MG rozstrzyga ukrytym rzutem z tablicą `k1` (zob. *Sekrety MG* w `AGENTS.md`), gdy postać do niego dołącza:
-
-  ```
-  python Scripts/roll.py --kampania <kampania> --ukryty --etykieta f1 --tablica k1
-  ```
-
-  Szpieg zachowuje się jak zwykły podróżny, ale wypytuje o łup, liczy sakwy, oddala się od ferdu bez powodu i w drodze daje znaki. MG opisuje te szczegóły tak jak inne, bez wskazywania, co znaczą. Śmiałek, który chwali się łupem w gospodzie przed wyjazdem, sam ściąga na ferd uwagę rozbójników: wtedy MG przyjmuje, że szpieg jest, bez rzutu.
 
 ## Przeciwnicy
 

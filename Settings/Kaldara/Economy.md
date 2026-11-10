@@ -15,12 +15,12 @@ Główszczyzna: *Prawo, waśń i dobre imię* w `Mechanics.md`.
 
 Nie bije się monet. Łokieć to miara wartości, nie to, co nosi się w sakiewce.
 
-| Jednostka         | Wartość                  | Uwagi                                       |
-|-------------------|--------------------------|---------------------------------------------|
-| łokieć samodziału | 1                        | wełniana tkanina o ustalonej prawem miarze  |
-| uncja srebra      | 6 łokci                  | ok. 25 g                                    |
-| grzywna srebra    | 8 uncji = 48 łokci       | ok. 200 g                                   |
-| uncja złota       | 8 uncji srebra           | krasnoludzkie złoto liczy się na wagę       |
+| Jednostka         | Wartość            | Uwagi                                      |
+|-------------------|--------------------|--------------------------------------------|
+| łokieć samodziału | 1                  | wełniana tkanina o ustalonej prawem miarze |
+| uncja srebra      | 6 łokci            | ok. 25 g                                   |
+| grzywna srebra    | 8 uncji = 48 łokci | ok. 200 g                                  |
+| uncja złota       | 8 uncji srebra     | krasnoludzkie złoto liczy się na wagę      |
 
 - Uncja i grzywna bez dopisku to zawsze srebro. Złoto nazywa się wprost.
 - Karta postaci: „srebro: 3 uncje i 4 łokcie w siekańcach”, majątek osobno: „srebrna bransoleta, ok. 2 uncje”.
@@ -66,6 +66,8 @@ Nie bije się monet. Łokieć to miara wartości, nie to, co nosi się w sakiewc
 | krasnoludzki przedmiot z mocą                        | od 30 grzywien wzwyż  |
 | tytuł wodzowski                                      | od 100 grzywien wzwyż |
 
+Przejazdy statkiem i dołączenie do ferdu: `Travel.md`.
+
 ## Sprzedaż łupu
 
 - Pełna cena tylko w Austhavn. Gdzie indziej kupcy płacą najwyżej połowę, na wsi nikt nie ma tyle srebra.
@@ -73,8 +75,8 @@ Nie bije się monet. Łokieć to miara wartości, nie to, co nosi się w sakiewc
 
 ## Sakiewka na start
 
-| Status                | Srebro         |
-|-----------------------|----------------|
-| parobek               | kilka łokci    |
-| gospodarz, wojownik   | kilka uncji    |
-| kupiec                | kilka grzywien |
+| Status              | Srebro         |
+|---------------------|----------------|
+| parobek             | kilka łokci    |
+| gospodarz, wojownik | kilka uncji    |
+| kupiec              | kilka grzywien |

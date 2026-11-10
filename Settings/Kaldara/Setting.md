@@ -7,17 +7,18 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 ## Pliki settingu
 
 - `Setting.md`: przegląd świata, zasady dla MG, nazwy, zejścia, Wolna Wspólnota, klimat, magia i frakcje (ten plik)
-- `Geography.md`: wymiary wyspy, podróże, miasta i krainy
+- `Geography.md`: wymiary wyspy, miasta i krainy
+- `Travel.md`: miary drogi, tempo, trakt, podróże morskie, kontynent, spotkania w drodze, nocleg, ferd
 - `Dwarves.md`: krasnoludy, co wiedzą o nich ludzie i prawda o ich upadku, której nie zna nikt na wyspie
 - `Trolls.md`: trolle, główne zagrożenie wyspy
 - `Gods.md`: bogowie i ich kulty
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
 - `Diseases.md`: choroby i ich mechanika: czarny kaszel, gorączka z rany, gnilec, ślepota śnieżna, czerwonka, zapalenie płuc
-- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
+- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
 - `Economy.md`: gospodarka, waluta, czym się płaci, ceny, sprzedaż łupu, sakiewka na start
 - `Maps/MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `Tables/Daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
-- `Tables/GmTables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md` i `Diseases.md`)
+- `Tables/GmTables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Ferd* w `Travel.md` i `Diseases.md`)
 - `Tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 
 Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, krainy, góry, lodowiec, główne rzeki i trakty. Gracz może więc oglądać `Maps/MapKaldara.svg` w całości, a MG nie odsłania jej skryptem `Scripts/fogmap.py`. Na mapie wyspy nie ma ruin ani niczego, czego ludzie na wyspie nie wiedzą. Mapy konkretnych miejsc, np. ruin, mają scenariusze i te MG odsłania zwykłym trybem.
@@ -100,7 +101,6 @@ Ludzie na Kaldarze nie mają króla. Rządzą się sami, według wspólnego praw
 
 - Klimat jest zimny i wietrzny. Lato jest krótkie i chłodne, z białymi nocami. Zima jest długa, ciemna i śnieżna, z zorzami na niebie.
 - Wyspa leży tuż pod kręgiem polarnym. Mniej więcej od początku maja do początku sierpnia noc nie ciemnieje do końca (zob. *Dzień i noc* w `Mechanics.md`). W środku zimy dzień trwa kilka godzin, a na północnym wybrzeżu słońce ledwo wychyla się zza horyzontu.
-- Na wyspie hoduje się małe, krępe i wytrzymałe konie. To podstawowy środek podróży po lądzie. Kto nie ma konia, chodzi pieszo i jest biedakiem.
 - Domy są z kamienia i darni, w miastach także z drewna sprowadzanego zza morza. Drewno jest cenne. Wiele budowli stoi na fundamentach krasnoludzkich albo jest z nich zbudowanych.
 - Ogień w palenisku to życie. W każdym domu płonie bez przerwy przez całą zimę, a jego wygaśnięcie uchodzi za bardzo zły znak.
 - Gorące źródła są wszędzie. Ludzie kąpią się w nich, gotują w nich i ogrzewają nimi domy. Przy źródłach często stoją kapliczki Eldry.
