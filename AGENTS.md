@@ -32,6 +32,7 @@ File and folder names are in English and written in CamelCase with a capital let
 - `Rules/Traits.md`: character traits (advantages and disadvantages, trait changes during play)
 - `Rules/Experience.md`: experience (experience level and points, advancement, awarding points)
 - `Rules/Equipment.md`: equipment (tools, weapons, armour, consumables, vehicles, unusual items)
+- `Rules/Companions.md`: companions (running them, rolls, combat, loyalty, pay, records)
 - `Rules/CoinThrow.md`: coin toss (settling disputes between the player and the GM)
 - `Rules/CharacterCreation.md`: character creation
 - `Rules/CharacterTemplate.md`: character sheet template

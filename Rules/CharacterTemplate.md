@@ -45,3 +45,8 @@
 <!-- Consumables with counts, e.g.: torches: 2, rations: 3 days, ammunition: 20. Other items just need listing. Equipment better than typical for the profession is also recorded as an advantage. -->
 
 **Money**:
+
+## Companions
+
+<!-- Each companion: name, species and profession, category in combat, armour, loyalty, deal, wound level, injuries, notable equipment, e.g.: Bran, human hunter, average, padded jack, hired, 3 s a day, 10%, spear and bow -->
+

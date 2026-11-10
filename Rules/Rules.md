@@ -38,6 +38,10 @@ Equipment has no separate mechanics: weapons, armour, tools and other items act 
 
 Combat is fought in rounds of about 10 seconds, and each round is one standard roll with a table describing the consequences for both sides. Before combat the player sets the character's tactics, and the fight goes on until it is decided by death, dying, flight or surrender of one side. The player can order rounds with the same table as a series, which the GM rolls with a single command. Fatigue counts only against someone who tires more slowly or not at all, and makes the fight harder every 6 rounds. Full combat rules, including enemy categories and the typical layout of a round table, are in `Rules/Combat.md`.
 
+## Companions
+
+A companion is a GM character who joins the player character for a time: a hireling, a guide, a friend, a trained animal. The GM runs them according to their nature and loyalty (hired, allied, friendly or devoted), and a morale roll decides whether they stand firm when the risk exceeds it. Bound servants, e.g. undead, golems or drones, obey every command, know no fear and break free only under conditions set by the world or the scenario. Help from a companion makes an action easier, and a companion fighting at the character's side makes the fight easier by a level or more, depending on their category. Companions never advise the player. Full rules are in `Rules/Companions.md`.
+
 ## Traits (advantages and disadvantages)
 
 An advantage sets the character apart from an average member of their species and profession: it makes actions in its field one level easier or makes possible actions that would otherwise be impossible. A disadvantage works the other way. Traits are chosen at character creation, affect the base number of Determination Points and very rarely change during play. An advantage can also grant a supernatural ability, whose effect, limits and number of uses the GM sets when pricing it. Full rules are in `Rules/Traits.md`.

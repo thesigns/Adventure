@@ -71,7 +71,7 @@ Circumstances change combat difficulty as with any other action (see *Circumstan
 
 - **the character's attack** moves only the hit threshold, e.g. aiming at the head or another weak spot, a weapon better or worse than typical, shooting distance, the enemy's cover and armour,
 - **the character's defence** moves only the wound range, e.g. the character's armour, shield and cover, the enemy's weapon better or worse than typical, a weapon that forces the character to let the enemy close,
-- **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, and every additional enemy, which makes the fight one level harder.
+- **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, every additional enemy, which makes the fight one level harder, and companions fighting at the character's side, who make it easier (see *Combat* in `Rules/Companions.md`).
 
 Armour, shields and cover move these values by the amounts given in *Armour* and *Shields and cover* in `Rules/Equipment.md`, not by whole levels.
 

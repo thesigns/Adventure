@@ -71,6 +71,7 @@ Rules files in `Rules/`:
 | `Traits.md`            | character traits: advantages and disadvantages                  |
 | `Experience.md`        | experience and advancement                                      |
 | `Equipment.md`         | equipment                                                       |
+| `Companions.md`        | companions: hirelings, guides, friends and trained animals      |
 | `CoinThrow.md`         | coin toss, which settles disputes between the player and the GM |
 | `CharacterCreation.md` | character creation                                              |
 | `CharacterTemplate.md` | character sheet template                                        |
