@@ -192,7 +192,7 @@ Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwod
 - Pazury: od draśnięcia do rany, typowo lekka rana.
 - Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów* w `Mechanics.md`).
 
-### Górskie trolle
+### Trolle górskie
 
 Wysokie na trzy do pięciu metrów, szerokie jak drzwi stodoły, o skórze jak kamień porośnięty porostami. Gdy stoją bez ruchu w półmroku, łatwo wziąć je za głaz albo filar, i często tak czekają na ofiarę. Jednym ciosem łapy rozłupują człowiekowi czaszkę albo miażdżą go o ścianę razem z tarczą, a ciśniętym głazem zabijają z kilkunastu kroków, a zwykła broń ledwie je rani. Samotny śmiałek nie wygra z górskim trollem siłą. Może uciec, przechytrzyć go albo doczekać z nim do świtu.
 

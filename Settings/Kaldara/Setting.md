@@ -104,7 +104,7 @@ Ludzie na Kaldarze nie mają króla. Rządzą się sami, według wspólnego praw
 - Domy są z kamienia i darni, w miastach także z drewna sprowadzanego zza morza. Drewno jest cenne. Wiele budowli stoi na fundamentach krasnoludzkich albo jest z nich zbudowanych.
 - Ogień w palenisku to życie. W każdym domu płonie bez przerwy przez całą zimę, a jego wygaśnięcie uchodzi za bardzo zły znak.
 - Gorące źródła są wszędzie. Ludzie kąpią się w nich, gotują w nich i ogrzewają nimi domy. Przy źródłach często stoją kapliczki Eldry.
-- Wulkany wybuchają co kilka lub kilkanaście lat, ziemia regularnie drży. Popiół, trujące opary i lawa to część życia.
+- Wulkany śpią i od Przybycia żaden nie wybuchł. Ziemia czasem drży, z rozpadlin bije para, a w zagłębieniach zbierają się trujące opary. Ludzie wierzą, że pod górami śpi gniewna Eldra (zob. `Gods.md`).
 - Lato to pora zejść. Zimą wyprawy w głąb wyspy kończą się zwykle śmiercią, więc śmiałkowie zimują w miastach i przepijają łupy.
 - Białe noce chronią przed trollami: niebo nie ciemnieje wtedy do końca, więc trolle nie wychodzą na powierzchnię. Długie zimowe noce to czas, kiedy trolle najczęściej podchodzą pod osady.
 - Na zachód od wyspy jest tylko otwarty ocean. Nikt tam nie pływa, a statki, które próbowały, nie wróciły.
@@ -158,7 +158,7 @@ Opis bogów jest w `Gods.md`.
 
 ## Potwory
 
-Z głębin przychodzą trolle i ich zwierzęta: pod ziemią są zawsze, na powierzchni tylko nocą. W ruinach czekają też krasnoludzcy strażnicy, którzy nigdy ich nie opuszczają. Dzicz ma własne niebezpieczeństwa: zimę, wilki i niedźwiedzie, draugry z kurhanów, mary, nykry w wodach, tursy w górach i na lodowcu, a w kraterze Brennfell smoka, o którym opowiadają sagi. Groźnych ludzi, takich jak banici, rozbójnicy, morscy łupieżcy i wiedźmy, opisuje rozdział *Frakcje*.
+Z głębin przychodzą trolle i ich zwierzęta: pod ziemią są zawsze, na powierzchni tylko nocą. W ruinach czekają też krasnoludzcy strażnicy, którzy nigdy ich nie opuszczają. Dzicz ma własne niebezpieczeństwa: zimę, wilki i niedźwiedzie, draugry z kurhanów, mary, nykry w wodach, tursy w górach i na lodowcu, a w pieczarach pod Brennfell smoka, o którym opowiadają sagi. Groźnych ludzi, takich jak banici, rozbójnicy, morscy łupieżcy i wiedźmy, opisuje rozdział *Frakcje*.
 
 Opis potworów jest w `Bestiary.md`.
 

@@ -272,7 +272,7 @@ Moc kapłana albo wieszczki to zaleta, która daje zdolność nadprzyrodzoną (z
 | światło Solvara          | Solvar           | przez jedną rundę światło dnia w promieniu kilku kroków (zob. niżej)                                | raz na dobę    |
 | przysięga przed Solvarem | Solvar           | kapłan wie, czy ktoś, kto przy nim przysięgał, złamał przysięgę                                     | raz na scenę   |
 | ciepło Eldry             | Eldra            | postać i kilka osób przy niej przetrwają noc na mrozie bez rzutu; ogień zapala się bez krzesiwa     | raz na dobę    |
-| głos ziemi               | Eldra            | kapłanka wyczuwa, czy ziemia zaraz zadrży, wulkan wybuchnie albo w jaskini zbierają się opary       | raz na scenę   |
+| głos ziemi               | Eldra            | kapłanka wyczuwa, czy ziemia zaraz zadrży, z rozpadliny bije para albo w jaskini zbierają się opary | raz na scenę   |
 | zamknięcie zmarłego      | Dauvar           | draugr walczy z kapłanem trudniej o poziom do końca walki, a pochowany z obrzędem nie wstanie       | raz na walkę   |
 | droga na powierzchnię    | Durgrim          | kapłan wyczuwa, którędy pod ziemią jest najbliższe wyjście na powierzchnię                          | raz na dobę    |
 | słuch kamienia           | Durgrim          | wypatrywanie pułapek, zawałów i ukrytych przejść w skale jest łatwiejsze o poziom                   | raz na scenę   |
