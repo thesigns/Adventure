@@ -40,6 +40,8 @@ Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej liter
 
 Każdy setting leży w osobnym folderze `Settings/<Nazwa settingu>/`, a jego głównym plikiem jest zawsze `Setting.md`. Folder może zawierać też inne pliki settingu, np. lore, geografię, bogów oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*).
 
+Treść settingu może być po angielsku, np. `Settings/Generia/`. Gra i tak toczy się po polsku, a MG tłumaczy opisy w narracji. Nazwy własne zostawia w oryginale.
+
 Pliki danych JSON dla skryptów, np. tablice ukrytych rzutów (`GmTables.json`) i tabela światła dnia (`Daylight.json`), leżą w podfolderze `Tables/` settingu albo scenariusza. Mapy SVG leżą w podfolderze `Maps/`, razem ze swoimi plikami obszarów (`.areas.json`, zob. *Mapy*).
 
 ## Scenariusze
