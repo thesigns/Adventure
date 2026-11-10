@@ -4,7 +4,7 @@
 
 - **Common:** the human tongue and the trade language of all Generia. Nearly everyone speaks it, and every character does.
 - **Elvish, Dwarvish, Gnomish:** the tongues of their peoples, each with its own script (dwarves write in angular runes). Halflings speak Common at home.
-- **Orcish:** the harsh tongue of orcs and goblins; many half-orcs know it.
+- **Orcish:** the harsh tongue of orcs and goblins; many half-orcs know it. It has no script: orcs and goblins as a rule cannot write, and their lore lives in an oral tradition. Even their shamans learn their spells by word of mouth, from shaman to apprentice.
 - **Aurelian:** the dead language of the fallen empire, found on ruins, old scrolls and in wizards' spellbooks. Scholars and wizards read it; nobody speaks it.
 - A character speaks Common and the tongue of their people. More languages come from the profession (a merchant, a scholar, an envoy) or an advantage.
 - **Reading:** clergy, wizards, nobles, merchants and scholars read and write; most peasants and soldiers do not. Elves, dwarves and gnomes usually read their own script.
