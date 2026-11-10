@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie, pieniądze i prawo. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie, pieniądze i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -394,6 +394,8 @@ Oba sposoby się sumują: ciężko ranny człowiek przy gorącym źródle i z ma
 Świątynia modli się nad tym samym rannym najwyżej raz na tydzień. Urazów trwałych modlitwa nie leczy, a zmarłych nikt na wyspie nie wskrzesza: Dauvar odprowadza ich tam, gdzie ich miejsce.
 
 **Opary i trucizny.** W jaskiniach przy wulkanach i na Pustkowiach Hraun zbierają się trujące opary, niewidoczne albo pachnące zgniłymi jajami. Każde kilka minut w oparach to rzut: porażka oznacza zawroty głowy (wszystkie działania trudniejsze o poziom), a powtórna utratę przytomności. Postać, która wie o oparach, widzi tablicę przed rzutem. Opary w ruinach i trucizny wiedźm opisuje scenariusz.
+
+**Czarny kaszel.** Chorobę śmiałków, którą łapie się głęboko pod ziemią, a leczy słońcem, opisuje `Diseases.md`.
 
 **Zmarły bez obrzędów.** Kto umrze w ruinach albo na pustkowiu i nie zostanie pochowany z obrzędami Dauvara, może wstać jako draugr. Dotyczy to także postaci gracza: jej ciało może spotkać kolejna postać.
 

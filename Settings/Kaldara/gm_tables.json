@@ -5,5 +5,26 @@
       "3-6": "w ferdzie jest szpieg rozbójników",
       "7-18": "w ferdzie nie ma szpiega"
     }
+  },
+  "k2": {
+    "opis": "Zakażenie czarnym kaszlem, łatwe (zob. Zakażenie w Diseases.md). Dla Scripts/roll.py --ukryty.",
+    "wpisy": {
+      "3-5": "zakażenie",
+      "6-18": "bez zakażenia"
+    }
+  },
+  "k3": {
+    "opis": "Zakażenie czarnym kaszlem, przeciętne (zob. Zakażenie w Diseases.md). Dla Scripts/roll.py --ukryty.",
+    "wpisy": {
+      "3-8": "zakażenie",
+      "9-18": "bez zakażenia"
+    }
+  },
+  "k4": {
+    "opis": "Zakażenie czarnym kaszlem, trudne (zob. Zakażenie w Diseases.md). Dla Scripts/roll.py --ukryty.",
+    "wpisy": {
+      "3-10": "zakażenie",
+      "11-18": "bez zakażenia"
+    }
   }
 }
