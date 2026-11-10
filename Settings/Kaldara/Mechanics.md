@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`, przeciwnicy w `Bestiary.md` i `Trolls.md`, a słońce, światło i ogień wobec trolli w `Trolls.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, broń, pancerz, leczenie, przedmioty krasnoludzkie bez mocy i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`, przeciwnicy w `Bestiary.md` i `Trolls.md`, magia w `Magic.md`, a słońce, światło i ogień wobec trolli w `Trolls.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -24,7 +24,7 @@ Przykładowe profesje i ich typowy ekwipunek:
 - **kowal:** metal, naprawy broni i narzędzi, ocena broni; młot, kleszcze, toporek, nóż
 - **górnik albo kamieniarz** (zwykle z Grimsfjord): kopanie, kamień, podziemia, zawały, praca przy kagańcu; kilof, młot, kaganek z tranem, lina
 - **skald:** pieśni, sagi, rody, prawo, mowa przed tingiem; nóż, dobre ubranie, czasem dar od wodza; sagi dają mu wiedzę o ruinach z opowieści
-- **kapłan albo kapłanka:** obrzędy, wiedza o bogach, opatrywanie ran, pismo; szaty, znak boga, nóż, zioła; moc to osobna zaleta (zob. *Magia*)
+- **kapłan albo kapłanka:** obrzędy, wiedza o bogach, opatrywanie ran, pismo; szaty, znak boga, nóż, zioła; moc to osobna zaleta (zob. *Moc postaci* w `Magic.md`)
 - **wieszczka:** wróżby, zioła, zwierzęta, posłuch i lęk ludzi; laska, sakwa z ziołami i kośćmi, płaszcz; moc to osobna zaleta
 - **zielarka albo znachor:** zioła, opatrywanie, porody, trucizny; torba z ziołami, maściami i płótnem
 - **kupiec:** targowanie, wycena towaru i krasnoludzkich rzeczy, łodzie, czasem język z kontynentu; waga do srebra, nóż, zasobniejsza sakiewka
@@ -51,7 +51,7 @@ Zalety:
 - **kolczuga** (−2 do −3) albo **miecz** (−2) u kogoś, komu nie są typowe: ekwipunek lepszy niż typowy,
 - **krasnoludzka broń bez mocy** (−3): ekwipunek lepszy niż typowy (zob. *Przedmioty krasnoludzkie*),
 - **koń dobrej krwi albo własna łódź** (−1 do −2): ekwipunek lepszy niż typowy,
-- **moc kapłana albo wieszczki** (−2 do −5): zdolność nadprzyrodzona (zob. *Magia*).
+- **moc kapłana albo wieszczki** (−2 do −5): zdolność nadprzyrodzona (zob. *Moc postaci* w `Magic.md`).
 
 Wady:
 
@@ -224,57 +224,10 @@ Oba sposoby się sumują: ciężko ranny człowiek przy gorącym źródle i z ma
 
 **Choroby**, w tym czarny kaszel śmiałków i gorączkę z rany, opisuje `Diseases.md`.
 
-## Magia
-
-Moc kapłana albo wieszczki to zaleta, która daje zdolność nadprzyrodzoną (zob. *Zdolności nadprzyrodzone* w `Rules/Traits.md`). MG ustala z graczem jej skutek, ograniczenia i limit użyć według przykładów poniżej i wycenia ją zwykle na −2 do −5 PDT. Postać może mieć najwyżej jedną taką zdolność, a moc kapłana pochodzi zawsze od jednego boga.
-
-- **Użycie** to modlitwa, zaklęta pieśń albo obrzęd. W walce zajmuje rundę (zob. *Między rundami* w `Rules/Combat.md`), a oszołomienie od ciężkich ran ją utrudnia (zob. *Poziomy zranienia* w `Rules/Health.md`).
-- **Skutek jest niepewny.** Bogowie odpowiadają rzadko i po swojemu, więc każde użycie to rzut z tablicą, zwykle przeciętny. Na najniższych wynikach moc nie przychodzi, a użycie przepada.
-- **Gniew boga.** Kapłan, który działa wbrew swojemu bogu, np. kapłan Solvara łamie przysięgę, a kapłanka Eldry pozwala zgasnąć świętemu ogniu, traci moc, dopóki nie złoży ofiary i nie odpokutuje. Ile to trwa i kosztuje, ustala MG.
-
-### Przykładowe zdolności
-
-| Zdolność                 | Bóg albo źródło  | Skutek                                                                                              | Limit użyć     |
-|--------------------------|------------------|-----------------------------------------------------------------------------------------------------|----------------|
-| światło Solvara          | Solvar           | przez jedną rundę światło dnia w promieniu kilku kroków (zob. niżej)                                | raz na dobę    |
-| przysięga przed Solvarem | Solvar           | kapłan wie, czy ktoś, kto przy nim przysięgał, złamał przysięgę                                     | raz na scenę   |
-| ciepło Eldry             | Eldra            | postać i kilka osób przy niej przetrwają noc na mrozie bez rzutu; ogień zapala się bez krzesiwa     | raz na dobę    |
-| głos ziemi               | Eldra            | kapłanka wyczuwa, czy ziemia zaraz zadrży, z rozpadliny bije para albo w jaskini zbierają się opary | raz na scenę   |
-| zamknięcie zmarłego      | Dauvar           | draugr walczy z kapłanem trudniej o poziom do końca walki, a pochowany z obrzędem nie wstanie       | raz na walkę   |
-| droga na powierzchnię    | Durgrim          | kapłan wyczuwa, którędy pod ziemią jest najbliższe wyjście na powierzchnię                          | raz na dobę    |
-| słuch kamienia           | Durgrim          | wypatrywanie pułapek, zawałów i ukrytych przejść w skale jest łatwiejsze o poziom                   | raz na scenę   |
-| spokojna woda            | Hafdis           | morze i fiord wokół jednej łodzi uspokajają się na kilka godzin                                     | raz na dobę    |
-| zaklęcie krwi            | Ylva (wieszczka) | tamuje krwawienie: postać w agonii jest opatrzona bez materiału, a zranienie spada o 5%             | raz na dobę    |
-| mowa zwierząt            | Ylva (wieszczka) | dzikie zwierzę, np. wilk albo niedźwiedź, nie atakuje i odchodzi; nie działa na stwory z głębin     | raz na scenę   |
-| wieszczba                | Ylva (wieszczka) | wieszczka zadaje pytanie o przyszłość, a MG odpowiada prawdziwie, ale zagadką                       | raz na tydzień |
-| szał Hjaldura            | Hjaldur          | postać wpada w szał berserka (zob. *Ludzie* w `Bestiary.md`), a walka jest dla niej łatwiejsza o poziom | raz na dobę    |
-
-**Światło Solvara** działa na trolle jak słońce, ale jest słabe i krótkie. Pomioty, szaraki, kosmacze i szeptacze, które znajdą się w pełnym świetle, kamienieją. Górskiemu trollowi kamienieje tylko część ciała, np. ręka albo twarz: walka z nim jest łatwiejsza o poziom do końca walki, a troll zwykle ucieka. Wielogłowemu kamienieje jedna głowa. Światło trwa jedną rundę i nie przechodzi przez ściany, więc najskuteczniejsze jest w ciasnym korytarzu, którym nadchodzą trolle.
-
-Lykka i Visar rzadko dają moc, którą da się zapisać jako zdolność. Ich kapłani są cenieni za wiedzę, przepowiednie i obrzędy, a nie za cuda.
-
-### Klątwy i czary wrogów
-
-Wiedźmy, szeptacze i niektórzy wieszczowie rzucają klątwy, wywołują mgłę i zwodzą ludzi. Postać zwykle nie wie, że ktoś rzuca na nią czar, więc MG rzuca od razu, bez PDT. Jeśli postać wie o zagrożeniu, np. słyszy pieśń wiedźmy, MG pokazuje tablicę przed rzutem.
-
-- **Klątwa** działa jak wada ze swojej dziedziny, np. pech w walce, choroba bydła, koszmary, aż ktoś ją zdejmie (zob. *Zmiany cech w trakcie gry* w `Rules/Traits.md`). Zdjąć klątwę może ta, która ją rzuciła, albo kapłan albo wieszczka za ofiarę i z rzutem.
-- **Zwodzenie głosem** to rzut, czy postać pójdzie za głosem kogoś bliskiego. Postać, która wie, że szeptacze to potrafią, ma łatwiej o poziom.
-- **Mgła** utrudnia działania wymagające wzroku o poziom, ale nie zabija trolli, bo to nie jest światło dnia.
-
 ## Przedmioty krasnoludzkie
 
 - **Krasnoludzka broń i zbroja bez mocy** są lepsze niż typowe: broń ułatwia walkę o poziom albo zadaje rany o stopień cięższe, nie tępi się i nie pęka, a zbroja chroni jak opisano w *Pancerz*. Ludzie nie umieją ich naprawić.
-- **Przedmioty z mocą** to przedmioty niezwykłe (zob. *Przedmioty niezwykłe* w `Rules/Equipment.md`). Nikt nie umie odczytać run, więc postać nie wie, co przedmiot robi. Poznaje to, używając go: MG rozstrzyga rzutem, czy moc się ujawni i czy nie skrzywdzi postaci. Dom Visara bada przedmioty za opłatą, ale jego uczniowie też sprawdzają je na sobie i też płacą zdrowiem.
-- **Warunki.** Część przedmiotów działa tylko w ciemności, tylko pod ziemią, tylko w rękach kogoś, kto przelał krew, albo wcale. Część ma moc, która szkodzi właścicielowi. Moc i warunki każdego przedmiotu ustala scenariusz.
-
-Przykłady dla autorów scenariuszy:
-
-- topór, który przecina kamień jak drewno,
-- pierścień, który chroni przed mrozem jak ciepło Eldry, ale tylko pod ziemią,
-- kamień, który świeci w ciemności jak latarnia, ale gaśnie, gdy zbliża się troll,
-- hełm, w którym właściciel widzi w ciemności jak troll, ale za dnia jest prawie ślepy,
-- młot, który wraca do ręki rzucającego, jeśli ten zna słowo, którego nikt nie zna,
-- amulet, który stygnie w obecności nieumarłych.
+- Przedmioty z mocą: *Przedmioty krasnoludzkie z mocą* w `Magic.md`.
 
 ## Prawo, waśń i dobre imię
 

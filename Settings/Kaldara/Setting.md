@@ -14,7 +14,8 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Gods.md`: bogowie i ich kulty
 - `Bestiary.md`: potwory z głębin, strażnicy ruin, stwory z powierzchni i ludzie, ze statystykami walki
 - `Diseases.md`: choroby i ich mechanika: czarny kaszel, gorączka z rany, gnilec, ślepota śnieżna, czerwonka, zapalenie płuc
-- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, światło, zimno, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
+- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, światło, zimno, broń, pancerz, leczenie, przedmioty krasnoludzkie bez mocy i prawo
+- `Magic.md`: magia, kapłani i wieszczki, zdolności nadprzyrodzone, klątwy i krasnoludzkie przedmioty z mocą
 - `Economy.md`: gospodarka, waluta, czym się płaci, ceny, sprzedaż łupu, sakiewka na start
 - `Maps/MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `Tables/Daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
@@ -140,15 +141,9 @@ Postać gracza jest zawsze człowiekiem z wyspy. Ma profesję, a nie klasę, np.
 
 ## Magia
 
-- Magia istnieje naprawdę, ale jest rzadka, cicha i niepewna. Nikt nie ciska ogniem ani piorunami. Moc przychodzi jako błogosławieństwo, przepowiednia, klątwa, zaklęta pieśń albo znak, często nie od razu i nigdy na pewno. Nie ma czarodziejów, ksiąg zaklęć ani magii, której można się wyuczyć bez boga albo natury.
-- **Kapłani i kapłanki** służą bogom w świątyniach i przy kapliczkach. Składają ofiary, odprawiają obrzędy, błogosławią, leczą i zamykają kurhany. Nieliczni dostają od swoich bogów prawdziwą moc.
-- **Wieszczki** czerpią moc z natury, najczęściej w służbie Ylvy. Wędrują od dworu do dworu i siadają na wysokim siedzisku, żeby przepowiadać los, pogodę i połów. Zaklinają zwierzęta, rany i wiatr. Ludzie przyjmują je z szacunkiem i lękiem. Wieszczami bywają też mężczyźni, ale rzadko, a ludzie patrzą na nich podejrzliwie i uważają taką moc za niemęską.
-- Moc kapłana albo wieszczki jest zaletą postaci, która daje zdolność nadprzyrodzoną (zob. *Zdolności nadprzyrodzone* w `Rules/Traits.md` i *Magia* w `Mechanics.md`). Sama profesja kapłana albo wieszczki bez tej zalety oznacza wiarę, wiedzę i obrzędy, ale nie moc.
-- Kapłani, wieszczki i zielarki przygotowują napary, maści i amulety. Te, które naprawdę działają, działają raz albo przez krótki czas, więc są przedmiotami zużywalnymi (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`). Nie kupuje się ich jak towaru na targu: o pomoc świątyni albo wieszczki prosi się za ofiarę, dar albo przysługę. Na wsi jest najwyżej kapliczka i zielarka.
-- Krasnoludzkie przedmioty z mocą są rzadkie i cenne. Wszystkie pochodzą z ruin Dvergheimu i są pokryte runami. Ludzie nie umieją ich wytwarzać ani naprawiać. Nie ma magicznych zwojów. W grze działają jak przedmioty niezwykłe (zob. *Przedmioty niezwykłe* w `Rules/Equipment.md`).
-- Ponieważ runy są nieczytelne, nikt nie wie z góry, co robi krasnoludzki przedmiot. Jego moc odkrywa się, używając go, czasem z bolesnym skutkiem. Część przedmiotów nie działa wcale albo działa tylko w określonych warunkach, których nikt nie rozumie.
-- Moc kapłanek Eldry jest silniejsza w pobliżu wulkanów. Mówią, że to jej oddech płynie pod wyspą i że dlatego krasnoludy potrafiły tu kuć to, czego nikt inny nie umiał.
-- Światło słońca, które kapłani Solvara wypraszają modlitwą, działa na trolle tak samo jak prawdziwe słońce, ale jest słabe i krótkotrwałe. Zwykły ogień ani żadne inne światło nie zamienia trolli w kamień.
+Magia jest rzadka, cicha i niepewna. Moc dają bogowie kapłanom i natura wieszczkom, a w ruinach leżą krasnoludzkie przedmioty z mocą, których nikt nie umie odczytać.
+
+Opis magii i jej mechanika są w `Magic.md`.
 
 ## Bogowie
 

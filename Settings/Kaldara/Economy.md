@@ -32,7 +32,7 @@ Nie bije się monet. Łokieć to miara wartości, nie to, co nosi się w sakiewc
 - **Monety z kontynentu** (Austhavn) liczy się na wagę jak srebro.
 - **Na wsi** płaci się w naturze: ryba, masło, wełna, owca, praca. Samodziałem tylko przy dużych sprawach i długach.
 - **Gościna** w zagrodzie jest darmowa, ale wypada zostawić dar. Gospody są tylko w miastach.
-- **Pomoc świątyni, wieszczki, zielarki** kupuje się ofiarą, darem albo przysługą, nie jak towar (zob. *Magia* w `Setting.md`).
+- **Pomoc świątyni, wieszczki, zielarki** kupuje się ofiarą, darem albo przysługą, nie jak towar (zob. *Napary, maści i amulety* w `Magic.md`).
 
 ## Ceny
 

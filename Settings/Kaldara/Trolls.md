@@ -119,7 +119,7 @@ W grze:
 - **Trolle czują świt** i są w legowiskach na długo przed nim. Zaskoczyć je świtem można tylko podstępem: rozmową, zakładem albo walką, której troll nie chce przerwać. MG śledzi wtedy, w której rundzie wypada brzask.
 - **Ucieczka na światło.** Za dnia troll nie pójdzie dalej niż do miejsca, z którego widać niebo, choć może rzucać kamieniami z ciemności.
 - **Światło ognia, lawy, księżyca i zorzy** nie zamienia trolli w kamień.
-- **Światło Solvara** działa jak słońce, ale słabo i krótko (zob. *Magia* w `Mechanics.md`).
+- **Światło Solvara** działa jak słońce, ale słabo i krótko (zob. *Przykładowe zdolności* w `Magic.md`).
 
 ## Światło razi trolle
 
@@ -211,7 +211,7 @@ Nazwy nadali ludzie. Wszystkie gatunki kamienieją w słońcu tak samo. Od najmn
 - Przeciwnik przeciętny, słabszy od szaraka, nie szybszy od człowieka. Walczy rękami pomiotów.
 - Wytrzymałość twarda.
 - Pazury: od draśnięcia do rany, typowo lekka rana.
-- Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów* w `Mechanics.md`).
+- Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów* w `Magic.md`).
 
 ### Troll górski
 

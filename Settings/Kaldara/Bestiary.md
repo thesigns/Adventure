@@ -9,7 +9,7 @@
 
 ## Człowiek
 
-Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od broni (zob. *Broń* w `Mechanics.md`), pancerz od ekwipunku (zob. *Pancerz* w `Mechanics.md`), a czary wiedźm od *Klątw i czarów wrogów* w `Mechanics.md`.
+Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od broni (zob. *Broń* w `Mechanics.md`), pancerz od ekwipunku (zob. *Pancerz* w `Mechanics.md`), a czary wiedźm od *Klątw i czarów wrogów* w `Magic.md`.
 
 | Przeciwnik                                    | Kategoria  | Wytrzymałość | Częstość   |
 |-----------------------------------------------|------------|--------------|------------|
