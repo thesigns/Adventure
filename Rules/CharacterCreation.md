@@ -1,82 +1,82 @@
-# Tworzenie postaci
+# Character creation
 
-Tworzenie postaci odbywa się przed rozegraniem scenariusza. Najpierw gracz określa, w jakim świecie postać będzie grać. Może wybrać:
+Character creation takes place before a scenario is played. First the player decides which world the character will play in. They can choose:
 
-- **setting** z `Settings/`, a scenariusz z tego settingu wybrać później,
-- albo od razu **scenariusz**, który przy okazji wyznacza setting (zob. *Scenariusze* w `AGENTS.md`). Jeśli scenariusz nie korzysta z żadnego settingu, świat opisuje sam scenariusz.
+- a **setting** from `Settings/`, and pick a scenario from that setting later,
+- or a **scenario** straight away, which also determines the setting (see *Scenariusze* in `AGENTS.md`). If the scenario uses no setting, the scenario itself describes the world.
 
-Zanim zacznie tworzyć postać, MG czyta wszystkie pliki wybranego settingu, a jeśli gracz wybrał scenariusz, także wszystkie pliki scenariusza. Bez tego nie oceni, czy gatunek, profesja, historia i ekwipunek postaci zgadzają się z lore świata. Graczowi przedstawia jednak tylko to, co postać wie o świecie na początku przygody. Nie zdradza tajemnic scenariusza, np. przeciwników, których postać jeszcze nie zna.
+Before starting character creation, the GM reads all files of the chosen setting and, if the player chose a scenario, all files of the scenario as well. Without this the GM cannot judge whether the character's species, profession, background and equipment fit the world's lore. To the player, however, the GM presents only what the character knows about the world at the start of the adventure. The GM does not reveal scenario secrets, e.g. enemies the character does not know yet.
 
-## Podstawowe informacje
+## Basic information
 
-Gracz określa imię, wiek, płeć, gatunek i profesję postaci. Gatunek i profesja muszą być zgodne z lore wybranego świata.
+The player sets the character's name, age, sex, species and profession. Species and profession must fit the lore of the chosen world.
 
-> Randuvil, człowiek, mężczyzna, lat 57, czarodziej
+> Randuvil, human, male, aged 57, wizard
 
-Na tym etapie Randuvil jest przeciętnym przedstawicielem swojego wieku, płci, gatunku i profesji. Jest więc starzejącym się mężczyzną o dużej wiedzy i umiejętności rzucania czarów, ale nienawykłym do walki wręcz i nieszczególnie sprawnym fizycznie (czarodzieje większość czasu spędzają nad księgami).
+At this stage Randuvil is an average member of his age, sex, species and profession. He is therefore an ageing man with great knowledge and the ability to cast spells, but unused to melee and not particularly fit (wizards spend most of their time over books).
 
-Umiejętności i słabości wynikające z wieku, płci, gatunku i profesji nie są zaletami ani wadami. Randuvil zna czary, bo jest czarodziejem, a jego słaba kondycja jest typowa dla starszego maga. Nie zgłasza się ich jako cech i nie zmieniają one liczby Punktów Determinacji.
+Skills and weaknesses that follow from age, sex, species and profession are neither advantages nor disadvantages. Randuvil knows spells because he is a wizard, and his poor fitness is typical of an older mage. They are not declared as traits and do not change the number of Determination Points.
 
-## Punkty Determinacji, zalety i wady
+## Determination Points, advantages and disadvantages
 
-MG przydziela postaci wyjściowo 10 bazowych Punktów Determinacji (PDT). Postać zaczyna zwykle na zerowym poziomie doświadczenia. Jeśli wyjątkowo zaczyna na wyższym, np. jako stary, doświadczony mag, dostaje dodatkowo 1 bazowy PDT za każdy poziom (zob. *Poziom doświadczenia* w `Rules/Experience.md`). Gracz może teraz określić dowolne zalety i wady postaci (zob. `Rules/Traits.md`), pod warunkiem, że nie są ze sobą sprzeczne (np. jednocześnie chudzielec i otyły) ani niezgodne z lore świata i zasadami. Zaleta musi wyróżniać postać na tle przeciętnego przedstawiciela jej gatunku i profesji, a wada musi ją od niego odróżniać na niekorzyść.
+The GM gives the character a starting 10 base Determination Points (DP). A character usually starts at experience level zero. If, exceptionally, they start higher, e.g. as an old, seasoned mage, they get an additional 1 base DP for each level (see *Experience level* in `Rules/Experience.md`). The player can now set any advantages and disadvantages for the character (see `Rules/Traits.md`), as long as they do not contradict each other (e.g. both skinny and obese) or the world's lore and the rules. An advantage must set the character apart from an average member of their species and profession, and a disadvantage must set them apart for the worse.
 
-Zalety zmniejszają liczbę PDT, a wady ją zwiększają. Wagę wad i zalet wymienionych przez gracza określa MG. Przy wycenie bierze pod uwagę wiek, płeć, gatunek i profesję postaci. Jedna wada lub zaleta może zmienić bazową liczbę PDT o 0 do 5 punktów, zależnie od tego, jak jest poważna (nieistotna = 0, malutka = 1, mała = 2, średnia = 3, duża = 4, ogromna = 5).
+Advantages lower the number of DP, and disadvantages raise it. The GM sets the weight of the advantages and disadvantages the player lists, taking into account the character's age, sex, species and profession. One advantage or disadvantage can change the base number of DP by 0 to 5 points, depending on how significant it is (insignificant = 0, tiny = 1, small = 2, moderate = 3, large = 4, huge = 5).
 
-Skutek cechy w grze jest zawsze taki sam (zob. `Rules/Traits.md`), więc waga nie mówi, jak mocno cecha działa, tylko **jak często** będzie miała znaczenie dla tej postaci. Orientacyjnie waga to liczba sytuacji w typowym dniu przygody, w których cecha zadziała. Jeden PDT daje mniej więcej tyle, co zmiana trudności o jeden poziom w jednym rzucie, więc tak wyceniona wada daje postaci akurat tyle punktów, ile potrzeba, żeby ją codziennie zrównoważyć. Cechę, która umożliwia albo wyklucza działanie, wycenia się według tego, jak często to działanie będzie dla postaci ważne.
+A trait's effect in play is always the same (see `Rules/Traits.md`), so weight does not say how strongly a trait works, but **how often** it will matter for this character. Roughly, the weight is the number of situations in a typical day of adventure in which the trait comes into play. One DP is worth about as much as a change of difficulty by one level in a single roll, so a disadvantage priced this way gives the character just enough points to balance it out every day. A trait that makes an action possible or rules it out is priced by how often that action will matter to the character.
 
-Postać może mieć najwyżej 3 istotne zalety i 3 istotne wady (o wadze co najmniej 1). Cech nieistotnych może mieć dowolnie wiele.
+A character can have at most 3 significant advantages and 3 significant disadvantages (of weight at least 1). They can have any number of insignificant traits.
 
-Wycenę ustala MG. Gracz może ją przyjąć, wycofać cechę albo ją przeformułować, a wtedy MG wycenia ją od nowa. Wyceny nie rozstrzyga się rzutem monetą.
+The GM sets the price. The player can accept it, withdraw the trait or reword it, and then the GM prices it again. Pricing is not settled with a coin toss.
 
-Bazowa liczba PDT gotowej postaci MUSI mieścić się w zakresie od 5 do 15 + poziom doświadczenia, czyli od 5 do 15 u postaci na zerowym poziomie. Jeśli gracz wybrał za dużo wad i bazowe PDT przekroczyło górny limit, musi dobrać postaci jakieś zalety. Jeśli wybrał za dużo zalet i bazowe PDT spadło poniżej 5, musi wymyślić postaci jakieś wady.
+The base DP of a finished character MUST be in the range from 5 to 15 + experience level, i.e. from 5 to 15 for a character at level zero. If the player chose too many disadvantages and base DP exceeded the cap, they must add some advantages. If they chose too many advantages and base DP fell below 5, they must come up with some disadvantages.
 
-> Z wad Randuvil ma brodawkę na nosie, kuleje na jedną nogę i sepleni. Zalet nie ma.
+> As for disadvantages, Randuvil has a wart on his nose, walks with a limp and lisps. He has no advantages.
 
-Gdyby Randuvil był kurtyzaną, brodawka na nosie mogłaby dodać 2 lub nawet 3 PDT. Ale w przypadku starszego maga nie jest to praktycznie żadna wada. MG określa ją jako nieistotną i przydziela za nią 0 punktów PDT.
+If Randuvil were a courtesan, the wart on his nose could add 2 or even 3 DP. But for an older mage it is practically no disadvantage at all. The GM rates it as insignificant and gives 0 DP for it.
 
-Bycie kulawym to zupełnie inna historia. Spowalnia postać i wpływa na większość rzutów dotyczących sprawności fizycznej (skoki, wspinaczka, walka wręcz, ucieczka). Z drugiej strony magowie rzadko podejmują się takich czynności. Dla kulejącego wojownika byłaby to ogromna wada. Dla maga... zaledwie średnia. Więc MG wycenia tę wadę jako średnią. Przydziela Randuvilowi 3 PDT.
+Being lame is a different story. It slows the character down and affects most rolls involving physical fitness (jumping, climbing, melee, fleeing). On the other hand, mages rarely do such things. For a limping warrior this would be a huge disadvantage. For a mage... merely moderate. So the GM prices this disadvantage as moderate and gives Randuvil 3 DP.
 
-Seplenienie wydaje się mało poważną wadą i mogłoby być wycenione na +1 u większości ludzi, ale dla maga, który musi precyzyjnie wypowiadać zaklęcia, to ogromna wada. MG określa skutek: rzucanie zaklęć będzie dla Randuvila trudniejsze, więc częściej skończy się niepowodzeniem (czar spali na panewce albo wyjdzie inny, np. zamiast kuli ognistej zamiana w żabę). Za tę wadę MG przyznaje Randuvilowi aż 5 PDT.
+A lisp seems a minor disadvantage and could be priced at +1 for most people, but for a mage who must pronounce incantations precisely, it is a huge disadvantage. The GM sets the effect: casting spells will be harder for Randuvil, so it will fail more often (the spell fizzles or comes out different, e.g. turning someone into a frog instead of a fireball). For this disadvantage the GM gives Randuvil a full 5 DP.
 
-Randuvil ma teraz 10 + 3 + 5 = 18 bazowych PDT, a musi się zmieścić w zakresie 5–15. Ma za dużo wad! Musi określić jakieś zalety.
+Randuvil now has 10 + 3 + 5 = 18 base DP, but must fit in the range 5–15. Too many disadvantages! He must choose some advantages.
 
-> No dobrze... z zalet Randuvil jest poliglotą.
+> All right... as for advantages, Randuvil is a polyglot.
 
-MG ocenia, że zgodnie z lore przeciętni magowie i tak są wykształceni, więc zaleta *poliglota* oznacza coś więcej niż znajomość jednego czy dwóch dodatkowych języków. W przypadku Randuvila to dobra znajomość języków powszechnych (wspólny, elfi), a także rzadkich (krasnoludów, orków) i starożytnych. Ta zaleta nie tylko ułatwia działania: umożliwia też takie, które bez niej byłyby niemożliwe, np. czytanie potężnych starożytnych zwojów. MG uznaje ją za dużą zaletę czarodzieja i wycenia na −4 PDT.
+The GM judges that according to the lore average mages are educated anyway, so the advantage *polyglot* means more than knowing one or two extra languages. In Randuvil's case it is a good command of common languages (Common, Elvish) as well as rare ones (Dwarvish, Orcish) and ancient ones. This advantage does not only make actions easier: it also makes possible ones that would be impossible without it, e.g. reading powerful ancient scrolls. The GM counts it as a large advantage for a wizard and prices it at −4 DP.
 
-Randuvil ma teraz 18 − 4 = 14 bazowych PDT. Pasuje. MG i gracz akceptują taką postać.
+Randuvil now has 18 − 4 = 14 base DP. That fits. The GM and the player accept the character.
 
-Podsumowując: Randuvil to 57-letni mężczyzna, człowiek, czarodziej. Ma brodawkę na nosie, kuleje i sepleni, ale za to zna wiele języków, w tym rzadkie i starożytne. Ma 14 bazowych Punktów Determinacji, które odnawiają się po porządnym wypoczynku (zob. `Rules/Determination.md`).
+In summary: Randuvil is a 57-year-old man, human, wizard. He has a wart on his nose, limps and lisps, but knows many languages, including rare and ancient ones. He has 14 base Determination Points, which refresh after proper rest (see `Rules/Determination.md`).
 
-## Historia
+## Background
 
-Gracz pisze historię postaci: w 3–5 zdaniach, skąd postać pochodzi, czym się dotąd zajmowała i dlaczego wyrusza na przygodę. Zwykle robi to razem z wyborem zalet i wad, bo jedno tłumaczy drugie. MG może dopytać o kilka szczegółów i sprawdza, czy historia zgadza się z lore świata, wiekiem i profesją postaci.
+The player writes the character's background: in 3–5 sentences, where the character comes from, what they have done so far and why they set out on an adventure. Usually this is done together with choosing advantages and disadvantages, because one explains the other. The GM can ask about a few details and checks that the background fits the world's lore and the character's age and profession.
 
-Sama historia nie daje korzyści ani kar w grze. Jeśli wynika z niej coś, co realnie wpływa na rozgrywkę, jest to zaleta albo wada i wycenia się ją jak każdą inną (zob. *Punkty Determinacji, zalety i wady*). Dotyczy to także cech społecznych i majątkowych:
+The background by itself gives no benefits or penalties in play. If something follows from it that really affects play, it is an advantage or disadvantage and is priced like any other (see *Determination Points, advantages and disadvantages*). This also covers social and financial traits:
 
-- „zanim zostałam lekarką, służyłam w wojsku” to zaleta, jeśli postać walczy lepiej niż typowa lekarka,
-- „mam przyjaciela wśród stróżów prawa” to zaleta (kontakty),
-- „ściga mnie organizacja przestępcza” albo „mam dług u niebezpiecznych ludzi” to wada.
+- "before I became a doctor, I served in the army" is an advantage if the character fights better than a typical doctor,
+- "I have a friend among the law enforcers" is an advantage (contacts),
+- "a criminal organisation is hunting me" or "I owe money to dangerous people" is a disadvantage.
 
-Z historii MG wybiera 1–2 **wątki**: zaczepki fabularne, które może wplatać w scenariusze, np. zaginionego brata, dawnego wroga albo niewyjaśnioną tajemnicę. Wątek, który tylko daje okazję do przygody, nie zmienia PDT. Wątek, który regularnie utrudnia postaci życie, jest wadą.
+From the background the GM picks 1–2 **plot threads**: story hooks to weave into scenarios, e.g. a missing brother, an old enemy or an unsolved mystery. A thread that only gives an occasion for adventure does not change DP. A thread that regularly makes the character's life harder is a disadvantage.
 
-> Randuvil przez trzydzieści lat uczył w akademii magii. Kuleje od czasu, gdy wymknęło mu się spod kontroli przywołanie, a seplenienie zostało mu po tym samym wypadku. Z akademii odszedł w gniewie, gdy jego najzdolniejszy uczeń ukradł mu starożytny zwój i zniknął. Randuvil wyrusza, żeby go odnaleźć.
+> Randuvil taught at an academy of magic for thirty years. He has limped since a summoning slipped out of his control, and the lisp is from the same accident. He left the academy in anger when his most gifted student stole an ancient scroll from him and vanished. Randuvil sets out to find him.
 
-MG uznaje odejście z akademii za koloryt: nie będzie miało znaczenia w grze. Zaginiony uczeń i skradziony zwój to wątek. Gdyby gracz dodał, że akademia rozesłała za Randuvilem listy gończe, byłaby to wada.
+The GM counts leaving the academy as colour: it will not matter in play. The missing student and the stolen scroll are a plot thread. If the player added that the academy had sent out wanted notices for Randuvil, that would be a disadvantage.
 
-## Ekwipunek
+## Equipment
 
-MG ustala ekwipunek startowy: typowy dla profesji, wieku i statusu postaci, tak jak jej umiejętności. Wydatków się nie liczy. MG układa listę, a gracz może zamienić pojedyncze przedmioty na podobne. Każda postać ma też podręczne przedmioty, jakie nosi przy sobie ktoś taki jak ona w tym świecie (np. torbę, coś do jedzenia i picia, źródło światła, drobne narzędzia), oraz sakiewkę, portfel albo konto z kwotą typową dla swojego statusu, w walucie świata. Jeśli świat podaje ceny, MG kieruje się nimi.
+The GM sets the starting equipment: typical of the character's profession, age and status, just like their skills. Expenses are not counted. The GM draws up a list, and the player can swap individual items for similar ones. Every character also has the everyday items someone like them carries in this world (e.g. a bag, something to eat and drink, a light source, small tools), and a purse, wallet or account with a sum typical of their status, in the world's currency. If the world gives prices, the GM follows them.
 
-Ekwipunek lepszy niż typowy, np. magiczna broń, własny pojazd albo wojskowy pancerz u zwykłego najemnika, jest zaletą. Brak typowego ekwipunku, np. brak broni, łachmany albo brak pieniędzy, jest wadą. Wycenia się je jak inne cechy (zob. *Punkty Determinacji, zalety i wady*): według tego, jak często będą miały znaczenie.
+Better than typical equipment, e.g. a magic weapon, one's own vehicle or military armour for an ordinary mercenary, is an advantage. Lacking typical equipment, e.g. no weapon, rags or no money, is a disadvantage. They are priced like other traits (see *Determination Points, advantages and disadvantages*): by how often they will matter.
 
-Na karcie zapisuje się liczbę przedmiotów, które się zużywają: źródeł światła lub ich paliwa, porcji jedzenia, amunicji, lekarstw i mikstur. MG aktualizuje ją w trakcie gry. Pozostałe zasady ekwipunku są w `Rules/Equipment.md`.
+The sheet records the count of items that get used up: light sources or their fuel, food rations, ammunition, medicines and potions. The GM updates it during play. Other equipment rules are in `Rules/Equipment.md`.
 
-Jeśli scenariusz zaczyna się w sytuacji, w której postać nie ma swojego ekwipunku (np. budzi się w celi), ekwipunek startowy przepada na ten czas. Nie zmienia to zalet, wad ani PDT.
+If the scenario starts in a situation where the character does not have their equipment (e.g. waking up in a cell), the starting equipment is lost for that time. This does not change advantages, disadvantages or DP.
 
-MG proponuje Randuvilowi: kostur, księgę czarów, przybory do pisania, sztylet, torbę z kocem, krzesiwem i bukłakiem, prowiant na 3 dni, 2 pochodnie i skromną sakiewkę. Gracz zamienia sztylet na latarnię, a MG się zgadza. Gracz pyta jeszcze o różdżkę ognia. MG odpowiada, że to więcej niż typowy ekwipunek czarodzieja, więc byłaby to zaleta wyceniona na −3 PDT. Gracz rezygnuje.
+The GM offers Randuvil: a staff, a spellbook, writing tools, a dagger, a bag with a blanket, flint and steel and a waterskin, rations for 3 days, 2 torches and a modest purse. The player swaps the dagger for a lantern, and the GM agrees. The player also asks about a wand of fire. The GM answers that it is more than a wizard's typical equipment, so it would be an advantage priced at −3 DP. The player gives it up.
 
-## Karta postaci
+## Character sheet
 
-Postać jest gotowa. MG zakłada folder jej kampanii, nazwany zwykle imieniem postaci, np. `Campaigns/Randuvil/` (zob. *Kampanie* w `AGENTS.md`). Wypełnia szablon `Rules/CharacterTemplate.md` i zapisuje kartę postaci w tym folderze jako `Character.md`, a obok zakłada dziennik kampanii `Campaign.md`. Postać zaczyna przygodę z pełną pulą PDT, bez ran i bez punktów doświadczenia.
+The character is ready. The GM creates their campaign folder, usually named after the character, e.g. `Campaigns/Randuvil/` (see *Kampanie* in `AGENTS.md`). The GM fills in the template `Rules/CharacterTemplate.md`, saves the character sheet in that folder as `Character.md`, and next to it creates the campaign log `Campaign.md`. The character starts the adventure with a full DP pool, unwounded and without experience points.

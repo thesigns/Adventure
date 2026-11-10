@@ -10,8 +10,6 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 - `Equipment.md`: money, prices, weapons, armour, light, starting purse
 - `Bestiary.md`: monsters and enemies with combat stats
 
-Mechanical terms (enemy categories, toughness, wounds, difficulty) are kept in Polish to match `Rules/`.
-
 ## GM rules
 
 - **The cliché rule:** whatever the setting does not say, the GM fills with the most typical fantasy convention. When in doubt, pick the obvious option. No subversions, deconstructions or twists on tropes unless a scenario says so.

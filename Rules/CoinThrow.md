@@ -1,17 +1,17 @@
-# Rzut monetą
+# Coin toss
 
-Rzut monetą rozstrzyga nierozwiązywalny spór między graczem a MG, np. o przebieg wydarzeń, interpretację zasady albo to, co postać mogła wiedzieć lub zrobić. Nie zastępuje rzutu 3K6 i nie służy do rozstrzygania działań postaci ani wyceny zalet i wad (zob. `Rules/CharacterCreation.md`).
+A coin toss settles an unresolvable dispute between the player and the GM, e.g. about the course of events, the interpretation of a rule or what the character could have known or done. It does not replace the 3d6 roll and is not used to resolve the character's actions or to price advantages and disadvantages (see `Rules/CharacterCreation.md`).
 
-Moneta wskazuje tylko jedno z dwóch: **„Rację ma MG”** albo **„Rację ma gracz”**. Każda możliwość ma szansę 50%. Rozstrzygnięcie jest ostateczne i obie strony je przyjmują.
+The coin shows only one of two things: **"the GM is right"** or **"the player is right"**. Each has a 50% chance. The decision is final and both sides accept it.
 
-Rzut monetą MG wykonuje skryptem `Scripts/coin.py`:
+The GM makes the coin toss with the script `Scripts/coin.py`:
 
 ```
-python Scripts/coin.py --kampania Randuvil --opis "Czy postać zdążyła zamknąć bramę" --mg "brama była otwarta" --gracz "postać zamknęła bramę"
+python Scripts/coin.py --kampania Randuvil --opis "Did the character manage to close the gate" --mg "the gate was open" --gracz "the character closed the gate"
 ```
 
-- `--kampania` to nazwa folderu kampanii w `Campaigns/`. Jest obowiązkowa, a folder musi już istnieć.
-- `--opis` to krótki opis sporu. Jest obowiązkowy.
-- `--mg` i `--gracz` to stanowiska obu stron. Są opcjonalne, ale warto je podać, żeby było jasne, co rozstrzyga moneta.
+- `--kampania` is the name of the campaign folder in `Campaigns/`. It is required, and the folder must already exist.
+- `--opis` is a short description of the dispute. It is required.
+- `--mg` and `--gracz` are the positions of both sides. They are optional, but worth giving, so that it is clear what the coin decides.
 
-Skrypt wypisuje rezultat „Rację ma MG” albo „Rację ma gracz” i zapisuje rzut w pliku `Rolls.log` w folderze kampanii.
+The script prints the result "Rację ma MG" (the GM is right) or "Rację ma gracz" (the player is right) and records the toss in the file `Rolls.log` in the campaign folder.

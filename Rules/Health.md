@@ -1,120 +1,120 @@
-# Zdrowie, rany i śmierć
+# Health, wounds and death
 
-Każda istota, czyli postać gracza, postać MG i przeciwnik, ma **poziom zranienia** wyrażony w procentach. 0% oznacza pełne zdrowie, a 100% śmierć. Poziom zranienia nie spada poniżej 0%.
+Every creature, i.e. the player character, a GM character and an enemy, has a **wound level** expressed as a percentage. 0% means full health and 100% death. The wound level never drops below 0%.
 
-Skala jest ta sama dla wszystkich istot. To, że smoka o wiele trudniej doprowadzić do agonii niż szczura, MG uwzględnia w tablicach rezultatów: ten sam cios miecza szczura zabija, a smoka ledwie drapie (zob. *Wytrzymałość*).
+The scale is the same for all creatures. The fact that a dragon is much harder to bring to dying than a rat is handled by the GM in outcome tables: the same sword blow kills a rat and barely scratches a dragon (see *Toughness*).
 
-## Poziomy zranienia
+## Wound levels
 
-| Poziom zranienia | Stan         | Skutki                                                                               |
-|------------------|--------------|--------------------------------------------------------------------------------------|
-| 0%               | bez ran      | brak                                                                                 |
-| 1–9%             | draśnięty    | brak                                                                                 |
-| 10–39%           | lekko ranny  | działania postaci są trudniejsze o pół poziomu (próg przesunięty o 1)                |
-| 40–59%           | ranny        | działania postaci są trudniejsze o jeden poziom, postać jest wolniejsza              |
-| 60–89%           | ciężko ranny | działania postaci są trudniejsze o dwa poziomy, postać jest wolniejsza i oszołomiona |
-| 90–99%           | agonia       | postać umiera (zob. *Agonia*)                                                        |
-| 100% i więcej    | śmierć       | postać nie żyje                                                                      |
+| Wound level  | State             | Effects                                                                          |
+|--------------|-------------------|----------------------------------------------------------------------------------|
+| 0%           | unhurt            | none                                                                             |
+| 1–9%         | scratched         | none                                                                             |
+| 10–39%       | lightly wounded   | the character's actions are half a level harder (threshold moved by 1)           |
+| 40–59%       | wounded           | the character's actions are one level harder, the character is slowed            |
+| 60–89%       | seriously wounded | the character's actions are two levels harder, the character is slowed and dazed |
+| 90–99%       | dying             | the character is dying (see *Dying*)                                             |
+| 100% or more | dead              | the character is dead                                                            |
 
-- **Wolniejsza:** ucieczka, pościg i inne działania wymagające szybkości są trudniejsze o dodatkowy poziom.
-- **Oszołomiona:** działania wymagające skupienia (czary, modlitwa, precyzyjna praca, przekonywanie) są trudniejsze o dodatkowy poziom.
+- **Slowed:** fleeing, pursuit and other actions that need speed are an extra level harder.
+- **Dazed:** actions that need concentration (spells, prayer, precise work, persuasion) are an extra level harder.
 
-Skutki zranienia dotyczą także postaci MG i przeciwników. Ranny przeciwnik to korzystna okoliczność dla postaci gracza: ułatwia działanie przeciw niemu o tyle poziomów, o ile zranienie utrudnia mu działanie.
+The effects of wounds also apply to GM characters and enemies. A wounded enemy is a favourable circumstance for the player character: it makes actions against them easier by as many levels as the wounds make the enemy's own actions harder.
 
-MG podaje graczowi poziom zranienia jego postaci w procentach. Stan postaci MG i przeciwników opisuje słowami, np. „bandyta krwawi i utyka”.
+The GM tells the player their character's wound level as a percentage. The state of GM characters and enemies is described in words, e.g. "the bandit is bleeding and limping".
 
-## Rany
+## Wounds
 
-| Rana            | Skutek                                                               |
-|-----------------|----------------------------------------------------------------------|
-| draśnięcie      | +5%, ale nie powyżej 9%; przy zranieniu 9% i wyższym nic nie zmienia |
-| lekka rana      | +10%                                                                 |
-| rana            | +20%; jeśli zranienie wyniosłoby mniej niż 40%, wynosi 40%           |
-| ciężka rana     | +30%; jeśli zranienie wyniosłoby mniej niż 60%, wynosi 60%           |
-| cios śmiertelny | +100%                                                                |
-| zmasakrowanie   | śmierć, a ciało jest zniszczone                                      |
+| Wound         | Effect                                                          |
+|---------------|-----------------------------------------------------------------|
+| scratch       | +5%, but not above 9%; at a wound level of 9% or more no change |
+| light wound   | +10%                                                            |
+| medium wound  | +20%; if the wound level would be below 40%, it becomes 40%     |
+| serious wound | +30%; if the wound level would be below 60%, it becomes 60%     |
+| mortal blow   | +100%                                                           |
+| mangling      | death, and the body is destroyed                                |
 
-Zmasakrowanie to np. przecięcie na pół, zmiażdżenie głowy albo spalenie na popiół. Może uniemożliwić wskrzeszenie i inne działania, które wymagają ciała, jeśli świat je przewiduje.
+Mangling is e.g. being cut in half, having the head crushed or being burned to ash. It can rule out resurrection and other actions that need the body, if the world has them.
 
-Postać ma 35% zranienia i otrzymuje ranę: 35 + 20 = 55%, jest ranna. Gdyby miała 10%, rana podniosłaby zranienie do 40%. Gdyby miała 75%, rana dałaby 95%: agonię.
+A character at 35% takes a medium wound: 35 + 20 = 55%, wounded. At 10%, the medium wound would raise the wound level to 40%. At 75%, it would give 95%: dying.
 
-Rany mają stopnie, od najlżejszej: draśnięcie, lekka rana, rana, ciężka rana, cios śmiertelny, zmasakrowanie. Rana o stopień lżejsza od draśnięcia to brak rany, a cięższa od zmasakrowania to nadal zmasakrowanie.
+Wounds have steps, from the lightest: scratch, light wound, medium wound, serious wound, mortal blow, mangling. A wound one step lighter than a scratch is no wound, and one heavier than mangling is still mangling.
 
-## Skala ran
+## Wound scale
 
-Typowe rany od pełnego trafienia, zadane człowiekowi bez pancerza:
+Typical wounds from a full hit on an unarmoured human:
 
-| Rana            | Przykłady                                                                        |
-|-----------------|----------------------------------------------------------------------------------|
-| draśnięcie      | cios pięścią, zadrapanie, upadek z 1–2 m                                         |
-| lekka rana      | ugryzienie psa, cios pałką lub nożem, upadek z 2–3 m                             |
-| rana            | cios mieczem, toporem lub włócznią, trafienie strzałą, upadek z 4–6 m            |
-| ciężka rana     | cios ciężkiej broni dwuręcznej, pazury niedźwiedzia, upadek z 7–10 m             |
-| cios śmiertelny | cios ogromnej istoty, upadek z większej wysokości, pchnięcie w serce bezbronnego |
-| zmasakrowanie   | przygniecenie głazem, upadek z ogromnej wysokości, cios olbrzyma w leżącego      |
+| Wound         | Examples                                                                                          |
+|---------------|---------------------------------------------------------------------------------------------------|
+| scratch       | a punch, a scrape, a fall of 1–2 m                                                                |
+| light wound   | a dog bite, a blow with a club or knife, a fall of 2–3 m                                          |
+| medium wound  | a blow with a sword, axe or spear, an arrow hit, a fall of 4–6 m                                  |
+| serious wound | a blow with a heavy two-handed weapon, bear claws, a fall of 7–10 m                               |
+| mortal blow   | a blow from a huge creature, a fall from greater height, a stab to the heart of a helpless victim |
+| mangling      | crushed by a boulder, a fall from an enormous height, a giant's blow to someone lying down        |
 
-Słabsze trafienie może zadać ranę lżejszą, a wyjątkowo celne cięższą. MG wpisuje je w tablicę przed rzutem.
+A weaker hit can inflict a lighter wound, and an exceptionally accurate one a heavier wound. The GM writes them into the table before the roll.
 
-## Wytrzymałość
+## Toughness
 
-Skala ran dotyczy człowieka. Istoty wątlejsze od niego otrzymują rany cięższe, a twardsze lżejsze:
+The wound scale applies to a human. Creatures frailer than a human take heavier wounds, and tougher ones lighter wounds:
 
-| Wytrzymałość  | Przykłady         | Otrzymane rany         |
-|---------------|-------------------|------------------------|
-| bardzo wątła  | szczur, kot, ptak | o dwa stopnie cięższe  |
-| wątła         | pies, dziecko     | o stopień cięższe      |
-| ludzka        | człowiek, wilk    | bez zmian              |
-| twarda        | niedźwiedź, koń   | o stopień lżejsze      |
-| bardzo twarda | wielka bestia     | o dwa stopnie lżejsze  |
-| ogromna       | istota z legend   | o trzy stopnie lżejsze |
+| Toughness  | Examples           | Wounds taken        |
+|------------|--------------------|---------------------|
+| very frail | rat, cat, bird     | two steps heavier   |
+| frail      | dog, child         | one step heavier    |
+| human      | human, wolf        | unchanged           |
+| tough      | bear, horse        | one step lighter    |
+| very tough | great beast        | two steps lighter   |
+| colossal   | creature of legend | three steps lighter |
 
-Cios miecza (rana) zabija szczura (cios śmiertelny), niedźwiedzia lekko rani, a istotę z legend ledwie drapie. Żeby doprowadzić ją do agonii, trzeba czegoś więcej niż miecza: wyjątkowej broni, magii albo podstępu.
+A sword blow (medium wound) kills a rat (mortal blow), lightly wounds a bear and barely scratches a creature of legend. To bring it to dying takes more than a sword: an exceptional weapon, magic or cunning.
 
-Świat podaje wytrzymałość swoich istot.
+The world gives the toughness of its creatures.
 
-## Agonia
+## Dying
 
-Postać w agonii nie może się ruszać ani walczyć i z trudem mówi, o ile w ogóle potrafi mówić. Jeśli w ciągu około godziny nie otrzyma pomocy, umiera.
+A dying character cannot move or fight and speaks with difficulty, if they can speak at all. If they get no help within about an hour, they die.
 
-Pomocą jest opatrzenie ran przez kogoś innego (potrzebny czysty materiał) albo leczenie, które zmniejsza poziom zranienia. Opatrzenie w trudnych warunkach, np. w ciemności, w pośpiechu albo bez materiału, wymaga rzutu.
+Help means having the wounds dressed by someone else (clean material is needed) or healing that lowers the wound level. Dressing wounds in hard conditions, e.g. in the dark, in a hurry or without material, needs a roll.
 
-Opatrzona postać przestaje umierać, ale pozostaje w agonii, dopóki jej zranienie nie spadnie poniżej 90%. Do tego czasu nic nie może zrobić i trzeba ją nieść.
+A character whose wounds are dressed stops dying but remains in the dying state until their wound level drops below 90%. Until then they can do nothing and must be carried.
 
-## Nieprzytomność
+## Unconsciousness
 
-Ogłuszenie, uduszenie, trucizna czy wyczerpanie mogą pozbawić postać przytomności niezależnie od ran. To osobny skutek w tablicy, np. „cios w głowę, postać traci przytomność na kilka minut”.
+A blow to the head, choking, poison or exhaustion can knock a character unconscious regardless of wounds. It is a separate effect in the table, e.g. "a blow to the head, the character is unconscious for a few minutes".
 
-## Urazy
+## Injuries
 
-Złamania, zwichnięcia i inne urazy liczą się osobno od poziomu zranienia. MG wpisuje je w tablicę jako dodatkowy skutek, zwykle przy ciężkiej ranie, ciosie śmiertelnym albo upadku z wysokości.
+Fractures, dislocations and other injuries are counted separately from the wound level. The GM writes them into the table as an additional effect, usually with a serious wound, a mortal blow or a fall from a height.
 
-- **Uraz przejściowy** (złamana noga, zwichnięty bark) działa do zagojenia jak wada: utrudnia o jeden poziom działania ze swojej dziedziny albo je wyklucza. Nie zmienia Punktów Determinacji. Złamana kość zrasta się około 1–3 miesięcy, a przez ten czas postać ma ograniczoną sprawność, np. ze złamaną nogą chodzi o kulach.
-- **Uraz trwały** (utrata oka, odcięta dłoń, uraz kręgosłupa) to nowa wada postaci (zob. *Zmiany cech w trakcie gry* w `Rules/Traits.md`). Wyleczyć go albo zastąpić może tylko potężna magia, interwencja boska albo zaawansowana technologia, np. cybernetyczne ramię w miejsce odciętego, jeśli lore świata na to pozwala. Zwykła proteza, np. drewniana noga, może zmniejszyć wadę, ale jej nie usuwa.
+- **A temporary injury** (broken leg, dislocated shoulder) acts like a disadvantage until healed: it makes actions in its field one level harder or rules them out. It does not change Determination Points. A broken bone knits in about 1–3 months, and during that time the character has limited ability, e.g. walks on crutches with a broken leg.
+- **A permanent injury** (loss of an eye, a severed hand, a spinal injury) is a new disadvantage of the character (see *Trait changes during play* in `Rules/Traits.md`). Only powerful magic, divine intervention or advanced technology can heal or replace it, e.g. a cybernetic arm in place of a severed one, if the world's lore allows it. An ordinary prosthesis, e.g. a wooden leg, can lessen the disadvantage but does not remove it.
 
-## Leczenie
+## Healing
 
-Rany goją się tylko w minimalnie komfortowych warunkach: postać odpoczywa pod dachem albo w innym suchym, ciepłym i bezpiecznym miejscu, je, pije, śpi w spokoju i przez większość doby nie podejmuje wysiłku. Doba podróży, walki czy noc pod gołym niebem w zimnie lub deszczu nie leczy ran, ale też ich nie pogarsza.
+Wounds heal only in minimally comfortable conditions: the character rests under a roof or in another dry, warm and safe place, eats, drinks, sleeps in peace and makes no effort for most of the day. A day of travel or combat, or a night in the open in cold or rain, does not heal wounds, but does not worsen them either.
 
-Za każdą dobę w takich warunkach zranienie spada o wartość zależną od gatunku i od stanu postaci na początku doby. Dla człowieka:
+For every day in such conditions the wound level drops by an amount that depends on the species and on the character's state at the start of the day. For a human:
 
-| Stan na początku doby  | Spadek zranienia |
-|------------------------|------------------|
-| draśnięty              | 10%              |
-| lekko ranny            | 9%               |
-| ranny                  | 8%               |
-| ciężko ranny           | 7%               |
-| agonia (po opatrzeniu) | 6%               |
+| State at the start of the day | Wound level drop |
+|-------------------------------|------------------|
+| scratched                     | 10%              |
+| lightly wounded               | 9%               |
+| wounded                       | 8%               |
+| seriously wounded             | 7%               |
+| dying (wounds dressed)        | 6%               |
 
-Randuvil ma 64% zranienia, jest ciężko ranny. Po dobie odpoczynku w gospodzie zranienie spada o 7%, do 57%: Randuvil jest już tylko ranny. Następnej doby zranienie spada o 8%, do 49%.
+Randuvil is at 64%, seriously wounded. After a day of rest at an inn the wound level drops by 7%, to 57%: Randuvil is now merely wounded. The next day it drops by 8%, to 49%.
 
-Świat określa tempo leczenia innych gatunków. Jeśli go nie określa, MG przyjmuje tempo ludzkie, dostosowane do natury gatunku. Świat może też określać dodatkowe sposoby leczenia, np. magiczne.
+The world sets the healing rate of other species. If it does not, the GM uses the human rate, adjusted to the nature of the species. The world can also set additional ways of healing, e.g. magical.
 
-## Śmierć
+## Death
 
-System nie chroni postaci gracza przed śmiercią. Postać ginie, gdy jej zranienie osiągnie 100%, a cios śmiertelny i zmasakrowanie zabijają od razu, bez względu na wcześniejsze rany.
+The system does not protect the player character from death. The character dies when their wound level reaches 100%, and a mortal blow or mangling kills at once, regardless of earlier wounds.
 
-Cios śmiertelny i zmasakrowanie, jak każdy skutek, muszą być wpisane w tablicę przed rzutem. Jeśli postać może ocenić sytuację, MG opisuje ją tak, żeby śmiertelne zagrożenie było widoczne dla gracza, zanim ten podejmie decyzję.
+A mortal blow and mangling, like every effect, must be written into the table before the roll. If the character can judge the situation, the GM describes it so that the deadly danger is visible to the player before they decide.
 
-Lore świata może przewidywać wskrzeszenie albo sklonowanie zmarłej postaci, np. jeśli gracz wcześniej opłacił taką usługę u kapłanów albo w klinice klonowania. Zmasakrowanie może to uniemożliwić (zob. *Rany*).
+The world's lore can allow resurrection or cloning of a dead character, e.g. if the player has paid for such a service from priests or at a cloning clinic beforehand. Mangling can rule this out (see *Wounds*).
 
-Świat może złagodzić te zasady, jeśli jego konwencja tego wymaga.
+The world can soften these rules if its convention requires it.

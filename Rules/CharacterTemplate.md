@@ -1,47 +1,47 @@
-# Karta postaci
+# Character sheet
 
-**Imię**:
-**Gatunek**:
-**Płeć**:
-**Wiek**:
-**Profesja**:
+**Name**:
+**Species**:
+**Sex**:
+**Age**:
+**Profession**:
 
-## Historia
+## Background
 
-<!-- 3–5 zdań: skąd postać pochodzi, czym się zajmowała, dlaczego wyrusza na przygodę -->
+<!-- 3–5 sentences: where the character comes from, what they have done, why they set out on an adventure -->
 
-**Wątki**:
+**Plot threads**:
 
-<!-- 1–2 zaczepki fabularne z historii, np.: zaginiony uczeń, który ukradł Randuvilowi starożytny zwój -->
+<!-- 1–2 story hooks from the background, e.g.: the missing student who stole an ancient scroll from Randuvil -->
 
-## Zalety
+## Advantages
 
-<!-- Każda zaleta z wagą i skutkiem, np.: poliglota (−4 PDT): zna języki rzadkie i starożytne, czyta starożytne zwoje -->
+<!-- Each advantage with weight and effect, e.g.: polyglot (−4 DP): knows rare and ancient languages, reads ancient scrolls -->
 
-## Wady
+## Disadvantages
 
-<!-- Każda wada z wagą i skutkiem, np.: seplenienie (+5 PDT): rzucanie zaklęć trudniejsze o jeden poziom -->
+<!-- Each disadvantage with weight and effect, e.g.: lisp (+5 DP): casting spells is one level harder -->
 
-## Punkty Determinacji
+## Determination Points
 
-**Bazowe PDT**:
-**Bieżące PDT**:
+**Base DP**:
+**Current DP**:
 
-## Doświadczenie
+## Experience
 
-**Poziom doświadczenia**: 0
-**Punkty doświadczenia**: 0
+**Experience level**: 0
+**Experience points**: 0
 
-## Zdrowie
+## Health
 
-**Poziom zranienia**: 0% (bez ran)
+**Wound level**: 0% (unhurt)
 
-## Urazy
+## Injuries
 
-<!-- Urazy przejściowe z czasem gojenia, np.: złamana lewa noga (do ok. połowy marca): chodzi o kulach. Urazy trwałe zapisuje się też jako wady. -->
+<!-- Temporary injuries with healing time, e.g.: broken left leg (until about mid-March): walks on crutches. Permanent injuries are also recorded as disadvantages. -->
 
-## Ekwipunek
+## Equipment
 
-<!-- Przedmioty zużywalne z liczbą, np.: pochodnie: 2, prowiant: 3 dni, amunicja: 20. Pozostałe wystarczy wymienić. Ekwipunek lepszy niż typowy dla profesji zapisuje się też jako zaletę. -->
+<!-- Consumables with counts, e.g.: torches: 2, rations: 3 days, ammunition: 20. Other items just need listing. Equipment better than typical for the profession is also recorded as an advantage. -->
 
-**Pieniądze**:
+**Money**:

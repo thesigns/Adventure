@@ -1,135 +1,135 @@
-# Rzut standardowy
+# Standard roll
 
-Wszystkie niepewne rezultaty rozstrzyga się rzutem **3K6**: rzuca się trzema kośćmi sześciennymi i sumuje wyniki. Suma mieści się w zakresie od 3 do 18.
+Every uncertain outcome is resolved with a **3d6** roll: roll three six-sided dice and add them up. The total ranges from 3 to 18.
 
-Rzuca wyłącznie MG, zawsze skryptem (zob. *Rzut skryptem*). Rzut może dotyczyć także postaci MG, np. czy strażnik zauważy postać gracza albo czy lekarzowi uda się zatamować krwawienie.
+Only the GM rolls, always with the script (see *Scripted rolls*). A roll can also concern a GM character, e.g. whether a guard notices the player character or whether a doctor manages to stop the bleeding.
 
-Każdą sytuację rozstrzyga jeden rzut, także gdy biorą w niej udział różne postacie. Nie ma rzutów przeciwstawnych: postać gracza i strażnik nie rzucają osobno i nie porównują wyników. MG układa jedną tablicę rezultatów i uwzględnia w niej umiejętności i okoliczności obu stron (zob. *Okoliczności*).
+Each situation is resolved with a single roll, even when several characters take part in it. There are no opposed rolls: the player character and the guard do not roll separately and compare results. The GM sets up one outcome table and takes into account the skills and circumstances of both sides (see *Circumstances*).
 
-Gracz może poprawić swoje szanse, wydając przed rzutem Punkty Determinacji (zob. `Rules/Determination.md`).
+The player can improve the odds by spending Determination Points before the roll (see `Rules/Determination.md`).
 
-## Kiedy rzucać
+## When to roll
 
-Rzut wykonuje się tylko wtedy, gdy wynik sytuacji jest niepewny i ma znaczenie dla przygody.
+Roll only when the outcome of a situation is uncertain and matters to the adventure.
 
-- **Sytuacje trywialne** rozstrzyga się bez rzutu.
-- **Sytuacje niemożliwe** po prostu się nie udaje, również bez rzutu. MG opisuje, co się dzieje zamiast tego.
-- **Sytuacje bez ryzyka i bez presji czasu** udają się bez rzutu, jeśli postać może próbować do skutku. Kosztuje wtedy tylko czas.
-- **Nieudanego działania nie można ponowić** w tej samej sytuacji. Ponowna próba wymaga zmiany sytuacji: innego sposobu, narzędzia, pomocy albo upływu czasu.
+- **Trivial situations** are resolved without a roll.
+- **Impossible situations** simply fail, also without a roll. The GM describes what happens instead.
+- **Situations without risk or time pressure** succeed without a roll if the character can keep trying until they succeed. The only cost is time.
+- **A failed action cannot be retried** in the same situation. Another attempt requires the situation to change: a different method, tool, help or the passage of time.
 
-Rzut nie musi dotyczyć działania postaci gracza. Może rozstrzygać:
+A roll does not have to concern the player character's action. It can resolve:
 
-- działanie przeciwnika lub innej postaci MG (czy strażnik zauważy postać, czy łucznik trafi),
-- reakcję postaci MG (czy strażnik uwierzy, czy chłopak pomoże),
-- zdarzenie losowe (czy most wytrzyma, czy burza przyjdzie przed zmrokiem),
-- okoliczność świata, której nie ustala scenariusz (czy w wiosce jest kowal).
+- the action of an enemy or another GM character (does the guard notice the character, does the archer hit),
+- the reaction of a GM character (does the guard believe them, does the boy help),
+- a random event (does the bridge hold, does the storm come before dusk),
+- a fact about the world the scenario does not settle (is there a smith in the village).
 
-Okoliczności ustalonych w scenariuszu nie rozstrzyga się rzutem.
+Facts settled by the scenario are not resolved with a roll.
 
-## Tablica rezultatów
+## Outcome table
 
-Przed każdym rzutem MG układa **tablicę rezultatów**. Przypisuje w niej zakresom wyników konkretne skutki, na podstawie swojej oceny sytuacji. Tablica musi obejmować wszystkie wyniki od 3 do 18. Raz ustalonej tablicy nie zmienia się po rzucie.
+Before every roll the GM sets up an **outcome table**. It assigns specific consequences to ranges of results, based on the GM's judgement of the situation. The table must cover all results from 3 to 18. Once set, a table is not changed after the roll.
 
-Tablica może przewidywać więcej niż dwa skutki, np. pełny sukces, sukces okupiony kosztem, porażkę i porażkę z raną.
+A table can have more than two outcomes, e.g. full success, success at a cost, failure and failure with a wound.
 
-We wszystkich tablicach **wysoki wynik jest korzystny** dla postaci gracza, a niski niekorzystny, także gdy rzut dotyczy przeciwnika (wysoki wynik: strażnik nie zauważa postaci). Tylko gdy żaden skutek nie jest dla postaci gracza ani lepszy, ani gorszy, kolejność jest dowolna.
+In every table a **high result is good** for the player character and a low one bad, even when the roll concerns an enemy (high result: the guard does not notice the character). Only when no outcome is better or worse for the player character is the order arbitrary.
 
-Tablice są **jawne**: MG pokazuje graczowi tablicę przed wynikiem. Skutki formułuje jednak tak, żeby nie zdradzały tajemnic scenariusza, o których postać nie wie, np. „pieczęć działa” zamiast „wódz zostaje uwięziony na zawsze”.
+Tables are **open**: the GM shows the player the table before the result. The GM words the outcomes so that they do not reveal scenario secrets the character does not know, e.g. "the seal works" rather than "the chieftain is imprisoned forever".
 
-### Decyzja gracza
+### Player's decision
 
-Jeśli rzut dotyczy postaci gracza, a postać realnie może ocenić swoje szanse, MG najpierw pokazuje tablicę i nie rzuca. Rzut dotyczy postaci gracza, gdy jego wynik zależy od jej wysiłku: od jej działania albo od tego, jak radzi sobie z zagrożeniem. Tak jest także wtedy, gdy formalnie rzuca się za przeciwnika, np. czy strażnik zauważy skradającą się postać.
+If the roll concerns the player character and the character can realistically judge the odds, the GM first shows the table and does not roll. A roll concerns the player character when its result depends on the character's effort: on their action or on how they cope with a threat. This holds even when the roll is formally made for an enemy, e.g. whether a guard notices the sneaking character.
 
-Gracz decyduje wtedy, ile Punktów Determinacji wydaje (zob. `Rules/Determination.md`), a jeśli postać może się jeszcze wycofać, także czy w ogóle podejmuje działanie. Może:
+The player then decides how many Determination Points to spend (see `Rules/Determination.md`) and, if the character can still back out, whether to act at all. The player can:
 
-- **podjąć działanie:** MG rzuca według pokazanej tablicy, której nie wolno już zmienić, z kośćmi dodanymi za wydane Punkty Determinacji,
-- **zrezygnować:** nie ma rzutu, a rezygnacja nie jest nieudanym działaniem, więc postać może spróbować później,
-- **zmienić sposób działania:** MG układa nową tablicę dla nowego sposobu i znów czeka na decyzję.
+- **act:** the GM rolls against the table shown, which can no longer be changed, with extra dice for the Determination Points spent,
+- **give up:** there is no roll, and giving up is not a failed action, so the character can try later,
+- **change the approach:** the GM sets up a new table for the new approach and again waits for a decision.
 
-Jeśli postać nie ma już odwrotu (nagły atak, pułapka, która już się uruchomiła), ale widzi zagrożenie, gracz nie może zrezygnować ani zmienić sposobu działania. Decyduje tylko, ile Punktów Determinacji wydaje.
+If the character can no longer back out (a sudden attack, a trap already sprung) but sees the danger, the player can neither give up nor change the approach. They only decide how many Determination Points to spend.
 
-W pozostałych przypadkach MG rzuca od razu, bez Punktów Determinacji, i pokazuje tablicę razem z wynikiem. Dotyczy to sytuacji, w których postać nie może ocenić szans (nie wie, że most jest spróchniały, nie widzi łucznika w zasadzce), oraz rzutów, które nie zależą od wysiłku postaci (reakcje postaci MG niezwiązane z jej działaniem, zdarzenia losowe, okoliczności świata).
+In all other cases the GM rolls at once, without Determination Points, and shows the table together with the result. This covers situations in which the character cannot judge the odds (does not know the bridge is rotten, does not see the archer in ambush) and rolls that do not depend on the character's effort (reactions of GM characters unrelated to the character's action, random events, facts about the world).
 
-### Trudność
+### Difficulty
 
-Żeby tablice były spójne między sesjami, MG ustala próg sukcesu według poziomu trudności:
+To keep tables consistent between sessions, the GM sets the success threshold by difficulty level:
 
-| Trudność          | Porażka | Sukces | Szansa na sukces |
-|-------------------|---------|--------|------------------|
-| łatwe             | 3–5     | 6–18   | 95%              |
-| przeciętne        | 3–8     | 9–18   | 74%              |
-| trudne            | 3–10    | 11–18  | 50%              |
-| bardzo trudne     | 3–12    | 13–18  | 26%              |
-| prawie niemożliwe | 3–15    | 16–18  | 5%               |
+| Difficulty        | Failure | Success | Chance of success |
+|-------------------|---------|---------|-------------------|
+| easy              | 3–5     | 6–18    | 95%               |
+| average           | 3–8     | 9–18    | 74%               |
+| hard              | 3–10    | 11–18   | 50%               |
+| very hard         | 3–12    | 13–18   | 26%               |
+| nearly impossible | 3–15    | 16–18   | 5%                |
 
-W obrębie porażki i sukcesu MG może wydzielić stopnie, np. porażkę z raną na najniższych wynikach albo wyjątkowy sukces na najwyższych. Może też ustawić próg pomiędzy poziomami trudności.
+Within failure and success the GM can set apart degrees, e.g. failure with a wound on the lowest results or exceptional success on the highest. The GM can also set the threshold between difficulty levels.
 
-**Poziom w punktach.** Zmiana trudności o jeden poziom przesuwa próg sukcesu o 2 punkty, a o pół poziomu o 1 punkt. Utrudnienie podnosi próg, a ułatwienie go obniża. Tablica podaje progi wyjściowe. Skrajne poziomy są w niej szersze niż 2 punkty (łatwe 6, prawie niemożliwe 16), bo rozkład 3K6 ma tam mało wyników, więc przesunięcie od nich może dać próg pomiędzy poziomami.
+**Levels in points.** Changing difficulty by one level moves the success threshold by 2 points, and by half a level by 1 point. Making an action harder raises the threshold, making it easier lowers it. The table gives the starting thresholds. The extreme levels are wider than 2 points (easy 6, nearly impossible 16), because the 3d6 distribution has few results there, so a shift from them can give a threshold between levels.
 
-Działanie przeciętne (próg 9), utrudnione przez ciemność (poziom) i lekką ranę (pół poziomu), ma próg 9 + 2 + 1 = 12.
+An average action (threshold 9) made harder by darkness (a level) and a light wound (half a level) has a threshold of 9 + 2 + 1 = 12.
 
-### Okoliczności
+### Circumstances
 
-MG ocenia trudność od razu z uwzględnieniem wszystkich okoliczności, które mają znaczenie. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji tego, kto działa (zob. `Rules/CharacterCreation.md`), wypoczęty i przygotowany do działania. Odczytanie zwoju jest dla czarodzieja łatwiejsze niż dla chłopa, a tropienie łatwiejsze dla myśliwego niż dla mieszczanina. Każda istotna okoliczność zmienia trudność zwykle o jeden poziom (2 punkty progu), a wyjątkowo silna o dwa (4 punkty). Ta sama okoliczność liczy się tylko raz. Kilka środków szczególnie skutecznych przeciw temu samemu przeciwnikowi, np. srebro i ogień przeciw upiorowi, to jedna okoliczność.
+The GM judges difficulty at once, taking into account all circumstances that matter. The reference point is an average member of the species and profession of whoever acts (see `Rules/CharacterCreation.md`), rested and prepared to act. Reading a scroll is easier for a wizard than for a peasant, and tracking is easier for a hunter than for a townsman. Each significant circumstance changes difficulty usually by one level (2 points of threshold), and an exceptionally strong one by two (4 points). The same circumstance counts only once. Several means especially effective against the same enemy, e.g. silver and fire against a wraith, count as one circumstance.
 
-Działanie łatwiejsze niż łatwe jest trywialne i nie wymaga rzutu. Działanie trudniejsze niż prawie niemożliwe jest niemożliwe.
+An action easier than easy is trivial and needs no roll. An action harder than nearly impossible is impossible.
 
-Typowe okoliczności:
+Typical circumstances:
 
-| Ułatwia                                            | Utrudnia                                                                       |
-|----------------------------------------------------|--------------------------------------------------------------------------------|
-| zaleta pasująca do działania                       | wada pasująca do działania                                                     |
-| dobre narzędzie lub przygotowanie                  | improwizowana broń lub narzędzie                                               |
-| zaskoczenie przeciwnika                            | ciemność, mgła, ulewa                                                          |
-| korzystny teren                                    | niekorzystny teren                                                             |
-| środek szczególnie skuteczny przeciw przeciwnikowi | rany (zob. *Poziomy zranienia* w `Rules/Health.md`), zmęczenie, głód, odurzenie |
-| osłabiony przeciwnik (ranny, wyczerpany)           | każdy dodatkowy przeciwnik                                                     |
+| Makes easier                                 | Makes harder                                                                    |
+|----------------------------------------------|---------------------------------------------------------------------------------|
+| an advantage that fits the action            | a disadvantage that fits the action                                             |
+| a good tool or preparation                   | an improvised weapon or tool                                                    |
+| surprising the enemy                         | darkness, fog, downpour                                                         |
+| favourable terrain                           | unfavourable terrain                                                            |
+| means especially effective against the enemy | wounds (see *Wound levels* in `Rules/Health.md`), fatigue, hunger, intoxication |
+| a weakened enemy (wounded, exhausted)        | every additional enemy                                                          |
 
-## Przykłady
+## Examples
 
-> Postać gracza wspina się bez liny na trzymetrowy kamienny mur, śliski od deszczu.
+> The player character climbs a three-metre stone wall without a rope, slippery with rain.
 
-Dla przeciętnego człowieka byłoby to trudne, ale postać ma zaletę *akrobata*, więc MG ocenia działanie jako przeciętne. MG układa tablicę rezultatów:
+For an average human this would be hard, but the character has the advantage *acrobat*, so the GM judges the action as average. The GM sets up the outcome table:
 
-| Wynik | Rezultat           |
-|-------|--------------------|
-| 3–4   | upadek, lekka rana |
-| 5–8   | upadek, draśnięcie |
-| 9–18  | sukces             |
+| Result | Outcome            |
+|--------|--------------------|
+| 3–4    | falls, light wound |
+| 5–8    | falls, scratch     |
+| 9–18   | success            |
 
-Wypada 7: postać spada z muru i jest draśnięta (5% zranienia).
+The roll is 7: the character falls off the wall and is scratched (5% wound level).
 
-> Później postać skrada się nocą obok strażnika, który drzemie przy ognisku.
+> Later the character sneaks at night past a guard dozing by a campfire.
 
-MG rzuca, czy strażnik ją zauważy. Ciemność i drzemka strażnika ułatwiają sprawę, ale ognisko oświetla część placu, więc MG ocenia niepostrzeżone przemknięcie jako przeciętne. Wysokie wyniki są korzystne dla postaci gracza, czyli oznaczają, że strażnik jej nie zauważa:
+The GM rolls whether the guard notices them. The darkness and the dozing guard make it easier, but the fire lights part of the yard, so the GM judges slipping past unnoticed as average. High results are good for the player character, which means the guard does not notice them:
 
-| Wynik | Rezultat                                |
-|-------|-----------------------------------------|
-| 3–5   | strażnik zauważa postać i podnosi alarm |
-| 6–8   | strażnik coś słyszy i wstaje sprawdzić  |
-| 9–18  | strażnik niczego nie zauważa            |
+| Result | Outcome                                              |
+|--------|------------------------------------------------------|
+| 3–5    | the guard notices the character and raises the alarm |
+| 6–8    | the guard hears something and gets up to check       |
+| 9–18   | the guard notices nothing                            |
 
-## Rzut skryptem
+## Scripted rolls
 
-MG wykonuje każdy rzut skryptem `Scripts/roll.py`. Tablicę rezultatów podaje w poleceniu, dzięki czemu jest ona ustalona przed rzutem:
-
-```
-python Scripts/roll.py --kampania Randuvil --opis "Wspinaczka na mur" "3-4:upadek, lekka rana" "5-8:upadek, draśnięcie" "9-18:sukces"
-```
-
-- `--kampania` to nazwa folderu kampanii w `Campaigns/`. Jest obowiązkowa, a folder musi już istnieć.
-- `--opis` to krótki opis tego, czego dotyczy rzut.
-- `--pdt` to liczba wydanych Punktów Determinacji (domyślnie 0). Skrypt rzuca wtedy odpowiednio więcej kośćmi, odrzuca najsłabsze i sumuje trzy najlepsze.
-- Każdy wpis tablicy ma postać `od-do:rezultat` albo `wynik:rezultat`. Zakresy muszą obejmować wszystkie wyniki od 3 do 18, bez luk i bez nakładania się.
-- `--rundy` to najwyższa liczba rzutów w serii z tą samą tablicą (domyślnie 1), a `--stop` to wyniki, po których seria się kończy, np. `--stop 3-5,17-18`. Przy serii `--pdt` dotyczy każdego rzutu osobno. Serii używa się do kolejnych rund walki (zob. *Seria rund* w `Rules/Combat.md`).
-- `--tablica NAZWA` bierze nazwaną tablicę z pliku `Tables/GmTables.json` settingu albo scenariusza zamiast wpisów w poleceniu.
-- `--podglad` wypisuje samą tablicę z szansą na każdy rezultat przy 0, 1, 2 i 3 wydanych PDT (albo do liczby z `--pdt`, jeśli większa), bez rzutu i bez zapisu w `Rolls.log`. MG używa go, gdy pokazuje graczowi tablicę przed decyzją (zob. *Decyzja gracza*), i podaje szanse z podglądu, a nie liczone w pamięci.
-- `--ukryty --etykieta E` to rzut ukryty przed graczem, jeśli świat albo scenariusz każe go ukryć. Skrypt nie wypisuje wyniku, tylko zapisuje go w ukrytym stanie kampanii (zob. *Sekrety MG* w `AGENTS.md`). Tablicę podaje się wtedy przez `--tablica`, żeby polecenie niczego nie zdradzało.
-
-Skrypt wypisuje tablicę z szansą na każdy rezultat (przy wydanych PDT także szansę bez nich), wyrzucone kości, kości odrzucone, wynik oraz rezultat. Każdy rzut zapisuje w pliku `Rolls.log` w folderze kampanii.
-
-Przykład z 2 wydanymi PDT:
+The GM makes every roll with the script `Scripts/roll.py`. The outcome table is given in the command, so it is fixed before the roll:
 
 ```
-python Scripts/roll.py --kampania Elandir --opis "Wspinaczka po linie na mur świątyni" --pdt 2 "3:upadek, ciężka rana" "4:upadek, rana" "5-6:upadek, lekka rana" "7-11:wspina się, ale ktoś go zauważa" "12-18:wspina się niezauważony"
+python Scripts/roll.py --kampania Randuvil --opis "Climbing the wall" "3-4:falls, light wound" "5-8:falls, scratch" "9-18:success"
+```
+
+- `--kampania` is the name of the campaign folder in `Campaigns/`. It is required, and the folder must already exist.
+- `--opis` is a short description of what the roll is about.
+- `--pdt` is the number of Determination Points spent (default 0). The script then rolls that many more dice, drops the lowest and adds up the best three.
+- Each table entry has the form `from-to:outcome` or `result:outcome`. The ranges must cover all results from 3 to 18, with no gaps and no overlaps.
+- `--rundy` is the maximum number of rolls in a series with the same table (default 1), and `--stop` lists the results that end the series, e.g. `--stop 3-5,17-18`. In a series `--pdt` applies to each roll separately. Series are used for consecutive rounds of combat (see *Series of rounds* in `Rules/Combat.md`).
+- `--tablica NAME` takes a named table from the `Tables/GmTables.json` file of the setting or scenario instead of entries in the command.
+- `--podglad` prints only the table with the chance of each outcome for 0, 1, 2 and 3 DP spent (or up to the number in `--pdt`, if higher), without rolling and without an entry in `Rolls.log`. The GM uses it when showing the player a table before their decision (see *Player's decision*) and quotes the chances from the preview, never computed in their head.
+- `--ukryty --etykieta E` is a roll hidden from the player, when the world or scenario says to hide it. The script does not print the result, only saves it in the campaign's hidden state (see *Sekrety MG* in `AGENTS.md`). The table is then given with `--tablica`, so that the command reveals nothing.
+
+The script prints the table with the chance of each outcome (with DP spent, also the chance without them), the dice rolled, the dice dropped, the result and the outcome. It records every roll in the file `Rolls.log` in the campaign folder.
+
+Example with 2 DP spent:
+
+```
+python Scripts/roll.py --kampania Elandir --opis "Climbing a rope up the temple wall" --pdt 2 "3:falls, serious wound" "4:falls, medium wound" "5-6:falls, light wound" "7-11:climbs, but someone notices him" "12-18:climbs unnoticed"
 ```

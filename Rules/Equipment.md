@@ -1,73 +1,73 @@
-# Ekwipunek
+# Equipment
 
-Ekwipunek nie ma osobnej mechaniki ani statystyk. Broń, pancerz, narzędzia i inne przedmioty działają jak okoliczności: MG uwzględnia je od razu w tablicy rezultatów (zob. *Okoliczności* w `Rules/StandardThrow.md`). Ekwipunek startowy postaci ustala się przy tworzeniu postaci (zob. `Rules/CharacterCreation.md`).
+Equipment has no separate mechanics or statistics. Weapons, armour, tools and other items act as circumstances: the GM takes them into account directly in the outcome table (see *Circumstances* in `Rules/StandardThrow.md`). The character's starting equipment is set at character creation (see `Rules/CharacterCreation.md`).
 
-## Narzędzia
+## Tools
 
-Punktem odniesienia jest przeciętny przedstawiciel profesji, przygotowany do działania, czyli z narzędziami typowymi dla swojego zajęcia. Typowe narzędzie nie zmienia więc trudności.
+The reference point is an average member of the profession, prepared to act, i.e. with the tools typical of their trade. A typical tool therefore does not change difficulty.
 
-- **Lepsze niż typowe** narzędzie, np. mistrzowskiej roboty, zaawansowane technologicznie albo magiczne, ułatwia działanie o jeden poziom, a wyjątkowe o dwa.
-- **Improwizowane** narzędzie utrudnia działanie o jeden poziom.
-- **Brak** potrzebnego narzędzia utrudnia działanie albo czyni je niemożliwym, np. otwarcie zamka bez wytrycha czy narzędzi elektronicznych.
+- **A better than typical** tool, e.g. masterwork, high-tech or magical, makes the action one level easier, and an exceptional one two levels.
+- **An improvised** tool makes the action one level harder.
+- **Lacking** a needed tool makes the action harder or impossible, e.g. opening a lock without lockpicks or electronic tools.
 
-## Broń
+## Weapons
 
-Rany zależą od rodzaju broni: każda broń ma rozpiętość ran, od najlżejszej do najcięższej, jaką może zadać, np. proca od draśnięcia do rany (zob. *Rany w walce* w `Rules/Combat.md`). Broń lepsza niż typowa może ułatwiać walkę albo zadawać rany o stopień cięższe. Broń gorsza albo improwizowana działa odwrotnie.
+Wounds depend on the kind of weapon: every weapon has a wound spread, from the lightest to the heaviest wound it can deal, e.g. a sling from a scratch to a medium wound (see *Wounds in combat* in `Rules/Combat.md`). A weapon better than typical can make the fight easier or deal wounds one step heavier. A worse or improvised weapon works the other way.
 
-Zasady walki bronią dystansową są w `Rules/Combat.md` (zob. *Walka na dystans*).
+Rules for ranged weapons are in `Rules/Combat.md` (see *Ranged combat*).
 
-## Pancerz
+## Armour
 
-Pancerz sprawia, że przeciwnik rzadziej rani postać i zadaje jej lżejsze rany. MG uwzględnia go w tablicy rezultatów razem z tarczą i innymi osłonami. Tak samo pancerz przeciwnika chroni go przed postacią.
+Armour makes the enemy wound the character less often and less severely. The GM takes it into account in the outcome table together with a shield and other cover. In the same way the enemy's armour protects them from the character.
 
-Rosomak przeciw postaci bez pancerza łatwo zadaje rany, i to poważne. Przeciw postaci w pełnej zbroi płytowej praktycznie nie może jej zranić.
+A wolverine wounds an unarmoured character easily, and badly. Against a character in full plate it can hardly wound them at all.
 
-| Pancerz | Przykłady                                                | Wady                                                    |
-|---------|----------------------------------------------------------|---------------------------------------------------------|
-| lekki   | skórzana kurtka, przeszywanica, lekka kamizelka ochronna | brak                                                    |
-| średni  | kolczuga, kamizelka kuloodporna                          | utrudnia skradanie, wspinaczkę i pływanie               |
-| ciężki  | zbroja płytowa, pancerz bojowy                           | utrudnia skradanie i wspinaczkę, a pływanie szczególnie |
+| Armour | Examples                                           | Drawbacks                                              |
+|--------|----------------------------------------------------|--------------------------------------------------------|
+| light  | leather jacket, padded jack, light protective vest | none                                                   |
+| medium | chain mail, bulletproof vest                       | hinders sneaking, climbing and swimming                |
+| heavy  | plate armour, combat armour                        | hinders sneaking and climbing, and swimming especially |
 
-Świat podaje własne przykłady pancerzy.
+The world gives its own examples of armour.
 
-Przed trucizną, chorobą, wycieńczeniem czy upiornym chłodem pancerz nie chroni. Przy upadku z wysokości zwykle nie pomaga.
+Armour does not protect against poison, disease, exhaustion or ghostly cold. In a fall from a height it usually does not help.
 
-Tarcza i inne osłony trzymane w ręku dodatkowo chronią przed ciosami i pociskami, ale zajmują rękę. Podobnie działa osłona terenu, np. mur, skała albo wrak pojazdu: przeciwnikowi trudniej trafić, zwłaszcza z dystansu.
+A shield and other cover held in hand additionally protect against blows and missiles, but take up a hand. Cover from terrain works similarly, e.g. a wall, a rock or a vehicle wreck: the enemy finds it harder to hit, especially at range.
 
-## Przedmioty zużywalne
+## Consumables
 
-Niektóre przedmioty się zużywają: amunicja, źródła światła, paliwo i zasilanie, leki i mikstury, prowiant, a także przedmioty, które działają ograniczoną liczbę razy. MG zapisuje ich liczbę na karcie postaci i zmniejsza ją w trakcie gry.
+Some items get used up: ammunition, light sources, fuel and power, medicines and potions, rations, and items that work a limited number of times. The GM writes their count on the character sheet and lowers it during play.
 
-- **Amunicja:** każda runda walki, w której postać strzela, zużywa jedną jednostkę. Zależnie od broni i świata jednostką jest np. strzała, nabój albo magazynek. Część amunicji, np. strzały, da się po walce odzyskać.
-- **Źródła światła** działają przez ograniczony czas, który określa świat.
-- **Prowiant:** jedna porcja na dobę (zob. *Zmęczenie, głód i światło* w `Rules/Rules.md`).
+- **Ammunition:** every round of combat in which the character shoots uses up one unit. Depending on the weapon and the world, a unit is e.g. an arrow, a cartridge or a magazine. Some ammunition, e.g. arrows, can be recovered after the fight.
+- **Light sources** last a limited time set by the world.
+- **Rations:** one portion per day (see *Fatigue, hunger and light* in `Rules/Rules.md`).
 
-Gdy zapas się skończy, przedmiot przestaje działać: broń nie strzela, latarka gaśnie.
+When the supply runs out, the item stops working: the weapon does not fire, the torch goes out.
 
-## Uszkodzenia i awarie
+## Damage and malfunctions
 
-Uszkodzenie ekwipunku może być jednym ze skutków w tablicy, zwykle na najniższych wynikach: broń pęka albo się zacina, pancerz się rozrywa, urządzenie przestaje działać. Uszkodzony przedmiot działa gorzej albo wcale, dopóki ktoś go nie naprawi.
+Damage to equipment can be one of the outcomes in a table, usually on the lowest results: a weapon breaks or jams, armour tears, a device stops working. A damaged item works worse or not at all until someone repairs it.
 
-Fachowiec, np. rzemieślnik albo mechanik, naprawia przedmiot zwykle bez rzutu, kosztem czasu i pieniędzy. Naprawa w terenie albo przez kogoś bez odpowiednich umiejętności to zwykłe działanie, które wymaga rzutu.
+A professional, e.g. a craftsman or a mechanic, usually repairs an item without a roll, at the cost of time and money. Repair in the field or by someone without the right skills is an ordinary action that needs a roll.
 
-## Udźwig
+## Carrying
 
-Ekwipunek nie ma wagi ani udźwigu, ale MG pilnuje, żeby postać nie niosła więcej, niż to rozsądne. Ciężki albo nieporęczny ładunek utrudnia o jeden poziom wspinaczkę, pływanie, skradanie i ucieczkę.
+Equipment has no weight or carrying capacity, but the GM makes sure the character does not carry more than is reasonable. A heavy or unwieldy load makes climbing, swimming, sneaking and fleeing one level harder.
 
-## Wierzchowce i pojazdy
+## Mounts and vehicles
 
-Wierzchowce i pojazdy to ekwipunek, który przyspiesza podróż i przewozi ładunek. Ich szybkość i dostępność określa świat. Zwierzę ma poziom zranienia jak każda istota (zob. `Rules/Health.md`), a pojazd może zostać uszkodzony jak każdy przedmiot.
+Mounts and vehicles are equipment that speeds up travel and carries loads. The world sets their speed and availability. An animal has a wound level like any creature (see `Rules/Health.md`), and a vehicle can be damaged like any item.
 
-Jazda i prowadzenie w zwykłych warunkach nie wymagają rzutu. Pościg, trudny teren czy niebezpieczny manewr to zwykłe działania z tablicą rezultatów.
+Riding and driving in ordinary conditions need no roll. A chase, difficult terrain or a dangerous manoeuvre are ordinary actions with an outcome table.
 
-## Przedmioty niezwykłe
+## Unusual items
 
-Przedmioty magiczne, zaawansowane technologicznie albo w inny sposób niezwykłe działają jak zalety: ułatwiają o jeden poziom działania ze swojej dziedziny albo umożliwiają działania, które bez nich byłyby niemożliwe. Ich działanie i ograniczenia określa świat albo scenariusz. Przedmiot, który działa ograniczoną liczbę razy, zapisuje się jak przedmiot zużywalny.
+Magical, high-tech or otherwise unusual items work like advantages: they make actions in their field one level easier or make possible actions that would be impossible without them. The world or scenario sets how they work and their limits. An item that works a limited number of times is recorded like a consumable.
 
-Postać nie zawsze wie, jak działa znaleziony przedmiot. Poznanie go może wymagać czasu, badań albo rzutu.
+The character does not always know how a found item works. Learning it may take time, study or a roll.
 
-## Zdobywanie i utrata ekwipunku
+## Gaining and losing equipment
 
-Ekwipunek można kupić za pieniądze świata, zdobyć jako łup albo wytworzyć. Ceny określa świat. Jeśli scenariusz nie ustala, czy dany przedmiot jest w danym miejscu dostępny, MG rozstrzyga to rzutem (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`). Wytworzenie przedmiotu to zwykłe działanie, które wymaga czasu, materiałów i umiejętności.
+Equipment can be bought with the world's money, taken as loot or made. The world sets prices. If the scenario does not settle whether an item is available in a given place, the GM resolves it with a roll (see *When to roll* in `Rules/StandardThrow.md`). Making an item is an ordinary action that needs time, materials and skill.
 
-Ekwipunek zdobyty w trakcie gry nie jest zaletą i nie zmienia Punktów Determinacji: postać na niego zapracowała i może go stracić. Zaletą jest tylko ekwipunek lepszy niż typowy, z którym postać zaczyna grę (zob. `Rules/CharacterCreation.md`). Jeśli postać straci przedmiot, który był zaletą, zaleta przepada, a bazowe PDT rośnie o jej wagę (zob. *Zmiany cech w trakcie gry* w `Rules/Traits.md`).
+Equipment gained during play is not an advantage and does not change Determination Points: the character earned it and can lose it. Only better than typical equipment the character starts the game with is an advantage (see `Rules/CharacterCreation.md`). If the character loses an item that was an advantage, the advantage is lost and base DP rises by its weight (see *Trait changes during play* in `Rules/Traits.md`).

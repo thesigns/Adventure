@@ -1,71 +1,71 @@
-# Zasady gry
+# Game rules
 
-## Tworzenie postaci
+## Character creation
 
-Przed rozegraniem scenariusza gracz tworzy postać: określa jej imię, wiek, płeć, gatunek, profesję i historię oraz zalety, wady i poziom doświadczenia (zwykle zerowy), od których zależy bazowa liczba Punktów Determinacji, a MG ustala jej ekwipunek startowy. Punktem odniesienia jest przeciętny przedstawiciel gatunku i profesji postaci, więc cechy typowe dla nich nie są zaletami ani wadami. Pełne zasady tworzenia postaci są w `Rules/CharacterCreation.md`.
+Before playing a scenario, the player creates a character: their name, age, sex, species, profession and background, plus advantages, disadvantages and experience level (usually zero), which set the base number of Determination Points. The GM sets their starting equipment. The reference point is an average member of the character's species and profession, so traits typical of them are neither advantages nor disadvantages. Full character creation rules are in `Rules/CharacterCreation.md`.
 
-## Karta postaci
+## Character sheet
 
-Karta postaci gracza jest zapisana w pliku `Character.md` w folderze jej kampanii, np. `Campaigns/Randuvil/Character.md` (zob. `Rules/CharacterCreation.md`). MG pilnuje jej stanu i aktualizuje ją na bieżąco, gdy tylko coś się zmieni, m.in.:
+The player character's sheet is the file `Character.md` in their campaign folder, e.g. `Campaigns/Randuvil/Character.md` (see `Rules/CharacterCreation.md`). The GM keeps it up to date and updates it as soon as anything changes, including:
 
-- bieżące PDT po każdym wydaniu punktów i odnowieniu puli,
-- poziom zranienia i urazy po każdej ranie i każdej dobie leczenia,
-- ekwipunek: zdobyte, utracone, zużyte i uszkodzone przedmioty oraz liczbę amunicji, źródeł światła, prowiantu i innych zapasów,
-- pieniądze,
-- cechy i bazowe PDT, gdy postać zyska albo straci zaletę lub wadę,
-- punkty doświadczenia po ich przyznaniu, a poziom doświadczenia i bazowe PDT po awansie,
-- wątki fabularne.
+- current DP after every spending of points and every refresh of the pool,
+- wound level and injuries after every wound and every day of healing,
+- equipment: items gained, lost, used up and damaged, and the count of ammunition, light sources, rations and other supplies,
+- money,
+- traits and base DP when the character gains or loses an advantage or disadvantage,
+- experience points when awarded, and experience level and base DP after advancement,
+- plot threads.
 
-Karta jest źródłem prawdy o stanie postaci. Przy wznowieniu gry MG odczytuje stan postaci z karty.
+The sheet is the source of truth about the character's state. When resuming play, the GM reads the character's state from the sheet.
 
-## Rzut standardowy
+## Standard roll
 
-Wszystkie niepewne rezultaty rozstrzyga się rzutem **3K6** według tablicy rezultatów, którą MG układa przed rzutem. Rzuca wyłącznie MG, zawsze skryptem `Scripts/roll.py`, a gracz może poprawić swoje szanse, wydając Punkty Determinacji. Pełne zasady rzutu standardowego, w tym kiedy rzucać, jak układać tablice rezultatów i jak oceniać trudność, są w `Rules/StandardThrow.md`.
+Every uncertain outcome is resolved with a **3d6** roll against an outcome table the GM sets up before the roll. Only the GM rolls, always with the script `Scripts/roll.py`, and the player can improve the odds by spending Determination Points. Full standard roll rules, including when to roll, how to build outcome tables and how to judge difficulty, are in `Rules/StandardThrow.md`.
 
-## Punkty Determinacji
+## Determination Points
 
-Punkty Determinacji (PDT) to wysiłek, upór i szczęście, które postać gracza może włożyć w ważne dla siebie działanie. Za każdy punkt wydany przed rzutem MG rzuca jedną kością więcej i odrzuca najsłabsze, a pula odnawia się po porządnym wypoczynku. Pełne zasady są w `Rules/Determination.md`.
+Determination Points (DP) are the effort, persistence and luck the player character can put into an action that matters to them. For every point spent before a roll, the GM rolls one extra die and drops the lowest, and the pool refreshes after proper rest. Full rules are in `Rules/Determination.md`.
 
-## Zdrowie, rany i śmierć
+## Health, wounds and death
 
-Każda istota ma poziom zranienia od 0% (bez ran) do 100% (śmierć), który podnoszą rany, od draśnięcia po cios śmiertelny i zmasakrowanie. Od poziomu zranienia zależą kary do działań, a rany goją się tylko w minimalnie komfortowych warunkach. Pełne zasady, w tym skala ran, wytrzymałość istot, agonia, urazy, leczenie i śmierć, są w `Rules/Health.md`.
+Every creature has a wound level from 0% (unhurt) to 100% (death), raised by wounds ranging from a scratch to a mortal blow and mangling. The wound level sets penalties to actions, and wounds heal only in at least minimally comfortable conditions. Full rules, including the wound scale, creature toughness, dying, injuries, healing and death, are in `Rules/Health.md`.
 
-## Ekwipunek
+## Equipment
 
-Ekwipunek nie ma osobnej mechaniki: broń, pancerz, narzędzia i inne przedmioty działają jak okoliczności, które MG uwzględnia w tablicy rezultatów. Pancerz sprawia, że przeciwnik rzadziej rani postać i zadaje jej lżejsze rany, a przedmioty zużywalne, takie jak amunicja czy źródła światła, MG liczy na karcie postaci. Pełne zasady są w `Rules/Equipment.md`.
+Equipment has no separate mechanics: weapons, armour, tools and other items act as circumstances the GM takes into account in the outcome table. Armour makes the enemy wound the character less often and less severely, and the GM tracks consumables such as ammunition and light sources on the character sheet. Full rules are in `Rules/Equipment.md`.
 
-## Walka
+## Combat
 
-Walka toczy się w rundach trwających około 10 sekund, a każda runda to jeden rzut standardowy z tablicą, która opisuje skutki dla obu stron. Przed walką gracz określa taktykę postaci, a walka trwa, dopóki się nie rozstrzygnie: śmiercią, agonią, ucieczką albo poddaniem się jednej ze stron. Rundy z tą samą tablicą gracz może zlecić jako serię, którą MG rzuca jednym poleceniem. Zmęczenie liczy się tylko w walce z kimś, kto męczy się wolniej albo wcale, i utrudnia ją co 6 rund. Pełne zasady walki, w tym kategorie przeciwników i typowy układ tablicy rundy, są w `Rules/Combat.md`.
+Combat is fought in rounds of about 10 seconds, and each round is one standard roll with a table describing the consequences for both sides. Before combat the player sets the character's tactics, and the fight goes on until it is decided by death, dying, flight or surrender of one side. The player can order rounds with the same table as a series, which the GM rolls with a single command. Fatigue counts only against someone who tires more slowly or not at all, and makes the fight harder every 6 rounds. Full combat rules, including enemy categories and the typical layout of a round table, are in `Rules/Combat.md`.
 
-## Cechy (zalety i wady)
+## Traits (advantages and disadvantages)
 
-Zaleta wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i profesji: ułatwia o jeden poziom działania ze swojej dziedziny albo umożliwia działania, które bez niej byłyby niemożliwe, a wada działa odwrotnie. Cechy wybiera się przy tworzeniu postaci, wpływają na bazową liczbę Punktów Determinacji i bardzo rzadko zmieniają się w trakcie gry. Zaleta może też dawać zdolność nadprzyrodzoną, której skutek, ograniczenia i limit użyć MG ustala przy wycenie. Pełne zasady są w `Rules/Traits.md`.
+An advantage sets the character apart from an average member of their species and profession: it makes actions in its field one level easier or makes possible actions that would otherwise be impossible. A disadvantage works the other way. Traits are chosen at character creation, affect the base number of Determination Points and very rarely change during play. An advantage can also grant a supernatural ability, whose effect, limits and number of uses the GM sets when pricing it. Full rules are in `Rules/Traits.md`.
 
-## Doświadczenie
+## Experience
 
-Postać zaczyna zwykle na zerowym poziomie doświadczenia, a na koniec każdego scenariusza dostaje punkty doświadczenia za dokonania, które określa scenariusz albo ocenia MG. Punkty wydaje się jak walutę na awans: przejście na poziom *n* kosztuje *n* × 500 punktów. Nagrody zależą od rozmiaru scenariusza: pełny sukces daje od około 250 punktów w mikro scenariuszu do około 2000 w dużym. Każdy poziom daje postaci 1 bazowy Punkt Determinacji i podnosi o 1 górny limit bazowych PDT. Pełne zasady są w `Rules/Experience.md`.
+A character usually starts at experience level zero and at the end of each scenario receives experience points for achievements set by the scenario or judged by the GM. Points are spent like currency on advancement: reaching level *n* costs *n* × 500 points. Rewards depend on scenario size: full success gives from about 250 points in a micro scenario to about 2000 in a large one. Each level gives the character 1 base Determination Point and raises the cap on base DP by 1. Full rules are in `Rules/Experience.md`.
 
-## Zmęczenie, głód i światło
+## Fatigue, hunger and light
 
-- **Brak snu:** każda doba bez snu utrudnia wszystkie działania o jeden poziom, aż do przespanej nocy.
-- **Głód:** każdy dzień bez jedzenia utrudnia wszystkie działania o jeden poziom, aż do posiłku.
-- **Ciemność:** działanie w ciemności, które wymaga wzroku, jest trudniejsze o jeden poziom, a w całkowitej ciemności o dwa.
-- **Źródła światła** działają przez ograniczony czas, który określa świat (zob. *Przedmioty zużywalne* w `Rules/Equipment.md`).
+- **No sleep:** every day without sleep makes all actions one level harder, until a night's sleep.
+- **Hunger:** every day without food makes all actions one level harder, until a meal.
+- **Darkness:** an action in the dark that needs sight is one level harder, and two levels in total darkness.
+- **Light sources** last a limited time set by the world (see *Consumables* in `Rules/Equipment.md`).
 
-MG śledzi porę dnia i upływ czasu.
+The GM tracks the time of day and the passage of time.
 
-## Rzut monetą
+## Coin toss
 
-Nierozwiązywalny spór między graczem a MG, np. o przebieg wydarzeń albo interpretację zasady, rozstrzyga rzut monetą skryptem `Scripts/coin.py`. Moneta wskazuje „Rację ma MG” albo „Rację ma gracz”, a rozstrzygnięcie jest ostateczne. Pełne zasady są w `Rules/CoinThrow.md`.
+An unresolvable dispute between the player and the GM, e.g. about the course of events or the interpretation of a rule, is settled by a coin toss with the script `Scripts/coin.py`. The coin shows either "the GM is right" or "the player is right", and the decision is final. Full rules are in `Rules/CoinThrow.md`.
 
-## Zasady świata
+## World rules
 
-Zasady podstawowe są wspólne dla wszystkich światów. Świat opisuje setting w katalogu `Settings/` albo, jeśli scenariusz nie korzysta z żadnego settingu, sam scenariusz. Setting może uzupełniać zasady podstawowe, a scenariusz jedne i drugie. W razie sprzeczności rozstrzyga scenariusz, potem setting, a na końcu zasady podstawowe. Świat określa w szczególności:
+The core rules are shared by all worlds. The world is described by a setting in `Settings/` or, if a scenario uses no setting, by the scenario itself. A setting can extend the core rules, and a scenario can extend both. In a conflict the scenario decides, then the setting, and the core rules last. In particular, the world defines:
 
-- konwencję i klimat gry,
-- przykłady przeciwników w każdej kategorii i wytrzymałość istot,
-- przykłady pancerzy lekkich, średnich i ciężkich,
-- tempo leczenia gatunków innych niż człowiek i dodatkowe sposoby leczenia,
-- magię, modlitwę i inne moce nadprzyrodzone, jeśli istnieją,
-- sprzęt, ceny, wierzchowce, pojazdy i przedmioty niezwykłe, np. czas działania źródeł światła.
+- the convention and mood of the game,
+- examples of enemies in each category and the toughness of creatures,
+- examples of light, medium and heavy armour,
+- the healing rate of species other than human and additional ways of healing,
+- magic, prayer and other supernatural powers, if they exist,
+- gear, prices, mounts, vehicles and unusual items, e.g. how long light sources last.

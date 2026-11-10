@@ -1,72 +1,72 @@
-# Doświadczenie
+# Experience
 
-Postać gracza zdobywa doświadczenie, przechodząc kolejne scenariusze. Mierzą je dwie wartości na karcie postaci: **poziom doświadczenia** i **punkty doświadczenia**. Mają je tylko postacie graczy.
+The player character gains experience by playing through scenarios. It is measured by two values on the character sheet: **experience level** and **experience points**. Only player characters have them.
 
-## Poziom doświadczenia
+## Experience level
 
-Postać zaczyna grę na zerowym poziomie doświadczenia. Wyjątkiem jest postać, która już na początku ma za sobą bogate doświadczenie, np. stary, doświadczony mag. Taka postać może zacząć na wyższym poziomie, np. siódmym. Poziom startowy ustala MG razem z graczem przy tworzeniu postaci i musi on wynikać z historii postaci. Scenariusz albo setting może wskazać poziom startowy, np. scenariusz przeznaczony dla doświadczonych postaci.
+A character starts play at experience level zero. The exception is a character who already has rich experience behind them at the start, e.g. an old, seasoned mage. Such a character can start at a higher level, e.g. seventh. The GM sets the starting level together with the player at character creation, and it must follow from the character's background. A scenario or setting can specify a starting level, e.g. a scenario intended for experienced characters.
 
-Każdy poziom doświadczenia daje postaci 1 bazowy Punkt Determinacji i podnosi o 1 górny limit bazowych PDT. Postać bez zalet i wad ma więc 10 + poziom bazowych PDT, a jej bazowe PDT musi się mieścić w zakresie od 5 do 15 + poziom. Dolny limit się nie zmienia.
+Each experience level gives the character 1 base Determination Point and raises the cap on base DP by 1. A character without advantages and disadvantages therefore has 10 + level base DP, and their base DP must be in the range from 5 to 15 + level. The lower limit does not change.
 
-## Awans
+## Advancement
 
-Przejście na poziom *n* kosztuje *n* × 500 punktów doświadczenia: awans na 1 poziom kosztuje 500 punktów, a każdy następny o 500 więcej, np. awans z 7 na 8 poziom kosztuje 4000 punktów.
+Reaching level *n* costs *n* × 500 experience points: advancing to level 1 costs 500 points, and each next level 500 more, e.g. advancing from level 7 to 8 costs 4000 points.
 
-| Poziom | Koszt awansu | Łącznie od poziomu 0 | Bazowe PDT bez cech | Zakres bazowych PDT |
-|--------|--------------|----------------------|---------------------|---------------------|
-| 0      | —            | —                    | 10                  | 5–15                |
-| 1      | 500          | 500                  | 11                  | 5–16                |
-| 2      | 1000         | 1500                 | 12                  | 5–17                |
-| 3      | 1500         | 3000                 | 13                  | 5–18                |
-| 4      | 2000         | 5000                 | 14                  | 5–19                |
-| 5      | 2500         | 7500                 | 15                  | 5–20                |
-| 6      | 3000         | 10500                | 16                  | 5–21                |
-| 7      | 3500         | 14000                | 17                  | 5–22                |
-| 8      | 4000         | 18000                | 18                  | 5–23                |
-| 9      | 4500         | 22500                | 19                  | 5–24                |
-| 10     | 5000         | 27500                | 20                  | 5–25                |
+| Level | Advancement cost | Total from level 0 | Base DP without traits | Base DP range |
+|-------|------------------|--------------------|------------------------|---------------|
+| 0     | —                | —                  | 10                     | 5–15          |
+| 1     | 500              | 500                | 11                     | 5–16          |
+| 2     | 1000             | 1500               | 12                     | 5–17          |
+| 3     | 1500             | 3000               | 13                     | 5–18          |
+| 4     | 2000             | 5000               | 14                     | 5–19          |
+| 5     | 2500             | 7500               | 15                     | 5–20          |
+| 6     | 3000             | 10500              | 16                     | 5–21          |
+| 7     | 3500             | 14000              | 17                     | 5–22          |
+| 8     | 4000             | 18000              | 18                     | 5–23          |
+| 9     | 4500             | 22500              | 19                     | 5–24          |
+| 10    | 5000             | 27500              | 20                     | 5–25          |
 
-Punkty doświadczenia wydaje się jak walutę. Gdy postać ma dość punktów, gracz może awansować ją na następny poziom: odejmuje koszt awansu od zebranych punktów, a reszta zostaje na kolejne awanse. Awansuje się zawsze o jeden poziom, ale postać, która ma dość punktów, może awansować kilka razy z rzędu, płacąc za każdy poziom osobno.
+Experience points are spent like currency. When the character has enough points, the player can advance them to the next level: subtract the advancement cost from the points collected, and the rest remains for further advancement. Advancement is always by one level, but a character with enough points can advance several times in a row, paying for each level separately.
 
-Postać może awansować w dowolnej chwili, jeśli ma dość punktów doświadczenia. MG przyznaje je jednak dopiero po rozegraniu scenariusza, a nie w jego trakcie (zob. *Przyznawanie punktów doświadczenia*), więc w praktyce postać awansuje zwykle na koniec scenariusza albo na początku następnego.
+A character can advance at any moment if they have enough experience points. The GM, however, awards them only after the scenario has been played, not during it (see *Awarding experience points*), so in practice a character usually advances at the end of a scenario or at the start of the next one.
 
-Przy awansie bazowe PDT, bieżące PDT i górny limit bazowych PDT rosną o 1. MG zapisuje nowy poziom, pozostałe punkty doświadczenia i nowe PDT na karcie postaci.
+On advancement base DP, current DP and the cap on base DP rise by 1. The GM writes the new level, the remaining experience points and the new DP on the character sheet.
 
-Gerald jest na 3 poziomie doświadczenia i ma 2300 punktów doświadczenia. Przejście na 4 poziom kosztuje 4 × 500 = 2000 punktów, więc Gerald może awansować. Wydaje 2000 punktów i jest teraz na 4 poziomie z 2300 − 2000 = 300 punktami doświadczenia. Do 5 poziomu, który kosztuje 5 × 500 = 2500 punktów, brakuje mu 2200.
+Gerald is at experience level 3 and has 2300 experience points. Reaching level 4 costs 4 × 500 = 2000 points, so Gerald can advance. He spends 2000 points and is now at level 4 with 2300 − 2000 = 300 experience points. He is 2200 short of level 5, which costs 5 × 500 = 2500 points.
 
-Gerald jest na zerowym poziomie doświadczenia i ma 12 bazowych PDT, a zakres bazowych PDT wynosi 5–15. Awansuje na 1 poziom. Ma teraz 13 bazowych PDT, a zakres bazowych PDT wynosi 5–16.
+Gerald is at experience level zero and has 12 base DP, and his base DP range is 5–15. He advances to level 1. He now has 13 base DP, and his base DP range is 5–16.
 
-## Przyznawanie punktów doświadczenia
+## Awarding experience points
 
-MG przyznaje punkty doświadczenia na koniec scenariusza. Za co i ile, określa scenariusz. Nagroda może dotyczyć konkretnego dokonania, np. pokonania określonego wroga, uratowania kogoś, rozwiązania zagadki, uniknięcia pułapki albo wydostania się z oblężenia, albo dokonań powtarzalnych, np. każdego zabitego zombie.
+The GM awards experience points at the end of a scenario. The scenario sets what for and how many. A reward can concern a specific achievement, e.g. defeating a particular enemy, saving someone, solving a puzzle, avoiding a trap or breaking out of a siege, or repeatable achievements, e.g. every zombie killed.
 
-Za dokonanie, którego scenariusz nie przewiduje, MG sam ocenia, czy przyznać punkty doświadczenia i ile, kierując się nagrodami, które scenariusz daje za podobne dokonania. Jeśli scenariusz w ogóle nie określa nagród, ustala je MG.
+For an achievement the scenario does not foresee, the GM judges whether to award experience points and how many, guided by the rewards the scenario gives for similar achievements. If the scenario sets no rewards at all, the GM sets them.
 
-Scenariusz opisuje nagrody zwykle w osobnym pliku `ExperienceRewards.md` w swoim folderze, bo są potrzebne dopiero na koniec scenariusza.
+A scenario usually describes its rewards in a separate file `ExperienceRewards.md` in its folder, because they are needed only at the end of the scenario.
 
-Przyznając punkty, MG podaje graczowi ich sumę i wymienia dokonania, za które je przyznał. Nie zdradza jednak tajemnic, których postać nie odkryła, np. pułapki, którą ominęła, nie wiedząc o niej. Punkty za takie dokonania podaje łącznie, bez wyjaśnienia. Przyznane punkty i dokonania, które gracz poznał, MG zapisuje w postępie scenariusza w folderze kampanii, a nowy stan punktów na karcie postaci (zob. *Kampanie* w `AGENTS.md`).
+When awarding points, the GM tells the player their total and lists the achievements they were awarded for. The GM does not, however, reveal secrets the character has not discovered, e.g. a trap they avoided without knowing about it. Points for such achievements are given as a lump sum, without explanation. The GM records the points awarded and the achievements the player has learned of in the scenario progress in the campaign folder, and the new point total on the character sheet (see *Kampanie* in `AGENTS.md`).
 
-### Rozmiar scenariusza
+### Scenario size
 
-Wysokość nagród zależy od rozmiaru scenariusza. Orientacyjne wartości podaje tabela dla pełnego sukcesu, czyli dla postaci, która zrobiła wszystko, co przewiduje fabuła scenariusza, i dostaje najwięcej punktów, jakie scenariusz daje. Nagrody za dokonania powtarzalne liczy się do limitu, który ustala scenariusz, np. za najwyżej 10 zabitych zombie.
+The size of rewards depends on the size of the scenario. The table gives rough values for full success, i.e. for a character who did everything the scenario's plot foresees and gets the most points the scenario gives. Rewards for repeatable achievements count up to a limit set by the scenario, e.g. for at most 10 zombies killed.
 
-| Rozmiar    | Czas gry     | Przykład                                                                                        | Pełny sukces |
-|------------|--------------|-------------------------------------------------------------------------------------------------|--------------|
-| mikro      | do 1 godziny | krótka historia, jedno miejsce z 3–4 pomieszczeniami, 2–3 postacie MG                           | ok. 250      |
-| mini       | ok. 2 godzin | krótka historia, jedno miejsce z 6–8 pomieszczeniami, 4–8 postaci MG                            | ok. 500      |
-| przeciętny | ok. 4 godzin | rozbudowana historia, kilka miejsc, w tym jedno wielopoziomowe z co najmniej 10 pomieszczeniami | ok. 1000     |
-| duży       | do 6 godzin  | bez ograniczeń                                                                                  | ok. 2000     |
+| Size    | Play time     | Example                                                                              | Full success |
+|---------|---------------|--------------------------------------------------------------------------------------|--------------|
+| micro   | up to 1 hour  | a short story, one place with 3–4 rooms, 2–3 GM characters                           | about 250    |
+| mini    | about 2 hours | a short story, one place with 6–8 rooms, 4–8 GM characters                           | about 500    |
+| medium  | about 4 hours | an elaborate story, several places, including one multi-level with at least 10 rooms | about 1000   |
+| large   | up to 6 hours | no limits                                                                            | about 2000   |
 
-Rozmiar wyznacza przede wszystkim czas gry, a liczby pomieszczeń i postaci MG są tylko przykładem. Miejscem mogą być np. podziemia, budynek albo statek kosmiczny. Dłuższe kampanie dzieli się na scenariusze tych rozmiarów.
+Size is set mainly by play time, and the numbers of rooms and GM characters are only examples. A place can be e.g. a dungeon, a building or a spaceship. Longer campaigns are split into scenarios of these sizes.
 
-Nagrody nie zależą od trudności scenariusza ani od poziomu doświadczenia postaci. Scenariusz jest zbalansowany pod poziom postaci, dla których jest przeznaczony, więc nie ma scenariuszy wyjątkowo zabójczych, za które należałaby się premia. Scenariusz podaje swój rozmiar i poziom albo zakres poziomów doświadczenia postaci, dla których jest przeznaczony. Postać, która gra scenariusz przeznaczony dla niższego poziomu, dostaje tyle samo punktów, ale łatwiej jej je zdobyć.
+Rewards do not depend on the scenario's difficulty or on the character's experience level. A scenario is balanced for the level of the characters it is intended for, so there are no exceptionally deadly scenarios that would deserve a bonus. A scenario states its size and the experience level or range of levels of the characters it is intended for. A character who plays a scenario intended for a lower level gets the same number of points, but earns them more easily.
 
-Koszt awansu rośnie z każdym poziomem, więc postać awansuje coraz wolniej. Przy pełnych sukcesach postać zdobywa około 250 punktów na godzinę gry, czyli dochodzi do poziomu *n* po mniej więcej *n* × (*n* + 1) godzinach gry.
+The advancement cost grows with each level, so the character advances more and more slowly. With full successes a character earns about 250 points per hour of play, i.e. reaches level *n* after roughly *n* × (*n* + 1) hours of play.
 
-## Przykład
+## Example
 
-> Najemniczka wydostaje się ze stacji orbitalnej opanowanej przez zbuntowane roboty. Wyprowadza z niej rannego technika, po drodze niszczy cztery roboty bojowe, a z przemytnikami, którzy zajęli hangar, dogaduje się bez walki.
+> A mercenary escapes from an orbital station taken over by rebel robots. She leads a wounded technician out, destroys four combat robots on the way, and strikes a deal without a fight with the smugglers who have taken the hangar.
 
-Scenariusz przewiduje 150 punktów doświadczenia za wydostanie się ze stacji, 100 za uratowanie technika, 20 za każdy zniszczony robot bojowy i 100 za wyłączenie reaktora. Najemniczka reaktora nie wyłączyła. Scenariusz nie przewiduje nagrody za układ z przemytnikami, ale MG uznaje go za dokonanie i przyznaje za nie 50 punktów. Najemniczka dostaje 150 + 100 + 4 × 20 + 50 = 380 punktów doświadczenia.
+The scenario foresees 150 experience points for escaping the station, 100 for saving the technician, 20 for each combat robot destroyed and 100 for shutting down the reactor. The mercenary did not shut down the reactor. The scenario foresees no reward for the deal with the smugglers, but the GM counts it as an achievement and awards 50 points for it. The mercenary gets 150 + 100 + 4 × 20 + 50 = 380 experience points.
 
-Najemniczka jest na zerowym poziomie doświadczenia i miała już 300 punktów, więc ma teraz 680. Awansuje na 1 poziom za 500 punktów i zostaje jej 180. Jej bazowe PDT rośnie z 11 do 12, a zakres bazowych PDT wynosi teraz 5–16.
+The mercenary is at experience level zero and already had 300 points, so she now has 680. She advances to level 1 for 500 points and has 180 left. Her base DP rises from 11 to 12, and her base DP range is now 5–16.

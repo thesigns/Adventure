@@ -6,8 +6,8 @@
 
 ## Character magic
 
-- A caster's power is an advantage granting a supernatural ability (see *Zdolności nadprzyrodzone* in `Rules/Traits.md`), usually −2 to −5 PDT depending on strength and how often it matters. The profession alone gives lore and rituals, not power.
-- A character starts with one or two such abilities. A new one can be gained as a new advantage (see *Zmiany cech w trakcie gry* in `Rules/Traits.md`).
+- A caster's power is an advantage granting a supernatural ability (see *Supernatural abilities* in `Rules/Traits.md`), usually −2 to −5 PDT depending on strength and how often it matters. The profession alone gives lore and rituals, not power.
+- A character starts with one or two such abilities. A new one can be gained as a new advantage (see *Trait changes during play* in `Rules/Traits.md`).
 - **Casting** takes a round in combat. Heavy wounds that stun make it harder, and arcane spells need free hands and voice.
 - **Uncertain outcome:** each casting is a roll with a table, usually average difficulty. On the lowest results the spell fizzles, misfires or hits the wrong target.
 - A cleric who betrays their god's domain loses power until atonement.
@@ -16,7 +16,7 @@
 
 | Ability           | Tradition | Effect                                                                 | Uses           |
 |-------------------|-----------|------------------------------------------------------------------------|----------------|
-| firebolt          | arcane    | ranged attack, typical wound rana, sets flammables alight              | once per scene |
+| firebolt          | arcane    | ranged attack dealing a medium wound, sets flammables alight           | once per scene |
 | light             | arcane    | an object glows like a torch for an hour                               | at will        |
 | magic shield      | arcane    | combat against the caster is one level harder for the enemy, one fight | once per day   |
 | sleep             | arcane    | one or two weak or average enemies fall asleep for a few minutes       | once per day   |

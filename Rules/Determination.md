@@ -1,47 +1,47 @@
-# Punkty Determinacji
+# Determination Points
 
-Punkty Determinacji (PDT) to wysiłek, upór i szczęście, które postać gracza może włożyć w ważne dla siebie działanie. Mają je tylko postacie graczy.
+Determination Points (DP) are the effort, persistence and luck the player character can put into an action that matters to them. Only player characters have them.
 
-## Pula
+## Pool
 
-Pulę wyznacza bazowa liczba Punktów Determinacji, która wynosi od 5 do 15 + poziom doświadczenia postaci. Ustala się ją przy tworzeniu postaci na podstawie jej zalet, wad i poziomu doświadczenia (zob. `Rules/CharacterCreation.md`), a każdy awans podnosi ją o 1 (zob. *Awans* w `Rules/Experience.md`).
+The pool is set by the base number of Determination Points, which ranges from 5 to 15 + the character's experience level. It is set at character creation based on the character's advantages, disadvantages and experience level (see `Rules/CharacterCreation.md`), and each advancement raises it by 1 (see *Advancement* in `Rules/Experience.md`).
 
-## Wydawanie
+## Spending
 
-Gracz może wydać Punkty Determinacji tylko na rzut, którego tablicę widzi przed rzutem (zob. *Decyzja gracza* w `Rules/StandardThrow.md`). Decyduje o tym po zobaczeniu tablicy i przed rzutem. Może wydać dowolną liczbę punktów, jaka mu pozostała.
+The player can spend Determination Points only on a roll whose table they see before the roll (see *Player's decision* in `Rules/StandardThrow.md`). They decide after seeing the table and before the roll. They can spend any number of points they have left.
 
-Za każdy wydany punkt MG rzuca jedną kością więcej: przy 1 PDT rzuca 4K6, przy 2 PDT 5K6 i tak dalej. Najsłabsze wyniki odrzuca, tak żeby zostały trzy kości, i je sumuje. Suma jest wynikiem rzutu, który odczytuje się z tablicy jak zwykle. Wynik wciąż mieści się w zakresie od 3 do 18.
+For every point spent the GM rolls one more die: with 1 DP 4d6, with 2 DP 5d6 and so on. The GM drops the lowest results so that three dice remain and adds them up. The total is the result of the roll, read from the table as usual. The result still ranges from 3 to 18.
 
-Wydane punkty przepadają bez względu na wynik rzutu. Raz ogłoszonej liczby wydanych punktów nie zmienia się po rzucie.
+Points spent are lost whatever the result. Once announced, the number of points spent is not changed after the roll.
 
-## Odnawianie
+## Refreshing
 
-Pula odnawia się do pełna po porządnym wypoczynku, czyli po przespanej nocy (około 8 godzin snu) w bezpiecznym miejscu albo po całym dniu odpoczynku, ale najwyżej raz na dobę. Krótka drzemka, sen przerywany alarmami czy noc na warcie w zimnie nie odnawiają puli. Niewydane punkty nie przechodzą na kolejny dzień ponad pełną pulę.
+The pool refreshes to full after proper rest, i.e. after a night's sleep (about 8 hours) in a safe place or after a whole day of rest, but at most once a day. A short nap, sleep broken by alarms or a night on watch in the cold do not refresh the pool. Unspent points do not carry over to the next day beyond the full pool.
 
-MG śledzi pulę postaci i podaje graczowi, ile punktów mu zostało, za każdym razem, gdy pokazuje mu tablicę przed rzutem.
+The GM tracks the character's pool and tells the player how many points they have left every time they show them a table before a roll.
 
-Orientacyjnie, jak Punkty Determinacji zmieniają szansę na sukces:
+Roughly how Determination Points change the chance of success:
 
-| Trudność                | Bez PDT | 1 PDT | 2 PDT | 3 PDT | 4 PDT |
-|-------------------------|---------|-------|-------|-------|-------|
-| łatwe (6+)              | 95%     | 99%   | 100%  | 100%  | 100%  |
-| przeciętne (9+)         | 74%     | 90%   | 96%   | 98%   | 99%   |
-| trudne (11+)            | 50%     | 73%   | 86%   | 93%   | 96%   |
-| bardzo trudne (13+)     | 26%     | 49%   | 66%   | 78%   | 86%   |
-| prawie niemożliwe (16+) | 5%      | 13%   | 23%   | 34%   | 45%   |
+| Difficulty              | No DP | 1 DP | 2 DP | 3 DP | 4 DP |
+|-------------------------|-------|------|------|------|------|
+| easy (6+)               | 95%   | 99%  | 100% | 100% | 100% |
+| average (9+)            | 74%   | 90%  | 96%  | 98%  | 99%  |
+| hard (11+)              | 50%   | 73%  | 86%  | 93%  | 96%  |
+| very hard (13+)         | 26%   | 49%  | 66%  | 78%  | 86%  |
+| nearly impossible (16+) | 5%    | 13%  | 23%  | 34%  | 45%  |
 
-## Przykład
+## Example
 
-> Zwinny elf, postać gracza, wspina się nocą po linie na mur świątyni, a pod murem krążą strażnicy.
+> A nimble elf, the player character, climbs a rope up a temple wall at night, while guards patrol below.
 
-MG ocenia szansę upadku jako niewielką, a zauważenia jako średnią. Elf widzi straże i może zrezygnować, więc MG pokazuje tablicę i nie rzuca:
+The GM judges the chance of falling as small and of being noticed as moderate. The elf sees the guards and can give up, so the GM shows the table and does not roll:
 
-| Wynik | Rezultat                              |
-|-------|---------------------------------------|
-| 3     | upadek z dużej wysokości, ciężka rana |
-| 4     | upadek, rana                          |
-| 5–6   | upadek, lekka rana                    |
-| 7–11  | elf wspina się, ale ktoś go zauważa   |
-| 12–18 | elf wspina się niezauważony           |
+| Result | Outcome                                  |
+|--------|------------------------------------------|
+| 3      | falls from a great height, serious wound |
+| 4      | falls, medium wound                      |
+| 5–6    | falls, light wound                       |
+| 7–11   | the elf climbs, but someone notices him  |
+| 12–18  | the elf climbs unnoticed                 |
 
-Gracz ma jeszcze 7 PDT z 10. Bez nich szansa na niezauważone wejście wynosi około 38%, więc gracz wydaje 2 PDT. MG rzuca 5K6 i wypada 5, 6, 2, 1, 2. Dwa najsłabsze wyniki (1 i 2) odpadają, a reszta daje 6 + 5 + 2 = 13: elf wspina się niezauważony. Zostaje mu 5 PDT do następnego porządnego wypoczynku.
+The player has 7 DP left out of 10. Without them the chance of getting up unnoticed is about 38%, so the player spends 2 DP. The GM rolls 5d6 and gets 5, 6, 2, 1, 2. The two lowest results (1 and 2) are dropped, and the rest gives 6 + 5 + 2 = 13: the elf climbs unnoticed. The elf has 5 DP left until the next proper rest.

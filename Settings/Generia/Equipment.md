@@ -24,20 +24,20 @@
 
 ## Weapons
 
-Wound range from the lightest to the heaviest a weapon can inflict, typical wound in brackets (see *Rany w walce* in `Rules/Combat.md`).
+Wound range from the lightest to the heaviest a weapon can inflict, typical wound in brackets (see *Wounds in combat* in `Rules/Combat.md`).
 
-| Weapon                                 | Wounds                               |
-|----------------------------------------|--------------------------------------|
-| fist, kick                             | draśnięcie                           |
-| dagger, club, sling                    | draśnięcie – rana (lekka rana)       |
-| sword, axe, mace, spear, bow, crossbow | lekka rana – ciężka rana (rana)      |
-| two-handed sword, greataxe, warhammer  | rana – cios śmiertelny (ciężka rana) |
+| Weapon                                 | Wounds                                     |
+|----------------------------------------|--------------------------------------------|
+| fist, kick                             | scratch                                    |
+| dagger, club, sling                    | scratch – medium wound (light wound)       |
+| sword, axe, mace, spear, bow, crossbow | light wound – serious wound (medium wound) |
+| two-handed sword, greataxe, warhammer  | medium wound – mortal blow (serious wound) |
 
 ## Armour
 
-- **lekki:** leather, padded jack.
-- **średni:** chain mail, scale, brigandine.
-- **ciężki:** full plate.
+- **light:** leather, padded jack.
+- **medium:** chain mail, scale, brigandine.
+- **heavy:** full plate.
 - Shield and helmet as in `Rules/Equipment.md`.
 
 ## Light

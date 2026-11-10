@@ -1,38 +1,38 @@
-# Cechy (zalety i wady)
+# Traits (advantages and disadvantages)
 
-Zaleta to cecha, która wyróżnia postać na tle przeciętnego przedstawiciela jej gatunku i profesji. Może działać na dwa sposoby:
+An advantage is a trait that sets the character apart from an average member of their species and profession. It can work in two ways:
 
-- **ułatwia o jeden poziom** działania ze swojej dziedziny, np. *akrobata* wspinaczkę i skoki, a *bystre oko* wypatrywanie i strzelanie z łuku,
-- **umożliwia działania**, które bez niej byłyby niemożliwe, np. *poliglota* czyta starożytne zwoje.
+- **makes actions in its field one level easier**, e.g. *acrobat* climbing and jumping, and *keen eye* spotting and archery,
+- **makes actions possible** that would be impossible without it, e.g. *polyglot* reads ancient scrolls.
 
-Wada działa odwrotnie. Utrudnia o jeden poziom działania ze swojej dziedziny (*lęk wysokości* wspinaczkę) albo wyklucza działania, które bez niej byłyby możliwe (*ślepota* czytanie listów).
+A disadvantage works the other way. It makes actions in its field one level harder (*fear of heights* climbing) or rules out actions that would otherwise be possible (*blindness* reading letters).
 
-Umiejętności i słabości typowe dla wieku, płci, gatunku i profesji postaci nie są zaletami ani wadami, bo są już zawarte w punkcie odniesienia (zob. *Okoliczności* w `Rules/StandardThrow.md`). Cechy wycenione jako nieistotne (0 PDT) nie mają skutków w grze, ale zapisuje się je na karcie postaci jako koloryt.
+Skills and weaknesses typical of the character's age, sex, species and profession are neither advantages nor disadvantages, because they are already part of the reference point (see *Circumstances* in `Rules/StandardThrow.md`). Traits priced as insignificant (0 DP) have no effect in play, but are written on the character sheet as colour.
 
-Zalety i wady wybiera się przy tworzeniu postaci. Wpływają one na bazową liczbę Punktów Determinacji (zob. `Rules/CharacterCreation.md`).
+Advantages and disadvantages are chosen at character creation. They affect the base number of Determination Points (see `Rules/CharacterCreation.md`).
 
-## Zdolności nadprzyrodzone
+## Supernatural abilities
 
-Zaleta może dawać zdolność nadprzyrodzoną, np. czar, znak, modlitwę albo wszczep, jeśli świat na to pozwala. Taka zdolność umożliwia działania, które bez niej byłyby niemożliwe. Wyceniając ją, MG ustala razem z graczem:
+An advantage can grant a supernatural ability, e.g. a spell, a sign, a prayer or an implant, if the world allows it. Such an ability makes possible actions that would be impossible without it. When pricing it, the GM sets together with the player:
 
-- **skutek:** co zdolność robi, np. przewraca jednego przeciwnika albo zmniejsza ranę o stopień,
-- **ograniczenia:** czego nie robi i na kogo działa słabiej albo wcale,
-- **limit użyć:** raz na scenę, raz na walkę, raz na dobę albo inny, zgodny ze światem.
+- **effect:** what the ability does, e.g. knocks down one enemy or reduces a wound by a step,
+- **limits:** what it does not do and whom it affects less or not at all,
+- **uses:** once per scene, once per fight, once per day or another limit fitting the world.
 
-Scena to ciągła sytuacja w jednym miejscu, np. walka, rozmowa albo przeszukanie pomieszczenia. Kończy się, gdy postać przejdzie w inne miejsce albo minie dłuższy czas, orientacyjnie kwadrans. Walka z kolejnym przeciwnikiem, która zaczyna się w tym samym miejscu zaraz po poprzedniej, należy do tej samej sceny.
+A scene is a continuous situation in one place, e.g. a fight, a conversation or searching a room. It ends when the character moves to another place or a longer time passes, roughly a quarter of an hour. A fight with another enemy that starts in the same place right after the previous one belongs to the same scene.
 
-Jeśli skutek użycia jest niepewny, np. przeciwnik może się oprzeć, MG rozstrzyga go w tablicy rezultatów. Skutek, ograniczenia i limit użyć MG zapisuje na karcie postaci.
+If the effect of a use is uncertain, e.g. the enemy can resist, the GM resolves it in an outcome table. The GM writes the effect, limits and uses on the character sheet.
 
-MG regularnie wprowadza wady postaci do gry: układa sytuacje tak, żeby wady miały znaczenie mniej więcej tak często, jak zakładała ich wycena. Wada, która nigdy nie zadziała, byłaby darmowymi punktami.
+The GM regularly brings the character's disadvantages into play: they arrange situations so that disadvantages matter about as often as their price assumed. A disadvantage that never comes into play would be free points.
 
-## Zmiany cech w trakcie gry
+## Trait changes during play
 
-Postać może zyskać albo stracić zaletę lub wadę, ale zdarza się to bardzo rzadko i musi wynikać z wydarzeń przygody, np. z trwałego urazu (zob. *Urazy* w `Rules/Health.md`), z potężnej magii albo z wyjątkowego dokonania postaci.
+A character can gain or lose an advantage or disadvantage, but this happens very rarely and must follow from the events of the adventure, e.g. from a permanent injury (see *Injuries* in `Rules/Health.md`), powerful magic or an exceptional achievement of the character.
 
-Bazowe PDT zmienia się wtedy tak, jak przy tworzeniu postaci: nowa zaleta je zmniejsza, a nowa wada zwiększa o swoją wagę. Utrata cechy działa odwrotnie. Wagę nowej cechy MG ustala według tych samych zasad co przy tworzeniu postaci (zob. `Rules/CharacterCreation.md`).
+Base DP then changes as at character creation: a new advantage lowers it, and a new disadvantage raises it by its weight. Losing a trait works the other way. The GM sets the weight of a new trait by the same rules as at character creation (see `Rules/CharacterCreation.md`).
 
-Po zmianie bazowe PDT nadal musi mieścić się w zakresie od 5 do górnego limitu, który wynosi 15 + poziom doświadczenia (zob. `Rules/Experience.md`). Jeśli spadłoby poniżej 5, zmiana jest niemożliwa, chyba że MG i gracz uzgodnią trwały koszt w postaci nowej wady, która przywróci równowagę. Jeśli wada, której postać nie mogła uniknąć (np. trwały uraz), podniosłaby bazowe PDT powyżej górnego limitu, bazowe PDT równa się górnemu limitowi, a nadwyżka przepada.
+After the change, base DP must still be in the range from 5 to the cap, which is 15 + experience level (see `Rules/Experience.md`). If it would drop below 5, the change is impossible, unless the GM and the player agree on a lasting cost in the form of a new disadvantage that restores the balance. If a disadvantage the character could not avoid (e.g. a permanent injury) would raise base DP above the cap, base DP equals the cap and the excess is lost.
 
-> Randuvil zdobywa ogromną sumę pieniędzy i opłaca potężny czar, który leczy jego kulawiznę.
+> Randuvil comes into an enormous sum of money and pays for a powerful spell that heals his limp.
 
-Randuvil miał 14 bazowych PDT. Traci wadę wartą 3 PDT, więc ma teraz 14 − 3 = 11 bazowych PDT. Gdyby miał tylko 7 bazowych PDT, wyleczenie dałoby 4, więc byłoby niemożliwe, chyba że czar zostawiłby trwały ślad: np. siwe włosy i drżące dłonie, które utrudniają precyzyjne prace, wycenione na co najmniej 1 PDT.
+Randuvil had 14 base DP. He loses a disadvantage worth 3 DP, so he now has 14 − 3 = 11 base DP. Had he had only 7 base DP, the healing would give 4, so it would be impossible, unless the spell left a lasting mark: e.g. grey hair and trembling hands that make precise work harder, priced at at least 1 DP.

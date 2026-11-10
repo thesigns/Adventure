@@ -1,176 +1,176 @@
-# Walka
+# Combat
 
-## Taktyka
+## Tactics
 
-Przed walką gracz opisuje **taktykę** postaci, czyli jak postać walczy, np. „rąbię go mieczem”, „strzelam zza wozu” albo „próbuję go rozbroić i pojmać żywcem”. Jeśli gracz jej nie określi, MG o nią pyta.
+Before combat the player describes the character's **tactics**, i.e. how the character fights, e.g. "I hack at him with my sword", "I shoot from behind the wagon" or "I try to disarm him and take him alive". If the player does not set them, the GM asks.
 
-Taktyka wyznacza, jakie skutki mogą się znaleźć w tablicy rundy. Postać, która chce pojmać przeciwnika żywcem, nie zabija go przypadkiem, a postać, która strzela zza osłony, trudniej trafić.
+Tactics determine which outcomes can appear in the round table. A character who wants to take an enemy alive does not kill them by accident, and a character shooting from cover is harder to hit.
 
-Po każdej rundzie MG opisuje przebieg walki, a gracz może na tej podstawie zmienić taktykę, uciec, poddać się albo zrobić coś innego (zob. *Między rundami*). Postać nie ucieka ani nie poddaje się sama w trakcie rundy: o tym gracz decyduje między rundami.
+After every round the GM describes the course of the fight, and based on that the player can change tactics, flee, surrender or do something else (see *Between rounds*). The character does not flee or surrender on their own during a round: the player decides that between rounds.
 
-## Rundy
+## Rounds
 
-Walka toczy się w **rundach**. Runda to krótka wymiana ciosów rozstrzygana jednym rzutem z własną tablicą rezultatów. Trwa około 10 sekund, więc sześć rund to mniej więcej minuta. MG uwzględnia to, śledząc upływ czasu, np. ile pali się pochodnia albo kiedy nadejdzie pomoc. Walka trwa, dopóki się nie rozstrzygnie: jedna ze stron ginie, pada w agonii, ucieka albo się poddaje, albo dzieje się coś innego, co kończy walkę (nadchodzi pomoc, przeciwnik zostaje odpędzony).
+Combat is fought in **rounds**. A round is a short exchange of blows resolved with one roll with its own outcome table. It lasts about 10 seconds, so six rounds are about a minute. The GM takes this into account when tracking the passage of time, e.g. how long a torch burns or when help arrives. The fight goes on until it is decided: one side dies, falls dying, flees or surrenders, or something else ends the fight (help arrives, the enemy is driven off).
 
-Przed każdą rundą MG pokazuje graczowi tablicę, a gracz decyduje, ile Punktów Determinacji wydaje na tę rundę (zob. *Decyzja gracza* w `Rules/StandardThrow.md`). Przed pierwszą rundą, jeśli postać może się jeszcze wycofać, gracz może też zmienić taktykę albo zrezygnować z walki.
+Before every round the GM shows the player the table, and the player decides how many Determination Points to spend on that round (see *Player's decision* in `Rules/StandardThrow.md`). Before the first round, if the character can still back out, the player can also change tactics or decline the fight.
 
-Tablica rundy opisuje skutki dla obu stron: na niskich wynikach przeciwnik rani postać, na wysokich postać rani przeciwnika, a pomiędzy jest wymiana bez rozstrzygnięcia. Pas bez rozstrzygnięcia jest wąski, żeby walka nie ciągnęła się bez końca. Rany zadane w rundzie od razu zmieniają zranienie obu stron, a więc i trudność następnej rundy.
+The round table describes the consequences for both sides: on low results the enemy wounds the character, on high results the character wounds the enemy, and in between there is an exchange with no result. The no-result band is narrow, so that the fight does not drag on forever. Wounds dealt in a round change the wound level of both sides at once, and so the difficulty of the next round.
 
-MG zna zranienie przeciwnika przed rzutem, więc wpisuje w tablicę skutki wprost: „bandyta pada”, „bandyta ucieka ranny”.
+The GM knows the enemy's wound level before the roll, so they write outcomes into the table directly: "the bandit falls", "the bandit flees wounded".
 
-Walkę z wyraźnymi etapami (np. potyczka ze strażą, po której nadchodzi jej dowódca) MG może podzielić na kilka osobnych walk.
+A fight with clear stages (e.g. a skirmish with guards, after which their captain arrives) can be split by the GM into several separate fights.
 
-## Między rundami
+## Between rounds
 
-Po rundzie, która nie zakończyła walki, MG opisuje sytuację, także stan przeciwnika, a gracz decyduje, co dalej. Może:
+After a round that did not end the fight, the GM describes the situation, including the enemy's state, and the player decides what next. They can:
 
-- walczyć dalej tak samo,
-- zmienić taktykę, np. odpędzać zwierzę pochodnią zamiast rąbać je mieczem albo wycofać się za osłonę,
-- zrobić coś innego niż walka: uciec, poddać się, wypić miksturę, pomodlić się, zawołać o pomoc.
+- keep fighting the same way,
+- change tactics, e.g. drive an animal off with a torch instead of hacking at it with a sword, or fall back behind cover,
+- do something other than fighting: flee, surrender, drink a potion, pray, call for help.
 
-MG układa tablicę następnej rundy zgodnie z decyzją gracza. Działanie inne niż walka zajmuje rundę: jego tablica opisuje, czy się udało i czy przeciwnik w tym czasie zranił postać. Poddanie się kończy walkę bez rzutu, chyba że reakcja przeciwnika jest niepewna.
+The GM sets up the table for the next round according to the player's decision. An action other than fighting takes a round: its table describes whether it worked and whether the enemy wounded the character meanwhile. Surrender ends the fight without a roll, unless the enemy's reaction is uncertain.
 
-Postać w agonii nie walczy dalej. Co dzieje się z nią potem, zależy od przeciwnika (zob. *Koniec walki*).
+A dying character fights no more. What happens to them next depends on the enemy (see *End of combat*).
 
-## Seria rund
+## Series of rounds
 
-Gdy kolejne rundy mają tę samą tablicę, bo gracz walczy dalej tak samo, wydaje na każdą rundę tyle samo Punktów Determinacji, a zranienie żadnej ze stron nie zmienia trudności, gracz może zlecić serię rund. MG pokazuje tablicę raz i rzuca całą serię jednym poleceniem skryptu z opcjami `--rundy` i `--stop` (zob. *Rzut skryptem* w `Rules/StandardThrow.md`).
+When consecutive rounds have the same table, because the player keeps fighting the same way, spends the same number of Determination Points on each round and no side's wounds change the difficulty, the player can order a series of rounds. The GM shows the table once and rolls the whole series with a single script command with the options `--rundy` and `--stop` (see *Scripted rolls* in `Rules/StandardThrow.md`).
 
-W `--stop` MG podaje wyniki, po których sytuacja się zmienia: zwykle rany postaci gracza oraz rany, po których przeciwnik pada, ucieka albo zmienia zachowanie. Jeśli przeciwnik może paść dopiero po kilku ranach, MG ustawia `--rundy` tak, żeby seria skończyła się najpóźniej w rundzie, w której mógłby paść. Seria kończy się też, gdy zmieni się okoliczność spoza tablicy, np. zgaśnie pochodnia albo nadejdzie pomoc.
+In `--stop` the GM lists the results after which the situation changes: usually wounds to the player character and wounds after which the enemy falls, flees or changes behaviour. If the enemy can fall only after several wounds, the GM sets `--rundy` so that the series ends at the latest in the round in which the enemy could fall. A series also ends when a circumstance outside the table changes, e.g. a torch goes out or help arrives.
 
-Po serii MG opisuje przebieg walki runda po rundzie, a gracz znów decyduje, co dalej (zob. *Między rundami*).
+After the series the GM describes the fight round by round, and the player again decides what next (see *Between rounds*).
 
-## Zmęczenie w walce
+## Fatigue in combat
 
-Gdy obie strony męczą się tak samo, zmęczenie nie ma znaczenia. Liczy się tylko wtedy, gdy jedna strona męczy się wyraźnie wolniej albo wcale, np. człowiek walczy z golemem, nieumarłym lub robotem.
+When both sides tire equally, fatigue does not matter. It counts only when one side tires clearly more slowly or not at all, e.g. a human fighting a golem, an undead or a robot.
 
-Strona, która się męczy, po każdych 6 rundach ciągłej walki, czyli mniej więcej po minucie, dostaje okoliczność „zmęczenie”: walka staje się dla niej trudniejsza o pół poziomu (obie wartości przesuwają się o 1, zob. *Trudność walki*). Zmęczenie się kumuluje: po 12 rundach to już poziom, a po 18 półtora. Mija po kilku minutach odpoczynku.
+The side that tires gets the circumstance "fatigue" after every 6 rounds of continuous fighting, i.e. after about a minute: the fight becomes half a level harder for them (both values move by 1, see *Combat difficulty*). Fatigue accumulates: after 12 rounds it is a level, after 18 one and a half. It passes after a few minutes of rest.
 
-Zaleta w rodzaju dobrej kondycji wydłuża ten czas do 12 rund, a wada w rodzaju astmy skraca go do 3. Reguła działa w obie strony: jeśli to postać gracza się nie męczy, zmęczenie przeciwnika ułatwia jej walkę.
+An advantage such as good stamina extends this time to 12 rounds, and a disadvantage such as asthma shortens it to 3. The rule works both ways: if it is the player character who does not tire, the enemy's fatigue makes the fight easier for them.
 
-Seria rund kończy się najpóźniej w rundzie, w której przybywa zmęczenia, bo zmienia się trudność walki (zob. *Seria rund*).
+A series of rounds ends at the latest in the round in which fatigue increases, because the difficulty of the fight changes (see *Series of rounds*).
 
-## Walka na dystans
+## Ranged combat
 
-Gdy postać gracza strzela do przeciwnika, MG ustala, co w tym czasie robi przeciwnik, zgodnie z jego naturą, uzbrojeniem i sytuacją: odpowiada ogniem (jeśli ma czym), skraca dystans, kryje się albo ucieka (jeśli ma dokąd). Na tej podstawie układa tablicę rundy. Przeciwnik, który odpowiada ogniem, może zranić postać już w tej rundzie. Przeciwnik, który biegnie ku postaci, zwykle jej jeszcze nie rani, ale na niskich wynikach dopada ją i walka przechodzi w zwarcie.
+When the player character shoots at an enemy, the GM decides what the enemy does meanwhile, according to their nature, weapons and situation: returns fire (if they can), closes the distance, takes cover or flees (if they have somewhere to go). The GM sets up the round table on that basis. An enemy who returns fire can wound the character in that very round. An enemy running at the character usually does not wound them yet, but on low results reaches them and the fight turns into melee.
 
-Gdy przeciwnik strzela do postaci gracza, a postać go widzi, MG przed ułożeniem tablicy pyta gracza, co robi postać, np. czy odpowiada ogniem, kryje się, szarżuje albo ucieka. Tablica zależy od odpowiedzi: postać, która się kryje, na wysokich wynikach dociera do osłony bez szwanku, ale nie rani przeciwnika. Jeśli postać nie widzi strzelca, np. łucznika w zasadzce, MG rzuca od razu, bez pytania (zob. *Decyzja gracza* w `Rules/StandardThrow.md`).
+When an enemy shoots at the player character and the character sees them, the GM asks the player what the character does before setting up the table, e.g. returns fire, takes cover, charges or flees. The table depends on the answer: a character taking cover reaches cover unharmed on high results, but does not wound the enemy. If the character does not see the shooter, e.g. an archer in ambush, the GM rolls at once, without asking (see *Player's decision* in `Rules/StandardThrow.md`).
 
-Im większy dystans, tym trudniej trafić: każda wyraźnie większa odległość utrudnia strzał o jeden poziom. Cel poza zasięgiem broni jest nieosiągalny, a strzał po prostu się nie udaje, bez rzutu (zob. *Kiedy rzucać* w `Rules/StandardThrow.md`). Na przykład nóż rzucony w ogra oddalonego o 200 metrów nie doleci.
+The greater the distance, the harder the hit: each clearly greater distance makes the shot one level harder. A target out of the weapon's range cannot be reached, and the shot simply fails, without a roll (see *When to roll* in `Rules/StandardThrow.md`). For example, a knife thrown at an ogre 200 metres away will not get there.
 
-Zasięg jest też okolicznością walki. Atak z dystansu na przeciwnika, który nie może odpowiedzieć tym samym, ułatwia walkę, a broń dystansowa w zwarciu ją utrudnia. Osłona utrudnia trafienie (zob. *Pancerz* w `Rules/Equipment.md`).
+Range is also a circumstance of the fight. Attacking from a distance an enemy who cannot answer in kind makes the fight easier, and a ranged weapon in melee makes it harder. Cover makes hitting harder (see *Armour* in `Rules/Equipment.md`).
 
-## Trudność walki
+## Combat difficulty
 
-Z kategorii przeciwnika (zob. *Przeciwnicy*) wynikają dwie wartości:
+The enemy's category (see *Enemies*) gives two values:
 
-- **próg trafienia:** wynik równy progowi lub wyższy oznacza, że postać rani przeciwnika,
-- **zakres rany:** wyniki z tego zakresu oznaczają, że przeciwnik rani postać.
+- **hit threshold:** a result equal to or above the threshold means the character wounds the enemy,
+- **wound range:** results in this range mean the enemy wounds the character.
 
-Okoliczności zmieniają trudność walki jak przy każdym innym działaniu (zob. *Okoliczności* w `Rules/StandardThrow.md`): o 2 punkty za każdy poziom i o 1 punkt za pół poziomu (zob. *Poziom w punktach* w `Rules/StandardThrow.md`). To, którą wartość przesuwa okoliczność, zależy od tego, czego dotyczy:
+Circumstances change combat difficulty as with any other action (see *Circumstances* in `Rules/StandardThrow.md`): by 2 points per level and by 1 point per half level (see *Levels in points* in `Rules/StandardThrow.md`). Which value a circumstance moves depends on what it concerns:
 
-- **atak postaci** przesuwa tylko próg trafienia, np. celowanie w głowę albo inny słaby punkt, broń lepsza albo gorsza niż typowa, odległość strzału, osłona i pancerz przeciwnika,
-- **obrona postaci** przesuwa tylko zakres rany, np. pancerz, tarcza i osłona postaci, broń przeciwnika lepsza albo gorsza niż typowa, broń, która zmusza postać do wpuszczenia przeciwnika blisko,
-- **cała walka** przesuwa obie wartości, np. zranienie i zmęczenie obu stron, zaskoczenie, teren, ciemność, zalety i wady dotyczące walki oraz każdy dodatkowy przeciwnik, który czyni walkę trudniejszą o jeden poziom.
+- **the character's attack** moves only the hit threshold, e.g. aiming at the head or another weak spot, a weapon better or worse than typical, shooting distance, the enemy's cover and armour,
+- **the character's defence** moves only the wound range, e.g. the character's armour, shield and cover, the enemy's weapon better or worse than typical, a weapon that forces the character to let the enemy close,
+- **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, and every additional enemy, which makes the fight one level harder.
 
-Jeśli opis okoliczności mówi po prostu, że utrudnia albo ułatwia walkę, dotyczy ona całej walki. Utrudnienie podnosi próg trafienia albo poszerza zakres rany, a ułatwienie działa odwrotnie.
+If a circumstance's description simply says it makes the fight harder or easier, it concerns the whole fight. Making it harder raises the hit threshold or widens the wound range, and making it easier works the other way.
 
-Jeśli zakres rany po przesunięciu znika, przeciwnik nie może zranić postaci. Jeśli próg trafienia przekracza 18, postać nie może zranić przeciwnika tym sposobem walki. Jeśli zakres rany sięga progu trafienia albo dalej, wyniki wspólne oznaczają, że obie strony ranią się nawzajem.
+If the wound range disappears after shifting, the enemy cannot wound the character. If the hit threshold exceeds 18, the character cannot wound the enemy with that way of fighting. If the wound range reaches the hit threshold or beyond, the shared results mean both sides wound each other.
 
-Postać celuje w głowę przeciętnego przeciwnika (próg trafienia 9, zakres rany 3–6) i jest lekko ranna. Celowanie to okoliczność ataku (+2 do progu), a rana dotyczy całej walki (+1 do obu wartości): próg trafienia 12, zakres rany 3–7.
+A lightly wounded character aims at the head of an average enemy (hit threshold 9, wound range 3–6). Aiming is a circumstance of the attack (+2 to the threshold), and the wound concerns the whole fight (+1 to both values): hit threshold 12, wound range 3–7.
 
-Okoliczność, która dotyczy tylko części walki, liczy się tylko w tych rundach, np. zaskoczenie zwykle tylko w pierwszej.
+A circumstance that concerns only part of the fight counts only in those rounds, e.g. surprise usually only in the first.
 
-## Rany w walce
+## Wounds in combat
 
-Rana zależy od dwóch stron: od tego, czym się atakuje, i od tego, kto jest celem.
+A wound depends on both sides: on what attacks and on who is the target.
 
-- **Broń albo natura atakującego:** każda broń i każdy atak mają **rozpiętość ran**, od najlżejszej rany przy słabym trafieniu do najcięższej przy najlepszym. Na przykład proca zadaje od draśnięcia do rany, miecz od draśnięcia do ciężkiej rany, a czar kula ognista od draśnięcia do zmasakrowania. Typową ranę, czyli ranę od pełnego trafienia w człowieka bez pancerza, podaje *Skala ran* (zob. `Rules/Health.md`): pies gryzie, zadając lekką ranę, a niedźwiedź ciężką.
-- **Cel:** rodzaj istoty i jej wytrzymałość (zob. *Wytrzymałość* w `Rules/Health.md`), pancerz, tarcza i osłona (zob. *Pancerz* w `Rules/Equipment.md`) przesuwają ranę o stopień albo więcej. Ten sam cios miecza zabija szczura, rani człowieka, a rycerza w zbroi płytowej ledwie drapie. Dotyczy to obu stron: postaci gracza i przeciwnika.
+- **The attacker's weapon or nature:** every weapon and every attack has a **wound spread**, from the lightest wound on a weak hit to the heaviest on the best. For example, a sling deals from a scratch to a medium wound, a sword from a scratch to a serious wound, and a fireball spell from a scratch to mangling. The typical wound, i.e. the wound from a full hit on an unarmoured human, is given by the *Wound scale* (see `Rules/Health.md`): a dog's bite deals a light wound, and a bear's a serious wound.
+- **The target:** the kind of creature and its toughness (see *Toughness* in `Rules/Health.md`), armour, shield and cover (see *Armour* in `Rules/Equipment.md`) shift the wound by a step or more. The same sword blow kills a rat, wounds a human and barely scratches a knight in plate armour. This applies to both sides: the player character and the enemy.
 
-MG ustala rozpiętość ran po uwzględnieniu obu stron i rozkłada ją w tablicy: im bardziej skrajny wynik, tym cięższa rana.
+The GM sets the wound spread after taking both sides into account and spreads it over the table: the more extreme the result, the heavier the wound.
 
-## Typowy układ tablicy rundy
+## Typical round table layout
 
-Od najniższych wyników:
+From the lowest results:
 
-| Wynik                                    | Rezultat                                                        |
-|------------------------------------------|-----------------------------------------------------------------|
-| 3                                        | przeciwnik zadaje ranę o stopień cięższą od typowej, walka trwa |
-| reszta zakresu rany                      | przeciwnik zadaje typową ranę, walka trwa                       |
-| od końca zakresu rany do progu trafienia | wymiana bez rozstrzygnięcia, walka trwa                         |
-| od progu trafienia do 16                 | postać zadaje przeciwnikowi typową ranę                         |
-| 17–18                                    | postać zadaje ranę o stopień cięższą od typowej                 |
+| Result                                               | Outcome                                                                  |
+|------------------------------------------------------|--------------------------------------------------------------------------|
+| 3                                                    | the enemy deals a wound one step heavier than typical, the fight goes on |
+| rest of the wound range                              | the enemy deals the typical wound, the fight goes on                     |
+| from the end of the wound range to the hit threshold | an exchange with no result, the fight goes on                            |
+| from the hit threshold to 16                         | the character deals the enemy the typical wound                          |
+| 17–18                                                | the character deals a wound one step heavier than typical                |
 
-Przy broni o dużej rozpiętości ran MG wpisuje w tablicę więcej stopni. Gdy przeciwnik ciska w postać kulą ognistą, na wyniku 3 może być zmasakrowanie, a na najwyższych wynikach zakresu rany tylko draśnięcie.
+With a weapon of a wide wound spread, the GM writes more steps into the table. When an enemy hurls a fireball at the character, a 3 may mean mangling, and the highest results of the wound range only a scratch.
 
-W obrębie tego układu MG może wydzielić inne skutki, np. utratę broni, uszkodzenie pancerza, ucieczkę przeciwnika albo uraz.
+Within this layout the GM can set apart other outcomes, e.g. losing a weapon, damaged armour, the enemy fleeing or an injury.
 
-## Przeciwnicy
+## Enemies
 
-| Przeciwnik | Przykłady                               | Trudność walki    | Próg trafienia | Zakres rany |
-|------------|-----------------------------------------|-------------------|----------------|-------------|
-| słaby      | wyrostek z nożem, chłop z widłami, pies | łatwa             | 6              | 3–4         |
-| przeciętny | bandyta, strażnik, wilk                 | przeciętna        | 9              | 3–6         |
-| silny      | weteran, niedźwiedź                     | trudna            | 11             | 3–9         |
-| potężny    | wielka bestia, mistrz miecza            | bardzo trudna     | 13             | 3–11        |
-| legendarny | istota z legend                         | prawie niemożliwa | 16             | 3–14        |
+| Enemy     | Examples                                                | Combat difficulty | Hit threshold | Wound range |
+|-----------|---------------------------------------------------------|-------------------|---------------|-------------|
+| weak      | a youth with a knife, a peasant with a pitchfork, a dog | easy              | 6             | 3–4         |
+| average   | bandit, guard, wolf                                     | average           | 9             | 3–6         |
+| strong    | veteran, bear                                           | hard              | 11            | 3–9         |
+| powerful  | great beast, master swordsman                           | very hard         | 13            | 3–11        |
+| legendary | creature of legend                                      | nearly impossible | 16            | 3–14        |
 
-Kategoria mówi, jak groźny jest przeciwnik w walce, a wytrzymałość, jak trudno go zranić. To dwie różne rzeczy: mistrz miecza jest potężnym przeciwnikiem o ludzkiej wytrzymałości.
+The category tells how dangerous the enemy is in a fight, and toughness how hard they are to wound. These are two different things: a master swordsman is a powerful enemy of human toughness.
 
-Świat podaje własne przykłady przeciwników w każdej kategorii.
+The world gives its own examples of enemies in each category.
 
-## Koniec walki
+## End of combat
 
-Zwycięstwo nie musi oznaczać śmierci przeciwnika. Przeciwnicy zachowują się zgodnie z naturą. Ludzie i zwierzęta zwykle uciekają albo się poddają, gdy są ranni albo walka idzie źle. Istoty pozbawione instynktu samozachowawczego walczą do końca. MG uwzględnia to w tablicach.
+Victory does not have to mean the enemy's death. Enemies behave according to their nature. Humans and animals usually flee or surrender when wounded or when the fight goes badly. Creatures without an instinct for self-preservation fight to the end. The GM takes this into account in the tables.
 
-Postać gracza, która pada w agonii, jest bezbronna. Przeciwnik postępuje z nią zgodnie ze swoją naturą: może ją dobić, ograbić, pojmać albo zostawić. Jeśli jego reakcja jest niepewna, MG rozstrzyga ją rzutem.
+A player character who falls dying is helpless. The enemy treats them according to their nature: they may finish them off, rob them, capture them or leave them. If their reaction is uncertain, the GM resolves it with a roll.
 
-Walka do końca z silniejszym przeciwnikiem jest bardzo niebezpieczna, bo rany się sumują, a każda kolejna utrudnia walkę. Z istotą legendarną kończy się niemal pewną śmiercią: rozsądna postać ucieka albo szuka innego sposobu. MG opisuje przebieg rund tak, żeby gracz widział, kiedy walka idzie źle.
+Fighting to the end against a stronger enemy is very dangerous, because wounds add up and each one makes the fight harder. Against a legendary creature it ends in almost certain death: a sensible character flees or looks for another way. The GM describes the rounds so that the player can see when the fight is going badly.
 
-## Przykłady
+## Examples
 
-> Wojownik bez zbroi, postać gracza, schodzi do piwnicy i natyka się na olbrzymiego szczura.
+> An unarmoured warrior, the player character, goes down into a cellar and runs into a giant rat.
 
-Taktyka gracza: „rąbię go mieczem”. Szczur to słaby przeciwnik (próg trafienia 6, zakres rany 3–4) o bardzo wątłej budowie: cios miecza (rana) zabija go od razu, bo jest o dwa stopnie cięższy (cios śmiertelny). Ugryzienie szczura to draśnięcie. Tablica pierwszej rundy:
+The player's tactics: "I hack at it with my sword". The rat is a weak enemy (hit threshold 6, wound range 3–4) with a very frail build: a sword blow (medium wound) kills it at once, because it is two steps heavier (mortal blow). A rat's bite is a scratch. The table for the first round:
 
-| Wynik | Rezultat                                                |
-|-------|---------------------------------------------------------|
-| 3     | szczur dotkliwie gryzie w nogę (lekka rana), walka trwa |
-| 4     | szczur gryzie w nogę (draśnięcie), walka trwa           |
-| 5     | obaj chybiają, walka trwa                               |
-| 6–18  | wojownik rozpłatuje szczura mieczem                     |
+| Result | Outcome                                                          |
+|--------|------------------------------------------------------------------|
+| 3      | the rat bites the leg painfully (light wound), the fight goes on |
+| 4      | the rat bites the leg (scratch), the fight goes on               |
+| 5      | both miss, the fight goes on                                     |
+| 6–18   | the warrior cleaves the rat with the sword                       |
 
-Wypada 5. Gracz nie chce ryzykować ugryzienia i postanawia odpędzić szczura pochodnią. MG układa tablicę następnej rundy dla nowego sposobu walki:
+The roll is 5. The player does not want to risk a bite and decides to drive the rat off with a torch. The GM sets up the next round's table for the new way of fighting:
 
-| Wynik | Rezultat                                      |
-|-------|-----------------------------------------------|
-| 3     | szczur gryzie w rękę (draśnięcie), walka trwa |
-| 4–6   | szczur syczy, ale się nie cofa, walka trwa    |
-| 7–18  | szczur ucieka w ciemność                      |
+| Result | Outcome                                                 |
+|--------|---------------------------------------------------------|
+| 3      | the rat bites the hand (scratch), the fight goes on     |
+| 4–6    | the rat hisses but does not back off, the fight goes on |
+| 7–18   | the rat flees into the dark                             |
 
-Szczur nie jest w stanie poważnie zagrozić wojownikowi: nawet seria ugryzień to najwyżej kilka lekkich ran.
+The rat cannot seriously threaten the warrior: even a series of bites is at most a few light wounds.
 
-> Nocą postać śpi przy ognisku. Budzi ją trzask gałęzi, a nad nią stoi bandyta z pałką.
+> At night the character sleeps by a campfire. A snapping twig wakes them, and a bandit with a club stands over them.
 
-MG pyta o taktykę. Gracz odpowiada: „Chwytam miecz, który leżał obok, i zrywam się na nogi”. Bandyta to przeciętny przeciwnik (próg trafienia 9, zakres rany 3–6) o ludzkiej wytrzymałości. Pałka zadaje lekką ranę, a miecz postaci ranę. Postać nie ma na sobie zbroi. Została zaskoczona we śnie, co utrudnia pierwszą rundę o jeden poziom: obie wartości przesuwają się o 2. Wycofać się postać już nie może, ale widzi przeciwnika, więc MG pokazuje tablicę i pyta tylko o Punkty Determinacji:
+The GM asks about tactics. The player answers: "I grab the sword lying next to me and jump to my feet". The bandit is an average enemy (hit threshold 9, wound range 3–6) of human toughness. The club deals a light wound, and the character's sword a medium wound. The character wears no armour. They were caught asleep, which makes the first round one level harder: both values move by 2. The character can no longer back out but sees the enemy, so the GM shows the table and asks only about Determination Points:
 
-| Wynik | Rezultat                                               |
-|-------|--------------------------------------------------------|
-| 3     | bandyta trafia pałką w głowę (rana), walka trwa        |
-| 4–8   | bandyta trafia w ramię (lekka rana), walka trwa        |
-| 9–10  | postać zrywa się i odpiera atak, walka trwa            |
-| 11–16 | postać rani bandytę mieczem (rana), bandyta ucieka     |
-| 17–18 | postać ciężko rani bandytę (ciężka rana), bandyta pada |
+| Result | Outcome                                                                         |
+|--------|---------------------------------------------------------------------------------|
+| 3      | the bandit hits the head with the club (medium wound), the fight goes on        |
+| 4–8    | the bandit hits the arm (light wound), the fight goes on                        |
+| 9–10   | the character jumps up and parries, the fight goes on                           |
+| 11–16  | the character wounds the bandit with the sword (medium wound), the bandit flees |
+| 17–18  | the character badly wounds the bandit (serious wound), the bandit falls         |
 
-Gracz uznaje, że to ważna chwila, i wydaje 1 PDT. MG rzuca 4K6 zamiast 3K6 i wypada 6: postać ma 10% zranienia i jest lekko ranna. Zaskoczenie już nie działa, ale lekka rana utrudnia walkę o pół poziomu, więc obie wartości przesuwają się o 1. Gracz walczy dalej tak samo i nie wydaje punktów:
+The player decides this is an important moment and spends 1 DP. The GM rolls 4d6 instead of 3d6 and gets 6: the character is at 10% and lightly wounded. Surprise no longer applies, but the light wound makes the fight half a level harder, so both values move by 1. The player keeps fighting the same way and spends no points:
 
-| Wynik | Rezultat                                               |
-|-------|--------------------------------------------------------|
-| 3     | bandyta trafia pałką w głowę (rana), walka trwa        |
-| 4–7   | bandyta trafia (lekka rana), walka trwa                |
-| 8–9   | wymiana ciosów bez rozstrzygnięcia, walka trwa         |
-| 10–16 | postać rani bandytę mieczem (rana), bandyta ucieka     |
-| 17–18 | postać ciężko rani bandytę (ciężka rana), bandyta pada |
+| Result | Outcome                                                                         |
+|--------|---------------------------------------------------------------------------------|
+| 3      | the bandit hits the head with the club (medium wound), the fight goes on        |
+| 4–7    | the bandit hits (light wound), the fight goes on                                |
+| 8–9    | an exchange of blows with no result, the fight goes on                          |
+| 10–16  | the character wounds the bandit with the sword (medium wound), the bandit flees |
+| 17–18  | the character badly wounds the bandit (serious wound), the bandit falls         |
 
-Wypada 12: bandyta ucieka ranny. Postać zostaje przy ognisku z 10% zranienia.
+The roll is 12: the bandit flees wounded. The character stays by the fire at 10%.

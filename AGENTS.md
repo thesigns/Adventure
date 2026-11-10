@@ -20,7 +20,7 @@ Te zasady obowiązują zawsze, w każdej odpowiedzi, bez przypominania:
 - `Campaigns/`: kampanie, czyli stan rozgrywek, jeden folder na kampanię (zob. *Kampanie*)
 - `Scripts/`: wspólne skrypty Pythona systemu (zob. *Skrypty*)
 
-Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej litery, np. `Character.md`, `GmTables.json`, `Tables/`, `TheStiffsHospital/`. Wyjątkiem są skrypty Pythona, które zgodnie ze zwyczajem Pythona mają nazwy małymi literami, np. `gm.py`, `make_map.py`. Treść plików, komunikaty skryptów i ich opcje (`--kampania`, `--odkryj`) są po polsku.
+Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej litery, np. `Character.md`, `GmTables.json`, `Tables/`, `TheStiffsHospital/`. Wyjątkiem są skrypty Pythona, które zgodnie ze zwyczajem Pythona mają nazwy małymi literami, np. `gm.py`, `make_map.py`. Zasady podstawowe (`Rules/`) są po angielsku, a setting może być po angielsku, np. `Settings/Generia/`. Treść pozostałych plików, komunikaty skryptów i ich opcje (`--kampania`, `--odkryj`) są po polsku. Gra toczy się po polsku: MG tłumaczy angielskie zasady i opisy w narracji, a nazwy własne zostawia w oryginale.
 
 ## Zasady podstawowe
 
@@ -39,8 +39,6 @@ Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej liter
 ## Settingi
 
 Każdy setting leży w osobnym folderze `Settings/<Nazwa settingu>/`, a jego głównym plikiem jest zawsze `Setting.md`. Folder może zawierać też inne pliki settingu, np. lore, geografię, bogów oraz zasady specyficzne dla świata. Setting może też zawierać własne skrypty Pythona (zob. *Skrypty*).
-
-Treść settingu może być po angielsku, np. `Settings/Generia/`. Gra i tak toczy się po polsku, a MG tłumaczy opisy w narracji. Nazwy własne zostawia w oryginale.
 
 Pliki danych JSON dla skryptów, np. tablice ukrytych rzutów (`GmTables.json`) i tabela światła dnia (`Daylight.json`), leżą w podfolderze `Tables/` settingu albo scenariusza. Mapy SVG leżą w podfolderze `Maps/`, razem ze swoimi plikami obszarów (`.areas.json`, zob. *Mapy*).
 
