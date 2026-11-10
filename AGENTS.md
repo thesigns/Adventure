@@ -19,6 +19,7 @@ These rules always apply, in every response, without reminders:
 - `Scenarios/`: scenarios, each in its own folder
 - `Campaigns/`: campaigns, i.e. the state of play, one folder per campaign (see *Campaigns*)
 - `Scripts/`: the system's shared Python scripts (see *Scripts*)
+- `Plans/`: the author's working plans for developing the system, settings and future scenarios; not in git, not read before play
 
 File and folder names are in English and written in CamelCase with a capital letter, e.g. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. The exception is Python scripts, which by Python convention have lowercase names, e.g. `gm.py`, `make_map.py`. All files are in English: this file, `README.md`, the core rules, settings, scenarios, scripts (comments, options and messages, e.g. `--campaign`, `--reveal`) and campaign files (character sheet, logs, scenario progress). The player chooses the language of play, e.g. English or Polish. The GM narrates and talks to the player in that language, translating the rules and descriptions, and keeps proper names in the original.
 

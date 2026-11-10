@@ -2,6 +2,9 @@
 Campaigns/*
 !Campaigns/.gitkeep
 
+# Plans: the author's working plans, kept out of the repository
+Plans/
+
 # Python
 __pycache__/
 *.py[cod]
