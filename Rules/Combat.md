@@ -58,7 +58,7 @@ When an enemy shoots at the player character and the character sees them, the GM
 
 The greater the distance, the harder the hit: each clearly greater distance makes the shot one level harder. A target out of the weapon's range cannot be reached, and the shot simply fails, without a roll (see *When to roll* in `Rules/StandardThrow.md`). For example, a knife thrown at an ogre 200 metres away will not get there.
 
-Range is also a circumstance of the fight. Attacking from a distance an enemy who cannot answer in kind makes the fight easier, and a ranged weapon in melee makes it harder. Cover makes hitting harder (see *Armour* in `Rules/Equipment.md`).
+Range is also a circumstance of the fight. Attacking from a distance an enemy who cannot answer in kind makes the fight easier, and a ranged weapon in melee makes it harder. Cover makes hitting harder (see *Shields and cover* in `Rules/Equipment.md`).
 
 ## Combat difficulty
 
@@ -73,6 +73,8 @@ Circumstances change combat difficulty as with any other action (see *Circumstan
 - **the character's defence** moves only the wound range, e.g. the character's armour, shield and cover, the enemy's weapon better or worse than typical, a weapon that forces the character to let the enemy close,
 - **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, and every additional enemy, which makes the fight one level harder.
 
+Armour, shields and cover move these values by the amounts given in *Armour* and *Shields and cover* in `Rules/Equipment.md`, not by whole levels.
+
 If a circumstance's description simply says it makes the fight harder or easier, it concerns the whole fight. Making it harder raises the hit threshold or widens the wound range, and making it easier works the other way.
 
 If the wound range disappears after shifting, the enemy cannot wound the character. If the hit threshold exceeds 18, the character cannot wound the enemy with that way of fighting. If the wound range reaches the hit threshold or beyond, the shared results mean both sides wound each other.
@@ -86,7 +88,7 @@ A circumstance that concerns only part of the fight counts only in those rounds,
 A wound depends on both sides: on what attacks and on who is the target.
 
 - **The attacker's weapon or nature:** every weapon and every attack has a **wound spread**, from the lightest wound on a weak hit to the heaviest on the best. For example, a sling deals from a scratch to a medium wound, a sword from a scratch to a serious wound, and a fireball spell from a scratch to mangling. The typical wound, i.e. the wound from a full hit on an unarmoured human, is given by the *Wound scale* (see `Rules/Health.md`): a dog's bite deals a light wound, and a bear's a serious wound.
-- **The target:** the kind of creature and its toughness (see *Toughness* in `Rules/Health.md`), armour, shield and cover (see *Armour* in `Rules/Equipment.md`) shift the wound by a step or more. The same sword blow kills a rat, wounds a human and barely scratches a knight in plate armour. This applies to both sides: the player character and the enemy.
+- **The target:** the kind of creature and its toughness (see *Toughness* in `Rules/Health.md`), and armour (see *Armour* in `Rules/Equipment.md`) shift the wound by a step or more. A shield and cover do not make wounds lighter, only less frequent. The same sword blow kills a rat, wounds a human and barely scratches a knight in plate armour. This applies to both sides: the player character and the enemy.
 
 The GM sets the wound spread after taking both sides into account and spreads it over the table: the more extreme the result, the heavier the wound.
 

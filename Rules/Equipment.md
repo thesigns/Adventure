@@ -18,9 +18,10 @@ Rules for ranged weapons are in `Rules/Combat.md` (see *Ranged combat*).
 
 ## Armour
 
-Armour makes the enemy wound the character less often and less severely. The GM takes it into account in the outcome table together with a shield and other cover. In the same way the enemy's armour protects them from the character.
+Armour makes the enemy wound the character less often and less severely. The GM takes it into account in the outcome table together with a shield and other cover (see *Combat difficulty* and *Wounds in combat* in `Rules/Combat.md`):
 
-A wolverine wounds Randuvil in his robe easily, and badly. Against a knight in full plate it can hardly wound him at all.
+- **less often:** armour narrows the enemy's wound range, i.e. moves its upper end down,
+- **less severely:** armour makes every wound the enemy deals lighter by a number of steps (see *Wounds* in `Rules/Health.md`).
 
 | Armour | Examples                                           | Drawbacks                                              |
 |--------|----------------------------------------------------|--------------------------------------------------------|
@@ -28,11 +29,43 @@ A wolverine wounds Randuvil in his robe easily, and badly. Against a knight in f
 | medium | chain mail, bulletproof vest                       | hinders sneaking, climbing and swimming                |
 | heavy  | plate armour, combat armour                        | hinders sneaking and climbing, and swimming especially |
 
+| Armour | Wound range | Wounds taken      |
+|--------|-------------|-------------------|
+| light  | −1          | unchanged         |
+| medium | −1          | one step lighter  |
+| heavy  | −2          | two steps lighter |
+
 The world gives its own examples of armour.
 
-Armour does not protect against poison, disease, exhaustion or ghostly cold. In a fall from a height it usually does not help.
+- **Toughness:** the steps of armour add to the steps of toughness (see *Toughness* in `Rules/Health.md`). A tough creature in heavy armour takes wounds three steps lighter.
+- **Helmet:** medium and heavy armour include a helmet. Without one, they count as one class lighter.
+- **Weapons that defeat armour,** e.g. a war pick, a heavy crossbow or armour-piercing rounds, treat armour as one class lighter. Light armour then does not protect at all.
+- **The enemy's armour** protects them from the character in the same way: it raises the character's hit threshold by as many points as it would narrow the wound range, and makes the wounds the character deals lighter by the same number of steps.
+- Armour does not protect against poison, disease, exhaustion or ghostly cold. In a fall from a height it usually does not help.
 
-A shield and other cover held in hand additionally protect against blows and missiles, but take up a hand. Cover from terrain works similarly, e.g. a wall, a rock or a vehicle wreck: the enemy finds it harder to hit, especially at range.
+A wolverine (an average enemy: wound range 3–6, typical wound a light wound) bites Randuvil in his robe on 3–6, with a light wound, and on a 3 with a medium wound. Against a knight in full plate its wound range shrinks to 3–4 and its bites are two steps lighter: a light wound becomes no wound, so it can hurt the knight only on a 3, and then only scratches him.
+
+### Shields and cover
+
+A shield held in hand and cover from terrain, e.g. a wall, a rock or a vehicle wreck, narrow the enemy's wound range, adding to armour, but do not make wounds lighter. Cover protects only against missiles: in melee it is favourable terrain at most (see *Circumstances* in `Rules/StandardThrow.md`).
+
+| Protection | Examples                              | Wound range                             |
+|------------|---------------------------------------|-----------------------------------------|
+| shield     | a wooden shield, a riot shield        | −1, against missiles from the front −2  |
+| cover      | a tree, a wagon, a low wall, a car    | −2 against missiles                     |
+| good cover | an arrow slit, a battlement, a trench | −4 against missiles                     |
+
+A shield takes up a hand. A character who stays fully behind cover cannot be hit, but cannot shoot or see the enemy either. An enemy's shield and cover raise the character's hit threshold by the same number of points.
+
+A mercenary in chain mail with a shield fights a bandit with a sword: an average enemy (hit threshold 9, wound range 3–6) whose sword deals a medium wound. The mail and the shield narrow the wound range by 2, to 3–4, and the mail makes the bandit's blows one step lighter. The bandit has no armour, and the mercenary's sword also deals a medium wound:
+
+| Result | Outcome                                                                      |
+|--------|------------------------------------------------------------------------------|
+| 3      | the bandit's blade finds a gap in the mail (medium wound), the fight goes on |
+| 4      | the bandit's blow glances off the mail (light wound), the fight goes on      |
+| 5–8    | an exchange of blows with no result, the fight goes on                       |
+| 9–16   | the mercenary cuts the bandit (medium wound)                                 |
+| 17–18  | the mercenary strikes the bandit down (serious wound)                        |
 
 ## Consumables
 

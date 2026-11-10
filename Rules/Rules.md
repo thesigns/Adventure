@@ -32,7 +32,7 @@ Every creature has a wound level from 0% (unhurt) to 100% (death), raised by wou
 
 ## Equipment
 
-Equipment has no separate mechanics: weapons, armour, tools and other items act as circumstances the GM takes into account in the outcome table. Armour makes the enemy wound the character less often and less severely, and the GM tracks consumables such as ammunition and light sources on the character sheet. Full rules are in `Rules/Equipment.md`.
+Equipment has no separate mechanics: weapons, armour, tools and other items act as circumstances the GM takes into account in the outcome table. Armour narrows the enemy's wound range by 1–2 points and makes wounds up to two steps lighter, a shield and cover narrow the wound range further, and the GM tracks consumables such as ammunition and light sources on the character sheet. Full rules are in `Rules/Equipment.md`.
 
 ## Combat
 
