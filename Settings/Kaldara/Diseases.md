@@ -13,7 +13,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 - Przyczyna: suche purchawki, popielatoszare, wielkości pięści, które rosną w głębokich ruinach i jaskiniach. Są suche i kruche: nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
 - Purchawki pękają też pod trollami i robalami, więc pył może wisieć w powietrzu, zanim przyjdzie człowiek.
 - Śmiałkowie omijają suche purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
-- Chory zdrowieje po dłuższym pobycie na powierzchni, nikt nie wie dlaczego. Kto zostaje pod ziemią, umiera.
+- Chory zdrowieje po dłuższym pobycie na powierzchni. Kto zostaje pod ziemią, umiera.
 - Nie przechodzi z człowieka na człowieka.
 - Zielarki i kapłani nie mają na nią lekarstwa.
 
