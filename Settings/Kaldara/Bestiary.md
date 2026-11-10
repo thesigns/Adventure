@@ -125,19 +125,19 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 - Częsty.
 - O każdej porze, najśmielsze nocą i w ciemnych ruinach.
 - Żyją wszędzie tam, gdzie są ludzie, zapasy i trupy: w miastach, na statkach i w ruinach. Roznoszą choroby i niszczą jedzenie.
-- W rewirze trolla ich nie ma, bo je zjadł.
+- W rewirze trolla jest ich niewiele i trzymają się szczelin, bo troll poluje na nie przy każdej okazji.
 - Atakują gromadą. Stado to przeciwnik słaby o wytrzymałości bardzo wątłej.
 - Ugryzienia: od draśnięcia do lekkiej rany, typowo draśnięcie.
 
 ## Ślepy jaszczur
 
-- Blady, bezoki, od wielkości psa po wielkość konia. Poluje węchem i słuchem.
-- Nieczęsty, zwykle przy trollach.
-- Na powierzchnię wychodzi tylko nocą, razem z trollami. Światło mu nie przeszkadza.
-- Trolle trzymają jaszczury jak psy, do pilnowania legowisk i tropienia intruzów. Gdzie są jaszczury, tam zwykle niedaleko są trolle.
-- Mały, wielkości psa, to przeciwnik przeciętny o wytrzymałości wątłej. Duży, wielkości konia, to przeciwnik silny, silniejszy od człowieka, o wytrzymałości twardej.
+- Ciemnozielony i bezoki, długi od pół metra do dwóch metrów, zależnie od wieku. Poluje węchem i słuchem.
+- Nieczęsty, przy podziemnych jeziorach i strumieniach.
+- Żyje tylko pod ziemią, na powierzchnię nie wychodzi. Światło mu nie przeszkadza.
+- Żywi się ślepymi rybami i białymi rakami, poluje też na szczury.
+- Młody, do metra długości, to przeciwnik słaby o wytrzymałości wątłej. Stary, do dwóch metrów, to przeciwnik przeciętny o wytrzymałości ludzkiej.
 - W ciemności szybszy niż człowiek z pochodnią.
-- Ugryzienie małego: od draśnięcia do rany, typowo lekka rana. Dużego: od lekkiej rany do ciężkiej rany, typowo rana.
+- Ugryzienie młodego: od draśnięcia do lekkiej rany, typowo draśnięcie. Starego: od draśnięcia do rany, typowo lekka rana.
 
 ## Troll
 
@@ -149,14 +149,13 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 ## Turs
 
-- Olbrzym kilka razy wyższy od człowieka, starszy od ludzi. Mówi starym językiem, a niektóre tursy znają też mowę ludzi.
-- Rzadki.
+- Lodowy olbrzym o białej, oszronionej skórze, kilka razy wyższy od człowieka i starszy od ludzi. Mówi własnym językiem, którego nikt nie zna.
+- Mityczny. Na wyspie żyje ich najwyżej kilkunastu: to długowieczny, ale ginący gatunek.
 - O każdej porze. Słońce mu nie szkodzi.
-- Jest dumny, zachłanny i przebiegły. Lubi zagadki i zakłady i dotrzymuje ich warunków co do słowa, a nie co do sensu. Spotkanie z nim to raczej rozmowa niż walka.
-- **Szronotursy** o skórze sinej jak lód żyją na Svartjokul i na szczytach Dvergfjell. Zimą schodzą niżej i porywają stada. Pasterze z gór znają ich ślady.
-- **Tursy o skórze jak zastygła lawa** żyją w gorących rozpadlinach w sercu gór. Mówi się, że walczą z trollami o krasnoludzkie kuźnie.
+- Inteligentny i da się z nim porozumieć na migi. Jest dumny, zachłanny i przebiegły. Lubi zakłady i wymiany, ale umowę zawartą na migi rozumie po swojemu. Spotkanie z nim to raczej targ niż walka.
+- Żyje na Svartjokul i na szczytach Dvergfjell. Zimą schodzi czasem niżej i porywa stada. Pasterze z gór opowiadają o śladach tursów na śniegu.
 - Przeciwnik legendarny, wielokrotnie silniejszy od człowieka. Walka z nim kończy się niemal pewną śmiercią.
-- Skóra jak lód albo zastygła lawa: wytrzymałość ogromna.
+- Skóra twarda jak lód: wytrzymałość ogromna.
 - Pięść albo głaz: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
 
 ## Wilk

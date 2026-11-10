@@ -14,7 +14,7 @@ Trolle to główne zagrożenie wyspy. Pochodzą z głębin pod wyspą i zajmują
 - Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za dnia, a każde światło je razi, także pochodnia, latarnia czy kaganek, które nie zamieniają ich w kamień. Oślepione światłem z bliska mrużą oczy, zasłaniają się i źle oceniają odległość, więc wolą atakować z ciemności i najpierw gasić światło.
 - Trolle wychodzą na powierzchnię tylko wtedy, gdy jest naprawdę ciemno, od zgaśnięcia ostatniej poświaty po zachodzie do pierwszego brzasku. Wychodzą polować na zwierzęta, a nie na ludzi (zob. *Łowy na powierzchni*). Nawet w długie zimowe noce nie oddalają się od swoich legowisk dalej niż na kilka, najwyżej kilkanaście kilometrów i przed brzaskiem zawsze wracają.
 - Jeden gatunek trolli, szeptacze, zna dziką magię (zob. *Szeptacze*).
-- Razem z trollami z głębin przyszły ich zwierzęta: ślepe jaszczury i robale. Trolle hodują je, polują na nie albo trzymają jak psy.
+- Z Głębin pochodzą też robale, które trolle hodują jak bydło, i ślepe jaszczury, na które polują (zob. `Bestiary.md`).
 
 ## Samotniki
 
@@ -97,7 +97,7 @@ Troll nie umie się ukryć tak dobrze, jak mu się wydaje. Doświadczony śmiał
 - **Wydeptana ścieżka.** Korytarz, którym troll chodzi co noc, ma zmieciony kurz pośrodku, a narożniki i ściany na wysokości jego barku są wytarte do połysku. Górskiemu trollowi wytarte są nawet sklepienia.
 - **Zadrapania** na ścianach, głębokie bruzdy od pazurów. Tak troll znaczy granice rewiru.
 - **Odchody** pełne sierści, wełny i odłamków kości.
-- **Cisza.** W rewirze trolla nie ma szczurów, bo dawno je zjadł. Psy i konie nie chcą iść dalej, a owce przy zagrodzie są niespokojne, zanim ktokolwiek usłyszy trolla.
+- **Cisza.** W rewirze trolla szczurów jest niewiele i chowają się po szczelinach, bo troll poluje na nie przy każdej okazji. Psy i konie nie chcą iść dalej, a owce przy zagrodzie są niespokojne, zanim ktokolwiek usłyszy trolla.
 - **Brak sadzy.** Trolle nie palą ognia. Sadza na sklepieniu i resztki ogniska znaczą, że był tu człowiek, nie troll.
 - **Kamienne posągi** przy wejściu do ruin. To trolle, które nie zdążyły przed świtem, a gdzie zginął jeden, mógł mieszkać i drugi.
 - **Ludzkie kości bez błyskotek.** Ciało śmiałka z porzuconym ekwipunkiem, ale bez pierścieni, srebrnych zapinek i krasnoludzkich rzeczy, to ślad, że znalazł je troll.
@@ -185,7 +185,7 @@ Trolle z morskich jaskiń Nordstrand i fiordów wschodu. Wyższe od człowieka, 
 
 Wysokie, wychudłe i siwe od młodości, z włosami do ziemi, często ślepe albo jednookie, bo oczy nie są im potrzebne. Nazwę wzięły od tego, że ciągle szepczą: do siebie, do kamieni, do ciemności. Żyją bardzo długo i jest ich niewiele. W walce są słabsze od szaraków, ale rzadko walczą same: często trzyma się ich stado pomiotów, które je karmi w zamian za ochronę przed innymi trollami.
 
-Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwodzą wędrowców głosami bliskich, przybierają cudzą postać i słyszą i węszą zmysłami swoich ślepych jaszczurów. Jako jedyne trolle potrafią przemówić ludzkim językiem, kilkoma słowami, łamanymi i dziwnymi. Bywa, że chcą się targować. Ich legowiska są pełne kości, grzybów i dziwnych przedmiotów, a czasem krasnoludzkich rzeczy, o których mocy wiedzą więcej, niż powinny.
+Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwodzą wędrowców głosami bliskich, przybierają cudzą postać i słyszą i węszą zmysłami szczurów i innych zwierząt z ciemności. Jako jedyne trolle potrafią przemówić ludzkim językiem, kilkoma słowami, łamanymi i dziwnymi. Bywa, że chcą się targować. Ich legowiska są pełne kości, grzybów i dziwnych przedmiotów, a czasem krasnoludzkich rzeczy, o których mocy wiedzą więcej, niż powinny.
 
 - Przeciwnik przeciętny, słabszy od szaraka, nie szybszy od człowieka. Walczy rękami pomiotów, które się go trzymają.
 - Wytrzymałość twarda.
