@@ -4,7 +4,8 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 ## Setting files
 
-- `Setting.md`: GM rules, world, peoples, languages, adventurers, names (this file)
+- `Setting.md`: GM rules, world, peoples, adventurers, names (this file)
+- `Culture.md`: languages, law and customs
 - `Geography.md`: the continent, climate, mountains, waters, ruins and lands
 - `Travel.md`: pace, costs, seasons and dangers of travel
 - `Magic.md`: arcane spells, learning them, scrolls and magic items
@@ -28,6 +29,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 - **Technology:** high medieval. Swords, crossbows, plate armour, sailing ships. No printing, no gunpowder.
 - **Calendar:** 12 months of 30 days plus 5 festival days, 7-day week. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF.
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
+- **Culture:** languages, law and customs of the lands: `Culture.md`.
 - **Gods:** seven jealous gods, each followed on their own; their clerics and paladins receive divine gifts. Gods, gifts, displeasure and conversion: `Faith.md`.
 - **Ruins:** the old Empire of Aurelion fell a thousand years ago and left roads, towers, tombs and dungeons full of treasure and danger.
 
@@ -43,15 +45,6 @@ A character's species sets the reference point: traits typical of it are not adv
 - **Half-elves:** rare, because elves seldom bond with humans. Live about two centuries and cannot have children. Exceptionally beautiful, with sharper senses than humans. Live between two worlds and fully belong to neither: elves see them as short-lived, humans as aloof. Often envoys, bards, merchants and wanderers. Those who go adventuring look for a place where they belong: rangers, diplomats, seekers of their elven kin.
 - **Half-orcs:** rare, usually born of violence during orc raids. Live a little shorter than humans and cannot have children. Look like plain, coarse humans, so many pass for human. Strong and hardy, they face suspicion everywhere once their blood is known. Raised by human mothers on the fringes, rarely in orc tribes. Labourers, soldiers, guards and bouncers. Those who go adventuring are usually sellswords and mercenaries out to prove themselves, or outcasts with nowhere else to go.
 - **Orcs, goblins and their kin:** savage tribes of the wilds: orcs in the Ashlands, goblins (smaller than orcs) in the caves of the Ironpeaks; mostly enemies (see `Bestiary.md`). An orc player character is an exile.
-
-## Languages
-
-- **Common:** the human tongue and the trade language of all Generia. Nearly everyone speaks it, and every character does.
-- **Elvish, Dwarvish, Gnomish:** the tongues of their peoples, each with its own script (dwarves write in angular runes). Halflings speak Common at home.
-- **Orcish:** the harsh tongue of orcs and goblins; many half-orcs know it.
-- **Aurelian:** the dead language of the fallen empire, found on ruins, old scrolls and in wizards' spellbooks. Scholars and wizards read it; nobody speaks it.
-- A character speaks Common and the tongue of their people. More languages come from the profession (a merchant, a scholar, an envoy) or an advantage.
-- **Reading:** clergy, wizards, nobles, merchants and scholars read and write; most peasants and soldiers do not. Elves, dwarves and gnomes usually read their own script.
 
 ## Adventurers
 
