@@ -91,7 +91,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 - Żyje tylko pod ziemią. Światło mu nie przeszkadza.
 - To główne mięso trolli, które trzymają młode robale w zagrodach (zob. *Pożywienie* w `Trolls.md`).
 - Nie jest drapieżnikiem: nie poluje, nie atakuje i nie walczy. Wyczuwa drgania i na każdy ruch reaguje ucieczką w tunel albo w popiół.
-- Miękki, bez pancerza, ginie od jednego ciosu. Złapanie albo dogonienie go przed ucieczką to rzut.
+- Miękki, bez pancerza, ginie od jednego silnego ciosu. Złapanie albo dogonienie go przed ucieczką to rzut.
 
 ## Runiczny strażnik
 
@@ -143,7 +143,7 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 - Rozumna, dzika istota z Głębin, od pomiota wielkości dziecka po górskiego trolla wysokiego na kilka metrów.
 - Częsty w ruinach.
-- Na powierzchnię wychodzi tylko w ciemności. Światło dnia zamienia go w kamień, a każde inne światło go razi.
+- Na powierzchnię wychodzi tylko w nocy. Światło dnia zamienia go w kamień, a każde inne światło go razi.
 - Zajmuje dawne krasnoludzkie kopalnie, twierdze i świątynie.
 - Pełny opis trolli znajduje się w pliku `Trolls.md`.
 
@@ -161,9 +161,9 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 ## Wilk
 
 - Szary wilk, chodzi watahą.
-- Częsty, zwłaszcza zimą.
+- Częsty na pustkowiach i na skraju Bjarkalund.
 - Poluje zwykle o zmierzchu i nocą. Boi się ognia.
-- Watahy żyją na pustkowiach i na skraju Bjarkalund. Latem trzymają się z dala od ludzi. Zimą napadają na stada, konie i samotnych wędrowców, a wokół odciętego gospodarstwa potrafią krążyć tygodniami.
+- Latem trzyma się z dala od ludzi. Zimą, głodny, napada na stada, konie i samotnych wędrowców, a wokół odciętego gospodarstwa wataha potrafi krążyć tygodniami.
 - Przeciwnik przeciętny, szybszy od człowieka. Wataha atakuje z kilku stron.
 - Wytrzymałość ludzka.
 - Ugryzienie: od draśnięcia do rany, typowo lekka rana.
