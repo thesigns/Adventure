@@ -18,7 +18,7 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md`)
 - `tools/`: narzędzia autora, nie do gry: generator mapy (`make_map.py`) i jego fonty
 
-Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, krainy, góry, lodowiec, główne rzeki i trakty. Gracz może więc oglądać `MapKaldara.svg` w całości, a MG nie odsłania jej skryptem `Scripts/fogmap.py`. Na mapie nie ma ruin ani niczego, czego ludzie na wyspie nie wiedzą. Mapy konkretnych miejsc, np. ruin, mają scenariusze i te MG odsłania zwykłym trybem.
+Mapa wyspy jest jawna. Postać gracza zna ogólną geografię wyspy: miasta, krainy, góry, lodowiec, główne rzeki i trakty. Gracz może więc oglądać `MapKaldara.svg` w całości, a MG nie odsłania jej skryptem `Scripts/fogmap.py`. Na mapie wyspy nie ma ruin ani niczego, czego ludzie na wyspie nie wiedzą. Mapy konkretnych miejsc, np. ruin, mają scenariusze i te MG odsłania zwykłym trybem.
 
 ## Zasady dla MG
 
@@ -50,7 +50,7 @@ Wszystkie nazwy i imiona na wyspie są ludzkie i brzmią nordycko, jak w sagach:
 - **Imiona** są krótkie, zwykle dwusylabowe albo złożone z dwóch członów. Męskie kończą się często na -ar, -ulf, -mund, -bjorn, -geir, -vard, -stein, -kel (Ragnar, Asmund, Hallvard, Ulfgeir, Grimkel). Żeńskie na -run, -dis, -hild, -veig, -frid, -a (Sigrun, Asdis, Ragnhild, Bergljot, Halla).
 - **Ojciec i przydomek.** Ludzie przedstawiają się imieniem i imieniem ojca, rzadziej matki: „Ragnar, syn Ulfa”, „Sigrun, córka Halli”. Ludzie znani mają przydomki, które w odróżnieniu od imion tłumaczy się na język gry: Ragnar Siwobrody, Asdis Jednooka, Hallvard Bez Ziemi.
 - **Rody** nazywa się od założyciela albo od dworu: ród Asmunda, ludzie z Hallvik.
-- **Nazwy miejsc** składają się z członu opisowego i członu, który mówi, jakie to miejsce, np. Austhavn (wschodni port), Svartjokul (czarny lodowiec). Typowe człony rodzajowe: -vik (zatoka), -fjord (fiord), -havn (port), -nes (cypel), -strand (wybrzeże), -fjell (góra), -dal (dolina), -foss (wodospad), -myr (bagno), -jokul (lodowiec), -hraun (pole lawy), -lund (gaj), -vold (pole, równina), -stad (dwór, gospodarstwo), -borg (warownia), -heim (dom, siedziba), -skard (przełęcz), -gap (rozpadlina), -hall (sala), -gard (zagroda, osada). Typowe człony opisowe: svart (czarny), hvit (biały), raud (czerwony), kald (zimny), brenn (palący), grim (ponury), stein (kamień), ulf (wilk), ravn (kruk), bjarka (brzoza), dverg (krasnolud), troll (troll), aust, vest, nord i sud (strony świata).
+- **Nazwy miejsc** składają się z członu opisowego i członu, który mówi, jakie to miejsce, np. Austhavn (wschodni port), Svartjokul (czarny lodowiec). Typowe człony rodzajowe: -vik (zatoka), -fjord (fiord), -havn (port), -nes (cypel), -strand (wybrzeże), -fjell (góra), -dal (dolina), -foss (wodospad), -myr (bagno), -jokul (lodowiec), -hraun (pole lawy), -lund (gaj), -vold (pole, równina), -stad (dwór, gospodarstwo), -borg (warownia), -heim (dom, siedziba), -skard (przełęcz), -gap (rozpadlina), -hall (sala), -gard (zagroda, osada), -vaka (przerębel, oczko wody, które nie zamarza). Typowe człony opisowe: svart (czarny), hvit (biały), raud (czerwony), kald (zimny), brenn (palący), grim (ponury), stein (kamień), hof (świątynia), ting (zgromadzenie), ulf (wilk), ravn (kruk), bjarka (brzoza), dverg (krasnolud), troll (troll), aust, vest, nord i sud (strony świata).
 - **Ruiny krasnoludzkie** też noszą ludzkie nazwy, nadane przez osadników od wyglądu, położenia albo legendy, np. Dverghall (krasnoludzka sala) albo Ravnskard (krucza przełęcz). W narracji MG może podać też znaczenie nazwy w języku gry.
 - **Trolle** mówią własnym językiem, a znane trolle ludzie nazywają od legowiska albo przezwiskiem w języku gry: troll spod Ravnskard, Czerwony Pysk.
 - **Spójność.** Każdą nową nazwę, którą postać poznała i która może wrócić w grze, MG zapisuje w postępie scenariusza albo w dzienniku kampanii z krótką notatką, kto albo co to jest. Przed ponownym użyciem nazwy sprawdza ją tam. Nie nadaje tej samej nazwy dwóm miejscom ani tego samego imienia dwóm ważnym postaciom. Epizodyczne postacie mogą pozostać bezimienne, dopóki gracz nie zapyta o imię albo postać nie stanie się ważna.
@@ -105,7 +105,7 @@ Ludzie na Kaldarze nie mają króla. Rządzą się sami, według wspólnego praw
 - Gorące źródła są wszędzie. Ludzie kąpią się w nich, gotują w nich i ogrzewają nimi domy. Przy źródłach często stoją kapliczki Eldry.
 - Wulkany wybuchają co kilka lub kilkanaście lat, ziemia regularnie drży. Popiół, trujące opary i lawa to część życia.
 - Lato to pora zejść. Zimą wyprawy w głąb wyspy kończą się zwykle śmiercią, więc śmiałkowie zimują w miastach i przepijają łupy.
-- Białe noce chronią przed trollami: niebo nie ciemnieje wtedy do końca, więc trolle prawie nie wychodzą na powierzchnię. Długie zimowe noce to czas, kiedy trolle najczęściej podchodzą pod osady.
+- Białe noce chronią przed trollami: niebo nie ciemnieje wtedy do końca, więc trolle nie wychodzą na powierzchnię. Długie zimowe noce to czas, kiedy trolle najczęściej podchodzą pod osady.
 - Na zachód od wyspy jest tylko otwarty ocean. Nikt tam nie pływa, a statki, które próbowały, nie wróciły.
 - Mieszkańcy są twardzi, małomówni i praktyczni. Cenią honor, hojność i dotrzymane słowo. Opowiadają sagi o pierwszych osadnikach, o waśniach, o śmiałkach, krasnoludach i trollach.
 - Gościnność to obowiązek. Wędrowca, który zapuka zimą, wpuszcza się do ognia i karmi, nawet jeśli to wróg. Gość, który nadużyje gościny, i gospodarz, który skrzywdzi gościa, tracą dobre imię na zawsze.
@@ -121,9 +121,9 @@ Opis krasnoludów i prawda o ich upadku są w `Dwarves.md`.
 
 ## Trolle
 
-Trolle to główne zagrożenie wyspy. Są rozumne, ale dzikie i okrutne. Żyją samotnie w dawnych krasnoludzkich ruinach, każdy w swoim rewirze, i gromadzą wszystko, co błyszczy. Nocą wychodzą na powierzchnię polować na owce i inne zwierzęta. Światło słońca zamienia je w kamień, więc na powierzchnię wychodzą tylko w ciemności i nigdy daleko od swoich siedlisk. Boją się też ognia, więc pod ziemią śmiałek pilnuje pochodni bardziej niż złota.
+Trolle to główne zagrożenie wyspy: rozumne, dzikie i okrutne istoty z Głębin, które żyją samotnie w krasnoludzkich ruinach i gromadzą wszystko, co błyszczy. Światło słońca zamienia je w kamień, więc na powierzchnię wychodzą tylko w ciemności, a ognia się boją.
 
-Opis trolli jest w `Trolls.md`.
+Opis trolli jest w `Trolls.md`, a ich mechanika w `Mechanics.md`.
 
 ## Geografia
 

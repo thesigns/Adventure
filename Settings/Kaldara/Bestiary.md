@@ -22,7 +22,7 @@ Blade, bezokie jaszczury, od wielkości psa po wielkość konia. Polują węchem
 
 ### Trolle
 
-Rozumne, dzikie i okrutne istoty z Głębin, różnej wielkości: od pomiotów, wielkości dziecka, po górskie, wysokie na kilka metrów, i wielogłowe, o których ludzie mówią, że to bajka. Żyją samotnie w krasnoludzkich ruinach, każdy w swoim rewirze, i gromadzą skarby. Światło słońca zamienia je w kamień, a ognia się boją. Pełny opis jest w `Trolls.md`.
+Rozumne, dzikie i okrutne istoty z Głębin, od pomiotów wielkości dziecka po górskie trolle wysokie na kilka metrów. Pełny opis jest w `Trolls.md`.
 
 ## Strażnicy ruin
 
