@@ -84,6 +84,17 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 - Przed wypłynięciem rybacy składają ofiary Hafdis.
 - Przeciwnik legendarny o wytrzymałości ogromnej. Nie do walki: zatapia łodzie.
 
+## Rak jaskiniowy
+
+- Biały, ślepy skorupiak z ciężkimi szczypcami. Młody ma wielkość dłoni, stary dorasta do wielkości psa.
+- Częsty w podziemnych jeziorach i strumieniach.
+- Żyje tylko pod ziemią, w wodzie i przy jej brzegu. Światło mu nie przeszkadza.
+- Żywi się padliną, ślepymi rybami i porostami z dna. Młode łowią trolle, zwłaszcza pomioty, i ślepe jaszczury (zob. *Pożywienie* w `Trolls.md`). Jego mięso jest jadalne.
+- Stary rak atakuje wszystko, co wejdzie do jego wody albo stanie przy brzegu. Młode nie są przeciwnikiem.
+- Stary to przeciwnik przeciętny. Na lądzie jest powolny i łatwo od niego odejść, w wodzie jest szybszy od człowieka.
+- Pancerz: wytrzymałość twarda.
+- Szczypce: od draśnięcia do rany, typowo lekka rana. Na najniższych wynikach chwyta za nogę albo rękę. Dopóki postać się nie wyrwie, walka jest trudniejsza o poziom, a w wodzie rak ciągnie ją w głąb.
+
 ## Robal
 
 - Ogromna, tłusta, biała glista: ślepa i bezzębna, gruba jak udo, długa na kilka metrów. Żywi się grzybami i porostami, drąży tunele w miękkiej skale, popiele i ziemi. Tunele łączą czasem ruiny z nieznanymi jaskiniami.
