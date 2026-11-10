@@ -303,6 +303,8 @@ PLACES = [
     # dwarven holds in the Ironpeaks
     ("khaz-dorun", "Khaz Dorun", "hold", 1690, 1045, "middle", 0, 46),
     ("durnhold", "Durnhold", "hold", 1010, 1365, "end", -20, -12),
+    # the gnomes' home in the western Ironpeaks, north of Elenwood
+    ("brasshollow", "Brasshollow", "town", 470, 1455, "middle", 0, -22),
     # the way into the Ashlands: the valley between the ranges and a pass over the Crookback Mountains
     ("ashgate", "Ashgate", "fort", 2175, 1110, "end", -20, 8),
     ("crows-pass", "Crow's Pass", "pass", 2515, 1262, "start", 18, -16),
