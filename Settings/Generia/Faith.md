@@ -45,7 +45,7 @@
 Using a gift for ends against the god's nature or aims, neglecting the god's service or acting against it angers the god. By the gravity of the offence, the GM chooses one:
 
 - **Admonition:** a warning dream, an omen, a sudden chill at the altar. Nothing more, the first time.
-- **Small curse:** a temporary disadvantage until the servant atones with sacrifice and penance, e.g. trembling hands, food tasting of ash, a voice that cracks in prayer (see *Trait changes during play* in `Rules/Traits.md`).
+- **Small curse:** a temporary disadvantage, which does not raise DP, until the servant atones with sacrifice and penance, e.g. trembling hands, food tasting of ash, a voice that cracks in prayer (see *Trait changes during play* in `Rules/Traits.md`).
 - **Loss of the gift:** the gift is gone until atonement, or for good after repeated offences.
 
 ## Conversion
@@ -56,5 +56,5 @@ Using a gift for ends against the god's nature or aims, neglecting the god's ser
   - kindred gods: a mark, e.g. a scar in the shape of the old god's symbol; an insignificant or tiny disadvantage,
   - unrelated gods: a real burden, e.g. a withered arm or a lost voice; a moderate disadvantage,
   - opposed gods: a terrible change, e.g. blindness or a tentacle for a hand; a large or huge disadvantage.
-- The curse is a permanent disadvantage of the character (see *Trait changes during play* in `Rules/Traits.md`). Only powerful divine magic of the betrayed god, after great atonement, can lift it.
+- The curse is a permanent disadvantage of the character, but unlike other disadvantages it does not raise base DP: betrayal is never rewarded (this setting rule takes precedence over *Trait changes during play* in `Rules/Traits.md`). Only powerful divine magic of the betrayed god, after great atonement, can lift it.
 - Ordinary people who change their god quietly risk little more than an admonition, unless they had received a gift.

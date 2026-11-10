@@ -1,12 +1,13 @@
 # Magic
 
 - **Two kinds of magic:** arcane spells, learned from books by anyone who reads, and divine gifts, granted by a god to those who serve it (see `Faith.md`).
+- **Cheap on purpose:** in solo play one character has to be their own healer, scout and artillery, so simple magic is within any reader's reach. The GM does not make it harder to get; money, time and access to books are limit enough.
 - **Magic is ordinary.** Simple spells are within reach of anyone who can read and has a little time; what limits them is the price of books. Villages often have a hedge wizard who knows a few simple spells, handed down from elders by word of mouth. Most peasants cannot read and own no books.
 - **Arcane College** in Kingsbridge trains and licenses wizards. Everyday simple magic needs no licence; powerful spells cast in Valdren without one are a crime. Necromancy and pacts with demons are crimes everywhere.
 
 ## Arcane spells
 
-- **Learning:** a character who reads with understanding and has a book or a teacher can learn any spell. Each spell needs a number of days of study and practice (see the table), from 10 for the simplest to 400 for the most powerful. Study can be broken off and resumed; the progress is kept and written on the character sheet, e.g. "firebolt 6/30 days".
+- **Learning:** a character who reads with understanding and has a book or a teacher can learn any spell. Each spell needs a number of days of study and practice (see the table), from 10 for the simplest to 400 for the most powerful. A day of study is a whole day spent on it, without travel or adventure, so most study falls between scenarios. Study can be broken off and resumed; the progress is kept and written on the character sheet, e.g. "firebolt 6/30 days".
 - **Books and teachers:** old and powerful spells are often written in Aurelian. The more powerful the spell, the rarer and dearer its book and the harder it is to find a teacher willing to teach it.
 - **Learned spells are not advantages** and do not change DP: like equipment gained in play, the character paid for them with time and money (see *Gaining and losing equipment* in `Rules/Equipment.md`). At character creation a wizard knows the spells typical of the profession, usually 2–3 simple ones; anything more, or a powerful spell, is an advantage (see `Rules/CharacterCreation.md`).
 - **Casting** takes a round in combat and needs a free hand and a clear voice. A spell can be cast a limited number of times a day (see *Uses* in the table).
