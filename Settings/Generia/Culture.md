@@ -54,8 +54,8 @@
 | 8   | Ilvaran | autumn | rains turn the roads to mud                                     |
 | 9   | Nethras | autumn | first frosts; livestock is slaughtered for the winter           |
 | 10  | Ysmara  | winter | the longest night on 1 Ysmara; snow closes the passes           |
-| 11  | Duravel | winter | hungry wolves come close to the villages                        |
-| 12  | Caerwen | winter | the deepest snow; stores run low before spring                  |
+| 11  | Duravel | winter | the deepest snow; hungry wolves come close to the villages      |
+| 12  | Caerwen | winter | the snow starts to melt, roads turn to mud; stores run low      |
 
 - **Daylight:** `Tables/Daylight.json` gives sunrise, sunset and darkness in the heart of Valdren, in sun time (noon at 12:00): from about 8½ hours of daylight on 1 Ysmara to nearly 16 on 1 Saelis. In the Frostmarch the sun rises about an hour earlier and sets an hour later in summer, and the other way in winter. On the southern coast the difference is half that, the other way round. The GM shifts the times from `Scripts/gm.py` by that much there.
 
