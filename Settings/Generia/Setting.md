@@ -4,9 +4,10 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 ## Setting files
 
-- `Setting.md`: GM rules, world, peoples, languages, adventurers, gods, names (this file)
+- `Setting.md`: GM rules, world, peoples, languages, adventurers, names (this file)
 - `Geography.md`: the continent, climate, lands and places, travel
-- `Magic.md`: magic, spellcasting characters, magic items
+- `Magic.md`: arcane spells, learning them, scrolls and magic items
+- `Faith.md`: gods, divine gifts, displeasure and conversion
 - `Equipment.md`: money, prices, weapons, armour, light, starting purse
 - `Bestiary.md`: monsters and enemies with combat stats
 - `Maps/GeneriaMap.svg`: world map, 1 px = 1 km, open to the player (see *Continent* in `Geography.md`)
@@ -26,6 +27,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 - **Technology:** high medieval. Swords, crossbows, plate armour, sailing ships. No printing, no gunpowder.
 - **Calendar:** 12 months of 30 days plus 5 festival days, 7-day week. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF.
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
+- **Gods:** seven jealous gods, each followed on their own; their clerics and paladins receive divine gifts. Gods, gifts, displeasure and conversion: `Faith.md`.
 - **Ruins:** the old Empire of Aurelion fell a thousand years ago and left roads, towers, tombs and dungeons full of treasure and danger.
 
 ## Peoples
@@ -58,20 +60,6 @@ A character's species sets the reference point: traits typical of it are not adv
 - **Pay:** guard or escort work about 5 s a day; clearing a cellar of vermin 1 g; a goblin lair 10–30 g; a troll or a band of outlaws 50–100 g; anything worse is negotiated. Treasure is usually worth more than the pay.
 - **Loot:** whatever is found in ancient ruins and monster lairs belongs to the finder. Robbing the graves of known families, temples or a lord's land is a crime.
 - **Parties:** most adventurers work in small bands of three to six; a lone adventurer is unusual but not rare.
-
-## Gods
-
-The gods are real and grant power to their clerics (see `Magic.md`). People honour the whole pantheon and pray to the god whose help they need.
-
-| God      | Domain                              | Worshippers                        |
-|----------|-------------------------------------|------------------------------------|
-| Solarius | sun, light, justice, healing        | knights, paladins, the common folk |
-| Thar     | war, courage, strength              | warriors, soldiers, barbarians     |
-| Sylvana  | nature, harvest, beasts, the moon   | farmers, druids, rangers, elves    |
-| Mortis   | death, graves, the passage of souls | undertakers, enemies of the undead |
-| Varek    | luck, trade, roads, thieves         | merchants, travellers, rogues      |
-| Hammar   | forge, craft, stone                 | dwarves, smiths, builders          |
-| Noctar   | darkness, undeath, forbidden lore   | warlocks, necromancers, dark cults |
 
 ## Names
 

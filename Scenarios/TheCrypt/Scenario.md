@@ -6,7 +6,7 @@ A short, self-contained adventure for one character over one or two sessions. Th
 
 ## The world
 
-Coldford is a dozen or so cottages in a mountain valley, far from towns and roads. It is late autumn. Three weeks ago, after heavy rain, a slope slid down and buried the only road through the pass, so until spring nobody will come into the valley and nobody will leave it. People live off sheep, goats and flax, pay in silver and copper, and pray to Solarius for light and health, to Sylvana for the harvest and the flocks, and to Mortis for the dead.
+Coldford is a dozen or so cottages in a mountain valley, far from towns and roads. It is late autumn. Three weeks ago, after heavy rain, a slope slid down and buried the only road through the pass, so until spring nobody will come into the valley and nobody will leave it. People live off sheep, goats and flax, pay in silver and copper, and most of them follow Sylvana, the goddess of the harvest and the flocks. The dead are buried with the rites of Mortis.
 
 The valley has no priest, no mage and no healer other than the herbalist. Old tales speak of revenants that rise from their graves. Few believe them. A character's own magic works as described in the setting (see `Settings/Generia/Magic.md`). A prayer for help by a character without a divine ability is very hard, and help, if it comes, is modest.
 

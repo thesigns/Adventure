@@ -1,39 +1,65 @@
 # Magic
 
-- **Three traditions:** arcane (wizards and sorcerers: study, spellbooks, words and gestures), divine (clerics and paladins: prayer, holy symbol, the god's favour) and nature (druids and rangers: the land, beasts, the moon).
-- Magic is known and respected but uncommon. Every town has a hedge wizard or a priest who can heal; real mages are rare and live in towers, cities and temples.
-- **Arcane College** in Kingsbridge trains and licenses wizards. Unlicensed casting in Valdren is frowned upon, necromancy and pacts with demons are crimes everywhere.
+- **Two kinds of magic:** arcane spells, learned from books by anyone who reads, and divine gifts, granted by a god to those who serve it (see `Faith.md`).
+- **Magic is ordinary.** Simple spells are within reach of anyone who can read and has a little time; what limits them is the price of books. Villages often have a hedge wizard who knows a few simple spells, handed down from elders by word of mouth. Most peasants cannot read and own no books.
+- **Arcane College** in Kingsbridge trains and licenses wizards. Everyday simple magic needs no licence; powerful spells cast in Valdren without one are a crime. Necromancy and pacts with demons are crimes everywhere.
 
-## Character magic
+## Arcane spells
 
-- A caster's power is an advantage granting a supernatural ability (see *Supernatural abilities* in `Rules/Traits.md`), usually −2 to −5 PDT depending on strength and how often it matters. The profession alone gives lore and rituals, not power.
-- A character starts with one or two such abilities. A new one can be gained as a new advantage (see *Trait changes during play* in `Rules/Traits.md`).
-- **Casting** takes a round in combat. Heavy wounds that stun make it harder, and arcane spells need free hands and voice.
-- **Uncertain outcome:** each casting is a roll with a table, usually average difficulty. On the lowest results the spell fizzles, misfires or hits the wrong target.
-- A cleric who betrays their god's domain loses power until atonement.
+- **Learning:** a character who reads with understanding and has a book or a teacher can learn any spell. Each spell needs a number of days of study and practice (see the table), from 10 for the simplest to 400 for the most powerful. Study can be broken off and resumed; the progress is kept and written on the character sheet, e.g. "firebolt 6/30 days".
+- **Books and teachers:** old and powerful spells are often written in Aurelian. The more powerful the spell, the rarer and dearer its book and the harder it is to find a teacher willing to teach it.
+- **Learned spells are not advantages** and do not change DP: like equipment gained in play, the character paid for them with time and money (see *Gaining and losing equipment* in `Rules/Equipment.md`). At character creation a wizard knows the spells typical of the profession, usually 2–3 simple ones; anything more, or a powerful spell, is an advantage (see `Rules/CharacterCreation.md`).
+- **Casting** takes a round in combat and needs a free hand and a clear voice. A spell can be cast a limited number of times a day (see *Uses* in the table).
+- **Chance of success** depends on how much of the study the caster has done. In calm, comfortable conditions:
 
-### Example abilities
+| Study done | Casting in calm conditions | Chance |
+|------------|----------------------------|--------|
+| 10%        | nearly impossible (16+)    | 5%     |
+| 25%        | very hard (13+)            | 26%    |
+| 50%        | hard (11+)                 | 50%    |
+| 75%        | average (9+)               | 74%    |
+| 100%       | trivial, no roll           | 100%   |
 
-| Ability | Tradition | Effect | Uses |
-|---|---|---|---|
-| firebolt | arcane | ranged attack dealing a medium wound, sets flammables alight | once per scene |
-| light | arcane | an object glows like a torch for an hour | at will |
-| magic shield | arcane | combat against the caster is one level harder for the enemy, one fight | once per day |
-| sleep | arcane | one or two weak or average enemies fall asleep for a few minutes | once per day |
-| detect magic | arcane | the caster senses magic nearby and its rough nature | once per scene |
-| invisibility | arcane | the caster is invisible until they attack or a few minutes pass | once per day |
-| heal wounds | divine | wound level drops by 10%, or a dying creature is stabilised | once per day |
-| bless | divine | one action of an ally is one level easier | once per scene |
-| turn undead | divine | weak and average undead flee, stronger ones fight one level harder | once per fight |
-| divine sense | divine | the caster knows if evil, undead or fiends are near | once per scene |
-| entangle | nature | plants hold an enemy in place for a few rounds | once per day |
-| speak with beasts | nature | an animal understands and answers simply; wild beasts do not attack | once per scene |
+  Combat, fear, haste, wounds, bad light, bound hands or a gag are circumstances that make casting harder as usual, each by a level (see *Circumstances* in `Rules/StandardThrow.md`): a mastered spell cast in a fight is easy. On the lowest results the spell fizzles, misfires or hits the wrong target.
 
-## Potions, scrolls and items
+### Spell tiers
 
-- **Healing potion:** wound level drops by 10%, works in a few minutes. 50 gold.
-- **Scroll:** a single spell anyone who can read magic may cast once. 50–200 gold.
-- **Antidote:** cures ordinary poison. 20 gold.
+| Tier     | Study days | Uses              | Book                        | Teacher                 | Scroll       |
+|----------|------------|-------------------|-----------------------------|-------------------------|--------------|
+| simple   | 10–20      | three times a day | 20–50 g                     | 5 s a day               | 10 g         |
+| advanced | 30–90      | once a day        | 100–300 g                   | 2 g a day               | 50 g         |
+| powerful | 100–400    | once a week       | 1,000 g and up, rarely sold | rare, 10 g a day and up | 200 g and up |
+
+Necromancy takes about three times as long to learn as other spells of its tier, which is why its masters are mostly liches, who have the time.
+
+### Example spells
+
+| Spell               | Tier       | Days | Effect                                                                 |
+|---------------------|------------|------|------------------------------------------------------------------------|
+| light               | simple     | 10   | an object glows like a torch for an hour                               |
+| detect magic        | simple     | 10   | the caster senses magic nearby and its rough nature                    |
+| mending             | simple     | 10   | repairs a broken everyday item, e.g. a rope, a pot or a torn cloak     |
+| magic missile       | simple     | 10   | a bolt that never misses, deals a light wound                          |
+| heal light wounds   | simple     | 15   | wound level drops by 5%, or a dying creature is stabilised             |
+| magic shield        | simple     | 15   | combat against the caster is one level harder for the enemy, one fight |
+| sleep               | simple     | 20   | one or two weak or average enemies fall asleep for a few minutes       |
+| firebolt            | advanced   | 30   | ranged attack dealing a medium wound, sets flammables alight           |
+| web                 | advanced   | 40   | sticky webs hold enemies in a small area for a few rounds              |
+| invisibility        | advanced   | 45   | the caster is invisible until they attack or a few minutes pass        |
+| charm person        | advanced   | 60   | a human takes the caster for a friend for an hour                      |
+| fireball            | powerful   | 120  | an explosion: everyone in a small area takes a serious wound           |
+| fly                 | powerful   | 150  | the caster flies for an hour                                           |
+| summon elemental    | powerful   | 250  | an elemental (powerful enemy) serves the caster for one fight          |
+| teleport            | powerful   | 300  | the caster and a few others move to a place the caster knows well      |
+| speak with the dead | necromancy | 90   | a corpse answers three questions                                       |
+| raise skeleton      | necromancy | 150  | a skeleton (average enemy) serves the caster until destroyed           |
+| animate the dead    | necromancy | 400  | raises a graveyard of zombies and skeletons                            |
+
+## Scrolls, potions and items
+
+- **Scroll:** a spell bound in parchment. Anyone who can read the scroll's language can cast its spell once, even without knowing it: it works like a mastered spell and does not count towards the day's uses. After the casting the scroll crumbles to dust. Prices as in *Spell tiers*.
+- **Healing potion:** wound level drops by 10%, works in a few minutes. 50 g.
+- **Antidote:** cures ordinary poison. 20 g.
 - **Magic weapon** (+1 sword and the like): combat is one level easier or wounds are one step heavier, hurts creatures immune to normal weapons. Rarely sold; hundreds to thousands of gold.
 - **Magic armour:** like normal armour of its class but without its drawbacks, or one class better. Same rarity.
-- **Wondrous items** (rings, cloaks, wands, amulets): the GM sets effect and limits like an ability above. Found in hoards and tombs, almost never bought.
+- **Wondrous items** (rings, cloaks, wands, amulets): the GM sets effect and limits like a spell. Found in hoards and tombs, almost never bought; many are of gnomish make.
