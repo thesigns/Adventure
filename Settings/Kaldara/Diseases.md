@@ -10,7 +10,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 - Objawy: suchy kaszel, czarna plwocina o poranku, potem duszność, na końcu gorączka i dławienie.
 - Chorują ci, którzy długo siedzą pod ziemią: śmiałkowie, rzadziej górnicy. Im dłużej i głębiej, tym gorzej.
-- Przyczyna: suche purchawki, od pięści do głowy, które rosną w głębokich ruinach i jaskiniach. Są suche i kruche: nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
+- Przyczyna: suche purchawki, popielatoszare, od pięści do głowy, które rosną w głębokich ruinach i jaskiniach. Są suche i kruche: nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
 - Purchawki pękają też pod trollami i robalami, więc pył może wisieć w powietrzu, zanim przyjdzie człowiek.
 - Śmiałkowie omijają suche purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
 - Chory zdrowieje po dłuższym pobycie na powierzchni, nikt nie wie dlaczego. Kto zostaje pod ziemią, umiera.
@@ -30,7 +30,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
   - postać nadepnie albo potrąci purchawkę albo wejdzie w wiszący pył: przeciętne (`k3`),
   - przejście przez salę, której posadzkę pokrywają purchawki: trudne (`k4`),
   - każde kolejne trzy doby w Głębinach albo na najgłębszych poziomach ruin: łatwe (`k2`).
-- Kto widzi purchawki i idzie ostrożnie, nie nadepnie. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy pył już wisi.
+- Kto widzi purchawki i idzie ostrożnie, nie nadepnie. W kurzu i popiele ruin łatwo je przeoczyć. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy pył już wisi.
 - Przykład: `python Scripts/roll.py --kampania <kampania> --ukryty --etykieta c1 --tablica k3`
 - Kaszel zaczyna się po dobie.
 - Chory nie rzuca ponownie: nowe zakażenie od razu pogłębia chorobę o stopień.
