@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas, światło i trolle, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`, przeciwnicy w `Bestiary.md` i `Trolls.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`, przeciwnicy w `Bestiary.md` i `Trolls.md`, a słońce, światło i ogień wobec trolli w `Trolls.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -84,7 +84,7 @@ Miary drogi (rast, dzień drogi): *Miary drogi* w `Travel.md`.
 
 Grzywna to także miara wagi, około 200 g, a uncja to jej ósma część (zob. *Waluta* w `Economy.md`). Czas ludzie mierzą porami dnia i położeniem słońca, a nie godzinami: o świcie, w południe, o zmierzchu, po zgaśnięciu poświaty. Godziny z tabeli *Dzień i noc* są dla MG.
 
-## Czas, światło i trolle
+## Czas i światło
 
 ### Kalendarz
 
@@ -139,42 +139,9 @@ Tę samą tabelę zawiera `Tables/Daylight.json`. Jeśli kampania ma ustawiony s
 
 Na północnym wybrzeżu zimowy dzień jest krótszy, a białe noce dłuższe niż w tabeli, mniej więcej o tydzień z każdej strony. Na południu jest odwrotnie. Przed świtem i po zachodzie jest jasno, choć słońca nie widać: poświata wystarcza, żeby zabić trolla.
 
-### Słońce i trolle
-
-- **Troll w świetle dnia** kamienieje w ciągu jednej rundy, bez rzutu i bez względu na wielkość. Światłem dnia jest wszystko poza ciemnością z tabeli, także dzień pod chmurami, mgła, zamieć i poświata zmierzchu. Kamień jest martwy na zawsze.
-- **Cień nie chroni pod gołym niebem.** Bezpieczne są tylko miejsca, do których światło nieba w ogóle nie dociera: jaskinie, ruiny, głębokie szczeliny, dno fiordu. Za granicę bezpieczeństwa MG uznaje miejsce, z którego nie widać nieba.
-- **Trolle czują świt.** Nie trzeba im mówić, że nadchodzi brzask, i zwykle są w legowiskach na długo przed nim. Zaskoczyć je świtem można tylko podstępem: zatrzymać trolla rozmową, zagadką, zakładem albo walką, której nie chce przerwać. MG śledzi wtedy godzinę i wie, w której rundzie wypada brzask.
-- **Ucieczka na światło.** Za dnia troll nie pójdzie za postacią dalej niż do miejsca, z którego widać niebo. Postać, która dobiegnie do światła dnia, jest przed nim bezpieczna, choć troll może rzucać kamieniami z ciemności.
-- **Światło ognia, lawy, księżyca i zorzy** nie zamienia trolli w kamień. Ogień za to je płoszy (zob. *Trolle i ogień*).
-- **Światło Solvara** wyproszone przez kapłana działa jak słońce, ale słabo i krótko (zob. *Magia*).
-
-### Światło razi trolle
-
-Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za dnia, a każde światło je razi, także takie, które nie parzy i nie zamienia ich w kamień.
-
-- **Światło z bliska**, czyli pochodnia, latarnia, kaganek albo ognisko w odległości kilku kroków, oślepia trolla: mruży oczy, zasłania się i źle ocenia odległość. Walka z trollem w kręgu światła jest łatwiejsza o poziom.
-- **Nagły błysk** w ciemności, np. odsłonięta latarnia, rozdmuchany żar albo pochodnia ciśnięta trollowi pod nogi, oślepia go na jedną rundę: walka w tej rundzie jest łatwiejsza o dwa poziomy, a troll może się cofnąć albo chybić do własnego towarzysza.
-- **Z daleka** światło nie razi, tylko zdradza postać (zob. *Ciemność i źródła światła*). Dlatego trolle trzymają się poza kręgiem światła, rzucają z ciemności kamieniami, zachodzą od tyłu i próbują je zgasić.
-- **Ślepym trollom**, np. wielu szeptaczom, oraz ślepym jaszczurom i robalom światło nie przeszkadza.
-- **Jedna okoliczność.** Pochodnia, która razi i płoszy naraz, ułatwia walkę o poziom, a nie o dwa (zob. *Okoliczności* w `Rules/StandardThrow.md`). Latarnia i kaganek tylko rażą, więc też ułatwiają walkę o poziom, ale nie trzymają trolla na dystans (zob. *Trolle i ogień*).
-
-### Trolle i ogień
-
-Trolle boją się ognia: płomienia pochodni, łuczywa, ogniska, płonącej smoły albo tranu. Nie boją się samego światła, więc kaganek i latarnia ich nie płoszą, choć je rażą (zob. *Światło razi trolle*): trzeba płomienia, który parzy. Same ognia nie rozpalają, bo nie jest im do niczego potrzebny: jedzą surowe mięso i widzą w ciemności. W legowisku trolli nie ma więc paleniska ani śladów ognia, a ogień, który ktoś tam zobaczy, rozpalił człowiek.
-
-- **Pomioty** uciekają przed płonącą pochodnią i nie podchodzą do ogniska. Za to próbują zgasić ogień z daleka: rzucają kamieniami, chlustają wodą, zasypują go piachem albo czekają, aż się wypali.
-- **Szaraki, kosmacze, trolle fiordowe i szeptacze** trzymają się z dala od płomienia. Nie atakują wręcz kogoś, kto grozi im ogniem, chyba że są osaczone, ranne albo bronią legowiska i młodych. Zamiast tego krążą poza zasięgiem płomienia, rzucają kamieniami, zachodzą od tyłu i czekają, aż pochodnia zgaśnie.
-- **Górski troll** boi się ognia mniej. Pochodnia go nie zatrzymuje, ale walka z nim jest łatwiejsza o poziom, dopóki postać grozi mu ogniem.
-- **Wielogłowy troll** ognia się nie boi.
-- **Głód, gody i młode przełamują strach.** Wygłodzony troll, np. w głodne noce albo gdy w jego rewirze zabrakło jedzenia, samiec w okresie godowym i trollica broniąca młodych nie cofają się przed pochodnią i atakują wręcz. Światło nadal go razi, więc walka z nim w kręgu światła jest łatwiejsza o poziom (zob. *Światło razi trolle*), ale odpędzanie ogniem przestaje działać. Wygłodzony troll jest wychudły i szary, a MG opisuje to tak, żeby gracz mógł go rozpoznać.
-- **Odpędzanie ogniem** to taktyka walki (zob. *Taktyka* w `Rules/Combat.md`). Postać nie rani wtedy trolla, tylko trzyma go na dystans albo zmusza do ucieczki: na wysokich wynikach troll się cofa albo ucieka, a na niskich przeskakuje płomień, chwyta pochodnię albo wytrąca ją z ręki. Przeciw trollom, które boją się ognia, taka walka jest łatwiejsza o poziom niż zwykła.
-- **Podpalony troll**, np. oblany płonącą smołą albo tranem, wpada w panikę i ucieka, chyba że nie ma dokąd.
-- **Pochodnia jest zawsze na wagę życia.** Zajmuje rękę, więc postać nie trzyma wtedy tarczy ani broni oburącz. Gaśnie w wodzie, w silnym wietrze i w przeciągu podziemnych korytarzy, a w tablicy rundy MG może wpisać na najniższych wynikach „pochodnia gaśnie”. Zapas pochodni liczy się jak przedmiot zużywalny (zob. *Ciemność i źródła światła*).
-- **Ognisko** z kimś, kto przy nim czuwa i dokłada do ognia, trolle omijają. Ognisko bez czuwającego dogasa po kilku godzinach, a samotny śmiałek musi kiedyś spać. Na wyspie bez lasów opał jest cenny, a ogień w ciemności widać z daleka.
-
 ### Ciemność i źródła światła
 
-Pod ziemią panuje całkowita ciemność: bez światła działania wymagające wzroku są trudniejsze o dwa poziomy (zob. *Zmęczenie, głód i światło* w `Rules/Rules.md`). Trolle, ślepe jaszczury, robale i strażnicy ruin nie potrzebują światła, więc ciemność nie jest dla nich okolicznością, a trolle w ciemności czują się najlepiej (zob. *Światło razi trolle*).
+Pod ziemią panuje całkowita ciemność: bez światła działania wymagające wzroku są trudniejsze o dwa poziomy (zob. *Zmęczenie, głód i światło* w `Rules/Rules.md`). Trolle, ślepe jaszczury, robale i strażnicy ruin nie potrzebują światła, więc ciemność nie jest dla nich okolicznością, a trolle w ciemności czują się najlepiej (zob. *Światło razi trolle* w `Trolls.md`).
 
 | Źródło                           | Czas działania               | Uwagi                                                               |
 |----------------------------------|------------------------------|---------------------------------------------------------------------|
@@ -205,20 +172,20 @@ Morze, fiordy i rzeki spływające z lodowca są lodowate przez cały rok. Posta
 
 ## Broń
 
-| Broń                              | Rany                                              | Uwagi                                                               |
-|-----------------------------------|---------------------------------------------------|---------------------------------------------------------------------|
-| nóż                               | od draśnięcia do rany, typowo lekka rana          | nosi go każdy                                                       |
-| topór                             | od lekkiej rany do ciężkiej rany, typowo rana     | najczęstsza broń, jedna ręka, z tarczą                              |
-| topór bojowy na długim toporzysku | od rany do ciosu śmiertelnego, typowo ciężka rana | oburącz, bez tarczy; w ciasnym korytarzu walka trudniejsza o poziom |
-| włócznia                          | od lekkiej rany do ciężkiej rany, typowo rana     | z tarczą; trzyma zwierzę i trolla na dystans                        |
-| miecz                             | od draśnięcia do ciężkiej rany, typowo rana       | drogi, znak bogactwa; dobrze leży w ręku i w ciasnocie              |
-| maczuga albo młot                 | od draśnięcia do ciężkiej rany, typowo lekka rana | tania; nie tnie, ale łamie                                          |
-| kilof                             | od lekkiej rany do ciężkiej rany, typowo rana     | narzędzie górnika                                                   |
-| harpun                            | od lekkiej rany do ciężkiej rany, typowo rana     | jak włócznia; z liną można nim ściągnąć zdobycz                     |
-| pochodnia                         | od draśnięcia do lekkiej rany i poparzenie        | zwierzęta i trolle się jej boją (zob. *Trolle i ogień*)             |
-| oszczep                           | od lekkiej rany do rany, typowo lekka rana        | rzucany na kilkanaście metrów                                       |
-| łuk                               | od lekkiej rany do ciężkiej rany, typowo rana     | zasięg ok. 150 m; w ruinach zwykle kilkanaście metrów               |
-| proca                             | od draśnięcia do rany, typowo lekka rana          | zasięg ok. 50 m; kamieni nie brakuje                                |
+| Broń                              | Rany                                              | Uwagi                                                                 |
+|-----------------------------------|---------------------------------------------------|-----------------------------------------------------------------------|
+| nóż                               | od draśnięcia do rany, typowo lekka rana          | nosi go każdy                                                         |
+| topór                             | od lekkiej rany do ciężkiej rany, typowo rana     | najczęstsza broń, jedna ręka, z tarczą                                |
+| topór bojowy na długim toporzysku | od rany do ciosu śmiertelnego, typowo ciężka rana | oburącz, bez tarczy; w ciasnym korytarzu walka trudniejsza o poziom   |
+| włócznia                          | od lekkiej rany do ciężkiej rany, typowo rana     | z tarczą; trzyma zwierzę i trolla na dystans                          |
+| miecz                             | od draśnięcia do ciężkiej rany, typowo rana       | drogi, znak bogactwa; dobrze leży w ręku i w ciasnocie                |
+| maczuga albo młot                 | od draśnięcia do ciężkiej rany, typowo lekka rana | tania; nie tnie, ale łamie                                            |
+| kilof                             | od lekkiej rany do ciężkiej rany, typowo rana     | narzędzie górnika                                                     |
+| harpun                            | od lekkiej rany do ciężkiej rany, typowo rana     | jak włócznia; z liną można nim ściągnąć zdobycz                       |
+| pochodnia                         | od draśnięcia do lekkiej rany i poparzenie        | zwierzęta i trolle się jej boją (zob. *Trolle i ogień* w `Trolls.md`) |
+| oszczep                           | od lekkiej rany do rany, typowo lekka rana        | rzucany na kilkanaście metrów                                         |
+| łuk                               | od lekkiej rany do ciężkiej rany, typowo rana     | zasięg ok. 150 m; w ruinach zwykle kilkanaście metrów                 |
+| proca                             | od draśnięcia do rany, typowo lekka rana          | zasięg ok. 50 m; kamieni nie brakuje                                  |
 
 - **Włócznia przeciw trollowi i zwierzęciu.** Póki postać trzyma przeciwnika na dystansie drzewca, walka jest łatwiejsza o poziom. Na niskich wynikach MG wpisuje skutek „przeciwnik wchodzi w zwarcie”, a w zwarciu włócznia utrudnia walkę o poziom.
 - **Tarcza** jest okrągła, z lipowych desek. Utrudnia przeciwnikowi zranienie postaci (zob. *Pancerz* w `Rules/Equipment.md`), ale łapa trolla, ciśnięty głaz albo topór bojowy może ją rozłupać na najniższych wynikach.

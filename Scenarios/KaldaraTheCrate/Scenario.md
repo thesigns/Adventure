@@ -10,7 +10,7 @@ Scenariusz jest pierwszą częścią kampanii. Drugą będzie podróż ferdem z 
 
 ## Świat
 
-Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomioty*, *Ślady trolli*, *Głód*), `Settings/Kaldara/Mechanics.md` (*Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*) i `Settings/Kaldara/Economy.md`.
+Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomioty*, *Ślady trolli*, *Głód*, *Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*) i `Settings/Kaldara/Economy.md`.
 
 ### Czas i światło
 
@@ -159,8 +159,8 @@ Postać może iść do składu przez drzwi, jeśli zdejmie rygiel, co jest gło�
 Pomiot to słaby przeciwnik o wątłej wytrzymałości (zob. *Pomioty* w `Settings/Kaldara/Trolls.md`). Tej nocy ma trzy okoliczności:
 
 - **Ciasnota:** piwnica jest niska, więc dorosły człowiek walczy w niej pochylony, a pomiot jest w swoim żywiole. Walka jest trudniejsza o poziom.
-- **Światło:** pochodnia albo kaganek razi pomiota z bliska, więc walka jest łatwiejsza o poziom (zob. *Światło razi trolle* w `Settings/Kaldara/Mechanics.md`).
-- **Głód i osaczenie:** pomiot nie cofa się przed ogniem, bo jest wygłodzony i nie ma dokąd uciec, poza kanałem za plecami postaci, jeśli ta weszła kanałem (zob. *Trolle i ogień* w `Settings/Kaldara/Mechanics.md`).
+- **Światło:** pochodnia albo kaganek razi pomiota z bliska, więc walka jest łatwiejsza o poziom (zob. *Światło razi trolle* w `Settings/Kaldara/Trolls.md`).
+- **Głód i osaczenie:** pomiot nie cofa się przed ogniem, bo jest wygłodzony i nie ma dokąd uciec, poza kanałem za plecami postaci, jeśli ta weszła kanałem (zob. *Trolle i ogień* w `Settings/Kaldara/Trolls.md`).
 
 Ciasnota i światło się znoszą, więc walka z pomiotem jest łatwa, jak z każdym słabym przeciwnikiem: próg trafienia 6, zakres rany 3–4. Pomiot gryzie i drapie, od draśnięcia do lekkiej rany. Postać, która wejdzie bez światła, walczy o dwa poziomy trudniej i nie widzi, co ją gryzie.
 

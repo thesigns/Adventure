@@ -6,12 +6,11 @@ Trolle to główne zagrożenie wyspy. Pochodzą z głębin pod wyspą i zajmują
 - Dorosłe trolle to samotniki (zob. *Samotniki*). Każdy ma swoje legowisko i rewir w ruinach i broni ich przed innymi trollami. Razem trzymają się tylko pomioty, które chodzą stadami, pary w okresie godowym i trollice z młodymi.
 - Jest kilka gatunków trolli, od pomiotów wielkości dziecka po górskie trolle wysokie na kilka metrów (zob. *Gatunki trolli*).
 - Są szybkie. Chodzą na wielkich, płaskich stopach, które nie zapadają się w śnieg, piach ani błoto, a przeciętny troll biega szybciej niż człowiek. Na otwartym terenie ucieczka przed trollem rzadko się udaje. Ratuje wąskie przejście, ogień albo świt.
-- Nie wytwarzają narzędzi ani broni, bo w ruinach i jaskiniach nie ma z czego. Walczą gołymi rękami: mają ostre pazury i zęby, a czasem pomagają sobie kamieniem, który trzymają w łapie albo którym ciskają. Ognia też nie rozpalają i nie jest im do niczego potrzebny: jedzą surowe mięso i widzą w ciemności. Boją się go za to jak dzikie zwierzęta: płonąca pochodnia w ręku człowieka trzyma większość trolli na dystans, a pomioty przed nią uciekają. Dlatego pierwsze, co robią, to próbują ją zgasić.
+- Nie wytwarzają narzędzi ani broni, bo w ruinach i jaskiniach nie ma z czego. Walczą gołymi rękami: mają ostre pazury i zęby, a czasem pomagają sobie kamieniem, który trzymają w łapie albo którym ciskają. Ognia nie rozpalają, ale boją się go jak dzikie zwierzęta (zob. *Trolle i ogień*).
 - Krasnoludzką broń i zbroje, które znajdą w ruinach, zbierają w legowiskach jak każdą błyskotkę, ale nie walczą nimi i ich nie noszą. Mocy runicznych przedmiotów nie rozumieją.
 - Mówią prostym, własnym językiem, którego ludzie nie znają. Da się z nimi porozumieć na migi, jedzeniem, błyskotką albo groźbą. Można je przekupić, zastraszyć albo przechytrzyć, ale nie można im ufać.
 - Kochają to, co błyszczy. Każdy troll gromadzi w swoim legowisku złoto, klejnoty i krasnoludzkie przedmioty.
-- Światło słońca zamienia trolle w kamień. Wystarczy odrobina: dzień pod chmurami, poświata zmierzchu, pierwszy brzask. Światło księżyca, gwiazd i zorzy nie zamienia ich w kamień, tak samo jak światło pochodni, ognia czy lawy. Kamienne postacie przy wejściach do ruin to trolle, które nie zdążyły się schować przed świtem.
-- Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za dnia, a każde światło je razi, także pochodnia, latarnia czy kaganek, które nie zamieniają ich w kamień. Oślepione światłem z bliska mrużą oczy, zasłaniają się i źle oceniają odległość, więc wolą atakować z ciemności i najpierw gasić światło.
+- Światło dnia zamienia trolle w kamień, a każde inne światło je razi (zob. *Słońce i trolle* i *Światło razi trolle*). Kamienne postacie przy wejściach do ruin to trolle, które nie zdążyły się schować przed świtem.
 - Trolle wychodzą na powierzchnię tylko wtedy, gdy jest naprawdę ciemno, od zgaśnięcia ostatniej poświaty po zachodzie do pierwszego brzasku. Wychodzą polować na zwierzęta, a nie na ludzi (zob. *Łowy na powierzchni*). Nawet w długie zimowe noce nie oddalają się od swoich legowisk dalej niż na kilka, najwyżej kilkanaście kilometrów i przed brzaskiem zawsze wracają.
 - Jeden gatunek trolli, szeptacze, zna dziką magię (zob. *Szeptacze*).
 - Z Głębin pochodzą też robale, które trolle hodują jak bydło, i ślepe jaszczury, na które polują (zob. `Bestiary.md`).
@@ -120,9 +119,42 @@ W grze:
 - Zanim postać wejdzie do rewiru trolla, MG zawsze daje jej co najmniej jeden ślad: smród, kości, odciski albo odgłos. Opisuje go jak każdy szczegół miejsca, bez podpowiadania, co z niego wynika (zob. *Prowadzenie gry* w `AGENTS.md`). Samotna postać przeżywa tylko wtedy, gdy ma szansę zawrócić.
 - Ślady oczywiste, np. smród albo kości pod nogami, postać zauważa bez rzutu. Nieoczywiste, np. wytarte ściany, wymagają wypatrywania. Odczytanie śladu (gatunek, świeżość, stan trolla) to rzut, typowo przeciętny, a dla łowcy i postaci z zaletą *zna ruiny* łatwy.
 
+## Słońce i trolle
+
+- **Troll w świetle dnia** kamienieje w ciągu jednej rundy, bez rzutu i bez względu na wielkość. Światłem dnia jest wszystko poza ciemnością z tabeli *Dzień i noc* w `Mechanics.md`, także dzień pod chmurami, mgła, zamieć i poświata zmierzchu. Kamień jest martwy na zawsze.
+- **Cień nie chroni pod gołym niebem.** Bezpieczne są tylko miejsca, do których światło nieba w ogóle nie dociera: jaskinie, ruiny, głębokie szczeliny, dno fiordu. Za granicę bezpieczeństwa MG uznaje miejsce, z którego nie widać nieba.
+- **Trolle czują świt.** Nie trzeba im mówić, że nadchodzi brzask, i zwykle są w legowiskach na długo przed nim. Zaskoczyć je świtem można tylko podstępem: zatrzymać trolla rozmową, zagadką, zakładem albo walką, której nie chce przerwać. MG śledzi wtedy godzinę i wie, w której rundzie wypada brzask.
+- **Ucieczka na światło.** Za dnia troll nie pójdzie za postacią dalej niż do miejsca, z którego widać niebo. Postać, która dobiegnie do światła dnia, jest przed nim bezpieczna, choć troll może rzucać kamieniami z ciemności.
+- **Światło ognia, lawy, księżyca i zorzy** nie zamienia trolli w kamień. Ogień za to je płoszy (zob. *Trolle i ogień*).
+- **Światło Solvara** wyproszone przez kapłana działa jak słońce, ale słabo i krótko (zob. *Magia* w `Mechanics.md`).
+
+## Światło razi trolle
+
+Dla trolli naturalna jest ciemność. Widzą w niej tak dobrze jak człowiek za dnia, a każde światło je razi, także takie, które nie parzy i nie zamienia ich w kamień.
+
+- **Światło z bliska**, czyli pochodnia, latarnia, kaganek albo ognisko w odległości kilku kroków, oślepia trolla: mruży oczy, zasłania się i źle ocenia odległość. Walka z trollem w kręgu światła jest łatwiejsza o poziom.
+- **Nagły błysk** w ciemności, np. odsłonięta latarnia, rozdmuchany żar albo pochodnia ciśnięta trollowi pod nogi, oślepia go na jedną rundę: walka w tej rundzie jest łatwiejsza o dwa poziomy, a troll może się cofnąć albo chybić do własnego towarzysza.
+- **Z daleka** światło nie razi, tylko zdradza postać (zob. *Ciemność i źródła światła* w `Mechanics.md`). Dlatego trolle trzymają się poza kręgiem światła, rzucają z ciemności kamieniami, zachodzą od tyłu i próbują je zgasić.
+- **Ślepym trollom**, np. wielu szeptaczom, oraz ślepym jaszczurom i robalom światło nie przeszkadza.
+- **Jedna okoliczność.** Pochodnia, która razi i płoszy naraz, ułatwia walkę o poziom, a nie o dwa (zob. *Okoliczności* w `Rules/StandardThrow.md`). Latarnia i kaganek tylko rażą, więc też ułatwiają walkę o poziom, ale nie trzymają trolla na dystans (zob. *Trolle i ogień*).
+
+## Trolle i ogień
+
+Trolle boją się ognia: płomienia pochodni, łuczywa, ogniska, płonącej smoły albo tranu. Nie boją się samego światła, więc kaganek i latarnia ich nie płoszą, choć je rażą (zob. *Światło razi trolle*): trzeba płomienia, który parzy. Same ognia nie rozpalają, bo nie jest im do niczego potrzebny: jedzą surowe mięso i widzą w ciemności. W legowisku trolli nie ma więc paleniska ani śladów ognia, a ogień, który ktoś tam zobaczy, rozpalił człowiek.
+
+- **Pomioty** uciekają przed płonącą pochodnią i nie podchodzą do ogniska. Za to próbują zgasić ogień z daleka: rzucają kamieniami, chlustają wodą, zasypują go piachem albo czekają, aż się wypali.
+- **Szaraki, kosmacze, trolle fiordowe i szeptacze** trzymają się z dala od płomienia. Nie atakują wręcz kogoś, kto grozi im ogniem, chyba że są osaczone, ranne albo bronią legowiska i młodych. Zamiast tego krążą poza zasięgiem płomienia, rzucają kamieniami, zachodzą od tyłu i czekają, aż pochodnia zgaśnie.
+- **Górski troll** boi się ognia mniej. Pochodnia go nie zatrzymuje, ale walka z nim jest łatwiejsza o poziom, dopóki postać grozi mu ogniem.
+- **Wielogłowy troll** ognia się nie boi.
+- **Głód, gody i młode przełamują strach.** Wygłodzony troll, np. w głodne noce albo gdy w jego rewirze zabrakło jedzenia, samiec w okresie godowym i trollica broniąca młodych nie cofają się przed pochodnią i atakują wręcz. Światło nadal go razi, więc walka z nim w kręgu światła jest łatwiejsza o poziom (zob. *Światło razi trolle*), ale odpędzanie ogniem przestaje działać. Wygłodzony troll jest wychudły i szary, a MG opisuje to tak, żeby gracz mógł go rozpoznać.
+- **Odpędzanie ogniem** to taktyka walki (zob. *Taktyka* w `Rules/Combat.md`). Postać nie rani wtedy trolla, tylko trzyma go na dystans albo zmusza do ucieczki: na wysokich wynikach troll się cofa albo ucieka, a na niskich przeskakuje płomień, chwyta pochodnię albo wytrąca ją z ręki. Przeciw trollom, które boją się ognia, taka walka jest łatwiejsza o poziom niż zwykła.
+- **Podpalony troll**, np. oblany płonącą smołą albo tranem, wpada w panikę i ucieka, chyba że nie ma dokąd.
+- **Pochodnia jest zawsze na wagę życia.** Zajmuje rękę, więc postać nie trzyma wtedy tarczy ani broni oburącz. Gaśnie w wodzie, w silnym wietrze i w przeciągu podziemnych korytarzy, a w tablicy rundy MG może wpisać na najniższych wynikach „pochodnia gaśnie”. Zapas pochodni liczy się jak przedmiot zużywalny (zob. *Ciemność i źródła światła* w `Mechanics.md`).
+- **Ognisko** z kimś, kto przy nim czuwa i dokłada do ognia, trolle omijają. Ognisko bez czuwającego dogasa po kilku godzinach, a samotny śmiałek musi kiedyś spać. Na wyspie bez lasów opał jest cenny, a ogień w ciemności widać z daleka.
+
 ## Trolle w walce
 
-Słońce, światło i ogień: *Słońce i trolle*, *Światło razi trolle* i *Trolle i ogień* w `Mechanics.md`. Walka poszczególnych gatunków: *Gatunki trolli*.
+Słońce, światło i ogień: *Słońce i trolle*, *Światło razi trolle* i *Trolle i ogień*. Walka poszczególnych gatunków: *Gatunki trolli*.
 
 - Walczą pazurami i zębami, a kamieniem uderzają albo ciskają. Krasnoludzką broń trzymają w legowiskach, ale nią nie walczą.
 - **Kamienie.** Troll, który nie chce podejść do ognia albo światła, ciska kamieniami z ciemności. To walka na dystans (zob. *Walka na dystans* w `Rules/Combat.md`). Kamień szaraka zadaje od draśnięcia do rany, typowo lekką ranę, a głaz górskiego trolla od rany do ciosu śmiertelnego, typowo ciężką ranę. Tarcza i osłona chronią jak przed każdym pociskiem.
@@ -213,4 +245,4 @@ Ich ciosy kruszą skałę. Zwykła broń prawie ich nie rani. Do walki z wielog�
 - Przeciwnik legendarny. Ciosy kruszą skałę.
 - Zwykła broń prawie go nie rani: wytrzymałość ogromna.
 - Ciosy: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
-- Nie da się go pokonać w zwykłej walce. Rozsądna postać ucieka, przechytrza go, skłóca głowy albo czeka ze słońcem (zob. *Słońce i trolle* w `Mechanics.md`).
+- Nie da się go pokonać w zwykłej walce. Rozsądna postać ucieka, przechytrza go, skłóca głowy albo czeka ze słońcem (zob. *Słońce i trolle*).
