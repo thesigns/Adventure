@@ -4,22 +4,22 @@ Ten plik opisuje choroby wyspy i ich mechanikę. Rany, urazy i leczenie opisują
 
 ## Czarny kaszel
 
-Choroba śmiałków. Łapie się ją w ruinach i jaskiniach, głęboko pod ziemią, a leczy słońcem. Uczeni z Domu Visara nazywają ją w swoich zapiskach chorobą głębin.
+Choroba śmiałków. Łapie się ją w ruinach i jaskiniach, głęboko pod ziemią, a mija na powierzchni. Uczeni z Domu Visara nazywają ją w swoich zapiskach chorobą głębin.
 
 ### Co wiedzą ludzie
 
 - Czarny kaszel zaczyna się od suchego kaszlu i czarnej plwociny o poranku. Potem przychodzi duszność, a w końcu gorączka, w której chory dławi się własnym oddechem.
 - Chorują ci, którzy długo siedzą pod ziemią: śmiałkowie, rzadziej górnicy z Grimsfjord. Im dłużej i im głębiej, tym gorzej.
 - Śmiałkowie mówią, że to od pyłu, od zimna ruin albo od klątwy krasnoludów. Starzy śmiałkowie wiążą na twarz mokrą chustę w zapylonych salach, a młodzi się z nich śmieją.
-- Chory, który wróci na powierzchnię, zdrowieje, jeśli posiedzi na słońcu. Latem, w białe noce, mija to szybko. Zimą, gdy dzień trwa kilka godzin, śmiałek, który wrócił chory jesienią, kaszle często do wiosny. Kto zostaje pod ziemią z czarnym kaszlem, umiera.
+- Chory, który wróci z ruin, zdrowieje, jeśli posiedzi dłużej na powierzchni. Nikt nie wie dlaczego. Kto zostaje pod ziemią z czarnym kaszlem, umiera.
 - Czarny kaszel nie przechodzi z człowieka na człowieka. Nikt nie zaraził się od chorego, więc chorych nie wypędza się z domów.
-- Kapłani Solvara wynoszą chorych na słońce i mówią, że to ich bóg wygania z nich ciemność. Zielarki nie mają na czarny kaszel lekarstwa.
+- Kapłani Solvara mówią, że to ich bóg wygania z chorych ciemność, a starzy śmiałkowie, że wiatr wywiewa z nich pył ruin. Zielarki nie mają na czarny kaszel lekarstwa.
 
 ### Prawda o czarnym kaszlu
 
 Tego nie wie nikt na wyspie (zob. *Zasady dla MG* w `Setting.md`).
 
-Czarny kaszel niosą zarodniki bladych grzybów, które rosną w Głębinach przy gorących źródłach i szczelinach z parą (zob. *Pożywienie* w `Trolls.md`). Trolle i inne stwory z Głębin są na nie odporne. Zarodniki rosną w płucach człowieka w ciemności, a giną w świetle dnia. Najgęściej jest ich tam, gdzie grzyby porosły całe sale, i za krasnoludzkimi murami zarazy (zob. *Prawda o krasnoludach* w `Dwarves.md`). To czarny kaszel, razem z trollami, zgubił krasnoludy.
+Czarny kaszel niosą zarodniki bladych grzybów, które rosną w Głębinach przy gorących źródłach i szczelinach z parą (zob. *Pożywienie* w `Trolls.md`). Trolle i inne stwory z Głębin są na nie odporne. Do życia potrzebują mikroklimatu podziemi, więc rosną w płucach człowieka, dopóki ten jest pod ziemią, a na powierzchni giną. Najgęściej jest ich tam, gdzie grzyby porosły całe sale, i za krasnoludzkimi murami zarazy (zob. *Prawda o krasnoludach* w `Dwarves.md`). To czarny kaszel, razem z trollami, zgubił krasnoludy.
 
 ### Zakażenie
 
@@ -45,7 +45,6 @@ Czarny kaszel działa jak uraz przejściowy (zob. *Urazy* w `Rules/Health.md`) i
 2. **Duszność:** kaszel napadami i brak tchu po kilku krokach. Walka, bieg, wspinaczka i dźwiganie są trudniejsze o poziom, a skradanie o dwa. Noc nie jest porządnym wypoczynkiem, więc PDT się nie odnawia (zob. *Odnawianie* w `Rules/Determination.md`).
 3. **Gorączka:** gorączka, dławienie się i czarne usta. Wszystkie działania są trudniejsze o poziom, a skradanie o dwa. PDT się nie odnawia.
 
-- **Pod ziemią** choroba pogłębia się o stopień co dwie doby bez światła dnia. Na trzecim stopniu każda kolejna doba pod ziemią przynosi lekką ranę z wycieńczenia, aż do śmierci.
-- **Na powierzchni** choroba się nie pogłębia, nawet w ciemnym domu i w zimową noc.
-- **Słońce** leczy. Postać, która przebywa pod gołym niebem przez większość dnia, choćby pod chmurami, cofa chorobę o stopień: od maja do sierpnia co dzień, w marcu, kwietniu, wrześniu i październiku co trzy dni, a od listopada do lutego co tydzień. Po cofnięciu pierwszego stopnia jest zdrowa. Przebyta choroba nie chroni przed następną.
-- **Światło Solvara**, ogień ani maści nie leczą czarnego kaszlu. Leczy go tylko światło dnia.
+- **Pod ziemią** choroba pogłębia się o stopień co dwie doby. Na trzecim stopniu każda kolejna doba pod ziemią przynosi lekką ranę z wycieńczenia, aż do śmierci.
+- **Na powierzchni** choroba się nie pogłębia, a każde dwie doby cofają ją o stopień, o każdej porze roku, w domu i pod gołym niebem. Po cofnięciu pierwszego stopnia jest zdrowa. Przebyta choroba nie chroni przed następną.
+- **Modlitwa**, światło Solvara ani maści nie leczą czarnego kaszlu. Leczy go tylko pobyt na powierzchni.
