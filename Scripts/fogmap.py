@@ -1,19 +1,19 @@
 """Mapa gracza z mgłą wojny: odsłania tylko te obszary mapy, które postać odkryła.
 
 Przykłady:
-    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --odkryj 1 2
-    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --sekret plyta
-    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --lista
-    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --otworz
+    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 2
+    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --sekret plyta
+    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --lista
+    python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --otworz
 
 Obok mapy SVG musi leżeć plik obszarów o tej samej nazwie z rozszerzeniem
 .areas.json (np. MapCrypt.areas.json). Opisuje on obszary do odsłaniania,
 sekrety i elementy widoczne tylko dla MG (format: zob. AGENTS.md, rozdział Mapy).
 
 Stan odkrycia jest zapisywany w folderze kampanii, w pliku
-<nazwa>-mapa.json, a mapa gracza w <nazwa>-mapa.svg razem z podglądem
-<nazwa>-mapa.html, który sam się odświeża. Nazwą domyślnie jest nazwa folderu
-scenariusza albo settingu, w którym leży mapa (np. Krypta).
+<nazwa>Map.json, a mapa gracza w <nazwa>Map.svg razem z podglądem
+<nazwa>Map.html, który sam się odświeża. Nazwą domyślnie jest nazwa folderu
+scenariusza albo settingu, w którego podfolderze Maps leży mapa (np. Crypt).
 """
 
 import argparse
@@ -306,9 +306,10 @@ def main():
     if not svg_path.exists():
         sys.exit(f"Błąd: brak mapy {args.mapa}.")
     spec = load_json(svg_path.with_suffix(".areas.json"))
-    name = args.nazwa or svg_path.parent.name
+    folder_map = svg_path.parent.parent if svg_path.parent.name == "Maps" else svg_path.parent
+    name = args.nazwa or folder_map.name
 
-    state_path = folder / f"{name}-mapa.json"
+    state_path = folder / f"{name}Map.json"
     state = load_json(state_path, default={"map": "", "areas": [], "secrets": []})
     state["map"] = svg_path.relative_to(ROOT).as_posix() if svg_path.is_relative_to(ROOT) else str(svg_path)
 
@@ -331,9 +332,9 @@ def main():
         json.dump(state, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
 
-    svg_out = folder / f"{name}-mapa.svg"
+    svg_out = folder / f"{name}Map.svg"
     build_player_map(svg_path, spec, state).write(svg_out, encoding="utf-8", xml_declaration=False)
-    html_out = folder / f"{name}-mapa.html"
+    html_out = folder / f"{name}Map.html"
     if not html_out.exists():
         html_out.write_text(HTML.format(title=f"{name}: mapa gracza", svg=svg_out.name), encoding="utf-8")
 

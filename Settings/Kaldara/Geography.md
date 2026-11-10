@@ -1,6 +1,6 @@
 # Geografia
 
-Mapa wyspy jest w `MapKaldara.svg` i jest jawna dla gracza (zob. *Pliki settingu* w `Setting.md`). W sprawach geografii źródłem prawdy jest mapa: kształt wybrzeża, położenie miast, krain, rzek, jezior i traktów oraz odległości. Opisy w tym pliku są do niej dopasowane, a gdyby się z nią rozjechały, rozstrzyga mapa. Odległości podaje się w kilometrach, a w narracji w miarach świata (zob. *Miary* w `Mechanics.md`).
+Mapa wyspy jest w `Maps/MapKaldara.svg` i jest jawna dla gracza (zob. *Pliki settingu* w `Setting.md`). W sprawach geografii źródłem prawdy jest mapa: kształt wybrzeża, położenie miast, krain, rzek, jezior i traktów oraz odległości. Opisy w tym pliku są do niej dopasowane, a gdyby się z nią rozjechały, rozstrzyga mapa. Odległości podaje się w kilometrach, a w narracji w miarach świata (zob. *Miary* w `Mechanics.md`).
 
 ## Wymiary i podróże
 

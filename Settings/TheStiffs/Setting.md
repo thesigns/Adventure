@@ -7,7 +7,7 @@ Polska, Warszawa, wiosna 1990 roku. W nocy z 21 na 22 marca, w pierwszy dzień w
 - `Setting.md`: przegląd, konwencja i zasady settingu przełożone na mechanikę systemu (ten plik)
 - `Poland.md`: realia Polski i Warszawy w marcu 1990 roku: polityka, milicja, pieniądze, codzienność, Kościół, miasto, pogoda
 - `Stiffs.md`: sztywni: stałe zasady, etapy rozkładu, zmysły i zachowanie, co wiedzą ludzie w kolejnych dniach, plotki i rady dla MG
-- `gm_tables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Powstawanie zmarłych*)
+- `Tables/GmTables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Powstawanie zmarłych*)
 
 `Stiffs.md` opisuje sztywnych fabularnie, a ten plik podaje, jak ich rozgrywać mechaniką systemu. Gdy oba pliki mówią o tym samym, fabułę rozstrzyga `Stiffs.md`, a liczby ten plik.
 
@@ -171,7 +171,7 @@ Kiedy ciało wstanie, MG rozstrzyga rzutem zaraz po śmierci, nigdy z wyboru:
 
 Wysoki wynik jest korzystny dla postaci gracza, bo daje jej więcej czasu.
 
-**Wyjątek od jawności tablic.** Dopóki postać nie wie, że zmarli wstają, MG wykonuje oba rzuty ukryte, bo tablica zdradziłaby to, czego postać jeszcze nie wie (zob. *Tablica rezultatów* w `Rules/StandardThrow.md`). Rzuca skryptami z neutralną etykietą i nazwaną tablicą z `gm_tables.json`, a wyników nie wpisuje do postępu scenariusza (zob. *Sekrety MG* w `AGENTS.md`):
+**Wyjątek od jawności tablic.** Dopóki postać nie wie, że zmarli wstają, MG wykonuje oba rzuty ukryte, bo tablica zdradziłaby to, czego postać jeszcze nie wie (zob. *Tablica rezultatów* w `Rules/StandardThrow.md`). Rzuca skryptami z neutralną etykietą i nazwaną tablicą z `Tables/GmTables.json`, a wyników nie wpisuje do postępu scenariusza (zob. *Sekrety MG* w `AGENTS.md`):
 
 ```
 python Scripts/roll.py --kampania Kloc --ukryty --etykieta r1 --tablica watpliwy

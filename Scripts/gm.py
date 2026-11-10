@@ -2,7 +2,7 @@
 
 Gracz widzi tę samą konsolę co MG, więc sekrety nie mogą trafiać do treści
 poleceń, diffów ani wyjścia skryptów. Ten skrypt sam rzuca, sam zapisuje
-wynik w Campaigns/<kampania>/gm.json (zaciemnionym, żeby nie dało się go
+wynik w Campaigns/<kampania>/Gm.json (zaciemnionym, żeby nie dało się go
 przeczytać przypadkiem) i wypisuje tylko to, co już się wydarzyło.
 
 Przykłady:
@@ -17,16 +17,16 @@ Polecenia:
     czas    ustawia zegar świata (pierwszy raz z --data) i wypisuje zdarzenia,
             których godzina właśnie minęła; przyszłych nigdy nie wypisuje;
             z --setting (zapamiętanym w stanie kampanii) wypisuje też porę
-            dnia z pliku Settings/<setting>/daylight.json
-    timer   rzuca 3K6 według nazwanej tablicy z gm_tables.json, której
+            dnia z pliku Settings/<setting>/Tables/Daylight.json
+    timer   rzuca 3K6 według nazwanej tablicy z Tables/GmTables.json, której
             wartości to minuty, i zapisuje ukryte zdarzenie; wypisuje tylko
             potwierdzenie
     usun    usuwa ukryte zdarzenie albo ukryty rzut, np. gdy ciało zostało
             zniszczone przed czasem
     pokaz   wypisuje cały ukryty stan; tylko przy wznowieniu gry
 
-Nazwane tablice leżą w plikach gm_tables.json w folderach settingów
-i scenariuszy (Settings/*/gm_tables.json, Scenarios/*/gm_tables.json).
+Nazwane tablice leżą w plikach Tables/GmTables.json w folderach settingów
+i scenariuszy (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json).
 Ukryte rzuty z tablicą tekstową wykonuje Scripts/roll.py --ukryty.
 """
 
@@ -41,9 +41,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CAMPAIGNS = ROOT / "Campaigns"
-STATE_FILE = "gm.json"
-TABLES_FILE = "gm_tables.json"
-DAYLIGHT_FILE = "daylight.json"
+STATE_FILE = "Gm.json"
+TABLES_FILE = "Tables/GmTables.json"
+DAYLIGHT_FILE = "Tables/Daylight.json"
 FORMAT = "gm-base64-1"
 MIN, MAX = 3, 18
 CLOCK_FMT = "%Y-%m-%d %H:%M"
@@ -91,7 +91,7 @@ def log_hidden(folder, label, source):
 
 
 def load_tables():
-    """Nazwane tablice ze wszystkich gm_tables.json settingów i scenariuszy."""
+    """Nazwane tablice ze wszystkich Tables/GmTables.json settingów i scenariuszy."""
     tables, origin = {}, {}
     for path in sorted(ROOT.glob(f"Settings/*/{TABLES_FILE}")) + sorted(ROOT.glob(f"Scenarios/*/{TABLES_FILE}")):
         with path.open(encoding="utf-8") as fh:
@@ -328,11 +328,11 @@ def main():
     p = sub.add_parser("czas", help="ustaw zegar świata i wypisz zdarzenia, które właśnie nastąpiły")
     p.add_argument("--teraz", required=True, help="godzina w świecie, GG:MM")
     p.add_argument("--data", help="data w świecie, RRRR-MM-DD (przy pierwszym ustawieniu albo korekcie)")
-    p.add_argument("--setting", help="folder settingu z plikiem daylight.json; zapamiętywany w stanie kampanii")
+    p.add_argument("--setting", help="folder settingu z plikiem Tables/Daylight.json; zapamiętywany w stanie kampanii")
 
     p = sub.add_parser("timer", help="rzuć ukryty czas zdarzenia według nazwanej tablicy")
     p.add_argument("--etykieta", required=True, help="neutralna etykieta, np. n1")
-    p.add_argument("--tablica", required=True, help="nazwa tablicy z gm_tables.json (wartości w minutach)")
+    p.add_argument("--tablica", required=True, help="nazwa tablicy z Tables/GmTables.json (wartości w minutach)")
     p.add_argument("--od", help="godzina początku odliczania, GG:MM (domyślnie teraz)")
     p.add_argument("--nie-wczesniej", dest="nie_wczesniej", help="zdarzenie nie wcześniej niż o GG:MM")
     p.add_argument("--opis", default="", help="krótki, neutralny opis, widoczny w konsoli")

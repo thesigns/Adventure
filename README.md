@@ -88,7 +88,7 @@ Mapa gracza z mgłą wojny, na której MG odsłania miejsca odkryte przez posta�
 Podgląd w przeglądarce odświeża się sam:
 
 ```
-python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Krypta/MapCrypt.svg --odkryj 1 2 --otworz
+python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 2 --otworz
 ```
 
 ## Scenariusze i settingi
@@ -99,7 +99,7 @@ np. „świat low fantasy, przygoda dzieje się we wsi odciętej od świata
 i w pobliskiej krypcie”.
 
 Repozytorium zawiera na razie jeden testowy scenariusz, **Krypta**
-(`Scenarios/Krypta/`). To krótka mini-przygoda w świecie low fantasy, opisanym
+(`Scenarios/Crypt/`). To krótka mini-przygoda w świecie low fantasy, opisanym
 w samym scenariuszu: postać schodzi do krypty pod wzgórzem, żeby odnaleźć
 zaginionego pastucha. Scenariusz ma mapę krypty z mgłą wojny dla gracza
 i skrypt losujący skarby. Settingów na razie nie ma.

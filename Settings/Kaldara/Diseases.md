@@ -25,7 +25,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 ### Zakażenie
 
 - Gdzie rosną suche purchawki, ustala scenariusz.
-- Ukryty rzut MG, bez PDT, tablice z `gm_tables.json`:
+- Ukryty rzut MG, bez PDT, tablice z `Tables/GmTables.json`:
   - postać nadepnie albo potrąci purchawkę albo wejdzie w wiszący pył: przeciętne (`k3`),
   - przejście przez salę, której posadzkę pokrywają purchawki: trudne (`k4`),
   - każde kolejne trzy doby w Głębinach albo na najgłębszych poziomach ruin: łatwe (`k2`).
@@ -49,7 +49,7 @@ Działa jak uraz przejściowy (zob. *Urazy* w `Rules/Health.md`). Kary się nie 
 ## Gorączka z rany
 
 - Brudna rana ropieje i daje gorączkę. Ludzie wiedzą, że ranę trzeba przemyć i opatrzyć czystym płótnem.
-- Rzut po każdej ranie (nie po draśnięciu), ukryty, bez PDT, tablice z `gm_tables.json`:
+- Rzut po każdej ranie (nie po draśnięciu), ukryty, bez PDT, tablice z `Tables/GmTables.json`:
   - rana przemyta i opatrzona czystym płótnem: łatwe (`k2`),
   - rana nieopatrzona albo opatrzona brudnym: przeciętne (`k3`),
   - pazury i zęby trolla, robala, jaszczura albo szczurów, rana z bagna albo z ruin, nieopatrzona: trudne (`k4`).

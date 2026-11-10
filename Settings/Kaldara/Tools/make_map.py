@@ -1,9 +1,9 @@
 """Generator mapy wyspy Kaldara (styl czarno-białej, ręcznie kreskowanej mapy).
 
-Narzędzie autora, nie do gry. Tworzy plik Settings/Kaldara/MapKaldara.svg.
+Narzędzie autora, nie do gry. Tworzy plik Settings/Kaldara/Maps/MapKaldara.svg.
 
 Użycie:
-    python Settings/Kaldara/tools/make_map.py [ścieżka do MapKaldara.svg]
+    python Settings/Kaldara/Tools/make_map.py [ścieżka do MapKaldara.svg]
 
 Skala: 1 piksel SVG = 500 m (2 px na kilometr). Wyspa ma 500 km ze wschodu
 na zachód (1000 px) i 300 km z północy na południe (600 px), północ u góry.
@@ -11,8 +11,8 @@ Generator jest deterministyczny (stałe ziarno losowania), więc bez zmian
 w kodzie zawsze tworzy tę samą mapę. Kształt wyspy i krain jest zapisany
 w punktach kontrolnych w pikselach w sekcji GEOGRAFIA.
 
-Fonty (licencja SIL OFL 1.1, osadzane w SVG): tools/fonts/UnifrakturMaguntia.ttf
-(tytuł) i tools/fonts/GrenzeGotisch.ttf (napisy, z polskimi znakami). Teksty
+Fonty (licencja SIL OFL 1.1, osadzane w SVG): Tools/Fonts/UnifrakturMaguntia.ttf
+(tytuł) i Tools/Fonts/GrenzeGotisch.ttf (napisy, z polskimi znakami). Teksty
 licencji z informacją o prawach autorskich leżą obok nich: OFL-*.txt.
 """
 import base64
@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent / "MapKaldara.svg"
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent / "Maps" / "MapKaldara.svg"
 R = random.Random(1205)
 
 W, H = 1240, 900
@@ -588,12 +588,12 @@ add = svg.append
 
 
 def font_face(name, file):
-    data = base64.b64encode((HERE / "fonts" / file).read_bytes()).decode()
+    data = base64.b64encode((HERE / "Fonts" / file).read_bytes()).decode()
     return f"@font-face {{ font-family: '{name}'; src: url(data:font/ttf;base64,{data}) format('truetype'); }}"
 
 
 add(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">')
-add("<!-- Osadzone fonty, licencja SIL Open Font License 1.1 (pełny tekst: tools/fonts/OFL-*.txt):\n"
+add("<!-- Osadzone fonty, licencja SIL Open Font License 1.1 (pełny tekst: Tools/Fonts/OFL-*.txt):\n"
     "     Grenze Gotisch, Copyright 2020 The Grenze Gotisch Project Authors\n"
     "     (https://github.com/Omnibus-Type/Grenze-Gotisch);\n"
     "     UnifrakturMaguntia, Copyright (c) 2010 j. 'mach' wust, Copyright (c) 2009 Peter Wiegel,\n"

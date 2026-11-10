@@ -1,7 +1,7 @@
 """Losowe skarby scenariusza Krypta.
 
 Przykład:
-    python Scenarios/Krypta/treasure.py --kampania Randuvil --miejsce sarkofag
+    python Scenarios/Crypt/Scripts/treasure.py --kampania Randuvil --miejsce sarkofag
 
 Miejsca:
     sarkofag   zawartość jednego zamkniętego sarkofagu w sali grobów (pokój 5)
@@ -18,7 +18,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-CAMPAIGNS = Path(__file__).resolve().parents[2] / "Campaigns"
+CAMPAIGNS = Path(__file__).resolve().parents[3] / "Campaigns"
 
 rng = random.SystemRandom()
 

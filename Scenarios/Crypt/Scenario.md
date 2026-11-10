@@ -82,14 +82,14 @@ Krypta jest wykuta w skale pod Wzgórzem Brzozowym, pół godziny drogi od wsi. 
 
 ### Plan
 
-Mapa krypty jest w pliku `MapCrypt.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). To mapa dla MG: graczowi MG pokazuje mapę z mgłą wojny (zob. *Mapy* w `AGENTS.md`). Obszary do odsłaniania mają numery pomieszczeń od 1 do 9, a jedynym sekretem jest `plyta`, czyli płyta naciskowa w przedsionku. Obszar 3 obejmuje też rozwidlenie korytarza, więc postać, która do niego dojdzie, widzi wejścia do pokojów 4 i 5. Obszar 9 MG odsłania, gdy postać znajdzie szczelinę, od strony grobowca albo wąwozu.
+Mapa krypty jest w pliku `Maps/MapCrypt.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). To mapa dla MG: graczowi MG pokazuje mapę z mgłą wojny (zob. *Mapy* w `AGENTS.md`). Obszary do odsłaniania mają numery pomieszczeń od 1 do 9, a jedynym sekretem jest `plyta`, czyli płyta naciskowa w przedsionku. Obszar 3 obejmuje też rozwidlenie korytarza, więc postać, która do niego dojdzie, widzi wejścia do pokojów 4 i 5. Obszar 9 MG odsłania, gdy postać znajdzie szczelinę, od strony grobowca albo wąwozu.
 
 Mapę gracza MG prowadzi skryptem `Scripts/fogmap.py`, z nazwą kampanii postaci:
 
 - Gdy postać staje u wejścia do krypty, MG odsłania pokój 1 i otwiera graczowi podgląd mapy, który odtąd odświeża się sam:
 
   ```
-  python Scripts/fogmap.py --kampania <kampania> --mapa Scenarios/Krypta/MapCrypt.svg --odkryj 1 --otworz
+  python Scripts/fogmap.py --kampania <kampania> --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 --otworz
   ```
 
   Jeśli postać wchodzi do krypty szczeliną od strony wąwozu, MG odsłania najpierw obszar 9 zamiast 1.
@@ -255,7 +255,7 @@ Borzywoj nie używa szczeliny w dzień. Jeśli walka idzie dla niego źle, prób
 Skarby, które leżą w ustalonych miejscach, opisują pokoje krypty. Resztę MG losuje skryptem scenariusza:
 
 ```
-python Scenarios/Krypta/treasure.py --kampania <kampania> --miejsce <miejsce>
+python Scenarios/Crypt/Scripts/treasure.py --kampania <kampania> --miejsce <miejsce>
 ```
 
 - `--miejsce sarkofag`: zawartość jednego zamkniętego sarkofagu w sali grobów (pokój 5). MG losuje osobno dla każdego przeszukanego sarkofagu, najwyżej trzy razy.

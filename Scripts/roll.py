@@ -12,7 +12,7 @@ rundy walki), a --stop "3-5,17-18" przerywa serię po wyniku z podanych
 zakresów. Przy serii --pdt dotyczy każdego rzutu osobno.
 Każdy rzut jest dopisywany do Campaigns/<kampania>/Rolls.log.
 
---tablica NAZWA bierze tablicę z gm_tables.json settingu albo scenariusza
+--tablica NAZWA bierze tablicę z Tables/GmTables.json settingu albo scenariusza
 zamiast wpisów w poleceniu.
 --podglad wypisuje tablicę z szansami przy 0-3 PDT (albo do --pdt, jeśli
 więcej) bez rzutu i bez zapisu w Rolls.log. MG pokazuje ją graczowi przed
@@ -20,7 +20,7 @@ decyzją, zamiast liczyć szanse w pamięci:
     python Scripts/roll.py --kampania Randuvil --podglad "3-8:porażka" "9-18:sukces"
 
 --ukryty --etykieta E to rzut ukryty przed graczem: wynik trafia tylko do
-Campaigns/<kampania>/gm.json (zob. Scripts/gm.py), a skrypt wypisuje samo
+Campaigns/<kampania>/Gm.json (zob. Scripts/gm.py), a skrypt wypisuje samo
 potwierdzenie. Tablicę podaje się wtedy przez --tablica, żeby polecenie
 niczego nie zdradzało:
     python Scripts/roll.py --kampania Kloc --ukryty --etykieta r1 --tablica watpliwy
@@ -177,8 +177,8 @@ def main():
     parser.add_argument("--pdt", type=int, default=0, help="wydane Punkty Determinacji (dodatkowe kości)")
     parser.add_argument("--rundy", type=int, default=1, help="najwyższa liczba rzutów w serii z tą samą tablicą")
     parser.add_argument("--stop", default="", help="wyniki kończące serię, np. '3-5,17-18'")
-    parser.add_argument("--tablica", dest="tablica_nazwa", help="nazwa tablicy z gm_tables.json zamiast wpisów")
-    parser.add_argument("--ukryty", action="store_true", help="rzut ukryty: wynik tylko w gm.json kampanii")
+    parser.add_argument("--tablica", dest="tablica_nazwa", help="nazwa tablicy z Tables/GmTables.json zamiast wpisów")
+    parser.add_argument("--ukryty", action="store_true", help="rzut ukryty: wynik tylko w Gm.json kampanii")
     parser.add_argument("--etykieta", help="neutralna etykieta rzutu ukrytego, np. r1")
     parser.add_argument("--podglad", action="store_true",
                         help="tylko wypisz tablicę z szansami przy 0-3 PDT, bez rzutu i bez zapisu")

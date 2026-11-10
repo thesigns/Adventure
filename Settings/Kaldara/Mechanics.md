@@ -135,7 +135,7 @@ Godziny podaje się według słońca: południe wypada o 12:00. Tabela dotyczy �
 | 1 grudnia       | 09:40  | 14:20  | 16:10–07:50 | 5 h          |
 | 15 grudnia      | 10:10  | 13:50  | 15:55–08:05 | 4 h          |
 
-Tę samą tabelę zawiera `daylight.json`. Jeśli kampania ma ustawiony setting (`Scripts/gm.py czas --setting Kaldara`), skrypt przy każdym przesunięciu zegara wypisuje porę dnia i godziny wschodu, zachodu i ciemności, interpolowane między dniami tabeli. Przy zmianie tabeli trzeba zmienić oba miejsca.
+Tę samą tabelę zawiera `Tables/Daylight.json`. Jeśli kampania ma ustawiony setting (`Scripts/gm.py czas --setting Kaldara`), skrypt przy każdym przesunięciu zegara wypisuje porę dnia i godziny wschodu, zachodu i ciemności, interpolowane między dniami tabeli. Przy zmianie tabeli trzeba zmienić oba miejsca.
 
 Na północnym wybrzeżu zimowy dzień jest krótszy, a białe noce dłuższe niż w tabeli, mniej więcej o tydzień z każdej strony. Na południu jest odwrotnie. Przed świtem i po zachodzie jest jasno, choć słońca nie widać: poświata wystarcza, żeby zabić trolla.
 
@@ -205,7 +205,7 @@ Morze, fiordy i rzeki spływające z lodowca są lodowate przez cały rok. Posta
 
 ### Podróże
 
-Mapa wyspy ma skalę 1 piksel = 500 m (2 piksele na kilometr), więc MG może mierzyć na niej odległości (zob. `MapKaldara.svg`). Trakty omijają fiordy, więc droga lądem jest zwykle dłuższa niż odległość w linii prostej.
+Mapa wyspy ma skalę 1 piksel = 500 m (2 piksele na kilometr), więc MG może mierzyć na niej odległości (zob. `Maps/MapKaldara.svg`). Trakty omijają fiordy, więc droga lądem jest zwykle dłuższa niż odległość w linii prostej.
 
 | Sposób podróży                          | Dziennie  | Uwagi                                                  |
 |-----------------------------------------|-----------|--------------------------------------------------------|

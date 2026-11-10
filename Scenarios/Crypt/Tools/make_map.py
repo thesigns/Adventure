@@ -5,7 +5,7 @@ Narzędzie autora, nie do gry. Tworzy dwa pliki w folderze scenariusza:
     MapCrypt.areas.json  obszary i sekrety dla Scripts/fogmap.py
 
 Użycie:
-    python Scenarios/Krypta/tools/make_map.py [ścieżka do MapCrypt.svg]
+    python Scenarios/Crypt/Tools/make_map.py [ścieżka do MapCrypt.svg]
 
 Generator jest deterministyczny (stałe ziarno losowania), więc bez zmian
 w kodzie zawsze tworzy tę samą mapę. Plan krypty jest zapisany w metrach
@@ -17,7 +17,7 @@ import random
 import sys
 from pathlib import Path
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parent.parent / "MapCrypt.svg")
+OUT = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parent.parent / "Maps" / "MapCrypt.svg")
 rnd = random.Random(7)
 
 S = 22.0                 # px per metre

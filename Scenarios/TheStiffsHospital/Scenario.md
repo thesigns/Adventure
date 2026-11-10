@@ -52,7 +52,7 @@ Szpital to czteropiętrowy gmach z lat pięćdziesiątych, z piwnicą, strychem 
 
 ### Mapa
 
-Plan szpitala jest w pliku `MapHospital.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). Na jednym arkuszu są rzuty wszystkich kondygnacji: od strychu i dachu, przez cztery piętra i parter, po piwnicę, a także pawilon gospodarczy z podwórzem. To mapa dla MG, z czerwonymi kodami obszarów. Graczowi MG pokazuje mapę z mgłą wojny (zob. *Mapy* w `AGENTS.md`), na której widać od początku tylko nagłówki kondygnacji i legendę.
+Plan szpitala jest w pliku `Maps/MapHospital.svg` w folderze scenariusza (północ u góry, 1 kratka = 1 m). Na jednym arkuszu są rzuty wszystkich kondygnacji: od strychu i dachu, przez cztery piętra i parter, po piwnicę, a także pawilon gospodarczy z podwórzem. To mapa dla MG, z czerwonymi kodami obszarów. Graczowi MG pokazuje mapę z mgłą wojny (zob. *Mapy* w `AGENTS.md`), na której widać od początku tylko nagłówki kondygnacji i legendę.
 
 Obszary do odsłaniania:
 
@@ -95,7 +95,7 @@ Mapę gracza MG prowadzi skryptem `Scripts/fogmap.py`, z nazwą kampanii postaci
 - Na początku gry MG odsłania obszar, w którym postać zaczyna, i otwiera graczowi podgląd mapy, który odtąd odświeża się sam. Pracownik zna szpital, więc MG odsłania mu od razu wszystkie piętra, parter i piwnicę bez kostnicy, tunelu i pawilonu, chyba że jego praca wymaga ich znajomości (salowa, portier, palacz). Pacjentowi MG odsłania tylko jego piętro i parter, przez który przyszedł.
 
   ```
-  python Scripts/fogmap.py --kampania <kampania> --mapa Scenarios/TheStiffsHospital/MapHospital.svg --odkryj 3-interna 0-hol --otworz
+  python Scripts/fogmap.py --kampania <kampania> --mapa Scenarios/TheStiffsHospital/Maps/MapHospital.svg --odkryj 3-interna 0-hol --otworz
   ```
 
 - Za każdym razem, gdy postać zobaczy kolejne miejsce albo się o nim dowie, np. od pani Zofii o tunelu, MG odsłania je bez `--otworz`.

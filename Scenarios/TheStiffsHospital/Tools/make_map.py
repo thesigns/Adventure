@@ -5,7 +5,7 @@ Narzędzie autora, nie do gry. Tworzy dwa pliki w folderze scenariusza:
     MapHospital.areas.json  obszary dla Scripts/fogmap.py
 
 Użycie:
-    python Scenarios/TheStiffsHospital/tools/make_map.py
+    python Scenarios/TheStiffsHospital/Tools/make_map.py
 
 Plan pokazuje wszystkie kondygnacje gmachu i pawilon gospodarczy na jednym
 arkuszu, jak rzuty w dokumentacji budynku. Wymiary są w metrach (gmach ma
@@ -19,8 +19,8 @@ import random
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
-OUT_SVG = HERE / "MapHospital.svg"
-OUT_AREAS = HERE / "MapHospital.areas.json"
+OUT_SVG = HERE / "Maps" / "MapHospital.svg"
+OUT_AREAS = HERE / "Maps" / "MapHospital.areas.json"
 rnd = random.Random(1990)
 
 S = 11.0                       # px na metr
