@@ -5,9 +5,10 @@ An author's tool, not for play. Writes Settings/Generia/Tables/Daylight.json.
 Usage:
     python Settings/Generia/Tools/make_daylight.py
 
-Generia's year has 12 months of 30 days and the 5 days of Yearturn at its
-end (see Tables/Calendar.json). The winter solstice falls on 3 Yearturn, so
-1 Deepwinter is two days after it. The table is computed for latitude 47° N,
+Generia's year has 252 days: 12 months of 21 days, three to each season
+(see Tables/Calendar.json). The year starts on the spring equinox, so the
+seasons start on the equinoxes and solstices: 1 Tiriwen, 1 Saelis,
+1 Calaris and 1 Ysmara. The table is computed for latitude 47° N,
 the heart of Valdren around Kingsbridge, in local solar time (noon at 12:00).
 Darkness starts when the sun sinks 6° below the horizon (the end of civil
 twilight) and ends when it rises back there.
@@ -22,15 +23,15 @@ LATITUDE = 47.0
 DARK_ALTITUDE = -6.0
 SUN_ALTITUDE = -0.833      # sunrise and sunset, with refraction and the sun's disc
 MONTHS = 12
-MONTH_DAYS = 30
-YEAR = 365
-SOLSTICE_DOY = 363          # 3 Yearturn: 360 days of months + 3
+MONTH_DAYS = 21
+YEAR = MONTHS * MONTH_DAYS  # 252
+EQUINOX_DOY = 1             # 1 Tiriwen, the spring equinox
 
 
 def declination(doy):
-    """The sun's declination in degrees, with the winter solstice on SOLSTICE_DOY."""
-    angle = 2 * math.pi * (doy - SOLSTICE_DOY) / YEAR
-    return -23.44 * math.cos(angle)
+    """The sun's declination in degrees, with the spring equinox on EQUINOX_DOY."""
+    angle = 2 * math.pi * (doy - EQUINOX_DOY) / YEAR
+    return 23.44 * math.sin(angle)
 
 
 def hour_angle(altitude, decl):
@@ -60,9 +61,8 @@ def row(doy):
 def main():
     days = {}
     for month in range(1, MONTHS + 1):
-        for day in (1, 16):
+        for day in (1, 11):
             days[f"{month:02d}-{day:02d}"] = row((month - 1) * MONTH_DAYS + day)
-    days["13-03"] = row(SOLSTICE_DOY)
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w", encoding="utf-8", newline="\n") as fh:
         fh.write('{\n  "days": {\n')

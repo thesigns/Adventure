@@ -1,19 +1,28 @@
 {
   "months": [
-    {"name": "Deepwinter", "days": 30},
-    {"name": "Wolfmonth", "days": 30},
-    {"name": "Thawmonth", "days": 30},
-    {"name": "Seedmonth", "days": 30},
-    {"name": "Bloommonth", "days": 30},
-    {"name": "Highsun", "days": 30},
-    {"name": "Haymonth", "days": 30},
-    {"name": "Harvest", "days": 30},
-    {"name": "Fruitfall", "days": 30},
-    {"name": "Leaffall", "days": 30},
-    {"name": "Rainmonth", "days": 30},
-    {"name": "Darkening", "days": 30},
-    {"name": "Yearturn", "days": 5}
+    {"name": "Tiriwen", "days": 21, "season": "spring"},
+    {"name": "Lissara", "days": 21, "season": "spring"},
+    {"name": "Faelora", "days": 21, "season": "spring"},
+    {"name": "Saelis", "days": 21, "season": "summer"},
+    {"name": "Haeloth", "days": 21, "season": "summer"},
+    {"name": "Merien", "days": 21, "season": "summer"},
+    {"name": "Calaris", "days": 21, "season": "autumn"},
+    {"name": "Ilvaran", "days": 21, "season": "autumn"},
+    {"name": "Nethras", "days": 21, "season": "autumn"},
+    {"name": "Ysmara", "days": 21, "season": "winter"},
+    {"name": "Duravel", "days": 21, "season": "winter"},
+    {"name": "Caerwen", "days": 21, "season": "winter"}
   ],
-  "weekdays": ["Solday", "Tharsday", "Sylday", "Mortsday", "Varday", "Hammarday", "Noctday"],
-  "first_weekday": "Solday"
+  "weekdays": ["Nimel", "Sairas", "Tavien", "Lumiel", "Orwen", "Cassel", "Duriel"],
+  "first_weekday": "Nimel",
+  "moons": [
+    {"name": "Selwen", "phases": [
+      "new", "waxing crescent", "waxing crescent", "waxing crescent", "waxing crescent",
+      "first quarter", "waxing gibbous", "waxing gibbous", "waxing gibbous", "waxing gibbous",
+      "full", "waning gibbous", "waning gibbous", "waning gibbous", "waning gibbous",
+      "last quarter", "waning crescent", "waning crescent", "waning crescent", "waning crescent",
+      "new"]},
+    {"name": "Nimras", "phases": [
+      "new", "first quarter", "waxing gibbous", "full", "waning gibbous", "last quarter", "waning crescent"]}
+  ]
 }

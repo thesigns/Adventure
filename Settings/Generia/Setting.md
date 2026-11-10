@@ -5,7 +5,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 ## Setting files
 
 - `Setting.md`: GM rules, world, peoples, adventurers, organisations and factions, names (this file)
-- `Culture.md`: languages, law, calendar and customs
+- `Culture.md`: languages, law, calendar, moons and customs
 - `History.md`: the Empire of Aurelion, the history of Generia and its present rulers
 - `Geography.md`: the continent, climate, mountains, waters, ruins and lands
 - `Travel.md`: pace, costs, seasons and dangers of travel
@@ -30,7 +30,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 - **Generia:** a small continent of kingdoms, forests, mountains and old ruins, with a European climate. Lands, climate and travel: `Geography.md`.
 - **Technology:** high medieval. Swords, crossbows, plate armour, sailing ships. No printing, no gunpowder.
-- **Calendar:** 12 months of 30 days plus the 5 festival days of Yearturn, a 7-day week named after the gods. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF. Month names, weekdays and festivals: *Calendar* in `Culture.md`. In play the GM sets the clock with `time --setting Generia` (see *GM secrets* in `AGENTS.md`).
+- **Calendar and sky:** an elven calendar used by all: a year of 252 days, 12 months of 21 days, three to a season, starting on the spring equinox; a 7-day week. Two moons: Selwen, large, with a 21-day cycle, and Nimras, small, with a 7-day cycle. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF. Months, weekdays, moons and festivals: *Calendar* in `Culture.md`. In play the GM sets the clock with `time --setting Generia` (see *GM secrets* in `AGENTS.md`).
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
 - **Culture:** languages, law and customs of the lands: `Culture.md`.
 - **Gods:** seven jealous gods, each followed on their own; their clerics and paladins receive divine gifts. Gods, gifts, displeasure and conversion: `Faith.md`.

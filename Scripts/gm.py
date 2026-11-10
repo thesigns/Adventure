@@ -18,7 +18,8 @@ Commands:
             events whose time has just passed; never prints future ones;
             with --setting (remembered in the campaign state) dates follow
             the calendar in Settings/<setting>/Tables/Calendar.json, if the
-            setting has one, with the weekday and month printed, and the
+            setting has one, with the weekday, month, season and moon
+            phases printed, and the
             time of day comes from Settings/<setting>/Tables/Daylight.json
     timer   rolls 3d6 on a named table from Tables/GmTables.json whose
             values are minutes, and stores a hidden event; prints only
@@ -32,11 +33,15 @@ folders (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json),
 in the form {"name": {"entries": {"3-5": 10, "6-18": 30}}}.
 Hidden rolls with a text table are made by Scripts/roll.py --hidden.
 
-Calendar.json has the form {"months": [{"name": "Deepwinter", "days": 30},
-...], "weekdays": ["Solday", ...], "first_weekday": "Solday"}, where
-first_weekday is the weekday of the first day of year 1. Every year has the
-same months. Dates are written YYYY-MM-DD, with months numbered from 01 in
-the order listed. Without Calendar.json dates follow the Gregorian calendar.
+Calendar.json has the form {"months": [{"name": "Tiriwen", "days": 21,
+"season": "spring"}, ...], "weekdays": ["Nimel", ...], "first_weekday":
+"Nimel", "moons": [{"name": "Selwen", "phases": ["new", ...]}]}, where
+first_weekday is the weekday of the first day of year 1, and a moon's phases
+are listed for each night of its cycle, starting with the night of the first
+day of year 1. "season", "weekdays" and "moons" are optional. Every year has
+the same months. Dates are written YYYY-MM-DD, with months numbered from 01
+in the order listed. Without Calendar.json dates follow the Gregorian
+calendar.
 
 Daylight.json has the form {"days": {"MM-DD": {"sunrise": "HH:MM",
 "sunset": "HH:MM", "darkness": "HH:MM-HH:MM"}}}, with days in the setting's
@@ -178,10 +183,12 @@ class Calendar:
     the rest of the script can add minutes with timedelta as usual.
     """
 
-    def __init__(self, months=None, weekdays=None, first_weekday=0):
+    def __init__(self, months=None, weekdays=None, first_weekday=0, seasons=None, moons=None):
         self.months = months
         self.weekdays = weekdays or []
         self.first_weekday = first_weekday
+        self.seasons = seasons or []
+        self.moons = moons or []
         self.year_len = sum(days for _, days in months) if months else 365
 
     def make(self, year, month, day, where):
@@ -226,14 +233,21 @@ class Calendar:
         return f"{year:04d}-{month:02d}-{day:02d} {moment.hour:02d}:{moment.minute:02d}"
 
     def describe(self, moment):
-        """Weekday and month name, e.g. 'Tharsday, 5 Seedmonth', or '' without a calendar."""
+        """Weekday, month, season and moons, e.g. 'Lumiel, 11 Saelis, summer; Selwen full, Nimras full'.
+
+        Empty without a calendar.
+        """
         if not self.months:
             return ""
         _, month, day, _ = self.split(moment)
+        days = (moment - EPOCH).days
         text = f"{day} {self.months[month - 1][0]}"
         if self.weekdays:
-            weekday = self.weekdays[((moment - EPOCH).days + self.first_weekday) % len(self.weekdays)]
-            text = f"{weekday}, {text}"
+            text = f"{self.weekdays[(days + self.first_weekday) % len(self.weekdays)]}, {text}"
+        if self.seasons and self.seasons[month - 1]:
+            text += f", {self.seasons[month - 1]}"
+        if self.moons:
+            text += "; " + ", ".join(f"{name} {phases[days % len(phases)]}" for name, phases in self.moons)
         return text
 
     def day_of_year(self, key, where):
@@ -255,7 +269,9 @@ def load_calendar(setting):
     months = [(m["name"], int(m["days"])) for m in data["months"]]
     weekdays = data.get("weekdays", [])
     first = weekdays.index(data["first_weekday"]) if data.get("first_weekday") in weekdays else 0
-    return Calendar(months, weekdays, first)
+    seasons = [m.get("season", "") for m in data["months"]]
+    moons = [(m["name"], m["phases"]) for m in data.get("moons", [])]
+    return Calendar(months, weekdays, first, seasons, moons)
 
 
 def get_clock(state, cal):

@@ -24,36 +24,46 @@
 
 ## Calendar
 
-- **Year:** 12 months of 30 days, then the five festival days of Yearturn, 365 days in all. The longest night is 3 Yearturn, and the new year starts on 1 Deepwinter. Years count from the founding of Valdren (AF); the present is around 1240 AF.
-- **Writing dates:** in the world "5 Seedmonth 1240 AF". In `Scripts/gm.py` dates are written 1240-04-05, and Yearturn is month 13, e.g. 1240-13-03 (see `Tables/Calendar.json`). With `--setting Generia` the script prints the weekday and the month.
-- **Week:** seven days, one for each god: Solday, Tharsday, Sylday, Mortsday, Varday, Hammarday, Noctday. The week runs on through Yearturn without a break.
-  - **Solday:** day of rest and temple services.
-  - **Varday:** market day in towns.
-  - **Noctday:** unlucky; nobody weds, sets out on a journey or seals a bargain, and the pious keep a lamp burning through the night.
+- **Elven calendar:** the elves read the sky in the elder days and made the calendar. Aurelion took it from them and spread it, and every people of Generia uses it, Valdren included, with its elven names for the months, the weekdays and the moons. Only the seasons have plain names in every tongue: spring, summer, autumn, winter.
+- **Year:** 252 days, 12 months of 21 days, three months to each season. The year starts on the spring equinox, 1 Tiriwen; the longest day is 1 Saelis, the autumn equinox 1 Calaris and the longest night 1 Ysmara. Ages and lengths of time in this setting are in these years.
+- **Counting years:** humans count from the founding of Valdren (AF); the present is around 1240 AF. Elves count by the reigns of their kings and queens.
+- **Writing dates:** in the world "11 Saelis 1240 AF". In `Scripts/gm.py` dates are written 1240-04-11 (see `Tables/Calendar.json`). With `--setting Generia` the script prints the weekday, the month, the season and the phases of both moons.
+- **Week:** seven days, one cycle of the small moon, each sacred to one god (see `Faith.md`). Every year and every month starts on Nimel. Each temple holds its main service on its god's day.
 
-| No. | Month      | Season        | Notes                                                        |
-|-----|------------|---------------|--------------------------------------------------------------|
-| 1   | Deepwinter | midwinter     | snow closes the mountain passes and the Frostmarch           |
-| 2   | Wolfmonth  | winter        | hungry wolves come close to the villages                     |
-| 3   | Thawmonth  | late winter   | thaw, floods in the Fenmarch; spring equinox on 29 Thawmonth |
-| 4   | Seedmonth  | spring        | sowing; the passes open                                      |
-| 5   | Bloommonth | spring        | orchards in bloom                                            |
-| 6   | Highsun    | early summer  | the longest day and Midsummer bonfires on 30 Highsun         |
-| 7   | Haymonth   | summer        | haymaking                                                    |
-| 8   | Harvest    | high summer   | the grain harvest                                            |
-| 9   | Fruitfall  | late summer   | fruit picking; the wine harvest in Greenhollow               |
-| 10  | Leaffall   | autumn        | autumn equinox and the harvest feast on 2 Leaffall           |
-| 11  | Rainmonth  | autumn        | rains turn the roads to mud                                  |
-| 12  | Darkening  | early winter  | first snows; livestock is slaughtered for the winter         |
-| 13  | Yearturn   | midwinter     | five festival days; the longest night on 3 Yearturn          |
+| Day    | Nimras          | God      | Custom                                                         |
+|--------|-----------------|----------|----------------------------------------------------------------|
+| Nimel  | new             | Noctar   | unlucky: nobody weds, sets out or seals a bargain              |
+| Sairas | first quarter   | Sylvana  | sowing, hunting, druids' rites                                 |
+| Tavien | waxing gibbous  | Thar     | drill, duels, war oaths                                        |
+| Lumiel | full            | Varek    | market day in towns                                            |
+| Orwen  | waning gibbous  | Mortis   | burials and remembrance of the dead                            |
+| Cassel | last quarter    | Hammar   | forges burn, guilds meet                                       |
+| Duriel | waning crescent | Solarius | day of rest and temple services; the last light before the new |
 
-- **Daylight:** `Tables/Daylight.json` gives sunrise, sunset and darkness in the heart of Valdren, in sun time (noon at 12:00): from about 8½ hours of daylight at Yearturn to nearly 16 at Midsummer. In the Frostmarch the sun rises about an hour earlier and sets an hour later in summer, and the other way in winter. On the southern coast the difference is half that, the other way round. The GM shifts the times from `Scripts/gm.py` by that much there.
+- **Moons:** **Selwen**, the large silver moon, goes through its phases in 21 days, one month. **Nimras**, the small bright moon, races across the sky and goes through its phases in 7 days, one week. The night of the first day of every month is a double new moon, the darkest night of the month. On the 11th both moons are full: a bright night, and the night of werewolves.
+
+| No. | Month   | Season | Notes                                                           |
+|-----|---------|--------|-----------------------------------------------------------------|
+| 1   | Tiriwen | spring | new year on the spring equinox; thaw, floods in the Fenmarch    |
+| 2   | Lissara | spring | sowing; the mountain passes open                                |
+| 3   | Faelora | spring | orchards in bloom                                               |
+| 4   | Saelis  | summer | the longest day and Midsummer bonfires on 1 Saelis              |
+| 5   | Haeloth | summer | haymaking                                                       |
+| 6   | Merien  | summer | the grain harvest                                               |
+| 7   | Calaris | autumn | harvest feast on the equinox; the wine harvest in Greenhollow   |
+| 8   | Ilvaran | autumn | rains turn the roads to mud                                     |
+| 9   | Nethras | autumn | first frosts; livestock is slaughtered for the winter           |
+| 10  | Ysmara  | winter | the longest night on 1 Ysmara; snow closes the passes           |
+| 11  | Duravel | winter | hungry wolves come close to the villages                        |
+| 12  | Caerwen | winter | the deepest snow; stores run low before spring                  |
+
+- **Daylight:** `Tables/Daylight.json` gives sunrise, sunset and darkness in the heart of Valdren, in sun time (noon at 12:00): from about 8½ hours of daylight on 1 Ysmara to nearly 16 on 1 Saelis. In the Frostmarch the sun rises about an hour earlier and sets an hour later in summer, and the other way in winter. On the southern coast the difference is half that, the other way round. The GM shifts the times from `Scripts/gm.py` by that much there.
 
 ## Customs
 
 - **Guest-right:** a host protects a guest who has eaten at their table for the night, and a guest does no harm to the host. Breaking guest-right is a shame no one forgets, among every people of Generia, orcs excepted.
 - **Oaths:** an oath sworn by a god binds; the god may punish the oath-breaker (see *Displeasure* in `Faith.md`).
 - **The dead:** the dead are buried with the rites of Mortis. The unburied and the wrongly buried may rise, so even enemies are given a grave when there is time.
-- **Festivals:** the five days of Yearturn are a time of feasts, fairs and weddings. Midsummer (30 Highsun) is greeted with bonfires, and every village holds a harvest feast around the autumn equinox (2 Leaffall).
+- **Festivals:** the new year (1 Tiriwen) is a time of feasts, fairs and weddings that last until the first Duriel. Midsummer (1 Saelis) is greeted with bonfires, and every village holds a harvest feast on the autumn equinox (1 Calaris).
 - **Inns and taverns:** the heart of every town and many villages: beds for travellers, news and rumours, notice boards for work (see *Adventurers* in `Setting.md`).
 - **Coming of age:** humans come of age at sixteen, halflings at about thirty, dwarves and gnomes at about fifty, elves at about a hundred.

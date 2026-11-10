@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Solarius | sun, light, justice, healing | knights, paladins, the common folk | Mortis, Thar | Noctar |
 | Thar | war, courage, strength | warriors, soldiers, barbarians | Solarius, Hammar | Noctar |
-| Sylvana | nature, harvest, beasts, the moon | farmers, druids, rangers, elves | Hammar, Mortis | Noctar |
+| Sylvana | nature, harvest, beasts, the moons | farmers, druids, rangers, elves | Hammar, Mortis | Noctar |
 | Mortis | death, graves, the passage of souls | undertakers, enemies of the undead | Solarius, Sylvana | Noctar |
 | Varek | luck, trade, roads, thieves | merchants, travellers, rogues | Hammar | Noctar |
 | Hammar | forge, craft, stone | dwarves, smiths, builders | Thar, Varek | Noctar |
