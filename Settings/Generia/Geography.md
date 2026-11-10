@@ -17,7 +17,7 @@ The map `Maps/GeneriaMap.svg` is the source of truth; this file describes what i
 
 ## Mountains
 
-- **Ironpeaks:** the great range of young, high and jagged mountains. It runs from the west across the middle of the continent and bends north-east, with many spurs on both sides. Home of the dwarven clans. Their great hold is Khaz Dorun, high in the middle of the range where it bends north-east; Durnhold is a smaller hold on the northern slopes, above the Frostmarch. The gnomes' home is Brasshollow, a warren of workshops in the western Ironpeaks, north of Elenwood.
+- **Ironpeaks:** the great range of young, high and jagged mountains. It runs from the west across the middle of the continent and bends north-east, with many spurs on both sides. Home of the dwarven clans. Their great hold is Khaz Dorun, high in the middle of the range where it bends north-east; Durnhold is a smaller hold on the northern slopes, above the Frostmarch. The gnomes' home is Brasshollow, a warren of workshops in the western Ironpeaks, north of Elenwood. Goblin tribes, smaller than orcs, swarm in caves throughout the range and raid dwarves, gnomes, mountain villages and travellers.
 - **Crookback Mountains:** the second range, in the east, running from north-west to south-east down to the eastern coast. Far older than the Ironpeaks, lower and worn into bare ridges. A valley separates it from the Ironpeaks; it is the main way between the Harrowlands and the Ashlands, guarded by the clan fort of Ashgate. Over the range itself leads Crow's Pass, the only pass worth the name.
 
 ## Waters
