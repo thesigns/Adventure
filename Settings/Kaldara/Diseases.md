@@ -10,9 +10,9 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 - Objawy: suchy kaszel, czarna plwocina o poranku, potem duszność, na końcu gorączka i dławienie.
 - Chorują ci, którzy długo siedzą pod ziemią: śmiałkowie, rzadziej górnicy. Im dłużej i głębiej, tym gorzej.
-- Przyczyna: blade purchawki, od pięści do głowy, które rosną w głębokich ruinach i jaskiniach (zob. *Pożywienie* w `Trolls.md`). Nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
+- Przyczyna: suche purchawki, od pięści do głowy, które rosną w głębokich ruinach i jaskiniach. Są suche i kruche: nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
 - Purchawki pękają też pod trollami i robalami, więc pył może wisieć w powietrzu, zanim przyjdzie człowiek.
-- Śmiałkowie omijają purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
+- Śmiałkowie omijają suche purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
 - Chory zdrowieje po dłuższym pobycie na powierzchni, nikt nie wie dlaczego. Kto zostaje pod ziemią, umiera.
 - Nie przechodzi z człowieka na człowieka.
 - Zielarki i kapłani nie mają na nią lekarstwa.
@@ -25,7 +25,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 ### Zakażenie
 
-- Gdzie rosną purchawki, ustala scenariusz.
+- Gdzie rosną suche purchawki, ustala scenariusz.
 - Ukryty rzut MG, bez PDT, tablice z `gm_tables.json`:
   - postać nadepnie albo potrąci purchawkę albo wejdzie w wiszący pył: przeciętne (`k3`),
   - przejście przez salę, której posadzkę pokrywają purchawki: trudne (`k4`),
