@@ -27,7 +27,7 @@
 | wraith, ghost | strong | human | medium wound | only magic or holy wounds; drains strength |
 | bog hag | strong | human | light wound | claws; curses, illusions and spells like `Magic.md`; bargains, lies, steals children |
 | ogre, minotaur | powerful | tough | serious wound | dull-witted |
-| troll | powerful | tough | serious wound | regenerates 5% of wound level an hour, except wounds from fire or acid: a troll that flees comes back healed the next day |
+| troll | powerful | tough | serious wound | regenerates: a day of rest heals all wounds, except those from fire or acid, which heal at the usual rate; a troll that flees comes back healed the next day |
 | vampire | powerful | tough | medium wound | charm, feeds on blood; sun, stake, holy symbols |
 | basilisk, wyvern | powerful | very tough | serious wound | petrifying gaze / poison sting |
 | giant | powerful | very tough | mortal blow | throws boulders |
