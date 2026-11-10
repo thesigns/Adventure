@@ -34,9 +34,9 @@ A dying character fights no more. What happens to them next depends on the enemy
 
 ## Series of rounds
 
-When consecutive rounds have the same table, because the player keeps fighting the same way, spends the same number of Determination Points on each round and no side's wounds change the difficulty, the player can order a series of rounds. The GM shows the table once and rolls the whole series with a single script command with the options `--rundy` and `--stop` (see *Scripted rolls* in `Rules/StandardThrow.md`).
+When consecutive rounds have the same table, because the player keeps fighting the same way, spends the same number of Determination Points on each round and no side's wounds change the difficulty, the player can order a series of rounds. The GM shows the table once and rolls the whole series with a single script command with the options `--rounds` and `--stop` (see *Scripted rolls* in `Rules/StandardThrow.md`).
 
-In `--stop` the GM lists the results after which the situation changes: usually wounds to the player character and wounds after which the enemy falls, flees or changes behaviour. If the enemy can fall only after several wounds, the GM sets `--rundy` so that the series ends at the latest in the round in which the enemy could fall. A series also ends when a circumstance outside the table changes, e.g. a torch goes out or help arrives.
+In `--stop` the GM lists the results after which the situation changes: usually wounds to the player character and wounds after which the enemy falls, flees or changes behaviour. If the enemy can fall only after several wounds, the GM sets `--rounds` so that the series ends at the latest in the round in which the enemy could fall. A series also ends when a circumstance outside the table changes, e.g. a torch goes out or help arrives.
 
 After the series the GM describes the fight round by round, and the player again decides what next (see *Between rounds*).
 

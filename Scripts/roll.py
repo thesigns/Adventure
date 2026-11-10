@@ -1,29 +1,29 @@
-"""Rzut 3K6 z tablicą rezultatów.
+"""3d6 roll against an outcome table.
 
-Przykład:
-    python Scripts/roll.py --kampania Randuvil --opis "Wspinaczka na mur" --pdt 2 "3-4:upadek, lekka rana" "5-8:upadek, draśnięcie" "9-18:sukces"
+Example:
+    python Scripts/roll.py --campaign Randuvil --desc "Climbing the wall" --dp 2 "3-4:falls, light wound" "5-8:falls, scratch" "9-18:success"
 
-Tablica musi pokrywać wyniki 3-18 bez luk i nakładania się.
---pdt N to wydane Punkty Determinacji: rzuca się 3+N kośćmi, N najsłabszych
-się odrzuca, a trzy najlepsze sumuje.
---kampania to nazwa folderu kampanii w Campaigns/ (obowiązkowa).
---rundy N rzuca serię najwyżej N rzutów z tą samą tablicą (np. kolejne
-rundy walki), a --stop "3-5,17-18" przerywa serię po wyniku z podanych
-zakresów. Przy serii --pdt dotyczy każdego rzutu osobno.
-Każdy rzut jest dopisywany do Campaigns/<kampania>/Rolls.log.
+The table must cover results 3-18 with no gaps and no overlaps.
+--dp N is the number of Determination Points spent: 3+N dice are rolled,
+the N lowest are dropped and the best three are added up.
+--campaign is the name of the campaign folder in Campaigns/ (required).
+--rounds N rolls a series of at most N rolls with the same table (e.g.
+consecutive combat rounds), and --stop "3-5,17-18" ends the series after
+a result in the given ranges. In a series --dp applies to each roll.
+Every roll is appended to Campaigns/<campaign>/Rolls.log.
 
---tablica NAZWA bierze tablicę z Tables/GmTables.json settingu albo scenariusza
-zamiast wpisów w poleceniu.
---podglad wypisuje tablicę z szansami przy 0-3 PDT (albo do --pdt, jeśli
-więcej) bez rzutu i bez zapisu w Rolls.log. MG pokazuje ją graczowi przed
-decyzją, zamiast liczyć szanse w pamięci:
-    python Scripts/roll.py --kampania Randuvil --podglad "3-8:porażka" "9-18:sukces"
+--table NAME takes the table from Tables/GmTables.json of a setting or
+scenario instead of entries in the command.
+--preview prints the table with the chances for 0-3 DP (or up to --dp, if
+higher) without rolling and without an entry in Rolls.log. The GM shows it
+to the player before their decision instead of computing chances mentally:
+    python Scripts/roll.py --campaign Randuvil --preview "3-8:failure" "9-18:success"
 
---ukryty --etykieta E to rzut ukryty przed graczem: wynik trafia tylko do
-Campaigns/<kampania>/Gm.json (zob. Scripts/gm.py), a skrypt wypisuje samo
-potwierdzenie. Tablicę podaje się wtedy przez --tablica, żeby polecenie
-niczego nie zdradzało:
-    python Scripts/roll.py --kampania Kloc --ukryty --etykieta r1 --tablica watpliwy
+--hidden --label L is a roll hidden from the player: the result goes only
+to Campaigns/<campaign>/Gm.json (see Scripts/gm.py), and the script prints
+only a confirmation. The table is then given with --table, so that the
+command reveals nothing:
+    python Scripts/roll.py --campaign Randuvil --hidden --label r1 --table doubtful
 """
 
 import argparse
@@ -39,15 +39,15 @@ import gm
 
 MIN, MAX = 3, 18
 KEPT = 3
-MAX_PDT = 15
+MAX_DP = 15
 CAMPAIGNS = Path(__file__).resolve().parent.parent / "Campaigns"
 
 rng = random.SystemRandom()
 
 
-def odds(pdt):
-    """Dokładny rozkład sumy trzech najlepszych kości z 3+pdt."""
-    n = KEPT + pdt
+def odds(dp):
+    """Exact distribution of the sum of the best three of 3+dp dice."""
+    n = KEPT + dp
     counts = Counter()
     for combo in itertools.combinations_with_replacement(range(1, 7), n):
         ways = math.factorial(n)
@@ -59,77 +59,67 @@ def odds(pdt):
 
 
 def campaign_log(name):
-    """Ścieżka do rejestru rzutów kampanii. Kampania musi już mieć swój folder."""
-    if not name or name in (".", "..") or any(c in name for c in "/\\"):
-        sys.exit(f"Błąd: '{name}' nie jest poprawną nazwą kampanii.")
-    folder = CAMPAIGNS / name
-    if not folder.is_dir():
-        known = sorted(p.name for p in CAMPAIGNS.iterdir() if p.is_dir()) if CAMPAIGNS.is_dir() else []
-        hint = f" Istniejące kampanie: {', '.join(known)}." if known else " Nie ma jeszcze żadnej kampanii."
-        sys.exit(f"Błąd: kampania '{name}' nie istnieje (brak folderu Campaigns/{name}).{hint}")
-    return folder / "Rolls.log"
+    """Path to the campaign's roll log. The campaign must already have its folder."""
+    return gm.campaign_folder(name) / "Rolls.log"
 
 
 def pct(p):
     return "<0.1%" if 0 < p < 0.0005 else f"{p * 100:.1f}%"
 
 
+def parse_span(span, what):
+    """A single result or a 'from-to' range, checked against 3-18."""
+    try:
+        if "-" in span:
+            low, high = (int(x) for x in span.split("-", 1))
+        else:
+            low = high = int(span)
+    except ValueError:
+        sys.exit(f"Error: {what} '{span}' is not a number or a 'from-to' range.")
+    if low > high or low < MIN or high > MAX:
+        sys.exit(f"Error: {what} '{span}' is outside {MIN}-{MAX} or reversed.")
+    return low, high
+
+
 def parse_table(entries):
     table = []
     for entry in entries:
         if ":" not in entry:
-            sys.exit(f"Błąd: wpis tablicy '{entry}' nie ma formatu 'od-do:rezultat'.")
+            sys.exit(f"Error: table entry '{entry}' is not in the form 'from-to:outcome'.")
         span, outcome = entry.split(":", 1)
         span, outcome = span.strip(), outcome.strip()
-        try:
-            if "-" in span:
-                low, high = (int(x) for x in span.split("-", 1))
-            else:
-                low = high = int(span)
-        except ValueError:
-            sys.exit(f"Błąd: zakres '{span}' nie jest liczbą ani zakresem 'od-do'.")
-        if low > high or low < MIN or high > MAX:
-            sys.exit(f"Błąd: zakres '{span}' wykracza poza {MIN}-{MAX} albo jest odwrócony.")
+        low, high = parse_span(span, "range")
         if not outcome:
-            sys.exit(f"Błąd: zakres '{span}' nie ma opisu rezultatu.")
+            sys.exit(f"Error: range '{span}' has no outcome.")
         table.append((low, high, outcome))
 
     covered = Counter(v for low, high, _ in table for v in range(low, high + 1))
     missing = [v for v in range(MIN, MAX + 1) if v not in covered]
     doubled = sorted(v for v, n in covered.items() if n > 1)
     if missing:
-        sys.exit(f"Błąd: tablica nie pokrywa wyników: {missing}.")
+        sys.exit(f"Error: the table does not cover results: {missing}.")
     if doubled:
-        sys.exit(f"Błąd: wyniki przypisane do więcej niż jednego rezultatu: {doubled}.")
+        sys.exit(f"Error: results assigned to more than one outcome: {doubled}.")
     return sorted(table)
 
 
 def parse_stop(text):
-    """Zbiór wyników, po których seria rzutów się kończy, np. '3-5,17-18'."""
+    """Set of results after which a series of rolls ends, e.g. '3-5,17-18'."""
     stop = set()
     if not text:
         return stop
     for part in text.split(","):
-        part = part.strip()
-        try:
-            if "-" in part:
-                low, high = (int(x) for x in part.split("-", 1))
-            else:
-                low = high = int(part)
-        except ValueError:
-            sys.exit(f"Błąd: zakres --stop '{part}' nie jest liczbą ani zakresem 'od-do'.")
-        if low > high or low < MIN or high > MAX:
-            sys.exit(f"Błąd: zakres --stop '{part}' wykracza poza {MIN}-{MAX} albo jest odwrócony.")
+        low, high = parse_span(part.strip(), "--stop range")
         stop.update(range(low, high + 1))
     return stop
 
 
 def preview(args, table):
-    """Tablica z szansami przy kolejnych liczbach PDT, bez rzutu i bez zapisu."""
-    levels = list(range(max(3, args.pdt) + 1))
+    """The table with chances for increasing numbers of DP, without rolling or logging."""
+    levels = list(range(max(3, args.dp) + 1))
     by_level = [odds(n) for n in levels]
-    lines = [f"Podgląd (bez rzutu): {args.opis}" if args.opis else "Podgląd (bez rzutu)"]
-    lines.append("Szanse przy " + " / ".join(str(n) for n in levels) + " PDT:")
+    lines = [f"Preview (no roll): {args.desc}" if args.desc else "Preview (no roll)"]
+    lines.append("Chances with " + " / ".join(str(n) for n in levels) + " DP:")
     rows = []
     for low, high, o in table:
         span = f"{low}" if low == high else f"{low}-{high}"
@@ -140,129 +130,129 @@ def preview(args, table):
     print("\n".join(lines))
 
 
-def roll(pdt):
-    dice = [rng.randint(1, 6) for _ in range(KEPT + pdt)]
+def roll(dp):
+    dice = [rng.randint(1, 6) for _ in range(KEPT + dp)]
     ranked = sorted(dice)
-    dropped, kept = ranked[:pdt], ranked[pdt:]
+    dropped, kept = ranked[:dp], ranked[dp:]
     return dice, dropped, sum(kept)
 
 
 def hidden_roll(args, folder, table):
-    """Rzut ukryty: wynik zapisuje gm.py, a na ekran trafia tylko potwierdzenie."""
+    """Hidden roll: gm.py stores the result, and only a confirmation is printed."""
     state = gm.load_state(folder)
-    if gm.label_taken(state, args.etykieta):
-        sys.exit(f"Błąd: etykieta '{args.etykieta}' jest już zajęta.")
+    if gm.label_taken(state, args.label):
+        sys.exit(f"Error: label '{args.label}' is already taken.")
     dice, _, total = roll(0)
-    state["rzuty"][args.etykieta] = {
-        "opis": args.opis,
-        "tablica": args.tablica_nazwa or "",
-        "kosci": dice,
-        "wynik": total,
-        "rezultat": next(o for low, high, o in table if low <= total <= high),
-        "czas": datetime.now().isoformat(timespec="seconds"),
+    state["rolls"][args.label] = {
+        "desc": args.desc,
+        "table": args.table_name or "",
+        "dice": dice,
+        "result": total,
+        "outcome": next(o for low, high, o in table if low <= total <= high),
+        "time": datetime.now().isoformat(timespec="seconds"),
     }
     gm.save_state(folder, state)
-    gm.log_hidden(folder, args.etykieta, f"roll.py, tablica {args.tablica_nazwa or 'z polecenia'}")
-    print(f"Rzut ukryty zapisany: {args.etykieta}.")
+    gm.log_hidden(folder, args.label, f"roll.py, table {args.table_name or 'from the command'}")
+    print(f"Hidden roll saved: {args.label}.")
 
 
 def main():
     for stream in (sys.stdout, sys.stderr):
         stream.reconfigure(encoding="utf-8")
 
-    parser = argparse.ArgumentParser(description="Rzut 3K6 z tablicą rezultatów.")
-    parser.add_argument("tablica", nargs="*", help="wpisy 'od-do:rezultat', np. '9-18:sukces'")
-    parser.add_argument("--kampania", required=True, help="nazwa folderu kampanii w Campaigns/")
-    parser.add_argument("--opis", default="", help="czego dotyczy rzut")
-    parser.add_argument("--pdt", type=int, default=0, help="wydane Punkty Determinacji (dodatkowe kości)")
-    parser.add_argument("--rundy", type=int, default=1, help="najwyższa liczba rzutów w serii z tą samą tablicą")
-    parser.add_argument("--stop", default="", help="wyniki kończące serię, np. '3-5,17-18'")
-    parser.add_argument("--tablica", dest="tablica_nazwa", help="nazwa tablicy z Tables/GmTables.json zamiast wpisów")
-    parser.add_argument("--ukryty", action="store_true", help="rzut ukryty: wynik tylko w Gm.json kampanii")
-    parser.add_argument("--etykieta", help="neutralna etykieta rzutu ukrytego, np. r1")
-    parser.add_argument("--podglad", action="store_true",
-                        help="tylko wypisz tablicę z szansami przy 0-3 PDT, bez rzutu i bez zapisu")
+    parser = argparse.ArgumentParser(description="3d6 roll against an outcome table.")
+    parser.add_argument("entries", nargs="*", help="'from-to:outcome' entries, e.g. '9-18:success'")
+    parser.add_argument("--campaign", required=True, help="name of the campaign folder in Campaigns/")
+    parser.add_argument("--desc", default="", help="what the roll is about")
+    parser.add_argument("--dp", type=int, default=0, help="Determination Points spent (extra dice)")
+    parser.add_argument("--rounds", type=int, default=1, help="maximum number of rolls in a series with the same table")
+    parser.add_argument("--stop", default="", help="results that end the series, e.g. '3-5,17-18'")
+    parser.add_argument("--table", dest="table_name", help="name of a table from Tables/GmTables.json instead of entries")
+    parser.add_argument("--hidden", action="store_true", help="hidden roll: result only in the campaign's Gm.json")
+    parser.add_argument("--label", help="neutral label of a hidden roll, e.g. r1")
+    parser.add_argument("--preview", action="store_true",
+                        help="only print the table with chances for 0-3 DP, without rolling or logging")
     args = parser.parse_args()
 
-    if not 0 <= args.pdt <= MAX_PDT:
-        sys.exit(f"Błąd: --pdt musi być liczbą od 0 do {MAX_PDT}.")
-    if not 1 <= args.rundy <= 50:
-        sys.exit("Błąd: --rundy musi być liczbą od 1 do 50.")
-    if args.stop and args.rundy == 1:
-        sys.exit("Błąd: --stop ma sens tylko przy serii (--rundy większe niż 1).")
-    if bool(args.tablica) == bool(args.tablica_nazwa):
-        sys.exit("Błąd: podaj albo wpisy tablicy w poleceniu, albo --tablica NAZWA.")
-    if args.podglad and args.ukryty:
-        sys.exit("Błąd: rzutu ukrytego nie podgląda się, bo gracz nie widzi jego tablicy.")
-    if args.ukryty:
-        if not args.etykieta:
-            sys.exit("Błąd: rzut ukryty wymaga --etykieta.")
-        if args.pdt or args.rundy > 1:
-            sys.exit("Błąd: rzut ukryty nie może mieć --pdt ani --rundy, bo gracz nie widzi tablicy.")
-    elif args.etykieta:
-        sys.exit("Błąd: --etykieta ma sens tylko z --ukryty.")
+    if not 0 <= args.dp <= MAX_DP:
+        sys.exit(f"Error: --dp must be a number from 0 to {MAX_DP}.")
+    if not 1 <= args.rounds <= 50:
+        sys.exit("Error: --rounds must be a number from 1 to 50.")
+    if args.stop and args.rounds == 1:
+        sys.exit("Error: --stop only makes sense in a series (--rounds greater than 1).")
+    if bool(args.entries) == bool(args.table_name):
+        sys.exit("Error: give either table entries in the command or --table NAME.")
+    if args.preview and args.hidden:
+        sys.exit("Error: a hidden roll cannot be previewed, because the player does not see its table.")
+    if args.hidden:
+        if not args.label:
+            sys.exit("Error: a hidden roll requires --label.")
+        if args.dp or args.rounds > 1:
+            sys.exit("Error: a hidden roll cannot have --dp or --rounds, because the player does not see the table.")
+    elif args.label:
+        sys.exit("Error: --label only makes sense with --hidden.")
 
-    log_path = campaign_log(args.kampania)
-    if args.tablica_nazwa:
-        entries = gm.table_entries(args.tablica_nazwa, gm.load_tables())
+    log_path = campaign_log(args.campaign)
+    if args.table_name:
+        entries = gm.table_entries(args.table_name, gm.load_tables())
         spans = [f"{low}-{high}:{v} min" if isinstance(v, int) else f"{low}-{high}:{v}" for low, high, v in entries]
         table = parse_table(spans)
     else:
-        table = parse_table(args.tablica)
+        table = parse_table(args.entries)
 
-    if args.podglad:
+    if args.preview:
         preview(args, table)
         return
-    if args.ukryty:
+    if args.hidden:
         hidden_roll(args, log_path.parent, table)
         return
 
     stop = parse_stop(args.stop)
     base_odds = odds(0)
-    pdt_odds = odds(args.pdt)
+    dp_odds = odds(args.dp)
 
     lines = []
-    if args.opis:
-        lines.append(f"Rzut: {args.opis}")
-    if args.pdt:
-        lines.append(f"Punkty Determinacji: {args.pdt} ({KEPT + args.pdt}K6, liczą się 3 najlepsze)")
-    if args.rundy > 1:
-        stop_info = f", przerwanie po wynikach: {args.stop}" if args.stop else ""
-        lines.append(f"Seria: najwyżej {args.rundy} rzutów{stop_info}")
+    if args.desc:
+        lines.append(f"Roll: {args.desc}")
+    if args.dp:
+        lines.append(f"Determination Points: {args.dp} ({KEPT + args.dp}d6, best 3 count)")
+    if args.rounds > 1:
+        stop_info = f", stopping after results: {args.stop}" if args.stop else ""
+        lines.append(f"Series: at most {args.rounds} rolls{stop_info}")
     results = []
-    for _ in range(args.rundy):
-        dice, dropped, total = roll(args.pdt)
+    for _ in range(args.rounds):
+        dice, dropped, total = roll(args.dp)
         outcome = next(o for low, high, o in table if low <= total <= high)
         results.append((dice, dropped, total, outcome))
         if total in stop:
             break
 
-    lines.append("Tablica:")
+    lines.append("Table:")
     for low, high, o in table:
         span = f"{low}" if low == high else f"{low}-{high}"
         p0 = sum(base_odds.get(v, 0) for v in range(low, high + 1))
-        p = sum(pdt_odds.get(v, 0) for v in range(low, high + 1))
-        chance = f"{pct(p0)} -> {pct(p)}" if args.pdt else pct(p)
-        single = args.rundy == 1 and low <= results[0][2] <= high
+        p = sum(dp_odds.get(v, 0) for v in range(low, high + 1))
+        chance = f"{pct(p0)} -> {pct(p)}" if args.dp else pct(p)
+        single = args.rounds == 1 and low <= results[0][2] <= high
         marker = "  <--" if single else ""
         lines.append(f"  {span}: {o} [{chance}]{marker}")
 
     for n, (dice, dropped, total, outcome) in enumerate(results, 1):
-        if args.rundy > 1:
-            lines.append(f"Rzut {n}:")
-        lines.append(f"Kości: {dice}")
-        if args.pdt:
-            lines.append(f"Odrzucone: {dropped}")
-        lines.append(f"Wynik: {total}")
-        lines.append(f"Rezultat: {outcome}")
-    if args.rundy > 1:
+        if args.rounds > 1:
+            lines.append(f"Roll {n}:")
+        lines.append(f"Dice: {dice}")
+        if args.dp:
+            lines.append(f"Dropped: {dropped}")
+        lines.append(f"Result: {total}")
+        lines.append(f"Outcome: {outcome}")
+    if args.rounds > 1:
         last = results[-1][2]
         if last in stop:
-            lines.append(f"Seria przerwana po rzucie {len(results)} (wynik {last}).")
+            lines.append(f"Series stopped after roll {len(results)} (result {last}).")
         else:
-            lines.append(f"Seria zakończona po {len(results)} rzutach.")
-        if args.pdt:
-            lines.append(f"Wydane PDT w serii: {args.pdt * len(results)}")
+            lines.append(f"Series finished after {len(results)} rolls.")
+        if args.dp:
+            lines.append(f"DP spent in the series: {args.dp * len(results)}")
 
     report = "\n".join(lines)
     print(report)

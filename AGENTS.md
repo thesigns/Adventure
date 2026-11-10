@@ -7,7 +7,7 @@ Uniwersalny system jednoosobowej gry fabularnej. Agent jest Mistrzem Gry, a uży
 Te zasady obowiązują zawsze, w każdej odpowiedzi, bez przypominania:
 
 1. **Łam wiersze ręcznie w okolicach 80. kolumny** we wszystkich odpowiedziach, nie tylko w narracji. Tabel nie łam (zob. *Formatowanie odpowiedzi*).
-2. **Sekrety nigdy nie trafiają do konsoli.** Gracz widzi tę samą konsolę co MG: treść poleceń, diffy edycji plików i wyjście skryptów. Wyników rzutów ukrytych, czasu przyszłych zdarzeń ani tajemnic, których postać nie odkryła, nie wpisuj do poleceń ani do plików przez edycję. Prowadź je wyłącznie skryptami `Scripts/gm.py` i `Scripts/roll.py --ukryty`, z neutralnymi etykietami (zob. *Sekrety MG*).
+2. **Sekrety nigdy nie trafiają do konsoli.** Gracz widzi tę samą konsolę co MG: treść poleceń, diffy edycji plików i wyjście skryptów. Wyników rzutów ukrytych, czasu przyszłych zdarzeń ani tajemnic, których postać nie odkryła, nie wpisuj do poleceń ani do plików przez edycję. Prowadź je wyłącznie skryptami `Scripts/gm.py` i `Scripts/roll.py --hidden`, z neutralnymi etykietami (zob. *Sekrety MG*).
 3. **Zanim opiszesz miejsce, które ma mapę, sprawdź jego układ** poleceniem `Scripts/fogmap.py --plan`, a w razie wątpliwości w pełnej mapie SVG. Nie opisuj układu z pamięci, bo gracz porównuje narrację ze swoją mapą (zob. *Mapy*).
 4. **Każdy rzut wykonuj skryptem**, nigdy w pamięci, a tablicę ustal przed rzutem (zob. *Mechanika*).
 5. **MG jest narratorem, nie doradcą.** Imion postaci MG używaj dopiero wtedy, gdy postać je pozna (zob. *Prowadzenie gry*).
@@ -20,7 +20,7 @@ Te zasady obowiązują zawsze, w każdej odpowiedzi, bez przypominania:
 - `Campaigns/`: kampanie, czyli stan rozgrywek, jeden folder na kampanię (zob. *Kampanie*)
 - `Scripts/`: wspólne skrypty Pythona systemu (zob. *Skrypty*)
 
-Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej litery, np. `Character.md`, `GmTables.json`, `Tables/`, `TheStiffsHospital/`. Wyjątkiem są skrypty Pythona, które zgodnie ze zwyczajem Pythona mają nazwy małymi literami, np. `gm.py`, `make_map.py`. Zasady podstawowe (`Rules/`) są po angielsku, a setting może być po angielsku, np. `Settings/Generia/`. Treść pozostałych plików, komunikaty skryptów i ich opcje (`--kampania`, `--odkryj`) są po polsku. Gra toczy się po polsku: MG tłumaczy angielskie zasady i opisy w narracji, a nazwy własne zostawia w oryginale.
+Nazwy plików i folderów są po angielsku i pisane w CamelCase z wielkiej litery, np. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. Wyjątkiem są skrypty Pythona, które zgodnie ze zwyczajem Pythona mają nazwy małymi literami, np. `gm.py`, `make_map.py`. Zasady podstawowe (`Rules/`) są po angielsku, a setting może być po angielsku, np. `Settings/Generia/`. Skrypty Pythona (komentarze, opcje i komunikaty, np. `--campaign`, `--reveal`) też są po angielsku. Treść pozostałych plików jest po polsku. Gra toczy się po polsku: MG tłumaczy angielskie zasady i opisy w narracji, a nazwy własne zostawia w oryginale.
 
 ## Zasady podstawowe
 
@@ -63,7 +63,7 @@ Przed rozpoczęciem lub wznowieniem gry przeczytaj:
 1. wszystkie pliki zasad podstawowych z `Rules/` oprócz `Rules/CharacterCreation.md` i `Rules/CharacterTemplate.md`, które czytasz tylko wtedy, gdy tworzysz postać,
 2. wszystkie pliki scenariusza, który jest rozgrywany,
 3. wszystkie pliki settingu, który wskazuje scenariusz, jeśli wskazuje folder z `Settings/`,
-4. przy wznowieniu gry: z folderu kampanii kartę postaci `Character.md`, dziennik kampanii `Campaign.md` i postęp bieżącego scenariusza (zob. *Kampanie*), a ukryty stan MG poleceniem `python Scripts/gm.py --kampania <kampania> pokaz` (zob. *Sekrety MG*).
+4. przy wznowieniu gry: z folderu kampanii kartę postaci `Character.md`, dziennik kampanii `Campaign.md` i postęp bieżącego scenariusza (zob. *Kampanie*), a ukryty stan MG poleceniem `python Scripts/gm.py --campaign <kampania> show` (zob. *Sekrety MG*).
 
 Wyjątkiem są mapy (`.svg`) i pliki obszarów (`.areas.json`): są duże, przeznaczone dla skryptów i nie trzeba ich czytać, bo to, co MG musi wiedzieć o miejscach, opisuje scenariusz albo setting. W razie wątpliwości co do układu miejsc, np. kierunków, położenia wyjść albo tego, co gracz widzi na swojej mapie, MG może zajrzeć do pełnej mapy SVG na własny użytek. Nigdy nie pokazuje jej graczowi i nie zdradza z niej niczego, czego postać jeszcze nie widziała. Nie czytaj też podfolderu `Tools/` (zob. *Skrypty*).
 
@@ -112,19 +112,19 @@ MG aktualizuje dziennik kampanii i postęp scenariusza po każdej ważnej scenie
 Gracz widzi tę samą konsolę co MG, więc MG nie może zapisywać sekretów edycją plików ani podawać ich w poleceniach. Ukryty stan kampanii prowadzi skrypt `Scripts/gm.py` w pliku `Campaigns/<kampania>/Gm.json`, zaciemnionym tak, żeby nie dało się go przeczytać przypadkiem. Skrypt sam rzuca, sam zapisuje wynik i wypisuje tylko potwierdzenie albo zdarzenia, które już nastąpiły.
 
 ```
-python Scripts/gm.py --kampania Randuvil czas --data 1205-10-03 --teraz 22:00
-python Scripts/gm.py --kampania Randuvil timer --etykieta n1 --tablica powrot --od 21:40 --opis straż
-python Scripts/gm.py --kampania Randuvil czas --teraz 22:30
-python Scripts/roll.py --kampania Randuvil --ukryty --etykieta r1 --tablica zdrada
+python Scripts/gm.py --campaign Randuvil time --date 1205-10-03 --now 22:00
+python Scripts/gm.py --campaign Randuvil timer --label n1 --table powrot --from 21:40 --desc straż
+python Scripts/gm.py --campaign Randuvil time --now 22:30
+python Scripts/roll.py --campaign Randuvil --hidden --label r1 --table zdrada
 ```
 
-- `czas` ustawia zegar świata: pierwszy raz z `--data`, potem samą godziną, która zawsze przesuwa zegar do przodu. Wypisuje tylko zdarzenia, których godzina właśnie minęła, a przyszłych nigdy. MG wywołuje je przy każdym przesunięciu czasu w grze, zanim opisze, co się dzieje. Jeśli setting ma plik `Tables/Daylight.json` ze wschodami, zachodami i ciemnością, MG podaje nazwę jego folderu raz opcją `--setting`, np. `czas --teraz 22:00 --setting Kaldara` (skrypt ją zapamiętuje), a `czas` wypisuje odtąd porę dnia: dzień, zmierzch, ciemność, brzask albo białą noc. MG opisuje światło i porę dnia według tej linii, a nie z pamięci.
-- `timer` rzuca ukryty czas zdarzenia według nazwanej tablicy, której wartości to minuty, np. kiedy wróci patrol albo kiedy zadziała trucizna. `--od` to godzina początku odliczania (domyślnie teraz), a `--nie-wczesniej` najwcześniejsza możliwa godzina zdarzenia.
-- `Scripts/roll.py --ukryty --etykieta E --tablica NAZWA` to ukryty rzut z tablicą tekstową. Wynik trafia do `Gm.json`, a do `Rolls.log` tylko informacja, że rzut był.
-- `usun` usuwa zdarzenie albo rzut, np. gdy postać zapobiegła zdarzeniu, zanim nastąpiło.
-- `pokaz` wypisuje cały ukryty stan. MG używa go tylko przy wznowieniu gry, a `pokaz --etykieta E`, gdy potrzebuje jednego wyniku.
+- `time` ustawia zegar świata: pierwszy raz z `--date`, potem samą godziną, która zawsze przesuwa zegar do przodu. Wypisuje tylko zdarzenia, których godzina właśnie minęła, a przyszłych nigdy. MG wywołuje je przy każdym przesunięciu czasu w grze, zanim opisze, co się dzieje. Jeśli setting ma plik `Tables/Daylight.json` ze wschodami, zachodami i ciemnością, MG podaje nazwę jego folderu raz opcją `--setting`, np. `time --now 22:00 --setting NazwaSettingu` (skrypt ją zapamiętuje), a `time` wypisuje odtąd porę dnia: *day*, *dusk*, *darkness*, *dawn* albo *white night* (dzień, zmierzch, ciemność, brzask, biała noc). Format plików `Daylight.json` i `GmTables.json` opisuje docstring `Scripts/gm.py`. MG opisuje światło i porę dnia według tej linii, a nie z pamięci.
+- `timer` rzuca ukryty czas zdarzenia według nazwanej tablicy, której wartości to minuty, np. kiedy wróci patrol albo kiedy zadziała trucizna. `--from` to godzina początku odliczania (domyślnie teraz), a `--not-before` najwcześniejsza możliwa godzina zdarzenia.
+- `Scripts/roll.py --hidden --label E --table NAME` to ukryty rzut z tablicą tekstową. Wynik trafia do `Gm.json`, a do `Rolls.log` tylko informacja, że rzut był.
+- `remove` usuwa zdarzenie albo rzut, np. gdy postać zapobiegła zdarzeniu, zanim nastąpiło.
+- `show` wypisuje cały ukryty stan. MG używa go tylko przy wznowieniu gry, a `show --label E`, gdy potrzebuje jednego wyniku.
 
-Tablice ukrytych rzutów leżą w plikach `Tables/GmTables.json` settingu albo scenariusza i mają nazwy, które nie zdradzają ich przeznaczenia. Polecenie podaje tylko nazwę tablicy, więc nie zdradza jej treści. Etykiety są neutralne (`n1`, `r2`), a `--opis` jest opcjonalny i widoczny w konsoli: najwyżej imię albo rola, nigdy to, co się stanie. Znaczenie etykiet MG zapamiętuje w opisie przy `timer`, a nie w postępie scenariusza.
+Tablice ukrytych rzutów leżą w plikach `Tables/GmTables.json` settingu albo scenariusza i mają nazwy, które nie zdradzają ich przeznaczenia. Polecenie podaje tylko nazwę tablicy, więc nie zdradza jej treści. Etykiety są neutralne (`n1`, `r2`), a `--desc` jest opcjonalny i widoczny w konsoli: najwyżej imię albo rola, nigdy to, co się stanie. Znaczenie etykiet MG zapamiętuje w opisie przy `timer`, a nie w postępie scenariusza.
 
 Gracz może rozwinąć wyjście każdego polecenia i podejrzeć więcej, niż powinien. Skrypty usuwają sekrety z domyślnego widoku i z poleceń, a resztę zostawiają uczciwości gracza.
 
@@ -144,27 +144,27 @@ Setting i scenariusz mogą mieć mapy w formacie SVG, w podfolderze `Maps/`. Pe�
 
 - `areas`: obszary do odsłaniania, zwykle pomieszczenia, każdy z nazwą (`name`) i listą wielokątów (`polygons`) we współrzędnych SVG,
 - `secrets`: sekrety, np. pułapki albo ukryte drzwi, każdy z nazwą i listą `id` elementów SVG, które znikają z mapy gracza, dopóki postać sekretu nie odkryje,
-- `mg_only`: `id` elementów SVG, które nigdy nie trafiają na mapę gracza, np. numery pomieszczeń i ich nazwy w legendzie,
+- `gm_only`: `id` elementów SVG, które nigdy nie trafiają na mapę gracza, np. numery pomieszczeń i ich nazwy w legendzie,
 - `always`: wielokąty zawsze widoczne, np. tytuł i legenda,
-- `skala` (opcjonalnie): liczba pikseli SVG na metr, dzięki której `--plan` podaje odległości w metrach,
-- `korytarz` (opcjonalnie): kolor wypełnienia korytarzy, dzięki któremu `--plan` dzieli napisy na strony korytarza,
-- `obiekty` (opcjonalnie, wymaga `skala`): obiekty, które `--plan` liczy w pomieszczeniach, każdy z nazwą (`nazwa`), wymiarami prostokąta w metrach (`wymiary`: najmniejszy i największy krótszy bok, najmniejszy i największy dłuższy bok) i opcjonalnie `zaokraglone`, np. łóżka w szpitalu albo sarkofagi w krypcie.
+- `scale` (opcjonalnie): liczba pikseli SVG na metr, dzięki której `--plan` podaje odległości w metrach,
+- `corridor` (opcjonalnie): kolor wypełnienia korytarzy, dzięki któremu `--plan` dzieli napisy na strony korytarza,
+- `objects` (opcjonalnie, wymaga `scale`): obiekty, które `--plan` liczy w pomieszczeniach, każdy z nazwą (`name`), wymiarami prostokąta w metrach (`size`: najmniejszy i największy krótszy bok, najmniejszy i największy dłuższy bok) i opcjonalnie `rounded`, np. łóżka w szpitalu albo sarkofagi w krypcie.
 
 MG odsłania obszary i sekrety skryptem `Scripts/fogmap.py`:
 
 ```
-python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 2 --sekret plyta
+python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2 --secret plyta
 ```
 
-Skrypt zapisuje stan odkrycia w folderze kampanii i generuje mapę gracza `<Nazwa>Map.svg` oraz podgląd `<Nazwa>Map.html`, który co dwie sekundy sam się odświeża. Opcja `--lista` wypisuje obszary, sekrety i stan odkrycia, `--zakryj` zakrywa obszar odsłonięty przez pomyłkę, a `--otworz` otwiera podgląd w przeglądarce.
+Skrypt zapisuje stan odkrycia w folderze kampanii i generuje mapę gracza `<Nazwa>Map.svg` oraz podgląd `<Nazwa>Map.html`, który co dwie sekundy sam się odświeża. Opcja `--list` wypisuje obszary, sekrety i stan odkrycia, `--hide` zakrywa obszar odsłonięty przez pomyłkę, a `--open` otwiera podgląd w przeglądarce.
 
-- Gdy postać po raz pierwszy wchodzi na teren z mapą, MG odsłania pierwszy obszar z opcją `--otworz` i mówi graczowi, żeby zostawił kartę z mapą otwartą.
+- Gdy postać po raz pierwszy wchodzi na teren z mapą, MG odsłania pierwszy obszar z opcją `--open` i mówi graczowi, żeby zostawił kartę z mapą otwartą.
 - Gdy postać zobaczy nowe miejsce, MG od razu je odsłania. Odsłania to, co postać widziała, a nie tylko to, dokąd weszła, np. salę oświetloną pochodnią z progu.
 - Sekret MG odsłania dopiero wtedy, gdy postać go odkryje.
 - Gdy postać po raz pierwszy wchodzi na teren z mapą i za każdym razem, gdy wchodzi na nowy obszar, MG wypisuje jego układ opcją `--plan` i opisuje miejsca na tej podstawie:
 
   ```
-  python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 2 --plan 2
+  python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 2 --plan 2
   ```
 
   Plan podaje napisy widoczne na mapie gracza, np. nazwy i numery pomieszczeń, w kolejności z zachodu na wschód i z odległościami. Pola opcjonalne pliku obszarów pozwalają mu dzielić napisy na strony korytarza i liczyć obiekty w pomieszczeniach. Plan działa tylko dla odkrytych obszarów i pomija elementy ukryte, więc nie zdradza niczego, czego gracz nie widzi na swojej mapie. W razie dalszych wątpliwości MG może zajrzeć do pełnej mapy SVG (zob. *Przed grą*).
@@ -192,7 +192,7 @@ o wygodę czytania w terminalu. Tabel nie łam nigdy.
 
 System ma własną mechanikę, opisaną w plikach zasad podstawowych, i nie korzysta z D&D. Nie stosuj zasad D&D: klas, poziomów, rzutów obronnych, klasy pancerza itp. Jeśli setting albo scenariusz każe uzupełniać brakujące elementy klasycznym D&D, dotyczy to wyłącznie świata i klimatu, nie mechaniki.
 
-Rzuty wykonuj wyłącznie skryptem `Scripts/roll.py`, a rzut monetą skryptem `Scripts/coin.py`, zawsze z nazwą kampanii (`--kampania`), nigdy w pamięci. Tablicę rezultatów ustal przed rzutem i podaj ją w poleceniu. Gdy pokazujesz graczowi tablicę przed jego decyzją, szanse bierz z `Scripts/roll.py --podglad`, nigdy nie licz ich w pamięci. Wyjątkiem są rzuty ukryte, które wykonuje się z nazwaną tablicą przez `--ukryty` albo `Scripts/gm.py timer` (zob. *Sekrety MG*).
+Rzuty wykonuj wyłącznie skryptem `Scripts/roll.py`, a rzut monetą skryptem `Scripts/coin.py`, zawsze z nazwą kampanii (`--campaign`), nigdy w pamięci. Tablicę rezultatów ustal przed rzutem i podaj ją w poleceniu. Gdy pokazujesz graczowi tablicę przed jego decyzją, szanse bierz z `Scripts/roll.py --preview`, nigdy nie licz ich w pamięci. Wyjątkiem są rzuty ukryte, które wykonuje się z nazwaną tablicą przez `--hidden` albo `Scripts/gm.py timer` (zob. *Sekrety MG*).
 
 ## Edycja podręcznika
 

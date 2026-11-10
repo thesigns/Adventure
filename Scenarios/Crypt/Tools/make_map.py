@@ -1,16 +1,17 @@
-"""Generator mapy krypty dla scenariusza Krypta (styl ręcznie rysowanej mapy lochu).
+"""Crypt map generator for the Crypt scenario (hand-drawn dungeon map style).
 
-Narzędzie autora, nie do gry. Tworzy dwa pliki w folderze scenariusza:
-    MapCrypt.svg         pełna mapa dla MG
-    MapCrypt.areas.json  obszary i sekrety dla Scripts/fogmap.py
+An author's tool, not for play. Creates two files in the scenario folder:
+    MapCrypt.svg         full map for the GM
+    MapCrypt.areas.json  areas and secrets for Scripts/fogmap.py
 
-Użycie:
-    python Scenarios/Crypt/Tools/make_map.py [ścieżka do MapCrypt.svg]
+Usage:
+    python Scenarios/Crypt/Tools/make_map.py [path to MapCrypt.svg]
 
-Generator jest deterministyczny (stałe ziarno losowania), więc bez zmian
-w kodzie zawsze tworzy tę samą mapę. Plan krypty jest zapisany w metrach
-(1 kratka = 1 m, północ u góry) w listach `floors`/`core` i w danych szczeliny;
-po zmianie planu trzeba też poprawić obszary w słowniku `areas` na końcu pliku.
+The generator is deterministic (fixed random seed), so without code changes
+it always creates the same map. The crypt plan is in metres (1 square = 1 m,
+north up) in the lists `floors`/`core` and in the crack data; after changing
+the plan, the areas in the `areas` dict at the end of the file must be fixed
+too. Map labels are scenario content and stay in Polish.
 """
 import math
 import random
@@ -543,7 +544,7 @@ def px_circle(cx, cy, r, n=16):
 crack_area = crack_poly(crack_pts, [w + 3.0 for w in crack_w])[1]
 areas = {
     "map": "MapCrypt.svg",
-    "mg_only": ["labels", "legend-rooms"],
+    "gm_only": ["labels", "legend-rooms"],
     "always": [[[0, round(MAP_H + 8, 1)], [round(W, 1), round(MAP_H + 8, 1)], [round(W, 1), round(H, 1)], [0, round(H, 1)]]],
     "areas": {
         "1": {"name": "Wejście", "polygons": [px_rect(14.0, -7.6, 26.0, -4.6), px_rect(17.4, -4.6, 22.6, 4.3)]},

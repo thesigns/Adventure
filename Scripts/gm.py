@@ -1,33 +1,38 @@
-"""Ukryty stan MG kampanii: zegar świata, ukryte zdarzenia i ukryte rzuty.
+"""The GM's hidden campaign state: world clock, hidden events and hidden rolls.
 
-Gracz widzi tę samą konsolę co MG, więc sekrety nie mogą trafiać do treści
-poleceń, diffów ani wyjścia skryptów. Ten skrypt sam rzuca, sam zapisuje
-wynik w Campaigns/<kampania>/Gm.json (zaciemnionym, żeby nie dało się go
-przeczytać przypadkiem) i wypisuje tylko to, co już się wydarzyło.
+The player sees the same console as the GM, so secrets must not end up in
+commands, diffs or script output. This script rolls by itself, stores the
+result in Campaigns/<campaign>/Gm.json (obfuscated, so that it cannot be
+read by accident) and prints only what has already happened.
 
-Przykłady:
-    python Scripts/gm.py --kampania Kloc czas --data 1990-03-21 --teraz 23:30
-    python Scripts/gm.py --kampania Eirik czas --data 0403-04-05 --teraz 16:00 --setting Kaldara
-    python Scripts/gm.py --kampania Kloc timer --etykieta n1 --tablica opoznienie --od 0:40 --nie-wczesniej 1:00
-    python Scripts/gm.py --kampania Kloc czas --teraz 1:50
-    python Scripts/gm.py --kampania Kloc usun --etykieta n1
-    python Scripts/gm.py --kampania Kloc pokaz
+Examples:
+    python Scripts/gm.py --campaign Randuvil time --date 1240-04-05 --now 16:00
+    python Scripts/gm.py --campaign Randuvil time --now 22:00 --setting SettingName
+    python Scripts/gm.py --campaign Randuvil timer --label n1 --table delay --from 0:40 --not-before 1:00
+    python Scripts/gm.py --campaign Randuvil time --now 1:50
+    python Scripts/gm.py --campaign Randuvil remove --label n1
+    python Scripts/gm.py --campaign Randuvil show
 
-Polecenia:
-    czas    ustawia zegar świata (pierwszy raz z --data) i wypisuje zdarzenia,
-            których godzina właśnie minęła; przyszłych nigdy nie wypisuje;
-            z --setting (zapamiętanym w stanie kampanii) wypisuje też porę
-            dnia z pliku Settings/<setting>/Tables/Daylight.json
-    timer   rzuca 3K6 według nazwanej tablicy z Tables/GmTables.json, której
-            wartości to minuty, i zapisuje ukryte zdarzenie; wypisuje tylko
-            potwierdzenie
-    usun    usuwa ukryte zdarzenie albo ukryty rzut, np. gdy ciało zostało
-            zniszczone przed czasem
-    pokaz   wypisuje cały ukryty stan; tylko przy wznowieniu gry
+Commands:
+    time    sets the world clock (the first time with --date) and prints the
+            events whose time has just passed; never prints future ones;
+            with --setting (remembered in the campaign state) it also prints
+            the time of day from Settings/<setting>/Tables/Daylight.json
+    timer   rolls 3d6 on a named table from Tables/GmTables.json whose
+            values are minutes, and stores a hidden event; prints only
+            a confirmation
+    remove  removes a hidden event or a hidden roll, e.g. when the character
+            prevented the event before it happened
+    show    prints the whole hidden state; only when resuming play
 
-Nazwane tablice leżą w plikach Tables/GmTables.json w folderach settingów
-i scenariuszy (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json).
-Ukryte rzuty z tablicą tekstową wykonuje Scripts/roll.py --ukryty.
+Named tables live in Tables/GmTables.json files in setting and scenario
+folders (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json),
+in the form {"name": {"entries": {"3-5": 10, "6-18": 30}}}.
+Hidden rolls with a text table are made by Scripts/roll.py --hidden.
+
+Daylight.json has the form {"days": {"MM-DD": {"sunrise": "HH:MM",
+"sunset": "HH:MM", "darkness": "HH:MM-HH:MM"}}}; without "darkness" the
+night is a white night. Values between the listed days are interpolated.
 """
 
 import argparse
@@ -44,7 +49,7 @@ CAMPAIGNS = ROOT / "Campaigns"
 STATE_FILE = "Gm.json"
 TABLES_FILE = "Tables/GmTables.json"
 DAYLIGHT_FILE = "Tables/Daylight.json"
-FORMAT = "gm-base64-1"
+FORMAT = "gm-base64-2"
 MIN, MAX = 3, 18
 CLOCK_FMT = "%Y-%m-%d %H:%M"
 
@@ -52,78 +57,79 @@ rng = random.SystemRandom()
 
 
 def campaign_folder(name):
+    """The campaign folder in Campaigns/. The campaign must already exist."""
     if not name or name in (".", "..") or any(c in name for c in "/\\"):
-        sys.exit(f"Błąd: '{name}' nie jest poprawną nazwą kampanii.")
+        sys.exit(f"Error: '{name}' is not a valid campaign name.")
     folder = CAMPAIGNS / name
     if not folder.is_dir():
         known = sorted(p.name for p in CAMPAIGNS.iterdir() if p.is_dir()) if CAMPAIGNS.is_dir() else []
-        hint = f" Istniejące kampanie: {', '.join(known)}." if known else " Nie ma jeszcze żadnej kampanii."
-        sys.exit(f"Błąd: kampania '{name}' nie istnieje (brak folderu Campaigns/{name}).{hint}")
+        hint = f" Existing campaigns: {', '.join(known)}." if known else " There are no campaigns yet."
+        sys.exit(f"Error: campaign '{name}' does not exist (no folder Campaigns/{name}).{hint}")
     return folder
 
 
 def load_state(folder):
     path = folder / STATE_FILE
     if not path.exists():
-        return {"zegar": None, "zdarzenia": {}, "rzuty": {}}
+        return {"clock": None, "events": {}, "rolls": {}}
     with path.open(encoding="utf-8") as fh:
         wrapper = json.load(fh)
     if wrapper.get("format") != FORMAT:
-        sys.exit(f"Błąd: nieznany format pliku {path}.")
-    return json.loads(base64.b64decode(wrapper["dane"]).decode("utf-8"))
+        sys.exit(f"Error: unknown format of file {path}.")
+    return json.loads(base64.b64decode(wrapper["data"]).decode("utf-8"))
 
 
 def save_state(folder, state):
     data = base64.b64encode(json.dumps(state, ensure_ascii=False).encode("utf-8")).decode("ascii")
     with (folder / STATE_FILE).open("w", encoding="utf-8", newline="\n") as fh:
-        json.dump({"format": FORMAT, "dane": data}, fh)
+        json.dump({"format": FORMAT, "data": data}, fh)
         fh.write("\n")
 
 
 def label_taken(state, label):
-    return label in state["zdarzenia"] or label in state["rzuty"]
+    return label in state["events"] or label in state["rolls"]
 
 
 def log_hidden(folder, label, source):
-    """Do Rolls.log trafia tylko informacja, że był rzut ukryty, bez wyniku."""
+    """Rolls.log only records that a hidden roll happened, without the result."""
     with (folder / "Rolls.log").open("a", encoding="utf-8") as log:
-        log.write(f"=== {datetime.now().isoformat(timespec='seconds')}\nRzut ukryty: {label} ({source})\n\n")
+        log.write(f"=== {datetime.now().isoformat(timespec='seconds')}\nHidden roll: {label} ({source})\n\n")
 
 
 def load_tables():
-    """Nazwane tablice ze wszystkich Tables/GmTables.json settingów i scenariuszy."""
+    """Named tables from all Tables/GmTables.json files of settings and scenarios."""
     tables, origin = {}, {}
     for path in sorted(ROOT.glob(f"Settings/*/{TABLES_FILE}")) + sorted(ROOT.glob(f"Scenarios/*/{TABLES_FILE}")):
         with path.open(encoding="utf-8") as fh:
             data = json.load(fh)
         for name, table in data.items():
             if name in tables:
-                sys.exit(f"Błąd: tablica '{name}' jest zdefiniowana w {origin[name]} i w {path.relative_to(ROOT)}.")
+                sys.exit(f"Error: table '{name}' is defined in {origin[name]} and in {path.relative_to(ROOT)}.")
             tables[name] = table
             origin[name] = path.relative_to(ROOT).as_posix()
     return tables
 
 
 def table_entries(name, tables):
-    """Lista (od, do, wartość) nazwanej tablicy, sprawdzona pod kątem pokrycia 3-18."""
+    """List of (from, to, value) of a named table, checked to cover 3-18."""
     if name not in tables:
-        known = ", ".join(sorted(tables)) or "brak"
-        sys.exit(f"Błąd: nie ma tablicy '{name}'. Dostępne: {known}.")
+        known = ", ".join(sorted(tables)) or "none"
+        sys.exit(f"Error: there is no table '{name}'. Available: {known}.")
     entries = []
-    for span, value in tables[name]["wpisy"].items():
+    for span, value in tables[name]["entries"].items():
         try:
             low, high = (int(x) for x in span.split("-", 1)) if "-" in span else (int(span),) * 2
         except ValueError:
-            sys.exit(f"Błąd: zakres '{span}' w tablicy '{name}' nie jest liczbą ani zakresem 'od-do'.")
+            sys.exit(f"Error: range '{span}' in table '{name}' is not a number or a 'from-to' range.")
         entries.append((low, high, value))
     covered = Counter(v for low, high, _ in entries for v in range(low, high + 1))
     if any(v not in covered for v in range(MIN, MAX + 1)) or any(n > 1 for n in covered.values()) \
             or any(v < MIN or v > MAX for v in covered):
-        sys.exit(f"Błąd: tablica '{name}' musi pokrywać wyniki {MIN}-{MAX} bez luk i nakładania się.")
+        sys.exit(f"Error: table '{name}' must cover results {MIN}-{MAX} with no gaps and no overlaps.")
     return sorted(entries)
 
 
-def roll_3k6():
+def roll_3d6():
     dice = [rng.randint(1, 6) for _ in range(3)]
     return dice, sum(dice)
 
@@ -136,68 +142,68 @@ def parse_hm(text):
     try:
         hour, minute = (int(x) for x in text.split(":", 1))
     except ValueError:
-        sys.exit(f"Błąd: '{text}' nie jest godziną w formacie GG:MM.")
+        sys.exit(f"Error: '{text}' is not a time in the format HH:MM.")
     if not (0 <= hour <= 23 and 0 <= minute <= 59):
-        sys.exit(f"Błąd: '{text}' nie jest poprawną godziną.")
+        sys.exit(f"Error: '{text}' is not a valid time.")
     return hour, minute
 
 
 def at_or_before(ref, hm):
-    """Ostatnia chwila o godzinie hm, nie późniejsza niż ref."""
+    """The last moment at time hm no later than ref."""
     moment = ref.replace(hour=hm[0], minute=hm[1])
     return moment - timedelta(days=1) if moment > ref else moment
 
 
 def at_or_after(ref, hm):
-    """Pierwsza chwila o godzinie hm, nie wcześniejsza niż ref."""
+    """The first moment at time hm no earlier than ref."""
     moment = ref.replace(hour=hm[0], minute=hm[1])
     return moment + timedelta(days=1) if moment < ref else moment
 
 
 def get_clock(state):
-    if not state["zegar"]:
-        sys.exit("Błąd: zegar świata nie jest ustawiony. Użyj: czas --data RRRR-MM-DD --teraz GG:MM.")
-    return datetime.strptime(state["zegar"], CLOCK_FMT)
+    if not state["clock"]:
+        sys.exit("Error: the world clock is not set. Use: time --date YYYY-MM-DD --now HH:MM.")
+    return datetime.strptime(state["clock"], CLOCK_FMT)
 
 
 def hm_minutes(text, where):
     try:
         hour, minute = (int(x) for x in text.split(":", 1))
     except (ValueError, AttributeError):
-        sys.exit(f"Błąd: '{text}' w {where} nie jest godziną w formacie GG:MM.")
+        sys.exit(f"Error: '{text}' in {where} is not a time in the format HH:MM.")
     return hour * 60 + minute
 
 
 def load_daylight(setting):
-    """Wiersze (dzień roku, wschód, zachód, początek ciemności, koniec ciemności) w minutach.
+    """Rows (day of year, sunrise, sunset, start of darkness, end of darkness) in minutes.
 
-    Ciemność trwa od wieczora (start) przez północ do rana (end). Brak
-    ciemności (białe noce) to start = 1440 i end = 0.
+    Darkness lasts from the evening (start) past midnight to the morning
+    (end). No darkness (white nights) is start = 1440 and end = 0.
     """
     path = ROOT / "Settings" / setting / DAYLIGHT_FILE
     if not path.exists():
-        sys.exit(f"Błąd: setting '{setting}' nie ma pliku {DAYLIGHT_FILE}.")
+        sys.exit(f"Error: setting '{setting}' has no file {DAYLIGHT_FILE}.")
     with path.open(encoding="utf-8") as fh:
-        days = json.load(fh)["dni"]
+        days = json.load(fh)["days"]
     rows = []
     for key, d in days.items():
         try:
             doy = datetime.strptime(f"2001-{key}", "%Y-%m-%d").timetuple().tm_yday
         except ValueError:
-            sys.exit(f"Błąd: '{key}' w {path.name} nie jest dniem w formacie MM-DD.")
-        if d.get("ciemnosc"):
-            start, end = d["ciemnosc"].split("-", 1)
+            sys.exit(f"Error: '{key}' in {path.name} is not a day in the format MM-DD.")
+        if d.get("darkness"):
+            start, end = d["darkness"].split("-", 1)
             start, end = hm_minutes(start, path.name), hm_minutes(end, path.name)
         else:
             start, end = 1440, 0
-        rows.append((doy, hm_minutes(d["wschod"], path.name), hm_minutes(d["zachod"], path.name), start, end))
+        rows.append((doy, hm_minutes(d["sunrise"], path.name), hm_minutes(d["sunset"], path.name), start, end))
     if not rows:
-        sys.exit(f"Błąd: {path.name} nie podaje żadnego dnia.")
+        sys.exit(f"Error: {path.name} lists no days.")
     return sorted(rows)
 
 
 def daylight_on(rows, clock):
-    """Wschód, zachód i ciemność w danym dniu, interpolowane liniowo między wierszami."""
+    """Sunrise, sunset and darkness on a given day, linearly interpolated between rows."""
     month, day = clock.month, min(clock.day, 28) if clock.month == 2 else clock.day
     doy = datetime(2001, month, day).timetuple().tm_yday
     before = [r for r in rows if r[0] <= doy]
@@ -220,133 +226,133 @@ def day_phase(rows, clock):
     t = clock.hour * 60 + clock.minute
     dark = end > 0 or start < 1440
     if dark and (t >= start or t < end):
-        phase = "ciemność"
+        phase = "darkness"
     elif t < sunrise:
-        phase = "brzask" if dark else "biała noc"
+        phase = "dawn" if dark else "white night"
     elif t < sunset:
-        phase = "dzień"
+        phase = "day"
     else:
-        phase = "zmierzch" if dark else "biała noc"
-    darkness = f"ciemność {fmt_min(start)}–{fmt_min(end)}" if dark else "ciemności brak (białe noce)"
-    return f"Pora: {phase} (wschód {fmt_min(sunrise)}, zachód {fmt_min(sunset)}, {darkness})"
+        phase = "dusk" if dark else "white night"
+    darkness = f"darkness {fmt_min(start)}–{fmt_min(end)}" if dark else "no darkness (white nights)"
+    return f"Time of day: {phase} (sunrise {fmt_min(sunrise)}, sunset {fmt_min(sunset)}, {darkness})"
 
 
-def cmd_czas(args, folder, state):
-    hm = parse_hm(args.teraz)
-    if args.data:
+def cmd_time(args, folder, state):
+    hm = parse_hm(args.now)
+    if args.date:
         try:
-            day = datetime.strptime(args.data, "%Y-%m-%d")
+            day = datetime.strptime(args.date, "%Y-%m-%d")
         except ValueError:
-            sys.exit(f"Błąd: '{args.data}' nie jest datą w formacie RRRR-MM-DD.")
+            sys.exit(f"Error: '{args.date}' is not a date in the format YYYY-MM-DD.")
         clock = day.replace(hour=hm[0], minute=hm[1])
     else:
         clock = at_or_after(get_clock(state), hm)
-    state["zegar"] = clock.strftime(CLOCK_FMT)
+    state["clock"] = clock.strftime(CLOCK_FMT)
     if args.setting:
         load_daylight(args.setting)
         state["setting"] = args.setting
 
-    due = sorted((e["godzina"], label, e) for label, e in state["zdarzenia"].items()
-                 if not e["zgloszone"] and e["godzina"] <= state["zegar"])
-    print(f"Zegar: {state['zegar']}")
+    due = sorted((e["at"], label, e) for label, e in state["events"].items()
+                 if not e["reported"] and e["at"] <= state["clock"])
+    print(f"Clock: {state['clock']}")
     if state.get("setting"):
         print(day_phase(load_daylight(state["setting"]), clock))
     if not due:
-        print("Brak nowych zdarzeń.")
+        print("No new events.")
     for moment, label, event in due:
-        event["zgloszone"] = True
-        about = f": {event['opis']}" if event.get("opis") else ""
-        print(f"Teraz: {label}{about} (o {moment[-5:]})")
+        event["reported"] = True
+        about = f": {event['desc']}" if event.get("desc") else ""
+        print(f"Now: {label}{about} (at {moment[-5:]})")
     save_state(folder, state)
 
 
 def cmd_timer(args, folder, state):
-    if label_taken(state, args.etykieta):
-        sys.exit(f"Błąd: etykieta '{args.etykieta}' jest już zajęta.")
+    if label_taken(state, args.label):
+        sys.exit(f"Error: label '{args.label}' is already taken.")
     clock = get_clock(state)
-    entries = table_entries(args.tablica, load_tables())
+    entries = table_entries(args.table, load_tables())
     if not all(isinstance(v, int) for _, _, v in entries):
-        sys.exit(f"Błąd: tablica '{args.tablica}' nie podaje minut, więc nie nadaje się do timera. "
-                 "Ukryty rzut z tablicą tekstową wykonuje Scripts/roll.py --ukryty.")
-    start = at_or_before(clock, parse_hm(args.od)) if args.od else clock
-    dice, total = roll_3k6()
+        sys.exit(f"Error: table '{args.table}' does not give minutes, so it cannot be used for a timer. "
+                 "A hidden roll with a text table is made by Scripts/roll.py --hidden.")
+    start = at_or_before(clock, parse_hm(args.start)) if args.start else clock
+    dice, total = roll_3d6()
     moment = start + timedelta(minutes=lookup(entries, total))
-    if args.nie_wczesniej:
-        moment = max(moment, at_or_after(start, parse_hm(args.nie_wczesniej)))
-    state["zdarzenia"][args.etykieta] = {
-        "godzina": moment.strftime(CLOCK_FMT),
-        "opis": args.opis,
-        "tablica": args.tablica,
-        "od": start.strftime(CLOCK_FMT),
-        "kosci": dice,
-        "wynik": total,
-        "zgloszone": False,
+    if args.not_before:
+        moment = max(moment, at_or_after(start, parse_hm(args.not_before)))
+    state["events"][args.label] = {
+        "at": moment.strftime(CLOCK_FMT),
+        "desc": args.desc,
+        "table": args.table,
+        "from": start.strftime(CLOCK_FMT),
+        "dice": dice,
+        "result": total,
+        "reported": False,
     }
     save_state(folder, state)
-    log_hidden(folder, args.etykieta, f"timer, tablica {args.tablica}")
-    print(f"Zapisano ukryte zdarzenie {args.etykieta}.")
+    log_hidden(folder, args.label, f"timer, table {args.table}")
+    print(f"Hidden event saved: {args.label}.")
 
 
-def cmd_usun(args, folder, state):
-    for kind in ("zdarzenia", "rzuty"):
-        if args.etykieta in state[kind]:
-            del state[kind][args.etykieta]
+def cmd_remove(args, folder, state):
+    for kind in ("events", "rolls"):
+        if args.label in state[kind]:
+            del state[kind][args.label]
             save_state(folder, state)
-            print(f"Usunięto {args.etykieta}.")
+            print(f"Removed {args.label}.")
             return
-    sys.exit(f"Błąd: nie ma etykiety '{args.etykieta}'.")
+    sys.exit(f"Error: there is no label '{args.label}'.")
 
 
-def cmd_pokaz(args, folder, state):
-    print(f"Zegar: {state['zegar'] or 'nieustawiony'}")
-    events = state["zdarzenia"]
-    rolls = state["rzuty"]
-    if args.etykieta:
-        if not label_taken(state, args.etykieta):
-            sys.exit(f"Błąd: nie ma etykiety '{args.etykieta}'.")
-        events = {k: v for k, v in events.items() if k == args.etykieta}
-        rolls = {k: v for k, v in rolls.items() if k == args.etykieta}
-    print("Zdarzenia:" if events else "Zdarzenia: brak")
-    for label, e in sorted(events.items(), key=lambda kv: kv[1]["godzina"]):
-        status = "nastąpiło" if e["zgloszone"] else "czeka"
-        about = f" {e['opis']}" if e.get("opis") else ""
-        print(f"  {label}{about}: {e['godzina']} ({status}; od {e['od']}, tablica {e['tablica']}, wynik {e['wynik']})")
-    print("Rzuty ukryte:" if rolls else "Rzuty ukryte: brak")
+def cmd_show(args, folder, state):
+    print(f"Clock: {state['clock'] or 'not set'}")
+    events = state["events"]
+    rolls = state["rolls"]
+    if args.label:
+        if not label_taken(state, args.label):
+            sys.exit(f"Error: there is no label '{args.label}'.")
+        events = {k: v for k, v in events.items() if k == args.label}
+        rolls = {k: v for k, v in rolls.items() if k == args.label}
+    print("Events:" if events else "Events: none")
+    for label, e in sorted(events.items(), key=lambda kv: kv[1]["at"]):
+        status = "happened" if e["reported"] else "pending"
+        about = f" {e['desc']}" if e.get("desc") else ""
+        print(f"  {label}{about}: {e['at']} ({status}; from {e['from']}, table {e['table']}, result {e['result']})")
+    print("Hidden rolls:" if rolls else "Hidden rolls: none")
     for label, r in rolls.items():
-        about = f" {r['opis']}" if r.get("opis") else ""
-        print(f"  {label}{about}: wynik {r['wynik']}, {r['rezultat']}")
+        about = f" {r['desc']}" if r.get("desc") else ""
+        print(f"  {label}{about}: result {r['result']}, {r['outcome']}")
 
 
 def main():
     for stream in (sys.stdout, sys.stderr):
         stream.reconfigure(encoding="utf-8")
 
-    parser = argparse.ArgumentParser(description="Ukryty stan MG: zegar, ukryte zdarzenia i rzuty.")
-    parser.add_argument("--kampania", required=True, help="nazwa folderu kampanii w Campaigns/")
-    sub = parser.add_subparsers(dest="polecenie", required=True)
+    parser = argparse.ArgumentParser(description="The GM's hidden state: clock, hidden events and rolls.")
+    parser.add_argument("--campaign", required=True, help="name of the campaign folder in Campaigns/")
+    sub = parser.add_subparsers(dest="command", required=True)
 
-    p = sub.add_parser("czas", help="ustaw zegar świata i wypisz zdarzenia, które właśnie nastąpiły")
-    p.add_argument("--teraz", required=True, help="godzina w świecie, GG:MM")
-    p.add_argument("--data", help="data w świecie, RRRR-MM-DD (przy pierwszym ustawieniu albo korekcie)")
-    p.add_argument("--setting", help="folder settingu z plikiem Tables/Daylight.json; zapamiętywany w stanie kampanii")
+    p = sub.add_parser("time", help="set the world clock and print the events that have just happened")
+    p.add_argument("--now", required=True, help="time in the world, HH:MM")
+    p.add_argument("--date", help="date in the world, YYYY-MM-DD (when first set or corrected)")
+    p.add_argument("--setting", help="setting folder with a Tables/Daylight.json file; remembered in the campaign state")
 
-    p = sub.add_parser("timer", help="rzuć ukryty czas zdarzenia według nazwanej tablicy")
-    p.add_argument("--etykieta", required=True, help="neutralna etykieta, np. n1")
-    p.add_argument("--tablica", required=True, help="nazwa tablicy z Tables/GmTables.json (wartości w minutach)")
-    p.add_argument("--od", help="godzina początku odliczania, GG:MM (domyślnie teraz)")
-    p.add_argument("--nie-wczesniej", dest="nie_wczesniej", help="zdarzenie nie wcześniej niż o GG:MM")
-    p.add_argument("--opis", default="", help="krótki, neutralny opis, widoczny w konsoli")
+    p = sub.add_parser("timer", help="roll the hidden time of an event on a named table")
+    p.add_argument("--label", required=True, help="neutral label, e.g. n1")
+    p.add_argument("--table", required=True, help="name of a table from Tables/GmTables.json (values in minutes)")
+    p.add_argument("--from", dest="start", help="time the countdown starts, HH:MM (default now)")
+    p.add_argument("--not-before", dest="not_before", help="the event happens no earlier than HH:MM")
+    p.add_argument("--desc", default="", help="short, neutral description, visible in the console")
 
-    p = sub.add_parser("usun", help="usuń ukryte zdarzenie albo ukryty rzut")
-    p.add_argument("--etykieta", required=True)
+    p = sub.add_parser("remove", help="remove a hidden event or a hidden roll")
+    p.add_argument("--label", required=True)
 
-    p = sub.add_parser("pokaz", help="wypisz cały ukryty stan (tylko przy wznowieniu gry)")
-    p.add_argument("--etykieta", help="tylko ta etykieta")
+    p = sub.add_parser("show", help="print the whole hidden state (only when resuming play)")
+    p.add_argument("--label", help="only this label")
 
     args = parser.parse_args()
-    folder = campaign_folder(args.kampania)
+    folder = campaign_folder(args.campaign)
     state = load_state(folder)
-    {"czas": cmd_czas, "timer": cmd_timer, "usun": cmd_usun, "pokaz": cmd_pokaz}[args.polecenie](args, folder, state)
+    {"time": cmd_time, "timer": cmd_timer, "remove": cmd_remove, "show": cmd_show}[args.command](args, folder, state)
 
 
 if __name__ == "__main__":

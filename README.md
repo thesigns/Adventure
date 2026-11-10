@@ -69,26 +69,26 @@ Pliki zasad w `Rules/`:
 ## Skrypty
 
 Skrypty wymagają Pythona 3 i korzystają tylko z biblioteki standardowej.
-Nazwa kampanii (`--kampania`) jest obowiązkowa, a każdy rzut trafia do
+Nazwa kampanii (`--campaign`) jest obowiązkowa, a każdy rzut trafia do
 `Campaigns/<kampania>/Rolls.log`.
 
 Rzut 3K6 z tablicą rezultatów (opcjonalnie z wydanymi PDT):
 
 ```
-python Scripts/roll.py --kampania Randuvil --opis "Wspinaczka na mur" --pdt 1 "3-4:upadek, lekka rana" "5-8:upadek, draśnięcie" "9-18:sukces"
+python Scripts/roll.py --campaign Randuvil --desc "Wspinaczka na mur" --dp 1 "3-4:upadek, lekka rana" "5-8:upadek, draśnięcie" "9-18:sukces"
 ```
 
 Rzut monetą w sporze między graczem a MG:
 
 ```
-python Scripts/coin.py --kampania Randuvil --opis "Czy postać zdążyła zamknąć bramę" --mg "brama była otwarta" --gracz "postać zamknęła bramę"
+python Scripts/coin.py --campaign Randuvil --desc "Czy postać zdążyła zamknąć bramę" --gm "brama była otwarta" --player "postać zamknęła bramę"
 ```
 
 Mapa gracza z mgłą wojny, na której MG odsłania miejsca odkryte przez postać.
 Podgląd w przeglądarce odświeża się sam:
 
 ```
-python Scripts/fogmap.py --kampania Randuvil --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 2 --otworz
+python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2 --open
 ```
 
 ## Scenariusze i settingi
@@ -102,7 +102,12 @@ Repozytorium zawiera na razie jeden testowy scenariusz, **Krypta**
 (`Scenarios/Crypt/`). To krótka mini-przygoda w świecie low fantasy, opisanym
 w samym scenariuszu: postać schodzi do krypty pod wzgórzem, żeby odnaleźć
 zaginionego pastucha. Scenariusz ma mapę krypty z mgłą wojny dla gracza
-i skrypt losujący skarby. Settingów na razie nie ma.
+i skrypt losujący skarby.
+
+Jedyny setting to **Generia** (`Settings/Generia/`): do bólu generyczny świat
+fantasy z elfami, krasnoludami, magią i potworami, opisany zwięźle
+po angielsku, żeby zajmował jak najmniej kontekstu. Czego nie opisuje, MG
+uzupełnia najbardziej typowym rozwiązaniem z fantasy.
 
 ## Licencja
 

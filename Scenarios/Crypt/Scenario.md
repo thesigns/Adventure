@@ -89,13 +89,13 @@ Mapę gracza MG prowadzi skryptem `Scripts/fogmap.py`, z nazwą kampanii postaci
 - Gdy postać staje u wejścia do krypty, MG odsłania pokój 1 i otwiera graczowi podgląd mapy, który odtąd odświeża się sam:
 
   ```
-  python Scripts/fogmap.py --kampania <kampania> --mapa Scenarios/Crypt/Maps/MapCrypt.svg --odkryj 1 --otworz
+  python Scripts/fogmap.py --campaign <kampania> --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 --open
   ```
 
   Jeśli postać wchodzi do krypty szczeliną od strony wąwozu, MG odsłania najpierw obszar 9 zamiast 1.
 
-- Za każdym razem, gdy postać zobaczy kolejne pomieszczenie, MG odsłania je bez `--otworz`, np. `--odkryj 2`.
-- Gdy postać znajdzie płytę naciskową w przedsionku, MG odsłania sekret: `--sekret plyta`.
+- Za każdym razem, gdy postać zobaczy kolejne pomieszczenie, MG odsłania je bez `--open`, np. `--reveal 2`.
+- Gdy postać znajdzie płytę naciskową w przedsionku, MG odsłania sekret: `--secret plyta`.
 
 Poniżej uproszczony schemat krypty.
 
@@ -255,12 +255,12 @@ Borzywoj nie używa szczeliny w dzień. Jeśli walka idzie dla niego źle, prób
 Skarby, które leżą w ustalonych miejscach, opisują pokoje krypty. Resztę MG losuje skryptem scenariusza:
 
 ```
-python Scenarios/Crypt/Scripts/treasure.py --kampania <kampania> --miejsce <miejsce>
+python Scenarios/Crypt/Scripts/treasure.py --campaign <kampania> --place <miejsce>
 ```
 
-- `--miejsce sarkofag`: zawartość jednego zamkniętego sarkofagu w sali grobów (pokój 5). MG losuje osobno dla każdego przeszukanego sarkofagu, najwyżej trzy razy.
-- `--miejsce worek`: losowa część łupu w worku Ostapa (pokój 6), raz. Poza wylosowanymi rzeczami w worku są zawsze: 12 srebrnych groszy, łom, krzesiwo, 10 m liny, butelka oleju do latarni i zwój starych map doliny.
-- `--miejsce grobowiec`: zawartość szkatuły w grobowcu (pokój 8), raz.
+- `--place sarkofag`: zawartość jednego zamkniętego sarkofagu w sali grobów (pokój 5). MG losuje osobno dla każdego przeszukanego sarkofagu, najwyżej trzy razy.
+- `--place worek`: losowa część łupu w worku Ostapa (pokój 6), raz. Poza wylosowanymi rzeczami w worku są zawsze: 12 srebrnych groszy, łom, krzesiwo, 10 m liny, butelka oleju do latarni i zwój starych map doliny.
+- `--place grobowiec`: zawartość szkatuły w grobowcu (pokój 8), raz.
 
 Skrypt zapisuje wynik w rejestrze rzutów kampanii. MG nie losuje tego samego miejsca drugi raz, tylko zapisuje wylosowane skarby w postępie scenariusza w folderze kampanii.
 
