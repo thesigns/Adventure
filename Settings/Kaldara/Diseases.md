@@ -15,12 +15,11 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 - Śmiałkowie omijają suche purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
 - Chory zdrowieje po dłuższym pobycie na powierzchni. Kto zostaje pod ziemią, umiera.
 - Nie przechodzi z człowieka na człowieka.
+- Trolle i stwory z Głębin są na nią odporne.
 - Zielarki i kapłani nie mają na nią lekarstwa.
 
 ### Prawda (nie wie nikt na wyspie)
 
-- Zarodniki żyją tylko w mikroklimacie podziemi, na powierzchni giną.
-- Trolle i stwory z Głębin są odporne.
 - Purchawki przyszły z Głębin. Razem z trollami zgubiły krasnoludy (zob. `Dwarves.md`).
 
 ### Zakażenie
