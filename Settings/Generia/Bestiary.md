@@ -23,7 +23,7 @@
 | knight, veteran, orc chief | strong | human | weapon |  |
 | warlock, necromancer | strong | human | spell | casts like `Magic.md`, rarely fights alone: minions, undead, demons |
 | dire wolf, bear, warg | strong | tough | medium wound |  |
-| werewolf | strong | tough | medium wound | only silver or magic wounds it; bite spreads curse; regenerates 30% a day of rest, so one that flees wounded comes back healed within three days |
+| werewolf | strong | tough | medium wound | only silver or magic wounds it; bite spreads curse; regenerates 30% a day of rest, so one that flees wounded comes back healed within three days, but wounds from silver heal at the usual rate |
 | wraith, ghost | strong | human | medium wound | only magic or holy wounds; drains strength |
 | bog hag | strong | human | light wound | claws; curses, illusions and spells like `Magic.md`; bargains, lies, steals children |
 | ogre, minotaur | powerful | tough | serious wound | dull-witted |
