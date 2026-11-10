@@ -13,20 +13,18 @@ Krasnoludów nie ma, zostały po nich ruiny, przedmioty i legendy.
 
 Tego nie wie nikt na wyspie. Ani postać gracza, ani żadna postać niezależna nie zna tej historii, chyba że sama dojdzie do niej po śladach.
 
-Krasnoludy drążyły coraz głębiej, aż przebiły się do Głębin, w których od zawsze żyły trolle i inne stwory. Z Głębin przyszły do kopalń dwie klęski naraz.
-
-Pierwszą były trolle. Wylały się do kopalń tysiącami i zaczęła się wojna, która trwała pokolenia.
-
-Drugą był czarny kaszel, choroba, którą niosą zarodniki bladych grzybów z Głębin (zob. *Czarny kaszel* w `Diseases.md`). Trolle są na nią odporne, krasnoludy nie były. Zarodniki żyją tylko w podziemiach i giną na powierzchni, a krasnoludy były ludem podziemi i rzadko wychodziły na powierzchnię. Broniły się przed chorobą tak, jak umiały: zamurowywały chore sale razem z chorymi, często żywymi, schodziły głębiej i zamykały się w twierdzach. Każdy z tych kroków je pogrążał. Choroba szła przez kopalnie i miasta szybciej niż trolle, a osłabione krasnoludy nie utrzymały korytarzy. Cofały się z twierdzy do twierdzy.
-
-Gdy stało się jasne, że wyspy nie da się utrzymać, niedobitki wyszły z gór i ruszyły przez wyspę do portu na zachodnim wybrzeżu. W drodze po powierzchni chorzy zdrowieli. Krasnoludy nie wiedziały dlaczego i uznały to za łaskę słońca. W porcie wsiadły na statki i odpłynęły na zachód, w otwarty ocean, ku zachodzącemu słońcu. Zabrały tylko to, co zdołały unieść. Nikt nie wie, dokąd dotarły ani czy w ogóle dotarły. Nigdy nie wróciły i nie wrócą.
-
-Trolle zajęły ich kopalnie, świątynie, twierdze i grobowce i mieszkają w nich do dziś, razem ze skarbami, których krasnoludy nie zdołały zabrać. Za murami zarazy leżą najbogatsze sale, bo krasnoludy zamurowywały je razem z dobytkiem, a w ich powietrzu wciąż wiszą zarodniki.
+- Krasnoludy drążyły coraz głębiej, aż przebiły się do Głębin. Stamtąd przyszły dwie klęski naraz.
+- **Trolle** wylały się do kopalń tysiącami. Wojna trwała pokolenia.
+- **Czarny kaszel** (zob. `Diseases.md`): trolle są odporne, krasnoludy nie były. Zarodniki giną na powierzchni, ale krasnoludy były ludem podziemi i rzadko na nią wychodziły. Nie znały przyczyny, więc chowały się głębiej i w twierdzach, co je pogrążało.
+- Choroba szła szybciej niż trolle. Osłabione krasnoludy nie utrzymały korytarzy i cofały się z twierdzy do twierdzy.
+- Niedobitki wyszły z gór i ruszyły do portu na zachodnim wybrzeżu. W drodze chorzy zdrowieli, co krasnoludy uznały za łaskę słońca.
+- Odpłynęły na zachód, w otwarty ocean, z tym, co zdołały unieść. Nikt nie wie, dokąd dotarły. Nigdy nie wrócą.
+- Trolle zajęły ruiny i mieszkają w nich do dziś, razem z pozostawionymi skarbami.
 
 Ślady w ruinach:
 
-- **Wojna:** zawalone tunele, barykady, krasnoludzkie kości z trollimi ranami, płaskorzeźby przedstawiające bitwy z trollami.
-- **Zaraza:** mury zarazy, czyli zamurowane przejścia, często zamurowane od strony korytarza, z tym samym znakiem wykutym w kamieniu. Za nimi sale pełne krasnoludzkich kości ułożonych w rzędy, bez śladów walki, i blade grzyby, które rosną tam gęściej niż gdziekolwiek.
-- **Ucieczka:** ruiny portu pod dzisiejszym Hofvik, wielkie nabrzeża, pochylnie dla statków, porzucony dobytek i ostatnie płaskorzeźby przedstawiające statki płynące ku zachodzącemu słońcu.
+- **Wojna:** zawalone tunele, barykady, kości krasnoludów z trollimi ranami, płaskorzeźby bitew z trollami.
+- **Zaraza:** sale z kośćmi krasnoludów ułożonymi w rzędy, bez śladów walki. Blade grzyby rosną gęsto w miejscach, gdzie umierali.
+- **Ucieczka:** port pod Hofvik: nabrzeża, pochylnie dla statków, porzucony dobytek, płaskorzeźby statków płynących ku zachodzącemu słońcu.
 
-Ludzie widzą te ślady, ale nie łączą ich w całość. Mury zarazy biorą za barykady przeciw trollom, a znak na nich za ostrzeżenie przed trollami. Czarny kaszel uważają za chorobę od pyłu albo od klątwy, a nie za to, co zgubiło krasnoludy. Większość uważa, że trolle po prostu zajęły puste ruiny po krasnoludach, które zginęły albo zniknęły z innego powodu.
+Ludzie widzą te ślady, ale nie łączą ich w całość. Czarny kaszel uważają za chorobę od pyłu albo klątwy. Większość sądzi, że trolle zajęły puste ruiny po krasnoludach, które zniknęły z innego powodu.

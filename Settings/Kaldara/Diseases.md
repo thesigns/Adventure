@@ -22,7 +22,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 - Pękają też pod trollami i robalami, które o nie ocierają, więc chmura może wisieć w powietrzu, zanim przyjdzie postać.
 - Trolle i stwory z Głębin są odporne.
 - Zarodniki żyją tylko w mikroklimacie podziemi, na powierzchni giną.
-- Najgęściej: sale porośnięte grzybami i sale za murami zarazy (zob. `Dwarves.md`).
+- Najgęściej rosną w Głębinach i na najgłębszych poziomach ruin.
 - Razem z trollami zgubiła krasnoludy.
 
 ### Zakażenie
@@ -30,7 +30,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 - Zakażone miejsca ustala scenariusz.
 - Ukryty rzut MG, bez PDT, tablice z `gm_tables.json`:
   - postać nadepnie albo potrąci grzyb albo wejdzie w wiszącą chmurę: przeciętne (`k3`),
-  - sala za rozbitym murem zarazy, gdzie grzyby pokrywają całą posadzkę: trudne (`k4`),
+  - przejście przez salę, której posadzkę pokrywają grzyby: trudne (`k4`),
   - każde kolejne trzy doby w Głębinach albo na najgłębszych poziomach ruin: łatwe (`k2`).
 - Kto widzi grzyby i idzie ostrożnie, nie nadepnie. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy chmura już wisi.
 - Przykład: `python Scripts/roll.py --kampania <kampania> --ukryty --etykieta c1 --tablica k3`
