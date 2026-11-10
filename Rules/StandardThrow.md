@@ -87,34 +87,34 @@ Typical circumstances:
 
 ## Examples
 
-> The player character climbs a three-metre stone wall without a rope, slippery with rain.
+> Randuvil, a young wizard, climbs a two-metre stone wall without a rope.
 
-For an average human this would be hard, but the character has the advantage *acrobat*, so the GM judges the action as average. The GM sets up the outcome table:
+For an average human this would be average, but Randuvil has the disadvantage *lame*, so the GM judges the action as hard. The GM sets up the outcome table:
 
 | Result | Outcome            |
 |--------|--------------------|
 | 3–4    | falls, light wound |
-| 5–8    | falls, scratch     |
-| 9–18   | success            |
+| 5–10   | falls, scratch     |
+| 11–18  | success            |
 
-The roll is 7: the character falls off the wall and is scratched (5% wound level).
+The roll is 7: Randuvil falls off the wall and is scratched (5% wound level).
 
-> Later the character sneaks at night past a guard dozing by a campfire.
+> Later Randuvil sneaks at night past a guard dozing by a campfire.
 
-The GM rolls whether the guard notices them. The darkness and the dozing guard make it easier, but the fire lights part of the yard, so the GM judges slipping past unnoticed as average. High results are good for the player character, which means the guard does not notice them:
+The GM rolls whether the guard notices him. His limp does not hinder sneaking. The darkness and the dozing guard make it easier, but the fire lights part of the yard, so the GM judges slipping past unnoticed as average. High results are good for the player character, which means the guard does not notice them:
 
-| Result | Outcome                                              |
-|--------|------------------------------------------------------|
-| 3–5    | the guard notices the character and raises the alarm |
-| 6–8    | the guard hears something and gets up to check       |
-| 9–18   | the guard notices nothing                            |
+| Result | Outcome                                         |
+|--------|-------------------------------------------------|
+| 3–5    | the guard notices Randuvil and raises the alarm |
+| 6–8    | the guard hears something and gets up to check  |
+| 9–18   | the guard notices nothing                       |
 
 ## Scripted rolls
 
 The GM makes every roll with the script `Scripts/roll.py`. The outcome table is given in the command, so it is fixed before the roll:
 
 ```
-python Scripts/roll.py --campaign Randuvil --desc "Climbing the wall" "3-4:falls, light wound" "5-8:falls, scratch" "9-18:success"
+python Scripts/roll.py --campaign Randuvil --desc "Climbing the wall" "3-4:falls, light wound" "5-10:falls, scratch" "11-18:success"
 ```
 
 - `--campaign` is the name of the campaign folder in `Campaigns/`. It is required, and the folder must already exist.
@@ -131,5 +131,5 @@ The script prints the table with the chance of each outcome (with DP spent, also
 Example with 2 DP spent:
 
 ```
-python Scripts/roll.py --campaign Elandir --desc "Climbing a rope up the temple wall" --dp 2 "3:falls, serious wound" "4:falls, medium wound" "5-6:falls, light wound" "7-11:climbs, but someone notices him" "12-18:climbs unnoticed"
+python Scripts/roll.py --campaign Randuvil --desc "Climbing a rope up the temple wall" --dp 2 "3:falls, serious wound" "4:falls, medium wound" "5-6:falls, light wound" "7-11:climbs, but someone notices him" "12-18:climbs unnoticed"
 ```

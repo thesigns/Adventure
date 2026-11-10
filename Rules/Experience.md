@@ -32,9 +32,9 @@ A character can advance at any moment if they have enough experience points. The
 
 On advancement base DP, current DP and the cap on base DP rise by 1. The GM writes the new level, the remaining experience points and the new DP on the character sheet.
 
-Gerald is at experience level 3 and has 2300 experience points. Reaching level 4 costs 4 × 500 = 2000 points, so Gerald can advance. He spends 2000 points and is now at level 4 with 2300 − 2000 = 300 experience points. He is 2200 short of level 5, which costs 5 × 500 = 2500 points.
+Some years into his career, Randuvil is at experience level 3 and has 2300 experience points. Reaching level 4 costs 4 × 500 = 2000 points, so Randuvil can advance. He spends 2000 points and is now at level 4 with 2300 − 2000 = 300 experience points. He is 2200 short of level 5, which costs 5 × 500 = 2500 points.
 
-Gerald is at experience level zero and has 12 base DP, and his base DP range is 5–15. He advances to level 1. He now has 13 base DP, and his base DP range is 5–16.
+At the start, Randuvil is at experience level zero and has 14 base DP, and his base DP range is 5–15. He advances to level 1. He now has 15 base DP, and his base DP range is 5–16.
 
 ## Awarding experience points
 
@@ -65,8 +65,8 @@ The advancement cost grows with each level, so the character advances more and m
 
 ## Example
 
-> A mercenary escapes from an orbital station taken over by rebel robots. She leads a wounded technician out, destroys four combat robots on the way, and strikes a deal without a fight with the smugglers who have taken the hangar.
+> Randuvil escapes from a wizard's tower overrun by animated armour after a summoning went wrong. He leads a wounded apprentice out, destroys four suits of armour on the way, and strikes a deal without a fight with the bandits who have taken the gatehouse.
 
-The scenario foresees 150 experience points for escaping the station, 100 for saving the technician, 20 for each combat robot destroyed and 100 for shutting down the reactor. The mercenary did not shut down the reactor. The scenario foresees no reward for the deal with the smugglers, but the GM counts it as an achievement and awards 50 points for it. The mercenary gets 150 + 100 + 4 × 20 + 50 = 380 experience points.
+The scenario foresees 150 experience points for escaping the tower, 100 for saving the apprentice, 20 for each suit of armour destroyed and 100 for breaking the summoning circle. Randuvil did not break the circle. The scenario foresees no reward for the deal with the bandits, but the GM counts it as an achievement and awards 50 points for it. Randuvil gets 150 + 100 + 4 × 20 + 50 = 380 experience points.
 
-The mercenary is at experience level zero and already had 300 points, so she now has 680. She advances to level 1 for 500 points and has 180 left. Her base DP rises from 11 to 12, and her base DP range is now 5–16.
+Randuvil is at experience level zero and already had 300 points, so he now has 680. He advances to level 1 for 500 points and has 180 left. His base DP rises from 14 to 15, and his base DP range is now 5–16.

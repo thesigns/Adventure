@@ -11,11 +11,11 @@ Before starting character creation, the GM reads all files of the chosen setting
 
 The player sets the character's name, age, sex, species and profession. Species and profession must fit the lore of the chosen world.
 
-> Randuvil, human, male, aged 57, wizard
+> Randuvil, human, male, aged 27, wizard
 
-At this stage Randuvil is an average member of his age, sex, species and profession. He is therefore an ageing man with great knowledge and the ability to cast spells, but unused to melee and not particularly fit (wizards spend most of their time over books).
+At this stage Randuvil is an average member of his age, sex, species and profession. He is therefore a young man with book learning and the ability to cast spells, but unused to melee and not particularly fit (wizards spend most of their time over books).
 
-Skills and weaknesses that follow from age, sex, species and profession are neither advantages nor disadvantages. Randuvil knows spells because he is a wizard, and his poor fitness is typical of an older mage. They are not declared as traits and do not change the number of Determination Points.
+Skills and weaknesses that follow from age, sex, species and profession are neither advantages nor disadvantages. Randuvil knows spells because he is a wizard, and his poor fitness is typical of a scholar. They are not declared as traits and do not change the number of Determination Points.
 
 ## Determination Points, advantages and disadvantages
 
@@ -33,7 +33,7 @@ The base DP of a finished character MUST be in the range from 5 to 15 + experien
 
 > As for disadvantages, Randuvil has a wart on his nose, walks with a limp and lisps. He has no advantages.
 
-If Randuvil were a courtesan, the wart on his nose could add 2 or even 3 DP. But for an older mage it is practically no disadvantage at all. The GM rates it as insignificant and gives 0 DP for it.
+If Randuvil were a courtesan, the wart on his nose could add 2 or even 3 DP. But for a wizard it is practically no disadvantage at all. The GM rates it as insignificant and gives 0 DP for it.
 
 Being lame is a different story. It slows the character down and affects most rolls involving physical fitness (jumping, climbing, melee, fleeing). On the other hand, mages rarely do such things. For a limping warrior this would be a huge disadvantage. For a mage... merely moderate. So the GM prices this disadvantage as moderate and gives Randuvil 3 DP.
 
@@ -47,7 +47,7 @@ The GM judges that according to the lore average mages are educated anyway, so t
 
 Randuvil now has 18 − 4 = 14 base DP. That fits. The GM and the player accept the character.
 
-In summary: Randuvil is a 57-year-old man, human, wizard. He has a wart on his nose, limps and lisps, but knows many languages, including rare and ancient ones. He has 14 base Determination Points, which refresh after proper rest (see `Rules/Determination.md`).
+In summary: Randuvil is a 27-year-old man, human, wizard. He has a wart on his nose, limps and lisps, but knows many languages, including rare and ancient ones. He has 14 base Determination Points, which refresh after proper rest (see `Rules/Determination.md`).
 
 ## Background
 
@@ -61,9 +61,9 @@ The background by itself gives no benefits or penalties in play. If something fo
 
 From the background the GM picks 1–2 **plot threads**: story hooks to weave into scenarios, e.g. a missing brother, an old enemy or an unsolved mystery. A thread that only gives an occasion for adventure does not change DP. A thread that regularly makes the character's life harder is a disadvantage.
 
-> Randuvil taught at an academy of magic for thirty years. He has limped since a summoning slipped out of his control, and the lisp is from the same accident. He left the academy in anger when his most gifted student stole an ancient scroll from him and vanished. Randuvil sets out to find him.
+> Randuvil studied at an academy of magic for ten years. He has limped since a summoning slipped out of his control, and the lisp is from the same accident. He left the academy in anger when a fellow student stole an ancient scroll from him and vanished. Randuvil sets out to find him.
 
-The GM counts leaving the academy as colour: it will not matter in play. The missing student and the stolen scroll are a plot thread. If the player added that the academy had sent out wanted notices for Randuvil, that would be a disadvantage.
+The GM counts leaving the academy as colour: it will not matter in play. The missing fellow student and the stolen scroll are a plot thread. If the player added that the academy had sent out wanted notices for Randuvil, that would be a disadvantage.
 
 ## Equipment
 

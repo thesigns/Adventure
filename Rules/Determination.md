@@ -32,16 +32,16 @@ Roughly how Determination Points change the chance of success:
 
 ## Example
 
-> A nimble elf, the player character, climbs a rope up a temple wall at night, while guards patrol below.
+> Randuvil climbs a knotted rope up a temple wall at night, while guards patrol below.
 
-The GM judges the chance of falling as small and of being noticed as moderate. The elf sees the guards and can give up, so the GM shows the table and does not roll:
+The knots make up for his limp, so the GM judges the chance of falling as small and of being noticed as moderate. Randuvil sees the guards and can give up, so the GM shows the table and does not roll:
 
 | Result | Outcome                                  |
 |--------|------------------------------------------|
 | 3      | falls from a great height, serious wound |
 | 4      | falls, medium wound                      |
 | 5–6    | falls, light wound                       |
-| 7–11   | the elf climbs, but someone notices him  |
-| 12–18  | the elf climbs unnoticed                 |
+| 7–11   | Randuvil climbs, but someone notices him |
+| 12–18  | Randuvil climbs unnoticed                |
 
-The player has 7 DP left out of 10. Without them the chance of getting up unnoticed is about 38%, so the player spends 2 DP. The GM rolls 5d6 and gets 5, 6, 2, 1, 2. The two lowest results (1 and 2) are dropped, and the rest gives 6 + 5 + 2 = 13: the elf climbs unnoticed. The elf has 5 DP left until the next proper rest.
+The player has 7 DP left out of 14. Without them the chance of getting up unnoticed is about 38%, so the player spends 2 DP. The GM rolls 5d6 and gets 5, 6, 2, 1, 2. The two lowest results (1 and 2) are dropped, and the rest gives 6 + 5 + 2 = 13: Randuvil climbs unnoticed. He has 5 DP left until the next proper rest.

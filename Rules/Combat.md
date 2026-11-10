@@ -77,7 +77,7 @@ If a circumstance's description simply says it makes the fight harder or easier,
 
 If the wound range disappears after shifting, the enemy cannot wound the character. If the hit threshold exceeds 18, the character cannot wound the enemy with that way of fighting. If the wound range reaches the hit threshold or beyond, the shared results mean both sides wound each other.
 
-A lightly wounded character aims at the head of an average enemy (hit threshold 9, wound range 3–6). Aiming is a circumstance of the attack (+2 to the threshold), and the wound concerns the whole fight (+1 to both values): hit threshold 12, wound range 3–7.
+Lightly wounded Randuvil hurls a stone from his sling at the head of an average enemy (hit threshold 9, wound range 3–6). Aiming is a circumstance of the attack (+2 to the threshold), and the wound concerns the whole fight (+1 to both values): hit threshold 12, wound range 3–7.
 
 A circumstance that concerns only part of the fight counts only in those rounds, e.g. surprise usually only in the first.
 
@@ -130,18 +130,18 @@ Fighting to the end against a stronger enemy is very dangerous, because wounds a
 
 ## Examples
 
-> An unarmoured warrior, the player character, goes down into a cellar and runs into a giant rat.
+> Randuvil goes down into a cellar and runs into a giant rat.
 
-The player's tactics: "I hack at it with my sword". The rat is a weak enemy (hit threshold 6, wound range 3–4) with a very frail build: a sword blow (medium wound) kills it at once, because it is two steps heavier (mortal blow). A rat's bite is a scratch. The table for the first round:
+The player's tactics: "I hit it with my staff". The rat is a weak enemy (hit threshold 6, wound range 3–4) with a very frail build: a staff blow (light wound) is two steps heavier for it (serious wound), enough to break its back. A rat's bite is a scratch. Randuvil's limp makes melee one level harder for the whole fight: hit threshold 8, wound range 3–6. The table for the first round:
 
 | Result | Outcome                                                          |
 |--------|------------------------------------------------------------------|
 | 3      | the rat bites the leg painfully (light wound), the fight goes on |
-| 4      | the rat bites the leg (scratch), the fight goes on               |
-| 5      | both miss, the fight goes on                                     |
-| 6–18   | the warrior cleaves the rat with the sword                       |
+| 4–6    | the rat bites the leg (scratch), the fight goes on               |
+| 7      | both miss, the fight goes on                                     |
+| 8–18   | Randuvil breaks the rat's back with his staff                    |
 
-The roll is 5. The player does not want to risk a bite and decides to drive the rat off with a torch. The GM sets up the next round's table for the new way of fighting:
+The roll is 7. The player does not want to risk a bite and decides to drive the rat off with a torch. The GM sets up the next round's table for the new way of fighting:
 
 | Result | Outcome                                                 |
 |--------|---------------------------------------------------------|
@@ -149,28 +149,28 @@ The roll is 5. The player does not want to risk a bite and decides to drive the 
 | 4–6    | the rat hisses but does not back off, the fight goes on |
 | 7–18   | the rat flees into the dark                             |
 
-The rat cannot seriously threaten the warrior: even a series of bites is at most a few light wounds.
+The rat cannot seriously threaten Randuvil: even a series of bites is at most a few light wounds.
 
-> At night the character sleeps by a campfire. A snapping twig wakes them, and a bandit with a club stands over them.
+> At night Randuvil sleeps by a campfire. A snapping twig wakes him, and a bandit with a club stands over him.
 
-The GM asks about tactics. The player answers: "I grab the sword lying next to me and jump to my feet". The bandit is an average enemy (hit threshold 9, wound range 3–6) of human toughness. The club deals a light wound, and the character's sword a medium wound. The character wears no armour. They were caught asleep, which makes the first round one level harder: both values move by 2. The character can no longer back out but sees the enemy, so the GM shows the table and asks only about Determination Points:
+The GM asks about tactics. The player answers: "I grab the staff lying next to me and get to my feet". The bandit is an average enemy (hit threshold 9, wound range 3–6) of human toughness. The club deals a light wound, and so does Randuvil's staff. Randuvil wears no armour. His limp makes melee one level harder for the whole fight, and being caught asleep makes the first round one level harder too: both values move by 4. Randuvil can no longer back out but sees the enemy, so the GM shows the table and asks only about Determination Points:
 
-| Result | Outcome                                                                         |
-|--------|---------------------------------------------------------------------------------|
-| 3      | the bandit hits the head with the club (medium wound), the fight goes on        |
-| 4–8    | the bandit hits the arm (light wound), the fight goes on                        |
-| 9–10   | the character jumps up and parries, the fight goes on                           |
-| 11–16  | the character wounds the bandit with the sword (medium wound), the bandit flees |
-| 17–18  | the character badly wounds the bandit (serious wound), the bandit falls         |
+| Result | Outcome                                                                    |
+|--------|----------------------------------------------------------------------------|
+| 3      | the bandit hits the head with the club (medium wound), the fight goes on   |
+| 4–10   | the bandit hits the arm (light wound), the fight goes on                   |
+| 11–12  | Randuvil gets up and parries, the fight goes on                            |
+| 13–16  | Randuvil strikes the bandit with the staff (light wound), the bandit flees |
+| 17–18  | Randuvil cracks the bandit's head (medium wound), the bandit collapses     |
 
-The player decides this is an important moment and spends 1 DP. The GM rolls 4d6 instead of 3d6 and gets 6: the character is at 10% and lightly wounded. Surprise no longer applies, but the light wound makes the fight half a level harder, so both values move by 1. The player keeps fighting the same way and spends no points:
+The player decides this is an important moment and spends 1 DP. The GM rolls 4d6 instead of 3d6 and gets 6: Randuvil is at 10% and lightly wounded. Surprise no longer applies, but the light wound makes the fight half a level harder, so both values move by 1 more: hit threshold 12, wound range 3–9. The player keeps fighting the same way and spends no points:
 
-| Result | Outcome                                                                         |
-|--------|---------------------------------------------------------------------------------|
-| 3      | the bandit hits the head with the club (medium wound), the fight goes on        |
-| 4–7    | the bandit hits (light wound), the fight goes on                                |
-| 8–9    | an exchange of blows with no result, the fight goes on                          |
-| 10–16  | the character wounds the bandit with the sword (medium wound), the bandit flees |
-| 17–18  | the character badly wounds the bandit (serious wound), the bandit falls         |
+| Result | Outcome                                                                    |
+|--------|----------------------------------------------------------------------------|
+| 3      | the bandit hits the head with the club (medium wound), the fight goes on   |
+| 4–9    | the bandit hits (light wound), the fight goes on                           |
+| 10–11  | an exchange of blows with no result, the fight goes on                     |
+| 12–16  | Randuvil strikes the bandit with the staff (light wound), the bandit flees |
+| 17–18  | Randuvil cracks the bandit's head (medium wound), the bandit collapses     |
 
-The roll is 12: the bandit flees wounded. The character stays by the fire at 10%.
+The roll is 12: the bandit flees wounded. Randuvil stays by the fire at 10%.

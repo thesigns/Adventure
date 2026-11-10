@@ -20,7 +20,7 @@ Rules for ranged weapons are in `Rules/Combat.md` (see *Ranged combat*).
 
 Armour makes the enemy wound the character less often and less severely. The GM takes it into account in the outcome table together with a shield and other cover. In the same way the enemy's armour protects them from the character.
 
-A wolverine wounds an unarmoured character easily, and badly. Against a character in full plate it can hardly wound them at all.
+A wolverine wounds Randuvil in his robe easily, and badly. Against a knight in full plate it can hardly wound him at all.
 
 | Armour | Examples                                           | Drawbacks                                              |
 |--------|----------------------------------------------------|--------------------------------------------------------|

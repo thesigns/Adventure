@@ -36,7 +36,7 @@ The GM tells the player their character's wound level as a percentage. The state
 
 Mangling is e.g. being cut in half, having the head crushed or being burned to ash. It can rule out resurrection and other actions that need the body, if the world has them.
 
-A character at 35% takes a medium wound: 35 + 20 = 55%, wounded. At 10%, the medium wound would raise the wound level to 40%. At 75%, it would give 95%: dying.
+Randuvil is at 35% and takes a medium wound: 35 + 20 = 55%, wounded. At 10%, the medium wound would raise the wound level to 40%. At 75%, it would give 95%: dying.
 
 Wounds have steps, from the lightest: scratch, light wound, medium wound, serious wound, mortal blow, mangling. A wound one step lighter than a scratch is no wound, and one heavier than mangling is still mangling.
 

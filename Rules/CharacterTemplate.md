@@ -12,7 +12,7 @@
 
 **Plot threads**:
 
-<!-- 1–2 story hooks from the background, e.g.: the missing student who stole an ancient scroll from Randuvil -->
+<!-- 1–2 story hooks from the background, e.g.: the missing fellow student who stole an ancient scroll from Randuvil -->
 
 ## Advantages
 
