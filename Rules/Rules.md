@@ -36,7 +36,7 @@ Equipment has no separate mechanics: weapons, armour, tools and other items act 
 
 ## Combat
 
-Combat is fought in rounds of about 10 seconds, and each round is one standard roll with a table describing the consequences for both sides. Before combat the player sets the character's tactics, and the fight goes on until it is decided by death, dying, flight or surrender of one side. The player can order rounds with the same table as a series, which the GM rolls with a single command. Fatigue counts only against someone who tires more slowly or not at all, and makes the fight harder every 6 rounds. Full combat rules, including enemy categories and the typical layout of a round table, are in `Rules/Combat.md`.
+Combat is fought in rounds of about 10 seconds, and each round is one standard roll with a table describing the consequences for both sides. Before combat the player sets the character's tactics, and the fight goes on until it is decided by death, dying, flight or surrender of one side. The player can order rounds with the same table as a series, which the GM rolls with a single command. Fatigue counts only against someone who tires more slowly or not at all, and makes the fight harder every 6 rounds. Every additional enemy who can reach the character makes the fight harder, so terrain matters, and a swarm or a mass of weak creatures fights as one enemy that ordinary weapons barely harm. Full combat rules, including enemy categories and the typical layout of a round table, are in `Rules/Combat.md`.
 
 ## Companions
 

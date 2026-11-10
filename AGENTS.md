@@ -28,7 +28,7 @@ File and folder names are in English and written in CamelCase with a capital let
 - `Rules/StandardThrow.md`: the standard roll (when to roll, outcome tables, difficulty, scripted rolls)
 - `Rules/Determination.md`: Determination Points
 - `Rules/Health.md`: health, wounds and death (wound level, wound scale, toughness, injuries, healing)
-- `Rules/Combat.md`: combat (tactics, rounds, fatigue in combat, ranged combat, combat difficulty, enemies)
+- `Rules/Combat.md`: combat (tactics, rounds, fatigue in combat, ranged combat, combat difficulty, enemies, groups, swarms)
 - `Rules/Traits.md`: character traits (advantages and disadvantages, trait changes during play)
 - `Rules/Experience.md`: experience (experience level and points, advancement, awarding points)
 - `Rules/Equipment.md`: equipment (tools, weapons, armour, consumables, vehicles, unusual items)

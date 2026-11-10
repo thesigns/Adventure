@@ -71,7 +71,7 @@ Circumstances change combat difficulty as with any other action (see *Circumstan
 
 - **the character's attack** moves only the hit threshold, e.g. aiming at the head or another weak spot, a weapon better or worse than typical, shooting distance, the enemy's cover and armour,
 - **the character's defence** moves only the wound range, e.g. the character's armour, shield and cover, the enemy's weapon better or worse than typical, a weapon that forces the character to let the enemy close,
-- **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, every additional enemy, which makes the fight one level harder, and companions fighting at the character's side, who make it easier (see *Combat* in `Rules/Companions.md`).
+- **the whole fight** moves both values, e.g. wounds and fatigue of both sides, surprise, terrain, darkness, combat advantages and disadvantages, additional enemies, who make it harder (see *Groups of enemies*), and companions fighting at the character's side, who make it easier (see *Combat* in `Rules/Companions.md`).
 
 Armour, shields and cover move these values by the amounts given in *Armour* and *Shields and cover* in `Rules/Equipment.md`, not by whole levels.
 
@@ -121,6 +121,54 @@ Within this layout the GM can set apart other outcomes, e.g. losing a weapon, da
 The category tells how dangerous the enemy is in a fight, and toughness how hard they are to wound. These are two different things: a master swordsman is a powerful enemy of human toughness.
 
 The world gives its own examples of enemies in each category.
+
+## Groups of enemies
+
+When several enemies fight the character together, the GM takes the strongest of them as the base, with its hit threshold and wound range, and each additional enemy makes the fight harder:
+
+| Additional enemy compared with the strongest | The fight for the character |
+|----------------------------------------------|-----------------------------|
+| the same category                            | one level harder            |
+| one category weaker                          | half a level harder         |
+| two or more categories weaker                | unchanged                   |
+
+- **Reach:** only enemies who can attack the character at the same moment count: in the open at most three additional enemies in melee, in a corridor or a doorway usually one at most. Archers count if they can shoot at the character. The rest wait their turn, so terrain is the best defence against a group.
+- **Hits:** a hit wounds one enemy, the one the character attacks, unless the weapon or spell strikes many at once, e.g. a fireball. The GM tracks the wound level of each enemy.
+- **Fewer enemies:** when an enemy falls or flees, the fight gets easier, and the GM sets up a new table. A series of rounds ends then (see *Series of rounds*).
+- **Breaking:** a group of humans or animals usually breaks when its leader falls or half of it is down. The GM writes it into the table (see *End of combat*).
+- **A crowd** of much weaker enemies, which the table would ignore, is better treated as a swarm (see *Swarms*).
+
+Companions fighting at the character's side make the fight easier in the same way (see *Combat* in `Rules/Companions.md`).
+
+> A mercenary in chain mail with a shield is attacked by four goblins with spears.
+
+Goblins are weak enemies (hit threshold 6, wound range 3–4) and frail, and their spears deal a light wound. In the open three additional goblins would make the fight three levels harder: hit threshold 12, wound range 3–10, after the mail and the shield 3–8. The mercenary steps back into a narrow passage, where only two goblins can reach him: one level harder, hit threshold 8, wound range 3–6, after the mail and the shield 3–4. The mail makes the goblins' wounds one step lighter, and the mercenary's sword deals a frail goblin a serious wound, which takes it out of the fight:
+
+| Result | Outcome                                                            |
+|--------|--------------------------------------------------------------------|
+| 3      | a spear finds a gap in the mail (light wound), the fight goes on   |
+| 4      | a spear glances off the mail (scratch), the fight goes on          |
+| 5–7    | the goblins jab and dodge, the fight goes on                       |
+| 8–18   | the mercenary cuts down a goblin, the next one pushes into the gap |
+
+## Swarms
+
+A swarm is a mass of small creatures that fights as one enemy, e.g. rats, bats or insects. A crowd that fights as a mass, e.g. a horde of zombies or a mob of villagers, can also be a swarm.
+
+- **One enemy:** a swarm has one category, one wound level and one typical wound, set by the world. Its size is in its category, not in the number of enemies.
+- **Toughness:** weapons that strike one target at a time barely harm a swarm: against them it is very tough. Fire, smoke, area spells and other attacks that strike many at once wound it with the toughness of its creatures and are means especially effective against it (see *Circumstances* in `Rules/StandardThrow.md`).
+- **Scattering:** a swarm wounded to 40% or more scatters, unless its creatures feel no wounds. A horde of undead fights until it is destroyed.
+
+> Randuvil disturbs a nest, and a swarm of rats pours out of the bone piles at him.
+
+The swarm is a weak enemy (hit threshold 6, wound range 3–4), and its bites deal a scratch. Randuvil's staff deals a light wound, two steps lighter against a very tough swarm: no wound, so with the staff he cannot hurt it at all. He sweeps a torch low instead: fire is especially effective (one level easier), but his limp makes the fight one level harder, so the values stay. The torch deals a light wound, one step heavier against frail rats: a medium wound, 40%, and the swarm scatters:
+
+| Result | Outcome                                                            |
+|--------|--------------------------------------------------------------------|
+| 3      | the rats swarm up Randuvil's legs (light wound), the fight goes on |
+| 4      | the rats bite (scratch), the fight goes on                         |
+| 5      | the rats squeal and dodge the flame, the fight goes on             |
+| 6–18   | the torch scorches the swarm, and the rats scatter into the dark   |
 
 ## End of combat
 

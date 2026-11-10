@@ -1,6 +1,6 @@
 # Bestiary
 
-- Category, toughness and typical wound against an unarmoured human (see *Enemies* and *Wounds in combat* in `Rules/Combat.md`, *Toughness* in `Rules/Health.md`). Every extra enemy makes the fight one level harder.
+- Category, toughness and typical wound against an unarmoured human (see *Enemies* and *Wounds in combat* in `Rules/Combat.md`, *Toughness* in `Rules/Health.md`). Groups and swarms: see *Groups of enemies* and *Swarms* in `Rules/Combat.md`.
 - Humanoids with weapons wound as their weapons do (see `Equipment.md`).
 - “Feels no wounds”: wounds do not hinder it, it never flees, surrenders or tires (see *Fatigue in combat* in `Rules/Combat.md`).
 - Everything else about a monster is what fantasy folklore says about it.
@@ -9,6 +9,7 @@
 | Creature | Category | Toughness | Typical wound | Notes |
 |---|---|---|---|---|
 | giant rat | weak | frail | scratch | swarms, disease |
+| swarm of rats or bats | weak | swarm of frail creatures | scratch | flees from fire |
 | will-o'-wisp | weak | very frail | none | does not fight; lures travellers into deep bog at night; only magic wounds it |
 | kobold, goblin | weak | frail | light wound | packs, ambushes, traps, cowardly |
 | bandit, guard, cultist | average | human | weapon |  |
