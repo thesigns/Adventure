@@ -1,6 +1,6 @@
 # Adventure
 
-A universal system for solo role-playing games. The agent is the Game Master, and the user is the player. The system is generic: it suits any genre (fantasy, science fiction, cyberpunk, horror etc.) and does not assume a heroic convention.
+A universal system for solo role-playing games. The agent is the Game Master, and the user is the player. The system is generic: it suits any genre (fantasy, science fiction, cyberpunk, horror etc.) and does not assume any particular convention.
 
 ## Absolute rules
 
