@@ -15,7 +15,7 @@ Tego nie wie nikt na wyspie. Ani postać gracza, ani żadna postać niezależna 
 
 - Krasnoludy drążyły coraz głębiej, aż przebiły się do Głębin. Stamtąd przyszły dwie klęski naraz.
 - **Trolle** wylały się do kopalń tysiącami. Wojna trwała pokolenia.
-- **Czarny kaszel** (zob. `Diseases.md`): trolle są odporne, krasnoludy nie były. Zarodniki giną na powierzchni, ale krasnoludy były ludem podziemi i rzadko na nią wychodziły. Nie znały przyczyny, więc chowały się głębiej i w twierdzach, co je pogrążało.
+- **Czarny kaszel** (zob. `Diseases.md`): trolle są odporne, krasnoludy nie były. Zarodniki giną na powierzchni, ale krasnoludy były ludem podziemi i rzadko na nią wychodziły. Wiedziały, że chorobę niosą purchawki, ale nie umiały ich powstrzymać, bo trolle i robale roznosiły je po kopalniach. Nie wiedziały, że leczy powierzchnia, więc chowały się głębiej i w twierdzach, co je pogrążało.
 - Choroba szła szybciej niż trolle. Osłabione krasnoludy nie utrzymały korytarzy i cofały się z twierdzy do twierdzy.
 - Niedobitki wyszły z gór i ruszyły do portu na zachodnim wybrzeżu. W drodze chorzy zdrowieli, co krasnoludy uznały za łaskę słońca.
 - Odpłynęły na zachód, w otwarty ocean, z tym, co zdołały unieść. Nikt nie wie, dokąd dotarły. Nigdy nie wrócą.
@@ -27,4 +27,4 @@ Tego nie wie nikt na wyspie. Ani postać gracza, ani żadna postać niezależna 
 - **Zaraza:** sale z kośćmi krasnoludów ułożonymi w rzędy, bez śladów walki. Blade grzyby rosną gęsto w miejscach, gdzie umierali.
 - **Ucieczka:** port pod Hofvik: nabrzeża, pochylnie dla statków, porzucony dobytek, płaskorzeźby statków płynących ku zachodzącemu słońcu.
 
-Ludzie widzą te ślady, ale nie łączą ich w całość. Czarny kaszel uważają za chorobę od pyłu albo klątwy. Większość sądzi, że trolle zajęły puste ruiny po krasnoludach, które zniknęły z innego powodu.
+Ludzie widzą te ślady, ale nie łączą ich w całość. Czarny kaszel znają jako chorobę śmiałków od purchawek, ale nie wiedzą, że zgubił krasnoludy. Większość sądzi, że trolle zajęły puste ruiny po krasnoludach, które zniknęły z innego powodu.

@@ -10,31 +10,29 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 - Objawy: suchy kaszel, czarna plwocina o poranku, potem duszność, na końcu gorączka i dławienie.
 - Chorują ci, którzy długo siedzą pod ziemią: śmiałkowie, rzadziej górnicy. Im dłużej i głębiej, tym gorzej.
-- Przyczyna wg ludzi: pył, zimno ruin, klątwa krasnoludów.
+- Przyczyna: blade purchawki, od pięści do głowy, które rosną w głębokich ruinach i jaskiniach (zob. *Pożywienie* w `Trolls.md`). Nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu, a po dobie przychodzi kaszel.
+- Purchawki pękają też pod trollami i robalami, więc pył może wisieć w powietrzu, zanim przyjdzie człowiek.
+- Śmiałkowie omijają purchawki i uczą tego młodszych. Najwięcej ich w najgłębszych poziomach ruin.
 - Chory zdrowieje po dłuższym pobycie na powierzchni, nikt nie wie dlaczego. Kto zostaje pod ziemią, umiera.
 - Nie przechodzi z człowieka na człowieka.
 - Zielarki i kapłani nie mają na nią lekarstwa.
 
 ### Prawda (nie wie nikt na wyspie)
 
-- Niosą ją zarodniki bladych grzybów z Głębin (zob. *Pożywienie* w `Trolls.md`).
-- Grzyby przypominają purchawki: blade kule od pięści do głowy. Nadepnięte albo potrącone pękają i wypuszczają chmurę czarnego pyłu.
-- Pękają też pod trollami i robalami, które o nie ocierają, więc chmura może wisieć w powietrzu, zanim przyjdzie postać.
-- Trolle i stwory z Głębin są odporne.
 - Zarodniki żyją tylko w mikroklimacie podziemi, na powierzchni giną.
-- Najgęściej rosną w Głębinach i na najgłębszych poziomach ruin.
-- Razem z trollami zgubiła krasnoludy.
+- Trolle i stwory z Głębin są odporne.
+- Purchawki przyszły z Głębin. Razem z trollami zgubiły krasnoludy (zob. `Dwarves.md`).
 
 ### Zakażenie
 
-- Zakażone miejsca ustala scenariusz.
+- Gdzie rosną purchawki, ustala scenariusz.
 - Ukryty rzut MG, bez PDT, tablice z `gm_tables.json`:
-  - postać nadepnie albo potrąci grzyb albo wejdzie w wiszącą chmurę: przeciętne (`k3`),
-  - przejście przez salę, której posadzkę pokrywają grzyby: trudne (`k4`),
+  - postać nadepnie albo potrąci purchawkę albo wejdzie w wiszący pył: przeciętne (`k3`),
+  - przejście przez salę, której posadzkę pokrywają purchawki: trudne (`k4`),
   - każde kolejne trzy doby w Głębinach albo na najgłębszych poziomach ruin: łatwe (`k2`).
-- Kto widzi grzyby i idzie ostrożnie, nie nadepnie. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy chmura już wisi.
+- Kto widzi purchawki i idzie ostrożnie, nie nadepnie. Rzut tylko po ciemku, w biegu, w walce, w ciasnym przejściu albo gdy pył już wisi.
 - Przykład: `python Scripts/roll.py --kampania <kampania> --ukryty --etykieta c1 --tablica k3`
-- Kaszel zaczyna się po dobie. MG opisuje go bez wskazywania przyczyny.
+- Kaszel zaczyna się po dobie.
 - Chory nie rzuca ponownie: nowe zakażenie od razu pogłębia chorobę o stopień.
 
 ### Stopnie
