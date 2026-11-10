@@ -62,7 +62,7 @@ Człowieka troll atakuje, gdy jest wygłodzony, gdy człowiek jest sam i bez ogn
 
 Trolle jedzą dużo, ale rzadko. Nażarty troll przesypia dzień albo dwa, a głodować potrafi tygodniami. Wygłodzony zapada w odrętwienie, szarzeje i twardnieje jak kamień, aż zwęszy zdobycz.
 
-Dlatego trolli nie jest więcej. Rewir wykarmi tylko jednego dorosłego trolla, i to tylko wtedy, gdy ma robale, ryby albo dobre łowiska na powierzchni. Na całej wyspie żyje może kilkaset trolli, z czego większość to pomioty. Gdy trollowi zaczyna brakować jedzenia, wchodzi do rewiru sąsiada albo wychodzi na powierzchnię dalej niż zwykle.
+Dlatego trolle żyją rzadko rozsiane, każdy na swoim. Rewir wykarmi tylko jednego dorosłego trolla, i to tylko wtedy, gdy ma robale, ryby albo dobre łowiska na powierzchni. Ruin, kopalń i jaskiń jest jednak pod wyspą tak wiele, że trolli żyją tysiące, może kilkanaście tysięcy, z czego większość to pomioty. Większość z nich mieszka w Głębinach, dokąd nie schodzi żaden człowiek, więc nikt ich nie policzył, a ludzie widzą tylko te, które zajmują ruiny bliżej powierzchni. Gdy trollowi zaczyna brakować jedzenia, wchodzi do rewiru sąsiada albo wychodzi na powierzchnię dalej niż zwykle.
 
 Głodny troll ceni mięso bardziej niż błyskotki. Świeże mięso to najlepszy sposób, żeby kupić od trolla przejście, czas albo życie.
 
