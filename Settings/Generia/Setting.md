@@ -59,7 +59,9 @@ Generic fantasy: euphonic, invented or plain English, never jokes, puns or bare 
 
 - **Humans:** European-sounding given names with a surname, father or home: Aldric Thorne, Elena of Kingsbridge, Gareth, Mira, Roderick, Isolde, Bran.
 - **Elves:** long and vowel-rich, often -iel, -wen, -ion, -as, -ara: Thalion, Elaria, Caladwen, Faelar, Ilyas.
-- **Dwarves:** hard consonants, son of father, clan name: Thorgar son of Dain, Brunhilda Stonehelm, clan Ironfist.
+- **Dwarves:** hard consonants, son or daughter of a parent, clan name: Thorgar son of Durek, Brunhilda Stonehelm, clan Ironfist. Exiles keep their clan name, unless the clan has struck it from them.
 - **Halflings:** homely given names and earthy surnames: Tobias Underbough, Rosie Greenbottle, Milo Burrows.
+- **Gnomes:** short, lively given names and family names from crafts, metals or gems: Fennick Brassbolt, Wilda Quickcog, Orryn Garnetglen. Many collect nicknames over their long lives.
 - **Orcs and goblins:** harsh, guttural: Grashnak, Urzog, Snikkit.
+- **Half-elves and half-orcs:** named by whoever raised them, so elven, human or orcish names. Half-elves raised among humans often carry an elven name from the absent parent as well: Elena Thalionwen. Half-orcs raised among humans have human names, sometimes with an orcish byname they did not choose: Garrick, called Urzog.
 - **Places:** English descriptive compounds (Ravenford, Stonebridge, Blackmoor, Hollowmere) or invented names in the same style as above (Valdren, Seravel).
