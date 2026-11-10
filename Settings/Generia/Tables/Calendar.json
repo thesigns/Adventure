@@ -1,0 +1,19 @@
+{
+  "months": [
+    {"name": "Deepwinter", "days": 30},
+    {"name": "Wolfmonth", "days": 30},
+    {"name": "Thawmonth", "days": 30},
+    {"name": "Seedmonth", "days": 30},
+    {"name": "Bloommonth", "days": 30},
+    {"name": "Highsun", "days": 30},
+    {"name": "Haymonth", "days": 30},
+    {"name": "Harvest", "days": 30},
+    {"name": "Fruitfall", "days": 30},
+    {"name": "Leaffall", "days": 30},
+    {"name": "Rainmonth", "days": 30},
+    {"name": "Darkening", "days": 30},
+    {"name": "Yearturn", "days": 5}
+  ],
+  "weekdays": ["Solday", "Tharsday", "Sylday", "Mortsday", "Varday", "Hammarday", "Noctday"],
+  "first_weekday": "Solday"
+}

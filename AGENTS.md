@@ -41,7 +41,7 @@ File and folder names are in English and written in CamelCase with a capital let
 
 Each setting lives in its own folder `Settings/<Setting name>/`, and its main file is always `Setting.md`. The folder can also contain other setting files, e.g. lore, geography, gods and world-specific rules. A setting can also contain its own Python scripts (see *Scripts*).
 
-JSON data files for scripts, e.g. hidden roll tables (`GmTables.json`) and the daylight table (`Daylight.json`), live in the `Tables/` subfolder of the setting or scenario. SVG maps live in the `Maps/` subfolder, together with their areas files (`.areas.json`, see *Maps*).
+JSON data files for scripts, e.g. hidden roll tables (`GmTables.json`), the calendar (`Calendar.json`) and the daylight table (`Daylight.json`), live in the `Tables/` subfolder of the setting or scenario. SVG maps live in the `Maps/` subfolder, together with their areas files (`.areas.json`, see *Maps*).
 
 ## Scenarios
 
@@ -120,7 +120,7 @@ python Scripts/gm.py --campaign Randuvil time --now 22:30
 python Scripts/roll.py --campaign Randuvil --hidden --label r1 --table betrayal
 ```
 
-- `time` sets the world clock: the first time with `--date`, then with the time alone, which always moves the clock forward. It prints only the events whose time has just passed, never future ones. The GM calls it at every passage of time in play, before describing what happens. If the setting has a `Tables/Daylight.json` file with sunrises, sunsets and darkness, the GM gives the name of its folder once with `--setting`, e.g. `time --now 22:00 --setting SettingName` (the script remembers it), and from then on `time` prints the time of day: *day*, *dusk*, *darkness*, *dawn* or *white night*. The format of the `Daylight.json` and `GmTables.json` files is described in the docstring of `Scripts/gm.py`. The GM describes light and the time of day according to this line, not from memory.
+- `time` sets the world clock: the first time with `--date`, then with the time alone, which always moves the clock forward. It prints only the events whose time has just passed, never future ones. The GM calls it at every passage of time in play, before describing what happens. If the setting has a `Tables/Daylight.json` file with sunrises, sunsets and darkness, the GM gives the name of its folder once with `--setting`, e.g. `time --now 22:00 --setting SettingName` (the script remembers it), and from then on `time` prints the time of day: *day*, *dusk*, *darkness*, *dawn* or *white night*. If the setting has its own calendar in `Tables/Calendar.json`, the GM gives `--setting` already with the first `--date`, because dates then follow that calendar, and `time` also prints the weekday and the month. The format of the `Calendar.json`, `Daylight.json` and `GmTables.json` files is described in the docstring of `Scripts/gm.py`. The GM describes light and the time of day according to this line, not from memory.
 - `timer` rolls the hidden time of an event on a named table whose values are minutes, e.g. when a patrol returns or when a poison takes effect. `--from` is the time the countdown starts (default now), and `--not-before` the earliest possible time of the event.
 - `Scripts/roll.py --hidden --label L --table NAME` is a hidden roll with a text table. The result goes to `Gm.json`, and `Rolls.log` only records that the roll happened.
 - `remove` removes an event or a roll, e.g. when the character prevented the event before it happened.

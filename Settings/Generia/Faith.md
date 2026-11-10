@@ -26,7 +26,7 @@
 
 | Gift | Tier | God | Effect |
 |---|---|---|---|
-| heal wounds | simple | Solarius, Sylvana | wound level drops by 10%, or a dying creature is stabilised |
+| heal wounds | simple | Solarius, Sylvana | wound level drops by 30%, and a dying creature is stabilised |
 | bless | simple | any | one action of an ally is one level easier |
 | light of the sun | simple | Solarius | a holy light like a torch for an hour; undead in it fight one level harder |
 | divine sense | simple | any | the caster knows if evil, undead or fiends are near |

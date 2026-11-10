@@ -41,7 +41,7 @@ Necromancy takes about three times as long to learn as other spells of its tier,
 | detect magic        | simple     | 10   | the caster senses magic nearby and its rough nature                    |
 | mending             | simple     | 10   | repairs a broken everyday item, e.g. a rope, a pot or a torn cloak     |
 | magic missile       | simple     | 10   | a bolt that never misses, deals a light wound                          |
-| heal light wounds   | simple     | 15   | wound level drops by 5%, or a dying creature is stabilised             |
+| heal light wounds   | simple     | 15   | wound level drops by 20%, and a dying creature is stabilised           |
 | magic shield        | simple     | 15   | combat against the caster is one level harder for the enemy, one fight |
 | sleep               | simple     | 20   | one or two weak or average enemies fall asleep for a few minutes       |
 | firebolt            | advanced   | 30   | ranged attack dealing a medium wound, sets flammables alight           |
@@ -59,8 +59,8 @@ Necromancy takes about three times as long to learn as other spells of its tier,
 ## Scrolls, potions and items
 
 - **Scroll:** a spell bound in parchment. Anyone who can read the scroll's language can cast its spell once, even without knowing it: it works like a mastered spell and does not count towards the day's uses. After the casting the scroll crumbles to dust. Prices as in *Spell tiers*.
-- **Healing potion:** wound level drops by 10%, works in a few minutes. 50 g.
-- **Antidote:** cures ordinary poison. 20 g.
+- **Healing potion:** wound level drops by 50%, works in a few minutes; a dying creature given it is stabilised at once. 10 g.
+- **Antidote:** cures ordinary poison. 10 g.
 - **Magic weapon** (+1 sword and the like): combat is one level easier or wounds are one step heavier, hurts creatures immune to normal weapons. Rarely sold; hundreds to thousands of gold.
 - **Magic armour:** like normal armour of its class but without its drawbacks, or one class better. Same rarity.
 - **Wondrous items** (rings, cloaks, wands, amulets): the GM sets effect and limits like a spell. Found in hoards and tombs, almost never bought; many are of gnomish make.

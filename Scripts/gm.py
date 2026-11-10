@@ -16,8 +16,10 @@ Examples:
 Commands:
     time    sets the world clock (the first time with --date) and prints the
             events whose time has just passed; never prints future ones;
-            with --setting (remembered in the campaign state) it also prints
-            the time of day from Settings/<setting>/Tables/Daylight.json
+            with --setting (remembered in the campaign state) dates follow
+            the calendar in Settings/<setting>/Tables/Calendar.json, if the
+            setting has one, with the weekday and month printed, and the
+            time of day comes from Settings/<setting>/Tables/Daylight.json
     timer   rolls 3d6 on a named table from Tables/GmTables.json whose
             values are minutes, and stores a hidden event; prints only
             a confirmation
@@ -30,9 +32,16 @@ folders (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json),
 in the form {"name": {"entries": {"3-5": 10, "6-18": 30}}}.
 Hidden rolls with a text table are made by Scripts/roll.py --hidden.
 
+Calendar.json has the form {"months": [{"name": "Deepwinter", "days": 30},
+...], "weekdays": ["Solday", ...], "first_weekday": "Solday"}, where
+first_weekday is the weekday of the first day of year 1. Every year has the
+same months. Dates are written YYYY-MM-DD, with months numbered from 01 in
+the order listed. Without Calendar.json dates follow the Gregorian calendar.
+
 Daylight.json has the form {"days": {"MM-DD": {"sunrise": "HH:MM",
-"sunset": "HH:MM", "darkness": "HH:MM-HH:MM"}}}; without "darkness" the
-night is a white night. Values between the listed days are interpolated.
+"sunset": "HH:MM", "darkness": "HH:MM-HH:MM"}}}, with days in the setting's
+calendar; without "darkness" the night is a white night. Values between the
+listed days are interpolated.
 """
 
 import argparse
@@ -49,9 +58,10 @@ CAMPAIGNS = ROOT / "Campaigns"
 STATE_FILE = "Gm.json"
 TABLES_FILE = "Tables/GmTables.json"
 DAYLIGHT_FILE = "Tables/Daylight.json"
+CALENDAR_FILE = "Tables/Calendar.json"
 FORMAT = "gm-base64-2"
 MIN, MAX = 3, 18
-CLOCK_FMT = "%Y-%m-%d %H:%M"
+EPOCH = datetime(1, 1, 1)
 
 rng = random.SystemRandom()
 
@@ -160,10 +170,98 @@ def at_or_after(ref, hm):
     return moment + timedelta(days=1) if moment < ref else moment
 
 
-def get_clock(state):
+class Calendar:
+    """Dates of a setting's calendar, kept internally as datetimes.
+
+    Without months it is the Gregorian calendar. With months, every year has
+    the same days, and day n of the calendar's era is EPOCH + n - 1 days, so
+    the rest of the script can add minutes with timedelta as usual.
+    """
+
+    def __init__(self, months=None, weekdays=None, first_weekday=0):
+        self.months = months
+        self.weekdays = weekdays or []
+        self.first_weekday = first_weekday
+        self.year_len = sum(days for _, days in months) if months else 365
+
+    def make(self, year, month, day, where):
+        if not self.months:
+            try:
+                return datetime(year, month, day)
+            except ValueError:
+                sys.exit(f"Error: '{where}' is not a valid date.")
+        if not (year >= 1 and 1 <= month <= len(self.months) and 1 <= day <= self.months[month - 1][1]):
+            sys.exit(f"Error: '{where}' is not a valid date in the setting's calendar.")
+        doy = sum(days for _, days in self.months[:month - 1]) + day
+        return EPOCH + timedelta(days=(year - 1) * self.year_len + doy - 1)
+
+    def parse(self, text):
+        """A date YYYY-MM-DD, optionally followed by HH:MM."""
+        date, _, hm = text.partition(" ")
+        try:
+            year, month, day = (int(x) for x in date.split("-"))
+        except ValueError:
+            sys.exit(f"Error: '{text}' is not a date in the format YYYY-MM-DD.")
+        moment = self.make(year, month, day, text)
+        if hm:
+            hour, minute = parse_hm(hm)
+            moment = moment.replace(hour=hour, minute=minute)
+        return moment
+
+    def split(self, moment):
+        """Year, month, day and day of the year of a moment."""
+        if not self.months:
+            leap_free = datetime(2001, moment.month, min(moment.day, 28) if moment.month == 2 else moment.day)
+            return moment.year, moment.month, moment.day, leap_free.timetuple().tm_yday
+        days = (moment - EPOCH).days
+        year, doy = days // self.year_len + 1, days % self.year_len + 1
+        rest = doy
+        for month, (_, length) in enumerate(self.months, 1):
+            if rest <= length:
+                return year, month, rest, doy
+            rest -= length
+
+    def fmt(self, moment):
+        year, month, day, _ = self.split(moment)
+        return f"{year:04d}-{month:02d}-{day:02d} {moment.hour:02d}:{moment.minute:02d}"
+
+    def describe(self, moment):
+        """Weekday and month name, e.g. 'Tharsday, 5 Seedmonth', or '' without a calendar."""
+        if not self.months:
+            return ""
+        _, month, day, _ = self.split(moment)
+        text = f"{day} {self.months[month - 1][0]}"
+        if self.weekdays:
+            weekday = self.weekdays[((moment - EPOCH).days + self.first_weekday) % len(self.weekdays)]
+            text = f"{weekday}, {text}"
+        return text
+
+    def day_of_year(self, key, where):
+        """Day of the year of a day 'MM-DD' in this calendar."""
+        try:
+            month, day = (int(x) for x in key.split("-"))
+        except ValueError:
+            sys.exit(f"Error: '{key}' in {where} is not a day in the format MM-DD.")
+        return self.split(self.make(1 if self.months else 2001, month, day, f"{key} in {where}"))[3]
+
+
+def load_calendar(setting):
+    """The setting's calendar, or the Gregorian one if it has no Calendar.json."""
+    path = ROOT / "Settings" / setting / CALENDAR_FILE if setting else None
+    if not path or not path.exists():
+        return Calendar()
+    with path.open(encoding="utf-8") as fh:
+        data = json.load(fh)
+    months = [(m["name"], int(m["days"])) for m in data["months"]]
+    weekdays = data.get("weekdays", [])
+    first = weekdays.index(data["first_weekday"]) if data.get("first_weekday") in weekdays else 0
+    return Calendar(months, weekdays, first)
+
+
+def get_clock(state, cal):
     if not state["clock"]:
         sys.exit("Error: the world clock is not set. Use: time --date YYYY-MM-DD --now HH:MM.")
-    return datetime.strptime(state["clock"], CLOCK_FMT)
+    return cal.parse(state["clock"])
 
 
 def hm_minutes(text, where):
@@ -174,7 +272,7 @@ def hm_minutes(text, where):
     return hour * 60 + minute
 
 
-def load_daylight(setting):
+def load_daylight(setting, cal):
     """Rows (day of year, sunrise, sunset, start of darkness, end of darkness) in minutes.
 
     Darkness lasts from the evening (start) past midnight to the morning
@@ -187,10 +285,7 @@ def load_daylight(setting):
         days = json.load(fh)["days"]
     rows = []
     for key, d in days.items():
-        try:
-            doy = datetime.strptime(f"2001-{key}", "%Y-%m-%d").timetuple().tm_yday
-        except ValueError:
-            sys.exit(f"Error: '{key}' in {path.name} is not a day in the format MM-DD.")
+        doy = cal.day_of_year(key, path.name)
         if d.get("darkness"):
             start, end = d["darkness"].split("-", 1)
             start, end = hm_minutes(start, path.name), hm_minutes(end, path.name)
@@ -202,14 +297,13 @@ def load_daylight(setting):
     return sorted(rows)
 
 
-def daylight_on(rows, clock):
+def daylight_on(rows, clock, cal):
     """Sunrise, sunset and darkness on a given day, linearly interpolated between rows."""
-    month, day = clock.month, min(clock.day, 28) if clock.month == 2 else clock.day
-    doy = datetime(2001, month, day).timetuple().tm_yday
+    doy = cal.split(clock)[3]
     before = [r for r in rows if r[0] <= doy]
     after = [r for r in rows if r[0] > doy]
-    prev = before[-1] if before else (rows[-1][0] - 365,) + rows[-1][1:]
-    nxt = after[0] if after else (rows[0][0] + 365,) + rows[0][1:]
+    prev = before[-1] if before else (rows[-1][0] - cal.year_len,) + rows[-1][1:]
+    nxt = after[0] if after else (rows[0][0] + cal.year_len,) + rows[0][1:]
     if nxt[0] == prev[0]:
         return prev[1:]
     f = (doy - prev[0]) / (nxt[0] - prev[0])
@@ -221,8 +315,8 @@ def fmt_min(m):
     return f"{m // 60}:{m % 60:02d}"
 
 
-def day_phase(rows, clock):
-    sunrise, sunset, start, end = daylight_on(rows, clock)
+def day_phase(rows, clock, cal):
+    sunrise, sunset, start, end = daylight_on(rows, clock, cal)
     t = clock.hour * 60 + clock.minute
     dark = end > 0 or start < 1440
     if dark and (t >= start or t < end):
@@ -239,24 +333,25 @@ def day_phase(rows, clock):
 
 def cmd_time(args, folder, state):
     hm = parse_hm(args.now)
-    if args.date:
-        try:
-            day = datetime.strptime(args.date, "%Y-%m-%d")
-        except ValueError:
-            sys.exit(f"Error: '{args.date}' is not a date in the format YYYY-MM-DD.")
-        clock = day.replace(hour=hm[0], minute=hm[1])
-    else:
-        clock = at_or_after(get_clock(state), hm)
-    state["clock"] = clock.strftime(CLOCK_FMT)
     if args.setting:
-        load_daylight(args.setting)
+        if not (ROOT / "Settings" / args.setting).is_dir():
+            sys.exit(f"Error: there is no setting folder Settings/{args.setting}.")
         state["setting"] = args.setting
+    setting = state.get("setting")
+    cal = load_calendar(setting)
+    if args.date:
+        clock = cal.parse(args.date).replace(hour=hm[0], minute=hm[1])
+    else:
+        clock = at_or_after(get_clock(state, cal), hm)
+    state["clock"] = cal.fmt(clock)
+    daylight = load_daylight(setting, cal) if setting and (ROOT / "Settings" / setting / DAYLIGHT_FILE).exists() else None
 
     due = sorted((e["at"], label, e) for label, e in state["events"].items()
                  if not e["reported"] and e["at"] <= state["clock"])
-    print(f"Clock: {state['clock']}")
-    if state.get("setting"):
-        print(day_phase(load_daylight(state["setting"]), clock))
+    about_day = cal.describe(clock)
+    print(f"Clock: {state['clock']}" + (f" ({about_day})" if about_day else ""))
+    if daylight:
+        print(day_phase(daylight, clock, cal))
     if not due:
         print("No new events.")
     for moment, label, event in due:
@@ -269,7 +364,8 @@ def cmd_time(args, folder, state):
 def cmd_timer(args, folder, state):
     if label_taken(state, args.label):
         sys.exit(f"Error: label '{args.label}' is already taken.")
-    clock = get_clock(state)
+    cal = load_calendar(state.get("setting"))
+    clock = get_clock(state, cal)
     entries = table_entries(args.table, load_tables())
     if not all(isinstance(v, int) for _, _, v in entries):
         sys.exit(f"Error: table '{args.table}' does not give minutes, so it cannot be used for a timer. "
@@ -280,10 +376,10 @@ def cmd_timer(args, folder, state):
     if args.not_before:
         moment = max(moment, at_or_after(start, parse_hm(args.not_before)))
     state["events"][args.label] = {
-        "at": moment.strftime(CLOCK_FMT),
+        "at": cal.fmt(moment),
         "desc": args.desc,
         "table": args.table,
-        "from": start.strftime(CLOCK_FMT),
+        "from": cal.fmt(start),
         "dice": dice,
         "result": total,
         "reported": False,
@@ -334,7 +430,7 @@ def main():
     p = sub.add_parser("time", help="set the world clock and print the events that have just happened")
     p.add_argument("--now", required=True, help="time in the world, HH:MM")
     p.add_argument("--date", help="date in the world, YYYY-MM-DD (when first set or corrected)")
-    p.add_argument("--setting", help="setting folder with a Tables/Daylight.json file; remembered in the campaign state")
+    p.add_argument("--setting", help="setting folder, for its Tables/Calendar.json and Tables/Daylight.json; remembered in the campaign state")
 
     p = sub.add_parser("timer", help="roll the hidden time of an event on a named table")
     p.add_argument("--label", required=True, help="neutral label, e.g. n1")

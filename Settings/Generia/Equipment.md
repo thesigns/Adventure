@@ -20,7 +20,9 @@
 | shield                                | 5 g                  |
 | leather armour / mail / plate         | 10 g / 75 g / 1000 g |
 | riding horse / warhorse               | 50 g / 400 g         |
-| healing potion                        | 50 g                 |
+| healing potion / antidote             | 10 g / 10 g          |
+| porter or torchbearer / guide, a day  | 1 s / 3 s            |
+| man-at-arms, a day / adventurer       | 5 s / an equal share |
 
 ## Weapons
 
