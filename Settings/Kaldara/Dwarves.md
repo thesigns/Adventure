@@ -6,7 +6,7 @@ Krasnoludów nie ma, zostały po nich ruiny, przedmioty i legendy.
 - Krasnoludzkie runy są wszędzie w ruinach: na ścianach, drzwiach, broni, grobowcach. Nikt nie potrafi ich odczytać. Uczeni próbują od pokoleń i spierają się nawet o to, czy to pismo, magia, czy jedno i drugie.
 - Nikt nie wie, jak krasnoludy same siebie nazywały ani jak brzmiał ich język. Słowo "krasnolud" i wszystkie nazwy ich ruin są ludzkie, nadane przez osadników.
 - Krasnoludzka broń, zbroje i narzędzia to najcenniejsze łupy na wyspie. Niektóre mają moc, której nikt nie umie wyjaśnić.
-- W ruinach pozostali strażnicy: runiczni strażnicy, pułapki, nieumarli krasnoludowie, którzy wciąż bronią swoich korytarzy i grobowców swoich królów, także przed trollami.
+- W ruinach pozostali strażnicy: runiczni strażnicy i pułapki, które wciąż bronią korytarzy i grobowców krasnoludzkich królów, także przed trollami.
 - Wśród ludzi krążą legendy, że krasnoludy wcale nie zginęły, tylko zeszły głębiej, i że w ciche noce w górach słychać spod ziemi uderzenia młotów. Inni, zwłaszcza w Hofvik, opowiadają, że krasnoludy odpłynęły za zachodni horyzont. Żadna z tych opowieści nie jest uznawana za pewną.
 
 ## Prawda o krasnoludach

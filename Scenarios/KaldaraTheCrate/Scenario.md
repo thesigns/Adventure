@@ -137,7 +137,7 @@ Ludzie Ragny przeszukują miasto po kolei, więc postać, która zgubi ich trop 
 
 ## Trop
 
-Postać, która chce znaleźć pomiota, może iść jego śladami (zob. *Ślady trolli* w `Settings/Kaldara/Trolls.md` i *Trolle i stwory z głębin* w `Settings/Kaldara/Mechanics.md`) albo pytać ludzi. MG opisuje ślady jak każdy szczegół miejsca, bez wskazywania, co z nich wynika.
+Postać, która chce znaleźć pomiota, może iść jego śladami (zob. *Ślady trolli* w `Settings/Kaldara/Trolls.md`) albo pytać ludzi. MG opisuje ślady jak każdy szczegół miejsca, bez wskazywania, co z nich wynika.
 
 - **Zaułek za bramą gospody:** mokre odciski małych, płaskich stóp w błocie, prowadzące w dół, ku portowi. Na kamieniu ślad krwi Orma.
 - **Suszarnie ryb:** zerwane i przegryzione sznury, na ziemi ogryzione do ości dorsze, rozsypane łuski. Psy przy składach ujadają w stronę nabrzeża, a szczury zniknęły. Stary rybak, który nocuje w swojej łodzi, widział „dziecko, które biegło na czworakach” w stronę końca nabrzeża.
@@ -156,7 +156,7 @@ Postać może iść do składu przez drzwi, jeśli zdejmie rygiel, co jest gło�
 
 ## Pomiot w piwnicy
 
-Pomiot to słaby przeciwnik o wątłej wytrzymałości (zob. *Trolle i stwory z głębin* w `Settings/Kaldara/Mechanics.md`). Tej nocy ma trzy okoliczności:
+Pomiot to słaby przeciwnik o wątłej wytrzymałości (zob. *Pomioty* w `Settings/Kaldara/Trolls.md`). Tej nocy ma trzy okoliczności:
 
 - **Ciasnota:** piwnica jest niska, więc dorosły człowiek walczy w niej pochylony, a pomiot jest w swoim żywiole. Walka jest trudniejsza o poziom.
 - **Światło:** pochodnia albo kaganek razi pomiota z bliska, więc walka jest łatwiejsza o poziom (zob. *Światło razi trolle* w `Settings/Kaldara/Mechanics.md`).

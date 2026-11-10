@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas, światło i trolle, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`, podróże w `Travel.md`, przeciwnicy w `Bestiary.md` i `Trolls.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -203,104 +203,6 @@ Tablica dotyczy poziomu przeciętnego. Przy innej trudności MG przesuwa progi (
 
 Morze, fiordy i rzeki spływające z lodowca są lodowate przez cały rok. Postać, która w nie wpadnie, ma kilka minut, zanim zimno odbierze jej siły. Kto nie umie pływać, tonie, jeśli nikt mu nie pomoże albo nie chwyci się czegoś, co pływa. Pancerz średni i ciężki ciągnie na dno: zrzucenie kolczugi w wodzie zajmuje rundę i wymaga rzutu. Każde kilka minut w lodowatej wodzie to co najmniej lekka rana z wychłodzenia, a dłuższy pobyt grozi utratą przytomności.
 
-## Przeciwnicy
-
-Kategorie przeciwników i wytrzymałość istot opisują *Przeciwnicy* w `Rules/Combat.md` i *Wytrzymałość* w `Rules/Health.md`. Rany podane w tabelach to rany od pełnego trafienia w człowieka bez pancerza (zob. *Rany w walce* w `Rules/Combat.md`).
-
-### Ludzie i zwierzęta
-
-| Przeciwnik                                    | Kategoria  | Wytrzymałość | Rany, które zadaje                                             |
-|-----------------------------------------------|------------|--------------|----------------------------------------------------------------|
-| parobek z widłami, rybak z nożem              | słaby      | ludzka       | zależnie od broni (zob. *Broń*)                                |
-| rozbójnik, banita, młody śmiałek              | przeciętny | ludzka       | zależnie od broni                                              |
-| drużynnik wodza, stary śmiałek, Zaprzysiężony | silny      | ludzka       | zależnie od broni                                              |
-| berserk w szale, wódz w kolczudze z mieczem   | potężny    | ludzka       | zależnie od broni; berserk o stopień ciężej                    |
-| stado szczurów w ruinach                      | słaby      | bardzo wątła | ugryzienia: od draśnięcia do lekkiej rany, typowo draśnięcie   |
-| wilk                                          | przeciętny | ludzka       | ugryzienie: od draśnięcia do rany, typowo lekka rana           |
-| niedźwiedź polarny                            | potężny    | twarda       | łapa i zęby: od rany do ciosu śmiertelnego, typowo ciężka rana |
-
-Każdy dodatkowy przeciwnik, np. kolejny wilk z watahy, czyni walkę trudniejszą o poziom (zob. *Okoliczności* w `Rules/StandardThrow.md`).
-
-**Berserk w szale** nie czuje ran: zranienie nie utrudnia mu walki, nie ucieka i nie poddaje się, dopóki szał nie minie albo nie padnie. Po walce jest wyczerpany: wszystkie jego działania są przez kilka godzin trudniejsze o poziom. Szał nie odróżnia przyjaciół od wrogów.
-
-### Trolle i stwory z głębin
-
-| Przeciwnik          | Kategoria  | Wytrzymałość  | Rany, które zadaje                                                             |
-|---------------------|------------|---------------|--------------------------------------------------------------------------------|
-| pomiot              | słaby      | wątła         | pazury, zęby, rzucony kamień: od draśnięcia do lekkiej rany, typowo draśnięcie |
-| stado pomiotów (4+) | silny      | wątła         | jak pomiot, ale z wielu stron; na wyniku 3 rana                                |
-| szarak              | silny      | twarda        | pazury, zęby, kamień w łapie: od lekkiej rany do ciężkiej rany, typowo rana    |
-| kosmacz             | silny      | twarda        | pięść: od rany do ciężkiej rany, typowo rana; łamie kości                      |
-| troll fiordowy      | silny      | twarda        | pazury: od lekkiej rany do ciężkiej rany, typowo rana; wciąga pod wodę         |
-| szeptacz            | przeciętny | twarda        | pazury: od draśnięcia do rany, typowo lekka rana; magia                        |
-| górski troll        | potężny    | bardzo twarda | łapa, zęby, głaz: od rany do zmasakrowania, typowo ciężka rana                 |
-| wielogłowy troll    | legendarny | ogromna       | od ciężkiej rany do zmasakrowania, typowo cios śmiertelny                      |
-| mały ślepy jaszczur | przeciętny | wątła         | ugryzienie: od draśnięcia do rany, typowo lekka rana                           |
-| duży ślepy jaszczur | silny      | twarda        | ugryzienie: od lekkiej rany do ciężkiej rany, typowo rana                      |
-| robal               | silny      | bardzo twarda | paszcza: od rany do ciosu śmiertelnego, typowo ciężka rana                     |
-| lindworm            | potężny    | bardzo twarda | paszcza i trujący oddech: od rany do zmasakrowania, typowo ciężka rana         |
-
-**Ślady trolli.** Trolle zostawiają ślady, po których można poznać, że legowisko jest blisko, jaki to gatunek i w jakim troll jest stanie (zob. *Ślady trolli* w `Trolls.md`).
-
-- Zanim postać wejdzie do rewiru trolla, MG zawsze daje jej co najmniej jeden ślad: smród, kości, odciski albo odgłos. Opisuje go jak każdy szczegół miejsca, bez podpowiadania, co z niego wynika (zob. *Prowadzenie gry* w `AGENTS.md`). Samotna postać przeżywa tylko wtedy, gdy ma szansę zawrócić.
-- Ślady oczywiste, np. smród albo kości pod nogami, postać zauważa bez rzutu. Ślady nieoczywiste, np. wytarte ściany albo zgryzione kości w kącie sali, wymagają wypatrywania, a ich odczytanie, czyli rozpoznanie gatunku, świeżości i stanu trolla, wymaga rzutu. Typowo jest przeciętne, a dla łowcy i postaci z zaletą *zna ruiny* łatwe.
-- **Śpiący troll.** Nażarty troll śpi twardo. Przekradnięcie się obok niego jest łatwiejsze o poziom, a obudzony jest przez pierwszą rundę walki zaskoczony.
-
-**Trolle w walce.**
-
-- Trolle widzą w ciemności, a światło z bliska je razi (zob. *Światło razi trolle*). Nie mają broni: walczą pazurami i zębami, a kamieniem uderzają albo ciskają. Krasnoludzką broń trzymają w legowiskach jak skarb, ale nią nie walczą.
-- **Kamienie.** Troll, który nie chce podejść do ognia albo światła, ciska kamieniami z ciemności. To walka na dystans (zob. *Walka na dystans* w `Rules/Combat.md`): kamień rzucony przez szaraka zadaje od draśnięcia do rany, typowo lekką ranę, a głaz rzucony przez górskiego trolla od rany do ciosu śmiertelnego, typowo ciężką ranę. Tarcza i osłona chronią przed kamieniami jak przed każdym pociskiem.
-- Dorosłe trolle to samotniki i nigdy nie walczą razem (zob. *Samotniki* w `Trolls.md`). Postać spotyka zwykle jednego trolla naraz albo stado pomiotów. Długa i głośna walka może jednak ściągnąć sąsiada, który przyjdzie po resztki: MG rozstrzyga to rzutem jako okoliczność świata.
-- **Ucieczka.** Troll biega szybciej niż człowiek, więc ucieczka przed nim na otwartym terenie jest trudniejsza o poziom. Ratunkiem jest przejście, w które troll się nie zmieści, krąg ognia, światło dnia albo rzucone mięso. Pomioty i szeptacze nie są szybsze od człowieka.
-- **Gody i młode.** Samiec w okresie godowym i trollica broniąca młodych walczą do śmierci: nie uciekają ranne, a walka z nimi jest trudniejsza o poziom. MG zapowiada je wcześniej rykiem, śladami walk, kośćmi na rozstajach albo piskiem młodych, żeby gracz mógł zawrócić.
-- Pomioty walczą stadem. Stado to jeden przeciwnik: dwa albo trzy pomioty to przeciwnik przeciętny, a stado od czterech do kilkunastu to przeciwnik silny. Stado ucieka, gdy padnie kilka pomiotów albo gdy postać zrobi coś, co je przestraszy. W tablicy rundy na niskich wynikach MG może wpisać zamiast rany kradzież albo zgaszenie światła.
-- Ciało zabitego trolla zatrzymuje inne trolle, zwłaszcza pomioty i głodnych: rzucają się na mięso i walczą o nie między sobą (zob. *Kanibalizm* w `Trolls.md`). Postać może w ten sposób zyskać czas na ucieczkę, a zgubienie pościgu jest wtedy łatwiejsze o poziom. Ciężko ranny troll boi się też innych trolli, bo dla nich jest teraz mięsem, i ucieka od nich tak samo jak od postaci.
-- Szaraki i kosmacze ranne zwykle uciekają, chyba że bronią legowiska. Kosmacz na wyniku 3 łamie postaci rękę albo żebra (uraz przejściowy, zob. *Urazy* w `Rules/Health.md`).
-- Górski troll nie mieści się w ciasnych korytarzach. W szerokiej sali walka z nim jest bardzo trudna, a tarcza pęka na najniższych wynikach. Ranny ucieka dopiero wtedy, gdy jest bliski śmierci.
-- Wielogłowego trolla nie da się pokonać w zwykłej walce. Rozsądna postać ucieka, przechytrza go, skłóca głowy albo czeka ze słońcem (zob. *Słońce i trolle*).
-- Troll fiordowy w wodzie jest przeciwnikiem potężnym. Na niskich wynikach wciąga postać pod wodę (zob. *Lodowata woda*).
-- Szeptacz walczy rękami pomiotów, które się go trzymają. Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów*).
-
-**Robal** atakuje spod ziemi albo ze ściany, więc pierwszego ataku postać zwykle nie widzi: MG rzuca od razu, bez PDT (zob. *Decyzja gracza* w `Rules/StandardThrow.md`). Ciche stąpanie i bezruch utrudniają mu znalezienie ofiary.
-
-**Lindworm** zieje trującym oddechem na kilka kroków przed siebie. Oddech to osobny skutek w tablicy: rana i nudności, które utrudniają wszystkie działania o poziom do końca sceny. Trolle uciekają przed lindwormem, więc tam, gdzie on mieszka, trolli nie ma.
-
-### Strażnicy ruin
-
-| Przeciwnik          | Kategoria | Wytrzymałość | Rany, które zadaje                                                                      |
-|---------------------|-----------|--------------|-----------------------------------------------------------------------------------------|
-| nieumarły krasnolud | silny     | twarda       | krasnoludzki topór albo młot: od lekkiej rany do ciosu śmiertelnego, typowo ciężka rana |
-| runiczny strażnik   | potężny   | ogromna      | pięść albo ostrze: od rany do zmasakrowania, typowo ciężka rana                         |
-
-Obaj nie czują ran: zranienie nie utrudnia im walki, nie uciekają, nie poddają się i nigdy się nie męczą (zob. *Zmęczenie w walce* w `Rules/Combat.md`). Nieumarły krasnolud nosi zwykle krasnoludzką zbroję, która chroni go jak pancerz ciężki (zob. *Pancerz*). Po zranieniu 100% rozpada się na zawsze. Runicznego strażnika zwykła broń ledwie drapie. Co go zatrzymuje albo usypia, ustala scenariusz, a postać może się tego dowiedzieć, obserwując go.
-
-### Stwory z powierzchni
-
-| Przeciwnik                   | Kategoria  | Wytrzymałość | Rany, które zadaje                                                         |
-|------------------------------|------------|--------------|----------------------------------------------------------------------------|
-| draugr                       | silny      | twarda       | ręce: od lekkiej rany do ciężkiej rany, typowo rana; w chwycie łamie kark  |
-| zmiennoskóry jako wilk       | silny      | twarda       | ugryzienie: od lekkiej rany do ciężkiej rany, typowo rana                  |
-| zmiennoskóry jako niedźwiedź | potężny    | twarda       | łapa i zęby: od rany do ciosu śmiertelnego, typowo ciężka rana             |
-| nykr                         | przeciętny | twarda       | kopyta i zęby: od draśnięcia do rany; groźny przez wodę, nie przez ciosy   |
-| szronoturs                   | legendarny | ogromna      | pięść albo głaz: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny |
-| smok z Brennfell             | legendarny | ogromna      | nie do walki; ogień i paszcza: od ciężkiej rany do zmasakrowania           |
-| potwór morski                | legendarny | ogromna      | nie do walki; zatapia łodzie                                               |
-
-**Draugr.**
-
-- Nie czuje ran: zranienie nie utrudnia mu walki, nie ucieka i nigdy się nie męczy.
-- Gdy jego zranienie dojdzie do 100%, pada, ale następnej nocy wstaje bez ran. Zabić go na zawsze można tylko tak: odciąć mu głowę, położyć ją przy jego udzie i spalić ciało. Trwa to kilka godzin i wymaga dużo opału, a na wyspie bez lasów opał jest cenny.
-- Chwyt draugra: na najniższych wynikach tablicy draugr chwyta postać. Dopóki postać się nie wyrwie, walka jest trudniejsza o poziom, a na wyniku 3 w chwycie draugr łamie jej kark (cios śmiertelny).
-- Draugr nie wychodzi za dnia. Za dnia leży w kurhanie i można go tam zastać, ale w kurhanie jest ciemno, a obudzony walczy tak samo jak w nocy.
-
-**Zmiennoskóry** w postaci zwierzęcia nie czuje bólu tak jak człowiek: lekkie rany nie utrudniają mu walki, tylko rany i cięższe. Za dnia jest człowiekiem i ma ludzką wytrzymałość.
-
-**Nykr.** Kto dosiądzie nykra, nie może z niego zsiąść, i nie ma na to rzutu. Nykr wbiega z nim do wody, a dalej działają zasady *Lodowata woda*. Uratować jeźdźca można, wołając nykra po imieniu, jeśli ktoś je zna, albo przecinając to, co trzyma jeźdźca, np. pas albo uprząż, co jest bardzo trudne.
-
-**Mara** nie walczy. Noc, w którą do postaci przyszła mara, nie jest porządnym wypoczynkiem: PDT się nie odnawia. Trzecia noc z marą z rzędu to lekka rana z wycieńczenia, i tak co noc. Marę przegania się, rozpoznając i nazywając ją, czyli dowiadując się, czyja dusza nawiedza postać, albo śpiąc tam, gdzie mara nie przychodzi, np. w świątyni albo w gwarnej sali dworu.
-
-**Szronotursy i smok** to istoty z sag. Walka z nimi kończy się niemal pewną śmiercią (zob. *Koniec walki* w `Rules/Combat.md`). Tursy lubią zagadki i zakłady i dotrzymują ich warunków co do słowa, a nie co do sensu. Spotkanie z nimi to raczej rozmowa niż walka.
-
 ## Broń
 
 | Broń                              | Rany                                              | Uwagi                                                               |
@@ -355,8 +257,6 @@ Oba sposoby się sumują: ciężko ranny człowiek przy gorącym źródle i z ma
 
 **Choroby**, w tym czarny kaszel śmiałków i gorączkę z rany, opisuje `Diseases.md`.
 
-**Zmarły bez obrzędów.** Kto umrze w ruinach albo na pustkowiu i nie zostanie pochowany z obrzędami Dauvara, może wstać jako draugr. Dotyczy to także postaci gracza: jej ciało może spotkać kolejna postać.
-
 ## Magia
 
 Moc kapłana albo wieszczki to zaleta, która daje zdolność nadprzyrodzoną (zob. *Zdolności nadprzyrodzone* w `Rules/Traits.md`). MG ustala z graczem jej skutek, ograniczenia i limit użyć według przykładów poniżej i wycenia ją zwykle na −2 do −5 PDT. Postać może mieć najwyżej jedną taką zdolność, a moc kapłana pochodzi zawsze od jednego boga.
@@ -380,7 +280,7 @@ Moc kapłana albo wieszczki to zaleta, która daje zdolność nadprzyrodzoną (z
 | zaklęcie krwi            | Ylva (wieszczka) | tamuje krwawienie: postać w agonii jest opatrzona bez materiału, a zranienie spada o 5%             | raz na dobę    |
 | mowa zwierząt            | Ylva (wieszczka) | dzikie zwierzę, np. wilk albo niedźwiedź, nie atakuje i odchodzi; nie działa na stwory z głębin     | raz na scenę   |
 | wieszczba                | Ylva (wieszczka) | wieszczka zadaje pytanie o przyszłość, a MG odpowiada prawdziwie, ale zagadką                       | raz na tydzień |
-| szał Hjaldura            | Hjaldur          | postać wpada w szał berserka (zob. *Ludzie i zwierzęta*), a walka jest dla niej łatwiejsza o poziom | raz na dobę    |
+| szał Hjaldura            | Hjaldur          | postać wpada w szał berserka (zob. *Ludzie* w `Bestiary.md`), a walka jest dla niej łatwiejsza o poziom | raz na dobę    |
 
 **Światło Solvara** działa na trolle jak słońce, ale jest słabe i krótkie. Pomioty, szaraki, kosmacze i szeptacze, które znajdą się w pełnym świetle, kamienieją. Górskiemu trollowi kamienieje tylko część ciała, np. ręka albo twarz: walka z nim jest łatwiejsza o poziom do końca walki, a troll zwykle ucieka. Wielogłowemu kamienieje jedna głowa. Światło trwa jedną rundę i nie przechodzi przez ściany, więc najskuteczniejsze jest w ciasnym korytarzu, którym nadchodzą trolle.
 

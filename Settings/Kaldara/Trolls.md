@@ -115,6 +115,23 @@ Niektóre ślady zdradzają gatunek albo to, w jakim troll jest stanie:
 - **pełna spiżarnia i chrapanie** to troll nażarty, który prześpi dzień albo dwa,
 - **ogryzione do czysta kości, pusta spiżarnia i świeże zadrapania** to troll wygłodzony.
 
+W grze:
+
+- Zanim postać wejdzie do rewiru trolla, MG zawsze daje jej co najmniej jeden ślad: smród, kości, odciski albo odgłos. Opisuje go jak każdy szczegół miejsca, bez podpowiadania, co z niego wynika (zob. *Prowadzenie gry* w `AGENTS.md`). Samotna postać przeżywa tylko wtedy, gdy ma szansę zawrócić.
+- Ślady oczywiste, np. smród albo kości pod nogami, postać zauważa bez rzutu. Nieoczywiste, np. wytarte ściany, wymagają wypatrywania. Odczytanie śladu (gatunek, świeżość, stan trolla) to rzut, typowo przeciętny, a dla łowcy i postaci z zaletą *zna ruiny* łatwy.
+
+## Trolle w walce
+
+Słońce, światło i ogień: *Słońce i trolle*, *Światło razi trolle* i *Trolle i ogień* w `Mechanics.md`. Walka poszczególnych gatunków: *Gatunki trolli*.
+
+- Walczą pazurami i zębami, a kamieniem uderzają albo ciskają. Krasnoludzką broń trzymają w legowiskach, ale nią nie walczą.
+- **Kamienie.** Troll, który nie chce podejść do ognia albo światła, ciska kamieniami z ciemności. To walka na dystans (zob. *Walka na dystans* w `Rules/Combat.md`). Kamień szaraka zadaje od draśnięcia do rany, typowo lekką ranę, a głaz górskiego trolla od rany do ciosu śmiertelnego, typowo ciężką ranę. Tarcza i osłona chronią jak przed każdym pociskiem.
+- **Samotniki.** Dorosłe trolle nigdy nie walczą razem: postać spotyka zwykle jednego trolla albo stado pomiotów. Długa i głośna walka może ściągnąć sąsiada po resztki, co MG rozstrzyga rzutem jako okoliczność świata.
+- **Ucieczka.** Troll biega szybciej niż człowiek, więc ucieczka przed nim na otwartym terenie jest trudniejsza o poziom. Ratuje przejście, w które troll się nie zmieści, krąg ognia, światło dnia albo rzucone mięso.
+- **Gody i młode.** Samiec w okresie godowym i trollica broniąca młodych walczą do śmierci: nie uciekają ranne, a walka z nimi jest trudniejsza o poziom. MG zapowiada je wcześniej rykiem, śladami walk, kośćmi na rozstajach albo piskiem młodych.
+- **Martwy troll.** Ciało zabitego trolla zatrzymuje pomioty i głodne trolle, które biją się o mięso, więc zgubienie pościgu jest wtedy łatwiejsze o poziom. Ciężko ranny troll ucieka też przed innymi trollami.
+- **Śpiący troll.** Nażarty troll śpi twardo. Przekradnięcie się obok niego jest łatwiejsze o poziom, a obudzony jest przez pierwszą rundę walki zaskoczony.
+
 ## Gatunki trolli
 
 Ludzie rozróżniają kilka gatunków trolli i nadają im własne nazwy, bo nazw, którymi trolle określają same siebie, nikt nie zna. Wszystkie gatunki boją się słońca tak samo i wszystkie zamienia ono w kamień.
@@ -127,11 +144,22 @@ Wzrost dziecka, chude, sinoszare, z długimi palcami i wielkimi uszami. Ludzie s
 
 Są najsprytniejsze z trolli. Śledzą intruzów z bocznych szczelin, kradną to, co błyszczy i co da się unieść, przegryzają liny, zrzucają kamienie z góry, zastawiają proste pułapki i gaszą światło, bo wiedzą, że człowiek bez niego jest ślepy. Drapią, gryzą i ciskają kamieniami, a celują zaskakująco dobrze. W ciasnych tunelach, w które większy troll się nie zmieści, są najgroźniejsze. Na powierzchnię wychodzą stadem i kradną drób, jagnięta i ryby z suszarni.
 
+- Pojedynczy pomiot to przeciwnik słaby, słabszy od człowieka. Stado 2–3 pomiotów to przeciwnik przeciętny, a od czterech wzwyż silny. Stado to jeden przeciwnik.
+- Chude ciało: wytrzymałość wątła.
+- Pazury, zęby, rzucony kamień: od draśnięcia do lekkiej rany, typowo draśnięcie. Stado atakuje z wielu stron, więc na wyniku 3 zadaje ranę.
+- Na niskich wynikach MG może wpisać zamiast rany kradzież albo zgaszenie światła.
+- Nie są szybsze od człowieka. Stado ucieka, gdy padnie kilka pomiotów albo gdy postać je przestraszy.
+
 ### Szaraki
 
 Najliczniejsze dorosłe trolle. Wzrostu rosłego człowieka albo trochę wyżsi, przygarbieni, o skórze szarej i chropawej jak skała, z długimi nosami i ramionami do kolan. Są dwa razy silniejsze od człowieka, a ich skóra zatrzymuje cios, który człowieka by ranił. Pojedynczy szarak jest wyrównanym przeciwnikiem dla doświadczonego wojownika.
 
 Walczą pazurami i zębami, a z dystansu ciskają kamieniami wielkości głowy. Każdy ma swój rewir w ruinach i nocą poluje na powierzchni wokół jego wejścia.
+
+- Przeciwnik silny, dwa razy silniejszy od człowieka.
+- Skóra jak skała zatrzymuje cios, który człowieka by ranił: wytrzymałość twarda.
+- Pazury, zęby, kamień w łapie: od lekkiej rany do ciężkiej rany, typowo rana.
+- Ranny zwykle ucieka, chyba że broni legowiska.
 
 ### Kosmacze
 
@@ -139,15 +167,30 @@ Trolle, które dawno temu wyszły z Głębin i zostały bliżej powierzchni: w j
 
 Są głupsze od szaraków, ale silniejsze i bardziej uparte. Uderzeniem pięści łamią człowiekowi rękę albo żebra. To one najczęściej polują na owce i konie, a zimą podchodzą pod odcięte gospodarstwa po bydło z obór. Są cierpliwe: potrafią całą noc czekać przy zagrodzie, aż zgaśnie ogień.
 
+- Przeciwnik silny, silniejszy od szaraka i bardziej uparty.
+- Gruba skóra pod skołtunionym włosem: wytrzymałość twarda.
+- Pięść: od rany do ciężkiej rany, typowo rana. Na wyniku 3 łamie postaci rękę albo żebra (uraz przejściowy, zob. *Urazy* w `Rules/Health.md`).
+- Ranny zwykle ucieka, chyba że broni legowiska.
+
 ### Trolle fiordowe
 
 Trolle z morskich jaskiń Nordstrand i fiordów wschodu. Wyższe od człowieka, śliskie, oblepione wodorostami i muszlami, z płetwiastymi dłońmi. Pływają jak foki i oddychają pod wodą dłużej niż jakiekolwiek zwierzę lądowe. Nocą polują na foki i ryby, rozbijają sieci, okradają suszarnie ryb i obżerają się wielorybami wyrzuconymi na brzeg, a rybaka, który wypłynął po zmroku, potrafią wyciągnąć z łodzi. Przed świtem nie muszą wracać do jaskiń: zanurzają się w głębinie fiordu, dokąd nie sięga światło, i przeczekują tam dzień. Dlatego wielorybnicy nie ufają ciemnej wodzie nawet w południe.
+
+- Przeciwnik silny, a w wodzie potężny.
+- Śliska skóra oblepiona muszlami: wytrzymałość twarda.
+- Pazury: od lekkiej rany do ciężkiej rany, typowo rana.
+- W wodzie na niskich wynikach wciąga postać pod wodę (zob. *Lodowata woda* w `Mechanics.md`).
 
 ### Szeptacze
 
 Wysokie, wychudłe i siwe od młodości, z włosami do ziemi, często ślepe albo jednookie, bo oczy nie są im potrzebne. Nazwę wzięły od tego, że ciągle szepczą: do siebie, do kamieni, do ciemności. Żyją bardzo długo i jest ich niewiele. W walce są słabsze od szaraków, ale rzadko walczą same: często trzyma się ich stado pomiotów, które je karmi w zamian za ochronę przed innymi trollami.
 
-Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwodzą wędrowców głosami bliskich, przybierają cudzą postać i widzą przez oczy swoich ślepych jaszczurów. Jako jedyne trolle potrafią przemówić ludzkim językiem, kilkoma słowami, łamanymi i dziwnymi. Bywa, że chcą się targować. Ich legowiska są pełne kości, grzybów i dziwnych przedmiotów, a czasem krasnoludzkich rzeczy, o których mocy wiedzą więcej, niż powinny.
+Znają dziką magię: szeptem rzucają klątwy, wywołują mgłę i burzę, zwodzą wędrowców głosami bliskich, przybierają cudzą postać i słyszą i węszą zmysłami swoich ślepych jaszczurów. Jako jedyne trolle potrafią przemówić ludzkim językiem, kilkoma słowami, łamanymi i dziwnymi. Bywa, że chcą się targować. Ich legowiska są pełne kości, grzybów i dziwnych przedmiotów, a czasem krasnoludzkich rzeczy, o których mocy wiedzą więcej, niż powinny.
+
+- Przeciwnik przeciętny, słabszy od szaraka, nie szybszy od człowieka. Walczy rękami pomiotów, które się go trzymają.
+- Wytrzymałość twarda.
+- Pazury: od draśnięcia do rany, typowo lekka rana.
+- Jego magię MG rozgrywa jak czary wiedźmy (zob. *Klątwy i czary wrogów* w `Mechanics.md`).
 
 ### Górskie trolle
 
@@ -155,8 +198,19 @@ Wysokie na trzy do pięciu metrów, szerokie jak drzwi stodoły, o skórze jak k
 
 Nie mieszczą się w ciasnych korytarzach, dlatego zajmują największe sale ruin, a mniejsze trolle schodzą im z drogi, bo górski troll zjada każdego, kogo złapie w swoim rewirze. Na długich prostych biegają szybciej od mniejszych trolli, ale w zakrętach i na schodach są niezgrabne. Są zachłanne i dumne, a ich legowiska kryją największe skarby ruin.
 
+- Przeciwnik potężny, wielokrotnie silniejszy od człowieka.
+- Skóra jak kamień, zwykła broń ledwie go rani: wytrzymałość bardzo twarda.
+- Łapa, zęby, głaz: od rany do zmasakrowania, typowo ciężka rana.
+- Nie mieści się w ciasnych korytarzach. W szerokiej sali walka z nim jest bardzo trudna, a tarcza pęka na najniższych wynikach.
+- Ranny ucieka dopiero wtedy, gdy jest bliski śmierci.
+
 ### Wielogłowe
 
 Najstarsze i największe trolle, wysokie na sześć metrów i więcej, o dwóch albo trzech głowach. Jest ich na wyspie niewiele, może kilka, a większość ludzi uważa je za bajkę. Żyją w najgłębszych ruinach i w Głębinach, a wszystkie inne trolle schodzą im z drogi. Mówi się, że są starsze od upadku krasnoludów.
 
 Ich ciosy kruszą skałę. Zwykła broń prawie ich nie rani. Do walki z wielogłowym trollem trzeba czegoś więcej niż stali: krasnoludzkiej broni, słońca albo podstępu. Głowy kłócą się ze sobą, każda chce czego innego i żadna nie ufa pozostałym. Sagi opowiadają o śmiałkach, którzy wyszli z ich legowisk żywi tylko dlatego, że skłócili głowy.
+
+- Przeciwnik legendarny. Ciosy kruszą skałę.
+- Zwykła broń prawie go nie rani: wytrzymałość ogromna.
+- Ciosy: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
+- Nie da się go pokonać w zwykłej walce. Rozsądna postać ucieka, przechytrza go, skłóca głowy albo czeka ze słońcem (zob. *Słońce i trolle* w `Mechanics.md`).

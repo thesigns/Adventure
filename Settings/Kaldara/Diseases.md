@@ -52,7 +52,7 @@ Działa jak uraz przejściowy (zob. *Urazy* w `Rules/Health.md`). Kary się nie 
 - Rzut po każdej ranie (nie po draśnięciu), ukryty, bez PDT, tablice z `Tables/GmTables.json`:
   - rana przemyta i opatrzona czystym płótnem: łatwe (`k2`),
   - rana nieopatrzona albo opatrzona brudnym: przeciętne (`k3`),
-  - pazury i zęby trolla, robala, jaszczura albo szczurów, rana z bagna albo z ruin, nieopatrzona: trudne (`k4`).
+  - pazury i zęby trolla, jaszczura albo szczurów, rana z bagna albo z ruin, nieopatrzona: trudne (`k4`).
 - Gorączka zaczyna się następnego dnia.
 - Skutki: wszystkie działania o poziom trudniejsze, rany się nie goją (zob. *Leczenie* w `Rules/Health.md`).
 - Co rano jawny rzut, przeciętny; z opieką zielarki albo maścią łatwy, bez dachu trudny:

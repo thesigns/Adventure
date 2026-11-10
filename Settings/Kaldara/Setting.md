@@ -10,11 +10,11 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Geography.md`: wymiary wyspy, miasta i krainy
 - `Travel.md`: miary drogi, tempo, trakt, podróże morskie, kontynent, spotkania w drodze, nocleg, ferd
 - `Dwarves.md`: krasnoludy, co wiedzą o nich ludzie i prawda o ich upadku, której nie zna nikt na wyspie
-- `Trolls.md`: trolle, główne zagrożenie wyspy
+- `Trolls.md`: trolle, główne zagrożenie wyspy, z ich walką i statystykami
 - `Gods.md`: bogowie i ich kulty
-- `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
+- `Bestiary.md`: potwory z głębin, strażnicy ruin, stwory z powierzchni i ludzie, ze statystykami walki
 - `Diseases.md`: choroby i ich mechanika: czarny kaszel, gorączka z rany, gnilec, ślepota śnieżna, czerwonka, zapalenie płuc
-- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
+- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
 - `Economy.md`: gospodarka, waluta, czym się płaci, ceny, sprzedaż łupu, sakiewka na start
 - `Maps/MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `Tables/Daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
@@ -124,7 +124,7 @@ Opis krasnoludów i prawda o ich upadku są w `Dwarves.md`.
 
 Trolle to główne zagrożenie wyspy: rozumne, dzikie i okrutne istoty z Głębin, które żyją samotnie w krasnoludzkich ruinach i gromadzą wszystko, co błyszczy. Światło słońca zamienia je w kamień, więc na powierzchnię wychodzą tylko w ciemności, a ognia się boją.
 
-Opis trolli jest w `Trolls.md`, a ich mechanika w `Mechanics.md`.
+Opis trolli i ich walka są w `Trolls.md`, a słońce, światło i ogień w `Mechanics.md`.
 
 ## Geografia
 
