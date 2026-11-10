@@ -9,6 +9,8 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 - `Magic.md`: magic, spellcasting characters, magic items
 - `Equipment.md`: money, prices, weapons, armour, light, starting purse
 - `Bestiary.md`: monsters and enemies with combat stats
+- `Maps/GeneriaMap.svg`: world map, 1 px = 1 km, open to the player (see *Continent* in `Geography.md`)
+- `Tools/`: author's tools, not for play: the map generator (`make_map.py`)
 
 ## GM rules
 
