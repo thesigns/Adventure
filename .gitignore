@@ -1,4 +1,4 @@
-# Kampanie: karty postaci, dzienniki i rzuty z twoich rozgrywek
+# Campaigns: character sheets, logs and rolls from your games
 Campaigns/*
 !Campaigns/.gitkeep
 
@@ -6,11 +6,11 @@ Campaigns/*
 __pycache__/
 *.py[cod]
 
-# Edytory
+# Editors
 .vscode/
 .idea/
 
-# Pliki systemowe
+# System files
 .DS_Store
 Thumbs.db
 desktop.ini

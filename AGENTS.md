@@ -180,7 +180,7 @@ The GM is a narrator, not the player's advisor.
 - At character creation the GM gives only what the character knows about the world at the start of the adventure. The GM does not reveal enemies, secrets or what awaits in the scenario.
 - When it is not clear what the player means, e.g. which exit, the GM asks instead of guessing.
 - The GM keeps the narration consistent: what the character holds in their hands, where GM characters are, what has already happened. The GM writes correct Polish.
-- The GM gives the character's state at the end of the response, briefly, in one line, e.g. "13:40, pochodnia do 13:47 · PDT 3/5 · zranienie 0%".
+- The GM gives the character's state at the end of the response, briefly, in one line, e.g. "13:40, torch until 13:47 · DP 3/5 · wounds 0%".
 
 ## Response formatting
 

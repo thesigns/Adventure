@@ -1,4 +1,4 @@
-# Pliki tekstowe zawsze z końcami wierszy LF, także na Windowsie
+# Text files always with LF line endings, also on Windows
 * text=auto eol=lf
 
 *.md   text eol=lf
@@ -6,7 +6,7 @@
 *.svg  text eol=lf
 *.json text eol=lf
 
-# Pliki binarne
+# Binary files
 *.png  binary
 *.jpg  binary
 *.jpeg binary
