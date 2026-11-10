@@ -2,7 +2,8 @@
 
 ## Continent
 
-- **Generia:** a temperate continent of kingdoms, forests, mountains and old ruins. Seasons, daylight and weather as in central Europe.
+- **Generia:** a small continent of kingdoms, forests, mountains and old ruins in the northern hemisphere, about the size of Australia: roughly 3,500 km west to east and 2,500 km north to south.
+- **Climate** as in Europe, by latitude. The south is warm like southern Italy and Spain: hot dry summers, mild wet winters. The centre is temperate like France or Germany. The north is cool like the lands around Oslo: long snowy winters, short summers, long summer days and short winter ones. Seasons and daylight follow the same latitudes.
 - **Travel:** on foot about 30 km a day on a road, 20 off-road; on horseback about 50. Roads between towns are patrolled poorly, wilderness not at all.
 
 ## Lands
@@ -13,5 +14,4 @@
 - **Ironpeaks:** mountains in the north, home of the dwarven clans. The great hold is Khaz Dorun.
 - **Greenhollow:** peaceful halfling farmland south of Valdren.
 - **Ashlands:** blasted wastes in the east, roamed by orc tribes.
-- **Frostmarch:** the cold north beyond the mountains, barbarian tribes, giants and frost.
-- **Southern deserts:** the distant Sultanate of Qadir, known for spices, silk and djinn tales. Background only.
+- **Frostmarch:** the northernmost lands beyond the mountains, with the harshest winters: barbarian tribes, giants and frost.

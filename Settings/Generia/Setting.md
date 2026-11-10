@@ -20,7 +20,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 ## World
 
-- **Generia:** a temperate continent of kingdoms, forests, mountains and old ruins. Lands and travel: `Geography.md`.
+- **Generia:** a small continent of kingdoms, forests, mountains and old ruins, with a European climate. Lands, climate and travel: `Geography.md`.
 - **Technology:** high medieval. Swords, crossbows, plate armour, sailing ships. No printing, no gunpowder.
 - **Calendar:** 12 months of 30 days plus 5 festival days, 7-day week. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF.
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
