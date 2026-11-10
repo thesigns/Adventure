@@ -149,14 +149,14 @@ Najgroźniejszym przeciwnikiem śmiałka bywa drugi człowiek. Rany zależą od 
 
 ## Turs
 
-- Lodowy olbrzym o białej, oszronionej skórze, kilka razy wyższy od człowieka i starszy od ludzi. Mówi własnym językiem, którego nikt nie zna.
-- Mityczny. Na wyspie żyje ich najwyżej kilkunastu: to długowieczny, ale ginący gatunek.
-- O każdej porze. Słońce mu nie szkodzi.
-- Inteligentny i da się z nim porozumieć na migi. Jest dumny, zachłanny i przebiegły. Lubi zakłady i wymiany, ale umowę zawartą na migi rozumie po swojemu. Spotkanie z nim to raczej targ niż walka.
+- Lodowy olbrzym o jasnej skórze, kilka razy wyższy od człowieka. Żyje kilkaset lat.
+- Mityczny. Na wyspie żyje ich najwyżej kilkunastu. To ginący gatunek.
+- Zwykle aktywny w dzień, w nocy śpi. Słońce mu nie szkodzi. Niewrażliwy na zimno. Nie boi się ognia, ale go nie potrzebuje. Je surowe mięso, śpi w legowisku na skórach owiec.
+- Inteligentny. Mówi własnym językiem, którego ludzie nie znają. Da się z nim porozumieć na migi. Jest dumny i przebiegły. Nie atakuje bez powodu: człowieka ignoruje, chyba że ten go zaatakuje albo wejdzie do jego legowiska.
 - Żyje na Svartjokul i na szczytach Dvergfjell. Zimą schodzi czasem niżej i porywa stada. Pasterze z gór opowiadają o śladach tursów na śniegu.
 - Przeciwnik legendarny, wielokrotnie silniejszy od człowieka. Walka z nim kończy się niemal pewną śmiercią.
 - Skóra twarda jak lód: wytrzymałość ogromna.
-- Pięść albo głaz: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
+- Walczy pięściami albo rzucając głazami: od ciężkiej rany do zmasakrowania, typowo cios śmiertelny.
 
 ## Wilk
 
