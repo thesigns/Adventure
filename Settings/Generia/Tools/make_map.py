@@ -126,7 +126,7 @@ LABELS = [
     ("IRONPEAKS", 1120, 1280, -20, 28),
     ("CROOKBACK MOUNTAINS", 2490, 1460, 28, 26),
 ]
-KINGDOM_LABEL = ("KINGDOM OF", "VALDREN", 1840, 1560)
+KINGDOM_LABEL = ("KINGDOM OF", "VALDREN", 1700, 1800)
 
 REGION_TILT = {"frostmarch": ' transform="rotate(-27 1290 935)"'}
 
@@ -217,6 +217,9 @@ RIVERS = [
                      (2225, 1600), (2212, 1675), (2287, 1750), (2287, 1825), (2375, 1887), (2475, 1900),
                      (2537, 1875), (2554, 2033)]),
     # west, from the Ironpeaks through the great elven forest to the south-western coast
+    # tributary of the Vael through Kingsbridge; its mouth is snapped onto the Vael (see TRIBUTARIES)
+    ("river-12", 4, [(1790, 1420), (1840, 1470), (1900, 1505), (1930, 1530), (1990, 1560), (2060, 1580),
+                     (2140, 1605), (2215, 1640)]),
     ("river-11", 5, [(675, 1590), (655, 1655), (585, 1690), (500, 1700), (455, 1745), (430, 1820), (455, 1885),
                      (530, 1915), (590, 1965), (585, 2030), (520, 2075), (470, 2120), (455, 2190), (440, 2250)]),
 ]
@@ -276,7 +279,7 @@ AREA_NAMES = {
     "hills-1": ("GREENHOLLOW", True), "ashlands": ("ASHLANDS", True),
 }
 # Label positions where the middle of the outline is a poor spot; None hides the label of a tiny area
-AREA_LABEL_AT = {"ashlands": (2950, 640), "taiga-1": (600, 1345), "taiga-2": (1640, 850), "forest-13": None}
+AREA_LABEL_AT = {"ashlands": (2790, 760), "taiga-1": (600, 1345), "taiga-2": (1640, 850), "forest-13": None}
 
 # (fill, glyph, spacing in km)
 COVER = {"ash": ("#ebe4da", "ash", 62), "taiga": ("#dce6d6", "pine", 30), "forest": ("#dbe7c9", "tree", 34), "marsh": ("#dde7de", "reed", 34), "hills": ("#e3edcc", "hill", 40)}
@@ -288,8 +291,27 @@ RIVER_NAMES = {
     "river-1": ("Coldwater", 50), "river-2": ("Frostrun", 55), "river-3": ("Mistbrook", 45),
     "river-4": ("Reedbrook", 50), "river-5": ("Highrun", 45), "river-6": ("Aldwater", 50),
     "river-7": ("Brenna", 55), "river-8": ("Wend", 60), "river-9": ("Silverrun", 50),
-    "river-10": ("Vael", 50), "river-11": ("Aelwen", 45),
+    "river-10": ("Vael", 50), "river-11": ("Aelwen", 45), "river-12": ("Kingswater", 62),
 }
+
+# Places: (id, name, kind, x, y, label anchor, label dx, label dy). Kinds: capital, city, town, hold, fort.
+PLACES = [
+    ("kingsbridge", "Kingsbridge", "capital", 1930, 1530, "middle", 0, -32),
+    ("mereton", "Mereton", "city", 1468, 1598, "start", 20, -16),
+    ("hollowbury", "Hollowbury", "town", 2020, 2000, "end", -16, 8),
+    ("aelindor", "Aelindor", "city", 488, 1810, "start", 20, 8),
+]
+
+# Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km
+ROADS = [
+    ("road-kingsbridge-mereton", "Kingsbridge", "Mereton",
+     [(1930, 1530), (1840, 1590), (1730, 1640), (1620, 1655), (1530, 1630), (1468, 1598)]),
+    ("road-kingsbridge-greenhollow", "Kingsbridge", "Greenhollow",
+     [(1930, 1530), (1912, 1640), (1928, 1760), (1965, 1880), (2020, 2000)]),
+]
+
+# Rivers that end in another river: their last point is moved onto that river's course
+TRIBUTARIES = {"river-12": "river-10"}
 
 WATER = "#bcd6ec"
 RIVER = "#3b78b5"
@@ -465,6 +487,24 @@ def valdren_outline(coast, rivers, lake):
     return outline, border
 
 
+def place_svg(pid, name, kind, x, y, anchor, dx, dy):
+    if kind == "capital":
+        mark = (f'<circle cx="{x}" cy="{y}" r="17" fill="#fff" stroke="{INK}" stroke-width="5"/>'
+                f'<circle cx="{x}" cy="{y}" r="7" fill="{INK}"/>')
+    elif kind == "city":
+        mark = f'<circle cx="{x}" cy="{y}" r="12" fill="{INK}" stroke="#fff" stroke-width="3"/>'
+    elif kind == "hold":
+        mark = f'<path d="M{x - 15} {y + 11}L{x} {y - 15}L{x + 15} {y + 11}Z" fill="{INK}" stroke="#fff" stroke-width="3"/>'
+    elif kind == "fort":
+        mark = f'<rect x="{x - 11}" y="{y - 11}" width="22" height="22" fill="{INK}" stroke="#fff" stroke-width="3"/>'
+    else:
+        mark = f'<circle cx="{x}" cy="{y}" r="8" fill="#fff" stroke="{INK}" stroke-width="4"/>'
+    size, weight = (32, ' font-weight="bold"') if kind == "capital" else (24, "")
+    label = (f'<text x="{x + dx}" y="{y + dy}" font-size="{size}"{weight} text-anchor="{anchor}" fill="{INK}" '
+             f'stroke="{LAND}" stroke-width="8" paint-order="stroke">{name}</text>')
+    return f'<g id="place-{pid}" data-name="{name}" data-kind="{kind}" data-x="{x}" data-y="{y}">{mark}{label}</g>'
+
+
 def km(points):
     return round(sum(math.dist(a, b) for a, b in zip(points, points[1:])))
 
@@ -524,6 +564,12 @@ def build():
     LAND_SHAPE = coast
     river_lines = [clip_to_land(bend(to_coast(p, coast), random.Random(n + 51), rough=0.2, min_len=16), coast)
                    for n, (_, _, p) in enumerate(RIVERS)]
+    by_id = {rid: n for n, (rid, _, _) in enumerate(RIVERS)}
+    for rid, target in TRIBUTARIES.items():
+        line, main = river_lines[by_id[rid]], river_lines[by_id[target]]
+        river_lines[by_id[rid]] = line[:-1] + [min(main, key=lambda q: math.dist(q, line[-1]))]
+    road_lines = [[(round(x), round(y)) for x, y in bend(p, random.Random(n + 91), rough=0.06, min_len=30)]
+                  for n, (_, _, _, p) in enumerate(ROADS)]
     lake_shapes = [jagged(poly, random.Random(n + 31), rough=0.22, min_len=14) for n, (_, poly) in enumerate(LAKES)]
     valdren, valdren_border = valdren_outline(coast, {rid: line for (rid, _, _), line in zip(RIVERS, river_lines)}, lake_shapes[0])
 
@@ -546,7 +592,7 @@ def build():
            f'<polyline id="border-valdren" points="{pts(valdren_border)}" fill="none" stroke="#8a3b2e" stroke-width="5" '
            f'stroke-dasharray="20 12" stroke-opacity="0.75"/>',
            '<g id="land-cover" clip-path="url(#land)">',
-           *[cover_svg(k, aid, poly, random.Random(n + 71), river_lines, lake_shapes)
+           *[cover_svg(k, aid, poly, random.Random(n + 71), river_lines + road_lines, lake_shapes)
              for n, (k, aid, poly) in enumerate(AREAS)],
            '</g>',
            f'<g id="rivers" fill="none" stroke="{RIVER}" stroke-linejoin="round" stroke-linecap="round">',
@@ -578,6 +624,11 @@ def build():
            f'<text x="{KINGDOM_LABEL[2]}" y="{KINGDOM_LABEL[3] + 46}" font-size="40" letter-spacing="10" text-anchor="middle" '
            f'fill="#7a3428" stroke="{LAND}" stroke-width="8" paint-order="stroke">{KINGDOM_LABEL[1]}</text>',
            '</g>',
+           '<g id="roads" fill="none" stroke="#8b5a2b" stroke-width="6" stroke-dasharray="1 13" stroke-linecap="round">',
+           *[f'  <polyline id="{rid}" data-from="{a}" data-to="{b}" data-km="{km(line)}" points="{pts(line)}"/>'
+             for (rid, a, b, _), line in zip(ROADS, road_lines)],
+           '</g>',
+           '<g id="places">', *[place_svg(*p) for p in PLACES], '</g>',
            compass(3600, -150),
            f'<rect x="{-M}" y="{H + M}" width="{W + 2 * M}" height="{LEGEND_H}" fill="{LAND}"/>',
            f'<line x1="{-M}" y1="{H + M}" x2="{W + M}" y2="{H + M}" stroke="{INK}" stroke-width="3"/>',
