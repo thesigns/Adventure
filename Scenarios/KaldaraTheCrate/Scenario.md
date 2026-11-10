@@ -10,7 +10,7 @@ Scenariusz jest pierwszą częścią kampanii. Drugą będzie podróż ferdem z 
 
 ## Świat
 
-Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomioty*, *Ślady trolli*, *Głód*) i `Settings/Kaldara/Mechanics.md` (*Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*, *Pieniądze i ceny*).
+Wszystko, co MG musi wiedzieć o Austhavn, trollach i pieniądzach, jest w settingu: `Settings/Kaldara/Geography.md` (*Austhavn*), `Settings/Kaldara/Trolls.md` (zwłaszcza *Pomioty*, *Ślady trolli*, *Głód*), `Settings/Kaldara/Mechanics.md` (*Słońce i trolle*, *Światło razi trolle*, *Trolle i ogień*) i `Settings/Kaldara/Economy.md`.
 
 ### Czas i światło
 
@@ -42,7 +42,7 @@ Noc jest pogodna i wietrzna, a wiatr od fiordu zimny, ale nie ma mrozu. Mokre ub
 
 ### Ceny w Austhavn
 
-Postać płaci siekańcami srebra (zob. *Pieniądze i ceny* w `Settings/Kaldara/Mechanics.md`):
+Postać płaci siekańcami srebra (zob. `Settings/Kaldara/Economy.md`):
 
 | Towar albo usługa                      | Cena       |
 |----------------------------------------|------------|

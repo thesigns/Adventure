@@ -1,6 +1,6 @@
 # Kaldara: mechanika
 
-Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie, pieniądze i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
+Ten plik przekłada świat Kaldary na mechanikę systemu: postacie, czas i światło, trolle i inne istoty, broń, pancerz, leczenie, magię, przedmioty krasnoludzkie i prawo. Część mechaniki jest w osobnych plikach: choroby w `Diseases.md`, pieniądze i ceny w `Economy.md`. Świat opisują pozostałe pliki settingu (zob. *Pliki settingu* w `Setting.md`). Gdy ten plik i opis świata mówią o tym samym, fabułę rozstrzyga opis świata, a liczby ten plik.
 
 ## Postacie
 
@@ -31,7 +31,7 @@ Przykładowe profesje i ich typowy ekwipunek:
 - **uczeń Domu Visara:** wiedza o krasnoludach, przerysowane runy (nieczytelne jak wszystkie), mapy ruin z opowieści śmiałków, pismo; woskowe tabliczki, węgiel, nóż
 - **Zaprzysiężony Solvara:** walka, tropienie draugrów i trolli, obrzędy Solvara; włócznia, tarcza ze znakiem słońca, hełm, przeszywanica; kolczugę bractwo daje dopiero starszym
 
-Każda postać ma też przy sobie nóż, krzesiwo, płaszcz z samodziału, bukłak, prowiant na 2–3 dni (suszona ryba, ser, masło) i sakiewkę z kwotą typową dla swojego statusu (zob. *Pieniądze i ceny*).
+Każda postać ma też przy sobie nóż, krzesiwo, płaszcz z samodziału, bukłak, prowiant na 2–3 dni (suszona ryba, ser, masło) i sakiewkę z kwotą typową dla swojego statusu (zob. *Sakiewka na start* w `Economy.md`).
 
 ### Przykładowe zalety i wady
 
@@ -76,13 +76,13 @@ Zasady, mapa i notatki MG podają odległości w kilometrach i metrach, bo tak l
 
 | Miara         | Ile to                                                 | Przykład                                                |
 |---------------|--------------------------------------------------------|---------------------------------------------------------|
-| łokieć        | ok. pół metra, od łokcia do końca palców               | samodział mierzy się łokciami (zob. *Pieniądze i ceny*) |
+| łokieć        | ok. pół metra, od łokcia do końca palców               | samodział mierzy się łokciami (zob. `Economy.md`)      |
 | sążeń         | ok. 2 m, rozpiętość ramion                             | głębokość szybu, długość liny: „lina na dziesięć sążni” |
 | strzał z łuku | ok. 150 m                                              | „wejście jest strzał z łuku od strumienia”              |
 | rast          | ok. 10 km, odcinek, po którym daje się odpocząć koniom | „do Tingvold jest sześć, siedem rastów”                 |
 | dzień drogi   | tyle, ile przejeżdża się konno latem, ok. 40–50 km     | „Grimsfjord leży sześć dni drogi stąd”                  |
 
-Grzywna to także miara wagi, około 200 g, a uncja to jej ósma część (zob. *Pieniądze i ceny*). Czas ludzie mierzą porami dnia i położeniem słońca, a nie godzinami: o świcie, w południe, o zmierzchu, po zgaśnięciu poświaty. Godziny z tabeli *Dzień i noc* są dla MG.
+Grzywna to także miara wagi, około 200 g, a uncja to jej ósma część (zob. *Waluta* w `Economy.md`). Czas ludzie mierzą porami dnia i położeniem słońca, a nie godzinami: o świcie, w południe, o zmierzchu, po zgaśnięciu poświaty. Godziny z tabeli *Dzień i noc* są dla MG.
 
 ## Czas, światło i trolle
 
@@ -383,7 +383,7 @@ Ludzie leczą się w tempie z zasad podstawowych (zob. *Leczenie* w `Rules/Healt
 
 Oba sposoby się sumują: ciężko ranny człowiek przy gorącym źródle i z maścią zdrowieje o 7 + 2 + 2 = 11% na dobę.
 
-**Modlitwa w świątyni.** W większych miastach kapłani modlą się nad rannym za ofiarę (zob. *Pieniądze i ceny*). Bóg odpowiada po swojemu, więc MG rzuca od razu, bez PDT:
+**Modlitwa w świątyni.** W większych miastach kapłani modlą się nad rannym za ofiarę (zob. *Ceny* w `Economy.md`). Bóg odpowiada po swojemu, więc MG rzuca od razu, bez PDT:
 
 | Wynik | Rezultat                                          |
 |-------|---------------------------------------------------|
@@ -450,58 +450,6 @@ Przykłady dla autorów scenariuszy:
 - hełm, w którym właściciel widzi w ciemności jak troll, ale za dnia jest prawie ślepy,
 - młot, który wraca do ręki rzucającego, jeśli ten zna słowo, którego nikt nie zna,
 - amulet, który stygnie w obecności nieumarłych.
-
-## Pieniądze i ceny
-
-Na wyspie nie bije się monety. Ceny, grzywny i główszczyznę liczy się w **łokciach samodziału**, czyli tkaniny z owczej wełny o ustalonej prawem szerokości i jakości, oraz w uncjach i grzywnach srebra. To miara wartości, a nie to, co nosi się w sakiewce: ludzie mówią „to warte trzy łokcie”, ale nikt nie idzie do gospody z naręczem sukna.
-
-- **1 uncja srebra** = 6 łokci samodziału
-- **1 grzywna srebra** = 8 uncji srebra = 48 łokci samodziału
-- **1 uncja złota** = 8 uncji srebra, czyli tyle co grzywna srebra
-
-Czym się płaci:
-
-- **Srebro na wagę.** Każdy nosi sakiewkę z **siekańcami**, czyli kawałkami srebra pociętymi z monet, bransolet i sztabek, a kupcy, gospodarze i karczmarze mają wagę. Drobna płatność, np. za piwo albo nocleg, to mały okruch srebra albo kawałek odcięty od bransolety. Srebrne bransolety i naszyjniki nosi się nie tylko dla ozdoby: to majątek, z którego w potrzebie odcina się kawałek.
-- **Płatność w naturze.** Na wsi płaci się suszoną rybą, masłem, wełną, owcą albo pracą. Samodziałem płaci się naprawdę tylko przy większych sprawach, np. kupcom za towar albo przy rozliczeniu długu.
-- **Gościna.** W zagrodzie wędrowiec nie płaci za nocleg, bo gościnność jest obowiązkiem (zob. *Klimat i życie na wyspie* w `Setting.md`), ale wypada mu zostawić dar: okruch srebra, nóż, pomoc przy pracy. Płatne gospody są tylko w miastach.
-- **Monety z kontynentu** krążą w Austhavn, ale i tak przyjmuje się je na wagę, jako srebro.
-- **Krasnoludzkie złoto** liczy się na wagę jak srebro, ale jest osiem razy cenniejsze.
-
-Na karcie postaci pieniądze zapisuje się w wartości, np. „srebro: 3 uncje i 4 łokcie w siekańcach”, a majątek w przedmiotach osobno, np. „srebrna bransoleta, ok. 2 uncje”.
-
-Orientacyjne ceny. Uncja i grzywna bez dopisku to zawsze uncja i grzywna srebra, także w tabeli i na karcie postaci, a złoto zawsze się nazywa wprost.
-
-| Towar albo usługa                                    | Cena                  |
-|------------------------------------------------------|-----------------------|
-| porcja prowiantu na dzień (suszona ryba, ser, masło) | 1 łokieć              |
-| nocleg z wieczerzą w gospodzie w mieście             | 1 łokieć              |
-| dzban piwa albo miodu                                | pół łokcia            |
-| pięć pochodni smolnych albo dziesięć łuczyw          | 1 łokieć              |
-| porcja tranu do kaganka                              | pół łokcia            |
-| świeca łojowa                                        | 1 łokieć              |
-| lina z foczej skóry, 20 m                            | 3 łokcie              |
-| maść albo napar zielarki, porcja                     | 1 łokieć              |
-| kożuch albo futrzany śpiwór                          | 1 uncja               |
-| owca                                                 | 1 uncja               |
-| nóż                                                  | 2 łokcie              |
-| topór albo włócznia                                  | 1 uncja               |
-| tarcza                                               | 1 uncja               |
-| łuk z 20 strzałami                                   | 2 uncje               |
-| hełm                                                 | 4 uncje               |
-| przeszywanica                                        | 2 uncje               |
-| konik                                                | 1 grzywna             |
-| krowa                                                | 2 grzywny             |
-| miecz                                                | 4–8 grzywien          |
-| kolczuga                                             | 8–12 grzywien         |
-| łódź wiosłowa                                        | 2–4 grzywny           |
-| najemnik albo przewodnik na dzień                    | 1 uncja               |
-| modlitwa w świątyni nad rannym                       | 1–3 uncje             |
-| zbadanie przedmiotu w Domu Visara                    | 1–5 grzywien          |
-| krasnoludzka broń bez mocy                           | 10–20 grzywien        |
-| krasnoludzki przedmiot z mocą                        | od 30 grzywien wzwyż  |
-| tytuł wodzowski                                      | od 100 grzywien wzwyż |
-
-Krasnoludzkie rzeczy najlepiej sprzedaje się w Austhavn. Gdzie indziej kupcy płacą najwyżej połowę ceny, a na wsi nikt nie ma tyle srebra. Typowa sakiewka na start to kilka uncji u gospodarza i wojownika, kilka grzywien u kupca i kilka łokci u parobka.
 
 ## Prawo, waśń i dobre imię
 

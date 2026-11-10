@@ -13,7 +13,8 @@ O człowieku świadczy tu jego imię: co zrobił, komu dotrzymał słowa, kogo p
 - `Gods.md`: bogowie i ich kulty
 - `Bestiary.md`: potwory z głębin, strażnicy ruin i stwory z powierzchni
 - `Diseases.md`: choroby i ich mechanika: czarny kaszel, gorączka z rany, gnilec, ślepota śnieżna, czerwonka, zapalenie płuc
-- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie, ceny i prawo
+- `Mechanics.md`: świat przełożony na mechanikę systemu: profesje, zalety i wady, kalendarz, dzień i noc, słońce i trolle, światło, zimno, podróże, przeciwnicy, broń, pancerz, leczenie, magia, przedmioty krasnoludzkie i prawo
+- `Economy.md`: gospodarka, waluta, czym się płaci, ceny, sprzedaż łupu, sakiewka na start
 - `Maps/MapKaldara.svg`: mapa wyspy w skali 1 piksel = 500 m
 - `Tables/Daylight.json`: wschody, zachody i ciemność z tabeli *Dzień i noc* w `Mechanics.md`, z których `Scripts/gm.py czas --setting Kaldara` wypisuje porę dnia
 - `Tables/GmTables.json`: tablice ukrytych rzutów dla `Scripts/gm.py` i `Scripts/roll.py --ukryty` (zob. *Podróż w ferdzie* w `Mechanics.md` i `Diseases.md`)
@@ -99,7 +100,6 @@ Ludzie na Kaldarze nie mają króla. Rządzą się sami, według wspólnego praw
 
 - Klimat jest zimny i wietrzny. Lato jest krótkie i chłodne, z białymi nocami. Zima jest długa, ciemna i śnieżna, z zorzami na niebie.
 - Wyspa leży tuż pod kręgiem polarnym. Mniej więcej od początku maja do początku sierpnia noc nie ciemnieje do końca (zob. *Dzień i noc* w `Mechanics.md`). W środku zimy dzień trwa kilka godzin, a na północnym wybrzeżu słońce ledwo wychyla się zza horyzontu.
-- Wyspa żyje z morza i owiec: rybołówstwo, wieloryby, wełna, suszone ryby. Zboże rośnie tylko na nizinach zachodniej ćwierci i jest drogie.
 - Na wyspie hoduje się małe, krępe i wytrzymałe konie. To podstawowy środek podróży po lądzie. Kto nie ma konia, chodzi pieszo i jest biedakiem.
 - Domy są z kamienia i darni, w miastach także z drewna sprowadzanego zza morza. Drewno jest cenne. Wiele budowli stoi na fundamentach krasnoludzkich albo jest z nich zbudowanych.
 - Ogień w palenisku to życie. W każdym domu płonie bez przerwy przez całą zimę, a jego wygaśnięcie uchodzi za bardzo zły znak.
