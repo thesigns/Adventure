@@ -10,8 +10,9 @@ cyberpunk, horror and others. It does not assume any particular convention,
 and the player character can die. It has its own simple mechanics and does
 not use D&D rules.
 
-The rules, settings, scenarios and scripts are in English, but the game itself is played
-in Polish: the GM translates the rules and descriptions in the narration.
+All files in the repository are in English, but you choose the language of
+play, e.g. English or Polish: the GM narrates in that language and translates
+the rules and descriptions as it goes.
 
 ## How to play
 
