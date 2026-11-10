@@ -30,7 +30,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 A character's species sets the reference point: traits typical of it are not advantages (see `Rules/CharacterCreation.md`).
 
-- **Humans:** the most numerous, live everywhere, do everything.
+- **Humans:** the most numerous, live everywhere, do everything. Physically unremarkable, but restless and expansive: they have many children, eagerly explore and settle new lands, which often leads to wars. Natural conquerors.
 - **Elves:** live several centuries, slender, graceful. Keen senses, see well in starlight and dim light, move quietly in forests, archers and mages. Proud and distant towards shorter-lived peoples.
 - **Dwarves:** short, sturdy, bearded, live about three centuries. See well in dim light underground, judge stone, metal and tunnels, tough and stubborn. Smiths, miners, warriors with axes and hammers. Hold grudges, love gold, distrust elves.
 - **Halflings:** half human height, cheerful, love comfort and food. Quiet, nimble, lucky, good with slings. Rarely leave home.
