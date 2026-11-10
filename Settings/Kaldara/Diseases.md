@@ -20,7 +20,7 @@ Choroba śmiałków: łapie się ją głęboko pod ziemią, mija na powierzchni.
 
 ### Prawda (nie wie nikt na wyspie)
 
-- Purchawki przyszły z Głębin. Razem z trollami zgubiły krasnoludy (zob. `Dwarves.md`).
+- Purchawki pochodzą z Głębin. Razem z trollami zgubiły krasnoludy (zob. `Dwarves.md`).
 
 ### Zakażenie
 
