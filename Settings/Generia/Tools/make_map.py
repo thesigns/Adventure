@@ -22,7 +22,7 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parent.parent / "Maps" / "GeneriaMap.svg"
 W, H = 3500, 2500          # map area in km
 M = 400                    # sea margin around the map area
-LEGEND_H = 200             # legend strip below the map
+LEGEND_H = 260             # legend strip below the map
 LAND = "#f6f0e1"
 SEA = "#cfe2f1"
 SHALLOW = "#e2eef7"
@@ -300,6 +300,18 @@ PLACES = [
     ("mereton", "Mereton", "city", 1468, 1598, "start", 20, -16),
     ("hollowbury", "Hollowbury", "town", 2020, 2000, "end", -16, 8),
     ("aelindor", "Aelindor", "city", 488, 1810, "start", 20, 8),
+    # dwarven holds in the Ironpeaks
+    ("khaz-dorun", "Khaz Dorun", "hold", 1690, 1045, "middle", 0, 46),
+    ("durnhold", "Durnhold", "hold", 1010, 1365, "end", -20, -12),
+    # the way into the Ashlands: the valley between the ranges and a pass over the Crookback Mountains
+    ("ashgate", "Ashgate", "fort", 2175, 1110, "end", -20, 8),
+    ("crows-pass", "Crow's Pass", "pass", 2515, 1262, "start", 18, -16),
+    # ruins of the Empire of Aurelion
+    ("aurelion", "Aurelion", "ruin", 3080, 520, "start", 20, 8),
+    ("drowned-spires", "Drowned Spires", "ruin", 1075, 2115, "start", 18, 8),
+    ("hollow-crown", "Hollow Crown", "ruin", 380, 1270, "middle", 0, 38),
+    ("lonely-tower", "Lonely Tower", "ruin", 590, 540, "middle", 0, -20),
+    ("sunstone", "Sunstone", "ruin", 2620, 1700, "start", 18, 8),
 ]
 
 # Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km
@@ -495,11 +507,23 @@ def place_svg(pid, name, kind, x, y, anchor, dx, dy):
         mark = f'<circle cx="{x}" cy="{y}" r="12" fill="{INK}" stroke="#fff" stroke-width="3"/>'
     elif kind == "hold":
         mark = f'<path d="M{x - 15} {y + 11}L{x} {y - 15}L{x + 15} {y + 11}Z" fill="{INK}" stroke="#fff" stroke-width="3"/>'
+    elif kind == "ruin":
+        mark = (f'<path d="M{x - 12} {y + 9}V{y - 4}A12 12 0 0 1 {x + 12} {y - 4}V{y + 9}" fill="none" stroke="#fff" '
+                f'stroke-width="8"/><path d="M{x - 12} {y + 9}V{y - 4}A12 12 0 0 1 {x + 12} {y - 4}V{y + 9}" fill="none" '
+                f'stroke="{INK}" stroke-width="3.5" stroke-dasharray="11 5"/>'
+                f'<path d="M{x - 16} {y + 10}H{x + 16}" stroke="{INK}" stroke-width="3"/>')
+    elif kind == "pass":
+        mark = (f'<path d="M{x - 14} {y - 12}Q{x - 4} {y} {x - 14} {y + 12}M{x + 14} {y - 12}Q{x + 4} {y} {x + 14} {y + 12}" '
+                f'fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>'
+                f'<path d="M{x - 14} {y - 12}Q{x - 4} {y} {x - 14} {y + 12}M{x + 14} {y - 12}Q{x + 4} {y} {x + 14} {y + 12}" '
+                f'fill="none" stroke="{INK}" stroke-width="3.5" stroke-linecap="round"/>')
     elif kind == "fort":
         mark = f'<rect x="{x - 11}" y="{y - 11}" width="22" height="22" fill="{INK}" stroke="#fff" stroke-width="3"/>'
     else:
         mark = f'<circle cx="{x}" cy="{y}" r="8" fill="#fff" stroke="{INK}" stroke-width="4"/>'
     size, weight = (32, ' font-weight="bold"') if kind == "capital" else (24, "")
+    if kind in ("ruin", "pass"):
+        size, weight = 21, ' font-style="italic"'
     label = (f'<text x="{x + dx}" y="{y + dy}" font-size="{size}"{weight} text-anchor="{anchor}" fill="{INK}" '
              f'stroke="{LAND}" stroke-width="8" paint-order="stroke">{name}</text>')
     return f'<g id="place-{pid}" data-name="{name}" data-kind="{kind}" data-x="{x}" data-y="{y}">{mark}{label}</g>'
@@ -541,16 +565,55 @@ def compass(cx, cy):
             f'<text x="{cx}" y="{cy - 92}" font-size="30" font-weight="bold" text-anchor="middle">N</text></g>')
 
 
+def mark_svg(kind, x, y):
+    """Just the symbol of a place, as drawn on the map."""
+    return place_svg("legend", "", kind, x, y, "start", 0, 0).split("<text")[0].split('">', 1)[1]
+
+
 def legend():
     top = H + M + 30
-    s = [f'<g id="legend" font-size="26">',
+    s = [f'<g id="legend" font-size="24">',
          f'<text x="{-M + 60}" y="{top + 48}" font-size="52" font-weight="bold" letter-spacing="10">GENERIA</text>',
          f'<text x="{-M + 62}" y="{top + 88}" font-style="italic">1 px = 1 km, north up</text>']
-    sx, sy = 700, top + 40
+    sx, sy = -M + 62, top + 120
     for i in range(5):
-        s.append(f'<rect x="{sx + i * 100}" y="{sy}" width="100" height="14" fill="{INK if i % 2 == 0 else "#fff"}" stroke="{INK}" stroke-width="2"/>')
+        s.append(f'<rect x="{sx + i * 100}" y="{sy}" width="100" height="12" fill="{INK if i % 2 == 0 else "#fff"}" stroke="{INK}" stroke-width="2"/>')
     for i, t in ((0, "0"), (5, "500 km")):
-        s.append(f'<text x="{sx + i * 100}" y="{sy + 46}" text-anchor="{"start" if i == 0 else "middle"}">{t}</text>')
+        s.append(f'<text x="{sx + i * 100}" y="{sy + 40}" text-anchor="{"start" if i == 0 else "middle"}">{t}</text>')
+
+    def line(stroke, width, dash=""):
+        return lambda x, y: (f'<line x1="{x - 24}" y1="{y}" x2="{x + 24}" y2="{y}" stroke="{stroke}" stroke-width="{width}" '
+                             f'stroke-linecap="round"{f" stroke-dasharray={chr(34)}{dash}{chr(34)}" if dash else ""}/>')
+
+    def patch(fill, glyph=None, dy=8):
+        return lambda x, y: (f'<rect x="{x - 28}" y="{y - 20}" width="56" height="34" rx="6" fill="{fill}"/>'
+                             + (f'<use href="#g-{glyph}" x="{x}" y="{y + dy}"/>' if glyph else ""))
+
+    items = [
+        (lambda x, y: mark_svg("capital", x, y), "capital"),
+        (lambda x, y: mark_svg("city", x, y), "city"),
+        (lambda x, y: mark_svg("town", x, y), "town"),
+        (lambda x, y: mark_svg("hold", x, y), "dwarven hold"),
+        (lambda x, y: mark_svg("fort", x, y), "fort"),
+        (lambda x, y: mark_svg("pass", x, y), "pass"),
+        (lambda x, y: mark_svg("ruin", x, y), "ruin"),
+        (line("#8b5a2b", 6, "1 13"), "road"),
+        (line(RIVER, 5), "river"),
+        (line("#8a3b2e", 5, "20 12"), "border"),
+        (patch("#e6dcc8", "peak", 14), "young mountains"),
+        (patch("#e6dcc8", "hump", 10), "old mountains"),
+        (patch("#dbe7c9", "tree", 6), "forest"),
+        (patch("#dce6d6", "pine", 10), "coniferous forest"),
+        (patch("#dde7de", "reed", 8), "marsh"),
+        (patch("#e3edcc", "hill", 6), "farmland hills"),
+        (patch("#ebe4da", "ash", 0), "wastes"),
+        (patch(WATER), "lake"),
+    ]
+    kx, ky = 760, top + 40
+    for i, (draw, text) in enumerate(items):
+        col, row = divmod(i, 3)
+        x, y = kx + col * 520, ky + row * 62
+        s.append(draw(x, y) + f'<text x="{x + 44}" y="{y + 8}">{text}</text>')
     s.append('</g>')
     return "\n".join(s)
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-400 -400 4300 3500" width="4300" height="3500" font-family="Georgia, 'Times New Roman', serif" fill="#2b2620">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-400 -400 4300 3560" width="4300" height="3560" font-family="Georgia, 'Times New Roman', serif" fill="#2b2620">
 <title>Generia</title>
 <desc>Generia, 1 px = 1 km, north up, x east, y south.</desc>
 <defs>
@@ -122,20 +122,47 @@
 <g id="place-mereton" data-name="Mereton" data-kind="city" data-x="1468" data-y="1598"><circle cx="1468" cy="1598" r="12" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="1488" y="1582" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Mereton</text></g>
 <g id="place-hollowbury" data-name="Hollowbury" data-kind="town" data-x="2020" data-y="2000"><circle cx="2020" cy="2000" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="2004" y="2008" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Hollowbury</text></g>
 <g id="place-aelindor" data-name="Aelindor" data-kind="city" data-x="488" data-y="1810"><circle cx="488" cy="1810" r="12" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="508" y="1818" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Aelindor</text></g>
+<g id="place-khaz-dorun" data-name="Khaz Dorun" data-kind="hold" data-x="1690" data-y="1045"><path d="M1675 1056L1690 1030L1705 1056Z" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="1690" y="1091" font-size="24" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Khaz Dorun</text></g>
+<g id="place-durnhold" data-name="Durnhold" data-kind="hold" data-x="1010" data-y="1365"><path d="M995 1376L1010 1350L1025 1376Z" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="990" y="1353" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Durnhold</text></g>
+<g id="place-ashgate" data-name="Ashgate" data-kind="fort" data-x="2175" data-y="1110"><rect x="2164" y="1099" width="22" height="22" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="2155" y="1118" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Ashgate</text></g>
+<g id="place-crows-pass" data-name="Crow's Pass" data-kind="pass" data-x="2515" data-y="1262"><path d="M2501 1250Q2511 1262 2501 1274M2529 1250Q2519 1262 2529 1274" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M2501 1250Q2511 1262 2501 1274M2529 1250Q2519 1262 2529 1274" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-linecap="round"/><text x="2533" y="1246" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Crow's Pass</text></g>
+<g id="place-aurelion" data-name="Aurelion" data-kind="ruin" data-x="3080" data-y="520"><path d="M3068 529V516A12 12 0 0 1 3092 516V529" fill="none" stroke="#fff" stroke-width="8"/><path d="M3068 529V516A12 12 0 0 1 3092 516V529" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M3064 530H3096" stroke="#2b2620" stroke-width="3"/><text x="3100" y="528" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Aurelion</text></g>
+<g id="place-drowned-spires" data-name="Drowned Spires" data-kind="ruin" data-x="1075" data-y="2115"><path d="M1063 2124V2111A12 12 0 0 1 1087 2111V2124" fill="none" stroke="#fff" stroke-width="8"/><path d="M1063 2124V2111A12 12 0 0 1 1087 2111V2124" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M1059 2125H1091" stroke="#2b2620" stroke-width="3"/><text x="1093" y="2123" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Drowned Spires</text></g>
+<g id="place-hollow-crown" data-name="Hollow Crown" data-kind="ruin" data-x="380" data-y="1270"><path d="M368 1279V1266A12 12 0 0 1 392 1266V1279" fill="none" stroke="#fff" stroke-width="8"/><path d="M368 1279V1266A12 12 0 0 1 392 1266V1279" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M364 1280H396" stroke="#2b2620" stroke-width="3"/><text x="380" y="1308" font-size="21" font-style="italic" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Hollow Crown</text></g>
+<g id="place-lonely-tower" data-name="Lonely Tower" data-kind="ruin" data-x="590" data-y="540"><path d="M578 549V536A12 12 0 0 1 602 536V549" fill="none" stroke="#fff" stroke-width="8"/><path d="M578 549V536A12 12 0 0 1 602 536V549" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M574 550H606" stroke="#2b2620" stroke-width="3"/><text x="590" y="520" font-size="21" font-style="italic" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Lonely Tower</text></g>
+<g id="place-sunstone" data-name="Sunstone" data-kind="ruin" data-x="2620" data-y="1700"><path d="M2608 1709V1696A12 12 0 0 1 2632 1696V1709" fill="none" stroke="#fff" stroke-width="8"/><path d="M2608 1709V1696A12 12 0 0 1 2632 1696V1709" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M2604 1710H2636" stroke="#2b2620" stroke-width="3"/><text x="2638" y="1708" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Sunstone</text></g>
 </g>
 <g id="compass"><circle cx="3600" cy="-150" r="58" fill="none" stroke="#2b2620" stroke-width="2"/><path d="M3600 -230L3614 -150L3600 -160L3586 -150Z" fill="#2b2620"/><path d="M3600 -70L3614 -150L3600 -140L3586 -150Z" fill="#fff" stroke="#2b2620" stroke-width="2"/><path d="M3530 -150L3600 -160L3670 -150L3600 -140Z" fill="#fff" stroke="#2b2620" stroke-width="2"/><text x="3600" y="-242" font-size="30" font-weight="bold" text-anchor="middle">N</text></g>
-<rect x="-400" y="2900" width="4300" height="200" fill="#f6f0e1"/>
+<rect x="-400" y="2900" width="4300" height="260" fill="#f6f0e1"/>
 <line x1="-400" y1="2900" x2="3900" y2="2900" stroke="#2b2620" stroke-width="3"/>
-<rect x="-388" y="-388" width="4276" height="3476" fill="none" stroke="#2b2620" stroke-width="4"/>
-<g id="legend" font-size="26">
+<rect x="-388" y="-388" width="4276" height="3536" fill="none" stroke="#2b2620" stroke-width="4"/>
+<g id="legend" font-size="24">
 <text x="-340" y="2978" font-size="52" font-weight="bold" letter-spacing="10">GENERIA</text>
 <text x="-338" y="3018" font-style="italic">1 px = 1 km, north up</text>
-<rect x="700" y="2970" width="100" height="14" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
-<rect x="800" y="2970" width="100" height="14" fill="#fff" stroke="#2b2620" stroke-width="2"/>
-<rect x="900" y="2970" width="100" height="14" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
-<rect x="1000" y="2970" width="100" height="14" fill="#fff" stroke="#2b2620" stroke-width="2"/>
-<rect x="1100" y="2970" width="100" height="14" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
-<text x="700" y="3016" text-anchor="start">0</text>
-<text x="1200" y="3016" text-anchor="middle">500 km</text>
+<rect x="-338" y="3050" width="100" height="12" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
+<rect x="-238" y="3050" width="100" height="12" fill="#fff" stroke="#2b2620" stroke-width="2"/>
+<rect x="-138" y="3050" width="100" height="12" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
+<rect x="-38" y="3050" width="100" height="12" fill="#fff" stroke="#2b2620" stroke-width="2"/>
+<rect x="62" y="3050" width="100" height="12" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
+<text x="-338" y="3090" text-anchor="start">0</text>
+<text x="162" y="3090" text-anchor="middle">500 km</text>
+<circle cx="760" cy="2970" r="17" fill="#fff" stroke="#2b2620" stroke-width="5"/><circle cx="760" cy="2970" r="7" fill="#2b2620"/><text x="804" y="2978">capital</text>
+<circle cx="760" cy="3032" r="12" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="804" y="3040">city</text>
+<circle cx="760" cy="3094" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="804" y="3102">town</text>
+<path d="M1265 2981L1280 2955L1295 2981Z" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="1324" y="2978">dwarven hold</text>
+<rect x="1269" y="3021" width="22" height="22" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="1324" y="3040">fort</text>
+<path d="M1266 3082Q1276 3094 1266 3106M1294 3082Q1284 3094 1294 3106" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M1266 3082Q1276 3094 1266 3106M1294 3082Q1284 3094 1294 3106" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-linecap="round"/><text x="1324" y="3102">pass</text>
+<path d="M1788 2979V2966A12 12 0 0 1 1812 2966V2979" fill="none" stroke="#fff" stroke-width="8"/><path d="M1788 2979V2966A12 12 0 0 1 1812 2966V2979" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M1784 2980H1816" stroke="#2b2620" stroke-width="3"/><text x="1844" y="2978">ruin</text>
+<line x1="1776" y1="3032" x2="1824" y2="3032" stroke="#8b5a2b" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 13"/><text x="1844" y="3040">road</text>
+<line x1="1776" y1="3094" x2="1824" y2="3094" stroke="#3b78b5" stroke-width="5" stroke-linecap="round"/><text x="1844" y="3102">river</text>
+<line x1="2296" y1="2970" x2="2344" y2="2970" stroke="#8a3b2e" stroke-width="5" stroke-linecap="round" stroke-dasharray="20 12"/><text x="2364" y="2978">border</text>
+<rect x="2292" y="3012" width="56" height="34" rx="6" fill="#e6dcc8"/><use href="#g-peak" x="2320" y="3046"/><text x="2364" y="3040">young mountains</text>
+<rect x="2292" y="3074" width="56" height="34" rx="6" fill="#e6dcc8"/><use href="#g-hump" x="2320" y="3104"/><text x="2364" y="3102">old mountains</text>
+<rect x="2812" y="2950" width="56" height="34" rx="6" fill="#dbe7c9"/><use href="#g-tree" x="2840" y="2976"/><text x="2884" y="2978">forest</text>
+<rect x="2812" y="3012" width="56" height="34" rx="6" fill="#dce6d6"/><use href="#g-pine" x="2840" y="3042"/><text x="2884" y="3040">coniferous forest</text>
+<rect x="2812" y="3074" width="56" height="34" rx="6" fill="#dde7de"/><use href="#g-reed" x="2840" y="3102"/><text x="2884" y="3102">marsh</text>
+<rect x="3332" y="2950" width="56" height="34" rx="6" fill="#e3edcc"/><use href="#g-hill" x="3360" y="2976"/><text x="3404" y="2978">farmland hills</text>
+<rect x="3332" y="3012" width="56" height="34" rx="6" fill="#ebe4da"/><use href="#g-ash" x="3360" y="3032"/><text x="3404" y="3040">wastes</text>
+<rect x="3332" y="3074" width="56" height="34" rx="6" fill="#bcd6ec"/><text x="3404" y="3102">lake</text>
 </g>
 </svg>
