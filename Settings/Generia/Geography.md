@@ -9,7 +9,7 @@
 
 - **Kingdom of Valdren:** the human heartland in the centre. King, nobles, knights, peasants. Capital: Kingsbridge, on the river Vael.
 - **Free cities of the coast:** merchant republics ruled by guild councils. The largest is Port Seravel, home of thieves' guilds, wizards and every kind of trade.
-- **Elenwood:** an ancient forest in the west, the realm of the wood elves. Outsiders enter only with permission.
+- **Elenwood:** an ancient forest in the west, the largest remnant of the forests that once covered Generia, the realm of the wood elves. Outsiders enter only with permission.
 - **Ironpeaks:** mountains in the north, home of the dwarven clans. The great hold is Khaz Dorun.
 - **Greenhollow:** peaceful halfling farmland south of Valdren.
 - **Ashlands:** blasted wastes in the east, roamed by orc tribes.
