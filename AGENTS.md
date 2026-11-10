@@ -20,7 +20,7 @@ These rules always apply, in every response, without reminders:
 - `Campaigns/`: campaigns, i.e. the state of play, one folder per campaign (see *Campaigns*)
 - `Scripts/`: the system's shared Python scripts (see *Scripts*)
 
-File and folder names are in English and written in CamelCase with a capital letter, e.g. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. The exception is Python scripts, which by Python convention have lowercase names, e.g. `gm.py`, `make_map.py`. The content of the repository is in English: this file, `README.md`, the core rules, settings and scripts (comments, options and messages, e.g. `--campaign`, `--reveal`). The exception is the Crypt scenario, which is in Polish. The game is played in Polish: the GM translates the English rules and descriptions in the narration and keeps proper names in the original.
+File and folder names are in English and written in CamelCase with a capital letter, e.g. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. The exception is Python scripts, which by Python convention have lowercase names, e.g. `gm.py`, `make_map.py`. The content of the repository is in English: this file, `README.md`, the core rules, settings, scenarios and scripts (comments, options and messages, e.g. `--campaign`, `--reveal`). The game is played in Polish: the GM translates the English rules and descriptions in the narration and keeps proper names in the original.
 
 ## Core rules
 
@@ -83,7 +83,7 @@ The campaign folder contains:
 
 - `Character.md`: the character sheet (see *Character sheet* in `Rules/Rules.md`),
 - `Campaign.md`: the campaign log,
-- `<Scenario name>.md`: the progress of each scenario played, named the same as the scenario folder, e.g. `Crypt.md`; if the character plays the same scenario a second time, the file gets a number, e.g. `Crypt-2.md`,
+- `<Scenario name>.md`: the progress of each scenario played, named the same as the scenario folder, e.g. `TheCrypt.md`; if the character plays the same scenario a second time, the file gets a number, e.g. `TheCrypt-2.md`,
 - `Rolls.log`: the log of all the campaign's rolls, kept by the scripts (hidden rolls without results),
 - `Gm.json`: the GM's hidden state, i.e. the world clock, hidden events and hidden roll results, kept only by the scripts (see *GM secrets*),
 - `<Name>Map.json`, `<Name>Map.svg` and `<Name>Map.html`: the discovery state and the player map with fog of war, if the scenario or setting has a map (see *Maps*).
@@ -153,7 +153,7 @@ So that a map can be revealed, next to the SVG file lies an areas file with the 
 The GM reveals areas and secrets with the script `Scripts/fogmap.py`:
 
 ```
-python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2 --secret plyta
+python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --reveal 1 2 --secret plate
 ```
 
 The script saves the discovery state in the campaign folder and generates the player map `<Name>Map.svg` and the preview `<Name>Map.html`, which refreshes itself every two seconds. The option `--list` prints areas, secrets and the discovery state, `--hide` covers an area revealed by mistake, and `--open` opens the preview in the browser.
@@ -164,7 +164,7 @@ The script saves the discovery state in the campaign folder and generates the pl
 - When the character first enters terrain with a map, and every time they enter a new area, the GM prints its layout with the option `--plan` and describes the places based on it:
 
   ```
-  python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 2 --plan 2
+  python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --reveal 2 --plan 2
   ```
 
   The plan gives the labels visible on the player map, e.g. names and numbers of rooms, in order from west to east and with distances. The optional fields of the areas file let it split labels into the sides of a corridor and count objects in rooms. The plan works only for discovered areas and skips hidden elements, so it reveals nothing the player does not see on their map. If still in doubt, the GM can look at the full SVG map (see *Before play*).

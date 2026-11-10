@@ -1,10 +1,10 @@
 """Player map with fog of war: reveals only the map areas the character has discovered.
 
 Examples:
-    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2
-    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --secret plyta
-    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --list
-    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --open
+    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --reveal 1 2
+    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --secret plate
+    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --list
+    python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --open
 
 Next to the SVG map there must be an areas file with the same name and the
 extension .areas.json (e.g. MapCrypt.areas.json). It describes the areas to
@@ -13,7 +13,7 @@ reveal, the secrets and the GM-only elements (format: see AGENTS.md, Maps).
 The discovery state is saved in the campaign folder in <name>Map.json, and
 the player map in <name>Map.svg together with a self-refreshing preview
 <name>Map.html. The name defaults to the name of the scenario or setting
-folder whose Maps subfolder holds the map (e.g. Crypt).
+folder whose Maps subfolder holds the map (e.g. TheCrypt).
 """
 
 import argparse

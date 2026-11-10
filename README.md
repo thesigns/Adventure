@@ -10,14 +10,14 @@ cyberpunk, horror and others. It does not assume any particular convention,
 and the player character can die. It has its own simple mechanics and does
 not use D&D rules.
 
-The rules, settings and scripts are in English, but the game itself is played
+The rules, settings, scenarios and scripts are in English, but the game itself is played
 in Polish: the GM translates the rules and descriptions in the narration.
 
 ## How to play
 
 1. Open the repository in Claude Code or another agent that reads
    `AGENTS.md`.
-2. Ask to start a game, e.g. "Let's play the *Crypt* scenario".
+2. Ask to start a game, e.g. "Let's play the scenario *The Crypt*".
 3. The agent reads the rules and the scenario, helps you create a character
    and runs the game. You describe what your character does.
 
@@ -97,7 +97,7 @@ The player map with fog of war, on which the GM reveals the places the
 character has discovered. The browser preview refreshes itself:
 
 ```
-python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2 --open
+python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --reveal 1 2 --open
 ```
 
 The GM's hidden state (world clock, hidden events and rolls) is kept by
@@ -111,11 +111,11 @@ file `Scenario.md` always states the setting: the name of a folder in
 the adventure takes place in a village cut off from the world and in
 a nearby crypt".
 
-For now the repository contains one test scenario, **Crypt**
-(`Scenarios/Crypt/`), written in Polish. It is a short mini adventure in a low
-fantasy world described in the scenario itself: the character goes down into
-a crypt under a hill to find a missing shepherd. The scenario has a crypt map
-with fog of war for the player and a treasure script.
+For now the repository contains one test scenario, **The Crypt**
+(`Scenarios/TheCrypt/`), set in Generia. It is a short mini adventure: the
+character goes down into a crypt under a hill to find a missing shepherd boy.
+The scenario has a crypt map with fog of war for the player and a treasure
+script.
 
 The only setting is **Generia** (`Settings/Generia/`): a thoroughly generic
 fantasy world with elves, dwarves, magic and monsters, described tersely to

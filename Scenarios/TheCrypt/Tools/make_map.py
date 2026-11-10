@@ -1,17 +1,17 @@
-"""Crypt map generator for the Crypt scenario (hand-drawn dungeon map style).
+"""Crypt map generator for the scenario The Crypt (hand-drawn dungeon map style).
 
 An author's tool, not for play. Creates two files in the scenario folder:
     MapCrypt.svg         full map for the GM
     MapCrypt.areas.json  areas and secrets for Scripts/fogmap.py
 
 Usage:
-    python Scenarios/Crypt/Tools/make_map.py [path to MapCrypt.svg]
+    python Scenarios/TheCrypt/Tools/make_map.py [path to MapCrypt.svg]
 
 The generator is deterministic (fixed random seed), so without code changes
 it always creates the same map. The crypt plan is in metres (1 square = 1 m,
 north up) in the lists `floors`/`core` and in the crack data; after changing
 the plan, the areas in the `areas` dict at the end of the file must be fixed
-too. Map labels are scenario content and stay in Polish.
+too.
 """
 import math
 import random
@@ -377,7 +377,7 @@ for xx in (38.0, 40.5):
         for k in range(3):
             feat.append(f'<ellipse cx="{f(X(xx + k * 0.22))}" cy="{f(Y(yy + sgn * 0.08))}" rx="3.2" ry="2.2" fill="none" stroke="#111" stroke-width="1.4"/>')
 feat.append(bones(37.6, 20.1, 9, 0.35))
-feat.append('<g id="secret-plyta">' + box(39.08, 20.58, 39.92, 21.42, fill="none", w=2, extra='stroke-dasharray="4 3"')
+feat.append('<g id="secret-plate">' + box(39.08, 20.58, 39.92, 21.42, fill="none", w=2, extra='stroke-dasharray="4 3"')
             + f'<text x="{f(X(39.5))}" y="{f(Y(21.22))}" class="sym">T</text></g>')
 feat.append(f'<path d="M{f(X(41.2))} {f(Y(21.85))} a7 7 0 0 1 14 0z" fill="#fff" stroke="#111" stroke-width="1.8"/>')
 feat.append(f'<path d="M{f(X(40.9))} {f(Y(22.15))} a7 7 0 0 0 14 0z" fill="#fff" stroke="#111" stroke-width="1.8"/>')
@@ -402,29 +402,29 @@ labels = [label(1, 20, 2.3), label(2, 20.0, 9.45), label(3, 20.0, 12.2), label(4
           label(9, 52.4, 23.5, disc=True)]
 
 notes = [
-    (20.0, -5.8, "na szczyt Wzgórza Brzozowego", "middle"),
-    (60.9, 37.9, "do wąwozu", "end"),
+    (20.0, -5.8, "to the top of Birch Hill", "middle"),
+    (60.9, 37.9, "to the ravine", "end"),
 ]
 
 # ---------------------------------------------------------------- legend
 legend_rooms = [
-    "1  Wejście", "2  Kaplica", "3  Korytarz z zapadnią", "4  Ossuarium", "5  Sala grobów",
-    "6  Skład (barykada Ostapa)", "7  Przedsionek grobowca", "8  Grobowiec Borzywoja", "9  Szczelina do wąwozu",
+    "1  Entrance", "2  Chapel", "3  Corridor with a pit", "4  Ossuary", "5  Hall of graves",
+    "6  Storeroom (Corwin's barricade)", "7  Tomb antechamber", "8  Malric's tomb", "9  Crack to the ravine",
 ]
 
 
 def legend():
     top = MAP_H + 10
     s = [f'<line x1="40" y1="{f(top)}" x2="{f(W - 40)}" y2="{f(top)}" stroke="#111" stroke-width="2.5"/>']
-    s.append(f'<text x="40" y="{f(top + 52)}" class="title">Krypta Borzywojów</text>')
-    s.append(f'<text x="42" y="{f(top + 82)}" class="sub">scenariusz „Krypta”, Wzgórze Brzozowe</text>')
+    s.append(f'<text x="40" y="{f(top + 52)}" class="title">Crypt of House Varn</text>')
+    s.append(f'<text x="42" y="{f(top + 82)}" class="sub">scenario “The Crypt”, Birch Hill</text>')
     # scale bar
     sx, sy = 42, top + 128
     for i in range(5):
         s.append(f'<rect x="{f(sx + i * S * 2)}" y="{f(sy)}" width="{f(S * 2)}" height="9" fill="{"#111" if i % 2 == 0 else "#fff"}" stroke="#111" stroke-width="1.5"/>')
     for i, t in ((0, "0"), (5, "10 m")):
         s.append(f'<text x="{f(sx + i * S * 2)}" y="{f(sy + 30)}" class="small" text-anchor="{"start" if i == 0 else "middle"}">{t}</text>')
-    s.append(f'<text x="{f(sx)}" y="{f(sy + 54)}" class="small">1 kratka = 1 m</text>')
+    s.append(f'<text x="{f(sx)}" y="{f(sy + 54)}" class="small">1 square = 1 m</text>')
     # compass
     cx, cy = 330, top + 150
     s.append(f'<path d="M{cx} {cy - 34}L{cx + 10} {cy}L{cx} {cy - 6}L{cx - 10} {cy}Z" fill="#111"/>')
@@ -444,17 +444,17 @@ def legend():
     # symbols
     kx, ky = 1090, top + 30
     items = []
-    items.append((f'<rect x="{kx}" y="{ky}" width="28" height="9" fill="#fff" stroke="#111" stroke-width="2.2"/>', "drzwi"))
-    items.append((f'<rect x="{kx}" y="{ky}" width="28" height="9" fill="#bdbdbd" stroke="#111" stroke-width="2.6"/>', "kamienne drzwi"))
-    items.append((''.join(f'<line x1="{kx + i * 5}" y1="{ky - 4}" x2="{kx + i * 5}" y2="{ky + 13}" stroke="#111" stroke-width="1.8"/>' for i in range(6)), "schody"))
-    items.append((f'<rect x="{kx}" y="{ky - 5}" width="28" height="18" fill="#2a2a2a" stroke="#111" stroke-width="2.4"/>', "zapadnia"))
-    items.append((f'<rect x="{kx}" y="{ky - 3}" width="28" height="14" rx="5" fill="#fff" stroke="#111" stroke-width="3"/>', "sarkofag"))
-    items.append((f'<rect x="{kx + 4}" y="{ky - 6}" width="20" height="20" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 3"/><text x="{kx + 14}" y="{ky + 9}" class="sym">T</text>', "płyta naciskowa"))
+    items.append((f'<rect x="{kx}" y="{ky}" width="28" height="9" fill="#fff" stroke="#111" stroke-width="2.2"/>', "door"))
+    items.append((f'<rect x="{kx}" y="{ky}" width="28" height="9" fill="#bdbdbd" stroke="#111" stroke-width="2.6"/>', "stone door"))
+    items.append((''.join(f'<line x1="{kx + i * 5}" y1="{ky - 4}" x2="{kx + i * 5}" y2="{ky + 13}" stroke="#111" stroke-width="1.8"/>' for i in range(6)), "stairs"))
+    items.append((f'<rect x="{kx}" y="{ky - 5}" width="28" height="18" fill="#2a2a2a" stroke="#111" stroke-width="2.4"/>', "pit"))
+    items.append((f'<rect x="{kx}" y="{ky - 3}" width="28" height="14" rx="5" fill="#fff" stroke="#111" stroke-width="3"/>', "sarcophagus"))
+    items.append((f'<rect x="{kx + 4}" y="{ky - 6}" width="20" height="20" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 3"/><text x="{kx + 14}" y="{ky + 9}" class="sym">T</text>', "pressure plate"))
     out = []
     for i, (g, t) in enumerate(items):
         dy = (i % 3) * 44
         dx = (i // 3) * 190
-        gid = ' id="secret-plyta-legenda"' if t == "płyta naciskowa" else ""
+        gid = ' id="secret-plate-legend"' if t == "pressure plate" else ""
         out.append(f'<g{gid} transform="translate({dx},{dy})">{g}<text x="{kx + 40}" y="{ky + 10}" class="ltext" font-size="17">{t}</text></g>')
     s.extend(out)
     return "\n".join(s)
@@ -474,7 +474,7 @@ for gy in range(int(YMIN), int(YMAX) + 1):
 grid_d = "".join(grid)
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {f(W)} {f(H)}" width="{f(W)}" height="{f(H)}">
-<title>Krypta Borzywojów</title>
+<title>Crypt of House Varn</title>
 <style>
   .num {{ font: bold 30px Georgia, 'Times New Roman', serif; text-anchor: middle; fill: #111; }}
   .sym {{ font: bold 13px Georgia, serif; text-anchor: middle; fill: #111; }}
@@ -547,18 +547,18 @@ areas = {
     "gm_only": ["labels", "legend-rooms"],
     "always": [[[0, round(MAP_H + 8, 1)], [round(W, 1), round(MAP_H + 8, 1)], [round(W, 1), round(H, 1)], [0, round(H, 1)]]],
     "areas": {
-        "1": {"name": "Wejście", "polygons": [px_rect(14.0, -7.6, 26.0, -4.6), px_rect(17.4, -4.6, 22.6, 4.3)]},
-        "2": {"name": "Kaplica", "polygons": [px_rect(15.6, 2.6, 24.4, 10.3)]},
-        "3": {"name": "Korytarz z zapadnią", "polygons": [px_rect(17.6, 9.8, 22.4, 19.6), px_rect(13.6, 18.6, 25.0, 23.4)]},
-        "4": {"name": "Ossuarium", "polygons": [px_rect(1.6, 16.9, 13.4, 25.1)]},
-        "5": {"name": "Sala grobów", "polygons": [px_rect(23.6, 15.6, 34.4, 25.3), px_rect(33.0, 18.6, 36.6, 23.4)]},
-        "6": {"name": "Skład", "polygons": [px_rect(26.2, 24.6, 31.8, 31.2)]},
-        "7": {"name": "Przedsionek grobowca", "polygons": [px_rect(36.6, 18.1, 42.6, 23.9)]},
-        "8": {"name": "Grobowiec", "polygons": [px_circle(45.6, 21, 4.4)]},
-        "9": {"name": "Szczelina", "polygons": [[[round(X(x), 1), round(Y(y), 1)] for x, y in crack_area], px_rect(56.4, 36.6, 61.6, 38.4)]},
+        "1": {"name": "Entrance", "polygons": [px_rect(14.0, -7.6, 26.0, -4.6), px_rect(17.4, -4.6, 22.6, 4.3)]},
+        "2": {"name": "Chapel", "polygons": [px_rect(15.6, 2.6, 24.4, 10.3)]},
+        "3": {"name": "Corridor with a pit", "polygons": [px_rect(17.6, 9.8, 22.4, 19.6), px_rect(13.6, 18.6, 25.0, 23.4)]},
+        "4": {"name": "Ossuary", "polygons": [px_rect(1.6, 16.9, 13.4, 25.1)]},
+        "5": {"name": "Hall of graves", "polygons": [px_rect(23.6, 15.6, 34.4, 25.3), px_rect(33.0, 18.6, 36.6, 23.4)]},
+        "6": {"name": "Storeroom", "polygons": [px_rect(26.2, 24.6, 31.8, 31.2)]},
+        "7": {"name": "Tomb antechamber", "polygons": [px_rect(36.6, 18.1, 42.6, 23.9)]},
+        "8": {"name": "Tomb", "polygons": [px_circle(45.6, 21, 4.4)]},
+        "9": {"name": "Crack", "polygons": [[[round(X(x), 1), round(Y(y), 1)] for x, y in crack_area], px_rect(56.4, 36.6, 61.6, 38.4)]},
     },
     "secrets": {
-        "plyta": {"name": "płyta naciskowa w przedsionku (pokój 7)", "ids": ["secret-plyta", "secret-plyta-legenda"]},
+        "plate": {"name": "pressure plate in the antechamber (room 7)", "ids": ["secret-plate", "secret-plate-legend"]},
     },
 }
 def dump(o, ind=0):
