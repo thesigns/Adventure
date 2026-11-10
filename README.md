@@ -1,114 +1,127 @@
 # Adventure
 
-Adventure to system jednoosobowej gry fabularnej, w którym Mistrzem Gry jest
-agent AI (np. Claude Code), a graczem człowiek. Repozytorium zawiera
-podręcznik z zasadami, instrukcje dla agenta i skrypty do rzutów kośćmi.
+Adventure is a solo role-playing game system in which the Game Master is an
+AI agent (e.g. Claude Code) and the player is a human. The repository
+contains a rulebook, instructions for the agent and scripts for dice rolls,
+maps and the GM's secrets.
 
-System jest generyczny i nadaje się do każdego gatunku: fantasy, science
-fiction, cyberpunku, horroru i innych. Nie zakłada konwencji heroicznej, więc
-postać gracza może zginąć. Ma własną, prostą mechanikę i nie korzysta z zasad
-D&D.
+The system is generic and suits any genre: fantasy, science fiction,
+cyberpunk, horror and others. It does not assume any particular convention,
+and the player character can die. It has its own simple mechanics and does
+not use D&D rules.
 
-## Jak grać
+The rules, settings and scripts are in English, but the game itself is played
+in Polish: the GM translates the rules and descriptions in the narration.
 
-1. Otwórz repozytorium w Claude Code albo innym agencie, który czyta plik
+## How to play
+
+1. Open the repository in Claude Code or another agent that reads
    `AGENTS.md`.
-2. Poproś o rozpoczęcie gry, np. „Zagrajmy w scenariusz *Krypta*”.
-3. Agent czyta zasady i scenariusz, pomaga stworzyć postać i prowadzi grę.
-   Ty opisujesz, co robi twoja postać.
+2. Ask to start a game, e.g. "Let's play the *Crypt* scenario".
+3. The agent reads the rules and the scenario, helps you create a character
+   and runs the game. You describe what your character does.
 
-Agent rzuca kośćmi wyłącznie skryptami, nigdy w pamięci. Przed każdym rzutem
-pokazuje tablicę rezultatów, czyli to, co oznacza każdy możliwy wynik. Stan
-postaci, przebieg gry i wszystkie rzuty zapisuje w folderze kampanii, dzięki
-czemu grę można wznowić w nowej rozmowie, a ten sam scenariusz mogą niezależnie
-rozegrać różne postacie.
+The agent rolls dice only with scripts, never mentally. Before every roll it
+shows the outcome table, i.e. what each possible result means. It records the
+character's state, the course of play and all rolls in the campaign folder,
+so the game can be resumed in a new conversation, and the same scenario can
+be played independently by different characters.
 
-## Mechanika w skrócie
+## Mechanics in brief
 
-- **Rzut standardowy:** każdą niepewną sytuację rozstrzyga jeden rzut 3K6
-  według tablicy rezultatów, którą MG ustala i pokazuje przed rzutem. Wysoki
-  wynik jest zawsze korzystny dla gracza.
-- **Punkty Determinacji (PDT):** pula wysiłku i szczęścia postaci. Każdy
-  wydany punkt to dodatkowa kość, a najsłabsze kości się odrzuca. Pula
-  odnawia się po porządnym wypoczynku.
-- **Cechy:** zalety ułatwiają albo umożliwiają działania, a wady je
-  utrudniają albo wykluczają. Wady dają postaci więcej PDT, a zalety mniej.
-- **Zdrowie:** zamiast punktów życia każda istota ma poziom zranienia od 0%
-  do 100%. Rany go podnoszą, a od niego zależą kary do działań.
-- **Walka:** toczy się w rundach. Każda runda to jeden rzut z tablicą, która
-  opisuje skutki dla obu stron. Walka trwa do rozstrzygnięcia.
-- **Ekwipunek:** nie ma statystyk. Broń, pancerz i narzędzia działają jak
-  okoliczności, które MG uwzględnia w tablicy rezultatów.
+- **Standard roll:** every uncertain situation is resolved with a single 3d6
+  roll against an outcome table, which the GM sets and shows before the
+  roll. A high result is always good for the player.
+- **Determination Points (DP):** the character's pool of effort and luck.
+  Each point spent is an extra die, and the lowest dice are dropped. The pool
+  refreshes after proper rest.
+- **Traits:** advantages make actions easier or possible, and disadvantages
+  make them harder or impossible. Disadvantages give the character more DP,
+  and advantages fewer.
+- **Health:** instead of hit points every creature has a wound level from 0%
+  to 100%. Wounds raise it, and it sets the penalties to actions.
+- **Combat:** fought in rounds. Each round is a single roll with a table
+  that describes the consequences for both sides. The fight goes on until it
+  is decided.
+- **Equipment:** has no statistics. Weapons, armour and tools act as
+  circumstances the GM takes into account in the outcome table.
+- **Experience:** at the end of a scenario the character gets experience
+  points, which are spent on advancement. Each level gives an extra DP.
 
-## Struktura repozytorium
+## Repository structure
 
-| Ścieżka      | Zawartość                                                                      |
-|--------------|--------------------------------------------------------------------------------|
-| `AGENTS.md`  | instrukcje dla agenta prowadzącego grę                                         |
-| `Rules/`     | zasady podstawowe, wspólne dla wszystkich światów                              |
-| `Settings/`  | settingi, czyli opisy światów, każdy w folderze z głównym plikiem `Setting.md` |
-| `Scenarios/` | scenariusze, każdy w folderze z głównym plikiem `Scenario.md`                  |
-| `Campaigns/` | kampanie: karta postaci, dziennik, postęp scenariuszy i rzuty                  |
-| `Scripts/`   | skrypty Pythona do rzutów                                                      |
+| Path         | Contents                                                                  |
+|--------------|---------------------------------------------------------------------------|
+| `AGENTS.md`  | instructions for the agent running the game                               |
+| `Rules/`     | core rules, shared by all worlds                                          |
+| `Settings/`  | settings, i.e. descriptions of worlds, each in a folder with `Setting.md` |
+| `Scenarios/` | scenarios, each in a folder with `Scenario.md`                            |
+| `Campaigns/` | campaigns: character sheet, log, scenario progress and rolls              |
+| `Scripts/`   | Python scripts for rolls, coin tosses, maps and the GM's secrets          |
 
-Pliki zasad w `Rules/`:
+Rules files in `Rules/`:
 
-| Plik                   | Zawartość                                              |
-|------------------------|--------------------------------------------------------|
-| `Rules.md`             | przegląd mechaniki z odsyłaczami do pozostałych plików |
-| `StandardThrow.md`     | rzut standardowy, tablice rezultatów, trudność         |
-| `Determination.md`     | Punkty Determinacji                                    |
-| `Health.md`            | zdrowie, rany, leczenie i śmierć                       |
-| `Combat.md`            | walka                                                  |
-| `Traits.md`            | cechy postaci: zalety i wady                           |
-| `Equipment.md`         | ekwipunek                                              |
-| `CoinThrow.md`         | rzut monetą, który rozstrzyga spory gracza z MG        |
-| `CharacterCreation.md` | tworzenie postaci                                      |
-| `CharacterTemplate.md` | szablon karty postaci                                  |
+| File                   | Contents                                                        |
+|------------------------|-----------------------------------------------------------------|
+| `Rules.md`             | overview of the mechanics with links to the other files         |
+| `StandardThrow.md`     | the standard roll, outcome tables, difficulty                   |
+| `Determination.md`     | Determination Points                                            |
+| `Health.md`            | health, wounds, healing and death                               |
+| `Combat.md`            | combat                                                          |
+| `Traits.md`            | character traits: advantages and disadvantages                  |
+| `Experience.md`        | experience and advancement                                      |
+| `Equipment.md`         | equipment                                                       |
+| `CoinThrow.md`         | coin toss, which settles disputes between the player and the GM |
+| `CharacterCreation.md` | character creation                                              |
+| `CharacterTemplate.md` | character sheet template                                        |
 
-## Skrypty
+## Scripts
 
-Skrypty wymagają Pythona 3 i korzystają tylko z biblioteki standardowej.
-Nazwa kampanii (`--campaign`) jest obowiązkowa, a każdy rzut trafia do
-`Campaigns/<kampania>/Rolls.log`.
+The scripts need Python 3 and use only the standard library. The campaign
+name (`--campaign`) is required, and every roll goes to
+`Campaigns/<campaign>/Rolls.log`.
 
-Rzut 3K6 z tablicą rezultatów (opcjonalnie z wydanymi PDT):
+A 3d6 roll against an outcome table (optionally with DP spent):
 
 ```
-python Scripts/roll.py --campaign Randuvil --desc "Wspinaczka na mur" --dp 1 "3-4:upadek, lekka rana" "5-8:upadek, draśnięcie" "9-18:sukces"
+python Scripts/roll.py --campaign Randuvil --desc "Climbing the wall" --dp 1 "3-4:falls, light wound" "5-8:falls, scratch" "9-18:success"
 ```
 
-Rzut monetą w sporze między graczem a MG:
+A coin toss in a dispute between the player and the GM:
 
 ```
-python Scripts/coin.py --campaign Randuvil --desc "Czy postać zdążyła zamknąć bramę" --gm "brama była otwarta" --player "postać zamknęła bramę"
+python Scripts/coin.py --campaign Randuvil --desc "Did the character manage to close the gate" --gm "the gate was open" --player "the character closed the gate"
 ```
 
-Mapa gracza z mgłą wojny, na której MG odsłania miejsca odkryte przez postać.
-Podgląd w przeglądarce odświeża się sam:
+The player map with fog of war, on which the GM reveals the places the
+character has discovered. The browser preview refreshes itself:
 
 ```
 python Scripts/fogmap.py --campaign Randuvil --map Scenarios/Crypt/Maps/MapCrypt.svg --reveal 1 2 --open
 ```
 
-## Scenariusze i settingi
+The GM's hidden state (world clock, hidden events and rolls) is kept by
+`Scripts/gm.py`, so that secrets never appear in the console the player sees.
 
-Scenariusz może napisać człowiek, agent albo obaj razem. Plik `Scenario.md`
-zawsze podaje setting: nazwę folderu z `Settings/` albo krótki opis świata,
-np. „świat low fantasy, przygoda dzieje się we wsi odciętej od świata
-i w pobliskiej krypcie”.
+## Scenarios and settings
 
-Repozytorium zawiera na razie jeden testowy scenariusz, **Krypta**
-(`Scenarios/Crypt/`). To krótka mini-przygoda w świecie low fantasy, opisanym
-w samym scenariuszu: postać schodzi do krypty pod wzgórzem, żeby odnaleźć
-zaginionego pastucha. Scenariusz ma mapę krypty z mgłą wojny dla gracza
-i skrypt losujący skarby.
+A scenario can be written by a human, by an agent or by both together. The
+file `Scenario.md` always states the setting: the name of a folder in
+`Settings/` or a short description of the world, e.g. "a low fantasy world,
+the adventure takes place in a village cut off from the world and in
+a nearby crypt".
 
-Jedyny setting to **Generia** (`Settings/Generia/`): do bólu generyczny świat
-fantasy z elfami, krasnoludami, magią i potworami, opisany zwięźle
-po angielsku, żeby zajmował jak najmniej kontekstu. Czego nie opisuje, MG
-uzupełnia najbardziej typowym rozwiązaniem z fantasy.
+For now the repository contains one test scenario, **Crypt**
+(`Scenarios/Crypt/`), written in Polish. It is a short mini adventure in a low
+fantasy world described in the scenario itself: the character goes down into
+a crypt under a hill to find a missing shepherd. The scenario has a crypt map
+with fog of war for the player and a treasure script.
 
-## Licencja
+The only setting is **Generia** (`Settings/Generia/`): a thoroughly generic
+fantasy world with elves, dwarves, magic and monsters, described tersely to
+take up as little context as possible. Whatever it does not describe, the GM
+fills in with the most typical fantasy convention.
 
-Projekt jest udostępniony na licencji MIT, zob. [LICENSE](LICENSE).
+## Licence
+
+The project is released under the MIT licence, see [LICENSE](LICENSE).

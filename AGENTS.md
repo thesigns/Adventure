@@ -20,7 +20,7 @@ These rules always apply, in every response, without reminders:
 - `Campaigns/`: campaigns, i.e. the state of play, one folder per campaign (see *Campaigns*)
 - `Scripts/`: the system's shared Python scripts (see *Scripts*)
 
-File and folder names are in English and written in CamelCase with a capital letter, e.g. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. The exception is Python scripts, which by Python convention have lowercase names, e.g. `gm.py`, `make_map.py`. The content of the repository is in English: this file, the core rules, settings and scripts (comments, options and messages, e.g. `--campaign`, `--reveal`). The exceptions are `README.md` and the Crypt scenario, which are in Polish. The game is played in Polish: the GM translates the English rules and descriptions in the narration and keeps proper names in the original.
+File and folder names are in English and written in CamelCase with a capital letter, e.g. `Character.md`, `GmTables.json`, `Tables/`, `Generia/`. The exception is Python scripts, which by Python convention have lowercase names, e.g. `gm.py`, `make_map.py`. The content of the repository is in English: this file, `README.md`, the core rules, settings and scripts (comments, options and messages, e.g. `--campaign`, `--reveal`). The exception is the Crypt scenario, which is in Polish. The game is played in Polish: the GM translates the English rules and descriptions in the narration and keeps proper names in the original.
 
 ## Core rules
 
