@@ -88,7 +88,7 @@ A blow to the head, choking, poison or exhaustion can knock a character unconsci
 
 Fractures, dislocations and other injuries are counted separately from the wound level. The GM writes them into the table as an additional effect, usually with a serious wound, a mortal blow or a fall from a height.
 
-- **A temporary injury** (broken leg, dislocated shoulder) acts like a disadvantage until healed: it makes actions in its field one level harder or rules them out. It does not change Determination Points. A broken bone knits in about 1–3 months, and during that time the character has limited ability, e.g. walks on crutches with a broken leg.
+- **A temporary injury** (broken leg, dislocated shoulder) acts like a disadvantage until healed: it makes actions in its field one level harder or rules them out. It does not change Determination Points. A broken bone knits in about 40–90 days, and during that time the character has limited ability, e.g. walks on crutches with a broken leg.
 - **A permanent injury** (loss of an eye, a severed hand, a spinal injury) is a new disadvantage of the character (see *Trait changes during play* in `Rules/Traits.md`). Only powerful magic, divine intervention or advanced technology can heal or replace it, e.g. a cybernetic arm in place of a severed one, if the world's lore allows it. An ordinary prosthesis, e.g. a wooden leg, can lessen the disadvantage but does not remove it.
 
 ## Healing

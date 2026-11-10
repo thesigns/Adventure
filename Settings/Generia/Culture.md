@@ -25,22 +25,22 @@
 ## Calendar
 
 - **Elven calendar:** the elves read the sky in the elder days and made the calendar. Aurelion took it from them and spread it, and every people of Generia uses it, Valdren included, with its elven names for the months, the weekdays and the moons. Only the seasons have plain names in every tongue: spring, summer, autumn, winter.
-- **Year:** 252 days, 12 months of 21 days, three months to each season. The year starts on the spring equinox, 1 Tiriwen; the longest day is 1 Saelis, the autumn equinox 1 Calaris and the longest night 1 Ysmara. Ages and lengths of time in this setting are in these years.
+- **Year:** 252 days, 12 months of 21 days, three months to each season. The year starts on the spring equinox, 1 Tiriwen; the longest day is 1 Saelis, the autumn equinox 1 Calaris and the longest night 1 Ysmara. Ages and lengths of time in this setting are in these years. A year of Generia is about two thirds of a year of our world, so ages are about 1.45 times higher than real-world folklore would suggest: a human comes of age at 23 and grows old around 90 (see *Coming of age*). The GM converts ages taken from common knowledge by that factor.
 - **Counting years:** humans count from the founding of Valdren (AF); the present is around 1240 AF. Elves count by the reigns of their kings and queens.
 - **Writing dates:** in the world "11 Saelis 1240 AF". In `Scripts/gm.py` dates are written 1240-04-11 (see `Tables/Calendar.json`). With `--setting Generia` the script prints the weekday, the month, the season and the phases of both moons.
-- **Week:** seven days, one cycle of the small moon, each sacred to one god (see `Faith.md`). Every year and every month starts on Nimel. Each temple holds its main service on its god's day.
+- **Week:** seven days, one cycle of the small moon, each sacred to one god (see `Faith.md`). Every year and every month starts on Duriel. Each temple holds its main service on its god's day; Noctar's hidden shrines meet in secret on the night of Nimel (see *Organisations and factions* in `Setting.md`).
 
-| Day    | Nimras          | God      | Custom                                                         |
-|--------|-----------------|----------|----------------------------------------------------------------|
-| Nimel  | new             | Noctar   | unlucky: nobody weds, sets out or seals a bargain              |
-| Sairas | first quarter   | Sylvana  | sowing, hunting, druids' rites                                 |
-| Tavien | waxing gibbous  | Thar     | drill, duels, war oaths                                        |
-| Lumiel | full            | Varek    | market day in towns                                            |
-| Orwen  | waning gibbous  | Mortis   | burials and remembrance of the dead                            |
-| Cassel | last quarter    | Hammar   | forges burn, guilds meet                                       |
-| Duriel | waning crescent | Solarius | day of rest and temple services; the last light before the new |
+| Day    | Nimras          | God      | Custom                                                                  |
+|--------|-----------------|----------|-------------------------------------------------------------------------|
+| Duriel | waning gibbous  | Varek    | lucky: good for setting out and sealing bargains; market day            |
+| Sairas | last quarter    | Sylvana  | sowing, hunting, druids' rites                                          |
+| Tavien | waning crescent | Thar     | drill, duels, war oaths                                                 |
+| Nimel  | new             | Noctar   | unlucky: no weddings, journeys or bargains; Noctar's lesser feast       |
+| Orwen  | first quarter   | Mortis   | burials and remembrance of the dead                                     |
+| Cassel | waxing gibbous  | Hammar   | forges burn, guilds meet                                                |
+| Lumiel | full            | Solarius | day of rest and temple services; the brightest night of the week        |
 
-- **Moons:** **Selwen**, the large silver moon, goes through its phases in 21 days, one month. **Nimras**, the small bright moon, races across the sky and goes through its phases in 7 days, one week. The night of the first day of every month is a double new moon, the darkest night of the month. On the 11th both moons are full: a bright night, and the night of werewolves.
+- **Moons:** **Selwen**, the large silver moon, goes through its phases in 21 days, one month. **Nimras**, the small bright moon, races across the sky and goes through its phases in 7 days, one week. Nimras is new on every Nimel, Noctar's day: a dark night and Noctar's lesser feast. On the 4th of every month Selwen is new as well: both moons vanish, the darkest night of the month and Noctar's great feast, when the cults gather and honest folk bar their doors. On the 14th, always a Lumiel, both moons are full: a bright night, and the night of werewolves.
 
 | No. | Month   | Season | Notes                                                           |
 |-----|---------|--------|-----------------------------------------------------------------|
@@ -64,6 +64,6 @@
 - **Guest-right:** a host protects a guest who has eaten at their table for the night, and a guest does no harm to the host. Breaking guest-right is a shame no one forgets, among every people of Generia, orcs excepted.
 - **Oaths:** an oath sworn by a god binds; the god may punish the oath-breaker (see *Displeasure* in `Faith.md`).
 - **The dead:** the dead are buried with the rites of Mortis. The unburied and the wrongly buried may rise, so even enemies are given a grave when there is time.
-- **Festivals:** the new year (1 Tiriwen) is a time of feasts, fairs and weddings that last until the first Duriel. Midsummer (1 Saelis) is greeted with bonfires, and every village holds a harvest feast on the autumn equinox (1 Calaris).
+- **Festivals:** the new year (1 Tiriwen) is a time of feasts, fairs and weddings that last until the first Lumiel. Midsummer (1 Saelis) is greeted with bonfires, and every village holds a harvest feast on the autumn equinox (1 Calaris).
 - **Inns and taverns:** the heart of every town and many villages: beds for travellers, news and rumours, notice boards for work (see *Adventurers* in `Setting.md`).
-- **Coming of age:** humans come of age at sixteen, halflings at about thirty, dwarves and gnomes at about fifty, elves at about a hundred.
+- **Coming of age:** in the years of the elven calendar, humans come of age at 23, halflings at about 45, dwarves and gnomes at about 70, elves at about 150.

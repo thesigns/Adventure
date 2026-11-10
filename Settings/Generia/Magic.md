@@ -31,7 +31,9 @@
 | advanced | 30–90      | once a day        | 100–300 g                   | 2 g a day               | 50 g         |
 | powerful | 100–400    | once a week       | 1,000 g and up, rarely sold | rare, 10 g a day and up | 200 g and up |
 
-Necromancy takes about three times as long to learn as other spells of its tier, which is why its masters are mostly liches, who have the time.
+Necromancy takes about three times as long to learn as other spells of its tier, which is why its masters are mostly liches, who have the time. Its uses are those of its tier.
+
+- **Bodies:** every raising needs a corpse or a whole skeleton. A necromancer raising a skeleton a day has a small band within a month and a large one within a year, but only if they can gather that many bones in secret: robbing graves draws the Gravewardens and the law, and a cellar full of bones is hard to hide.
 
 ### Example spells
 
@@ -52,9 +54,9 @@ Necromancy takes about three times as long to learn as other spells of its tier,
 | fly                 | powerful   | 150  | the caster flies for an hour                                           |
 | summon elemental    | powerful   | 250  | an elemental (powerful enemy) serves the caster for one fight          |
 | teleport            | powerful   | 300  | the caster and a few others move to a place the caster knows well      |
-| speak with the dead | necromancy | 90   | a corpse answers three questions                                       |
-| raise skeleton      | necromancy | 150  | a skeleton (average enemy) serves the caster until destroyed           |
-| animate the dead    | necromancy | 400  | raises a graveyard of zombies and skeletons                            |
+| speak with the dead | advanced   | 90   | necromancy: a corpse answers three questions                           |
+| raise skeleton      | advanced   | 150  | necromancy: a skeleton (average enemy) serves until destroyed          |
+| animate the dead    | powerful   | 400  | necromancy: raises a graveyard of zombies and skeletons                |
 
 ## Scrolls, potions and items
 

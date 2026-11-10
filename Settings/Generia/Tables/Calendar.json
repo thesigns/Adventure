@@ -13,16 +13,15 @@
     {"name": "Duravel", "days": 21, "season": "winter"},
     {"name": "Caerwen", "days": 21, "season": "winter"}
   ],
-  "weekdays": ["Nimel", "Sairas", "Tavien", "Lumiel", "Orwen", "Cassel", "Duriel"],
-  "first_weekday": "Nimel",
+  "weekdays": ["Duriel", "Sairas", "Tavien", "Nimel", "Orwen", "Cassel", "Lumiel"],
+  "first_weekday": "Duriel",
   "moons": [
     {"name": "Selwen", "phases": [
-      "new", "waxing crescent", "waxing crescent", "waxing crescent", "waxing crescent",
-      "first quarter", "waxing gibbous", "waxing gibbous", "waxing gibbous", "waxing gibbous",
-      "full", "waning gibbous", "waning gibbous", "waning gibbous", "waning gibbous",
-      "last quarter", "waning crescent", "waning crescent", "waning crescent", "waning crescent",
-      "new"]},
+      "waning crescent", "waning crescent", "waning crescent", "new", "waxing crescent",
+      "waxing crescent", "waxing crescent", "waxing crescent", "first quarter", "waxing gibbous",
+      "waxing gibbous", "waxing gibbous", "waxing gibbous", "full", "waning gibbous",
+      "waning gibbous", "waning gibbous", "waning gibbous", "last quarter", "waning crescent", "waning crescent"]},
     {"name": "Nimras", "phases": [
-      "new", "first quarter", "waxing gibbous", "full", "waning gibbous", "last quarter", "waning crescent"]}
+      "waning gibbous", "last quarter", "waning crescent", "new", "first quarter", "waxing gibbous", "full"]}
   ]
 }
