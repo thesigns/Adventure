@@ -387,6 +387,10 @@ PLACES = [
     ("applecombe", "Applecombe", "town", 1700, 2165, "start", 16, 28),
     # lake port on the eastern shore of Silvermere, west of the northern tip of Alderwood
     ("alderwick", "Alderwick", "town", 1385, 1885, "end", -16, -12),
+    # frontier towns beyond Valdren
+    ("twinbrook", "Twinbrook", "town", 1078, 1760, "end", -18, 26),
+    ("harrowford", "Harrowford", "town", 2240, 1580, "start", 16, 8),
+    ("rimehaven", "Rimehaven", "town", 1850, 630, "start", 16, 14),
     # ports on the southern coast
     ("silverhaven", "Silverhaven", "city", 1378, 2298, "start", 20, -12),
     ("port-seravel", "Port Seravel", "city", 2554, 2033, "end", -20, 34),
@@ -400,6 +404,8 @@ PLACES = [
     # the way into the Ashlands: the valley between the ranges and a pass over the Crookback Mountains
     ("ashgate", "Ashgate", "fort", 2175, 1110, "end", -20, 8),
     ("crows-pass", "Crow's Pass", "pass", 2515, 1262, "start", 18, -16),
+    # the pass over the Ironpeaks under Khaz Dorun, between Valdren and the Frostmarch
+    ("thanes-pass", "Thane's Pass", "pass", 1780, 1030, "start", 18, 8),
     # ruins of the Empire of Aurelion
     ("aurelion", "Aurelion", "ruin", 3080, 520, "start", 20, 8),
     ("drowned-spires", "Drowned Spires", "ruin", 1075, 2115, "start", 18, 8),
@@ -408,7 +414,8 @@ PLACES = [
     ("sunstone", "Sunstone", "ruin", 2620, 1700, "start", 18, 8),
 ]
 
-# Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km
+# Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km.
+# Only the broad highways of Valdren are drawn; beyond the kingdom there are only tracks and paths.
 ROADS = [
     # branches off the Hollowbury road at Crossholt, so every main road meets one trunk road before Kingsbridge
     ("road-crossholt-mereton", "Crossholt", "Mereton",
@@ -424,6 +431,9 @@ ROADS = [
     # east between Alderwood and Blackwood, then north-east to Hartwell
     ("road-hartwell-alderwick", "Hartwell", "Alderwick",
      [(1928, 1760), (1850, 1852), (1760, 1882), (1640, 1885), (1530, 1880), (1450, 1878), (1385, 1885)]),
+    # straight east north of the Kingswater, then south-east to the ford over the Vael at Harrowford
+    ("road-kingsbridge-harrowford", "Kingsbridge", "Harrowford",
+     [(1930, 1530), (1990, 1520), (2080, 1518), (2160, 1522), (2240, 1580)]),
 ]
 
 # Rivers that end in another river: their last point is moved onto that river's course

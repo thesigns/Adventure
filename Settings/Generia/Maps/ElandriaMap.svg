@@ -9,6 +9,9 @@ Elandria, continent of Generia, 1 px = 1 km, north up, x east, y south. Places (
   Hartwell (town): 1928, 1760
   Applecombe (town): 1700, 2165
   Alderwick (town): 1385, 1885
+  Twinbrook (town): 1078, 1760
+  Harrowford (town): 2240, 1580
+  Rimehaven (town): 1850, 630
   Silverhaven (city): 1378, 2298
   Port Seravel (city): 2554, 2033
   Brenwick (town): 739, 2248
@@ -18,6 +21,7 @@ Elandria, continent of Generia, 1 px = 1 km, north up, x east, y south. Places (
   Brasshollow (town): 470, 1455
   Ashgate (fort): 2175, 1110
   Crow's Pass (pass): 2515, 1262
+  Thane's Pass (pass): 1780, 1030
   Aurelion (ruin): 3080, 520
   Drowned Spires (ruin): 1075, 2115
   Hollow Crown (ruin): 380, 1270
@@ -29,6 +33,7 @@ Roads (km):
   Hartwell - Port Seravel: 696 (joins the Kingsbridge - Hollowbury road 233 km from Kingsbridge)
   Hollowbury - Silverhaven: 715
   Hartwell - Alderwick: 594 (joins the Kingsbridge - Hollowbury road 233 km from Kingsbridge)
+  Kingsbridge - Harrowford: 331
 Rivers, source to mouth (km):
   Coldwater: 355
   Frostrun: 504
@@ -161,6 +166,7 @@ Rivers, source to mouth (km):
   <polyline id="road-hartwell-seravel" data-from="Hartwell" data-to="Port Seravel" data-km="696" points="1928,1760 1947,1773 1967,1787 1988,1796 2010,1805 2033,1816 2053,1831 2075,1845 2095,1860 2114,1869 2132,1881 2150,1893 2165,1908 2192,1910 2219,1912 2245,1918 2270,1928 2298,1932 2325,1938 2352,1944 2380,1945 2404,1960 2429,1972 2454,1984 2480,1995 2497,2008 2516,2016 2534,2027 2554,2033"/>
   <polyline id="road-hollowbury-silverhaven" data-from="Hollowbury" data-to="Silverhaven" data-km="715" points="2020,2000 2000,2012 1979,2022 1957,2030 1935,2037 1915,2049 1895,2061 1871,2065 1850,2075 1829,2083 1811,2095 1795,2110 1776,2121 1758,2135 1740,2148 1719,2154 1700,2165 1677,2170 1654,2177 1633,2189 1610,2196 1588,2203 1565,2211 1543,2220 1520,2225 1503,2236 1485,2245 1468,2256 1452,2268 1435,2278 1416,2285 1397,2292 1378,2298"/>
   <polyline id="road-hartwell-alderwick" data-from="Hartwell" data-to="Alderwick" data-km="594" points="1928,1760 1916,1770 1907,1782 1896,1793 1886,1804 1877,1816 1866,1826 1858,1839 1850,1852 1829,1864 1806,1871 1784,1879 1760,1882 1745,1884 1730,1887 1715,1887 1700,1887 1685,1887 1670,1888 1655,1887 1640,1885 1612,1883 1585,1879 1558,1882 1530,1880 1510,1879 1490,1882 1470,1879 1450,1878 1434,1879 1417,1881 1401,1883 1385,1885"/>
+  <polyline id="road-kingsbridge-harrowford" data-from="Kingsbridge" data-to="Harrowford" data-km="331" points="1930,1530 1945,1528 1960,1524 1975,1522 1990,1520 2013,1520 2035,1516 2057,1518 2080,1518 2100,1518 2120,1522 2140,1522 2160,1522 2181,1534 2201,1549 2221,1564 2240,1580"/>
 </g>
 <g id="places">
 <g id="place-kingsbridge" data-name="Kingsbridge" data-kind="capital" data-x="1930" data-y="1530"><circle cx="1930" cy="1530" r="17" fill="#fff" stroke="#2b2620" stroke-width="5"/><circle cx="1930" cy="1530" r="7" fill="#2b2620"/><text x="1930" y="1498" font-size="32" font-weight="bold" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Kingsbridge</text></g>
@@ -170,6 +176,9 @@ Rivers, source to mouth (km):
 <g id="place-hartwell" data-name="Hartwell" data-kind="town" data-x="1928" data-y="1760"><circle cx="1928" cy="1760" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="1912" y="1768" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Hartwell</text></g>
 <g id="place-applecombe" data-name="Applecombe" data-kind="town" data-x="1700" data-y="2165"><circle cx="1700" cy="2165" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="1716" y="2193" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Applecombe</text></g>
 <g id="place-alderwick" data-name="Alderwick" data-kind="town" data-x="1385" data-y="1885"><circle cx="1385" cy="1885" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="1369" y="1873" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Alderwick</text></g>
+<g id="place-twinbrook" data-name="Twinbrook" data-kind="town" data-x="1078" data-y="1760"><circle cx="1078" cy="1760" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="1060" y="1786" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Twinbrook</text></g>
+<g id="place-harrowford" data-name="Harrowford" data-kind="town" data-x="2240" data-y="1580"><circle cx="2240" cy="1580" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="2256" y="1588" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Harrowford</text></g>
+<g id="place-rimehaven" data-name="Rimehaven" data-kind="town" data-x="1850" data-y="630"><circle cx="1850" cy="630" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="1866" y="644" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Rimehaven</text></g>
 <g id="place-silverhaven" data-name="Silverhaven" data-kind="city" data-x="1378" data-y="2298"><circle cx="1378" cy="2298" r="12" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="1398" y="2286" font-size="24" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Silverhaven</text></g>
 <g id="place-port-seravel" data-name="Port Seravel" data-kind="city" data-x="2554" data-y="2033"><circle cx="2554" cy="2033" r="12" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="2534" y="2067" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Port Seravel</text></g>
 <g id="place-brenwick" data-name="Brenwick" data-kind="town" data-x="739" data-y="2248"><circle cx="739" cy="2248" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="723" y="2238" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Brenwick</text></g>
@@ -179,6 +188,7 @@ Rivers, source to mouth (km):
 <g id="place-brasshollow" data-name="Brasshollow" data-kind="town" data-x="470" data-y="1455"><circle cx="470" cy="1455" r="8" fill="#fff" stroke="#2b2620" stroke-width="4"/><text x="470" y="1433" font-size="24" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Brasshollow</text></g>
 <g id="place-ashgate" data-name="Ashgate" data-kind="fort" data-x="2175" data-y="1110"><rect x="2164" y="1099" width="22" height="22" fill="#2b2620" stroke="#fff" stroke-width="3"/><text x="2155" y="1118" font-size="24" text-anchor="end" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Ashgate</text></g>
 <g id="place-crows-pass" data-name="Crow's Pass" data-kind="pass" data-x="2515" data-y="1262"><path d="M2501 1250Q2511 1262 2501 1274M2529 1250Q2519 1262 2529 1274" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M2501 1250Q2511 1262 2501 1274M2529 1250Q2519 1262 2529 1274" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-linecap="round"/><text x="2533" y="1246" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Crow's Pass</text></g>
+<g id="place-thanes-pass" data-name="Thane's Pass" data-kind="pass" data-x="1780" data-y="1030"><path d="M1766 1018Q1776 1030 1766 1042M1794 1018Q1784 1030 1794 1042" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M1766 1018Q1776 1030 1766 1042M1794 1018Q1784 1030 1794 1042" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-linecap="round"/><text x="1798" y="1038" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Thane's Pass</text></g>
 <g id="place-aurelion" data-name="Aurelion" data-kind="ruin" data-x="3080" data-y="520"><path d="M3068 529V516A12 12 0 0 1 3092 516V529" fill="none" stroke="#fff" stroke-width="8"/><path d="M3068 529V516A12 12 0 0 1 3092 516V529" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M3064 530H3096" stroke="#2b2620" stroke-width="3"/><text x="3100" y="528" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Aurelion</text></g>
 <g id="place-drowned-spires" data-name="Drowned Spires" data-kind="ruin" data-x="1075" data-y="2115"><path d="M1063 2124V2111A12 12 0 0 1 1087 2111V2124" fill="none" stroke="#fff" stroke-width="8"/><path d="M1063 2124V2111A12 12 0 0 1 1087 2111V2124" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M1059 2125H1091" stroke="#2b2620" stroke-width="3"/><text x="1093" y="2123" font-size="21" font-style="italic" text-anchor="start" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Drowned Spires</text></g>
 <g id="place-hollow-crown" data-name="Hollow Crown" data-kind="ruin" data-x="380" data-y="1270"><path d="M368 1279V1266A12 12 0 0 1 392 1266V1279" fill="none" stroke="#fff" stroke-width="8"/><path d="M368 1279V1266A12 12 0 0 1 392 1266V1279" fill="none" stroke="#2b2620" stroke-width="3.5" stroke-dasharray="11 5"/><path d="M364 1280H396" stroke="#2b2620" stroke-width="3"/><text x="380" y="1308" font-size="21" font-style="italic" text-anchor="middle" fill="#2b2620" stroke="#f6f0e1" stroke-width="8" paint-order="stroke">Hollow Crown</text></g>
