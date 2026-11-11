@@ -22,6 +22,7 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parent.parent / "Maps" / "ElandriaMap.svg"
 W, H = 3500, 2500          # map area in km
 M = 400                    # sea margin around the map area
+MS = 600                   # sea margin in the south, wider to keep the southern islands clear of the legend
 LEGEND_H = 260             # legend strip below the map
 LAND = "#f6f0e1"
 SEA = "#cfe2f1"
@@ -54,6 +55,85 @@ ISLANDS = [
     [(2900, 2400), (2990, 2380), (3010, 2450), (2930, 2480)],
     [(-200, 1900), (-80, 1870), (-50, 1950), (-160, 1990)],
 ]
+
+# Rough line of the southern coast, for placing islands off it: Silverhaven to Port Seravel, Brenwick to Silverhaven
+SOUTH_SHORE = [(1400, 2330), (1500, 2360), (1550, 2405), (1650, 2380), (1750, 2380), (1850, 2425), (1900, 2480),
+               (2000, 2482), (2100, 2468), (2150, 2425), (2250, 2385), (2400, 2400), (2450, 2325), (2520, 2260)]
+WEST_SHORE = [(740, 2265), (900, 2275), (950, 2340), (1000, 2390), (1150, 2400), (1200, 2345), (1300, 2335),
+              (1390, 2325)]
+
+
+def archipelago(seed, count, line, xs, ys, sizes, clusters, chains, strays):
+    """Small islands off a stretch of coast `line`, placed unevenly: clusters, chains and a few strays.
+
+    `sizes` lists (number of islands, smallest radius, largest radius) from the biggest down;
+    clusters are (centre, spread x, spread y, weight), chains (from, to, jitter, weight)."""
+    rng = random.Random(seed)
+    placed, out = [], []
+
+    def shore(x):
+        for (x1, y1), (x2, y2) in zip(line, line[1:]):
+            if x1 <= x <= x2:
+                return y1 + (y2 - y1) * (x - x1) / (x2 - x1)
+        return line[-1][1]
+
+    def radius(n):
+        for k, lo, hi in sizes:
+            if n < k:
+                return rng.uniform(lo, hi)
+            n -= k
+        return rng.uniform(lo, hi)
+
+    tries = 0
+    while len(out) < count and tries < 40000:
+        tries += 1
+        n = len(out)
+        r = radius(n)
+        pick = rng.uniform(0, sum(c[-1] for c in clusters + chains) + strays)
+        for c in clusters + chains:
+            pick -= c[-1]
+            if pick < 0:
+                break
+        if pick >= 0:  # a stray anywhere
+            x, y = rng.uniform(*xs), rng.uniform(*ys)
+        elif len(c) == 4 and isinstance(c[1], tuple):  # a chain
+            (ax, ay), (bx, by), jit, _ = c
+            f = rng.random()
+            x, y = ax + (bx - ax) * f + rng.gauss(0, jit), ay + (by - ay) * f + rng.gauss(0, jit)
+        else:
+            (cx, cy), sx, sy, _ = c
+            x, y = rng.gauss(cx, sx), rng.gauss(cy, sy)
+        if not (xs[0] - 20 < x < xs[1] + 20 and shore(x) + 25 + r < y < ys[1] - r):
+            continue
+        if any(math.dist((x, y), q) < r + qr + 5 for q, qr in placed):
+            continue
+        placed.append(((x, y), r))
+        angle, stretch = rng.uniform(0, math.pi), rng.uniform(1.0, 1.9)
+        sides = rng.randint(6, 10)
+        poly = []
+        for k in range(sides):
+            t = 2 * math.pi * k / sides
+            d = r * rng.uniform(0.65, 1.15)
+            dx, dy = math.cos(t) * d * stretch, math.sin(t) * d / stretch
+            poly.append((round(x + dx * math.cos(angle) - dy * math.sin(angle)),
+                         round(y + dx * math.sin(angle) + dy * math.cos(angle))))
+        out.append(poly)
+    return out
+
+
+# Between Silverhaven and Port Seravel: some seventy islands in uneven groups, like the Aegean
+ISLANDS += archipelago(
+    7, 72, SOUTH_SHORE, (1440, 2500), (2350, 2860), [(5, 20, 32), (17, 9, 16), (99, 4, 8)],
+    [((1600, 2470), 30, 40, 9), ((1990, 2620), 70, 50, 16), ((2060, 2560), 25, 20, 7),
+     ((2380, 2480), 35, 25, 7), ((1720, 2790), 50, 35, 6), ((2300, 2780), 20, 20, 4)],
+    [((1470, 2560), (1700, 2650), 18, 7), ((2200, 2470), (2450, 2620), 15, 8), ((1850, 2860), (2150, 2700), 22, 6)],
+    4)
+# Between Brenwick and Silverhaven: a handful of islets
+ISLANDS += archipelago(
+    11, 9, WEST_SHORE, (780, 1360), (2300, 2650), [(1, 14, 20), (3, 7, 11), (99, 4, 7)],
+    [((1060, 2480), 40, 25, 5), ((1270, 2420), 20, 15, 3)],
+    [((870, 2330), (980, 2440), 12, 3)],
+    1)
 
 
 # Mountain ranges: main ridge, spurs branching off it, width of the range in km.
@@ -615,7 +695,7 @@ def mark_svg(kind, x, y):
 
 
 def legend():
-    top = H + M + 30
+    top = H + MS + 30
     s = [f'<g id="legend" font-size="24">',
          f'<text x="{-M + 60}" y="{top + 48}" font-size="52" font-weight="bold" letter-spacing="10">ELANDRIA</text>',
          f'<text x="{-M + 62}" y="{top + 88}" font-style="italic">1 px = 1 km, north up</text>']
@@ -666,7 +746,7 @@ def build():
     rng = random.Random(42)
     coast = jagged(COAST, rng)
     islands = [jagged(i, rng, rough=0.4, min_len=14) for i in ISLANDS]
-    total_h = H + 2 * M + LEGEND_H
+    total_h = H + M + MS + LEGEND_H
     global LAND_SHAPE
     LAND_SHAPE = coast
     river_lines = [clip_to_land(bend(to_coast(p, coast), random.Random(n + 51), rough=0.2, min_len=16), coast)
@@ -689,7 +769,7 @@ def build():
   <clipPath id="land"><use href="#coast-shape"/></clipPath>{GLYPHS}
   <g id="islands-shape">{"".join(f'<polygon id="island-{n + 1}" points="{pts(p)}"/>' for n, p in enumerate(islands))}</g>
 </defs>""",
-           f'<rect x="{-M}" y="{-M}" width="{W + 2 * M}" height="{H + 2 * M}" fill="{SEA}"/>',
+           f'<rect x="{-M}" y="{-M}" width="{W + 2 * M}" height="{H + M + MS}" fill="{SEA}"/>',
            f'<g id="shallows" fill="{SHALLOW}" stroke="{SHALLOW}" stroke-width="60" stroke-linejoin="round">'
            f'<use href="#coast-shape"/><use href="#islands-shape"/></g>',
            f'<g id="land" fill="{LAND}" stroke="{SHORE}" stroke-width="4" stroke-linejoin="round">'
@@ -737,8 +817,8 @@ def build():
            '</g>',
            '<g id="places">', *[place_svg(*p) for p in PLACES], '</g>',
            compass(3600, -150),
-           f'<rect x="{-M}" y="{H + M}" width="{W + 2 * M}" height="{LEGEND_H}" fill="{LAND}"/>',
-           f'<line x1="{-M}" y1="{H + M}" x2="{W + M}" y2="{H + M}" stroke="{INK}" stroke-width="3"/>',
+           f'<rect x="{-M}" y="{H + MS}" width="{W + 2 * M}" height="{LEGEND_H}" fill="{LAND}"/>',
+           f'<line x1="{-M}" y1="{H + MS}" x2="{W + M}" y2="{H + MS}" stroke="{INK}" stroke-width="3"/>',
            f'<rect x="{-M + 12}" y="{-M + 12}" width="{W + 2 * M - 24}" height="{total_h - 24}" fill="none" stroke="{INK}" stroke-width="4"/>',
            legend(),
            "</svg>"]
