@@ -37,6 +37,7 @@ Armour makes the enemy wound the character less often and less severely. The GM 
 
 The world gives its own examples of armour.
 
+- **Class by kind:** the class follows the kind of armour, not what it is called: "light chain mail" is still medium armour.
 - **Toughness:** the steps of armour add to the steps of toughness (see *Toughness* in `Rules/Health.md`). A tough creature in heavy armour takes wounds three steps lighter.
 - **Helmet:** medium and heavy armour include a helmet. Without one, they count as one class lighter.
 - **Weapons that defeat armour,** e.g. a war pick, a heavy crossbow or armour-piercing rounds, treat armour as one class lighter. Light armour then does not protect at all.
