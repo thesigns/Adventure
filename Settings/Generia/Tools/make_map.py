@@ -299,6 +299,14 @@ PLACES = [
     ("kingsbridge", "Kingsbridge", "capital", 1930, 1530, "middle", 0, -32),
     ("mereton", "Mereton", "city", 1468, 1598, "start", 20, -16),
     ("hollowbury", "Hollowbury", "town", 2020, 2000, "end", -16, 8),
+    # town where the Mereton road meets the road south from Kingsbridge, at the western edge of Hartwood
+    ("crossholt", "Crossholt", "town", 1912, 1640, "end", -16, -14),
+    # market town at the crossroads where the Port Seravel road meets the Hollowbury road
+    ("hartwell", "Hartwell", "town", 1928, 1760, "end", -16, 8),
+    # halfling town in western Greenhollow, halfway along the road from Hollowbury to Silverhaven
+    ("applecombe", "Applecombe", "town", 1700, 2165, "start", 16, 28),
+    # lake port on the eastern shore of Silvermere, west of the northern tip of Alderwood
+    ("alderwick", "Alderwick", "town", 1385, 1885, "end", -16, -12),
     # ports on the southern coast
     ("silverhaven", "Silverhaven", "city", 1378, 2298, "start", 20, -12),
     ("port-seravel", "Port Seravel", "city", 2554, 2033, "end", -20, 34),
@@ -322,14 +330,20 @@ PLACES = [
 
 # Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km
 ROADS = [
-    ("road-kingsbridge-mereton", "Kingsbridge", "Mereton",
-     [(1930, 1530), (1840, 1590), (1730, 1640), (1620, 1655), (1530, 1630), (1468, 1598)]),
+    # branches off the Hollowbury road at Crossholt, so every main road meets one trunk road before Kingsbridge
+    ("road-crossholt-mereton", "Crossholt", "Mereton",
+     [(1912, 1640), (1820, 1652), (1730, 1645), (1620, 1655), (1530, 1630), (1468, 1598)]),
     ("road-kingsbridge-hollowbury", "Kingsbridge", "Hollowbury",
      [(1930, 1530), (1912, 1640), (1928, 1760), (1965, 1880), (2020, 2000)]),
-    ("road-kingsbridge-seravel", "Kingsbridge", "Port Seravel",
-     [(1930, 1530), (2015, 1630), (2120, 1715), (2250, 1820), (2380, 1925), (2480, 1995), (2554, 2033)]),
+    # branches off the Hollowbury road at Hartwell, level with Hartwood, runs between Hazelwood and Elmwood
+    ("road-hartwell-seravel", "Hartwell", "Port Seravel",
+     [(1928, 1760), (2010, 1805), (2095, 1860), (2165, 1908), (2270, 1928), (2380, 1945), (2480, 1995),
+      (2554, 2033)]),
     ("road-hollowbury-silverhaven", "Hollowbury", "Silverhaven",
-     [(2020, 2000), (1850, 2075), (1680, 2150), (1520, 2225), (1378, 2298)]),
+     [(2020, 2000), (1850, 2075), (1700, 2165), (1520, 2225), (1378, 2298)]),
+    # east between Alderwood and Blackwood, then north-east to Hartwell
+    ("road-hartwell-alderwick", "Hartwell", "Alderwick",
+     [(1928, 1760), (1850, 1852), (1760, 1882), (1640, 1885), (1530, 1880), (1450, 1878), (1385, 1885)]),
 ]
 
 # Rivers that end in another river: their last point is moved onto that river's course
@@ -544,10 +558,19 @@ def summary(river_lines, road_lines):
     out = ["Elandria, continent of Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):"]
     out += [f"  {name} ({kind}): {x}, {y}" for _, name, kind, x, y, *_ in PLACES]
     out.append("Roads (km):")
-    out += [f"  {a} - {b}: {km(line)}" for (_, a, b, _), line in zip(ROADS, road_lines)]
+    for (_, a, b, _), line in zip(ROADS, road_lines):
+        out.append(f"  {a} - {b}: {km(line)}{junction(line[0], road_lines)}")
     out.append("Rivers, source to mouth (km):")
     out += [f"  {RIVER_NAMES[rid][0]}: {km(line)}" for (rid, _, _), line in zip(RIVERS, river_lines)]
     return "\n".join(out)
+
+
+def junction(start, road_lines):
+    """Where a branch road starts on another road: ' (joins the A - B road N km from A)', or ''."""
+    for (_, a, b, _), line in zip(ROADS, road_lines):
+        if start in line[1:-1]:
+            return f" (joins the {a} - {b} road {km(line[:line.index(start) + 1])} km from {a})"
+    return ""
 
 
 def km(points):
@@ -618,7 +641,7 @@ def legend():
         (lambda x, y: mark_svg("fort", x, y), "fort"),
         (lambda x, y: mark_svg("pass", x, y), "pass"),
         (lambda x, y: mark_svg("ruin", x, y), "ruin"),
-        (line("#8b5a2b", 6, "1 13"), "road"),
+        (line("#8b5a2b", 4, "0.5 8"), "road"),
         (line(RIVER, 5), "river"),
         (line("#8a3b2e", 5, "20 12"), "border"),
         (patch("#e6dcc8", "peak", 14), "young mountains"),
@@ -708,7 +731,7 @@ def build():
            f'<text x="{KINGDOM_LABEL[2]}" y="{KINGDOM_LABEL[3] + 46}" font-size="40" letter-spacing="10" text-anchor="middle" '
            f'fill="#7a3428" stroke="{LAND}" stroke-width="8" paint-order="stroke">{KINGDOM_LABEL[1]}</text>',
            '</g>',
-           '<g id="roads" fill="none" stroke="#8b5a2b" stroke-width="6" stroke-dasharray="1 13" stroke-linecap="round">',
+           '<g id="roads" fill="none" stroke="#8b5a2b" stroke-width="4" stroke-dasharray="0.5 8" stroke-linecap="round">',
            *[f'  <polyline id="{rid}" data-from="{a}" data-to="{b}" data-km="{km(line)}" points="{pts(line)}"/>'
              for (rid, a, b, _), line in zip(ROADS, road_lines)],
            '</g>',

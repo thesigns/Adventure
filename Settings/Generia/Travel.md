@@ -18,7 +18,7 @@ Distances come from the map: the `<desc>` at the top of `Maps/ElandriaMap.svg` l
 
 - **Off the road** the way is about 1.3 times the straight-line distance on the map, more in mountains, forests and marshes.
 - **Forced march:** half as far again in a day, but the character must roll (average) or arrive exhausted: all actions one level harder until a night's rest.
-- **Example:** Kingsbridge to Mereton is 506 km by road: about 17 days on foot, 10 on horseback.
+- **Example:** Kingsbridge to Mereton is 570 km by road, through Crossholt: about 19 days on foot, 12 on horseback.
 
 ## Costs
 
