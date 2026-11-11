@@ -1,0 +1,18 @@
+{
+  "straw": {"entries": {"3-6": 60, "7-10": 120, "11-14": 180, "15-18": 240}},
+  "latch": {"entries": {"3-8": 30, "9-12": 90, "13-18": 150}},
+  "tinder": {"entries": {
+    "3-4": "the character's horse, or another guest's horse if the character has none",
+    "5-7": "the character's cloak or blanket",
+    "8-12": "food from the pantry",
+    "13-18": "nothing"
+  }},
+  "furrow": {"entries": {
+    "3-9": "the foresters catch him on the road before dawn",
+    "10-18": "he gets away"
+  }},
+  "harrow": {"entries": {
+    "3-6": "the foresters catch him on the road before dawn",
+    "7-18": "he gets away"
+  }}
+}

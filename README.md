@@ -112,11 +112,16 @@ file `Scenario.md` always states the setting: the name of a folder in
 the adventure takes place in a village cut off from the world and in
 a nearby crypt".
 
-For now the repository contains one test scenario, **The Crypt**
-(`Scenarios/TheCrypt/`), set in Generia. It is a short mini adventure: the
-character goes down into a crypt under a hill to find a missing shepherd boy.
-The scenario has a crypt map with fog of war for the player and a treasure
-script.
+The repository contains two scenarios set in Generia:
+
+- **The Crypt** (`Scenarios/TheCrypt/`), a short mini adventure: the
+  character goes down into a crypt under a hill to find a missing shepherd
+  boy. The scenario has a crypt map with fog of war for the player and a
+  treasure script.
+- **The String of Sausages** (`Scenarios/TheStringOfSausages/`), a micro
+  adventure for a first session: a crowded roadside inn on the way to
+  Kingsbridge on the eve of the festival week, and a hungry fugitive in the
+  barn at night.
 
 The only setting is **Generia** (`Settings/Generia/`): a thoroughly generic
 fantasy world with elves, dwarves, magic and monsters, described tersely to
