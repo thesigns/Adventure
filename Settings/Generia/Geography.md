@@ -35,7 +35,7 @@ The map `Maps/ElandriaMap.svg` is the source of truth; this file describes what 
 
 The Empire of Aurelion fell a thousand years ago. Its ruins are scattered across Elandria, full of treasure and danger; the best known are on the map:
 
-- **Aurelion:** the ruined imperial capital, deep in the Ashlands. Orcs camp in its shadow but avoid its halls.
+- **Aurelion:** the ruined imperial capital, on the great eastern cape of the Ashlands, east of Crow's Pass. Orcs camp in its shadow but avoid its halls.
 - **Drowned Spires:** towers sinking into the Fenmarch marshes, between Mistmere, Reedmere and the sea.
 - **Hollow Crown:** a ring of broken halls on a hill in the western Frostmarch.
 - **Lonely Tower:** a tower on an island off the north-western coast.

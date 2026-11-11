@@ -407,7 +407,7 @@ PLACES = [
     # the pass over the Ironpeaks under Khaz Dorun, between Valdren and the Frostmarch
     ("thanes-pass", "Thane's Pass", "pass", 1780, 1030, "start", 18, 8),
     # ruins of the Empire of Aurelion
-    ("aurelion", "Aurelion", "ruin", 3080, 520, "start", 20, 8),
+    ("aurelion", "Aurelion", "ruin", 3200, 1370, "start", 20, 8),
     ("drowned-spires", "Drowned Spires", "ruin", 1075, 2115, "start", 18, 8),
     ("hollow-crown", "Hollow Crown", "ruin", 380, 1270, "middle", 0, 38),
     ("lonely-tower", "Lonely Tower", "ruin", 590, 540, "middle", 0, -20),
