@@ -86,42 +86,66 @@ Besides them the taproom is full of travellers without names or secrets: carters
 
 ## The inn
 
-The scenario has no map. The inn is a long timber house with a stone chimney, set back from the road, with a yard behind it closed by outbuildings:
+The inn is a long timber house with a stone chimney on the east side of the highway. North of it a lane runs from the road into the yard. Around the yard stand the stable (north), the barn (south-east) and a fence (east and south) with a wicket gate to the fields. South of the house lies a fenced kitchen garden, and beyond the garden and the yard a hedge with a ditch along it, and then open fields. Pansho lies up in that ditch until the night.
 
-```
-              (the highway)
-                    |
-        [front door, the poster]
-                    |
-   +----------------------------------+
-   |  1. Taproom (fire, tables, stairs |
-   |     up to the full guest rooms)   |
-   +----------------+-----------------+
-   |  2. Kitchen and pantry           |---- back door
-   |     (trapdoor to the cellar)     |         |
-   +----------------------------------+         |
-                                                |
-   3. Barn (hay, hayloft) ---- 4. Yard ---------+
-                                 |   \
-                          stable    jugglers' wagon,
-                                    the empty prison cart
-```
+### Map
 
-### 1. Taproom
+The map of the inn is in the file `Maps/MapInn.svg` in the scenario folder (north up, 1 square = 1 m). The large panel shows the ground floor with the yard, the outbuildings and the fields; the small panels on the right show the upper floor, the hayloft over the barn and the cellar under the kitchen. It is the GM's map: to the player the GM shows a map with fog of war (see *Maps* in `AGENTS.md`). The areas to reveal are numbered like the places below, from 1 to 15. The map has no secrets: the cellar is simply an area the GM reveals when the character goes down.
 
-A long smoky room with a big fireplace, trestle tables and benches, crammed with travellers. Stairs lead up to the guest rooms, all taken. The poster is nailed outside on the front door.
+The GM keeps the player map with the script `Scripts/fogmap.py`, with the name of the character's campaign:
 
-### 2. Kitchen and pantry
+- When the character comes up the road to the inn, the GM reveals the highway and the front of the house and opens the map preview for the player, which from then on refreshes itself:
 
-A low kitchen with a hearth, a long table, a chopping block with a cleaver, and a pantry where hams, a few cheeses and strings of sausages hang from the beams. The back door opens onto the yard and is barred at night, but its bar is warped and lifts from outside with a knife or a thin stick. A trapdoor in the floor leads to the cellar with Edric's casks. Edric sleeps in a small room behind the kitchen, a light sleeper, but by the small hours dead tired.
+  ```
+  python Scripts/fogmap.py --campaign <campaign> --map Scenarios/TheStringOfSausages/Maps/MapInn.svg --reveal 1 --open --plan 1
+  ```
 
-### 3. Barn
+- When the character enters the taproom, the GM reveals area 2; when they cross to the barn, the yard (5) and the barn (7), and so on, always with `--plan` for a new area.
+- From the barn door at night the character sees the yard by moonlight, but not inside the stable or the house.
 
-A high, draughty timber barn with a threshing floor deep in loose hay. Tonight only the character sleeps here: everyone else crowded into the warm taproom. A ladder leads up to the hayloft, piled with old hay. In a corner stands a box of tools: hammer, cold chisel, pincers, a small anvil block for shoeing. There is no light but the moon through the gaps in the boards.
+### 1. Highway and front door
 
-### 4. Yard and stable
+The highway runs north to Kingsbridge and south to Crossholt, rutted and muddy. The front door of the inn faces the road; the poster is nailed on it. The lane along the north side of the house leads to the yard.
 
-A muddy yard between the house, the barn and the stable. In the stable stand the guests' horses and the jugglers' pony. In the yard stand the jugglers' canvas-covered wagon and the foresters' empty prison cart. At night the mud freezes hard and a rime of hoarfrost settles on it; by about 9:00 the sun takes the rime off and the mud thaws into slush.
+### 2. Taproom
+
+A long smoky room with a big fireplace on the north wall, a counter with two casks of ale, four trestle tables with benches, crammed with travellers. In the south-east corner stairs lead up to the guest rooms, all taken. A door in the east wall leads to the kitchen.
+
+### 3. Kitchen and pantry
+
+A low kitchen with a hearth, a long table, a chopping block with a cleaver, and a small pantry in the north-east corner where hams, a few cheeses and strings of sausages hang from the beams. The back door in the east wall opens onto the yard and is barred at night, but its bar is warped and lifts from outside with a knife or a thin stick. A trapdoor in the floor leads down a ladder to the cellar (15).
+
+### 4. Edric's room
+
+A small room behind the kitchen, with a bed and a chest. Edric sleeps here: a light sleeper, but by the small hours dead tired.
+
+### 5. Yard
+
+A muddy yard between the house, the stable and the barn, with a well in the middle. In the yard stand the jugglers' canvas-covered wagon and the foresters' empty prison cart, with the broken chain still hanging from its rail. A wicket in the south fence, beside the barn, opens onto the fields. At night the mud freezes hard and a rime of hoarfrost settles on it; by about 9:00 the sun takes the rime off and the mud thaws into slush.
+
+### 6. Stable
+
+Five stalls for the guests' horses and the jugglers' pony, with a door to the yard.
+
+### 7. Barn
+
+A high, draughty timber barn with a double door to the yard and a threshing floor deep in loose hay. Tonight only the character sleeps here: everyone else crowded into the warm taproom. A ladder in the north-west corner leads up to the hayloft (9). In the south-east corner stands a box of tools, hammer, cold chisel and pincers, and a small anvil block for shoeing. There is no light but the moon through the gaps in the boards.
+
+### 8. Garden and fields
+
+Behind the house a fenced kitchen garden, bare at the end of winter. Beyond it and the yard runs a thick hedge with a ditch along its far side, and then open fields towards the thickets where Pansho escaped.
+
+### 9. Hayloft
+
+The loft over the barn, piled with old hay, with a loading hatch to the yard and the ladder hole in the north-west corner. A man buried in the hay here cannot be seen from below.
+
+### 10–14. Upper floor
+
+A corridor from the stairs, with four guest rooms: the dwarves' (11) with their chest, the wizard's (12), the cloth merchant's and his clerk's (13) and the gnome's (14). The jugglers, Wendel and the other travellers sleep downstairs.
+
+### 15. Cellar
+
+A low cellar under the kitchen, reached by a ladder from the trapdoor. Along the walls stand Edric's casks of Greenhollow wine (see *The innkeeper*).
 
 ## Course of the adventure
 

@@ -122,6 +122,7 @@ The repository contains two scenarios set in Generia:
   adventure for a first session: a crowded roadside inn on the way to
   Kingsbridge on the eve of the festival week, and a hungry fugitive in the
   barn at night.
+  The scenario has a map of the inn with fog of war for the player.
 
 The only setting is **Generia** (`Settings/Generia/`): a thoroughly generic
 fantasy world with elves, dwarves, magic and monsters, described tersely to
