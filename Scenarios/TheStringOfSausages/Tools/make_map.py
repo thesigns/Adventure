@@ -331,7 +331,7 @@ feat.append(line(30.6, 16.8, 31.4, 17.3, w=1.6) + line(30.7, 17.35, 31.5, 16.9, 
 feat.append(shadowed(29.3, 16.9, 29.9, 17.5, fill="#bdbdbd"))
 # 9 hayloft: heaps of hay, the ladder hole, the loading hatch
 feat.append(hay(40.3, 8.3, 49.7, 15.7, 330))
-feat.append(box(41.0, 10.6, 41.8, 12.8, fill="#2a2a2a", w=2.4) + ladder(41.1, 10.7, 41.7, 12.7))
+feat.append(box(41.0, 8.6, 41.8, 10.8, fill="#2a2a2a", w=2.4) + ladder(41.1, 8.7, 41.7, 10.7))
 feat.append(box(43.4, 7.7, 46.6, 8.3, w=2.4))
 # 10-14 upper floor: stairs, beds, the dwarves' chest
 feat.append(stairs(*UP_STAIRS, False, 7))
@@ -382,7 +382,7 @@ names = [
     name_label("privy", 33.05, -0.2, cls="tiny"), name_label("dung heap", 30.4, -0.6, cls="tiny"),
     name_label("ladder", 24.1, 11.9, cls="tiny", anchor="start"), name_label("tools", 31.0, 16.2, cls="tiny"),
     name_label("anvil", 29.2, 17.4, cls="tiny", anchor="end"),
-    name_label("ladder", 41.4, 13.5, cls="tiny"), name_label("loading hatch", 45.0, 9.0, cls="tiny"),
+    name_label("ladder", 41.4, 11.5, cls="tiny"), name_label("loading hatch", 45.0, 9.0, cls="tiny"),
     name_label("ladder", 54.65, 14.35, cls="tiny"), name_label("casks", 54.6, 10.3, cls="tiny"),
     name_label("Upper floor", 48.0, -8.6, cls="panel"), name_label("Hayloft", 45.0, 7.2, cls="panel"),
     name_label("Cellar", 54.5, 7.2, cls="panel"),
@@ -508,7 +508,7 @@ areas = {
     "always": [[[0, round(MAP_H + 8, 1)], [round(W, 1), round(MAP_H + 8, 1)], [round(W, 1), round(H, 1)], [0, round(H, 1)]]],
     "areas": {
         "1": {"name": "Highway and front door", "polygons": [px_rect(-9.6, YMIN, -2.6, 26.6), px_rect(-2.6, -3.6, 16.0, -0.3),
-                                                             px_rect(-2.6, -0.3, -0.5, 10.5)]},
+                                                             px_rect(-2.6, -0.3, -0.5, 10.5), px_rect(16.0, -3.6, 16.5, -0.3)]},
         "2": {"name": "Taproom", "polygons": [px_rect(-0.5, -0.5, 11.0, 10.5)]},
         "3": {"name": "Kitchen and pantry", "polygons": [px_rect(11.0, -0.5, 16.5, 6.5)]},
         "4": {"name": "Edric's room", "polygons": [px_rect(11.0, 6.5, 16.5, 10.5)]},
