@@ -33,7 +33,7 @@ Sunset is at about 18:00, full darkness from 18:30 to 5:30, and sunrise at about
 
 ### Law
 
-In Valdren poaching the king's deer is theft from the king: the culprit is flogged or branded (see *Law* in `Settings/Generia/Culture.md`). Escaping from the king's custody is a far graver crime, and an escaped prisoner who is caught usually hangs. Helping a fugitive is a crime too, but nobody will know unless someone talks.
+In Valdren poaching the king's deer is theft from the king: the culprit is flogged or branded (see *Law* in `Settings/Generia/Culture.md`). Escaping from the king's custody is a far graver crime, and an escaped prisoner who is caught usually hangs. Helping a fugitive is a crime too: a fine or a flogging for feeding or hiding him, a flogging or a brand for striking off his iron. Nobody will know unless someone talks.
 
 ## The fugitive
 
@@ -77,7 +77,8 @@ This is a micro scenario: the GM sums up the evening in a few sentences and play
   - *On the poster:* he looks at the likeness longer than the others and murmurs that "a brand is not the end of the world".
 - **Aldous Crane**, a hooded wanderer: a ranger of the roads and a hunter, weathered and quiet, in a worn cloak, with a bow and a long knife. For years he has wandered the borderlands and the wilds, tracking down what threatens people: wolves, wargs, outlaws, sometimes worse. He follows Sylvana. In his youth he was one of the king's foresters, but he left the service. He comes from Bramblewood near Hollowbury, where wolves came close to the villages all winter, and he tracked down and killed the leader of the pack; he is taking its pelt to the Adventurers' Guild in Kingsbridge for the bounty. He sits alone in a corner out of habit, not for mystery, and will gladly talk about roads, forests and beasts if spoken to.
   - *On the poster:* he came north by Hartwell and saw the villages at the edge of Hartwood this winter: empty larders, children thin as rakes, people boiling bark. He knows the foresters and their law, but remembers hungry winters too: "the king has more deer than he has subjects who ate meat this year". He does not hunt the fugitive himself: not his quarry.
-- **Halvar Stonehelm and his nephew Kori**, dwarves from Khaz Dorun, coming from Mereton, where the dwarven bankers keep a counting house. They carry a chest of gold, earned from iron shipped down the Aldwater, to the bankers in Kingsbridge, watch it in turns and let nobody into their room. They talk about Khaz Dorun, the goblins in the caves and how a dwarf keeps his word.
+- **Halvar Stonehelm and his nephew Kori**, dwarves of Khaz Dorun, couriers of their clan's counting house in Mereton. They carry a chest of gold, earned from iron shipped down the Aldwater, to the dwarven bankers in Kingsbridge, watch it in turns and let nobody into their room: in the evening Kori sits up with it while Halvar eats, and after the raven croaks they both go up early. They talk about Khaz Dorun, the goblins in the caves and how a dwarf keeps his word.
+  - *A dwarven character:* Halvar greets them as kin and asks their clan (see `Settings/Generia/Dwarves.md`). One without a clan, or of a clan at odds with the Stonehelms, gets cold courtesy, nothing more.
   - *On the poster:* Halvar thinks the law is the law: "he swore fealty to the king and stole from him".
 - **Master Ambrose Ashdown**, an old wizard going to the New Year gathering of masters at the Arcane College. He lives in a tower on the shore of Silvermere by Alderwick, where as a licensed wizard he turns storms and finds lost nets. Polite and talkative, he will happily talk about magic, licences and Aurelian books. He judges Pell's wonders with amusement and can sense which of them really hold magic: the raven brooch does. He also senses a faint magic about Wendel and takes it for a lucky charm.
   - *On the poster:* there have always been poachers, and the king's deer are doing well.
@@ -121,7 +122,7 @@ A small room behind the kitchen, with a bed and a chest. Edric sleeps here: a li
 
 ### 5. Yard
 
-A muddy yard between the house, the stable and the barn, with a well in the middle. In the yard stand the jugglers' canvas-covered wagon and the foresters' empty prison cart, with the broken chain still hanging from its rail. A wicket in the south fence, beside the barn, opens onto the fields. At night the mud freezes hard and a rime of hoarfrost settles on it; by about 9:00 the sun takes the rime off and the mud thaws into slush.
+A muddy yard between the house, the stable and the barn, with a well in the middle. In the yard stand the jugglers' canvas-covered wagon and the foresters' empty prison cart, with the broken chain still hanging from its rail. A wicket in the south fence, beside the barn, opens onto the fields. In the north-east corner, by the stable, stand the privy and the dung heap; a guest going out in the night may be a witness. At night the mud freezes hard and a rime of hoarfrost settles on it; by about 9:00 the sun takes the rime off and the mud thaws into slush.
 
 ### 6. Stable
 
@@ -173,7 +174,7 @@ python Scripts/gm.py --campaign <campaign> timer --label n1 --table straw --from
 
 Edric meets the character in the crowded taproom: there is not a bed left. The guest rooms upstairs are taken by the dwarves, the wizard, the gnome and the cloth merchant; the jugglers, Wendel and the other travellers will sleep on the taproom floor by the fire, packed like herrings. For 2 copper the character can have the hay in the barn to themselves: draughty, but dry. He warns that there must be no fire in the barn.
 
-Over supper the character can talk to the guests (see *Guests*). Edric, serving the stew thin, says that this winter even he had little to put in the pot, and that in the villages it was worse. Around 19:30 the Burrows jugglers give their show; around 20:00 Pell shows his casket and rubs the raven brooch (see *Pell Ambergear*). People at the tables talk about the fugitive and the reward. At about 21:00 Edric bars the front and back doors, and the character goes to the barn. From then on the house is shut: to get in, wake Pell or raise the alarm, the character must hammer on a door or shout, and Edric, a light sleeper, comes with a lantern.
+Over supper the character can talk to the guests (see *Guests*). Edric, serving the stew thin, says that this winter even he had little to put in the pot, and that in the villages it was worse. Around 19:30 the Burrows jugglers give their show; around 20:00 Pell shows his casket and rubs the raven brooch (see *Pell Ambergear*). People at the tables talk about the fugitive and the reward. After the show the GM pauses before closing time, so that the player can approach the guests. At about 21:00 Edric bars the front and back doors, and the character goes to the barn. From then on the house is shut: to get in, wake Pell or raise the alarm, the character must hammer on a door or shout, and Edric, a light sleeper, comes with a lantern.
 
 ### Night: the fugitive
 
@@ -188,7 +189,7 @@ If the character sleeps in the barn, Pansho stumbles over them in the dark, or t
 - **The character sleeps elsewhere**, e.g. on the taproom floor: when Pansho lifts the bar, the GM rolls at once whether the character wakes (hard, average for a light sleeper or a character on watch). If they wake, they hear someone in the kitchen and can go and look. If not, Pansho takes the empty barn and buries himself in the hayloft (see *Hiding place*).
 - **The character searches the fields in the evening**: finding a man lying still in a ditch in the dark is very hard, hard with a lantern. On a success they find him: the same choices as below. On a failure Pansho sees the light, keeps still and comes later; the GM removes `n1` and sets it again with `--from` an hour later.
 
-In the thin moonlight the character sees, or feels, a thin man with an iron and a short length of chain on his wrist and a string of sausages in his hand. He freezes, then begs in a whisper not to cry out. No roll is needed for waking: Pansho wakes the character.
+In the thin moonlight the character sees, or feels, a thin man with an iron and a short length of chain on his wrist and a string of sausages in his hand. He freezes, then begs in a whisper not to cry out.
 
 The player decides what the character does. Typical choices, for the GM only; the GM does not offer them to the player as a list:
 
@@ -228,6 +229,8 @@ A Pansho who gets away in the dark does not go far: he cannot walk the road with
 ### Morning (from 6:00)
 
 At sunrise the foresters come back from searching the road, tired and muddy, ask the guests and Edric whether anyone has seen anything, and ride on north towards Kingsbridge to report. Whoever has caught Pansho can hand him over to them and get the reward at once. Whoever tells them where he is hiding also gets the reward if they find him there.
+
+If Pansho gave himself up, Tam blurts out that they could report catching him on the road: a night's escape ended by the foresters themselves would save their pay. Osric hesitates and looks at the character. If the character speaks for the truth, Osric reports the surrender, which may earn Pansho mercy; if they keep silent, he reports the capture.
 
 At about 7:00 Edric finds that a string of sausages is missing from the pantry that there is a smear of mud on the kitchen floor and small prints in the rime on the threshold of the back door. He suspects Ned first, whose round figure he saw in the kitchen in the night, until someone thinks of the fugitive. Edric does not want anyone poking about his outbuildings and cellar (see *The innkeeper*).
 
