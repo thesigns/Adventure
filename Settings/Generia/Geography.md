@@ -38,7 +38,7 @@ The Empire of Aurelion fell a thousand years ago. Its ruins are scattered across
 - **Aurelion:** the ruined imperial capital, on the great eastern cape of the Ashlands, east of Crow's Pass. Orcs camp in its shadow but avoid its halls.
 - **Drowned Spires:** towers sinking into the Fenmarch marshes, between Mistmere, Reedmere and the sea.
 - **Hollow Crown:** a ring of broken halls on a hill in the western Frostmarch.
-- **Lonely Tower:** a tower on an island off the north-western coast.
+- **Lonely Tower:** a tower on a lone island off the south-eastern coast.
 - **Sunstone:** a fallen temple of the sun in the Harrowlands, where the clans hold their moots.
 
 ## Lands

@@ -410,7 +410,7 @@ PLACES = [
     ("aurelion", "Aurelion", "ruin", 3200, 1370, "start", 20, 8),
     ("drowned-spires", "Drowned Spires", "ruin", 1075, 2115, "start", 18, 8),
     ("hollow-crown", "Hollow Crown", "ruin", 380, 1270, "middle", 0, 38),
-    ("lonely-tower", "Lonely Tower", "ruin", 590, 540, "middle", 0, -20),
+    ("lonely-tower", "Lonely Tower", "ruin", 2958, 2430, "middle", 0, -24),
     ("sunstone", "Sunstone", "ruin", 2620, 1700, "start", 18, 8),
 ]
 
