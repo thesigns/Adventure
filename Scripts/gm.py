@@ -23,7 +23,11 @@ Commands:
             time of day comes from Settings/<setting>/Tables/Daylight.json
     timer   rolls 3d6 on a named table from Tables/GmTables.json whose
             values are minutes, and stores a hidden event; prints only
-            a confirmation
+            a confirmation; --from is the occurrence of that time closest
+            to the clock, earlier or later (at 17:50 --from 23:00 means this
+            evening, at 1:00 --from 0:40 means twenty minutes ago); an event
+            that would fall before the clock happens at once and is reported
+            by the next `time`
     remove  removes a hidden event or a hidden roll, e.g. when the character
             prevented the event before it happened
     show    prints the whole hidden state; only when resuming play
@@ -163,10 +167,11 @@ def parse_hm(text):
     return hour, minute
 
 
-def at_or_before(ref, hm):
-    """The last moment at time hm no later than ref."""
+def nearest(ref, hm):
+    """The moment at time hm closest to ref, earlier or later (a tie goes to the earlier)."""
     moment = ref.replace(hour=hm[0], minute=hm[1])
-    return moment - timedelta(days=1) if moment > ref else moment
+    return min((moment - timedelta(days=1), moment, moment + timedelta(days=1)),
+               key=lambda m: abs(m - ref))
 
 
 def at_or_after(ref, hm):
@@ -386,11 +391,14 @@ def cmd_timer(args, folder, state):
     if not all(isinstance(v, int) for _, _, v in entries):
         sys.exit(f"Error: table '{args.table}' does not give minutes, so it cannot be used for a timer. "
                  "A hidden roll with a text table is made by Scripts/roll.py --hidden.")
-    start = at_or_before(clock, parse_hm(args.start)) if args.start else clock
+    start = nearest(clock, parse_hm(args.start)) if args.start else clock
     dice, total = roll_3d6()
     moment = start + timedelta(minutes=lookup(entries, total))
     if args.not_before:
         moment = max(moment, at_or_after(start, parse_hm(args.not_before)))
+    # An event whose time has already passed happens now: it is reported by
+    # the next `time`, never with a moment before the clock.
+    moment = max(moment, clock)
     state["events"][args.label] = {
         "at": cal.fmt(moment),
         "desc": args.desc,
@@ -451,7 +459,7 @@ def main():
     p = sub.add_parser("timer", help="roll the hidden time of an event on a named table")
     p.add_argument("--label", required=True, help="neutral label, e.g. n1")
     p.add_argument("--table", required=True, help="name of a table from Tables/GmTables.json (values in minutes)")
-    p.add_argument("--from", dest="start", help="time the countdown starts, HH:MM (default now)")
+    p.add_argument("--from", dest="start", help="time the countdown starts, HH:MM, the occurrence closest to the clock (default now)")
     p.add_argument("--not-before", dest="not_before", help="the event happens no earlier than HH:MM")
     p.add_argument("--desc", default="", help="short, neutral description, visible in the console")
 

@@ -122,7 +122,7 @@ python Scripts/roll.py --campaign Randuvil --hidden --label r1 --table betrayal
 ```
 
 - `time` sets the world clock: the first time with `--date`, then with the time alone, which always moves the clock forward. It prints only the events whose time has just passed, never future ones. The GM calls it at every passage of time in play, before describing what happens. If the setting has a `Tables/Daylight.json` file with sunrises, sunsets and darkness, the GM gives the name of its folder once with `--setting`, e.g. `time --now 22:00 --setting SettingName` (the script remembers it), and from then on `time` prints the time of day: *day*, *dusk*, *darkness*, *dawn* or *white night*. If the setting has its own calendar in `Tables/Calendar.json`, the GM gives `--setting` already with the first `--date`, because dates then follow that calendar, and `time` also prints what the calendar defines: the weekday, the month, the season and the phases of the moons. The format of the `Calendar.json`, `Daylight.json` and `GmTables.json` files is described in the docstring of `Scripts/gm.py`. The GM describes light and the time of day according to this line, not from memory.
-- `timer` rolls the hidden time of an event on a named table whose values are minutes, e.g. when a patrol returns or when a poison takes effect. `--from` is the time the countdown starts (default now), and `--not-before` the earliest possible time of the event.
+- `timer` rolls the hidden time of an event on a named table whose values are minutes, e.g. when a patrol returns or when a poison takes effect. `--from` is the time the countdown starts (default now), taken as the occurrence of that time closest to the clock, so at 17:50 `--from 23:00` means this evening, and `--not-before` the earliest possible time of the event. An event that would fall before the clock happens at once and is printed by the next `time`.
 - `Scripts/roll.py --hidden --label L --table NAME` is a hidden roll with a text table. The result goes to `Gm.json`, and `Rolls.log` only records that the roll happened.
 - `remove` removes an event or a roll, e.g. when the character prevented the event before it happened.
 - `show` prints the whole hidden state. The GM uses it only when resuming play, and `show --label L` when they need a single result.
@@ -170,7 +170,7 @@ The script saves the discovery state in the campaign folder and generates the pl
   python Scripts/fogmap.py --campaign Randuvil --map Scenarios/TheCrypt/Maps/MapCrypt.svg --reveal 2 --plan 2
   ```
 
-  The plan gives the labels visible on the player map, e.g. names and numbers of rooms, in order from west to east and with distances. The optional fields of the areas file let it split labels into the sides of a corridor and count objects in rooms. The plan works only for discovered areas and skips hidden elements, so it reveals nothing the player does not see on their map. If still in doubt, the GM can look at the full SVG map (see *Before play*).
+  The plan gives the labels visible on the player map, e.g. names and numbers of rooms, in order from west to east, each with its distance east and south of the north-west corner of the area. The optional fields of the areas file let it split labels into the sides of a corridor and count objects in rooms. The plan works only for discovered areas and skips hidden elements, so it reveals nothing the player does not see on their map. If still in doubt, the GM can look at the full SVG map (see *Before play*).
 
 ## Running the game
 
@@ -179,6 +179,7 @@ The GM is a narrator, not the player's advisor.
 - The GM describes what the character sees, hears and feels. The GM does not suggest what the character could do or how to solve a problem, e.g. how to get past a trap or which tactics to fight with. The GM can describe an important detail several times ("in the torchlight fragments of frescoes are visible"), but does not invite the player to it directly ("you can now examine the frescoes").
 - The GM does not explain why something did not happen ("the rats did not swarm, because you did not touch anything"), because that reveals hidden elements of the scenario.
 - The GM uses the names of GM characters in the narration only once the character learns them. Before that the GM describes them by appearance or role, e.g. "a man with a crossbow".
+- The GM describes what the character perceives, not what the GM knows. A GM character with a secret is described like those around them: not set apart from their group and not given more attention, e.g. "four halflings at a table, one in a bowler hat", not "three halflings, and with them a fourth in a bowler hat".
 - When showing an outcome table, the GM can remind the player that they can give up or change the approach, but does not suggest specific approaches.
 - At character creation the GM gives only what the character knows about the world at the start of the adventure. The GM does not reveal enemies, secrets or what awaits in the scenario.
 - When it is not clear what the player means, e.g. which exit, the GM asks instead of guessing.

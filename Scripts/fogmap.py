@@ -145,7 +145,8 @@ def player_shapes(svg_path, spec, state):
 
 
 def print_plan(svg_path, spec, state, keys):
-    """Layout of discovered areas for the GM: player map labels in order and with distances.
+    """Layout of discovered areas for the GM: player map labels in order, with their
+    distances east and south of the north-west corner of the area.
 
     Shows only what is on the player map, so it reveals nothing undiscovered.
     Optionally uses fields of the areas file: "scale" (pixels per metre),
@@ -216,9 +217,8 @@ def print_plan(svg_path, spec, state, keys):
 
         unit = "m" if scale else "px"
         along = "west to east" if horizontal else "north to south"
-        origin = "western" if horizontal else "northern"
         print(f"Plan of area {key} ({spec['areas'][key].get('name', '')}):")
-        print(f"  distances in {unit} from the {origin} edge of the area, {along}")
+        print(f"  {along}, in {unit} east and south of the north-west corner of the area")
         for side, group in sides.items():
             if not group:
                 continue
@@ -226,10 +226,9 @@ def print_plan(svg_path, spec, state, keys):
                 print(f"  {side}:")
             for label in sorted(group, key=lambda l: l[1] if horizontal else l[2]):
                 text, x, y = label
-                dist = (x - west) if horizontal else (y - north)
-                dist = f"{dist / scale:.0f} m" if scale else f"{dist:.0f} px"
+                east, south = ((d / scale if scale else d) for d in (x - west, y - north))
                 extra = "".join(f", {c}" for c in counts.get(label, []))
-                print(f"    {text} ({dist}{extra})")
+                print(f"    {text} ({east:.0f} {unit} east, {south:.0f} {unit} south{extra})")
 
 
 def build_player_map(svg_path, spec, state):

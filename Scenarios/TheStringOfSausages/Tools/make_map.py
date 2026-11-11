@@ -46,6 +46,7 @@ EDRIC = (11, 6.5, 16, 10)
 STAIRS_DOWN = (9.2, 6.6, 11, 10)
 # outbuildings
 STABLE = (22, -8, 32, -3)
+PRIVY = (32.5, -2.9, 33.6, -1.8)
 BARN = (22, 10, 32, 18)
 # right-hand panels: upper floor, hayloft, cellar
 UP_DWARVES = (40, -8, 48, -4)
@@ -57,7 +58,7 @@ UP_GNOME = (51, -2, 56, 2)
 LOFT = (40, 8, 50, 16)
 CELLAR = (52, 8, 57, 14.5)
 
-rooms = [TAPROOM, KITCHEN, PANTRY, EDRIC, STABLE, BARN,
+rooms = [TAPROOM, KITCHEN, PANTRY, EDRIC, STABLE, PRIVY, BARN,
          UP_DWARVES, UP_WIZARD, UP_CORRIDOR, UP_MERCHANT, UP_STAIRS, UP_GNOME, LOFT, CELLAR]
 
 # doors: (x0, y0, x1, y1) of the gap in the wall; drawn as a white leaf
@@ -68,6 +69,7 @@ doors = [
     (12.9, 6.2, 13.7, 6.8),       # kitchen - Edric's room
     (15.7, 4.0, 16.3, 5.0),       # back door, kitchen - yard
     (26.2, -3.3, 27.8, -2.7),     # stable door
+    (32.75, -2.1, 33.35, -1.5),   # privy door, south wall
     (25.4, 9.7, 28.6, 10.3),      # barn double door
     (43.6, -4.3, 44.4, -3.7),     # dwarves
     (51.6, -4.3, 52.4, -3.7),     # wizard
@@ -262,8 +264,9 @@ ground.append(stipple(-7.8, YMIN, -3.2, 26, 120))
 # lane from the road to the yard gate, north of the house
 ground.append(stipple(-3, -3, 16, 0, 40))
 # yard: mud
-buildings = [TAPROOM, KITCHEN, EDRIC, STABLE, BARN]
-ground.append(stipple(16, -3, 34, 18.4, 230, avoid=buildings + [(18, 1, 20.2, 5), (26, 3.5, 27.8, 6.5)]))
+DUNG = (29.6, -2.7, 31.6, -1.5)    # dung heap by the stable, next to the privy
+buildings = [TAPROOM, KITCHEN, EDRIC, STABLE, PRIVY, BARN]
+ground.append(stipple(16, -3, 34, 18.4, 230, avoid=buildings + [(18, 1, 20.2, 5), (26, 3.5, 27.8, 6.5), DUNG]))
 # fences: lane north side, yard east and south sides, with the gate and the wicket
 ground.append(fence([(-3, -3.3), (22, -3.3)]))
 ground.append(fence([(32, -3.3), (34, -3.3), (34, 18.6), (32, 18.6)]))
@@ -309,6 +312,10 @@ feat.append(wagon(26, 3.5, 27.8, 6.5, canvas=False))
 for i in range(4):
     feat.append(f'<ellipse cx="{f(X(27.9 + i * 0.22))}" cy="{f(Y(4.2 + i * 0.3))}" rx="3.2" ry="2.2" fill="none" stroke="#111" stroke-width="1.4"/>')
 feat.append(circle(21.0, 8.0, 0.6, w=3) + circle(21.0, 8.0, 0.35, fill="#2a2a2a", w=1.6))
+# privy: a plank seat with a hole; dung heap beside it
+feat.append(box(32.75, -2.75, 33.45, -2.35, w=1.6) + circle(33.1, -2.55, 0.12, fill="#2a2a2a", w=1.2))
+feat.append(f'<ellipse cx="{f(X(30.6))}" cy="{f(Y(-2.1))}" rx="{f(1.0 * S)}" ry="{f(0.6 * S)}" fill="#d9d9d9" stroke="#111" stroke-width="2.2"/>')
+feat.append(hay(29.9, -2.5, 31.3, -1.7, 18))
 # 6 stable: stalls
 for sx in (24, 26, 28, 30):
     feat.append(line(sx, -8, sx, -5.4, w=2.4))
@@ -365,6 +372,18 @@ names = [
     name_label("Room", 12.7, 7.5, cls="tiny"),
     name_label("Yard", 30.0, 1.0), name_label("Stable", 27.0, -5.0, cls="tiny"), name_label("Barn", 27.0, 11.4),
     name_label("Garden", 8.0, 14.9), name_label("hedge and ditch", 30.0, 22.6, cls="tiny"), name_label("Fields", 20.0, 24.2),
+    # features, so that fogmap.py --plan lists them
+    name_label("front door", -3.3, 5.3, cls="tiny", anchor="end"),
+    name_label("fireplace", 5.5, 2.6, cls="tiny"), name_label("counter", 8.0, 5.6, cls="tiny", anchor="end"),
+    name_label("stairs up", 9.0, 6.6, cls="tiny", anchor="end"),
+    name_label("pantry", 15.9, 3.05, cls="tiny", anchor="end"), name_label("back door", 15.6, 4.6, cls="tiny", anchor="end"),
+    name_label("well", 21.0, 9.3, cls="tiny"), name_label("wagon", 19.1, 5.9, cls="tiny"),
+    name_label("prison cart", 26.9, 7.4, cls="tiny"), name_label("wicket", 18.5, 18.1, cls="tiny"),
+    name_label("privy", 33.05, -0.2, cls="tiny"), name_label("dung heap", 30.4, -0.6, cls="tiny"),
+    name_label("ladder", 24.1, 11.9, cls="tiny", anchor="start"), name_label("tools", 31.0, 16.2, cls="tiny"),
+    name_label("anvil", 29.2, 17.4, cls="tiny", anchor="end"),
+    name_label("ladder", 41.4, 13.5, cls="tiny"), name_label("loading hatch", 45.0, 9.0, cls="tiny"),
+    name_label("ladder", 54.65, 14.35, cls="tiny"), name_label("casks", 54.6, 10.3, cls="tiny"),
     name_label("Upper floor", 48.0, -8.6, cls="panel"), name_label("Hayloft", 45.0, 7.2, cls="panel"),
     name_label("Cellar", 54.5, 7.2, cls="panel"),
     name_label("Guest room", 46.4, -5.7, cls="tiny"), name_label("Guest room", 52.0, -5.7, cls="tiny"),
@@ -488,7 +507,8 @@ areas = {
     "scale": S,
     "always": [[[0, round(MAP_H + 8, 1)], [round(W, 1), round(MAP_H + 8, 1)], [round(W, 1), round(H, 1)], [0, round(H, 1)]]],
     "areas": {
-        "1": {"name": "Highway and front door", "polygons": [px_rect(-9.6, YMIN, -2.6, 26.6), px_rect(-2.6, -3.6, 16.0, -0.3)]},
+        "1": {"name": "Highway and front door", "polygons": [px_rect(-9.6, YMIN, -2.6, 26.6), px_rect(-2.6, -3.6, 16.0, -0.3),
+                                                             px_rect(-2.6, -0.3, -0.5, 10.5)]},
         "2": {"name": "Taproom", "polygons": [px_rect(-0.5, -0.5, 11.0, 10.5)]},
         "3": {"name": "Kitchen and pantry", "polygons": [px_rect(11.0, -0.5, 16.5, 6.5)]},
         "4": {"name": "Edric's room", "polygons": [px_rect(11.0, 6.5, 16.5, 10.5)]},
