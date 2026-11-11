@@ -138,7 +138,8 @@ ISLANDS += archipelago(
 
 # Mountain ranges: main ridge, spurs branching off it, width of the range in km.
 # Ironpeaks are young, high and jagged; the Crookback Mountains old and worn.
-# A valley separates the two ranges.
+# A valley separates the two ranges. The Eaglepeaks, young like the Ironpeaks
+# but narrower, run along the southern coast below the Greenhollow hills.
 RANGES = [
     ("ironpeaks", "Ironpeaks", "peak", 95, 20,
      [(375, 1425), (550, 1462), (675, 1500), (800, 1537), (950, 1462), (1100, 1400), (1300, 1325),
@@ -152,6 +153,10 @@ RANGES = [
      [(2200, 1160), (2290, 1215), (2400, 1225), (2550, 1300), (2675, 1400), (2825, 1500)],
      [[(2300, 1200), (2300, 1275)], [(2560, 1290), (2587, 1200)], [(2470, 1260), (2475, 1400)],
       [(2620, 1360), (2625, 1500)]]),
+    ("eaglepeaks", "Eaglepeaks", "peak", 70, 20,
+     [(1615, 2265), (1726, 2255), (1859, 2263), (1943, 2325), (2059, 2328), (2193, 2278), (2293, 2228),
+      (2395, 2195)],
+     [[(2059, 2328), (2075, 2385)], [(2293, 2228), (2312, 2285)]]),
 ]
 
 GLYPHS = """
@@ -205,6 +210,7 @@ def bend(line, rng, rough=0.14, min_len=40):
 LABELS = [
     ("IRONPEAKS", 1120, 1280, -20, 28),
     ("CROOKBACK MOUNTAINS", 2490, 1460, 28, 26),
+    ("EAGLEPEAKS", 1990, 2335, -8, 24),
 ]
 KINGDOM_LABEL = ("KINGDOM OF", "VALDREN", 1700, 1800)
 
@@ -412,6 +418,8 @@ PLACES = [
     ("hollow-crown", "Hollow Crown", "ruin", 380, 1270, "middle", 0, 38),
     ("lonely-tower", "Lonely Tower", "ruin", 2958, 2430, "middle", 0, -24),
     ("sunstone", "Sunstone", "ruin", 2620, 1700, "start", 18, 8),
+    # the ancient dwarven forge-shrine of Hammar on the sea cliffs of the Eaglepeaks
+    ("firstanvil", "Firstanvil", "ruin", 2080, 2412, "start", 18, 8),
 ]
 
 # Roads: (id, from, to, points); drawn as dotted brown lines, with their length in km.
