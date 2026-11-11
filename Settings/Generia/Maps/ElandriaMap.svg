@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-400 -400 4300 3560" width="4300" height="3560" font-family="Georgia, 'Times New Roman', serif" fill="#2b2620">
-<title>Generia</title>
+<title>Elandria</title>
 <desc>
-Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):
+Elandria, continent of Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):
   Kingsbridge (capital): 1930, 1530
   Mereton (city): 1468, 1598
   Hollowbury (town): 2020, 2000
@@ -180,7 +180,7 @@ Rivers, source to mouth (km):
 <line x1="-400" y1="2900" x2="3900" y2="2900" stroke="#2b2620" stroke-width="3"/>
 <rect x="-388" y="-388" width="4276" height="3536" fill="none" stroke="#2b2620" stroke-width="4"/>
 <g id="legend" font-size="24">
-<text x="-340" y="2978" font-size="52" font-weight="bold" letter-spacing="10">GENERIA</text>
+<text x="-340" y="2978" font-size="52" font-weight="bold" letter-spacing="10">ELANDRIA</text>
 <text x="-338" y="3018" font-style="italic">1 px = 1 km, north up</text>
 <rect x="-338" y="3050" width="100" height="12" fill="#2b2620" stroke="#2b2620" stroke-width="2"/>
 <rect x="-238" y="3050" width="100" height="12" fill="#fff" stroke="#2b2620" stroke-width="2"/>

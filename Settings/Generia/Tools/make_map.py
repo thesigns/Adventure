@@ -1,6 +1,6 @@
 """Map generator for the Generia setting.
 
-An author's tool, not for play. Writes Settings/Generia/Maps/GeneriaMap.svg.
+An author's tool, not for play. Writes Settings/Generia/Maps/ElandriaMap.svg.
 
 Usage:
     python Settings/Generia/Tools/make_map.py
@@ -19,7 +19,7 @@ import math
 import random
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / "Maps" / "GeneriaMap.svg"
+OUT = Path(__file__).resolve().parent.parent / "Maps" / "ElandriaMap.svg"
 W, H = 3500, 2500          # map area in km
 M = 400                    # sea margin around the map area
 LEGEND_H = 260             # legend strip below the map
@@ -541,7 +541,7 @@ def place_svg(pid, name, kind, x, y, anchor, dx, dy):
 
 def summary(river_lines, road_lines):
     """Plain-text digest of the map for the GM: places with coordinates, roads and rivers with lengths."""
-    out = ["Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):"]
+    out = ["Elandria, continent of Generia, 1 px = 1 km, north up, x east, y south. Places (x, y in km):"]
     out += [f"  {name} ({kind}): {x}, {y}" for _, name, kind, x, y, *_ in PLACES]
     out.append("Roads (km):")
     out += [f"  {a} - {b}: {km(line)}" for (_, a, b, _), line in zip(ROADS, road_lines)]
@@ -594,7 +594,7 @@ def mark_svg(kind, x, y):
 def legend():
     top = H + M + 30
     s = [f'<g id="legend" font-size="24">',
-         f'<text x="{-M + 60}" y="{top + 48}" font-size="52" font-weight="bold" letter-spacing="10">GENERIA</text>',
+         f'<text x="{-M + 60}" y="{top + 48}" font-size="52" font-weight="bold" letter-spacing="10">ELANDRIA</text>',
          f'<text x="{-M + 62}" y="{top + 88}" font-style="italic">1 px = 1 km, north up</text>']
     sx, sy = -M + 62, top + 120
     for i in range(5):
@@ -659,7 +659,7 @@ def build():
 
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-M} {-M} {W + 2 * M} {total_h}" '
            f'width="{W + 2 * M}" height="{total_h}" font-family="Georgia, \'Times New Roman\', serif" fill="{INK}">',
-           "<title>Generia</title>",
+           "<title>Elandria</title>",
            "<desc>\n" + summary(river_lines, road_lines) + "\n</desc>",
            f"""<defs>
   <polygon id="coast-shape" points="{pts(coast)}"/>

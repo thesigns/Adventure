@@ -1,6 +1,6 @@
 # Travel
 
-Distances come from the map: the `<desc>` at the top of `Maps/GeneriaMap.svg` lists the roads and rivers with their lengths and every place with its coordinates (1 px = 1 km).
+Distances come from the map: the `<desc>` at the top of `Maps/ElandriaMap.svg` lists the roads and rivers with their lengths and every place with its coordinates (1 px = 1 km).
 
 ## Pace
 

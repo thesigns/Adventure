@@ -6,14 +6,14 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 - `Setting.md`: GM rules, world, peoples, adventurers, organisations and factions, names (this file)
 - `Culture.md`: languages, law, calendar, moons and customs
-- `History.md`: the Empire of Aurelion, the history of Generia and its present rulers
+- `History.md`: the Empire of Aurelion, the history of Elandria and its present rulers
 - `Geography.md`: the continent, climate, mountains, waters, ruins and lands
 - `Travel.md`: pace, costs, seasons and dangers of travel
 - `Magic.md`: arcane spells, learning them, scrolls and magic items
 - `Faith.md`: gods, divine gifts, displeasure and conversion
 - `Equipment.md`: money, prices, weapons, armour, light, starting purse
 - `Bestiary.md`: monsters and enemies with combat stats
-- `Maps/GeneriaMap.svg`: world map, 1 px = 1 km, open to the player (see *Continent* in `Geography.md`)
+- `Maps/ElandriaMap.svg`: map of Elandria, 1 px = 1 km, open to the player (see *World and continent* in `Geography.md`)
 - `Tables/Calendar.json`: the calendar for `Scripts/gm.py` (see *Calendar* in `Culture.md`)
 - `Tables/Daylight.json`: sunrise, sunset and darkness for `Scripts/gm.py`, in the heart of Valdren
 - `Tools/`: author's tools, not for play: the map generator (`make_map.py`) and the daylight table generator (`make_daylight.py`)
@@ -28,7 +28,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 
 ## World
 
-- **Generia:** a small continent of kingdoms, forests, mountains and old ruins, with a European climate. Lands, climate and travel: `Geography.md`.
+- **Generia:** the world. **Elandria:** its only known continent, a small one of kingdoms, forests, mountains and old ruins, with a European climate. Lands, climate and travel: `Geography.md`.
 - **Technology:** high medieval. Swords, crossbows, plate armour, sailing ships. No printing, no gunpowder.
 - **Calendar and sky:** an elven calendar used by all: a year of 252 days, 12 months of 21 days, three to a season, starting on the spring equinox; a 7-day week. Two moons: Selwen, large, with a 21-day cycle, and Nimras, small, with a 7-day cycle. Years counted from the founding of the Kingdom of Valdren (AF, After Founding). Present day: around 1240 AF. Months, weekdays, moons and festivals: *Calendar* in `Culture.md`. In play the GM sets the clock with `time --setting Generia` (see *GM secrets* in `AGENTS.md`).
 - **Evil is scattered:** no single dark lord or great war. Goblins in dungeons, a warlock in his tower, a necromancer raising the dead in a forgotten graveyard, a dragon on its hoard, cultists in the sewers, bandits on the road, the whole menagerie spread across the world. Each threat is local and has its own goals.
@@ -41,7 +41,7 @@ Classic fantasy, deliberately generic. Knights and castles, elves in forests, dw
 A character's species sets the reference point: traits typical of it are not advantages (see `Rules/CharacterCreation.md`). All peoples heal at the same rate as humans (see *Healing* in `Rules/Health.md`).
 
 - **Humans:** the most numerous, live everywhere, do everything. Come of age at 23 and live about 90–100 years of the elven calendar (see *Calendar* in `Culture.md`). Physically unremarkable, but restless and expansive: they have many children, eagerly explore and settle new lands, which often leads to wars. Natural conquerors.
-- **Elves:** live several centuries, slender, graceful. Keen senses, see well in starlight and dim light, move quietly in forests. Skilled trackers and archers, and often mages. Proud and distant towards shorter-lived peoples. Traditionally they keep to the wild forests that once covered most of Generia, and human logging of those forests leads to conflicts. Some elves are restless spirits, though: adventurers, merchants and even bandits.
+- **Elves:** live several centuries, slender, graceful. Keen senses, see well in starlight and dim light, move quietly in forests. Skilled trackers and archers, and often mages. Proud and distant towards shorter-lived peoples. Traditionally they keep to the wild forests that once covered most of Elandria, and human logging of those forests leads to conflicts. Some elves are restless spirits, though: adventurers, merchants and even bandits.
 - **Dwarves:** short, sturdy, bearded, live about three centuries. See well in dim light underground, judge stone, metal and tunnels, tough and stubborn. Strong warriors with axes and hammers despite their height, fine smiths and miners, shrewd merchants and bankers. Hold grudges, love gold, distrust elves. Divided into many clans, most of whom keep to their underground cities. Dwarves in human settlements are usually those who had to or chose to leave their clan: exiles, or those of low standing seeking fame and wealth.
 - **Halflings:** half human height, cheerful, love comfort and food. Very nimble, quiet and lucky, and hardy for their size. Good with slings. Traditionally farmers, innkeepers and fishers who rarely leave home. Those who take to the road of adventure are often burglars, pickpockets, scouts, gamblers or travelling cooks and peddlers.
 - **Gnomes:** small, quick-witted and endlessly curious, live about four centuries. Keen eyes for detail, good with locks, gears and gems, fond of jokes and pranks. Tinkerers, clockmakers, jewellers, alchemists and illusionists. They often add a pinch of magic to their devices, so many magic items are of gnomish make. Their home is Brasshollow in the western Ironpeaks; elsewhere they live in burrows under quiet hills and as valued craftsmen in dwarven cities and human towns. Their inventions are clever but often unreliable. Those who go adventuring are driven by curiosity rather than gold: explorers, treasure hunters, collectors of curiosities and lore.

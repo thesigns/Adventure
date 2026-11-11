@@ -10,7 +10,7 @@ Coldford is a dozen or so cottages in a mountain valley, far from towns and road
 
 The valley has no priest, no mage and no healer other than the herbalist. Old tales speak of revenants that rise from their graves. Few believe them. A character's own magic works as described in the setting (see `Settings/Generia/Magic.md`). A prayer for help by a character without a divine ability is very hard, and help, if it comes, is modest.
 
-Coldford lies in a high valley at the headwaters of the Vael, between the main ridge of the Ironpeaks and its long southern spur, north of Fernwood, about 380 km north of Kingsbridge (around 1960, 1150 on the map of Generia). The only way out is a road over a pass, down past Fernwood towards Kingsbridge.
+Coldford lies in a high valley at the headwaters of the Vael, between the main ridge of the Ironpeaks and its long southern spur, north of Fernwood, about 380 km north of Kingsbridge (around 1960, 1150 on the map of Elandria). The only way out is a road over a pass, down past Fernwood towards Kingsbridge.
 
 The character is in the valley because the landslide caught them here: they came visiting, for work or passing through. The player can fill this in in the character's background.
 

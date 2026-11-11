@@ -2,7 +2,7 @@
 
 ## Languages
 
-- **Common:** the human tongue and the trade language of all Generia. Nearly everyone speaks it, and every character does.
+- **Common:** the human tongue and the trade language of all Elandria. Nearly everyone speaks it, and every character does.
 - **Elvish, Dwarvish, Gnomish:** the tongues of their peoples, each with its own script (dwarves write in angular runes). Halflings speak Common at home.
 - **Orcish:** the harsh tongue of orcs and goblins; many half-orcs know it. It has no script: orcs and goblins as a rule cannot write, and their lore lives in an oral tradition. Even their shamans learn their spells by word of mouth, from shaman to apprentice.
 - **Aurelian:** the dead language of the fallen empire, found on ruins, old scrolls and in wizards' spellbooks. Scholars and wizards read it; nobody speaks it.
@@ -24,7 +24,7 @@
 
 ## Calendar
 
-- **Elven calendar:** the elves read the sky in the elder days and made the calendar. Aurelion took it from them and spread it, and every people of Generia uses it, Valdren included, with its elven names for the months, the weekdays and the moons. Only the seasons have plain names in every tongue: spring, summer, autumn, winter.
+- **Elven calendar:** the elves read the sky in the elder days and made the calendar. Aurelion took it from them and spread it, and every people of Elandria uses it, Valdren included, with its elven names for the months, the weekdays and the moons. Only the seasons have plain names in every tongue: spring, summer, autumn, winter.
 - **Year:** 252 days, 12 months of 21 days, three months to each season. The year starts on the spring equinox, 1 Tiriwen; the longest day is 1 Saelis, the autumn equinox 1 Calaris and the longest night 1 Ysmara. Ages and lengths of time in this setting are in these years. A year of Generia is about two thirds of a year of our world, so ages are about 1.45 times higher than real-world folklore would suggest: a human comes of age at 23 and grows old around 90 (see *Coming of age*). The GM converts ages taken from common knowledge by that factor.
 - **Counting years:** humans count from the founding of Valdren (AF); the present is around 1240 AF. Elves count by the reigns of their kings and queens.
 - **Writing dates:** in the world "11 Saelis 1240 AF". In `Scripts/gm.py` dates are written 1240-04-11 (see `Tables/Calendar.json`). With `--setting Generia` the script prints the weekday, the month, the season and the phases of both moons.
@@ -61,7 +61,7 @@
 
 ## Customs
 
-- **Guest-right:** a host protects a guest who has eaten at their table for the night, and a guest does no harm to the host. Breaking guest-right is a shame no one forgets, among every people of Generia, orcs excepted.
+- **Guest-right:** a host protects a guest who has eaten at their table for the night, and a guest does no harm to the host. Breaking guest-right is a shame no one forgets, among every people of Elandria, orcs excepted.
 - **Oaths:** an oath sworn by a god binds; the god may punish the oath-breaker (see *Displeasure* in `Faith.md`).
 - **The dead:** the dead are buried with the rites of Mortis. The unburied and the wrongly buried may rise, so even enemies are given a grave when there is time.
 - **Festivals:** the new year (1 Tiriwen) is a time of feasts, fairs and weddings that last until the first Lumiel. Midsummer (1 Saelis) is greeted with bonfires, and every village holds a harvest feast on the autumn equinox (1 Calaris).
