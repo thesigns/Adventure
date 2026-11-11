@@ -25,81 +25,77 @@ Pora roku: koniec zimy, odpowiednik połowy marca. W Caerwen śnieg zaczyna topn
 
 | Nr | Rozmiar | Miejsce | Zarys |
 |---|---|---|---|
-| 1 | mini | gospoda pół dnia drogi od Kingsbridge | postać jedzie do stolicy na tydzień świąteczny; przedostatni dzień roku |
+| 1 | mikro | gospoda pół dnia drogi od Kingsbridge | postać jedzie do stolicy na tydzień świąteczny; przedostatni dzień roku |
 | 2 | średni lub duży | Kingsbridge | tydzień świąteczny, klimat festynu, zawiązanie grubszej intrygi |
 | 3 | średni | droga | „powieść drogi”: podróż do miejsca z przygody 4 |
 | 4 | duży | cel podróży z przygody 3 | do ustalenia |
 | dalej | | | zależy od konkretnych pomysłów; finał wielkiej kampanii znów w Kingsbridge |
 
-PD przy pełnych sukcesach po czterech przygodach: 500 + (1000 lub 2000) + 1000 + 2000 = 4500–5500, czyli poziom 3, blisko 4 albo tuż za nim (poziom 4 od 5000).
+PD przy pełnych sukcesach po czterech przygodach: 250 + (1000 lub 2000) + 1000 + 2000 = 4250–5250, czyli poziom 3, blisko 4 albo tuż za nim (poziom 4 od 5000).
 
 ## Przygoda 1: gospoda
 
 ### Założenia
 
 - **Cel:** wprowadzenie nowego gracza do systemu i settingu. Przygoda nie zapowiada intrygi z przygody 2 i można ją zagrać osobno.
-- **Rozmiar:** mini (około 2 godzin, 6–8 pomieszczeń, 4–8 postaci MG, około 500 PD).
-- **Przyjazd:** bohater dociera do gospody o zmierzchu, 20 Caerwen. Słońce zachodzi o 18:00, pełna ciemność zapada o 18:30 (według `gm.py`). Dalsza jazda nie ma sensu, bo do miasta dotarłby po północy. Koń jest zmęczony albo woźnica, który wiezie bohatera, chce stanąć na noc.
+- **Rozmiar:** mikro (do godziny, 3–4 pomieszczenia, 2–3 postacie MG, około 250 PD).
+- **Przyjazd:** bohater dociera do gospody o zmierzchu, 20 Caerwen. Słońce zachodzi o 18:00, pełna ciemność zapada o 18:30 (według `gm.py`). Robi się ciemno, koń jest zmęczony albo woźnica, który wiezie bohatera, chce stanąć na noc.
+- **Skąd przybywa bohater:** wszystkie główne trakty z południa i zachodu łączą się w Crossholt, ostatnim mieście przed stolicą (111 km od Kingsbridge). Gospoda leży na trakcie z Crossholt na północ, więc bohater może jechać z wielu stron: z Mereton, z Alderwick, z Port Seravel, z Hollowbury i Greenhollow albo z Silverhaven. Tą samą drogą jadą wszyscy goście gospody.
 - **Pół dnia drogi:** około 6 godzin, czyli około 25 km konno, a wozem lub pieszo około 12–15 km. Trzeba ustalić jedną odległość i trzymać się jej.
-- **Pomysł dodatkowy:** bramy Kingsbridge zamyka się na noc, więc ktoś, kto przyjedzie po północy, i tak czeka pod murami do świtu.
+- **Bramy Kingsbridge:** są zamknięte od zachodu do wschodu słońca (godziny z `gm.py`). Pod murami leży podgrodzie: chałupy, gospody i małe wioski, więc bohater może teoretycznie jechać dalej po ciemku i przenocować tam.
+- **Jeśli bohater jedzie dalej:** przygoda 1 się nie odbywa, a fabuła przechodzi od razu do scenariusza 2.
 
 ### Fabuła
 
-- W gospodzie zatrzymuje się gnom ze swoimi wytworami. Wieczorem pokazuje gościom skrzynkę z mechanizmami, potem idzie spać. W nocy skrzynka znika. Jeśli bohater ją odnajdzie, gnom daje mu w nagrodę broszkę-kruka.
-- **Goście:** gnom, czterech niziołków, tajemniczy człowiek w płaszczu, dwa krasnoludy, do tego gospodarz. Bez maga, bo zaklęciem (np. *detect magic*) mógłby za łatwo rozwiązać zagadkę.
+- **Zbieg:** Pansho, wieśniak spod Hartwood. Po ciężkiej zimie jego rodzina nie miała co jeść, więc upolował królewskiego jelenia w Hartwood. Królewscy leśnicy złapali go na gorącym uczynku i wiozą wozem do Kingsbridge na sąd królewski. Za kłusownictwo na królewskiego zwierza grozi piętno (`Geography.md`, *Hartwell*), a ucieczka spod straży pogarsza sprawę.
+- **Ucieczka:** wieczorem, kilka kilometrów przed gospodą, Pansho rozbił ogniwo łańcucha i uciekł w ciemność. Kajdan został mu na nadgarstku, a bez kowala go nie zdejmie. Kajdan zdradza go każdemu, więc nie może iść traktem i kryje się przy gospodzie.
+- **Winny, ale ludzki:** naprawdę kłusował, nie wypiera się tego. Jest głodny, przestraszony i myśli o żonie i dzieciach, które zostały bez niczego. Nie jest groźnym przestępcą, ale w desperacji się broni.
 
-### Postacie i ich sekrety *(propozycja)*
+### Przebieg
 
-Każdy ma sekret. Sekrety niewinnych tłumaczą ich podejrzane zachowanie, a kiedy wyjdą na jaw, pokazują kawałek settingu. Imiona według *Names* w `Setting.md`.
+- **Gospoda „Pęto kiełbasy”** *(w scenariuszu po angielsku, np. „The String of Sausages”)*: gospodarz Edric Moss, wdowiec, sam gotuje. Pansho kradnie właśnie pęto kiełbasy, więc nazwa gospody wraca w nocnej scenie. *Sekret Edrica:* w piwnicy trzyma beczki wina z Greenhollow przemycone bokiem, z pominięciem komory celnej w Crossholt. Dlatego rano nie chce, żeby leśnicy czy goście myszkowali po gospodarstwie, i kręci, choć ze zbiegiem nie ma nic wspólnego.
+- **Wieczór:** gospoda pęka w szwach, bo trakt jest pełen ludzi jadących na tydzień świąteczny: kupcy, kuglarze, pielgrzymi, rodziny. Gospodarz mówi, że nie ma już wolnych miejsc, ale za kilka miedziaków oferuje nocleg w stodole na sianie. Bohater je kolację w zatłoczonej izbie; gospodarz narzeka na przednówek: zapasy się kończą, a ceny rosną.
+- **Noc:** Pansho zakrada się do kuchni tylnymi drzwiami, porywa pęto kiełbasy i chowa się z nim w stodole, nie wiedząc, że ktoś tam śpi. Potyka się o bohatera albo budzi go szelest siana i pobrzękiwanie łańcucha. W ciemności bohater widzi albo wyczuwa wychudzonego człowieka z kajdanem i kawałkiem łańcucha u ręki i pętem kiełbasy w dłoni. Bohater może go ująć, puścić, porozmawiać, udawać, że śpi, albo mu pomóc (w stodole są narzędzia, którymi da się zbić kajdan).
+- **Rano:** o świcie stukanie z podwórza: dwaj królewscy leśnicy przybijają do drzwi gospody podobiznę zbiega i ogłoszenie o nagrodzie, wypytują gości i jadą dalej przeczesywać trakt. Gospodarz odkrywa, że z kuchni zniknęło pęto kiełbasy, a na progu są błotniste ślady.
+- **Kryjówka:** jeśli bohater go nie ujął, Pansho nie odszedł daleko, bo w dzień kajdan go zdradzi. Najpewniej siedzi zakopany w sianie na stryszku tej samej stodoły, nad głową bohatera. Ślady w błocie (odwilż), okruchy i rzut na spostrzegawczość prowadzą do kryjówki. Dalej te same wybory co w nocy, ale leśnicy są już daleko: kto go ujmie, sam musi go dostarczyć do Kingsbridge.
+- **Ukryty zegar:** jeśli bohater nic nie robi, Pansho odchodzi następnej nocy, a ukryty rzut rozstrzyga, czy przy tym coś ukradnie (jedzenie, płaszcz, konia).
 
-- **Gospoda „The Last Mile”** (ostatni postój przed Kingsbridge).
-- **Edric Moss, gospodarz** (człowiek, wdowiec, sam gotuje). *Sekret:* w piwnicy trzyma beczki wina z Greenhollow przemycone bez królewskiego cła. Nie chce, żeby ktokolwiek przeszukiwał piwnicę, więc kręci i wygląda podejrzanie.
-- **Pell Ambergear, gnom** (wynalazca jadący sprzedawać na jarmarku). *Sekret:* tylko część jego „magicznych” wytworów naprawdę działa, reszta to błyskotki. Nie chce dokładnie wyliczyć, co było w skrzynce, bo wyszłoby, że jest w połowie szarlatanem. Broszka-kruk działa naprawdę.
-- **Wendel Thistledown, złodziej** (niziołek, czarujący, pomocny, sam proponuje pomoc w szukaniu i podsuwa podejrzenia na krasnoludy). *Sekret:* zawodowy złodziej z pierścieniem niewidzialności na łańcuszku. Na ramieniu ma stare piętno złodzieja, kara za kradzież w Valdrenie (`Culture.md`).
-- **Kuglarze Burrows** (rodzina niziołków z wozem):
-  - **Stary Hob, żongler.** *Sekret:* za młodu był kieszonkowcem. Po rękach i ruchach Wendela poznał fachowca, ale milczy, bo nie chce, żeby wyszła jego przeszłość.
-  - **Daisy, akrobatka, córka Hoba.** *Sekret:* zakochała się w Wendelu. Kłamie, że w nocy spał na swoim posłaniu, bo chce go chronić; nie wie, że to złodziej.
-  - **Ned, połykacz ognia, kuzyn.** Korpulentny. *Sekret:* w nocy zszedł do kuchni coś zjeść i podkradł pęto kiełbasy. Jego ślady w nocy plączą się ze śladami złodzieja. *(propozycja)* Kiedy był w kuchni, tylne drzwi na podwórze skrzypnęły i powiało zimnem, choć nikogo nie było widać. Nie powie o tym, póki nie przyzna się do kradzieży kiełbasy.
-- **Człowiek w płaszczu: Aldous Crane.** *Sekret:* kat z Kingsbridge, wraca do domu na święta. *(propozycja)* Był w prowincjonalnym mieście albo na dworze pana, który nie ma własnego kata: wezwano go, żeby ściął skazanego rycerza-rozbójnika (szlachcica karze się toporem albo mieczem, nie szubienicą, `Culture.md`). Jego miecz to miecz katowski, szeroki i z tępym, prostym sztychem; uważny gracz może to zauważyć przy pokazie broszki. Ukrywa twarz, bo gospodarze nie chcą obsługiwać katów, a ludzie się ich boją. Jeśli zobaczy piętno na ramieniu Wendela, rozpozna je: „sam takie wypalałem”.
-- **Krasnoludy: Halvar Stonehelm i jego bratanek Kori.** *Sekret:* wiozą skrzynię złota dla krasnoludzkich bankierów w Kingsbridge. Nie wpuszczają nikogo do pokoju i w nocy pilnowały złota na zmianę. Kori, który miał wartę, słyszał kroki na korytarzu, ale nikogo nie widział. Powie o tym dopiero, gdy krasnoludy przestaną się bać o złoto.
+### Goście (tło)
 
-### Złodziej i pierścień
+Goście nie biorą udziału w fabule, ale bohater może z każdym porozmawiać i się przedstawić. Każdy ma coś do powiedzenia o świecie, a rano każdy inaczej reaguje na list gończy. Imiona według *Names* w `Setting.md`.
 
-- **Złodziej:** jeden z niziołków, złodziej z zawodu. Pierścień niewidzialności też ukradł, dawno temu; komu i gdzie, nie ma znaczenia dla historii. Nosi go na łańcuszku na szyi.
-- **Pierścień:** działa raz na tydzień, przez około 10 minut albo do pierwszego ataku. Niewidzialność obejmuje też to, co złodziej trzyma, więc skrzynka znika razem z nim. Niziołek zużył pierścień w nocy na kradzież, więc w konfrontacji drugi raz nie zniknie.
-- **Pozostałe niziołki:** trójka kuglarzy jadących na świąteczny jarmark w Kingsbridge. Złodziej dołączył do nich po drodze, nie są drużyną. Trójka zna się dobrze między sobą, jego znacznie słabiej.
-- **Rozmiar skrzynki:** mała szkatułka, około 12 cm z każdego boku.
-- **Kryjówka pod kapeluszem** *(pomysł)*: Wendel nosi wysoki cylinder albo melonik i trzyma szkatułkę w jego wnętrzu, na głowie, na widoku. Konsekwencje: nie zdejmuje kapelusza nawet przy stole; widział pokaz broszki, więc unika każdego, kto trzyma ostrze (nóż przy śniadaniu, miecz kata); szkatułkę wypchał wełną, żeby krakanie było stłumione i słyszalne tylko z bliska. Wariant: szkatułka w cylindrze sztukmistrza Hoba ze skrytką, wtedy podejrzenie pada na kuglarzy.
-- **Kryjówka w wozie** *(propozycje)*: w brzuchu dużej kukiełki z przedstawienia kuglarzy (broszka kracze z wnętrza kukły), w skrzyni sztukmistrza Hoba z podwójnym dnem, w worku owsa dla kucyka, w bębnie.
-- **Kryjówka skrzynki** *(propozycja)*: w wozie kuglarzy, między rekwizytami. Złodziej i tak jedzie z nimi do Kingsbridge, więc skrzynka przejedzie przez bramę bez jego udziału, a jeśli ktoś ją znajdzie, podejrzenie padnie na trójkę. Możliwe, że po to właśnie do nich dołączył. Inne możliwości: siano w stajni, piwnica, wiadro w studni, bagaż krasnoludów (żeby je wrobić).
-- **Los pierścienia** *(propozycja)* zależy od tego, jak gracz poradzi sobie ze złodziejem:
-  - gracz nie odkrywa pierścienia, a odzyskuje tylko skrzynkę: złodziej zatrzymuje pierścień;
-  - gracz odbiera pierścień złodziejowi: może go zatrzymać, bo prawowity właściciel jest nieznany; krasnoludy, jako kupcy, proponują, że go odkupią za duże pieniądze (np. 200 g), co daje wybór: pierścień albo złoto na święta w stolicy, gdzie można kupić wszystko;
-  - złodziej proponuje pierścień w zamian za puszczenie go wolno: wybór moralny;
-  - gracz oddaje złodzieja gospodarzowi albo straży w Kingsbridge: pierścień trafia do straży jako dowód.
+- **Pell Ambergear, gnom wynalazca.** Jedzie sprzedawać na świątecznym jarmarku. Wieczorem pokazuje gościom szkatułkę z mechanicznymi wytworami, m.in. broszkę-kruka, która kracze, gdy ktoś w pobliżu trzyma ostrze. Tylko część jego wynalazków naprawdę działa. Opowiada o Brasshollow i Tinkers' Guild. *Rano:* ogląda podobiznę i mówi, że kajdan to tania kuźnia, „pilnik dałby mu radę w kwadrans”; ma pilnik w bagażu. *Skąd:* z Brasshollow w zachodnich Ironpeaks; ścieżkami zszedł do Twinbrook, łodzią przez Silvermere do Mereton, a dalej traktem przez Crossholt. Podróż trwa od dwóch miesięcy i ma o niej mnóstwo opowieści.
+- **Kuglarze Burrows, trzy niziołki z wozem:** stary Hob, żongler; jego córka Daisy, akrobatka; kuzyn Ned, korpulentny połykacz ognia. Jadą z Greenhollow na jarmark, wieczorem dają krótki pokaz w izbie i zbierają miedziaki. Opowiadają o Hollowbury, winie i świętach. *Rano:* Ned głośno żałuje kiełbasy, której nie zjadł. W nocy sam zszedł do kuchni coś przekąsić, więc gospodarz najpierw podejrzewa jego, dopóki leśnicy nie przybiją listu gończego. Ned słyszał wtedy skrzypnięcie tylnych drzwi. *Sekrety rodziny:* Hob za młodu był kieszonkowcem i po rękach Wendela poznał fachowca, ale milczy; Daisy zakochała się w Wendelu. *Skąd:* z Applecombe; wędrują od jarmarku do jarmarku przez Hollowbury, Hartwell i Crossholt.
+- **Wendel Thistledown, niziołek.** Dołączył do kuglarzy po drodze. Czarujący, pomocny, zawsze w meloniku z piórkiem, którego nie zdejmuje nawet przy stole. W rzeczywistości zawodowy złodziej z piętnem na ramieniu i skradzionym pierścieniem niewidzialności na łańcuszku (działa raz na tydzień, przez około 10 minut), ale w tej przygodzie niczego nie kradnie. Może wrócić w Kingsbridge. *Rano:* patrzy na podobiznę dłużej niż inni i mruczy, że „piętno to nie koniec świata”. *Skąd:* mówi, że z Hollowbury, ale naprawdę przyjechał z Port Seravel, gdzie Saltmen szukają go za kradzież bez ich zgody. Do kuglarzy dołączył w Hartwell.
+- **Wędrowiec w kapturze: Aldous Crane, strażnik dróg i łowca.** Ogorzały, milczący, w znoszonym płaszczu z kapturem, z łukiem i długim nożem. Od lat wędruje po pograniczach i dzikich ostępach, tropi i poluje na to, co zagraża ludziom: wilki, wargi, rozbójników, czasem coś gorszego. Czci Sylvanę. Za młodu był królewskim leśnikiem, ale odszedł ze służby. Jedzie do Kingsbridge odebrać w Adventurers' Guild nagrodę za przywódcę watahy, którego skórę wiezie w juku. Siedzi sam w kącie, nie z tajemniczości, tylko z przyzwyczajenia; chętnie opowie o drogach, lasach i bestiach, jeśli ktoś zagada. Nie doradza i nie wtrąca się. *Rano:* zna leśników i ich prawo, ale pamięta też głodne zimy: „król ma jeleni więcej niż poddanych, którzy jedli w tym roku mięso”. Sam zbiega nie szuka, to nie jego zwierzyna. *Skąd:* z Bramblewood pod Hollowbury, gdzie wilki przez zimę podchodziły pod wsie, a on wytropił i zabił przywódcę watahy.
+- **Halvar Stonehelm i jego bratanek Kori, krasnoludy.** Wiozą skrzynię złota dla krasnoludzkich bankierów w Kingsbridge i pilnują jej na zmianę, nikogo nie wpuszczają do pokoju. Opowiadają o Khaz Dorun, goblinach w jaskiniach i o tym, że krasnolud dotrzymuje słowa. *Rano:* Halvar uważa, że prawo to prawo: „przysięgał królowi wierność, a kradł królewskie”. *Skąd:* z Mereton, gdzie krasnoludzcy bankierzy mają kantor; złoto pochodzi z handlu żelazem spławianym Aldwater z gór. Ich dom to Khaz Dorun.
+- **Mistrz Corwin Ashdown, stary mag.** Jedzie do Arcane College na noworoczne zgromadzenie mistrzów. Uprzejmy, gadatliwy, chętnie mówi o magii, licencjach i aureliańskich księgach. Z rozbawieniem ocenia wynalazki gnoma: wyczuwa, które naprawdę mają w sobie magię. *Rano:* przypomina, że kłusownicy byli zawsze, a królewskie jelenie mają się dobrze. *Skąd:* z Alderwick, gdzie mieszka w wieży nad brzegiem Silvermere i jako licencjonowany mag odczynia burze i znajduje zgubione sieci; jedzie traktem przez Hartwell i Crossholt.
 
-### Broszka-kruk
+### Opcjonalna walka
 
-- Gnom wieczorem pokazuje gościom swoje wytwory, a jeden z nich może pomóc odnaleźć skrzynkę, jeśli gracz wpadnie na ten pomysł. Gnom w nerwach o tym nie myśli.
-- **Działanie:** mechaniczna broszka w kształcie kruka głośno kracze, gdy ktoś z ostrzem w dłoni (sztylet, miecz, nóż) jest bliżej niż kilka metrów. Nie kracze przy ostrzu w dłoni tego, kto ją nosi. Leżąca w skrzynce nie ma noszącego, więc kracze przy każdym, a ostrze w dłoni w pobliżu kryjówki zdradza, gdzie ona jest.
-- *(propozycja)* Kracze przy każdym ostrzu, także przy nożu kucharza, więc w kuchni podnosi fałszywy alarm.
-- **Pokaz:** wieczorem gnom pokazuje broszkę na człowieku w płaszczu, który ma miecz; dzięki temu gracz wie, gdzie szukać miecza, jeśli sam nie jest uzbrojony.
-- **Nagroda:** gnom daje broszkę graczowi za odnalezienie skrzynki.
-- **Wartość** *(propozycja)*: około 100 g u gnomiego rzemieślnika; sprzedana kupcowi, Kolegium Arkanów albo Gildii Druciarzy z Brasshollow daje około 50 g.
-- **Gadżety-tropiciele na wariant z kapeluszem** *(pomysły, gadżet zostaje poza szkatułką, u gnoma)*:
-  - *mechaniczna mysz:* po nakręceniu zawsze biegnie do swojego gniazda, a gniazdem jest szkatułka; puszczona na podłogę wspina się po nodze Wendela do kapelusza;
-  - *gwizdek-przywoływacz:* gnom gubi rzeczy, więc na gwizdnięcie szkatułka odpowiada ćwierknięciem;
-  - *pozytywka na wschód słońca:* w szkatułce gra o świcie (6:00), więc Wendel nagle wybiega z izby albo przyciska kapelusz.
-- **Inne pomysły na gadżety:** kompas wskazujący kamień-bliźniak, proszek znaczący, który barwi palce, ptaszek-budzik śpiewający o świcie.
+- Przyparty do muru Pansho broni się kuchennym tasakiem albo wymachuje łańcuchem. Przeciętny wróg, ale głodny i wyczerpany, więc walka jest łatwiejsza. Poddaje się, gdy jest ranny albo gdy bohater go przekona, że nie ma wyjścia.
+- Walki można uniknąć: rozmową, jedzeniem, obietnicą albo puszczeniem go.
+
+### Zakończenia
+
+- **Ujęty i oddany:** nagroda od leśników albo w Kingsbridge; przygoda kończy się pod bramami stolicy z więźniem na sznurze, co otwiera tydzień świąteczny. Pansho dostaje piętno, a może coś gorszego za ucieczkę.
+- **Puszczony:** Pansho wraca do rodziny. Bohater łamie prawo, ale nikt o tym nie wie, chyba że leśnicy coś zauważą.
+- **Uwolniony z kajdan:** jak wyżej, a Pansho zostaje dłużnikiem bohatera, który może wrócić w kampanii.
+- **Odszedł sam:** gdy bohater nic nie zrobił.
+
+### Miejsca i postacie
+
+- **Miejsca (4):** zatłoczona izba z kominkiem, kuchnia ze spiżarnią, stodoła z sianem i stryszkiem (nocleg bohatera), podwórze ze stajnią.
+- **Tło:** tłum gości w izbie, bez imion i sekretów; świadkowie porannej sceny z leśnikami.
+- **Postacie MG (3):** gospodarz Edric Moss, zbieg Pansho, starszy królewskich leśników *(imię do ustalenia)*; drugi leśnik jest tłem.
 
 ### Do ustalenia
 
-- jakie ślady zostawia niewidzialny złodziej,
-- zegar: kiedy kuglarze chcą wyjechać, przymrozek i odwilż (ślady w błocie),
-- gdzie śpi gracz i czy może w nocy coś zauważyć,
-- krótka walka ze złodziejem przypartym do muru,
-- co się dzieje przy porażce albo niesłusznym oskarżeniu,
-- podział PD, mapa.
+- nagroda za zbiega i treść ogłoszenia,
+- dokładna kara za kłusownictwo i ucieczkę w Valdren,
+- jakie rzuty i z jakimi tabelami (zejście po ciemku, tropienie, przekonanie Pansha, walka),
+- podział PD (około 250): za ujęcie zbiega albo świadomą decyzję, by go puścić, za odnalezienie kryjówki, za rozwiązanie bez rozlewu krwi,
+- mapa gospody.
 
 ## Otwarte pytania
 
