@@ -20,6 +20,7 @@
 - **Gifts, not lessons:** divine spells cannot be learned from books. A god grants them to those who serve it faithfully and takes them back from those who fail it.
 - **Clerics:** a cleric always serves one god. A beginning cleric at experience level zero usually has two simple gifts of their god, typical of the profession and not an advantage. More come only from faithful service the god values: sacrifices and prayer, converting others, destroying the god's enemies, deeds in keeping with the god's nature. The GM grants a new gift after notable service; powerful gifts come only after long devotion.
 - **Paladins and the faithful:** a pious knight or a devout layperson may receive a gift too, but more rarely, and never the powerful ones.
+- **The god's will:** clerics and paladins know from their calling what pleases and angers their god; the GM tells the player as the character knows it. Where the teachings are silent, the character decides alone.
 - **Using a gift** is a short prayer with the god's symbol, a round in combat. A gift works like a mastered spell: no roll in calm conditions, harder under the usual circumstances. Uses as in *Spell tiers* in `Magic.md`.
 
 ### Example gifts
@@ -47,6 +48,7 @@ Using a gift for ends against the god's nature or aims, neglecting the god's ser
 - **Admonition:** a warning dream, an omen, a sudden chill at the altar. Nothing more, the first time.
 - **Small curse:** a temporary disadvantage, which does not raise DP, until the servant atones with sacrifice and penance, e.g. trembling hands, food tasting of ash, a voice that cracks in prayer (see *Trait changes during play* in `Rules/Traits.md`).
 - **Loss of the gift:** the gift is gone until atonement, or for good after repeated offences.
+- **Disfavour from the past:** a disadvantage chosen at character creation for an old offence: the cleric's gifts always need a roll, like a spell at 75% study (average in calm, harder in combat), and on the lowest results fail or go wrong. Priced as usual, e.g. small for a cleric using gifts about twice a day; unlike a curse earned in play it raises DP. Full atonement lifts it, and base DP drops by its weight.
 
 ## Conversion
 
