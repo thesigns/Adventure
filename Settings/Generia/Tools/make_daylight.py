@@ -5,7 +5,7 @@ An author's tool, not for play. Writes Settings/Generia/Tables/Daylight.json.
 Usage:
     python Settings/Generia/Tools/make_daylight.py
 
-Generia's year has 252 days: 12 months of 21 days, three to each season
+Generia's year has 360 days: 12 months of 30 days, three to each season
 (see Tables/Calendar.json). The year starts on the spring equinox, so the
 seasons start on the equinoxes and solstices: 1 Tiriwen, 1 Saelis,
 1 Calaris and 1 Ysmara. The table is computed for latitude 47° N,
@@ -23,8 +23,8 @@ LATITUDE = 47.0
 DARK_ALTITUDE = -6.0
 SUN_ALTITUDE = -0.833      # sunrise and sunset, with refraction and the sun's disc
 MONTHS = 12
-MONTH_DAYS = 21
-YEAR = MONTHS * MONTH_DAYS  # 252
+MONTH_DAYS = 30
+YEAR = MONTHS * MONTH_DAYS  # 360
 EQUINOX_DOY = 1             # 1 Tiriwen, the spring equinox
 
 
@@ -61,7 +61,7 @@ def row(doy):
 def main():
     days = {}
     for month in range(1, MONTHS + 1):
-        for day in (1, 11):
+        for day in (1, 11, 21):
             days[f"{month:02d}-{day:02d}"] = row((month - 1) * MONTH_DAYS + day)
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w", encoding="utf-8", newline="\n") as fh:

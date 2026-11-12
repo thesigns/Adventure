@@ -1,27 +1,30 @@
 {
   "months": [
-    {"name": "Tiriwen", "days": 21, "season": "spring"},
-    {"name": "Lissara", "days": 21, "season": "spring"},
-    {"name": "Faelora", "days": 21, "season": "spring"},
-    {"name": "Saelis", "days": 21, "season": "summer"},
-    {"name": "Haeloth", "days": 21, "season": "summer"},
-    {"name": "Merien", "days": 21, "season": "summer"},
-    {"name": "Calaris", "days": 21, "season": "autumn"},
-    {"name": "Ilvaran", "days": 21, "season": "autumn"},
-    {"name": "Nethras", "days": 21, "season": "autumn"},
-    {"name": "Ysmara", "days": 21, "season": "winter"},
-    {"name": "Duravel", "days": 21, "season": "winter"},
-    {"name": "Caerwen", "days": 21, "season": "winter"}
+    {"name": "Tiriwen", "days": 30, "season": "spring"},
+    {"name": "Lissara", "days": 30, "season": "spring"},
+    {"name": "Faelora", "days": 30, "season": "spring"},
+    {"name": "Saelis", "days": 30, "season": "summer"},
+    {"name": "Haeloth", "days": 30, "season": "summer"},
+    {"name": "Merien", "days": 30, "season": "summer"},
+    {"name": "Calaris", "days": 30, "season": "autumn"},
+    {"name": "Ilvaran", "days": 30, "season": "autumn"},
+    {"name": "Nethras", "days": 30, "season": "autumn"},
+    {"name": "Ysmara", "days": 30, "season": "winter"},
+    {"name": "Duravel", "days": 30, "season": "winter"},
+    {"name": "Caerwen", "days": 30, "season": "winter"}
   ],
-  "weekdays": ["Duriel", "Sairas", "Tavien", "Nimel", "Orwen", "Cassel", "Lumiel"],
+  "weekdays": ["Duriel", "Sairas", "Tavien", "Annael", "Nimel", "Orwen", "Cassel", "Ulmien", "Ithiel", "Lumiel"],
   "first_weekday": "Duriel",
   "moons": [
     {"name": "Selwen", "phases": [
-      "waning crescent", "waning crescent", "waning crescent", "new", "waxing crescent",
-      "waxing crescent", "waxing crescent", "waxing crescent", "first quarter", "waxing gibbous",
-      "waxing gibbous", "waxing gibbous", "waxing gibbous", "full", "waning gibbous",
-      "waning gibbous", "waning gibbous", "waning gibbous", "last quarter", "waning crescent", "waning crescent"]},
+      "waning crescent", "waning crescent", "waning crescent", "waning crescent", "new",
+      "waxing crescent", "waxing crescent", "waxing crescent", "waxing crescent", "waxing crescent",
+      "waxing crescent", "first quarter", "first quarter", "waxing gibbous", "waxing gibbous",
+      "waxing gibbous", "waxing gibbous", "waxing gibbous", "waxing gibbous", "full",
+      "waning gibbous", "waning gibbous", "waning gibbous", "waning gibbous", "waning gibbous",
+      "waning gibbous", "last quarter", "last quarter", "waning crescent", "waning crescent"]},
     {"name": "Nimras", "phases": [
-      "waning gibbous", "last quarter", "waning crescent", "new", "first quarter", "waxing gibbous", "full"]}
+      "waning gibbous", "last quarter", "last quarter", "waning crescent", "new",
+      "waxing crescent", "first quarter", "first quarter", "waxing gibbous", "full"]}
   ]
 }

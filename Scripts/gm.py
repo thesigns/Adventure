@@ -37,7 +37,7 @@ folders (Settings/*/Tables/GmTables.json, Scenarios/*/Tables/GmTables.json),
 in the form {"name": {"entries": {"3-5": 10, "6-18": 30}}}.
 Hidden rolls with a text table are made by Scripts/roll.py --hidden.
 
-Calendar.json has the form {"months": [{"name": "Tiriwen", "days": 21,
+Calendar.json has the form {"months": [{"name": "Tiriwen", "days": 30,
 "season": "spring"}, ...], "weekdays": ["Duriel", ...], "first_weekday":
 "Duriel", "moons": [{"name": "Selwen", "phases": ["new", ...]}]}, where
 first_weekday is the weekday of the first day of year 1, and a moon's phases
@@ -238,7 +238,7 @@ class Calendar:
         return f"{year:04d}-{month:02d}-{day:02d} {moment.hour:02d}:{moment.minute:02d}"
 
     def describe(self, moment):
-        """Weekday, month, season and moons, e.g. 'Lumiel, 14 Saelis, summer; Selwen full, Nimras full'.
+        """Weekday, month, season and moons, e.g. 'Lumiel, 20 Saelis, summer; Selwen full, Nimras full'.
 
         Empty without a calendar.
         """

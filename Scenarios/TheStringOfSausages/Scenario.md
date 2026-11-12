@@ -8,7 +8,7 @@ A micro scenario for one character at experience level zero, for about an hour o
 
 The inn **The String of Sausages** stands on the highway between Crossholt and Kingsbridge, half a day's ride south of the capital, about 25 km from its gates (around 1925, 1555 on the map of Elandria). All the main roads from the south and the west meet at Crossholt, so everyone bound for the capital from Mereton, Alderwick, Port Seravel, Hartwell, Hollowbury, Greenhollow or Silverhaven passes the inn.
 
-It is the end of winter, 20 Caerwen 1240 AF, a Cassel, the last day but one of the year. The snow has melted, the road is mud that freezes at night and thaws by mid-morning, and the larders are nearly empty: the hungry end of winter. Tomorrow is the last day of the year, and the day after it the new year (1 Tiriwen) opens a week of feasts, fairs and weddings in Kingsbridge, so the road is full of merchants, jugglers, pilgrims and families going to the capital (see *Calendar* and *Customs* in `Settings/Generia/Culture.md`).
+It is the end of winter, 29 Caerwen 1240 AF, an Ithiel, the last day but one of the year. The snow has melted, the road is mud that freezes at night and thaws by mid-morning, and the larders are nearly empty: the hungry end of winter. Tomorrow is the last day of the year, and the day after it the new year (1 Tiriwen) opens a week of feasts, fairs and weddings in Kingsbridge, so the road is full of merchants, jugglers, pilgrims and families going to the capital (see *Calendar* and *Customs* in `Settings/Generia/Culture.md`).
 
 The gates of Kingsbridge are shut from sunset to sunrise. Outside the walls lies a sprawl of cottages, inns and hamlets that lodge those who come too late (see *Lands* in `Settings/Generia/Geography.md`).
 
@@ -152,7 +152,7 @@ A low cellar under the kitchen, reached by a ladder from the trapdoor. Along the
 
 ### Arrival (about 18:10)
 
-The game starts at dusk on 20 Caerwen 1240 AF (for the world clock: `time --date 1240-12-20 --now 18:10 --setting Generia`), as the character comes up the road to the inn.
+The game starts at dusk on 29 Caerwen 1240 AF (for the world clock: `time --date 1240-12-29 --now 18:10 --setting Generia`), as the character comes up the road to the inn.
 
 Two king's foresters stand at the front door: one holds a lantern, the other is nailing up a sheet of paper with a charcoal likeness of a bearded man. The elder reads it aloud to the travellers at the door, because many of them cannot read (see *Languages* in `Settings/Generia/Culture.md`):
 

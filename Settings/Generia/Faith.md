@@ -5,15 +5,20 @@
 - The gods are real and grant gifts to those who serve them (see *Divine gifts*).
 - **One god:** the gods are jealous. Most people follow a single god, chosen by family, trade or need, and serving several invites trouble. Rites that belong to a god's domain, such as burial by the priests of Mortis, are shared by all.
 
-| God | Domain | Worshippers | Kindred gods | Opposed gods |
-|---|---|---|---|---|
-| Solarius | sun, light, justice, healing | knights, paladins, the common folk | Mortis, Thar | Noctar |
-| Thar | war, courage, strength | warriors, soldiers, barbarians | Solarius, Hammar | Noctar |
-| Sylvana | nature, harvest, beasts, the moons | farmers, druids, rangers, elves | Hammar, Mortis | Noctar |
-| Mortis | death, graves, the passage of souls | undertakers, enemies of the undead | Solarius, Sylvana | Noctar |
-| Varek | luck, trade, roads, thieves | merchants, travellers, rogues | Hammar | Noctar |
-| Hammar | forge, craft, stone | dwarves, smiths, builders | Thar, Varek | Noctar |
-| Noctar | darkness, undeath, forbidden lore | warlocks, necromancers, dark cults | none | all the others |
+| God | | Domain | Worshippers | Kindred gods | Opposed gods |
+|---|---|---|---|---|---|
+| Solarius | god | sun, light, justice, healing | knights, paladins, the common folk | Thar, Mortis, Hestra, Aethra | Noctara |
+| Sylvana | goddess | nature, harvest, beasts, the moons | farmers, druids, rangers, elves | Mortis, Hestra, Hammar | Noctara |
+| Thar | god | war, courage, strength | warriors, soldiers, barbarians | Solarius, Hammar, Marus | Noctara |
+| Hestra | goddess | hearth, home, family, love | families, wives and mothers, innkeepers, halflings | Solarius, Sylvana | Noctara |
+| Mortis | god | death, graves, the passage of souls | undertakers, enemies of the undead | Solarius, Sylvana | Noctara |
+| Sortia | goddess | luck, trade, roads, thieves | merchants, travellers, gamblers, rogues | Hammar, Marus | Noctara |
+| Hammar | god | forge, craft, stone | dwarves, smiths, builders | Thar, Sylvana, Sortia, Aethra | Noctara |
+| Aethra | goddess | magic, knowledge, books | wizards, scholars, scribes, gnomes | Solarius, Hammar | Noctara |
+| Marus | god | sea, storms, sailing | sailors, fishers, boatmen | Thar, Sortia | Noctara |
+| Noctara | goddess | darkness, undeath, forbidden lore | warlocks, necromancers, dark cults | none | all the others |
+
+- **Light and dark:** Solarius and Noctara are the great pair of the pantheon, day against night. The week runs from her new moon on Nimel to his full moon on Lumiel (see *Calendar* in `Culture.md`).
 
 ## Divine gifts
 
@@ -27,15 +32,18 @@
 
 | Gift | Tier | God | Effect |
 |---|---|---|---|
-| heal wounds | simple | Solarius, Sylvana | wound level drops by 30%, and a dying creature is stabilised |
+| heal wounds | simple | Solarius, Sylvana, Hestra | wound level drops by 30%, and a dying creature is stabilised |
 | bless | simple | any | one action of an ally is one level easier |
 | light of the sun | simple | Solarius | a holy light like a torch for an hour; undead in it fight one level harder |
 | divine sense | simple | any | the caster knows if evil, undead or fiends are near |
 | turn undead | simple | Mortis, Solarius | weak and average undead flee, stronger ones fight one level harder |
 | battle fury | simple | Thar | the caster's attacks are one level easier for one fight |
 | speak with beasts | simple | Sylvana | an animal understands and answers simply; wild beasts do not attack |
-| luck of the road | simple | Varek | one roll of the caster's that day is one level easier |
+| luck of the road | simple | Sortia | one roll of the caster's that day is one level easier |
 | stone sense | simple | Hammar | the caster knows how sound a wall, a tunnel or a forged blade is |
+| hearth ward | simple | Hestra | a house or camp is warded for a night: the caster wakes when anyone hostile comes near |
+| calm waters | simple | Marus | wind and waves calm around one boat for an hour |
+| read the unknown | simple | Aethra | the caster reads any script, Aurelian included, for an hour |
 | cure disease | advanced | Solarius, Sylvana | ends a disease or poison |
 | holy smite | advanced | Solarius, Thar | a strike of holy power dealing a serious wound to the undead and fiends |
 | sanctuary | advanced | any | enemies cannot bring themselves to attack the caster for a few rounds unless attacked |
@@ -53,7 +61,7 @@ Using a gift for ends against the god's nature or aims, neglecting the god's ser
 ## Conversion
 
 - One who has walked the path of a priest rarely changes gods. Turning to another faith brings a curse from the betrayed god and the loss of all gifts; the new god grants gifts only for new service, from the start.
-- **The curse is physical** and fits the betrayed god: a paladin of Solarius who turns to Noctar may grow a tentacle in place of a hand, and one who leaves Noctar for Solarius may go blind.
+- **The curse is physical** and fits the betrayed god: a paladin of Solarius who turns to Noctara may grow a tentacle in place of a hand, and one who leaves Noctara for Solarius may go blind.
 - **The farther apart the gods, the worse the curse:**
   - kindred gods: a mark, e.g. a scar in the shape of the old god's symbol; an insignificant or tiny disadvantage,
   - unrelated gods: a real burden, e.g. a withered arm or a lost voice; a moderate disadvantage,

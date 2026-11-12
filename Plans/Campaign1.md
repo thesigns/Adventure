@@ -6,18 +6,18 @@ Plan roboczy kampanii, czyli ciągu powiązanych scenariuszy w settingu Generia.
 
 - **Kingsbridge jako centrum:** duże kampanie zaczynają się i kończą w Kingsbridge. Miasto leży w centrum kontynentu nieprzypadkowo.
 - **Start:** postać na poziomie 0, początkujący śmiałek albo ktoś, kto jedzie do stolicy załatwić własne sprawy.
-- **Tydzień świąteczny:** nowy rok (1 Tiriwen) i tydzień zabaw aż do pierwszego Lumiel (7 Tiriwen). Do Kingsbridge zjeżdżają się podróżni z całego królestwa, a nawet spoza niego: kupcy, magowie, awanturnicy. W stolicy można wtedy dostać praktycznie wszystko.
+- **Tydzień świąteczny:** nowy rok (1 Tiriwen) i tydzień zabaw aż do pierwszego Lumiel (10 Tiriwen). Do Kingsbridge zjeżdżają się podróżni z całego królestwa, a nawet spoza niego: kupcy, magowie, awanturnicy. W stolicy można wtedy dostać praktycznie wszystko.
 
 ## Kalendarz otwarcia
 
 | Data | Dzień | Księżyce | Co się dzieje |
 |---|---|---|---|
-| 20 Caerwen | Cassel | | przedostatni dzień roku, przygoda 1 w gospodzie |
-| 21 Caerwen | Lumiel | | ostatni dzień roku, przyjazd do Kingsbridge |
+| 29 Caerwen | Ithiel | | przedostatni dzień roku, przygoda 1 w gospodzie |
+| 30 Caerwen | Lumiel | | ostatni dzień roku, przyjazd do Kingsbridge |
 | 1 Tiriwen | Duriel | | nowy rok, równonoc wiosenna, początek zabaw |
-| 4 Tiriwen | Nimel | podwójny nów | duże święto Noctara w środku tygodnia świątecznego |
-| 7 Tiriwen | Lumiel | | koniec zabaw |
-| 14 Tiriwen | Lumiel | podwójna pełnia | noc wilkołaków |
+| 5 Tiriwen | Nimel | podwójny nów | duże święto Noctary w środku tygodnia świątecznego |
+| 10 Tiriwen | Lumiel | | koniec zabaw |
+| 20 Tiriwen | Lumiel | podwójna pełnia | duże święto Solariusa, noc wilkołaków |
 
 Pora roku: koniec zimy, odpowiednik połowy marca. W Caerwen śnieg zaczyna topnieć, drogi zamieniają się w błoto, a zapasy się kończą (przednówek). Z nowym rokiem przychodzi wiosna, a w Fenmarch powodzie.
 
@@ -35,7 +35,7 @@ PD przy pełnych sukcesach po czterech przygodach: 250 + (1000 lub 2000) + 1000 
 
 ## Przygoda 1: gospoda
 
-Gotowy scenariusz: `Scenarios/TheStringOfSausages/` (mikro, poziom 0, 250 PD). Zatłoczona gospoda pół dnia drogi przed Kingsbridge, 20 Caerwen; w nocy w stodole bohater spotyka zbiegłego kłusownika Pansho. Jeśli bohater jedzie dalej po ciemku, przygoda się nie odbywa i gra przechodzi od razu do przygody 2.
+Gotowy scenariusz: `Scenarios/TheStringOfSausages/` (mikro, poziom 0, 250 PD). Zatłoczona gospoda pół dnia drogi przed Kingsbridge, 29 Caerwen; w nocy w stodole bohater spotyka zbiegłego kłusownika Pansho. Jeśli bohater jedzie dalej po ciemku, przygoda się nie odbywa i gra przechodzi od razu do przygody 2.
 
 Wątki, które mogą wrócić w Kingsbridge:
 
