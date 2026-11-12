@@ -7,6 +7,8 @@ Plan roboczy kampanii, czyli ciągu powiązanych scenariuszy w settingu Generia.
 - **Kingsbridge jako centrum:** duże kampanie zaczynają się i kończą w Kingsbridge. Miasto leży w centrum kontynentu nieprzypadkowo.
 - **Start:** postać na poziomie 0, początkujący śmiałek albo ktoś, kto jedzie do stolicy załatwić własne sprawy.
 - **Tydzień świąteczny:** nowy rok (1 Tiriwen) i tydzień zabaw aż do pierwszego Lumiel (10 Tiriwen). Do Kingsbridge zjeżdżają się podróżni z całego królestwa, a nawet spoza niego: kupcy, magowie, awanturnicy. W stolicy można wtedy dostać praktycznie wszystko.
+- **Dowolna postać:** kampanię da się zagrać dowolną postacią; scenariusze nie są pisane pod konkretnego bohatera.
+- **Scenariusze niezależne:** każdy scenariusz stoi na własnych nogach i nie zależy od wątków poprzednich. MG może na własną rękę wpleść wątki z wcześniejszych przygód, zależnie od tego, jak się skończyły.
 
 ## Kalendarz otwarcia
 
