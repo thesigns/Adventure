@@ -54,7 +54,7 @@ For the GM only. The player learns this from the poster, from the guests and fro
 
 ### The foresters
 
-- **Osric Hale**, the elder of the two king's foresters from Hartwell, a lean, weathered man of nearly sixty with a crossbow and a hunting sword. He is grim and tired, and angry with himself: losing a prisoner of the king will cost him his pay, maybe his post. He is fair and keeps his word. He knows Pansho's name and his story, and thinks it a pity, but the law is the law.
+- **Osric Hale**, the elder of the two king's foresters from Hartwell, a lean, weathered man past fifty with a crossbow and a hunting sword. He is grim and tired, and angry with himself: losing a prisoner of the king will cost him his pay, maybe his post. He is fair and keeps his word. He knows Pansho's name and his story, and thinks it a pity, but the law is the law.
 - **Young Tam**, his companion, barely of age, eager and nervous. He is background.
 
 The foresters ride horses and have left the empty prison cart in the inn's yard, with the broken chain still hanging from its rail.

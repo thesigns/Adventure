@@ -41,13 +41,13 @@ The crypt is in total darkness: without light, actions that need sight are two l
 ### What the village knows
 
 - For two weeks poultry has been vanishing at night, and last week a dead goat was found, bloodless, with its throat torn out. No wolves have been seen in the valley for years.
-- Three days ago the shepherd boy Tobin (16) went up Birch Hill in the evening, where the crypt stands, because he saw a light there. He did not come back.
+- Three days ago the shepherd boy Tobin (12) went up Birch Hill in the evening, where the crypt stands, because he saw a light there. He did not come back.
 - The crypt belonged to House Varn, the lords who ruled the valley two hundred years ago. The last of them, Malric the Cruel, was famous for his cruelty. Nobody has gone there for a long time.
 - On the day of the landslide a stranger came to the village, a thin traveller with a crossbow who called himself Corwin, a pedlar. After a few days he vanished. People think he tried to cross the landslide and died.
 
 ## Start of the adventure
 
-The game starts in the morning, at about seven, on day one of play, the 5th day of the 11th month of 1240 AF (for the world clock: `--date 1240-11-05 --now 7:00`), i.e. on the third day after Tobin's disappearance. The character spends the night in Coldford, in a cottage that follows from their background or, if the background does not say, in a room at the headman's.
+The game starts in the morning, at about seven, on day one of play, 2 Nethras 1240 AF, a Sairas (for the world clock: `time --date 1240-09-02 --now 7:00 --setting Generia`), i.e. on the third day after Tobin's disappearance. The character spends the night in Coldford, in a cottage that follows from their background or, if the background does not say, in a room at the headman's.
 
 Gerold knocks at the door, and behind him stands a tearful Martha. The headman tells what the village knows (see *What the village knows*) and asks the character to go up Birch Hill to look for the boy and to find out what is killing the livestock. He promises a reward (see *The village of Coldford*) and gives 3 torches. He says nobody from the village will go with the character: people fear the crypt, and he himself is too old.
 
