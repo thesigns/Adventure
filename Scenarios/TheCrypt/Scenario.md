@@ -41,7 +41,7 @@ The crypt is in total darkness: without light, actions that need sight are two l
 ### What the village knows
 
 - For two weeks poultry has been vanishing at night, and last week a dead goat was found, bloodless, with its throat torn out. No wolves have been seen in the valley for years.
-- Three days ago the shepherd boy Tobin (12) went up Birch Hill in the evening, where the crypt stands, because he saw a light there. He did not come back.
+- Three days ago the shepherd boy Tobin (16) went up Birch Hill in the evening, where the crypt stands, because he saw a light there. He did not come back.
 - The crypt belonged to House Varn, the lords who ruled the valley two hundred years ago. The last of them, Malric the Cruel, was famous for his cruelty. Nobody has gone there for a long time.
 - On the day of the landslide a stranger came to the village, a thin traveller with a crossbow who called himself Corwin, a pedlar. After a few days he vanished. People think he tried to cross the landslide and died.
 
