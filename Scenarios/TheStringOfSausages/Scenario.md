@@ -39,7 +39,7 @@ In Valdren poaching the king's deer is theft from the king: the culprit is flogg
 
 For the GM only. The player learns this from the poster, from the guests and from Pansho himself.
 
-- **Pansho** is a peasant from a hamlet at the edge of Hartwood, the king's hunting forest far to the south, near Hartwell. He is about forty, thin, with a dark beard, and has a wife and three children. After a hard winter his family had nothing to eat, so he took a deer from the king's forest. The king's foresters caught him with the carcass and are taking him to Kingsbridge to be judged.
+- **Pansho** is a peasant from a hamlet at the edge of Hartwood, the king's hunting forest far to the south, near Hartwell. He is about thirty, thin, with a dark beard, and has a wife and three children. After a hard winter his family had nothing to eat, so he took a deer from the king's forest. The king's foresters caught him with the carcass and are taking him to Kingsbridge to be judged.
 - **The escape.** This afternoon, a few kilometres south of the inn, Pansho broke a link of his chain on a stone and ran into the thickets. The iron is still locked on his left wrist, with a few links of chain hanging from it. Without a smith or tools he cannot get it off, and it betrays him to anyone who sees his hands, so he dares not walk the road.
 - **Guilty, but human.** Pansho did poach the deer and does not deny it. He is hungry (he has not eaten for a day and a half), cold, exhausted and frightened, and all he thinks of is his family. He is no killer, but cornered he fights like one.
 - **What he wants:** food, a night under a roof, the iron off his wrist and the way home. He does not know where he will go after that.
@@ -54,7 +54,7 @@ For the GM only. The player learns this from the poster, from the guests and fro
 
 ### The foresters
 
-- **Osric Hale**, the elder of the two king's foresters from Hartwell, a lean, weathered man past fifty with a crossbow and a hunting sword. He is grim and tired, and angry with himself: losing a prisoner of the king will cost him his pay, maybe his post. He is fair and keeps his word. He knows Pansho's name and his story, and thinks it a pity, but the law is the law.
+- **Osric Hale**, the elder of the two king's foresters from Hartwell, a lean, weathered man in his forties with a crossbow and a hunting sword. He is grim and tired, and angry with himself: losing a prisoner of the king will cost him his pay, maybe his post. He is fair and keeps his word. He knows Pansho's name and his story, and thinks it a pity, but the law is the law.
 - **Young Tam**, his companion, barely of age, eager and nervous. He is background.
 
 The foresters ride horses and have left the empty prison cart in the inn's yard, with the broken chain still hanging from its rail.
@@ -156,7 +156,7 @@ The game starts at dusk on 29 Caerwen 1240 AF (for the world clock: `time --date
 
 Two king's foresters stand at the front door: one holds a lantern, the other is nailing up a sheet of paper with a charcoal likeness of a bearded man. The elder reads it aloud to the travellers at the door, because many of them cannot read (see *Languages* in `Settings/Generia/Culture.md`):
 
-> By order of the King's Forester of Hartwood. Escaped from the king's custody: Pansho of Hartwood, a poacher of the king's deer. Thin, about forty years, dark-bearded, an iron on the left wrist. Three gold crowns to whoever brings him in, alive or dead.
+> By order of the King's Forester of Hartwood. Escaped from the king's custody: Pansho of Hartwood, a poacher of the king's deer. Thin, about thirty years, dark-bearded, an iron on the left wrist. Three gold crowns to whoever brings him in, alive or dead.
 
 Three gold crowns are more than a labourer earns in a month (see *Money* in `Settings/Generia/Equipment.md`). The reward is paid by Osric Hale or by the royal court in Kingsbridge.
 
